@@ -4,8 +4,9 @@ Infraestructura para la **búsqueda exhaustiva y sistemática de casos** de IA
 aplicada a participación ciudadana en América Latina (ciclo ILIA 2026) y el
 cálculo determinístico de los dos subindicadores.
 
-Universo: **19 países** (ISO-2): AR, BO, BR, CL, CO, CR, CU, DO, EC, GT, HN, JM,
-MX, PA, PE, PY, SV, UY, VE.
+Universo: **20 países** (ISO-2): AR, BO, BR, CL, CO, CR, CU, DO, EC, GT, HN, JM,
+MX, PA, PE, PY, SV, TT, UY, VE. (El handoff original listaba 19 sin Trinidad y
+Tobago; el operador incorporó TT → 20. TT no tiene baseline 2025, contribuye 0.)
 
 ## Reglas de oro
 

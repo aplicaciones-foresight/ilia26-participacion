@@ -15,11 +15,11 @@ import calc_engine as ce  # noqa: E402
 
 # Oficial 2025 (hoja "Indicador Normalizado" / "Gráfico - Índice" de la BBDD).
 OFICIAL_SUB1 = {"AR":0,"BO":38,"BR":53,"CL":55,"CO":69,"CR":38,"CU":0,"DO":32,"EC":32,
-                "GT":32,"HN":32,"JM":0,"MX":58,"PA":0,"PE":56,"PY":0,"SV":0,"UY":0,"VE":0}
+                "GT":32,"HN":32,"JM":0,"MX":58,"PA":0,"PE":56,"PY":0,"SV":0,"UY":0,"VE":0,"TT":0}
 OFICIAL_SUB2 = {"AR":0,"BO":23,"BR":100,"CL":59,"CO":100,"CR":53,"CU":0,"DO":28,"EC":18,
-                "GT":33,"HN":52,"JM":0,"MX":37,"PA":0,"PE":51,"PY":0,"SV":0,"UY":0,"VE":0}
+                "GT":33,"HN":52,"JM":0,"MX":37,"PA":0,"PE":51,"PY":0,"SV":0,"UY":0,"VE":0,"TT":0}
 OFICIAL_IND = {"AR":0,"BO":30,"BR":76,"CL":57,"CO":85,"CR":46,"CU":0,"DO":30,"EC":25,
-               "GT":32,"HN":42,"JM":0,"MX":47,"PA":0,"PE":53,"PY":0,"SV":0,"UY":0,"VE":0}
+               "GT":32,"HN":42,"JM":0,"MX":47,"PA":0,"PE":53,"PY":0,"SV":0,"UY":0,"VE":0,"TT":0}
 TOL = 1
 
 

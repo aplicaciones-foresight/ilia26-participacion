@@ -8,12 +8,23 @@
 
 - Candidatos del baseline activo 2025 (canal A.0): **28**
 - Casos excluidos 2025 a re-verificar (canal A.0-excluidos): **49**
-- Candidatos marcados de canal único (`flag_canal_unico=1`): **77** (esperable en esta corrida: solo se ejecutó A.0)
-- Cobertura: **19/19** países representados en candidatos.csv
+- Candidatos NUEVOS de descubrimiento web (canales A.1–A.10): **9**
+- Candidatos marcados de canal único (`flag_canal_unico=1`): **75**
+- Cobertura: **20/20** países representados en candidatos.csv
 
-## 2. Candidatos nuevos vs. baseline
+## 2. Candidatos NUEVOS (descubrimiento web) por país
 
-En esta corrida NO hay candidatos *nuevos* (canales A.1–A.11 aún no ejecutados con fetch / Anexo B). Todos los candidatos provienen del baseline 2025 (canal A.0). Los nuevos aparecerán al ejecutar el `search_frame.csv`.
+| País | Candidato | Canal(es) | Fuente/nota | Tipo |
+|---|---|---|---|---|
+| BR | 5a Conferencia Nacional de CT&I - sistematizacio | A.5 | fuente=institucional | nuevo |
+| BR | Brasil Participativo - clustering semántico del  | A.4 | fuente=academico; caso documentado en paper; v | nuevo |
+| BR | OPA Piaui - Presupuesto Participativo Digital (C | A.5 | fuente=prensa; confirmar rol de IA sobre conte | dudoso |
+| BR | e-Cidadania Senado - IA para ideas legislativas | A.5 | fuente=institucional | nuevo |
+| CL | LXS 400 - Chile Delibera | A.3 | fuente=institucional; 2021; nuevo para el índi | nuevo |
+| CO | Citibeats + PNUD Colombia (deliberación pública  | A.9 | fuente=institucional | nuevo |
+| MX | Guanajuato Inteligente 2024-2030 | A.5 | fuente=prensa; verificar software de IA especí | nuevo |
+| PA | Mansa Idea (Pacto del Bicentenario) | A.8 | fuente=prensa; fuente prensa; verificar mecani | nuevo |
+| TT | EngageTT (plataforma Go Vocal) | A.5 | fuente=institucional; confirmar si la instanci | dudoso |
 
 ## 3. Candidatos del baseline ACTIVO 2025 por país (a re-verificar 2026)
 
@@ -36,6 +47,7 @@ En esta corrida NO hay candidatos *nuevos* (canales A.1–A.11 aún no ejecutado
 | PE | 2 | Consulta Ciudadana sobre el Proyecto Nacional de Educación; Sistema de cómputo con IA para las Elecciones Generales 2026 |
 | PY | 0 | — |
 | SV | 0 | — |
+| TT | 0 | — |
 | UY | 0 | — |
 | VE | 0 | — |
 
@@ -50,25 +62,25 @@ Todos los casos del baseline activo entran como `a_reverificar`: en esta corrida
 ## 6. Estado de canales (frame de búsqueda)
 
 - Canal A.0 (baseline): **ejecutado**.
-- Canales operables sin Anexo B, **pendientes de fetch**: 171 celdas país×canal (A.1–A.9).
-- Canales **bloqueados por falta de Anexo B** (A.10/A.11): 38 celdas. Pedir Anexo B al operador.
+- Canales operables sin Anexo B, **pendientes de fetch**: 200 celdas país×canal (A.1–A.9).
+- Canales **bloqueados por falta de Anexo B** (A.10/A.11): 20 celdas. Pedir Anexo B al operador.
 
 Detalle por canal (celdas en el frame):
 
 | Canal | Nombre | Estado | Celdas |
 |---|---|---|---|
-| A.0 | Re-verificación baseline 2025 (casos + excluidos) | ejecutado | 19 |
-| A.1 | Participedia | pendiente_fetch | 19 |
-| A.2 | OGP / IRM (Open Government Partnership) | pendiente_fetch | 19 |
-| A.3 | Repositorios OCDE / observatorios | pendiente_fetch | 19 |
-| A.4 | Literatura académica y gris | pendiente_fetch | 19 |
-| A.5 | Portales de gobierno digital/participación país | pendiente_fetch | 19 |
-| A.6 | Ecosistema Decidim | pendiente_fetch | 19 |
-| A.7 | Ecosistema Polis / CitizenLab(Go Vocal) y similares | pendiente_fetch | 19 |
-| A.8 | Redes regionales de sociedad civil | pendiente_fetch | 19 |
-| A.9 | Organismos multilaterales (PNUD, UNICEF, CEPAL...) | pendiente_fetch | 19 |
-| A.10 | Medios por país (2-3 c/u) — señal, no evidencia | bloqueado_anexo_b | 19 |
-| A.11 | Instituciones de participación por país | bloqueado_anexo_b | 19 |
+| A.0 | Re-verificación baseline 2025 (casos + excluidos) | ejecutado | 20 |
+| A.1 | Participedia | pendiente_fetch | 20 |
+| A.2 | OGP / IRM (Open Government Partnership) | pendiente_fetch | 20 |
+| A.3 | Repositorios OCDE / observatorios | pendiente_fetch | 20 |
+| A.4 | Literatura académica y gris | pendiente_fetch | 20 |
+| A.5 | Portales de gobierno digital/participación país | pendiente_fetch | 20 |
+| A.6 | Ecosistema Decidim | pendiente_fetch | 20 |
+| A.7 | Ecosistema Polis / CitizenLab(Go Vocal) y similares | pendiente_fetch | 20 |
+| A.8 | Redes regionales de sociedad civil | pendiente_fetch | 20 |
+| A.9 | Organismos multilaterales (PNUD, UNICEF, CEPAL...) | pendiente_fetch | 20 |
+| A.10 | Medios por país (2-3 c/u) — señal, no evidencia | pendiente_fetch | 20 |
+| A.11 | Instituciones de participación por país | bloqueado_anexo_b | 20 |
 
 ## 7. Decisiones que requieren al operador
 

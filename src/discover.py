@@ -51,7 +51,9 @@ def slug(s: str, maxlen: int = 40) -> str:
 
 
 def nombre_norm(s: str) -> str:
-    return re.sub(r"\s+", " ", _strip_acentos(str(s)).lower()).strip()
+    # insensible a acentos, mayúsculas y puntuación/guiones (–, —, -, :, etc.)
+    s = re.sub(r"[^a-z0-9]+", " ", _strip_acentos(str(s)).lower())
+    return re.sub(r"\s+", " ", s).strip()
 
 
 def _join_urls(*vals):
@@ -119,8 +121,48 @@ NOMBRE_PAIS = {
     "AR":"Argentina","BO":"Bolivia","BR":"Brasil","CL":"Chile","CO":"Colombia",
     "CR":"Costa Rica","CU":"Cuba","DO":"República Dominicana","EC":"Ecuador",
     "GT":"Guatemala","HN":"Honduras","JM":"Jamaica","MX":"México","PA":"Panamá",
-    "PE":"Perú","PY":"Paraguay","SV":"El Salvador","UY":"Uruguay","VE":"Venezuela",
+    "PE":"Perú","PY":"Paraguay","SV":"El Salvador","TT":"Trinidad y Tobago",
+    "UY":"Uruguay","VE":"Venezuela",
 }
+
+
+# --------------------------------------------------------------------------- #
+# Hallazgos de la pasada de descubrimiento web (curados) — canales A.1–A.10
+# --------------------------------------------------------------------------- #
+def leer_hallazgos_web(cfg):
+    """Lee data/candidatos/hallazgos_web.csv (hallazgos curados de la pasada web)
+    y los agrupa por (país, nombre normalizado), combinando canales y URLs.
+    Reproducible: discover.py fusiona este CSV; la curación es decisión humana.
+    Columnas: pais,nombre,url,canal,senal,fuente_tipo,estado_baseline,nota."""
+    ruta = os.path.join(os.path.dirname(os.path.join(ROOT, cfg["rutas"]["candidatos"])),
+                        "hallazgos_web.csv")
+    if not os.path.exists(ruta):
+        return []
+    grupos = {}
+    with open(ruta, newline="", encoding="utf-8") as fh:
+        for r in csv.DictReader(fh):
+            pais = (r.get("pais") or "").strip()
+            nombre = (r.get("nombre") or "").strip()
+            if not pais or not nombre:
+                continue
+            g = grupos.setdefault((pais, nombre_norm(nombre)),
+                {"pais": pais, "nombre": nombre, "urls": [], "canales": [],
+                 "senales": [], "fuente_tipos": set(), "estado": set(), "notas": []})
+            for u in re.split(r"[;|]", r.get("url", "") or ""):
+                if u.strip() and u.strip() not in g["urls"]:
+                    g["urls"].append(u.strip())
+            c = (r.get("canal") or "").strip()
+            if c and c not in g["canales"]:
+                g["canales"].append(c)
+            if (r.get("senal") or "").strip():
+                g["senales"].append(r["senal"].strip())
+            if (r.get("fuente_tipo") or "").strip():
+                g["fuente_tipos"].add(r["fuente_tipo"].strip())
+            if (r.get("estado_baseline") or "").strip():
+                g["estado"].add(r["estado_baseline"].strip())
+            if (r.get("nota") or "").strip():
+                g["notas"].append(r["nota"].strip())
+    return list(grupos.values())
 
 
 # --------------------------------------------------------------------------- #
@@ -161,7 +203,40 @@ def construir(cfg, hoy):
             "notas": f"año={c['ano']}",
         })
 
-    # Garantizar cobertura de los 19 países: placeholder donde no hay candidato.
+    # --- Fusión de hallazgos de la pasada de descubrimiento web (A.1–A.10) ---
+    idx_activo = {(c["pais"], nombre_norm(c["nombre_tentativo"])): c
+                  for c in candidatos if c["tipo_baseline"] == "activo_2025"}
+    for g in leer_hallazgos_web(cfg):
+        canales = g["canales"] or ["A.x"]
+        fuente = ",".join(sorted(g["fuente_tipos"]))
+        senal = " | ".join(dict.fromkeys(g["senales"])) or "Hallazgo de descubrimiento web."
+        nota_extra = "; ".join(dict.fromkeys(g["notas"]))
+        key = (g["pais"], nombre_norm(g["nombre"]))
+        if key in idx_activo:                       # reconfirmación de un baseline
+            row = idx_activo[key]
+            nuevos = [c for c in canales if c not in row["canal_origen"]]
+            if nuevos:
+                row["canal_origen"] += "; " + "; ".join(nuevos)
+                row["flag_canal_unico"] = 0
+            for u in g["urls"]:
+                if u not in row["urls"]:
+                    row["urls"] = (row["urls"] + " | " + u).strip(" |")
+            row["notas"] = (row["notas"] + f"; reconfirmado web ({fuente})").strip("; ")
+        else:                                        # candidato nuevo
+            tb = "nuevo" if "nuevo" in g["estado"] else (
+                 "nuevo_dudoso" if "dudoso" in g["estado"] else "nuevo")
+            candidatos.append({
+                "candidato_id": f"{g['pais']}-{slug(g['nombre'])}",
+                "pais": g["pais"], "nombre_tentativo": g["nombre"],
+                "urls": " | ".join(g["urls"]),
+                "canal_origen": "; ".join(canales), "fecha_hallazgo": hoy,
+                "senal": senal[:600],
+                "flag_canal_unico": 1 if len(canales) == 1 else 0,
+                "tipo_baseline": tb, "estado": "candidato_nuevo",
+                "notas": (f"fuente={fuente}; {nota_extra}").strip("; "),
+            })
+
+    # Garantizar cobertura de los 20 países: placeholder donde no hay candidato.
     con_candidato = {c["pais"] for c in candidatos if c["pais"] in paises}
     for p in paises:
         if p not in con_candidato:
@@ -245,6 +320,7 @@ def gate1_report(cfg, candidatos, frame, activos, excluidos, hoy):
     n_activos = sum(1 for c in candidatos if c["tipo_baseline"] == "activo_2025")
     n_excl = sum(1 for c in candidatos if c["tipo_baseline"] == "excluido_2025")
     n_canal_unico = sum(1 for c in candidatos if c["flag_canal_unico"] == 1)
+    nuevos = [c for c in candidatos if str(c["tipo_baseline"]).startswith("nuevo")]
     por_pais = {p: 0 for p in paises}
     for c in candidatos:
         if c["pais"] in por_pais and c["estado"] in ("a_reverificar",):
@@ -266,16 +342,22 @@ def gate1_report(cfg, candidatos, frame, activos, excluidos, hoy):
     L.append("")
     L.append(f"- Candidatos del baseline activo 2025 (canal A.0): **{n_activos}**")
     L.append(f"- Casos excluidos 2025 a re-verificar (canal A.0-excluidos): **{n_excl}**")
-    L.append(f"- Candidatos marcados de canal único (`flag_canal_unico=1`): **{n_canal_unico}** "
-             f"(esperable en esta corrida: solo se ejecutó A.0)")
-    L.append(f"- Cobertura: **{len(paises)}/19** países representados en candidatos.csv")
+    L.append(f"- Candidatos NUEVOS de descubrimiento web (canales A.1–A.10): **{len(nuevos)}**")
+    L.append(f"- Candidatos marcados de canal único (`flag_canal_unico=1`): **{n_canal_unico}**")
+    L.append(f"- Cobertura: **{len(paises)}/{len(paises)}** países representados en candidatos.csv")
     L.append("")
-    L.append("## 2. Candidatos nuevos vs. baseline")
+    L.append("## 2. Candidatos NUEVOS (descubrimiento web) por país")
     L.append("")
-    L.append("En esta corrida NO hay candidatos *nuevos* (canales A.1–A.11 aún no "
-             "ejecutados con fetch / Anexo B). Todos los candidatos provienen del "
-             "baseline 2025 (canal A.0). Los nuevos aparecerán al ejecutar el "
-             "`search_frame.csv`.")
+    if nuevos:
+        L.append("| País | Candidato | Canal(es) | Fuente/nota | Tipo |")
+        L.append("|---|---|---|---|---|")
+        for c in sorted(nuevos, key=lambda x: (x["pais"], x["nombre_tentativo"])):
+            tb = "dudoso" if c["tipo_baseline"] == "nuevo_dudoso" else "nuevo"
+            nm = c["nombre_tentativo"][:48]
+            L.append(f"| {c['pais']} | {nm} | {c['canal_origen']} | {c['notas'][:46]} | {tb} |")
+    else:
+        L.append("Sin candidatos nuevos en esta corrida (ejecutar `search_frame.csv` / "
+                 "fusionar `hallazgos_web.csv`).")
     L.append("")
     L.append("## 3. Candidatos del baseline ACTIVO 2025 por país (a re-verificar 2026)")
     L.append("")
@@ -350,7 +432,7 @@ def main(argv=None):
     print(f"candidatos.csv   -> {ruta_cand}  ({len(candidatos)} filas)")
     print(f"search_frame.csv -> {ruta_frame} ({len(frame)} filas)")
     print(f"gate1_report.md  -> {ruta_gate1}")
-    print(f"Cobertura: {len({c['pais'] for c in candidatos if c['pais'] in cfg['paises']})}/19 países")
+    print(f"Cobertura: {len({c['pais'] for c in candidatos if c['pais'] in cfg['paises']})}/{len(cfg['paises'])} países")
     return 0
 
 

@@ -6,8 +6,9 @@
 # operador. El motor y los scripts leen este archivo; no deciden por su cuenta.
 # ============================================================================
 
-# --- Universo: 19 países (ISO-2). Sin Trinidad y Tobago. ---------------------
-paises: [AR, BO, BR, CL, CO, CR, CU, DO, EC, GT, HN, JM, MX, PA, PE, PY, SV, UY, VE]
+# --- Universo: 20 países (ISO-2). Incluye Trinidad y Tobago (TT). ------------
+# (El handoff original listaba 19 sin TT; el operador lo incorporó -> 20.)
+paises: [AR, BO, BR, CL, CO, CR, CU, DO, EC, GT, HN, JM, MX, PA, PE, PY, SV, TT, UY, VE]
 
 # --- Rutas de datos ----------------------------------------------------------
 rutas:
@@ -15,6 +16,7 @@ rutas:
   baseline_sheet: "BBDD Casos"
   baseline_excluidos_sheet: "BBDD Casos Excluidos"
   recodificacion_2025: "data/baseline/recodificacion_2025.csv"   # BORRADOR pre-Gate (ver README)
+  directorio_medios: "data/baseline/directorio_medios.csv"       # canal A.10 (Anexo B parcial)
   candidatos: "data/candidatos/candidatos.csv"
   fetched_dir: "data/fetched"
   fichas_dir: "data/fichas"
@@ -157,7 +159,7 @@ descubrimiento:
     - { id: A.7,  nombre: "Ecosistema Polis / CitizenLab(Go Vocal) y similares",operable: true,  requiere_anexo_b: false }
     - { id: A.8,  nombre: "Redes regionales de sociedad civil",                 operable: true,  requiere_anexo_b: false }
     - { id: A.9,  nombre: "Organismos multilaterales (PNUD, UNICEF, CEPAL...)", operable: true,  requiere_anexo_b: false }
-    - { id: A.10, nombre: "Medios por país (2-3 c/u) — señal, no evidencia",    operable: false, requiere_anexo_b: true }
+    - { id: A.10, nombre: "Medios por país (2-3 c/u) — señal, no evidencia",    operable: true,  requiere_anexo_b: false }
     - { id: A.11, nombre: "Instituciones de participación por país",            operable: false, requiere_anexo_b: true }
   # Instituciones A.11 verificadas 2026 disponibles SIN Anexo B (§7 notas).
   instituciones_conocidas:

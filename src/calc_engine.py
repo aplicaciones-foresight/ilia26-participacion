@@ -6,7 +6,8 @@ calc_engine.py — Motor de cálculo ILIA · Participación Ciudadana.
 Dos modos, ambos determinísticos y reproducibles (Regla de oro: ningún número
 sale de memoria; todo se calcula desde la BBDD):
 
-  · LEGACY 2025  -> compute_full()  : fórmula de 4 variables, validada 19/19 vs.
+  · LEGACY 2025  -> compute_full()  : fórmula de 4 variables, validada 19/19 (de
+                    los 19 con baseline; TT=0) vs.
                     el oficial 2025 (≤1 punto). NO se modifica (§8).
   · 2026         -> compute_2026()  : 5 variables (§4.2), continuidad por nivel
                     máximo, convocante a dos niveles, cantidad por umbrales
@@ -18,7 +19,9 @@ from __future__ import annotations
 import os
 import openpyxl
 
-PAISES = ["AR","BO","BR","CL","CO","CR","CU","DO","EC","GT","HN","JM","MX","PA","PE","PY","SV","UY","VE"]
+# Universo 2026: 20 países (incluye TT, agregado por el operador). TT no tiene
+# baseline 2025 -> contribuye 0 y no altera la no-regresión de los 19 originales.
+PAISES = ["AR","BO","BR","CL","CO","CR","CU","DO","EC","GT","HN","JM","MX","PA","PE","PY","SV","TT","UY","VE"]
 
 _THIS = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_XLSX = os.path.normpath(os.path.join(_THIS, "..", "data", "baseline", "BBDD_IA_Participacion_2025.xlsx"))
@@ -411,9 +414,9 @@ if __name__ == "__main__":
     casos = load_casos()
     sub1, sub2, ind, rc = compute_full(casos)
     oficial_sub2={"AR":0,"BO":23,"BR":100,"CL":59,"CO":100,"CR":53,"CU":0,"DO":28,"EC":18,
-                  "GT":33,"HN":52,"JM":0,"MX":37,"PA":0,"PE":51,"PY":0,"SV":0,"UY":0,"VE":0}
+                  "GT":33,"HN":52,"JM":0,"MX":37,"PA":0,"PE":51,"PY":0,"SV":0,"TT":0,"UY":0,"VE":0}
     oficial_ind={"AR":0,"BO":30,"BR":76,"CL":57,"CO":85,"CR":46,"CU":0,"DO":30,"EC":25,
-                 "GT":32,"HN":42,"JM":0,"MX":47,"PA":0,"PE":53,"PY":0,"SV":0,"UY":0,"VE":0}
+                 "GT":32,"HN":42,"JM":0,"MX":47,"PA":0,"PE":53,"PY":0,"SV":0,"TT":0,"UY":0,"VE":0}
     print("VALIDACIÓN SUB2 e INDICADOR FINAL contra oficial 2025")
     print(f"{'País':<5}{'Sub2':>6}{'OfS2':>6}{'OK':>4}{'   ':<3}{'Ind':>5}{'OfInd':>7}{'OK':>4}")
     s2ok=True; iok=True

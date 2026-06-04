@@ -33,6 +33,7 @@ Umbral de alerta: |Δ| > 15 puntos.
 | PE | 53 | 32 | -21 | ⚠️ |
 | PY | 0 | 0 | +0 |  |
 | SV | 0 | 0 | +0 |  |
+| TT | 0 | 0 | +0 |  |
 | UY | 0 | 0 | +0 |  |
 | VE | 0 | 0 | +0 |  |
 
@@ -56,7 +57,7 @@ Umbral de alerta: |Δ| > 15 puntos.
 
 | Insumo | sha256[:16] |
 |---|---|
-| config.yaml | `760c4fc661ad771b` |
+| config.yaml | `afc827a82e8a1526` |
 | prompt_v1.1_A | `464fc0e0cf2f799f` |
 | prompt_v1.1_B | `ba347b0d2d2395d2` |
 | schema_v1.1 | `40d383789623e848` |

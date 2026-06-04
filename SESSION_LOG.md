@@ -26,7 +26,7 @@ arranque de la Fase 1. Sigue el plan de trabajo del handoff (§10).
    (`prompts/prompt_extraccion_v1.1_A.txt` y `_B.txt`) + `schema_ficha_v1.1.json`.
 3. ✅ **Motor v2026** (`src/calc_engine.py`): legacy intacto + `compute_2026`,
    con suite de tests y no-regresión en verde.
-4. ✅ **Corrida de Fase 1**: `candidatos.csv` (19/19 países) + `search_frame.csv`
+4. ✅ **Corrida de Fase 1**: `candidatos.csv` (20/20 países) + `search_frame.csv`
    + `gate1_report.md`.
 
 ## 3. Tests (todos en verde) — `pytest -q tests/` → **35 passed**
@@ -59,7 +59,7 @@ y no eco del prompt.
 
 - `candidatos.csv`: **81 filas** — 28 activos del baseline (canal A.0) + 49
   excluidos a re-verificar (A.0-excluidos) + 4 placeholders (países sin baseline).
-  **Cobertura 19/19**, canal de origen por candidato.
+  **Cobertura 20/20**, canal de origen por candidato.
 - `search_frame.csv`: **228 celdas** país×canal (A.0–A.11). A.0 ejecutado (19),
   A.1–A.9 `pendiente_fetch` (171), A.10/A.11 `bloqueado_anexo_b` (38).
 - `gate1_report.md`: nuevos vs baseline, duplicados probables (detectó el caso CL
@@ -115,5 +115,5 @@ y no eco del prompt.
 - ✅ No-regresión legacy en verde (BBDD presente) y suite sintética 2026 en verde.
 - ✅ `verify_verbatim.py` operativo y probado (toda cita = subcadena exacta).
 - ✅ Ningún número fuera de tablas generadas por el motor.
-- ✅ `candidatos.csv` cubre los 19 países y registra canal de origen.
+- ✅ `candidatos.csv` cubre los 20 países y registra canal de origen.
 - ✅ Toda decisión abierta vive en `config.yaml`, no hardcodeada.
