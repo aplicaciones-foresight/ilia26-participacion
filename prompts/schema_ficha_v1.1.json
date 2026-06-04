@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Ficha de extracción ILIA 2026 v1.1",
+  "type": "object",
+  "required": [
+    "caso_id", "pais", "nombre_caso", "estado_actividad",
+    "tipo_convocante", "tipo_organizacion",
+    "tipo_proceso", "etapas_uso_IA", "rol_IA",
+    "nivel_consolidacion", "estado_implementacion",
+    "usa_IA_en_proceso", "model_version", "fecha_extraccion",
+    "pasada", "evidencia_verbatim", "urls_fuente", "alertas"
+  ],
+  "properties": {
+    "caso_id": {"type": "string"},
+    "pais": {"type": ["string", "null"], "pattern": "^[A-Z]{2}$"},
+    "nombre_caso": {"type": ["string", "null"]},
+    "ano_inicio": {"type": ["string", "integer", "null"]},
+    "ano_cierre": {"type": ["string", "integer", "null"]},
+    "estado_actividad": {"enum": ["activo", "cerrado", "desconocido", null]},
+    "organizacion_a_cargo": {"type": ["string", "null"]},
+    "tipo_convocante": {
+      "type": ["array", "null"],
+      "items": {"enum": [
+        "gobierno local", "gobierno nacional", "otra institución pública",
+        "empresa", "universidad", "sociedad civil", "organización internacional"
+      ]}
+    },
+    "tipo_organizacion": {
+      "type": ["array", "null"],
+      "items": {"enum": ["Público", "Privado", "Mixto"]}
+    },
+    "tipo_desarrollador_IA": {
+      "type": ["array", "null"],
+      "items": {"enum": ["Gobierno", "Academia", "Privado", "Sociedad Civil"]}
+    },
+    "origen_desarrollador": {"enum": ["Nacional", "Regional", "Internacional", null]},
+    "metodologia_participacion": {"type": ["string", "null"]},
+    "tipo_proceso": {
+      "type": ["array", "null"],
+      "items": {"enum": [
+        "Participación Digital", "Gobernanza Colaborativa", "Mini públicos",
+        "Referendos e Iniciativas Populares", "Presupuestos Participativos"
+      ]}
+    },
+    "etapas_uso_IA": {
+      "type": ["array", "null"],
+      "items": {"enum": ["Planificación", "Implementación", "Análisis", "Traducción Política"]}
+    },
+    "familia_IA": {"type": ["array", "null"]},
+    "usa_LLM_generativa": {"enum": ["sí", "no", "no-claro", null]},
+    "funcion_IA": {"type": ["string", "null"]},
+    "rol_IA": {"enum": ["contenido", "apoyo", "no-claro", null]},
+    "continuidad": {
+      "type": ["array", "null"],
+      "items": {"enum": ["Plataforma", "Uso único"]}
+    },
+    "nivel_consolidacion": {"type": ["integer", "null"], "minimum": 0, "maximum": 3},
+    "estado_implementacion": {"enum": [0.25, 0.5, 0.75, 1.0, null]},
+    "usa_IA_en_proceso": {"enum": ["sí", "no", "no-claro", null]},
+    "tipo_pogrebinschi": {"type": ["string", "null"]},
+    "model_version": {"type": "string"},
+    "fecha_extraccion": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
+    "pasada": {"enum": ["A", "B"]},
+    "evidencia_verbatim": {
+      "type": "object",
+      "required": [
+        "pais", "tipo_proceso", "etapas_uso_IA", "estado_actividad",
+        "nivel_consolidacion", "tipo_convocante", "usa_IA_en_proceso", "rol_IA"
+      ],
+      "additionalProperties": {"type": ["string", "null"]}
+    },
+    "urls_fuente": {"type": "array", "items": {"type": "string"}},
+    "alertas": {"type": "array", "items": {"type": "string"}}
+  }
+}

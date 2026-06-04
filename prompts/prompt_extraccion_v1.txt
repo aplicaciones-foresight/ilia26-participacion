@@ -1,0 +1,70 @@
+# PROMPT DE EXTRACCIÓN — PIPELINE ILIA 2026 v1
+# Para uso por Claude Code en Fase 2 del pipeline
+# Aplicar después de web_fetch de URL primario + secundarios
+
+ROL: Eres un asistente de codificación para una base de datos de IA aplicada a participación ciudadana en América Latina. Tu tarea es llenar una ficha estructurada SOLO con información que aparezca textualmente en los documentos que se te proveen.
+
+INPUT: Textos fetcheados de uno o más URLs sobre un caso candidato. Cada texto incluye fuente y fecha.
+
+OUTPUT: JSON estricto con esta estructura. Para CADA celda crítica debe haber un campo paralelo "evidencia_verbatim" con una cita literal de los textos fetcheados (subcadena exacta).
+
+CRITERIO DECISIVO ANTES DE LLENAR:
+Lo decisivo es si EN EL PROCESO PARTICIPATIVO se usa IA para alguna tarea central (recolectar, clasificar, analizar, sintetizar, mediar, personalizar), independiente del tema del proceso.
+- Una consulta sobre cualquier tema que usa IA → entra
+- Una consulta sobre IA que usa IA en su proceso → entra
+- Una consulta sobre cualquier tema sin IA en el proceso → SALE
+- Una consulta sobre IA sin IA en su proceso → SALE
+
+TEST DE 3 PREGUNTAS PARA CHATBOTS (las tres deben ser SÍ):
+1. ¿Recibe input sustantivo del ciudadano más allá de menús predefinidos?
+2. ¿Procesa, agrupa, analiza o redistribuye esos inputs como parte del proceso participativo?
+3. ¿Está integrado a un proceso participativo identificable (plan de desarrollo, consulta, presupuesto, asamblea)?
+
+CAMPOS A LLENAR:
+
+{
+  "pais": "código ISO 2 letras",
+  "nombre_caso": "nombre canónico",
+  "ano_inicio": "YYYY o null",
+  "ano_cierre": "YYYY o null si activo",
+  "estado_actividad": "activo | cerrado | desconocido",
+  "organizacion_a_cargo": "nombre completo",
+  "tipo_organizacion": ["Público", "Privado", "Mixto"],  // las que apliquen
+  "tipo_desarrollador_IA": ["Gobierno", "Academia", "Privado", "Sociedad Civil"],  // las que apliquen
+  "origen_desarrollador": "Nacional | Regional | Internacional",
+  "metodologia_participacion": "descripción 2-4 frases",
+  "tipo_proceso": [],  // de: Mini-públicos, Presupuestos Participativos, Referendos e Iniciativas Populares, Governanza Colaborativa, Participación Digital
+  "etapas_uso_IA": [],  // de: Planificación, Implementación, Análisis, Traducción Política
+  "familia_IA": [],  // de: NLP, LLM, Chatbot, Recomendación, Clustering, Voz a Texto, Otros (especificar)
+  "usa_LLM_generativa": "sí | no | no-claro",
+  "funcion_IA": "qué hace la IA en el proceso, 1-3 frases",
+  "continuidad": ["Plataforma", "Uso único"],  // las que apliquen
+  "estado_implementacion": 0.25 | 0.5 | 0.75 | 1.0,
+  // Criterios:
+  // 1.0 = operación recurrente verificada (múltiples usos, plataforma activa)
+  // 0.75 = operación verificada (al menos un uso real documentado)
+  // 0.5 = piloto/uso único cerrado
+  // 0.25 = anuncio/planificación sin uso documentado
+  "tipo_pogrebinschi": "tipo según tipología LATAM",
+  "usa_IA_en_proceso": "sí | no | no-claro",
+  "evidencia_verbatim": {
+    "estado": "cita literal del texto",
+    "metodologia": "cita literal",
+    "funcion_IA": "cita literal",
+    "usa_IA_en_proceso": "cita literal",
+    "estado_implementacion": "cita literal",
+    "tipo_proceso": "cita literal"
+  },
+  "urls_fuente": [],
+  "alertas": []  // ej: "evidencia insuficiente para X", "fuente única", "fecha de fuente >2 años"
+}
+
+REGLAS ESTRICTAS:
+1. Si un campo no se puede inferir del texto fetcheado con evidencia textual, déjalo null y agrega alerta.
+2. Toda evidencia verbatim DEBE ser subcadena exacta del texto fuente. No parafrasees en este campo.
+3. Si hay tensión entre fuentes, prioriza la oficial y agrega alerta.
+4. Para tipo_proceso, usa la categoría que MEJOR describa la actividad del ciudadano (no del tema). Aportes a planes de desarrollo amplios → Governanza Colaborativa. Aportes a presupuesto específico → Presupuestos Participativos.
+5. Para etapas_uso_IA, codifica Análisis SOLO cuando hay procesamiento explícito posterior a la recolección (clustering, clasificación, síntesis). Recibir aportes y mostrarlos no es Análisis.
+6. Distingue organizacion_a_cargo del tipo_desarrollador_IA. Pueden ser distintos.
+
+NO INFERIR LO QUE NO ESTÉ EN EL TEXTO. Mejor null + alerta que un valor falso.

@@ -1,0 +1,166 @@
+# ============================================================================
+# config.yaml — Pipeline ILIA 2026 · Indicador de IA en Participación Ciudadana
+# ----------------------------------------------------------------------------
+# REGLA DE ORO: ningún parámetro de decisión vive hardcodeado en el código.
+# Todas las decisiones ABIERTAS (§6 del handoff) se resuelven AQUÍ, por el
+# operador. El motor y los scripts leen este archivo; no deciden por su cuenta.
+# ============================================================================
+
+# --- Universo: 19 países (ISO-2). Sin Trinidad y Tobago. ---------------------
+paises: [AR, BO, BR, CL, CO, CR, CU, DO, EC, GT, HN, JM, MX, PA, PE, PY, SV, UY, VE]
+
+# --- Rutas de datos ----------------------------------------------------------
+rutas:
+  baseline_xlsx: "data/baseline/BBDD_IA_Participacion_2025.xlsx"
+  baseline_sheet: "BBDD Casos"
+  baseline_excluidos_sheet: "BBDD Casos Excluidos"
+  recodificacion_2025: "data/baseline/recodificacion_2025.csv"   # BORRADOR pre-Gate (ver README)
+  candidatos: "data/candidatos/candidatos.csv"
+  fetched_dir: "data/fetched"
+  fichas_dir: "data/fichas"
+  gates_dir: "data/gates"
+
+# --- Trazabilidad de la corrida ---------------------------------------------
+# model_version y fecha_extraccion se ESCRIBEN en cada ficha (§5.8, §2).
+# El operador DEBE fijar la versión real del modelo Claude usado en la corrida.
+# (Se deja como placeholder a propósito: no se hardcodea una versión concreta.)
+corrida:
+  model_version: "PENDIENTE: fijar versión del modelo Claude usada en la corrida"
+  idioma: "es"
+
+# ============================================================================
+# DECISIONES ABIERTAS (§6) — NO resolver en código; el operador elige aquí.
+# Donde el handoff sugiere un default para simulaciones, se deja ese valor.
+# ============================================================================
+
+# §6.3 — Escenario de la base 2026.
+#   - exclusiones_firmes : recodificación YA decidida (salen siempre).
+#   - escenarios A/B     : CiudadanIA (DO) y TQHCH (CL) dentro (A) o fuera (B).
+# El motor recibe 'scenario_activo' y aplica firmes + adicionales del escenario.
+escenarios:
+  scenario_activo: "A"            # "A" mantiene DO/CL ; "B" los retira
+  exclusiones_firmes:
+    - { pais: CO, caso: "Descongestión de solicitudes diarias del programa Ingreso Solidario" }
+    - { pais: MX, caso: "Sufragio seguro" }
+    - { pais: PE, caso: "Sistema de cómputo con IA para las Elecciones Generales 2026" }
+  A:
+    exclusiones_adicionales: []
+  B:
+    exclusiones_adicionales:
+      - { pais: DO, caso: "CiudadanIA" }
+      - { pais: CL, caso: "Tenemos que hablar de Chile" }
+
+# §6.1 — Alcance del conteo de "Cantidad de iniciativas".
+#   count_min_level: nivel mínimo de consolidación para que un caso cuente en N.
+#   null/0 => cuenta todos los casos elegibles ; 2 => solo nivel >= 2 (puntual+).
+#   Default sugerido para simulaciones: 2. Reportar SIEMPRE ambos.
+cantidad:
+  count_min_level: 2
+  reportar_ambos: true            # simulate.py imprime count_min_level=0 y =2
+
+# §6.2 — Cortes de la escala de "Cantidad". A VALIDAR contra base recodificada.
+#   Lista de tramos [min, max, valor]. max: null = sin límite superior.
+  thresholds:
+    - { min: 0,  max: 0,    value: 0   }
+    - { min: 1,  max: 3,    value: 25  }
+    - { min: 4,  max: 6,    value: 50  }
+    - { min: 7,  max: 9,    value: 75  }
+    - { min: 10, max: null, value: 100 }
+
+# §4.2 — Escala de Continuidad / consolidación (0-3) y sus reglas.
+continuidad:
+  # Nivel 1 ("anuncio") caduca a los N años sin implementación verificable -> 0.
+  caducidad_anuncio_anios: 2
+  # Año de referencia para evaluar caducidad (normalmente el año del ciclo).
+  anio_referencia_ciclo: 2026
+
+# §4.4 — Redondeo. Mantener ambos modos disponibles (el publicado 2025
+#   redondeaba los subindicadores ANTES de promediar).
+#   "legacy"      : round(sub1), round(sub2), luego round((sub1+sub2)/2)  [2025]
+#   "solo_final"  : sub1/sub2 como float, redondear SOLO el indicador final
+redondeo:
+  modo: "legacy"
+
+# §6.4 — Otras decisiones con default indicado, configurables.
+muestreo:
+  muestra_alta_pct: 0.10          # 10–15 %: tamaño de la muestra aleatoria de ALTA
+  muestra_alta_pct_max: 0.15
+  umbral_escalamiento: 0.05       # >5 % de error en campos críticos => ampliar muestra
+  semilla_aleatoria: 2026         # reproducibilidad del muestreo
+politicas:
+  no_evidencia: "celda_0"         # "celda_0" (cuenta como 0) | "fuera" (excluye el caso)
+  casos_compuestos: "1_caso"      # "1_caso" | "subcasos"
+
+# ============================================================================
+# Esquema de codificación 2026 (§4.2 / §5) — taxonomías canónicas.
+# El loader usa mapeos tolerantes a variantes (ver calc_engine.norm_*).
+# ============================================================================
+taxonomias:
+  tipos_proceso:                  # 5 tipos -> denominador 5
+    - "Participación Digital"
+    - "Gobernanza Colaborativa"   # = "gobernanza participativa" del handoff
+    - "Mini públicos"
+    - "Referendos e Iniciativas Populares"
+    - "Presupuestos Participativos"
+  etapas:                         # 4 etapas -> denominador 4
+    - "Planificación"
+    - "Implementación"
+    - "Análisis"
+    - "Traducción Política"
+  convocante_gubernamental:       # nivel gubernamental -> denominador 3
+    - "gobierno local"
+    - "gobierno nacional"
+    - "otra institución pública"
+  convocante_no_gubernamental:    # nivel no gubernamental -> denominador 4
+    - "empresa"
+    - "universidad"
+    - "sociedad civil"
+    - "organización internacional"
+
+# Gate 3 — validación final: umbral para alertar cambios vs. ciclo anterior.
+gate3:
+  umbral_cambio: 15               # |Δ indicador 2026 − 2025| > umbral => alerta
+
+# §5.7 — Campos críticos que exigen cita verbatim (propuesta vigente,
+#   pendiente de ratificación en Gate 0). Configurable.
+campos_criticos:
+  - pais
+  - tipo_proceso
+  - etapas_uso_IA
+  - estado_actividad
+  - nivel_consolidacion
+  - tipo_convocante
+  - usa_IA_en_proceso
+  - rol_IA
+
+# Verificación verbatim: solo se normalizan espacios en blanco (§7 Fase 2).
+verbatim:
+  normalizar_espacios: true
+  case_sensitive: false
+  min_chars: 8                    # citas más cortas que esto generan alerta
+
+# ============================================================================
+# Fase 1 — Descubrimiento. Catálogo de canales A.1–A.11 (§7).
+# La definición autoritativa de A.10/A.11 está en el Anexo B (NO provisto).
+# Los canales sin Anexo B se marcan operable: true.
+# ============================================================================
+descubrimiento:
+  anexo_b_disponible: false
+  canales:
+    - { id: A.0,  nombre: "Re-verificación baseline 2025 (casos + excluidos)", operable: true,  requiere_anexo_b: false }
+    - { id: A.1,  nombre: "Participedia",                                       operable: true,  requiere_anexo_b: false }
+    - { id: A.2,  nombre: "OGP / IRM (Open Government Partnership)",            operable: true,  requiere_anexo_b: false }
+    - { id: A.3,  nombre: "Repositorios OCDE / observatorios",                  operable: true,  requiere_anexo_b: false }
+    - { id: A.4,  nombre: "Literatura académica y gris",                        operable: true,  requiere_anexo_b: false }
+    - { id: A.5,  nombre: "Portales de gobierno digital/participación país",    operable: true,  requiere_anexo_b: false }
+    - { id: A.6,  nombre: "Ecosistema Decidim",                                 operable: true,  requiere_anexo_b: false }
+    - { id: A.7,  nombre: "Ecosistema Polis / CitizenLab(Go Vocal) y similares",operable: true,  requiere_anexo_b: false }
+    - { id: A.8,  nombre: "Redes regionales de sociedad civil",                 operable: true,  requiere_anexo_b: false }
+    - { id: A.9,  nombre: "Organismos multilaterales (PNUD, UNICEF, CEPAL...)", operable: true,  requiere_anexo_b: false }
+    - { id: A.10, nombre: "Medios por país (2-3 c/u) — señal, no evidencia",    operable: false, requiere_anexo_b: true }
+    - { id: A.11, nombre: "Instituciones de participación por país",            operable: false, requiere_anexo_b: true }
+  # Instituciones A.11 verificadas 2026 disponibles SIN Anexo B (§7 notas).
+  instituciones_conocidas:
+    - { pais: MX, nombre: "ATDT (Agencia de Transformación Digital y Telecom.)", nota: "verificada 2026" }
+    - { pais: AR, nombre: "Dirección Nacional de Gobierno Abierto",              nota: "verificada 2026" }
+    - { pais: PE, nombre: "(institución de participación)",                      nota: "revalidación post-transición pendiente" }

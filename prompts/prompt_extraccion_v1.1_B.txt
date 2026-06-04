@@ -1,0 +1,131 @@
+# PROMPT DE EXTRACCIÓN — PIPELINE ILIA 2026 · v1.1 — PASADA B (analítica / escéptica)
+# Para uso por Claude en Fase 2 del pipeline. Aplicar DESPUÉS del fetch del URL
+# primario + secundarios. Esta es la PASADA B: razona PRIMERO sobre la
+# elegibilidad y la solidez de la evidencia de forma global, con sesgo a la
+# PRUDENCIA (ante la duda, null o exclusión), y SOLO AL FINAL emite el JSON.
+# Usa una redacción distinta de la Pasada A a propósito: la conciliación debe
+# detectar fragilidad de codificación, no eco del mismo prompt.
+
+CONTEXTO: Construyes evidencia para un indicador público de IA en participación
+ciudadana en América Latina. El costo de un falso positivo (codificar algo que
+el texto no respalda) es ALTO. Tu sesgo por defecto es conservador: si el texto
+no lo dice, no lo afirmas.
+
+ENTRADA: textos fetcheados (con fuente y fecha) de uno o más URLs, más un
+caso_id y un país tentativo.
+
+SALIDA: un único objeto JSON con el ESQUEMA indicado abajo. Idéntico esquema que
+la Pasada A. Cada campo crítico lleva su cita LITERAL en "evidencia_verbatim".
+
+==============================================================================
+RAZONAMIENTO GUIADO (hazlo mentalmente; NO lo incluyas en la salida)
+==============================================================================
+
+(1) ¿De qué proceso participativo hablamos, y existe realmente?
+    Identifica el mecanismo (consulta, plan de desarrollo, presupuesto, asamblea,
+    iniciativa). Si NO hay un proceso participativo identificable, casi todo será
+    null y usa_IA_en_proceso="no-claro"/"no".
+
+(2) ¿La IA toca el CONTENIDO de los aportes, o solo apoya?
+    Pregunta central de elegibilidad. La IA cuenta SOLO si recolecta, clasifica,
+    analiza, sintetiza, media o personaliza el CONTENIDO de lo que aporta la
+    ciudadanía. NO cuenta si únicamente informa de forma unidireccional, hace
+    logística, o cuenta/valida votos (integridad electoral). Verifica dos capas:
+      (a) hay un mecanismo participativo NO meramente electoral; y
+      (b) la IA actúa sobre el contenido de los aportes.
+    Resultado -> rol_IA:
+      "contenido"  si (a) y (b) se sostienen con cita;
+      "apoyo"      si la IA solo informa/logística/conteo  -> caso a EXCLUIDOS,
+                   alerta "candidato_a_excluidos:apoyo_al_proceso";
+      "no-claro"   si la evidencia no permite decidir.
+    Para chatbots, exige las TRES: (i) input sustantivo más allá de menús;
+    (ii) procesa/agrupa/analiza/redistribuye esos inputs; (iii) integrado a un
+    proceso participativo identificable. Si falla alguna -> "apoyo"/"no-claro".
+
+(3) ¿Qué tan consolidado está el uso? (nivel_consolidacion, 0–3)
+    Piensa en TIEMPO y RECURRENCIA, no en volumen:
+      3  permanente: hay evidencia de USOS REPETIDOS en el tiempo. Un sitio o
+         herramienta existiendo NO prueba recurrencia; sin esa prueba, baja a 2.
+      2  puntual: al menos un uso real documentado, sin recurrencia probada.
+      1  anuncio: planificado/anunciado, sin uso documentado. EXIGE fuente OFICIAL
+         (no solo prensa) y FECHA; caduca a 2 años sin implementación -> 0.
+      0  no hay uso.
+    La cita verbatim de este campo DEBE sustentar la recurrencia (nivel 3) o la
+    oficialidad+fecha (nivel 1). Mantén en paralelo estado_implementacion 2025
+    (0.25 anuncio / 0.5 piloto-único / 0.75 un uso real / 1.0 recurrente).
+
+(4) ¿Quién CONVOCA, frente a quién DESARROLLA?
+    Separa siempre. organizacion_a_cargo / tipo_convocante = quién dirige el
+    PROCESO. tipo_desarrollador_IA / origen_desarrollador = quién construyó el
+    SISTEMA. Para tipo_convocante marca todas las categorías aplicables entre las
+    7 (gobierno local / gobierno nacional / otra institución pública / empresa /
+    universidad [incluye públicas] / sociedad civil / organización internacional),
+    citando el nombre textual de cada convocante. Conserva en paralelo el campo
+    2025 tipo_organizacion {Público|Privado|Mixto}.
+
+(5) ¿Qué tipo de proceso y qué etapas?
+    tipo_proceso por la ACTIVIDAD del ciudadano, no por el tema. Texto libre hacia
+    planes integrales de desarrollo -> "Gobernanza Colaborativa" (no "Participación
+    Digital" por defecto); aportes a un presupuesto concreto -> "Presupuestos
+    Participativos".
+    etapas_uso_IA: marca "Análisis" SOLO si hay procesamiento EXPLÍCITO posterior
+    a la recolección (agrupar, clasificar, sintetizar). Recolectar y mostrar los
+    aportes NO es Análisis (ej.: "los comentarios quedaron publicados en el portal"
+    no habilita Análisis; "se clasificaron los comentarios por tópicos con NLP" sí).
+
+==============================================================================
+DISCIPLINA DE EVIDENCIA
+==============================================================================
+- Cada campo crítico (pais, tipo_proceso, etapas_uso_IA, estado_actividad,
+  nivel_consolidacion, tipo_convocante, usa_IA_en_proceso, rol_IA) necesita una
+  cita que sea SUBCADENA EXACTA del texto (se valida por script, normalizando
+  solo espacios). Sin cita -> valor null + alerta.
+- Ante conflicto de fuentes, prioriza la oficial y deja alerta.
+- No completes por verosimilitud. La ausencia de evidencia es información: null.
+
+==============================================================================
+ESQUEMA DE SALIDA (emite EXACTAMENTE estas claves; nada fuera del JSON)
+==============================================================================
+{
+  "caso_id": "<provisto por el harness>",
+  "pais": "ISO-2",
+  "nombre_caso": "nombre canónico",
+  "ano_inicio": "YYYY | null",
+  "ano_cierre": "YYYY | null",
+  "estado_actividad": "activo | cerrado | desconocido",
+  "organizacion_a_cargo": "quien convoca/dirige el proceso",
+  "tipo_convocante": [],            // 0+ de las 7 categorías
+  "tipo_organizacion": [],          // PARALELO 2025: "Público"|"Privado"|"Mixto"
+  "tipo_desarrollador_IA": [],      // "Gobierno"|"Academia"|"Privado"|"Sociedad Civil"
+  "origen_desarrollador": "Nacional | Regional | Internacional | null",
+  "metodologia_participacion": "2-4 frases",
+  "tipo_proceso": [],               // "Participación Digital"|"Gobernanza Colaborativa"|"Mini públicos"|"Referendos e Iniciativas Populares"|"Presupuestos Participativos"
+  "etapas_uso_IA": [],              // "Planificación"|"Implementación"|"Análisis"|"Traducción Política"
+  "familia_IA": [],                 // NLP, LLM, Chatbot, Recomendación, Clustering, Voz a Texto, Visión computacional, Otros
+  "usa_LLM_generativa": "sí | no | no-claro",
+  "funcion_IA": "1-3 frases",
+  "rol_IA": "contenido | apoyo | no-claro",
+  "continuidad": [],                // PARALELO 2025: "Plataforma"|"Uso único"
+  "nivel_consolidacion": 0,         // 0|1|2|3
+  "estado_implementacion": 0.25,    // PARALELO 2025: 0.25|0.5|0.75|1.0
+  "usa_IA_en_proceso": "sí | no | no-claro",
+  "tipo_pogrebinschi": "tipo LATAM | null",
+  "model_version": "<versión del modelo Claude de esta corrida>",
+  "fecha_extraccion": "YYYY-MM-DD",
+  "pasada": "B",
+  "evidencia_verbatim": {
+    "pais": "cita literal",
+    "tipo_proceso": "cita literal",
+    "etapas_uso_IA": "cita literal",
+    "estado_actividad": "cita literal",
+    "nivel_consolidacion": "cita literal (recurrencia=3 / oficialidad+fecha=1)",
+    "tipo_convocante": "cita literal",
+    "usa_IA_en_proceso": "cita literal",
+    "rol_IA": "cita literal"
+  },
+  "urls_fuente": [],
+  "alertas": []
+}
+
+CIERRE: responde ÚNICAMENTE con el objeto JSON. Si dudas entre dos valores en un
+campo crítico, elige el más conservador y deja una alerta explicando la duda.
