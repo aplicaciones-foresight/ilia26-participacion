@@ -8,8 +8,8 @@
 
 - Candidatos del baseline activo 2025 (canal A.0): **28**
 - Casos excluidos 2025 a re-verificar (canal A.0-excluidos): **49**
-- Candidatos NUEVOS de descubrimiento web (canales A.1–A.10): **9**
-- Candidatos marcados de canal único (`flag_canal_unico=1`): **75**
+- Candidatos NUEVOS de descubrimiento web (canales A.1–A.10): **11**
+- Candidatos marcados de canal único (`flag_canal_unico=1`): **77**
 - Cobertura: **20/20** países representados en candidatos.csv
 
 ## 2. Candidatos NUEVOS (descubrimiento web) por país
@@ -17,14 +17,16 @@
 | País | Candidato | Canal(es) | Fuente/nota | Tipo |
 |---|---|---|---|---|
 | BR | 5a Conferencia Nacional de CT&I - sistematizacio | A.5 | fuente=institucional | nuevo |
-| BR | Brasil Participativo - clustering semántico del  | A.4 | fuente=academico; caso documentado en paper; v | nuevo |
+| BR | Brasil Participativo - clustering semantico (BER | A.4 | fuente=academico; confirmar adopción oficial v | nuevo |
 | BR | OPA Piaui - Presupuesto Participativo Digital (C | A.5 | fuente=prensa; confirmar rol de IA sobre conte | dudoso |
-| BR | e-Cidadania Senado - IA para ideas legislativas | A.5 | fuente=institucional | nuevo |
+| BR | Sao Paulo - Programa de Metas / Participe Mais ( | A.6 | fuente=institucional; verificar uso operaciona | nuevo |
+| BR | e-Cidadania Senado - IA matching de ideas legisl | A.5 | fuente=institucional; confirmado por IPU; dist | nuevo |
 | CL | LXS 400 - Chile Delibera | A.3 | fuente=institucional; 2021; nuevo para el índi | nuevo |
-| CO | Citibeats + PNUD Colombia (deliberación pública  | A.9 | fuente=institucional | nuevo |
+| CO | Citibeats + PNUD Colombia (deliberación pública  | A.9 | fuente=institucional; confirmar si es proceso  | nuevo |
 | MX | Guanajuato Inteligente 2024-2030 | A.5 | fuente=prensa; verificar software de IA especí | nuevo |
 | PA | Mansa Idea (Pacto del Bicentenario) | A.8 | fuente=prensa; fuente prensa; verificar mecani | nuevo |
 | TT | EngageTT (plataforma Go Vocal) | A.5 | fuente=institucional; confirmar si la instanci | dudoso |
+| VE | Plan de la Patria 7 Transformaciones - IA y Big  | A.5 | fuente=prensa; fuente estatal única; verificar | dudoso |
 
 ## 3. Candidatos del baseline ACTIVO 2025 por país (a re-verificar 2026)
 

@@ -1,11 +1,14 @@
-# Pasada de descubrimiento web — Fase 1 (ronda 1)
+# Pasada de descubrimiento web — Fase 1 (rondas 1 y 2)
 
 **Fecha:** 2026-06-04 · **Pipeline ILIA 2026 — Participación Ciudadana** · Universo: 20 países (incl. TT)
 
-> Búsqueda en vivo por canales A.1–A.10, ejecutada con investigadores paralelos
-> por bloque regional. Los resultados son **candidatos** (señales) para el Gate 1
-> y la Fase 2; la prensa solo genera candidato (regla anti-paywall). La
-> **ronda 2** (temática transversal) está en curso y añadirá más hallazgos.
+> Búsqueda en vivo por canales A.1–A.10 con **11 investigadores paralelos**:
+> 6 por bloque regional (ronda 1) + 5 temáticos transversales (ronda 2:
+> herramientas deliberativas, literatura académica, multilaterales/aceleradoras,
+> subnacional/presupuestos, barrido de países flacos). Los resultados son
+> **candidatos** (señales) para el Gate 1 y la Fase 2; la prensa solo genera
+> candidato (regla anti-paywall). La curación final vive en
+> `data/candidatos/hallazgos_web.csv` y la fusiona `discover.py`.
 
 ## 1. Directorio de medios (canal A.10 — Anexo B parcial)
 
@@ -13,49 +16,61 @@
 con tipo y relevancia). Cubre el insumo del canal A.10 que faltaba del Anexo B.
 A.11 (instituciones de participación por país) sigue pendiente del Anexo B.
 
-## 2. Candidatos NUEVOS (no estaban en el baseline 2025)
+## 2. Candidatos NUEVOS (no estaban en el baseline 2025) — 11
 
-| País | Candidato | Canal | Fuente | Señal (resumen) |
+| País | Candidato | Canal | Fuente | Tipo |
 |---|---|---|---|---|
-| MX | Guanajuato Inteligente 2024-2030 | A.5 | prensa | IA analiza 26.000+ aportes de talleres regionales para identificar patrones del plan de gobierno. |
-| CO | Citibeats + PNUD (deliberación juvenil) | A.9 | institucional | IA agrupa en tiempo real opiniones/propuestas de deliberación pública y clasifica tópicos. |
-| BR | Brasil Participativo — clustering PPA (BERTopic+LLM) | A.4 | académico | BERTopic + validación LLM clasifica semánticamente 8.200+ propuestas del PPA federal. |
-| BR | e-Cidadania — IA para ideas legislativas | A.5 | institucional | IA cruza 145.993 ideas legislativas ciudadanas con proyectos de ley (función nueva, ene-2026). |
-| BR | 5ª Conferência Nacional de CT&I | A.5 | institucional | IA sistematiza las contribuciones de 200+ conferencias preparatorias (100.000+ personas). |
-| BR | OPA Piauí — Presupuesto Participativo Digital | A.5 | prensa | *dudoso*: Colab + IA de AWS reduce 40% el análisis de 1.311 propuestas; rol semántico por confirmar. |
-| PA | Mansa Idea (Pacto del Bicentenario) | A.8 | prensa | IA organiza y agrega consensos sobre 175.000+ propuestas ciudadanas. |
-| CL | LXS 400 — Chile Delibera | A.3 | institucional | Mini-público de 400 personas; IA (Stanford Online Deliberation) gestiona turnos y estructura aportes. |
-| TT | EngageTT (Go Vocal) | A.5 | institucional | *dudoso*: plataforma oficial sobre Go Vocal (NLP); activación de funciones de IA por confirmar. |
+| MX | Guanajuato Inteligente 2024-2030 | A.5 | prensa | nuevo |
+| CO | Citibeats + PNUD (deliberación juvenil) | A.9 | institucional | nuevo |
+| BR | Brasil Participativo — clustering BERTopic+LLM (10.186 propuestas) | A.4 | académico | nuevo |
+| BR | e-Cidadania — IA matching de ideas legislativas (ene-2026, conf. IPU) | A.5 | institucional | nuevo |
+| BR | São Paulo — Programa de Metas / Participe Mais (Gemini, 6.368 prop.) | A.6 | institucional | nuevo |
+| BR | 5ª Conferência Nacional de CT&I — sistematización con IA | A.5 | institucional | nuevo |
+| PA | Mansa Idea (Pacto del Bicentenario) | A.8 | prensa | nuevo |
+| CL | LXS 400 — Chile Delibera | A.3 | institucional | nuevo |
+| BR | OPA Piauí — Presupuesto Participativo Digital | A.5 | prensa | **dudoso** |
+| TT | EngageTT (Go Vocal) | A.5 | institucional | **dudoso** |
+| VE | Plan de la Patria 7 Transformaciones (IA + Big Data) | A.5 | prensa | **dudoso** |
 
-**9 candidatos nuevos** (7 sólidos + 2 dudosos). Todos entran a `candidatos.csv`
-con `estado=candidato_nuevo` para triage en Gate 1; los dudosos requieren
-confirmación del rol de la IA sobre el contenido en Fase 2.
+**8 sólidos + 3 dudosos.** Brasil concentra los hallazgos más fuertes (4). Los
+dudosos requieren confirmar en Fase 2 que la IA opera sobre el **contenido** de
+los aportes (no logística/convocatoria/afirmación no verificada).
 
-## 3. Reverificaciones del baseline con señal de actividad 2025-2026
+## 3. Reverificaciones del baseline con señal de actividad 2025-2026 — 11
 
-11 casos del baseline fueron reconfirmados por canal institucional adicional
-(quedan en `candidatos.csv` con `canal_origen = "A.0; A.x"` y `flag_canal_unico=0`):
-BO Bolivia Conversa · BR e-Cidadania (audiencias) · BR PPA Natal · CO ECHO-HáblameD ·
-CO Chatico · CR dIAra (OGP 2025) · CR U-Report · DO CiudadanIA · EC PAGA IA (Plan 2025-2027) ·
+Reconfirmados por canal institucional adicional (en `candidatos.csv` con
+`canal_origen = "A.0; A.x"` y `flag_canal_unico=0`): BO Bolivia Conversa ·
+BR e-Cidadania (audiencias) · BR PPA Natal (nueva edición 2026-2029) ·
+CO ECHO-HáblameD · CO Chatico (Plan Distrital 2024-2028, citado por OCDE/OPSI) ·
+CR dIAra (OGP 2025) · CR U-Report · DO CiudadanIA · EC PAGA IA (Plan 2025-2027) ·
 GT Guatemala Joven Conversa · HN RedPública+iVerify.
 
-## 4. Exclusiones y vacíos (filtrado de elegibilidad)
+## 4. Hallazgos por canal y exclusiones
 
-Los investigadores descartaron numerosos casos por criterio, principalmente:
-- **Consultas SOBRE IA** que no usan IA en su proceso (ENIA/estrategias nacionales
-  de IA en AR, UY, CL, EC, GT, DO, CU, PY, TT).
-- **Chatbots de atención/FAQ/trámites** (Anansi TT, CXGenies DO, varios MX/CO).
-- **Conteo/integridad electoral** (excluidos firmes: MX Sufragio Seguro, PE ONPE).
-- **Civic-tech sin IA** o votación entre opciones cerradas sin análisis de aportes.
+- **Herramientas deliberativas (A.7):** NO se hallaron despliegues verificados de
+  Pol.is, Talk to the City, Remesh, Make.org, Common Ground ni Jigsaw en los 20
+  países (2024-2025). Go Vocal/CitizenLab en Chile es de 2019 sin IA-clustering
+  confirmada; en TT (EngageTT) la activación de la IA está por verificar.
+- **Excluidos por criterio (muy frecuente):** consultas **SOBRE IA** sin IA en su
+  proceso (estrategias/ENIA nacionales en AR, UY, CL, EC, GT, DO, CU, PY, TT, JM);
+  chatbots de **atención/FAQ** (Anansi TT, CXGenies DO, etc.); **conteo/integridad
+  electoral** (firmes: MX Sufragio Seguro, PE ONPE); **civic-tech sin IA** o
+  votación entre opciones cerradas; papers **puramente teóricos** sin caso desplegado.
 
-**Países sin candidatos elegibles en la ronda 1:** AR, UY, PY, VE, CU, JM, SV
-(y PE sin caso nuevo; su caso baseline requiere verificación de fuente primaria).
-La ronda 2 (deliberativas, académica, multilaterales, subnacional, barrido de
-países flacos) busca cerrar estos vacíos.
+## 5. Vacíos (cobertura honesta)
 
-## 5. Próximos pasos
+- **Sin ningún candidato (solo placeholder):** CU, JM, SV.
+- **Sin caso nuevo elegible** (más allá del baseline o de dudosos): AR, UY, PY, PE
+  (el caso baseline de PE requiere verificación de fuente primaria del CNE).
+- La región sigue rezagada en este vector específico; Brasil y, en menor medida,
+  Colombia y México concentran la práctica con IA sobre el contenido de aportes.
 
-1. Integrar los hallazgos de la **ronda 2** a `hallazgos_web.csv`.
-2. **Gate 1 (humano)** sobre `candidatos.csv`: aprobar qué pasa a Fase 2.
-3. Fase 2 (doble pasada) sobre nuevos y dudosos; confirmar rol de la IA + verbatim.
-4. Conseguir el **Anexo B** para A.11 (instituciones por país).
+## 6. Próximos pasos
+
+1. **Gate 1 (humano)** sobre `candidatos.csv` (91 filas): aprobar qué pasa a Fase 2.
+2. **Fase 2 (doble pasada)** priorizando los 11 nuevos/dudosos; confirmar con
+   evidencia verbatim que la IA opera sobre el contenido de los aportes.
+3. Conseguir el **Anexo B** para completar A.11 (instituciones por país).
+4. Verificaciones directas pendientes: São Paulo (uso operacional), Brasil
+   Participativo (adopción oficial vs investigación), VE Plan de la Patria
+   (fuente estatal), TT EngageTT (IA de Go Vocal activa).

@@ -55,15 +55,28 @@ Las pasadas A (checklist/literal-first) y B (analítica/escéptica) usan redacci
 distinta a propósito (mismo esquema), para que la conciliación detecte fragilidad
 y no eco del prompt.
 
-## 5. Fase 1 — resultados de la corrida
+## 5. Fase 1 — descubrimiento (baseline + pasada web en vivo)
 
-- `candidatos.csv`: **81 filas** — 28 activos del baseline (canal A.0) + 49
-  excluidos a re-verificar (A.0-excluidos) + 4 placeholders (países sin baseline).
-  **Cobertura 20/20**, canal de origen por candidato.
-- `search_frame.csv`: **228 celdas** país×canal (A.0–A.11). A.0 ejecutado (19),
-  A.1–A.9 `pendiente_fetch` (171), A.10/A.11 `bloqueado_anexo_b` (38).
-- `gate1_report.md`: nuevos vs baseline, duplicados probables (detectó el caso CL
-  homónimo), canal único, baseline sin señal 2026, estado de canales.
+Corrida del baseline (canal A.0) **más una pasada de descubrimiento web** con 11
+investigadores paralelos (6 regionales + 5 temáticos). Detalle en
+`data/gates/descubrimiento_web.md`.
+
+- `candidatos.csv`: **91 filas, cobertura 20/20** — 28 activos del baseline + 49
+  excluidos a re-verificar + **11 candidatos nuevos/dudosos de la web** + 3
+  placeholders (CU, JM, SV, sin ninguna señal).
+- **Directorio de medios A.10**: `data/baseline/directorio_medios.csv` — **60
+  medios, 20/20 países** (Anexo B parcial; A.10 ahora operable). A.11 (instituciones)
+  sigue pendiente del Anexo B.
+- **11 candidatos NUEVOS** (8 sólidos + 3 dudosos): MX Guanajuato Inteligente;
+  CO Citibeats+PNUD; BR Brasil Participativo (BERTopic), e-Cidadania matching,
+  São Paulo Participe Mais (Gemini), 5ª CNCTI; PA Mansa Idea; CL LXS 400;
+  + dudosos BR OPA Piauí, TT EngageTT, VE Plan de la Patria.
+- **11 reverificaciones** del baseline con señal 2025-2026 (fusionadas como
+  `canal_origen = "A.0; A.x"`, `flag_canal_unico=0`).
+- Hallazgos curados y reproducibles en `data/candidatos/hallazgos_web.csv`
+  (los fusiona `discover.py`). `search_frame.csv`: 240 celdas país×canal.
+- Vacíos: CU, JM, SV sin candidatos; AR, UY, PY sin caso nuevo elegible; no se
+  hallaron despliegues de Pol.is/Talk to the City/Remesh en la región.
 
 ## 6. Motor 2026 sobre la base recodificada (BORRADOR) — Fases 4-5
 
