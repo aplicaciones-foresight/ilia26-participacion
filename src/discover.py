@@ -224,7 +224,7 @@ def construir(cfg, hoy):
             for u in g["urls"]:
                 if u not in row["urls"]:
                     row["urls"] = (row["urls"] + " | " + u).strip(" |")
-            row["notas"] = (row["notas"] + f"; reconfirmado web ({fuente})").strip("; ")
+            row["notas"] = (row["notas"] + f"; reconfirmado web ({fuente}): {senal[:160]}").strip("; ")
         else:                                        # candidato nuevo
             tb = "nuevo" if "nuevo" in g["estado"] else (
                  "nuevo_dudoso" if "dudoso" in g["estado"] else "nuevo")

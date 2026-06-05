@@ -8,7 +8,7 @@
 
 - Candidatos del baseline activo 2025 (canal A.0): **28**
 - Casos excluidos 2025 a re-verificar (canal A.0-excluidos): **49**
-- Candidatos NUEVOS de descubrimiento web (canales A.1–A.10): **12**
+- Candidatos NUEVOS de descubrimiento web (canales A.1–A.10): **13**
 - Candidatos marcados de canal único (`flag_canal_unico=1`): **78**
 - Cobertura: **20/20** países representados en candidatos.csv
 
@@ -24,10 +24,11 @@
 | BR | e-Cidadania Senado - IA matching de ideas legisl | A.5 | fuente=institucional; confirmado por IPU; dist | nuevo |
 | CL | LXS 400 - Chile Delibera | A.3 | fuente=institucional; 2021; nuevo para el índi | nuevo |
 | CO | Citibeats + PNUD Colombia (deliberación pública  | A.9 | fuente=institucional; confirmar si es proceso  | nuevo |
+| CU | Consulta Popular Código de las Familias (GEMA-CE | A.4 | fuente=prensa; 2022; verificar si 'análisis in | dudoso |
 | MX | Guanajuato Inteligente 2024-2030 | A.5 | fuente=prensa; verificar software de IA especí | nuevo |
-| PA | Mansa Idea (Pacto del Bicentenario) | A.8 | fuente=prensa; fuente prensa; verificar mecani | nuevo |
-| TT | EngageTT (plataforma Go Vocal) | A.5 | fuente=institucional; confirmar si la instanci | dudoso |
-| VE | Plan de la Patria 7 Transformaciones - IA y Big  | A.5 | fuente=prensa; fuente estatal única; verificar | dudoso |
+| PA | Mansa Idea (Pacto del Bicentenario) | A.8 | fuente=prensa; proceso (Pacto del Bicentenario | nuevo |
+| TT | EngageTT (plataforma Go Vocal) | A.5 | fuente=institucional; confirmar tier/activació | dudoso |
+| VE | Plan de la Patria 7 Transformaciones - IA y Big  | A.5 | fuente=prensa; fuente estatal única; ningún pr | dudoso |
 
 ## 3. Candidatos del baseline ACTIVO 2025 por país (a re-verificar 2026)
 
