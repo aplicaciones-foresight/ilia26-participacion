@@ -1,0 +1,5 @@
+===== FUENTE 1 =====
+URL: https://goblab.uai.cl/en/espanol-sistematizando-la-participacion-ciudadana/
+FETCH: 2026-06-05
+ESTADO: ERROR (HTTPError: HTTP Error 403: Forbidden)
+

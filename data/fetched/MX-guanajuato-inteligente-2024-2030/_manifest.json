@@ -1,0 +1,14 @@
+{
+  "candidato_id": "MX-guanajuato-inteligente-2024-2030",
+  "pais": "MX",
+  "nombre": "Guanajuato Inteligente 2024-2030",
+  "fecha": "2026-06-05",
+  "fuentes": [
+    {
+      "n": 1,
+      "url": "https://guanajuatointeligente.com",
+      "estado": "ERROR (HTTPError: HTTP Error 403: Forbidden)",
+      "chars": 0
+    }
+  ]
+}

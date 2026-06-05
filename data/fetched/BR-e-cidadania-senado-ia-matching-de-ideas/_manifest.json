@@ -1,0 +1,14 @@
+{
+  "candidato_id": "BR-e-cidadania-senado-ia-matching-de-ideas",
+  "pais": "BR",
+  "nombre": "e-Cidadania Senado - IA matching de ideas legislativas",
+  "fecha": "2026-06-05",
+  "fuentes": [
+    {
+      "n": 1,
+      "url": "https://www12.senado.leg.br/noticias/materias/2026/01/16/cidadaos-ajudam-a-escrever-projetos-de-lei-com-ferramenta-de-inteligencia-artificial",
+      "estado": "ERROR (HTTPError: HTTP Error 403: Forbidden)",
+      "chars": 0
+    }
+  ]
+}

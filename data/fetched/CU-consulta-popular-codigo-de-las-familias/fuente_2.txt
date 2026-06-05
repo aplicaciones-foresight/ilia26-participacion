@@ -1,0 +1,5 @@
+===== FUENTE 2 =====
+URL: https://www.granma.cu/cuba/2022-01-24/herramientas-digitales-seran-claves-durante-la-consulta-popular-del-codigo-de-las-familias-24-01-2022-13-01-18
+FETCH: 2026-06-05
+ESTADO: ERROR (HTTPError: HTTP Error 403: Forbidden)
+

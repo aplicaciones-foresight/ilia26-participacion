@@ -1,0 +1,14 @@
+{
+  "candidato_id": "BR-5a-conferencia-nacional-de-ct-i-sistemat",
+  "pais": "BR",
+  "nombre": "5a Conferencia Nacional de CT&I - sistematizacion con IA",
+  "fecha": "2026-06-05",
+  "fuentes": [
+    {
+      "n": 1,
+      "url": "https://5cncti.org.br/",
+      "estado": "ERROR (HTTPError: HTTP Error 403: Forbidden)",
+      "chars": 0
+    }
+  ]
+}

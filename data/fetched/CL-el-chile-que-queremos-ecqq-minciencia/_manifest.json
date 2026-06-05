@@ -1,0 +1,14 @@
+{
+  "candidato_id": "CL-el-chile-que-queremos-ecqq-minciencia",
+  "pais": "CL",
+  "nombre": "El Chile que Queremos (ECQQ) - MinCiencia",
+  "fecha": "2026-06-05",
+  "fuentes": [
+    {
+      "n": 1,
+      "url": "https://github.com/MinCiencia/ECQQ",
+      "estado": "ok",
+      "chars": 7226
+    }
+  ]
+}

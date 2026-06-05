@@ -1,0 +1,5 @@
+===== FUENTE 1 =====
+URL: https://www.sdp.gov.co/noticias/bogota-cuenta-nueva-solucion-optimizar-analisis-de-informacion-cualitativa-basada-ciencia-tecnologia
+FETCH: 2026-06-05
+ESTADO: ERROR (HTTPError: HTTP Error 403: Forbidden)
+

@@ -1,0 +1,5 @@
+===== FUENTE 1 =====
+URL: https://www.correodelorinoco.gob.ve/venezuela-impulsa-el-debate-sobre-inteligencia-artificial-bajo-principios-de-soberania-y-etica/
+FETCH: 2026-06-05
+ESTADO: ERROR (HTTPError: HTTP Error 403: Forbidden)
+

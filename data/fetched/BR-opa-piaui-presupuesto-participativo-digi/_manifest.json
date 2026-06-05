@@ -1,0 +1,14 @@
+{
+  "candidato_id": "BR-opa-piaui-presupuesto-participativo-digi",
+  "pais": "BR",
+  "nombre": "OPA Piaui - Presupuesto Participativo Digital (Colab + AWS)",
+  "fecha": "2026-06-05",
+  "fuentes": [
+    {
+      "n": 1,
+      "url": "https://opa.seplan.pi.gov.br/",
+      "estado": "ERROR (HTTPError: HTTP Error 403: Forbidden)",
+      "chars": 0
+    }
+  ]
+}

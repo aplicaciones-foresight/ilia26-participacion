@@ -1,0 +1,14 @@
+{
+  "candidato_id": "VE-plan-de-la-patria-7-transformaciones-ia",
+  "pais": "VE",
+  "nombre": "Plan de la Patria 7 Transformaciones - IA y Big Data",
+  "fecha": "2026-06-05",
+  "fuentes": [
+    {
+      "n": 1,
+      "url": "https://www.correodelorinoco.gob.ve/venezuela-impulsa-el-debate-sobre-inteligencia-artificial-bajo-principios-de-soberania-y-etica/",
+      "estado": "ERROR (HTTPError: HTTP Error 403: Forbidden)",
+      "chars": 0
+    }
+  ]
+}

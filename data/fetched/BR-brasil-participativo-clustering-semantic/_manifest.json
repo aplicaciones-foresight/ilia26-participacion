@@ -1,0 +1,26 @@
+{
+  "candidato_id": "BR-brasil-participativo-clustering-semantic",
+  "pais": "BR",
+  "nombre": "Brasil Participativo - clustering semantico (BERTopic+LLM)",
+  "fecha": "2026-06-05",
+  "fuentes": [
+    {
+      "n": 1,
+      "url": "https://arxiv.org/abs/2509.21292",
+      "estado": "ERROR (HTTPError: HTTP Error 403: Forbidden)",
+      "chars": 0
+    },
+    {
+      "n": 2,
+      "url": "https://arxiv.org/abs/2511.01545",
+      "estado": "ERROR (HTTPError: HTTP Error 403: Forbidden)",
+      "chars": 0
+    },
+    {
+      "n": 3,
+      "url": "https://github.com/ResidenciaTICBrisa/BP-Classificador-de-Propostas",
+      "estado": "ok",
+      "chars": 6853
+    }
+  ]
+}

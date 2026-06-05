@@ -1,0 +1,14 @@
+{
+  "candidato_id": "CO-ia-para-participacion-en-el-pot-de-bogot",
+  "pais": "CO",
+  "nombre": "IA para participación en el POT de Bogotá (Control Visible/Auditoría)",
+  "fecha": "2026-06-05",
+  "fuentes": [
+    {
+      "n": 1,
+      "url": "https://controlvisible.auditoria.gov.co/index.php/rcf/article/view/63",
+      "estado": "ERROR (HTTPError: HTTP Error 403: Forbidden)",
+      "chars": 0
+    }
+  ]
+}

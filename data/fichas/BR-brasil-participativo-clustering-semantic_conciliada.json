@@ -1,0 +1,98 @@
+{
+  "caso_id": "BR-brasil-participativo-clustering-semantic",
+  "pais": "BR",
+  "nombre_caso": "Brasil Participativo - Classificador de Propostas (ML/NLP)",
+  "ano_inicio": null,
+  "ano_cierre": null,
+  "estado_actividad": "desconocido",
+  "organizacion_a_cargo": "Secretaria de Participação Social (Governo Federal do Brasil)",
+  "tipo_convocante": [
+    "gobierno nacional"
+  ],
+  "tipo_organizacion": [
+    "Público"
+  ],
+  "tipo_desarrollador_IA": [
+    "Academia"
+  ],
+  "origen_desarrollador": "Nacional",
+  "metodologia_participacion": "Brasil Participativo es la plataforma digital del gobierno federal brasileño (software libre Decidim) donde la población puede contribuir con la creación y mejora de políticas públicas mediante propuestas ciudadanas de texto libre. El proyecto BP-Classificador-de-Propostas añade una capa de procesamiento de lenguaje natural (PLN/NLP) para indexar y categorizar automáticamente las propuestas ciudadanas publicadas en la plataforma, usando un modelo de clasificación entrenado diariamente con Apache Airflow.",
+  "tipo_proceso": [
+    "Gobernanza Colaborativa"
+  ],
+  "etapas_uso_IA": [
+    "Análisis"
+  ],
+  "familia_IA": [
+    "NLP",
+    "Clustering"
+  ],
+  "usa_LLM_generativa": "no-claro",
+  "funcion_IA": "El sistema aplica procesamiento de lenguaje natural (PLN) y machine learning para indexar y clasificar automáticamente las propuestas ciudadanas publicadas en Brasil Participativo. Un modelo de clasificación es entrenado diariamente con Apache Airflow usando los datos de la plataforma.",
+  "rol_IA": "contenido",
+  "continuidad": [
+    "Plataforma"
+  ],
+  "nivel_consolidacion": null,
+  "estado_implementacion": 0.75,
+  "usa_IA_en_proceso": "sí",
+  "tipo_pogrebinschi": null,
+  "model_version": "(definir-en-corrida)",
+  "fecha_extraccion": "2026-06-05",
+  "urls_fuente": [
+    "https://github.com/ResidenciaTICBrisa/BP-Classificador-de-Propostas"
+  ],
+  "pasada": "conciliada",
+  "confianza": "BAJA",
+  "evidencia_verbatim": {
+    "pais": "Brasil Participativo é a nova plataforma digital do governo federal",
+    "tipo_proceso": "a população possa contribuir com a criação e melhoria das políticas públicas",
+    "etapas_uso_IA": "A ideia da proposta é fazer análise das propostas por meio de processamento de linguagem natural (PLN)",
+    "estado_actividad": null,
+    "nivel_consolidacion": "O Apache e responsavel pela atualização e o treinamento diario do modelo em conjunto com os dados da plataforma do brasil participativo",
+    "tipo_convocante": "Mentores: Laila, Secretaria de Participação Social",
+    "usa_IA_en_proceso": "Aplicação de Indexação Automática com ML das propostas publicadas no Brasil Participativo",
+    "rol_IA": "a plataforma não possui indexação ou processamento de linguagem natural para categorizar de forma automatizada as propostas"
+  },
+  "evidencia_verbatim_B": {
+    "pais": "Brasil Participativo é a nova plataforma digital do governo federal",
+    "tipo_proceso": "a população possa contribuir com a criação e melhoria das políticas públicas",
+    "etapas_uso_IA": "A ideia da proposta é fazer análise das propostas por meio de processamento de linguagem natural (PLN)",
+    "estado_actividad": null,
+    "nivel_consolidacion": "O Apache e responsavel pela atualização e o treinamento diario do modelo em conjunto com os dados da plataforma do brasil participativo",
+    "tipo_convocante": "Mentores: Laila, Secretaria de Participação Social",
+    "usa_IA_en_proceso": "a plataforma não possui indexação ou processamento de linguagem natural para categorizar de forma automatizada as propostas",
+    "rol_IA": "fazer análise das propostas por meio de processamento de linguagem natural (PLN)"
+  },
+  "alertas": [
+    "El caso_id menciona 'BERTopic+LLM' pero el texto fetcheado no lo confirma (scikit-learn, NLTK = NLP clásico)",
+    "estado_actividad: no hay fecha de inicio ni cierre documentada en el texto fuente; valor dejado en desconocido",
+    "estado_actividad: no hay fecha; se desconoce si el clasificador fue integrado a la plataforma o quedó como prototipo académico",
+    "fuente única: solo la FUENTE 3 (GitHub) tiene contenido; FUENTES 1 y 2 (arXiv) reportaron ESTADO: ERROR 403",
+    "fuente única: toda la extracción se basa en la FUENTE 3 (GitHub); FUENTES 1-2 con ERROR 403",
+    "nivel_consolidacion fijado en 1 (prototipo): el texto describe el desarrollo y la intención de integración, sin evidencia de uso real en producción",
+    "nivel_consolidacion: el texto documenta entrenamiento diario automatizado pero es un repositorio académico/residencia; se asigna nivel 2 por precaución",
+    "tipo_convocante: la Secretaria de Participação Social aparece como mentora del proyecto académico, no como convocante directo; se mantiene 'gobierno nacional' con cautela",
+    "usa_LLM_generativa: el texto menciona ML y NLP clásico (scikit-learn, NLTK) sin LLM generativa explícita; el nombre del caso menciona BERTopic+LLM pero no aparece en el texto fetcheado",
+    "usa_LLM_generativa: no-claro; NLP/ML clásico (scikit-learn), sin LLM generativa"
+  ],
+  "conciliacion": {
+    "conflictos_criticos": [
+      "nivel_consolidacion"
+    ],
+    "diferencias_menores": [
+      "nombre_caso",
+      "organizacion_a_cargo",
+      "metodologia_participacion",
+      "funcion_IA",
+      "estado_implementacion",
+      "tipo_pogrebinschi"
+    ],
+    "evidencia_verificada": false,
+    "n_fuentes_independientes": 1,
+    "dominios": [
+      "github.com"
+    ],
+    "solo_prensa": true
+  }
+}

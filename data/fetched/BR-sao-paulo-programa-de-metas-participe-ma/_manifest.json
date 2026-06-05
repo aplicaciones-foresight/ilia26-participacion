@@ -1,0 +1,14 @@
+{
+  "candidato_id": "BR-sao-paulo-programa-de-metas-participe-ma",
+  "pais": "BR",
+  "nombre": "Sao Paulo - Programa de Metas / Participe Mais (Gemini)",
+  "fecha": "2026-06-05",
+  "fuentes": [
+    {
+      "n": 1,
+      "url": "https://participemais.prefeitura.sp.gov.br/legislation/processes/323",
+      "estado": "ERROR (HTTPError: HTTP Error 403: Forbidden)",
+      "chars": 0
+    }
+  ]
+}

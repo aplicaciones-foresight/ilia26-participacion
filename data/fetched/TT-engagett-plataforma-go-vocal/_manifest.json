@@ -1,0 +1,14 @@
+{
+  "candidato_id": "TT-engagett-plataforma-go-vocal",
+  "pais": "TT",
+  "nombre": "EngageTT (plataforma Go Vocal)",
+  "fecha": "2026-06-05",
+  "fuentes": [
+    {
+      "n": 1,
+      "url": "https://engage.gov.tt/projects/national-digital-transformation-strategy",
+      "estado": "ERROR (HTTPError: HTTP Error 403: Forbidden)",
+      "chars": 0
+    }
+  ]
+}

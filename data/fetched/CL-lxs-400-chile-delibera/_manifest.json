@@ -1,0 +1,14 @@
+{
+  "candidato_id": "CL-lxs-400-chile-delibera",
+  "pais": "CL",
+  "nombre": "LXS 400 - Chile Delibera",
+  "fecha": "2026-06-05",
+  "fuentes": [
+    {
+      "n": 1,
+      "url": "https://www.senado.cl/noticias/participacion-ciudadana/chile-delibera-lxs-400-un-fin-de-semana-de-democracia-deliberativa-online",
+      "estado": "ERROR (HTTPError: HTTP Error 403: Forbidden)",
+      "chars": 0
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "candidato_id": "PA-mansa-idea-pacto-del-bicentenario",
+  "pais": "PA",
+  "nombre": "Mansa Idea (Pacto del Bicentenario)",
+  "fecha": "2026-06-05",
+  "fuentes": [
+    {
+      "n": 1,
+      "url": "https://mansaidea.com/",
+      "estado": "ERROR (HTTPError: HTTP Error 403: Forbidden)",
+      "chars": 0
+    }
+  ]
+}

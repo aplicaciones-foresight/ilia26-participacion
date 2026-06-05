@@ -1,0 +1,14 @@
+{
+  "candidato_id": "CO-citibeats-pnud-colombia-deliberacion-pub",
+  "pais": "CO",
+  "nombre": "Citibeats + PNUD Colombia (deliberación pública juvenil)",
+  "fecha": "2026-06-05",
+  "fuentes": [
+    {
+      "n": 1,
+      "url": "https://www.undp.org/es/colombia/blog/analitica-de-datos-para-mejorar-la-deliberacion-publica-en-colombia",
+      "estado": "ERROR (HTTPError: HTTP Error 403: Forbidden)",
+      "chars": 0
+    }
+  ]
+}

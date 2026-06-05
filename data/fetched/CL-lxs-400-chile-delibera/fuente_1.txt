@@ -1,0 +1,5 @@
+===== FUENTE 1 =====
+URL: https://www.senado.cl/noticias/participacion-ciudadana/chile-delibera-lxs-400-un-fin-de-semana-de-democracia-deliberativa-online
+FETCH: 2026-06-05
+ESTADO: ERROR (HTTPError: HTTP Error 403: Forbidden)
+

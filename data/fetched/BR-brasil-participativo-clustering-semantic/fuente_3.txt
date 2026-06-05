@@ -1,0 +1,291 @@
+===== FUENTE 3 =====
+URL: https://github.com/ResidenciaTICBrisa/BP-Classificador-de-Propostas
+FETCH: 2026-06-05
+ESTADO: ok
+
+GitHub - ResidenciaTICBrisa/BP-Classificador-de-Propostas: Aplicação de Indexação Automática com ML das propostas publicadas no Brasil Participativo · GitHub 
+
+ Skip to content 
+
+ Navigation Menu 
+
+ Toggle navigation 
+
+ Sign in
+
+ Appearance settings 
+
+ Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry New Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI/CD View all use cases BY INDUSTRY Healthcare Financial services Manufacturing Government View all industries View all solutions Resources EXPLORE BY TOPIC AI Software Development DevOps Security View all topics EXPLORE BY TYPE Customer stories Events & webinars Ebooks & reports Business insights GitHub Skills SUPPORT & SERVICES Documentation Customer support Community forum Trust center Partners View all resources Open Source COMMUNITY GitHub Sponsors Fund open source developers PROGRAMS Security Lab Maintainer Community Accelerator GitHub Stars Archive Program REPOSITORIES Topics Trending Collections Enterprise ENTERPRISE SOLUTIONS Enterprise platform AI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced Security Enterprise-grade security features Copilot for Business Enterprise-grade AI features Premium Support Enterprise-grade 24/7 support Pricing 
+
+ Search or jump to... 
+
+ Search code, repositories, users, issues, pull requests... 
+
+ --> 
+
+ Search
+
+ Clear 
+
+ Search syntax tips 
+
+ Provide feedback
+
+ --> 
+ We read every piece of feedback, and take your input very seriously. 
+
+ Include my email address so I can be contacted 
+
+ Cancel
+ 
+ Submit feedback
+
+ Saved searches
+ 
+ Use saved searches to filter your results more quickly 
+
+ --> 
+
+ Name 
+
+ Query 
+
+ To see all available qualifiers, see our documentation .
+
+ Cancel
+ 
+ Create saved search
+
+ Sign in
+
+ Sign up
+
+ Appearance settings 
+
+ Resetting focus 
+
+ You signed in with another tab or window. Reload to refresh your session. 
+ You signed out in another tab or window. Reload to refresh your session. 
+ You switched accounts on another tab or window. Reload to refresh your session. 
+
+ Dismiss alert 
+
+ {{ message }} 
+
+ ResidenciaTICBrisa
+ 
+ / 
+ 
+ BP-Classificador-de-Propostas 
+
+ Public 
+
+ Notifications
+ You must be signed in to change notification settings 
+
+ Fork
+ 2 
+
+ Star
+ 2 
+
+ Code 
+
+ Issues 
+ 4 
+
+ Pull requests 
+ 0 
+
+ Discussions 
+
+ Actions 
+
+ Projects 
+
+ Security and quality 
+ 0 
+
+ Insights 
+
+ Additional navigation options 
+
+ Code
+
+ Issues
+
+ Pull requests
+
+ Discussions
+
+ Actions
+
+ Projects
+
+ Security and quality
+
+ Insights
+
+ ResidenciaTICBrisa/BP-Classificador-de-Propostas 
+
+   main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit   History 157 Commits 157 Commits gitpages gitpages     learning learning     model model     production production     .gitignore .gitignore     README.md README.md     requirements.txt requirements.txt     View all files Repository files navigation README Processamento de Linguagem Natural 
+
+ Visualizar documentação online 
+ Descrição 
+ Brasil Participativo é a nova plataforma digital do governo federal, software livre Decidim, um espaço para que a população possa contribuir com a criação e melhoria das políticas públicas. Com uma semana no ar, a plataforma já tem 1000 propostas feitas pelos cidadãos. A plataforma, porém, não possui indexação ou processamento de linguagem natural para categorizar de forma automatizada as propostas. A ideia da proposta é fazer análise das propostas por meio de processamento de linguagem natural (PLN). 
+ Mentores: Laila, Secretaria de Participação Social 
+ 💻 Tecnologias 
+ Tecnologias utilizadas neste projeto: 
+ Apache Airflow 
+ O Apache e responsavel pela atualização e o treinamento diario do modelo em conjunto com os dados da plataforma do brasil participativo. 
+ Repositorio Airflow 
+ 
+ Modelo de Classificação 
+ 
+ O python foi responsavel pela instanciação do modelo de classificação de propostas, entretanto para seu uso e necessario algumas dependencias como: 
+ 
+ python 3.12.0 
+ 
+ Gerenciador de pacotes, no caso o utilizado no desenvolvimento do projeto, pip 
+ 
+ sudo apt install pip 
+ 
+ Apos termos o pip instalado podemos preparar nosso ambiente para as bibliotecas necessarias para, treinarmos nosso modelo: 
+
+ NumPy: pip install numpy 
+
+ Pandas: pip install pandas 
+
+ NLTK: pip install nltk 
+
+ Scikit-learn: pip install scikit-learn 
+
+ Plotly: pip install plotly 
+
+ Skops: pip install skops 
+
+ Unidecode: pip install unidecode 
+
+ Pathlib: pip install pathlib 
+
+ Desse modo apos termos nosso ambiente configurado podemos partir para a execução do modelo que pode ser encontrado em opt_10 ,que corresponde a versão com mais otimizações do modelo.Ou atraves do processo de desenvolvimento encontrado em nosso GitPages. 
+ RubyGem 
+ 
+ Por fim esta disponibilizado a gem em Ruby e o repositorio da mesma para utilização do modelo dentro de plataformas web afim de ser integrado a plataforma do Brasil Participativo.Esta disponivel tanto o repositorio da gem quanto sua pagina 
+ 🤖 Funcionalidade 
+ 🛞 Como executar/rodar 
+ - 👩‍🦰 Usuário 
+ 
+ Abra seu terminal e digite o comando para instalar o Certifik8 do Pypi: 
+ 
+ gem install proposal-classifier
+ 
+ Desenvolvedores 
+
+ Alexandre Oliveira 
+
+ João Anacleto 
+
+ Chaydson Ferreira 
+
+ Leandro Silva 
+
+ About 
+
+ Aplicação de Indexação Automática com ML das propostas publicadas no Brasil Participativo
+
+ residenciaticbrisa.github.io/BP-Classificador-de-Propostas/ 
+
+ Topics 
+
+ machine-learning
+
+ python3
+
+ Resources 
+
+ Readme
+
+ Uh oh!
+ 
+ There was an error while loading. Please reload this page . 
+
+ Activity 
+
+ Custom properties 
+
+ Stars 
+
+ 2 
+ stars 
+
+ Watchers 
+
+ 2 
+ watching 
+
+ Forks 
+
+ 2 
+ forks 
+
+ Report repository
+
+ Releases 
+
+ 5 
+ tags 
+
+ Packages
+ 0 
+
+ Uh oh!
+ 
+ There was an error while loading. Please reload this page . 
+
+ Uh oh!
+ 
+ There was an error while loading. Please reload this page . 
+
+ Contributors 
+
+ Uh oh!
+ 
+ There was an error while loading. Please reload this page . 
+
+ Languages 
+
+ Jupyter Notebook 
+ 87.9% 
+
+ HTML 
+ 11.8% 
+
+ Other 
+ 0.3% 
+
+ Footer 
+
+ &copy; 2026 GitHub, Inc.
+
+ Footer navigation 
+
+ Terms 
+
+ Privacy 
+
+ Security 
+
+ Status 
+
+ Community 
+
+ Docs 
+
+ Contact 
+
+ Manage cookies
+
+ Do not share my personal information
+
+ You can’t perform that action at this time.

@@ -1,0 +1,14 @@
+{
+  "candidato_id": "CO-isidatainsights-reto-de-ciudad-datos-con",
+  "pais": "CO",
+  "nombre": "ISIDataInsights / Reto de Ciudad 'Datos con Historia' (SDP Bogotá)",
+  "fecha": "2026-06-05",
+  "fuentes": [
+    {
+      "n": 1,
+      "url": "https://www.sdp.gov.co/noticias/bogota-cuenta-nueva-solucion-optimizar-analisis-de-informacion-cualitativa-basada-ciencia-tecnologia",
+      "estado": "ERROR (HTTPError: HTTP Error 403: Forbidden)",
+      "chars": 0
+    }
+  ]
+}

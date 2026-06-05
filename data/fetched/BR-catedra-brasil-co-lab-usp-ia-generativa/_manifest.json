@@ -1,0 +1,14 @@
+{
+  "candidato_id": "BR-catedra-brasil-co-lab-usp-ia-generativa",
+  "pais": "BR",
+  "nombre": "Cátedra Brasil / Co:Lab USP - IA generativa en presupuesto participativo (SP)",
+  "fecha": "2026-06-05",
+  "fuentes": [
+    {
+      "n": 1,
+      "url": "https://colab.each.usp.br/blog/2025/03/28/a-ia-generativa-e-o-futuro-da-participacao-cidada-pesquisas-em-andamento/",
+      "estado": "ERROR (HTTPError: HTTP Error 403: Forbidden)",
+      "chars": 0
+    }
+  ]
+}

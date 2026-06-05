@@ -1,0 +1,5 @@
+===== FUENTE 1 =====
+URL: https://www.undp.org/es/colombia/blog/analitica-de-datos-para-mejorar-la-deliberacion-publica-en-colombia
+FETCH: 2026-06-05
+ESTADO: ERROR (HTTPError: HTTP Error 403: Forbidden)
+

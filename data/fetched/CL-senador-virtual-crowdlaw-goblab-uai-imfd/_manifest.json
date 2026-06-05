@@ -1,0 +1,14 @@
+{
+  "candidato_id": "CL-senador-virtual-crowdlaw-goblab-uai-imfd",
+  "pais": "CL",
+  "nombre": "Senador Virtual / CrowdLaw (GobLab UAI + IMFD)",
+  "fecha": "2026-06-05",
+  "fuentes": [
+    {
+      "n": 1,
+      "url": "https://goblab.uai.cl/en/espanol-sistematizando-la-participacion-ciudadana/",
+      "estado": "ERROR (HTTPError: HTTP Error 403: Forbidden)",
+      "chars": 0
+    }
+  ]
+}

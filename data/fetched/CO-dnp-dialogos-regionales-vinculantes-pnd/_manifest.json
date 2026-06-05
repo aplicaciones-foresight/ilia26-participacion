@@ -1,0 +1,14 @@
+{
+  "candidato_id": "CO-dnp-dialogos-regionales-vinculantes-pnd",
+  "pais": "CO",
+  "nombre": "DNP - Diálogos Regionales Vinculantes (PND 2022-2026)",
+  "fecha": "2026-06-05",
+  "fuentes": [
+    {
+      "n": 1,
+      "url": "https://dialogosregionales.dnp.gov.co/",
+      "estado": "ERROR (HTTPError: HTTP Error 403: Forbidden)",
+      "chars": 0
+    }
+  ]
+}

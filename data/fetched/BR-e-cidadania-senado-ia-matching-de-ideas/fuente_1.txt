@@ -1,0 +1,5 @@
+===== FUENTE 1 =====
+URL: https://www12.senado.leg.br/noticias/materias/2026/01/16/cidadaos-ajudam-a-escrever-projetos-de-lei-com-ferramenta-de-inteligencia-artificial
+FETCH: 2026-06-05
+ESTADO: ERROR (HTTPError: HTTP Error 403: Forbidden)
+

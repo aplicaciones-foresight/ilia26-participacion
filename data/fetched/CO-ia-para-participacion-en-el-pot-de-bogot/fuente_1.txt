@@ -1,0 +1,5 @@
+===== FUENTE 1 =====
+URL: https://controlvisible.auditoria.gov.co/index.php/rcf/article/view/63
+FETCH: 2026-06-05
+ESTADO: ERROR (HTTPError: HTTP Error 403: Forbidden)
+

@@ -1,0 +1,5 @@
+===== FUENTE 1 =====
+URL: https://colab.each.usp.br/blog/2025/03/28/a-ia-generativa-e-o-futuro-da-participacao-cidada-pesquisas-em-andamento/
+FETCH: 2026-06-05
+ESTADO: ERROR (HTTPError: HTTP Error 403: Forbidden)
+
