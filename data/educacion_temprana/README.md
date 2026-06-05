@@ -102,7 +102,7 @@ data/educacion_temprana/
 ├── informe.md           informe por país + tabla comparativa + limitaciones
 ├── puntajes.csv         pais, categoria, puntaje, nivel_evaluado, confianza, resumen
 ├── evidencias/          evidencia estructurada por país (TIC/IA, cita, traducción, URL)
-│   └── evidencias.csv
+│   └── evidencias.json
 └── fuentes/
     ├── MANIFEST.md       inventario + "shopping list" de descargas manuales pendientes
     ├── PT/  ES/  EE/  DE/  SG/   (copias de documentos oficiales que aporte el operador)
