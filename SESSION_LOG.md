@@ -57,30 +57,34 @@ y no eco del prompt.
 
 ## 5. Fase 1 — descubrimiento (baseline + pasada web en vivo)
 
-Corrida del baseline (canal A.0) **más descubrimiento web en vivo** en tres
-oleadas con ~22 investigadores paralelos: (1) 6 regionales + 5 temáticos
+Corrida del baseline (canal A.0) **más descubrimiento web en vivo** en cuatro
+oleadas con ~27 investigadores paralelos: (1) 6 regionales + 5 temáticos
 transversales; (2) piloto ampliado AR/BR/CL; (3) método ampliado en los 15 países
-con 0-1 caso. Detalle en `data/gates/descubrimiento_web.md`,
-`piloto_busqueda_ampliada.md` y `descubrimiento_paises_flacos.md`.
+con 0-1 caso; (4) método ampliado profundo en los densos CO/MX/BR/CL/CR. Detalle
+en `descubrimiento_web.md`, `piloto_busqueda_ampliada.md`,
+`descubrimiento_paises_flacos.md` y `descubrimiento_densos.md`.
 
-- `candidatos.csv`: **92 filas, cobertura 20/20** — 28 activos del baseline + 49
-  excluidos a re-verificar + **13 candidatos nuevos/dudosos de la web** + 2
+- `candidatos.csv`: **97 filas, cobertura 20/20** — 28 activos del baseline + 49
+  excluidos a re-verificar + **18 candidatos nuevos/dudosos de la web** + 2
   placeholders (solo **JM, SV** sin ninguna señal).
 - **Directorio de medios A.10**: `data/baseline/directorio_medios.csv` — **60
   medios, 20/20 países** (Anexo B parcial; A.10 ya operable). A.11 (instituciones)
   sigue pendiente del Anexo B.
-- **13 candidatos NUEVOS** (8 sólidos + 5 dudosos): MX Guanajuato Inteligente;
-  CO Citibeats+PNUD; BR Brasil Participativo (BERTopic), e-Cidadania matching,
-  São Paulo Participe Mais (Gemini), 5ª CNCTI; PA Mansa Idea; CL LXS 400;
-  + dudosos BR OPA Piauí, BR Cátedra Brasil (USP), TT EngageTT, VE Plan de la
-  Patria, **CU Código de las Familias** (CU pasó de 0 a 1).
-- **12 reverificaciones** del baseline (fusionadas `canal_origen="A.0; A.x"`,
+- **18 candidatos NUEVOS** (10 sólidos + 8 dudosos): MX Guanajuato; CO Citibeats+
+  PNUD; **CO ISIDataInsights (SDP Bogotá)**; BR Brasil Participativo (con evidencia
+  de producción), e-Cidadania matching, São Paulo Participe Mais, 5ª CNCTI;
+  PA Mansa Idea; CL LXS 400; **CL El Chile que Queremos (MinCiencia)**; + dudosos
+  BR OPA Piauí, BR Cátedra Brasil, TT EngageTT, VE Plan de la Patria, CU Código de
+  las Familias, CO POT Bogotá, CO DNP Diálogos Regionales, CL Senador Virtual.
+- **13 reverificaciones** del baseline (fusionadas `canal_origen="A.0; A.x"`,
   `flag_canal_unico=0`), incl. **PE/PEN 2036 verificado con fuente primaria
-  (IBM Watson)** y **EC/PAGA IA con duda de elegibilidad** marcada para Fase 2.
+  (IBM Watson)**, **CL/Cabildos 2016 con evidencia NLP** y **EC/PAGA IA con duda
+  de elegibilidad** para Fase 2.
 - Canales ampliados **A.12 (licitaciones), A.13 (premios), A.14 (proveedores)** +
   diccionario de términos codificados en `config.yaml`. `search_frame.csv`: 300 celdas.
-- Vacíos confirmados (0 riguroso): **AR, UY, PY, SV, JM**. No se hallaron
-  despliegues de Pol.is/Talk to the City/Remesh en la región.
+- Vacíos confirmados (0 riguroso): **AR, UY, PY, SV, JM**. Concentración real de
+  casos en **BR, CO, CL** (+ MX). No se hallaron despliegues de Pol.is/Talk to the
+  City/Remesh en la región.
 
 ## 6. Motor 2026 sobre la base recodificada (BORRADOR) — Fases 4-5
 

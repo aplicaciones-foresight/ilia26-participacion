@@ -8,8 +8,8 @@
 
 - Candidatos del baseline activo 2025 (canal A.0): **28**
 - Casos excluidos 2025 a re-verificar (canal A.0-excluidos): **49**
-- Candidatos NUEVOS de descubrimiento web (canales A.1–A.10): **13**
-- Candidatos marcados de canal único (`flag_canal_unico=1`): **78**
+- Candidatos NUEVOS de descubrimiento web (canales A.1–A.10): **18**
+- Candidatos marcados de canal único (`flag_canal_unico=1`): **82**
 - Cobertura: **20/20** países representados en candidatos.csv
 
 ## 2. Candidatos NUEVOS (descubrimiento web) por país
@@ -17,13 +17,18 @@
 | País | Candidato | Canal(es) | Fuente/nota | Tipo |
 |---|---|---|---|---|
 | BR | 5a Conferencia Nacional de CT&I - sistematizacio | A.5 | fuente=institucional | nuevo |
-| BR | Brasil Participativo - clustering semantico (BER | A.4 | fuente=academico; confirmar adopción oficial v | nuevo |
+| BR | Brasil Participativo - clustering semantico (BER | A.4 | fuente=academico; EVIDENCIA DE PRODUCCIÓN: pap | nuevo |
 | BR | Cátedra Brasil / Co:Lab USP - IA generativa en p | A.4 | fuente=academico; piloto búsqueda ampliada; in | dudoso |
 | BR | OPA Piaui - Presupuesto Participativo Digital (C | A.5 | fuente=prensa; confirmar rol de IA sobre conte | dudoso |
 | BR | Sao Paulo - Programa de Metas / Participe Mais ( | A.6 | fuente=institucional; verificar uso operaciona | nuevo |
 | BR | e-Cidadania Senado - IA matching de ideas legisl | A.5 | fuente=institucional; confirmado por IPU; dist | nuevo |
+| CL | El Chile que Queremos (ECQQ) - MinCiencia | A.5 | fuente=registro; evidencia fuerte (código públ | nuevo |
 | CL | LXS 400 - Chile Delibera | A.3 | fuente=institucional; 2021; nuevo para el índi | nuevo |
+| CL | Senador Virtual / CrowdLaw (GobLab UAI + IMFD) | A.4 | fuente=academico; investigación; confirmar apl | dudoso |
 | CO | Citibeats + PNUD Colombia (deliberación pública  | A.9 | fuente=institucional; confirmar si es proceso  | nuevo |
+| CO | DNP - Diálogos Regionales Vinculantes (PND 2022- | A.5 | fuente=institucional; confirmar si la sistemat | dudoso |
+| CO | IA para participación en el POT de Bogotá (Contr | A.4 | fuente=academico; ¿piloto implementado o propu | dudoso |
+| CO | ISIDataInsights / Reto de Ciudad 'Datos con Hist | A.5 | fuente=institucional; verificar integración op | nuevo |
 | CU | Consulta Popular Código de las Familias (GEMA-CE | A.4 | fuente=prensa; 2022; verificar si 'análisis in | dudoso |
 | MX | Guanajuato Inteligente 2024-2030 | A.5 | fuente=prensa; verificar software de IA especí | nuevo |
 | PA | Mansa Idea (Pacto del Bicentenario) | A.8 | fuente=prensa; proceso (Pacto del Bicentenario | nuevo |
