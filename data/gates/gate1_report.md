@@ -1,6 +1,6 @@
 # Gate 1 — Reporte de Triage (Fase 1: Descubrimiento)
 
-**Fecha de corrida:** 2026-06-04  ·  **Pipeline ILIA 2026 — Participación Ciudadana**
+**Fecha de corrida:** 2026-06-05  ·  **Pipeline ILIA 2026 — Participación Ciudadana**
 
 > El Gate 1 es HUMANO. Este reporte prepara insumos; no autoaprueba candidatos. El operador decide qué pasa a Fase 2 (extracción).
 
@@ -8,8 +8,8 @@
 
 - Candidatos del baseline activo 2025 (canal A.0): **28**
 - Casos excluidos 2025 a re-verificar (canal A.0-excluidos): **49**
-- Candidatos NUEVOS de descubrimiento web (canales A.1–A.10): **11**
-- Candidatos marcados de canal único (`flag_canal_unico=1`): **77**
+- Candidatos NUEVOS de descubrimiento web (canales A.1–A.10): **12**
+- Candidatos marcados de canal único (`flag_canal_unico=1`): **78**
 - Cobertura: **20/20** países representados en candidatos.csv
 
 ## 2. Candidatos NUEVOS (descubrimiento web) por país
@@ -18,6 +18,7 @@
 |---|---|---|---|---|
 | BR | 5a Conferencia Nacional de CT&I - sistematizacio | A.5 | fuente=institucional | nuevo |
 | BR | Brasil Participativo - clustering semantico (BER | A.4 | fuente=academico; confirmar adopción oficial v | nuevo |
+| BR | Cátedra Brasil / Co:Lab USP - IA generativa en p | A.4 | fuente=academico; piloto búsqueda ampliada; in | dudoso |
 | BR | OPA Piaui - Presupuesto Participativo Digital (C | A.5 | fuente=prensa; confirmar rol de IA sobre conte | dudoso |
 | BR | Sao Paulo - Programa de Metas / Participe Mais ( | A.6 | fuente=institucional; verificar uso operaciona | nuevo |
 | BR | e-Cidadania Senado - IA matching de ideas legisl | A.5 | fuente=institucional; confirmado por IPU; dist | nuevo |
@@ -64,7 +65,7 @@ Todos los casos del baseline activo entran como `a_reverificar`: en esta corrida
 ## 6. Estado de canales (frame de búsqueda)
 
 - Canal A.0 (baseline): **ejecutado**.
-- Canales operables sin Anexo B, **pendientes de fetch**: 200 celdas país×canal (A.1–A.9).
+- Canales operables sin Anexo B, **pendientes de fetch**: 260 celdas país×canal (A.1–A.9).
 - Canales **bloqueados por falta de Anexo B** (A.10/A.11): 20 celdas. Pedir Anexo B al operador.
 
 Detalle por canal (celdas en el frame):
@@ -83,6 +84,9 @@ Detalle por canal (celdas en el frame):
 | A.9 | Organismos multilaterales (PNUD, UNICEF, CEPAL...) | pendiente_fetch | 20 |
 | A.10 | Medios por país (2-3 c/u) — señal, no evidencia | pendiente_fetch | 20 |
 | A.11 | Instituciones de participación por país | bloqueado_anexo_b | 20 |
+| A.12 | Compras/licitaciones públicas (SECOP, ComprasNet, COMPR.AR, Mercado Público) | pendiente_fetch | 20 |
+| A.13 | Premios e innovación pública (Gobernarte-BID, OGP Awards, CLAD, labs) | pendiente_fetch | 20 |
+| A.14 | Proveedores/herramientas (Citibeats, Go Vocal, Pol.is, Remesh, Decidim-IA…) | pendiente_fetch | 20 |
 
 ## 7. Decisiones que requieren al operador
 

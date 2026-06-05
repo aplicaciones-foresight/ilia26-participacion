@@ -161,6 +161,21 @@ descubrimiento:
     - { id: A.9,  nombre: "Organismos multilaterales (PNUD, UNICEF, CEPAL...)", operable: true,  requiere_anexo_b: false }
     - { id: A.10, nombre: "Medios por país (2-3 c/u) — señal, no evidencia",    operable: true,  requiere_anexo_b: false }
     - { id: A.11, nombre: "Instituciones de participación por país",            operable: false, requiere_anexo_b: true }
+    # Canales AMPLIADOS (incorporados tras el piloto de búsqueda ampliada AR/BR/CL).
+    - { id: A.12, nombre: "Compras/licitaciones públicas (SECOP, ComprasNet, COMPR.AR, Mercado Público)", operable: true, requiere_anexo_b: false }
+    - { id: A.13, nombre: "Premios e innovación pública (Gobernarte-BID, OGP Awards, CLAD, labs)",          operable: true, requiere_anexo_b: false }
+    - { id: A.14, nombre: "Proveedores/herramientas (Citibeats, Go Vocal, Pol.is, Remesh, Decidim-IA…)",     operable: true, requiere_anexo_b: false }
+  # Términos de búsqueda ampliados (cruzar participación × técnica, ES/PT/EN).
+  terminos:
+    participacion: ["consulta pública", "audiencia pública", "presupuesto participativo",
+                    "orçamento participativo", "plan de desarrollo", "ordenamiento territorial",
+                    "plano diretor", "PLADECO", "estrategia regional de desarrollo", "cabildo",
+                    "mesa de diálogo", "iniciativa popular", "consulta popular", "conferência nacional",
+                    "sistematización de aportes", "sistematização de contribuições", "escucha activa"]
+    tecnica: ["inteligencia artificial", "procesamiento de lenguaje natural", "NLP", "PLN",
+              "minería de texto", "análisis de sentimiento", "modelado de tópicos", "topic modeling",
+              "clustering", "embeddings", "LLM", "IA generativa",
+              "análisis automático de comentarios", "categorización automática"]
   # Instituciones A.11 verificadas 2026 disponibles SIN Anexo B (§7 notas).
   instituciones_conocidas:
     - { pais: MX, nombre: "ATDT (Agencia de Transformación Digital y Telecom.)", nota: "verificada 2026" }

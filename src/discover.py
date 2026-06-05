@@ -115,6 +115,9 @@ SEED_TEMPLATES = {
     "A.9":  "(PNUD OR UNICEF OR CEPAL OR BID) {pais_nombre} participación ciudadana inteligencia artificial",
     "A.10": "[ANEXO B] medios {pais_nombre}: IA + participación ciudadana / consulta",
     "A.11": "[ANEXO B] institución de participación {pais_nombre}: uso de IA en procesos",
+    "A.12": "compras públicas {pais_nombre}: licitación \"análisis de comentarios/aportes con IA o NLP\"",
+    "A.13": "premios de innovación {pais_nombre}: Gobernarte-BID / OGP Awards / CLAD — IA + participación",
+    "A.14": "[proveedor] despliegues en {pais_nombre}: Citibeats / Go Vocal / Pol.is / Remesh / Decidim-IA / govtech local",
 }
 
 NOMBRE_PAIS = {
