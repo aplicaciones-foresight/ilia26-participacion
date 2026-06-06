@@ -50,6 +50,10 @@ la categoría se apoya **enteramente en la revisión de sus currículos nacional
   estrategia/plan/piloto no curricular (eso último ⇒ "propuesta").
 - **Calibración LatAm 2025** (referencia de coherencia): categoría 5 = Brasil, Chile,
   Costa Rica, Ecuador, Rep. Dominicana, Uruguay; el resto, categoría 4.
+- **Decisión de umbral (2026-06-05): regla INCLUSIVA** — la IA presente en *cualquier*
+  asignatura del currículo nacional vigente, **incluidas las electivas**, cuenta como «IA
+  implementada» (cat. 5). Bajo esta regla, **EE y SG = 5**. (Reglas más estrictas —cursado
+  universal o contenido sustantivo— devolverían EE y SG a 4; se aplica por igual a los cinco.)
 
 ### Términos de búsqueda por idioma (para IA explícita)
 - ES: «inteligencia artificial», «IA»

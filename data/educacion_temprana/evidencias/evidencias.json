@@ -2,6 +2,7 @@
   "meta": {
     "descripcion": "Evidencia estructurada del subindicador (b) 'Educación temprana en IA' para 5 países benchmark. Citas decisivas pendientes de verificación verbatim (subcadena exacta) contra el documento primario; ver fuentes/MANIFEST.md.",
     "fecha_consulta": "2026-06-05",
+    "decision_metodologica": "Regla inclusiva (2026-06-05): IA en cualquier asignatura del currículo nacional vigente, incl. electivas, cuenta como 'implementada' (cat. 5). Bajo esta regla EE=5 y SG=5; PT=4 (su IA no está vigente).",
     "metodo": "WebSearch (entorno bloquea descarga directa; ver README.md). fuente_tipo: oficial_primario = texto del boletin/decreto/curriculo; portal_oficial = portal del ministerio/organismo; secundario = prensa/portal docente/agregador.",
     "campos": ["pais","iso2","nivel","ambito","tipo","estado","cita_o_snippet","idioma","traduccion","fuente_url","fuente_tipo","verificacion"]
   },
