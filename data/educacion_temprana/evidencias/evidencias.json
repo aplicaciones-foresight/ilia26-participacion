@@ -101,6 +101,30 @@
       "idioma": "en", "traduccion": "los estudiantes desarrollarán conocimiento fundamental de IA a través de programas de codificación, el currículo de Ciencias y mediante el uso facilitado de IA en sus trabajos",
       "fuente_url": "https://www.moe.gov.sg/news/parliamentary-replies/20230109-artificial-intelligence",
       "fuente_tipo": "portal_oficial", "verificacion": "pendiente_verbatim", "nota": "IA vía programas y uso instrumental, NO un syllabus obligatorio de IA: 'no_curricular'."
+    },
+    {
+      "pais": "Portugal", "iso2": "PT", "nivel": "ensino secundário (12.º)",
+      "ambito": "AE Aplicações Informáticas B (vigente) — dominios", "tipo": "TIC", "estado": "implementado",
+      "cita_o_snippet": "The Essential Learnings are organized in two domains: D1 (Algorithmics and Programming) and D2 (Multimedia).",
+      "idioma": "en", "traduccion": "Las Aprendizagens Essenciais se organizan en dos dominios: D1 (Algoritmia y Programación) y D2 (Multimedia).",
+      "fuente_url": "https://curriculonacional.dge.mec.pt/organizacao-curricular/aplicacoes-informaticas-b",
+      "fuente_tipo": "portal_oficial", "verificacion": "websearch_2026-06-05", "nota": "Currículo vigente SIN IA; la IA entra solo en la revisión con nueva versión a consulta en 2027. Confirma PT=4 firme."
+    },
+    {
+      "pais": "Estonia", "iso2": "EE", "nivel": "gümnaasium / põhikool (electivo)",
+      "ambito": "Informaatika (valikõppeaine/electiva) + AI Leap (en desarrollo)", "tipo": "IA", "estado": "electivo/en_desarrollo",
+      "cita_o_snippet": "AI concepts, examples, applications and associated risks are covered in elective informatics courses; the AI Leap upper-secondary curriculum is being defined by working groups (2025).",
+      "idioma": "en", "traduccion": "Conceptos de IA, ejemplos, aplicaciones y riesgos asociados se tratan en cursos electivos de informática; el currículo de AI Leap para secundaria superior lo están definiendo grupos de trabajo (2025).",
+      "fuente_url": "https://www.riigiteataja.ee/aktilisa/1080/3202/3005/18m_pohi_lisa10.pdf",
+      "fuente_tipo": "oficial_primario", "verificacion": "websearch_2026-06-05", "nota": "BORDERLINE 4/5: IA en asignatura ELECTIVA, no obligatoria; currículo AI Leap aún no implementado. El verbatim del anexo de Informaatika mediría la sustantividad."
+    },
+    {
+      "pais": "Singapur", "iso2": "SG", "nivel": "Secondary (electivo 7155)",
+      "ambito": "Computing 7155 — machine learning (examinable)", "tipo": "IA", "estado": "electivo_subtema",
+      "cita_o_snippet": "explain how a machine learning system will be different from traditional programming",
+      "idioma": "en", "traduccion": "explica en qué se diferenciará un sistema de aprendizaje automático de la programación tradicional",
+      "fuente_url": "https://www.seab.gov.sg/files/O%20Lvl%20Syllabus%20Sch%20Cddts/2025/7155_y25_sp_1.pdf",
+      "fuente_tipo": "oficial_primario", "verificacion": "websearch_2026-06-05", "nota": "BORDERLINE 4/5: ML examinable en el 7155 ELECTIVO pero como subtema (los 4 módulos no incluyen un bloque de IA). El verbatim del 7155 mediría la sustantividad."
     }
   ]
 }

@@ -261,6 +261,46 @@ currículo**. Aplicado a los 5 benchmark:
 El riesgo de sobrepuntuar por reputación (Estonia, Singapur) se ha evitado exigiendo IA en el
 **currículo obligatorio vigente**, no en su ecosistema de innovación.
 
+## Verificación adicional (WebSearch, 2026-06-05) — robustez de los «4»
+
+Búsqueda dirigida a descartar un «5 oculto» en PT, EE y SG. Resultado: **Portugal queda
+firmemente en 4; Estonia y Singapur son 4 pero BORDERLINE 4/5**, por un mismo motivo (IA
+dentro de una asignatura **electiva** del currículo nacional).
+
+- **Portugal — 4 firme (confianza ↑ alta).** Las *Aprendizagens Essenciais* vigentes de
+  *Aplicações Informáticas B* (12.º) constan de dos dominios: **D1 (Algoritmia e Programação)**
+  y **D2 (Multimédia)** — **sin IA**. La IA solo entra por la revisión del MECI, con nueva
+  versión a consulta en **2027**: no vigente ⇒ no computa.
+- **Estonia — 4, borderline.** La competencia digital transversal es obligatoria (TIC
+  implementado). La IA aparece como «conceptos, ejemplos, aplicaciones y riesgos» **dentro de la
+  asignatura ELECTIVA de Informaatika** y en *AI Leap*, cuyo **currículo de secundaria superior
+  aún se está definiendo** (grupos de trabajo 2025; no implementado). Bajo «solo currículo
+  obligatorio» ⇒ 4; bajo «cualquier asignatura del currículo nacional, incl. electivas» ⇒ 5.
+- **Singapur — 4, borderline.** *Machine learning* **sí** se menciona y es examinable en el
+  syllabus **electivo** Computing 7155 (specimen paper: «explain how a machine learning system
+  will be different from traditional programming»), pero **no como módulo propio**: los cuatro
+  módulos son *Data and Information, Systems and Communications, Abstraction and Algorithms,
+  Programming*. Parece **subtema menor de concienciación**, no un bloque de IA. Bajo «solo
+  obligatorio» o «contenido sustantivo» ⇒ 4; bajo lectura generosa de electivas ⇒ 5.
+
+### Decisión metodológica que falta fijar (afecta a EE, SG y la consistencia de ES, DE)
+
+El factor que decide EE y SG —y que debe aplicarse igual a los «5» de ES y DE para que el
+benchmark sea coherente— es **qué umbral de “implementado” se exige**:
+
+| Regla | EE | SG | Efecto en ES/DE |
+|---|---|---|---|
+| (i) IA en cualquier asignatura del currículo nacional (incl. electivas) | → 5 | → 5 | refuerza 5 |
+| (ii) IA en asignatura de cursado universal / casi-universal | 4 | 4 | ES sólido (Tec. y Digit. ESO «obligatoria de oferta»); DE depende del % de Länder |
+| (iii) IA en contenido **sustantivo** (no mención incidental) | 4 | 4 (ML es subtema) | ES/DE = 5 si el bloque IA/KI es sustantivo |
+
+**Recomendación:** fijar la regla **igual que como SITEAL codificó a América Latina** (para que
+los 5 países sean comparables con la calibración LatAm) y aplicarla a los cinco por igual. Con
+la regla (ii)/(iii) —la más discriminante, la que produce el *spread* observado en LatAm— el
+cuadro **ES=5, DE=5, PT/EE/SG=4** se mantiene. Con la regla (i), **EE y SG subirían a 5**. Para
+medir la **sustantividad** (regla iii) hace falta el verbatim de los syllabi electivos: 7155
+(SG) y el anexo de Informaatika del gümnaasium (EE).
+
 ## Limitaciones y próximos pasos (cierre verbatim)
 
 1. **Citas no verbatim aún.** Varias evidencias son *snippets* de buscador o de portales
