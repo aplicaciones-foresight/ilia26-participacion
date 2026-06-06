@@ -1,0 +1,18 @@
+{
+  "subindicador": "b — Educación temprana en IA",
+  "fuente_indice": "ILIA 2025 (CEPAL/CENIA)",
+  "nivel_evaluado": "secundaria",
+  "regla_umbral": "inclusiva (IA en cualquier asignatura del currículo nacional vigente, incl. electivas)",
+  "fecha_consulta": "2026-06-05",
+  "fecha_verbatim": "2026-06-06",
+  "mapeo_categoria_puntaje": {"1": 0, "2": 25, "3": 50, "4": 75, "5": 100},
+  "paises": [
+    {"pais": "España",   "iso2": "ES", "categoria": 5, "puntaje": 100, "confianza": "alta", "sustantividad": "sustantivo (saberes/criterios BOE)", "verificacion": "verbatim_ok"},
+    {"pais": "Alemania", "iso2": "DE", "categoria": 5, "puntaje": 100, "confianza": "alta", "sustantividad": "modulo_propio (Bayern Gym 11, 16 h)", "verificacion": "verbatim_ok"},
+    {"pais": "Estonia",  "iso2": "EE", "categoria": 5, "puntaje": 100, "confianza": "alta", "sustantividad": "subtema_en_electiva", "verificacion": "verbatim_ok"},
+    {"pais": "Singapur", "iso2": "SG", "categoria": 5, "puntaje": 100, "confianza": "alta", "sustantividad": "subtema_en_electiva", "verificacion": "verbatim_ok"},
+    {"pais": "Portugal", "iso2": "PT", "categoria": 4, "puntaje": 75,  "confianza": "alta", "sustantividad": "sin_IA_vigente (revision 2027)", "verificacion": "verificado_por_ausencia"}
+  ],
+  "promedio_grupo": {"inclusiva": 95.0, "estricta": 85.0},
+  "sensibilidad": {"regla_estricta_revierte_a_4": ["EE", "SG"], "no_cambian": ["ES", "DE", "PT"]}
+}
