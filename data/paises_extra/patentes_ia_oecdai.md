@@ -23,13 +23,21 @@ manual definida.
 ## Valores (acceso automático bloqueado: oecd.ai, OWID, cat.eto.tech, Zenodo → 403)
 
 ### (1) Familias de patentes de IA — base: familia, país de PRIMERA PRESENTACIÓN
+> **Verificado por un 2º agente independiente.** Hallazgos:
 | País | Valor | Año | Fuente | Confianza |
 |---|---|---|---|---|
-| Alemania (DE) | **436 concedidas** (applications: no obtenido) | 2024 | Stanford HAI AI Index 2026 (datos CSET) | MEDIA |
-| Singapur (SG) | **661 solicitudes / 297 concedidas** (acumulado) | ~2022 | CSET "Examining Singapore's AI Progress" | MEDIA-BAJA |
-| España (ES) | **NO OBTENIDO** (vive en OWID/cat.eto.tech, 403) | — | — | BAJA |
-| Estonia (EE) | **NO OBTENIDO** (N probablemente pequeño) | — | — | BAJA |
+| Singapur (SG) | **661 solicitudes / 297 concedidas** | ventana 2017-2020 (informe 2023) | CSET "Examining Singapore's AI Progress" | MEDIA (cifra literal, pero antigua) |
+| Alemania (DE) | **~436** (⚠️ dato FRÁGIL) | ambiguo | linaje CSET/WIPO vía Stanford AI Index **2024** (no 2026); Visual Capitalist | **BAJA — NO usar sin reconfirmar** |
+| España (ES) | **NO OBTENIDO** (solo pista: < 57, por debajo de México) | — | — | BAJA |
+| Estonia (EE) | **NO OBTENIDO** | — | — | BAJA |
 | Portugal (PT) | **NO OBTENIDO** | — | — | BAJA |
+
+> ⚠️ **Sobre el "436" de Alemania:** el número circula, pero la verificación detectó
+> conflación: (a) la fuente real es CSET/WIPO recogido por el **AI Index 2024**, no
+> el 2026; (b) la métrica/año son ambiguos (descrito como "2024" y como "acumulado";
+> el ranking acompañante —China 25.177, EE.UU. 17.307— es **incompatible con un solo
+> año**), por lo que **436 es casi seguro un conteo acumulado de familias, no
+> "concedidas en 2024"**. → Extraer el valor correcto de cat.eto.tech (ruta abajo).
 
 ### (2) Aplicantes de patentes de IA  → **NO PUBLICADO** por OECD.AI/CSET (los 5 países). Confianza en "no disponible": ALTA.
 ### (3) Inventores de patentes de IA → **NO PUBLICADO** por OECD.AI/CSET (los 5 países). Confianza en "no disponible": ALTA.
