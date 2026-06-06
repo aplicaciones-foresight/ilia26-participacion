@@ -1,0 +1,128 @@
+{
+  "total": 15,
+  "ok": 15,
+  "fail": 0,
+  "aprobada": true,
+  "items": [
+    {
+      "id": "ES-A1-saberes-C",
+      "archivo": "data/educacion_temprana/fuentes/ES/A1.txt",
+      "ubicacion": "RD 217/2022 (ESO) — Anexo II — «Tecnología y Digitalización» — Saberes básicos · C. Pensamiento computacional, programación y robótica",
+      "cita": "Aplicaciones informáticas sencillas, para ordenador y dispositivos móviles, e introducción a la inteligencia artificial.",
+      "cita_norm_len": 120,
+      "verbatim_ok": true
+    },
+    {
+      "id": "ES-A1-criterio-5.2",
+      "archivo": "data/educacion_temprana/fuentes/ES/A1.txt",
+      "ubicacion": "RD 217/2022 (ESO) — Anexo II — «Tecnología y Digitalización» — Criterios de evaluación · Competencia específica 5",
+      "cita": "5.2 Programar aplicaciones sencillas para distintos dispositivos (ordenadores, dispositivos móviles y otros) empleando los elementos de programación de manera apropiada y aplicando herramientas de edición, así como módulos de inteligencia artificial que añadan funcionalidades a la solución.",
+      "cita_norm_len": 291,
+      "verbatim_ok": true
+    },
+    {
+      "id": "ES-A2-saberes-E",
+      "archivo": "data/educacion_temprana/fuentes/ES/A2.txt",
+      "ubicacion": "RD 243/2022 (Bachillerato) — Anexo II — «Tecnología e Ingeniería II» — Saberes básicos · E. Sistemas informáticos emergentes",
+      "cita": "Inteligencia artificial, big data, bases de datos distribuidas y ciberseguridad.",
+      "cita_norm_len": 80,
+      "verbatim_ok": true
+    },
+    {
+      "id": "ES-A2-criterio-5.1",
+      "archivo": "data/educacion_temprana/fuentes/ES/A2.txt",
+      "ubicacion": "RD 243/2022 (Bachillerato) — Anexo II — «Tecnología e Ingeniería I» — Criterios de evaluación · Competencia específica 5",
+      "cita": "5.1 Controlar el funcionamiento de sistemas tecnológicos y robóticos, utilizando lenguajes de programación informática y aplicando las posibilidades que ofrecen las tecnologías emergentes, tales como inteligencia artificial, internet de las cosas, big data",
+      "cita_norm_len": 256,
+      "verbatim_ok": true
+    },
+    {
+      "id": "DE-A3-lernbereich4-titulo",
+      "archivo": "data/educacion_temprana/fuentes/DE/A3.txt",
+      "ubicacion": "LehrplanPLUS Bayern · Gymnasium · Jhst. 11 · Informatik (NTG) · Lernbereich 4",
+      "cita": "Künstliche Intelligenz (ca. 16 Std.)",
+      "cita_norm_len": 36,
+      "verbatim_ok": true
+    },
+    {
+      "id": "DE-A3-kompetenzerwartung-KI",
+      "archivo": "data/educacion_temprana/fuentes/DE/A3.txt",
+      "ubicacion": "LehrplanPLUS Bayern · Gymnasium · Jhst. 11 · Informatik (NTG) · Lernbereich 4 «Künstliche Intelligenz» · Kompetenzerwartungen",
+      "cita": "diskutieren Ansätze zur Definition des Begriffs Künstliche Intelligenz (KI), beschreiben verschiedene Grundideen von Verfahren der KI (u. a. maschinelles Lernen) sowie ihre Anwendungsbereiche.",
+      "cita_norm_len": 192,
+      "verbatim_ok": true
+    },
+    {
+      "id": "DE-A4b-inhaltsfeld-KI",
+      "archivo": "data/educacion_temprana/fuentes/DE/A4b.txt",
+      "ubicacion": "KLP NRW · Sek I · Klasse 5/6 · Pflichtfach Informatik (Inkrafttreten 2021/22) · Inhaltsfeld",
+      "cita": "Automaten und künstliche Intelligenz",
+      "cita_norm_len": 36,
+      "verbatim_ok": true
+    },
+    {
+      "id": "DE-A4b-schwerpunkte-ML",
+      "archivo": "data/educacion_temprana/fuentes/DE/A4b.txt",
+      "ubicacion": "KLP NRW · Sek I · Klasse 5/6 · Pflichtfach Informatik · Inhaltsfeld «Automaten und künstliche Intelligenz» · Inhaltliche Schwerpunkte",
+      "cita": "Maschinelles Lernen mit Entscheidungsbäumen",
+      "cita_norm_len": 43,
+      "verbatim_ok": true
+    },
+    {
+      "id": "DE-A4b-schwerpunkte-NN",
+      "archivo": "data/educacion_temprana/fuentes/DE/A4b.txt",
+      "ubicacion": "KLP NRW · Sek I · Klasse 5/6 · Pflichtfach Informatik · Inhaltsfeld «Automaten und künstliche Intelligenz» · Inhaltliche Schwerpunkte",
+      "cita": "Maschinelles Lernen mit neuronalen Netzen",
+      "cita_norm_len": 41,
+      "verbatim_ok": true
+    },
+    {
+      "id": "EE-A5-õpitulemus-6",
+      "archivo": "data/educacion_temprana/fuentes/EE/A5.txt",
+      "ubicacion": "Põhikooli riiklik õppekava · Lisa 10 · Valikõppeaine «Informaatika» · III kooliaste · Teema «Infoühiskonna tehnoloogiad» · Õpitulemus 6",
+      "cita": "kirjeldab tehisintellekti ja asjade interneti rakendusviise majanduses, avalikus sektoris, hariduses ja sellega kaasnevaid võimalikke ohtusid",
+      "cita_norm_len": 141,
+      "verbatim_ok": true
+    },
+    {
+      "id": "EE-A5-õppesisu-trendid",
+      "archivo": "data/educacion_temprana/fuentes/EE/A5.txt",
+      "ubicacion": "Põhikooli riiklik õppekava · Lisa 10 · Valikõppeaine «Informaatika» · III kooliaste · Teema «Infoühiskonna tehnoloogiad» · Õppesisu",
+      "cita": "Uued tehnoloogiatrendid: tehisintellekt, ava- ja suurandmed.",
+      "cita_norm_len": 60,
+      "verbatim_ok": true
+    },
+    {
+      "id": "EE-A5-õppesisu-IA-IoT",
+      "archivo": "data/educacion_temprana/fuentes/EE/A5.txt",
+      "ubicacion": "Põhikooli riiklik õppekava · Lisa 10 · Valikõppeaine «Informaatika» · III kooliaste · Teema «Infoühiskonna tehnoloogiad» · Õppesisu",
+      "cita": "Tehisintellekti ja asjade interneti mõisted, näited, rakendused ja seonduvad riskid.",
+      "cita_norm_len": 84,
+      "verbatim_ok": true
+    },
+    {
+      "id": "SG-A6-5.4.1-AI",
+      "archivo": "data/educacion_temprana/fuentes/SG/A6_flow.txt",
+      "ubicacion": "Computing 7155 O-Level Syllabus (SEAB, 2025) · Module 5 «Impact of Computing» · 5.4 Emerging Technologies · Learning outcome 5.4.1",
+      "cita": "Describe Artificial Intelligence (AI) as the ability of a computer to perform complex tasks without constant human guidance and improve its performance as more data is collected.",
+      "cita_norm_len": 178,
+      "verbatim_ok": true
+    },
+    {
+      "id": "SG-A6-5.4.3-ML",
+      "archivo": "data/educacion_temprana/fuentes/SG/A6_flow.txt",
+      "ubicacion": "Computing 7155 O-Level Syllabus (SEAB, 2025) · Module 5 «Impact of Computing» · 5.4 Emerging Technologies · Learning outcome 5.4.3",
+      "cita": "Define Machine Learning (ML) as a technique used in AI and explain the difference between ML and traditional programming.",
+      "cita_norm_len": 121,
+      "verbatim_ok": true
+    },
+    {
+      "id": "SG-A6-modules",
+      "archivo": "data/educacion_temprana/fuentes/SG/A6.txt",
+      "ubicacion": "Computing 7155 O-Level Syllabus (SEAB, 2025) · Syllabus content · cinco módulos (no hay módulo de IA: la IA es subsección 5.4 dentro del Módulo 5 «Impact of Computing»)",
+      "cita": "The syllabus consists of five modules as follows:",
+      "cita_norm_len": 49,
+      "verbatim_ok": true
+    }
+  ]
+}

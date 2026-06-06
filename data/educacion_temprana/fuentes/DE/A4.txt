@@ -1,0 +1,1850 @@
+Kernlehrplan
+für die Sekundarstufe II
+Gymnasium/Gesamtschule
+in Nordrhein-Westfalen
+
+Informatik
+
+ Die Online-Fassung des Kernlehrplans, ein Umsetzungsbeispiel für einen schulinternen Lehr-
+ plan sowie weitere Unterstützungsmaterialien können unter www.lehrplannavigator.nrw.de
+ abgerufen werden.
+              Herausgegeben vom
+Ministerium für Schule und Weiterbildung
+
+      des Landes Nordrhein-Westfalen
+  Völklinger Straße 49, 40221 Düsseldorf
+
+              Telefon 0211-5867-40
+             Telefax 0211-5867-3220
+   poststelle@schulministerium.nrw.de
+
+       www.schulministerium.nrw.de
+                Heftnummer 4725
+
+                  1. Auflage 2014
+Vorwort
+
+        Klare Ergebnisorientierung in Verbindung mit erweiterter Schulautono-
+        mie und konsequenter Rechenschaftslegung begünstigt gute Leistungen.
+        (OECD, 2002)
+
+Vor dem Hintergrund der Ergebnisse internationaler und nationaler Schulleistungsstudi-
+en sowie der mittlerweile durch umfassende Bildungsforschung gestützten Qualitäts-
+diskussion wurde in Nordrhein-Westfalen wie in allen Bundesländern sukzessive ein
+umfassendes System der Standardsetzung und Standardüberprüfung aufgebaut.
+
+   Neben den Instrumenten der Standardüberprüfung wie Vergleichsarbeiten, Zentrale
+Prüfungen am Ende der Klasse 10, Zentralabitur und Qualitätsanalyse beinhaltet dieses
+System als zentrale Steuerungselemente auf der Standardsetzungsseite das Qualitäts-
+tableau sowie kompetenzorientierte Kernlehrpläne, die in Nordrhein-Westfalen die
+Bildungsstandards der Kultusministerkonferenz aufgreifen und konkretisieren.
+
+   Der Grundgedanke dieser Standardsetzung ist es, in kompetenzorientierten Kern-
+lehrplänen die fachlichen Anforderungen als Ergebnisse der schulischen Arbeit klar
+zu definieren. Die curricularen Vorgaben konzentrieren sich dabei auf die fachlichen
+„Kerne“, ohne die didaktisch-methodische Gestaltung der Lernprozesse regeln zu wol-
+len. Die Umsetzung des Kernlehrplans liegt somit in der Gestaltungsfreiheit – und der
+Gestaltungspflicht – der Fachkonferenzen sowie der pädagogischen Verantwortung der
+Lehrerinnen und Lehrer.
+
+   Schulinterne Lehrpläne konkretisieren die Kernlehrplanvorgaben und berücksichtigen
+dabei die konkreten Lernbedingungen in der jeweiligen Schule. Sie sind eine wichtige
+Voraussetzung dafür, dass die Schülerinnen und Schüler die angestrebten Kompetenzen
+erreichen und sich ihnen verbesserte Lebenschancen eröffnen.
+
+   Ich bin mir sicher, dass mit den nun vorliegenden Kernlehrplänen für die gymnasiale
+Oberstufe die konkreten staatlichen Ergebnisvorgaben erreicht und dabei die in der
+Schule nutzbaren Freiräume wahrgenommen werden können. Im Zusammenwirken
+aller Beteiligten sind Erfolge bei der Unterrichts- und Kompetenzentwicklung keine
+Zufallsprodukte, sondern geplantes Ergebnis gemeinsamer Bemühungen.
+
+   Bei dieser anspruchsvollen Umsetzung der curricularen Vorgaben und der Veran-
+kerung der Kompetenzorientierung im Unterricht benötigen Schulen und Lehrkräfte
+Unterstützung. Hierfür werden Begleitmaterialien – z. B. über den „Lehrplannavigator“,
+Vorwort
+
+das Lehrplaninformationssystem des Ministeriums für Schule und Weiterbildung – sowie
+Implementations- und Fortbildungsangebote bereitgestellt.
+
+   Ich bin zuversichtlich, dass wir mit dem vorliegenden Kernlehrplan und den genannten
+Unterstützungsmaßnahmen die kompetenzorientierte Standardsetzung in Nordrhein-
+Westfalen stärken und sichern werden. Ich bedanke mich bei allen, die an der Entwick-
+lung des Kernlehrplans mitgearbeitet haben und an seiner Umsetzung in den Schulen
+des Landes mitwirken.
+
+Sylvia Löhrmann
+Ministerin für Schule und Weiterbildung
+des Landes Nordrhein-Westfalen
+                  Auszug aus dem Amtsblatt des
+         Ministeriums für Schule und Weiterbildung
+
+                 des Landes Nordrhein-Westfalen
+                                 Nr. 10/13
+
+                                            Sekundarstufe II –
+             Gymnasiale Oberstufe des Gymnasiums und der Gesamtschule;
+
+                                       Richtlinien und Lehrpläne
+                                Kernlehrpläne für die MINT-Fächer
+
+                                          RdErl. d. Ministeriums
+                                     für Schule und Weiterbildung
+                                  v. 4. 9. 2013 – 532-6.03.15.06-110656
+
+Für die gymnasiale Oberstufe des Gymnasiums und der Gesamtschule werden hiermit
+Kernlehrpläne für die Fächer Biologie, Chemie, Ernährungslehre, Informatik, Mathema-
+tik, Physik und Technik gemäß § 29 SchulG (BASS 1-1) festgesetzt.
+
+Sie treten zum 1. 8. 2014, beginnend mit der Einführungsphase, aufsteigend in Kraft.
+
+Die Richtlinien für die gymnasiale Oberstufe des Gymnasiums und der Gesamtschule
+gelten unverändert fort.
+
+Die Veröffentlichung der Kernlehrpläne erfolgt in der Schriftenreihe „Schule in NRW“:
+
+Heft 4722 Kernlehrplan Biologie
+Heft 4723 Kernlehrplan Chemie
+Heft 4724 Kernlehrplan Ernährungslehre
+Heft 4725 Kernlehrplan Informatik
+Heft 4720 Kernlehrplan Mathematik
+Heft 4721 Kernlehrplan Physik
+Heft 4726 Kernlehrplan Technik
+
+Die übersandten Hefte sind in die Schulbibliothek einzustellen und dort auch für die
+Mitwirkungsberechtigten zur Einsichtnahme bzw. zur Ausleihe verfügbar zu halten.
+
+Zum 31. 7. 2014 treten die nachfolgend genannten Unterrichtsvorgaben, beginnend mit
+der Einführungsphase, auslaufend außer Kraft:
+
+     • Lehrplan Biologie, RdErl. vom 3. 3. 1999 (BASS 15 – 31 Nr. 22)
+
+     • Lehrplan Chemie, RdErl. vom 3. 3. 1999 (BASS 15 – 31 Nr. 23)
+Runderlass
+
+     • Lehrplan Ernährungslehre, RdErl. vom 3. 3. 1999 (BASS 15 – 31 Nr. 24)
+     • Lehrplan Informatik, RdErl. vom 3. 3. 1999 (BASS 15 – 31 Nr. 25)
+     • Lehrplan Mathematik, RdErl. vom 3. 3. 1999 (BASS 15 – 31 Nr. 20)
+     • Lehrplan Physik, RdErl. vom 3. 3. 1999 (BASS 15 – 31 Nr. 21)
+     • Lehrplan Technik, RdErl. vom 3. 3. 1999 (BASS 15 – 31 Nr. 26)
+Inhalt
+
+Vorbemerkungen: Kernlehrpläne als kompetenzorientierte Unterrichtsvorgaben 9
+
+1 Aufgaben und Ziele des Faches                                          11
+
+2 Kompetenzbereiche, Inhaltsfelder und Kompetenzerwartungen              14
+
+2.1 Kompetenzbereiche und Inhaltsfelder des Faches . . . . . . . . . . . . . 15
+
+2.2 Kompetenzerwartungen und inhaltliche Schwerpunkte bis zum Ende der
+
+        Einführungsphase . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+
+2.3 Kompetenzerwartungen und inhaltliche Schwerpunkte bis zum Ende der
+
+        Qualifikationsphase . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+
+        2.3.1 Grundkurs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
+
+        2.3.2 Leistungskurs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+
+3 Lernerfolgsüberprüfung und Leistungsbewertung                          40
+
+4 Abiturprüfung                                                          44
+
+5 Anhang – Progressionstabelle zu den übergeordneten Kompetenzerwartun-
+
+gen                                                                      48
+Vorbemerkungen: Kernlehrpläne als
+kompetenzorientierte Unterrichtsvorgaben
+
+Kompetenzorientierte Kernlehrpläne sind ein zentrales Element in einem umfassenden
+Gesamtkonzept für die Entwicklung und Sicherung der Qualität schulischer Arbeit.
+Sie bieten allen an Schule Beteiligten Orientierungen darüber, welche Kompetenzen
+zu bestimmten Zeitpunkten im Bildungsgang verbindlich erreicht werden sollen, und
+bilden darüber hinaus einen Rahmen für die Reflexion und Beurteilung der erreichten
+Ergebnisse. Kompetenzorientierte Kernlehrpläne
+
+     • sind curriculare Vorgaben, bei denen die erwarteten Lernergebnisse im Mittel-
+        punkt stehen,
+
+     • beschreiben die erwarteten Lernergebnisse in Form von fachbezogenen Kompe-
+        tenzen, die fachdidaktisch begründeten Kompetenzbereichen sowie Inhaltsfeldern
+        zugeordnet sind,
+
+     • zeigen, in welchen Stufungen diese Kompetenzen im Unterricht in der Sekundar-
+        stufe II erreicht werden können, indem sie die erwarteten Kompetenzen bis zum
+        Ende der Einführungs- und der Qualifikationsphase näher beschreiben,
+
+     • beschränken sich dabei auf zentrale kognitive Prozesse sowie die mit ihnen ver-
+        bundenen Gegenstände, die für den weiteren Bildungsweg unverzichtbar sind,
+
+     • bestimmen durch die Ausweisung von verbindlichen Erwartungen die Bezugspunk-
+        te für die Überprüfung der Lernergebnisse und Leistungsstände in der schulischen
+        Leistungsbewertung und
+
+     • schaffen so die Voraussetzungen, um definierte Anspruchsniveaus an der Einzel-
+        schule sowie im Land zu sichern.
+
+Indem sich Kernlehrpläne dieser Generation auf die zentralen fachlichen Kompetenzen
+beschränken, geben sie den Schulen die Möglichkeit, sich auf diese zu konzentrieren
+und ihre Beherrschung zu sichern. Die Schulen können dabei entstehende Freiräume
+zur Vertiefung und Erweiterung der aufgeführten Kompetenzen und damit zu einer
+schulbezogenen Schwerpunktsetzung nutzen. Die im Kernlehrplan vorgenommene
+Fokussierung auf rein fachliche und überprüfbare Kompetenzen bedeutet in diesem
+
+                                                                                                                9
+Kernlehrpläne als kompetenzorientierte Unterrichtsvorgaben
+Zusammenhang ausdrücklich nicht, dass fachübergreifende und ggf. weniger gut zu
+beobachtende Kompetenzen – insbesondere im Bereich der Personal- und Sozialkom-
+petenzen – an Bedeutung verlieren bzw. deren Entwicklung nicht mehr zum Bildungs-
+und Erziehungsauftrag der Schule gehört. Aussagen hierzu sind jedoch aufgrund ihrer
+überfachlichen Bedeutung außerhalb fachbezogener Kernlehrpläne zu treffen.
+
+   Die nun vorgelegten Kernlehrpläne für die gymnasiale Oberstufe lösen die bisherigen
+Lehrpläne aus dem Jahr 1999 ab und vollziehen somit auch für diese Schulstufe den
+bereits für die Sekundarstufe I vollzogenen Paradigmenwechsel von der Input- zur
+Outputorientierung.
+
+   Darüber hinaus setzen die neuen Kernlehrpläne die inzwischen auf KMK-Ebene
+vorgenommenen Standardsetzungsprozesse (Bildungsstandards, Einheitliche Prüfungs-
+anforderungen für das Abitur) für das Land Nordrhein-Westfalen um.
+
+   Abschließend liefern die neuen Kernlehrpläne eine landesweit einheitliche Obligatorik,
+die die curriculare Grundlage für die Entwicklung schulinterner Lehrpläne und damit für
+die unterrichtliche Arbeit in Schulen bildet. Mit diesen landesweit einheitlichen Standards
+ist eine wichtige Voraussetzung dafür geschaffen, dass Schülerinnen und Schüler mit
+vergleichbaren Voraussetzungen die zentralen Prüfungen des Abiturs ablegen können.
+
+10
+1 Aufgaben und Ziele des Faches
+
+Gegenstand der Fächer im mathematisch-naturwissenschaftlich-technischen Aufgaben-
+feld (III) sind die empirisch erfassbare, die in formalen Strukturen beschreibbare und
+die durch Technik gestaltbare Wirklichkeit sowie die Verfahrens- und Erkenntnisweisen,
+die ihrer Erschließung und Gestaltung dienen.
+
+   Innerhalb der von allen Fächern zu erfüllenden Querschnittsaufgaben tragen ins-
+besondere auch die Fächer des mathematisch-naturwissenschaftlich-technischen Auf-
+gabenfeldes im Rahmen der Entwicklung von Gestaltungskompetenz zur kritischen
+Reflexion geschlechter- und kulturstereotyper Zuordnungen, zur Werteerziehung, zur
+Empathie und Solidarität, zum Aufbau sozialer Verantwortung, zur Gestaltung einer
+demokratischen Gesellschaft, zur Sicherung der natürlichen Lebensgrundlagen, auch
+für kommende Generationen im Sinne einer nachhaltigen Entwicklung, und zur kultu-
+rellen Mitgestaltung bei. Darüber hinaus leisten sie einen Beitrag zur interkulturellen
+Verständigung, zur interdisziplinären Verknüpfung von Kompetenzen, auch mit gesell-
+schaftswissenschaftlichen und sprachlich-literarisch-künstlerischen Feldern, sowie zur
+Vorbereitung auf Ausbildung, Studium, Arbeit und Beruf.
+
+   Wie kaum eine andere Fachdisziplin durchdringt die Informatik mit den von ihr ent-
+wickelten Systemen für jedermann wahrnehmbar nahezu alle Bereiche von Wirtschaft,
+Gesellschaft, Arbeit und Freizeit. Sie besitzt einen großen Anteil am Entwicklungsstand
+unserer technisierten und globalisierten Welt. Prozessorgesteuerte Geräte, Softwarepro-
+dukte und durch deren Einsatz bestimmte Verfahrensweisen und Prozesse beeinflussen
+und verändern unser Leben mit hoher Dynamik. Die Informatik stellt Prinzipien und
+Methoden zur Erforschung komplexer Phänomene und für die Entwicklung komplexer
+Systeme bereit, die zahlreiche andere Fachdisziplinen aufgreifen und adaptieren. Daher
+ist die Informatik in hohem Maße interdisziplinär ausgerichtet. Die Auseinandersetzung
+mit Themen und Methoden der Informatik in der Schule dient somit der Lebensvorbe-
+reitung und Orientierung in einer von der Informationstechnologie geprägten Welt.
+
+   Der Informatikunterricht der gymnasialen Oberstufe geht deutlich über eine Grund-
+bildung im Bereich der Informations- und Kommunikationstechnologien in der Sekun-
+darstufe I hinaus. Die Schülerinnen und Schüler erwerben über rezeptive Medienan-
+wendungen und die interaktive Nutzung von Medienangeboten in den Fächern hinaus
+Fähigkeiten zur kritischen und verantwortungsvollen Analyse, Modellierung und Imple-
+
+                                                                                                               11
+Aufgaben und Ziele des Faches
+
+mentierung komplexer Informatiksysteme. Dabei konzentriert sich der Unterricht stets
+auf fundamentale und zeitbeständige informatische Ideen, Konzepte und Methoden und
+schließt auch die Auseinandersetzung mit Fragen einer menschengerechten Gestaltung
+und der Sicherheit von Systemen sowie der Folgen und Wirkungen des Einsatzes von
+Informatiksystemen ein. Schülerinnen und Schüler werden so befähigt und motiviert,
+auch zukünftige Entwicklungen zu nutzen, zu verstehen, hinsichtlich ihrer Wirkungen
+zu beurteilen und sich aktiv an der Fortentwicklung zu beteiligen.
+
+   Ausgangspunkt im Informatikunterricht ist häufig ein Problem mit lebensweltlichem
+Bezug. Schülerinnen und Schüler erwerben und erweitern in der aktiven Auseinander-
+setzung mit komplexen Problemstellungen Kompetenzen, die sie zum selbstständigen
+informatischen Problemlösen befähigen. Mit der Aneignung von Strategien und Tech-
+niken zur strukturierten Zerlegung im Problemlöseprozess, zur Algorithmisierung von
+Abläufen sowie zur formalsprachlichen, grafischen oder symbolischen Beschreibung
+von Sachverhalten und Zusammenhängen erwerben die Lernenden Kompetenzen
+zur Bewältigung von Komplexität. Die Konstruktion eines abstrakten Modells zu einer
+anwendungsbezogenen Problemstellung fördert das Abstraktionsvermögen sowie krea-
+tives und strukturelles Denken. Die Umsetzung eines informatischen Modells in ein
+lauffähiges Informatiksystem hat für Schülerinnen und Schüler nicht nur einen hohen
+Motivationswert, sondern ermöglicht ihnen auch die eigenständige Überprüfung der
+Angemessenheit und Wirkung des Modells im Rückbezug auf die Problemstellung. Im
+Unterricht lassen sich umfangreiche Informatiksysteme nur in arbeitsteiliger projekt-
+orientierter Zusammenarbeit im Team erstellen. Solche Projekte können nur gelingen,
+wenn die gemeinsame Arbeit strukturiert geplant und organisiert wird. Insgesamt leistet
+das Fach Informatik in der gymnasialen Oberstufe damit einen wichtigen Beitrag zu
+einer erweiterten Allgemeinbildung und allgemeinen Studierfähigkeit der Schülerinnen
+und Schüler.
+
+   Die inhaltliche und methodische Gestaltung des Unterrichts ist entscheidend dafür,
+dass Schülerinnen und Schüler die ausgewiesenen Kompetenzen erwerben können.
+Informatikunterricht erfordert in hohem Maße die Anwendung schüleraktivierender
+Methoden, die selbstständiges Lernen ermöglichen und individuelle Förderung begüns-
+tigen. Unterschiedliche, auch geschlechtsspezifische Herangehensweisen, Interessen,
+Vorerfahrungen und fachspezifische Kenntnisse sind angemessen zu berücksichtigen.
+
+   In der Einführungsphase werden ausgehend von einfachen Fragestellungen und unter
+Anleitung der Lehrperson zunächst einzelne Stufen eines Problemlösungsprozesses
+durchlaufen. Am Ende der Qualifikationsphase sollen die Schülerinnen und Schüler
+dann in der Lage sein, Lösungsansätze in Form von lauffähigen Informatiksystemen
+weitgehend selbstständig zu entwickeln.
+
+12
+                                                                        Aufgaben und Ziele des Faches
+
+   Der Grundkurs führt unter dem Aspekt einer fundamentalen wissenschaftspropädeu-
+tischen Ausbildung in basale Sachverhalte, Probleme sowie Zusammenhänge des Faches
+ein und verdeutlicht die Differenz zwischen Alltagswissen und wissenschaftlich begrün-
+detem Wissen. Er fördert den Kompetenzerwerb im Bereich der wesentlichen Arbeits-
+und Entwicklungsmethoden der Informatik und ermöglicht das Erkennen fachlicher
+Zusammenhänge exemplarisch anhand geeigneter Beispiele.
+
+   Der Leistungskurs widmet sich mit Blick auf eine exemplarisch erweiterte wissen-
+schaftspropädeutische Ausbildung einem vertieften Kompetenzerwerb hinsichtlich der
+Breite, der Komplexität und des Reichtums an Aspekten der unten ausgewiesenen In-
+haltsfelder. Er zielt auf einen systematischen Überblick über wesentliche Inhalte, eine
+vertiefte Beherrschung der informatischen Methoden sowie die selbstständige Umset-
+zung, Übertragung und Reflexion. Ein kompletter Problemlöseprozess kann in einem
+Leistungskurs häufiger vollständig durchlaufen werden, während dies in einem Grund-
+kurs nur exemplarisch erwartet werden kann.
+
+   Die Progression der Anforderungen zwischen Einführungs- und Qualifikationsphase
+sowie Grund- und Leistungskursen resultiert nicht in erster Linie aus den Prozessen
+selbst. Vielmehr leitet sie sich aus der zunehmenden Komplexität der fachlichen In-
+halte sowie der unterrichtlichen Kontexte, Projektvorhaben und Beispiele ab, die den
+Schülerinnen und Schülern den Kompetenzerwerb ermöglichen.
+
+                                                                                                               13
+2 Kompetenzbereiche, Inhaltsfelder und
+   Kompetenzerwartungen
+
+Die in den allgemeinen Aufgaben und Zielen des Faches beschriebene übergreifende
+fachliche Kompetenz wird ausdifferenziert, indem fachspezifische Kompetenzbereiche
+und Inhaltsfelder identifiziert und ausgewiesen werden. Dieses analytische Vorgehen
+erfolgt, um die Strukturierung der fachrelevanten Prozesse einerseits sowie der Gegen-
+stände andererseits transparent zu machen. In den Kompetenzerwartungen werden
+beide Seiten miteinander verknüpft. Damit wird der Tatsache Rechnung getragen, dass
+der gleichzeitige Einsatz von Können und Wissen bei der Bewältigung von Anforde-
+rungssituationen eine zentrale Rolle spielt.
+
+                    Übergreifende fachliche Kompetenz
+
+Kompetenzbereiche  Inhaltsfelder
+       (Prozesse)  (Gegenstände)
+
+                            Kompetenzerwartungen
+                (Verknüpfung von Prozessen und Gegenständen)
+
+   Kompetenzbereiche repräsentieren die Grunddimensionen des fachlichen Handelns.
+Sie dienen dazu, die einzelnen Teiloperationen entlang der fachlichen Kerne zu struktu-
+rieren und den Zugriff für die am Lehr-Lern-Prozess Beteiligten zu verdeutlichen.
+
+14
+                                                Kompetenzbereiche und Inhaltsfelder des Faches
+
+   Inhaltsfelder systematisieren mit ihren jeweiligen inhaltlichen Schwerpunkten die im
+Unterricht der gymnasialen Oberstufe verbindlichen und unverzichtbaren Gegenstände
+und liefern Hinweise für die inhaltliche Ausrichtung des Lehrens und Lernens.
+
+   Kompetenzerwartungen führen Prozesse und Gegenstände zusammen und beschrei-
+ben die fachlichen Anforderungen und intendierten Lernergebnisse, die auf zwei Stufen
+bis zum Ende der Sekundarstufe II erreicht werden sollen. Kompetenzerwartungen
+
+     • beziehen sich auf beobachtbare Handlungen und sind auf die Bewältigung von
+       Anforderungssituationen ausgerichtet,
+
+     • stellen im Sinne von Regelstandards die erwarteten Kenntnisse, Fähigkeiten und
+       Fertigkeiten auf einem mittleren Abstraktionsgrad dar,
+
+     • ermöglichen die Darstellung einer Progression vom Anfang bis zum Ende der
+       Sekundarstufe II und zielen auf kumulatives, systematisch vernetztes Lernen,
+
+     • können in Aufgabenstellungen umgesetzt und überprüft werden.
+
+   Insgesamt ist der Unterricht in der Sekundarstufe II nicht allein auf das Erreichen der
+aufgeführten Kompetenzerwartungen beschränkt, sondern soll es Schülerinnen und
+Schülern ermöglichen, diese weiter auszubauen und darüber hinausgehende Kompe-
+tenzen zu erwerben.
+
+2.1 Kompetenzbereiche und Inhaltsfelder des Faches
+
+Im Informatikunterricht erwerben die Lernenden eine Vielzahl von fachbezogenen Fähig-
+keiten und Fertigkeiten, die sich fünf Kompetenzbereichen zuordnen lassen. Diese sind
+nicht trennscharf, sondern haben vielfältige Bezüge zueinander. Im Sinne eines umfassen-
+den Kompetenzerwerbs ist es daher nicht möglich, den Unterricht nach den einzelnen
+Kompetenzbereichen sequentiell zu strukturieren. Angemessen ist eine ganzheitliche
+Sicht als Grundlage für den Kompetenzerwerb.
+
+Kompetenzbereiche
+
+Die fachbezogenen Kompetenzen, die in Gesamtheit informatische Problemlösekompe-
+tenz ausmachen, lassen sich den fünf Kompetenzbereichen, Argumentieren, Modellieren,
+Implementieren, Darstellen und Interpretieren sowie Kommunizieren und Kooperieren
+zuordnen.
+
+                                                                                                               15
+Kompetenzbereiche, Inhaltsfelder und Kompetenzerwartungen
+
+Argumentieren Informatische Zusammenhänge, Vorgehensweisen, Lösungsansätze
+und Entwurfsentscheidungen bedürfen der Erläuterung und Begründung, um Transpa-
+renz, Nachvollziehbarkeit und Überprüfbarkeit im Diskurs zu gewährleisten. Argumentie-
+ren umfasst das Erläutern, Begründen und Beurteilen in informatischen Sachzusammen-
+hängen und Prozessen. Erläutern bedeutet, einen Sachverhalt zu veranschaulichen und
+verständlich zu machen. Unter Begründen wird die Darlegung von rational nachvollzieh-
+baren Argumenten auf der Grundlage von Begriffen, Regeln, Methoden und Verfahren
+der Informatik verstanden. Dazu gehört auch, den Begründungszusammenhang durch
+geeignete Beispiele zu veranschaulichen. Beurteilen meint, zu einem informatischen
+Sachverhalt oder Prozess ein selbstständiges Urteil unter Verwendung von Fachwissen
+und Fachmethoden zu formulieren und zu begründen. Argumentieren umfasst auch die
+Bewertung von Nutzen, Grenzen und Auswirkungen von Informatiksystemen.
+
+Modellieren Um ein Problem aus einem inner- oder außerinformatischen Kontext
+lösen zu können, wird in der Regel zunächst ein informatisches Modell entwickelt, das
+auf einem prozessorgesteuerten Gerät implementiert werden kann. Informatisches
+Modellieren zielt auf eine abstrahierende Beschreibung der wesentlichen Komponenten
+und Parameter eines realen oder geplanten Systems sowie des Ordnungsgefüges und
+der Wirkungsbeziehungen zwischen ihnen. Der Modellierungsprozess beginnt mit der
+Analyse und einer strukturierten Zerlegung des Ausgangsproblems. Teilkomponenten
+müssen identifiziert, konstruiert und gegebenenfalls miteinander vernetzt werden. Ein
+Ergebnis eines Modellierungsprozesses ist in der Regel eine formale, textuelle oder
+grafische Darstellung.
+
+Implementieren Implementieren umfasst die Umsetzung eines Modells in ein Infor-
+matiksystem. Dazu gehören das Programmieren, Evaluieren und Validieren von Mo-
+dellbestandteilen unter Nutzung geeigneter Werkzeuge. Grundlegende Methoden und
+Denkweisen der Programmentwicklung werden dabei in den Vordergrund gestellt. Die
+Programmerstellung ist ein bedeutsamer Bestandteil des Problemlösungsprozesses,
+weil erst dadurch das Modell wirksam wird. An dem entstandenen Informatiksystem
+können Wirkungen der Modellentscheidungen diskutiert sowie Ursachen und Tragweite
+von möglichen Fehlern im Modell erkannt und korrigiert werden. Dadurch werden die
+Selbstreflexion des Lösungsprozesses und eine vertiefte Modellkritik unterstützt.
+
+Darstellen und Interpretieren Die Informatik hat zur Unterstützung von Problemlöse-
+und Modellbildungsprozessen ein reiches Repertoire an Darstellungsformen entwickelt.
+
+16
+                                                Kompetenzbereiche und Inhaltsfelder des Faches
+
+Schülerinnen und Schüler werden nach und nach mit unterschiedlichen Darstellungsfor-
+men konfrontiert, die sie in inner- und außerinformatischen Kontexten selbst nutzen. Vor-
+gegebene Darstellungen müssen anwendungsbezogen interpretiert werden. Im Rahmen
+eigener Problemlösungen müssen angemessene Darstellungsformen unter Verwendung
+der fachspezifischen Notation angewendet werden. Dies fördert ein Verständnis von Zu-
+sammenhängen und Bezügen zwischen unterschiedlichen informatischen Sachverhalten
+sowie die Fähigkeit, diese anderen deutlich zu machen.
+
+Kommunizieren und Kooperieren Die Kenntnis und Nutzung arbeitsteiliger und ko-
+operativer Vorgehensweisen ist für die Entwicklung komplexer Informatiksysteme erfor-
+derlich, um prozessorientiertes Arbeiten zu planen und abzusichern. Zum Kommunizie-
+ren im Sinne eines fachlichen Austausches gehören die sachadäquate Darstellung und
+Dokumentation zur Weitergabe von Sachverhalten sowie die Nutzung geeigneter Werk-
+zeuge, die die Kommunikation unterstützen. Für eine sachangemessene und präzise
+Verständigung über informatische Gegenstände sind ein angemessener Umgang mit
+Fachbegriffen und der sukzessive Aufbau einer Fachsprache unerlässlich.
+
+Inhaltsfelder
+
+Kompetenzerwerb ist an fachliche Inhalte gebunden. Die für den Informatikunterricht
+obligatorischen Inhalte, an denen die Kompetenzen entwickelt werden sollen, lassen
+sich den folgenden fünf Inhaltsfeldern zuordnen. Diese werden bereits in der Einfüh-
+rungsphase aufgegriffen und in der Qualifikationsphase vertieft.
+
+Inhaltsfeld ������ Daten und ihre Strukturierung Die automatische Verarbeitung von
+
+Informationen mittels Maschinen ist überhaupt erst durch deren digitale Repräsentation
+in Form von Daten möglich. Für die rechnergestützte Lösung von Problemen in inner-
+und außerinformatischen Kontexten müssen daher Informationen in angemessener
+Struktur durch Daten und zugehörige Operationen repräsentiert werden, sodass die
+Daten zielgerichtet und effizient automatisch verarbeitet und die Ergebnisse wiederum
+als Information interpretiert werden können.
+
+Inhaltsfeld ������ Algorithmen Zu vielen bedeutenden wissenschaftlichen Erfolgen und
+
+technischen Errungenschaften der jüngeren Zeit hat die Informatik maßgeblich beige-
+tragen. Neben der rasanten Steigerung der Leistungsfähigkeit der technischen Systeme
+sind diese Fortschritte insbesondere der Entwicklung von innovativen und effizienten
+
+                                                                                                               17
+Kompetenzbereiche, Inhaltsfelder und Kompetenzerwartungen
+
+Algorithmen zu verdanken. Ein Algorithmus ist eine genaue Beschreibung von Hand-
+lungsschritten zur Lösung eines Problems, die von einem Prozessor ausgeführt werden
+können. Häufig verwendete Grundkonstrukte von Algorithmen sowie Algorithmen,
+die im Kontext bestimmter Problemklassen von elementarer Bedeutung sind, lassen
+sich unter Berücksichtigung ihrer Effizienz adaptieren, um neue Aufgabenstellungen in
+konkreten Anwendungskontexten problemgerecht einer automatischen Verarbeitung
+zuzuführen.
+
+Inhaltsfeld ������ Formale Sprachen und Automaten Der Einsatz von Informatiksyste-
+
+men zur Lösung komplexer Probleme ist nur unter Verwendung formaler Sprachen als
+Mittler zwischen Mensch und Maschine möglich. Sprachen dienen zur Kommunikati-
+on und genügen Regeln zur Bildung von Wörtern und Sätzen. Formale Sprachen der
+Informatik werden durch Grammatiken präzise beschrieben. Zu formalen Sprachen
+können Automaten entwickelt werden, die die Wörter der Sprache akzeptieren oder
+weiterverarbeiten. Eine fachliche Beschreibung von Automaten mithilfe einer Menge
+von Zuständen samt Regeln für die zeitliche Abfolge von Zustandsübergängen ist als
+Modellierungstechnik in verschiedenen Problemfeldern anwendbar. Automaten eigenen
+sich in besonderem Maße, um mithilfe theoretischer Betrachtungen auch die Grenzen
+von Automatenmodellen zu beleuchten.
+
+Inhaltsfeld ������ Informatiksysteme Informatiksysteme sind heute weltweit miteinan-
+
+der vernetzt. Ein Informatiksystem ist eine spezifische Zusammenstellung von Hardware-,
+Software- und Netzwerkkomponenten zur Lösung eines Anwenderproblems. Gegen-
+stand der Betrachtung in diesem Inhaltsfeld sind schwerpunktmäßig der prinzipielle
+Aufbau singulärer und vernetzter Rechnersysteme und deren Interaktion untereinander
+und mit dem Benutzer.
+
+Inhaltsfeld ������ Informatik, Mensch und Gesellschaft Informatiksysteme stehen in in-
+
+tensiver Wechselwirkung mit Individuum und Gesellschaft. Ihr Einsatz hat weitreichende
+Konsequenzen für unsere Lebens- und Arbeitswelt. Handlungsspielräume müssen im
+Spannungsfeld von Rechten und Interessen des Individuums, gesellschaftlicher Verant-
+wortung und möglichen Sicherheitsrisiken wahrgenommen werden.
+
+18
+Kompetenzerwartungen und inhaltliche Schwerpunkte in der Einführungsphase
+
+                  Argumentieren
+
+Modellieren       Implementieren
+
+Darstellen und  Kompetenz-                  Kommunizieren
+interpretieren    bereiche                 und Kooperieren
+
+Daten und ihre                             Algorithmen
+Strukturierung
+                Inhaltsfelder
+
+Formale Sprachen  Informatiksysteme
+und Automaten
+
+                  Informatik,
+                  Mensch und Gesellschaft
+
+2.2 Kompetenzerwartungen und inhaltliche Schwerpunkte bis zum
+     Ende der Einführungsphase
+
+Der Unterricht soll es den Schülerinnen und Schülern ermöglichen, dass sie – aufbauend
+auf einer ggf. heterogenen Kompetenzentwicklung in der Sekundarstufe I – am Ende der
+
+                                                                                                               19
+Kompetenzbereiche, Inhaltsfelder und Kompetenzerwartungen
+
+Einführungsphase über die im Folgenden genannten Kompetenzen verfügen. Dabei wer-
+den zunächst übergeordnete Kompetenzerwartungen zu allen Kompetenzbereichen
+aufgeführt und im Anschluss zusätzlich inhaltsfeldbezogen konkretisiert. Bei einigen
+Kompetenzerwartungen ist eine Progression zwischen Einführungs- und Qualifikations-
+phase nicht explizit ausgewiesen. Ein Kompetenzzuwachs wird aber gleichwohl erwartet.
+Dieser ergibt sich immer auch aus
+
+     • der Zugänglichkeit der Kontexte und Beispiele,
+     • dem Umfang und der Komplexität der Problemstellungen sowie der Lösungswege,
+     • den Anforderungen, die an das Abstraktionsvermögen und das analytische Denken
+
+        gestellt werden,
+     • dem zur Problemlösung erforderlichen Grad des Verfügens über Problemlösestra-
+
+        tegien,
+     • dem Grad der Vernetzung der Kompetenzen, die für eine Bearbeitung von Pro-
+
+        blemstellungen erforderlich sind,
+     • dem Grad der Selbstständigkeit der Schülerinnen und Schüler bei der Problemlö-
+
+        sung,
+     • dem Grad der Arbeitsteilung bei der Problemlösung.
+
+ARGUMENTIEREN (A)
+Die Schülerinnen und Schüler
+
+    ■ erläutern und begründen methodische Vorgehensweisen, Entwurfs- und Imple-
+        mentationsentscheidungen sowie Aussagen über Informatiksysteme,
+
+    ■ analysieren und erläutern informatische Modelle,
+    ■ analysieren und erläutern Computerprogramme,
+    ■ beurteilen die Angemessenheit informatischer Modelle.
+
+MODELLIEREN (M)
+Die Schülerinnen und Schüler
+
+    ■ konstruieren zu kontextbezogenen Problemstellungen informatische Modelle,
+    ■ modifizieren und erweitern informatische Modelle.
+
+20
+       Kompetenzerwartungen und inhaltliche Schwerpunkte in der Einführungsphase
+
+IMPLEMENTIEREN (I)
+Die Schülerinnen und Schüler
+
+    ■ implementieren auf der Grundlage von Modellen oder Modellausschnitten Com-
+        puterprogramme,
+
+    ■ modifizieren und erweitern Computerprogramme,
+    ■ testen und korrigieren Computerprogramme.
+
+DARSTELLEN UND INTERPRETIEREN (D)
+Die Schülerinnen und Schüler
+
+    ■ interpretieren Daten und erläutern Beziehungen und Abläufe, die in Form von
+        textuellen und grafischen Darstellungen gegeben sind,
+
+    ■ überführen gegebene textuelle und grafische Darstellungen informatischer Zu-
+        sammenhänge in die jeweils andere Darstellungsform,
+
+    ■ stellen informatische Modelle und Abläufe in Texten, Tabellen, Diagrammen und
+        Grafiken dar.
+
+KOMMUNIZIEREN UND KOOPERIEREN (K)
+Die Schülerinnen und Schüler
+
+    ■ verwenden Fachausdrücke bei der Kommunikation über informatische Sachver-
+        halte,
+
+    ■ kommunizieren und kooperieren in Gruppen und in Partnerarbeit,
+    ■ präsentieren Arbeitsabläufe und -ergebnisse.
+
+   Die Kompetenzen der Schülerinnen und Schüler sollen im Rahmen der Behandlung
+der nachfolgenden, für die Einführungsphase obligatorischen Inhaltsfelder entwickelt
+werden:
+
+   ������ Daten und ihre Strukturierung
+   ������ Algorithmen
+   ������ Formale Sprachen und Automaten
+   ������ Informatiksysteme
+   ������ Informatik, Mensch und Gesellschaft
+
+                                                                                                               21
+Kompetenzbereiche, Inhaltsfelder und Kompetenzerwartungen
+
+   Verknüpft man die Kompetenzerwartungen mit den inhaltlichen Schwerpunkten, so
+ergeben sich die nachfolgenden konkretisierten Kompetenzerwartungen. In der Regel
+lässt sich eine konkretisierte Kompetenzerwartung nicht eindeutig einem Kompetenzbe-
+reich zuordnen. Der in Klammern hinter einer konkretisierten Kompetenzerwartung
+angegebene Kompetenzbereich weist jeweils den stärksten Bezug zu ihr auf. Die konkreti-
+sierten Kompetenzerwartungen sind darüber hinaus mit weiteren Kompetenzbereichen
+verknüpft, insbesondere mit denen aus dem Bereich „Kommunizieren und Kooperieren“.
+
+Inhaltsfeld ������ Daten und ihre Strukturierung
+
+   Inhaltliche Schwerpunkte
+      Objekte und Klassen
+
+OBJEKTE UND KLASSEN
+Die Schülerinnen und Schüler
+
+    □ ermitteln bei der Analyse einfacher Problemstellungen Objekte, ihre Eigenschaften,
+        ihre Operationen und ihre Beziehungen (M),
+
+    □ modellieren Klassen mit ihren Attributen, ihren Methoden und Assoziationsbezie-
+        hungen (M),
+
+    □ modellieren Klassen unter Verwendung von Vererbung (M),
+    □ ordnen Attributen, Parametern und Rückgaben von Methoden einfache Datenty-
+
+        pen, Objekttypen oder lineare Datensammlungen zu (M),
+    □ ordnen Klassen, Attributen und Methoden ihren Sichtbarkeitsbereich zu (M),
+    □ stellen den Zustand eines Objekts dar (D),
+    □ stellen die Kommunikation zwischen Objekten grafisch dar (M),
+    □ stellen Klassen, Assoziations- und Vererbungsbeziehungen in Diagrammen gra-
+
+        fisch dar (D),
+    □ dokumentieren Klassen durch Beschreibung der Funktionalität der Methoden
+
+       (D),
+    □ analysieren und erläutern eine objektorientierte Modellierung (A),
+    □ implementieren Klassen in einer Programmiersprache auch unter Nutzung doku-
+
+        mentierter Klassenbibliotheken (I).
+
+22
+       Kompetenzerwartungen und inhaltliche Schwerpunkte in der Einführungsphase
+
+Inhaltsfeld ������ Algorithmen
+
+   Inhaltliche Schwerpunkte
+      Analyse, Entwurf und Implementierung einfacher Algorithmen
+      Algorithmen zum Suchen und Sortieren
+
+ANALYSE, ENTWURF UND IMPLEMENTIERUNG EINFACHER ALGORITHMEN
+Die Schülerinnen und Schüler
+
+    □ analysieren und erläutern einfache Algorithmen und Programme (A),
+    □ modifizieren einfache Algorithmen und Programme (I),
+    □ entwerfen einfache Algorithmen und stellen sie umgangssprachlich und grafisch
+
+        dar (M),
+    □ implementieren Algorithmen unter Verwendung von Variablen und Wertzuwei-
+
+        sungen, Kontrollstrukturen sowie Methodenaufrufen (I),
+    □ testen Programme schrittweise anhand von Beispielen (I).
+
+ALGORITHMEN ZUM SUCHEN UND SORTIEREN
+Die Schülerinnen und Schüler
+
+    □ analysieren Such- und Sortieralgorithmen und wenden sie auf Beispiele an (D),
+    □ entwerfen einen weiteren Algorithmus zum Sortieren (M),
+    □ beurteilen die Effizienz von Algorithmen am Beispiel von Sortierverfahren hin-
+
+        sichtlich Zeitaufwand und Speicherplatzbedarf (A).
+
+Inhaltsfeld ������ Formale Sprachen und Automaten
+
+   Inhaltliche Schwerpunkte
+      Syntax und Semantik einer Programmiersprache
+
+SYNTAX UND SEMANTIK EINER PROGRAMMIERSPRACHE
+Die Schülerinnen und Schüler
+
+    □ implementieren einfache Algorithmen unter Beachtung der Syntax und Semantik
+        einer Programmiersprache (I),
+
+    □ interpretieren Fehlermeldungen und korrigieren den Quellcode (I).
+
+                                                                                                               23
+Kompetenzbereiche, Inhaltsfelder und Kompetenzerwartungen
+
+Inhaltsfeld ������ Informatiksysteme
+
+   Inhaltliche Schwerpunkte
+      Digitalisierung
+      Einzelrechner
+      Dateisystem
+      Internet
+
+DIGITALISIERUNG
+Die Schülerinnen und Schüler
+
+    □ stellen ganze Zahlen und Zeichen in Binärcodes dar (D),
+    □ interpretieren Binärcodes als Zahlen und Zeichen (D).
+
+EINZELRECHNER
+Die Schülerinnen und Schüler
+
+    □ beschreiben und erläutern den strukturellen Aufbau und die Arbeitsweise singulä-
+       rer Rechner am Beispiel der „Von-Neumann-Architektur“ (A).
+
+DATEISYSTEM
+Die Schülerinnen und Schüler
+
+    □ nutzen das verfügbare Informatiksystem zur strukturierten Verwaltung und ge-
+       meinsamen Verwendung von Daten unter Berücksichtigung der Rechteverwaltung
+       (K).
+
+INTERNET
+Die Schülerinnen und Schüler
+
+    □ nutzen das Internet zu Recherche, Datenaustausch und Kommunikation (K).
+
+Inhaltsfeld ������ Informatik, Mensch und Gesellschaft
+
+   Inhaltliche Schwerpunkte
+      Einsatz von Informatiksystemen
+      Wirkungen der Automatisierung
+      Geschichte der automatischen Datenverarbeitung
+
+24
+     Kompetenzerwartungen und inhaltliche Schwerpunkte in der Qualifikationsphase
+
+EINSATZ VON INFORMATIKSYSTEMEN
+Die Schülerinnen und Schüler
+
+    □ nutzen die im Unterricht eingesetzten Informatiksysteme selbstständig, sicher,
+        zielführend und verantwortungsbewusst (D).
+
+WIRKUNGEN DER AUTOMATISIERUNG
+Die Schülerinnen und Schüler
+
+    □ bewerten anhand von Fallbeispielen die Auswirkungen des Einsatzes von Informa-
+        tiksystemen (A).
+
+GESCHICHTE DER AUTOMATISCHEN DATENVERARBEITUNG
+Die Schülerinnen und Schüler
+
+    □ erläutern wesentliche Grundlagen der Geschichte der digitalen Datenverarbeitung
+       (A).
+
+2.3 Kompetenzerwartungen und inhaltliche Schwerpunkte bis zum
+     Ende der Qualifikationsphase
+
+Der Unterricht soll es den Schülerinnen und Schülern ermöglichen, dass sie – aufbau-
+end auf der Kompetenzentwicklung in der Einführungsphase – am Ende der Sekun-
+darstufe II über die im Folgenden genannten Kompetenzen verfügen. Dabei werden
+zunächst übergeordnete Kompetenzerwartungen zu allen Kompetenzbereichen aufge-
+führt und im Anschluss zusätzlich – getrennt nach Kursen auf grundlegendem und auf
+erhöhtem Anforderungsniveau – inhaltsfeldbezogen konkretisiert. Die übergeordneten
+Kompetenzen werden sowohl in Kursen auf grundlegendem als auch auf erhöhtem
+Anforderungsniveau erworben. Unterschiede bestehen hinsichtlich der Komplexität der
+Problemstellungen und -lösungen sowie des Grades der Vernetzung der Kompetenzen
+und damit in den Anforderungen an das Abstraktionsvermögen und das analytische
+Denken der Schülerinnen und Schüler.
+
+ARGUMENTIEREN (A)
+Die Schülerinnen und Schüler
+
+    ■ erläutern und begründen methodische Vorgehensweisen, Entwurfs- und Imple-
+        mentationsentscheidungen sowie Aussagen über Informatiksysteme,
+
+                                                                                                               25
+Kompetenzbereiche, Inhaltsfelder und Kompetenzerwartungen
+
+    ■ zeigen im Problemlösungsprozess Alternativen auf und begründen ihre Auswahl-
+       entscheidungen,
+
+    ■ analysieren und erläutern informatische Modelle,
+    ■ analysieren und erläutern Computerprogramme,
+    ■ beurteilen die Angemessenheit von Modellierungen und Implementationen,
+    ■ erläutern und beurteilen informatische Modelle und Informatiksysteme hinsicht-
+
+       lich ihrer Möglichkeiten, Grenzen und Auswirkungen.
+
+MODELLIEREN (M)
+Die Schülerinnen und Schüler
+
+    ■ konstruieren zu kontextbezogenen Problemstellungen informatische Modelle,
+    ■ modifizieren und erweitern informatische Modelle,
+    ■ wenden im Modellierungsprozess geeignete Lösungsstrategien an.
+
+IMPLEMENTIEREN (I)
+Die Schülerinnen und Schüler
+
+    ■ implementieren auf der Grundlage von Modellen oder Modellausschnitten Com-
+       puterprogramme,
+
+    ■ modifizieren und erweitern Computerprogramme,
+    ■ testen und korrigieren Computerprogramme systematisch.
+
+DARSTELLEN UND INTERPRETIEREN (D)
+Die Schülerinnen und Schüler
+
+    ■ interpretieren Daten und erläutern Beziehungen und Abläufe, die in Form von
+       textuellen, grafischen oder formalen Darstellungen gegeben sind,
+
+    ■ überführen gegebene textuelle, grafische oder formale Darstellungen informati-
+       scher Zusammenhänge in eine der anderen Darstellungsformen,
+
+    ■ stellen informatische Modelle und Abläufe in Texten, Tabellen, Diagrammen, Gra-
+       fiken und Formalismen dar.
+
+KOMMUNIZIEREN UND KOOPERIEREN (K)
+Die Schülerinnen und Schüler
+
+    ■ verwenden die Fachsprache bei der Kommunikation über informatische Sachver-
+       halte,
+
+26
+    Kompetenzerwartungen und inhaltliche Schwerpunkte in der Qualifikationsphase
+
+    ■ organisieren und koordinieren kooperatives und eigenverantwortliches Arbeiten,
+    ■ strukturieren den Arbeitsprozess, vereinbaren Schnittstellen und führen Ergebnis-
+
+        se zusammen,
+    ■ beurteilen Arbeitsorganisation, Arbeitsabläufe und Ergebnisse,
+    ■ präsentieren Arbeitsabläufe und -ergebnisse adressatengerecht.
+
+   Die Kompetenzen der Schülerinnen und Schüler sollen im Rahmen der Behandlung
+der nachfolgenden, für die Qualifikationsphase obligatorischen Inhaltsfelder entwickelt
+werden:
+
+   ������ Daten und ihre Strukturierung
+   ������ Algorithmen
+   ������ Formale Sprachen und Automaten
+   ������ Informatiksysteme
+   ������ Informatik, Mensch und Gesellschaft
+
+   Verknüpft man die Kompetenzerwartungen mit den inhaltlichen Schwerpunkten, so
+ergeben sich die nachfolgenden konkretisierten Kompetenzerwartungen – getrennt für
+Kurse auf grundlegendem und auf erhöhtem Anforderungsniveau. In der Regel lässt
+sich eine konkretisierte Kompetenzerwartung nicht eindeutig einem Kompetenzbereich
+zuordnen. Der in Klammern hinter einer konkretisierten Kompetenzerwartung angege-
+bene Kompetenzbereich weist jeweils den stärksten Bezug zu ihr auf. Die konkretisierten
+Kompetenzwerwartungen sind darüber hinaus mit weiteren Kompetenzbereichen ver-
+knüpft, insbesondere mit denen aus dem Bereich „Kommunizieren und Kooperieren“.
+
+2.3.1 Grundkurs
+Die nachfolgenden konkretisierten Kompetenzerwartungen sind im Grundkurs anzu-
+streben:
+
+Inhaltsfeld ������ Daten und ihre Strukturierung
+
+   Inhaltliche Schwerpunkte
+      Objekte und Klassen
+      Datenbanken
+
+                                                                                                               27
+Kompetenzbereiche, Inhaltsfelder und Kompetenzerwartungen
+
+OBJEKTE UND KLASSEN
+Die Schülerinnen und Schüler
+
+    □ ermitteln bei der Analyse von Problemstellungen Objekte, ihre Eigenschaften, ihre
+       Operationen und ihre Beziehungen (M),
+
+    □ stellen lineare und nichtlineare Strukturen grafisch dar und erläutern ihren Aufbau
+       (D),
+
+    □ modellieren Klassen mit ihren Attributen, Methoden und ihren Assoziationsbezie-
+       hungen unter Angabe von Multiplizitäten (M),
+
+    □ modellieren abstrakte und nicht abstrakte Klassen unter Verwendung von Verer-
+       bung durch Spezialisieren und Generalisieren (M),
+
+    □ ordnen Attributen, Parametern und Rückgaben von Methoden einfache Datenty-
+       pen, Objekttypen sowie lineare und nichtlineare Datensammlungen zu (M),
+
+    □ verwenden bei der Modellierung geeigneter Problemstellungen Möglichkeiten
+       der Polymorphie (M),
+
+    □ ordnen Klassen, Attributen und Methoden ihre Sichtbarkeitsbereiche zu (M),
+    □ stellen die Kommunikation zwischen Objekten grafisch dar (D),
+    □ stellen Klassen und ihre Beziehungen in Diagrammen grafisch dar (D),
+    □ dokumentieren Klassen (D),
+    □ analysieren und erläutern objektorientierte Modellierungen (A),
+    □ implementieren Klassen in einer Programmiersprache auch unter Nutzung doku-
+
+       mentierter Klassenbibliotheken (I).
+
+DATENBANKEN
+Die Schülerinnen und Schüler
+
+    □ ermitteln für anwendungsbezogene Problemstellungen Entitäten, zugehörige
+       Attribute, Relationen und Kardinalitäten (M),
+
+    □ stellen Entitäten mit ihren Attributen und die Beziehungen zwischen Entitäten mit
+       Kardinalitäten in einem Entity-Relationship-Diagramm grafisch dar (D),
+
+    □ modifizieren eine Datenbankmodellierung (M),
+    □ modellieren zu einem Entity-Relationship-Diagramm ein relationales Datenbank-
+
+       schema (M),
+    □ bestimmen Primär- und Sekundärschlüssel (M),
+
+28
+    Kompetenzerwartungen und inhaltliche Schwerpunkte in der Qualifikationsphase
+
+    □ analysieren und erläutern eine Datenbankmodellierung (A),
+    □ erläutern die Eigenschaften normalisierter Datenbankschemata (A),
+    □ überprüfen Datenbankschemata auf vorgegebene Normalisierungseigenschaften
+
+       (D),
+    □ überführen Datenbankschemata in die 1. bis 3. Normalform (M).
+
+Inhaltsfeld ������ Algorithmen
+
+   Inhaltliche Schwerpunkte
+      Analyse, Entwurf und Implementierung von Algorithmen
+      Algorithmen in ausgewählten informatischen Kontexten
+
+ANALYSE, ENTWURF UND IMPLEMENTIERUNG VON ALGORITHMEN
+Die Schülerinnen und Schüler
+
+    □ analysieren und erläutern Algorithmen und Programme (A),
+    □ modifizieren Algorithmen und Programme (I),
+    □ stellen iterative und rekursive Algorithmen umgangssprachlich und grafisch dar
+
+       (D),
+    □ entwickeln iterative und rekursive Algorithmen unter Nutzung der Strategien
+
+       „Modularisierung“ und „Teilen und Herrschen“ (M),
+    □ implementieren iterative und rekursive Algorithmen auch unter Verwendung von
+
+        dynamischen Datenstrukturen (I),
+    □ testen Programme systematisch anhand von Beispielen (I).
+
+ALGORITHMEN IN AUSGEWÄHLTEN INFORMATISCHEN KONTEXTEN
+Die Schülerinnen und Schüler
+
+    □ erläutern Operationen dynamischer (linearer oder nichtlinearer) Datenstrukturen
+       (A),
+
+    □ implementieren und erläutern iterative und rekursive Such- und Sortierverfahren
+       (I),
+
+    □ beurteilen die Effizienz von Algorithmen unter Berücksichtigung des Speicherbe-
+        darfs und der Zahl der Operationen (A),
+
+    □ ermitteln Ergebnisse von Datenbankabfragen über mehrere verknüpfte Tabellen
+       (D).
+
+                                                                                                              29
+Kompetenzbereiche, Inhaltsfelder und Kompetenzerwartungen
+
+Inhaltsfeld ������ Formale Sprachen und Automaten
+
+   Inhaltliche Schwerpunkte
+      Syntax und Semantik einer Programmiersprache
+      Endliche Automaten
+      Grammatiken regulärer Sprachen
+      Möglichkeiten und Grenzen von Automaten und formalen Sprachen
+
+SYNTAX UND SEMANTIK EINER PROGRAMMIERSPRACHE
+Die Schülerinnen und Schüler
+
+    □ nutzen die Syntax und Semantik einer Programmiersprache bei der Implementie-
+       rung und zur Analyse von Programmen (I),
+
+    □ beurteilen die syntaktische Korrektheit und die Funktionalität von Programmen
+       (A),
+
+    □ interpretieren Fehlermeldungen und korrigieren den Quellcode (I),
+    □ analysieren und erläutern die Syntax und Semantik einer Datenbankabfrage (A),
+    □ verwenden die Syntax und Semantik einer Datenbankabfragesprache, um Infor-
+
+       mationen aus einem Datenbanksystem zu extrahieren (I).
+
+ENDLICHE AUTOMATEN
+Die Schülerinnen und Schüler
+
+    □ analysieren und erläutern die Eigenschaften endlicher Automaten einschließlich
+       ihres Verhaltens bei bestimmten Eingaben (A),
+
+    □ ermitteln die Sprache, die ein endlicher Automat akzeptiert (D),
+    □ entwickeln und modifizieren zu einer Problemstellung endliche Automaten (M),
+    □ stellen endliche Automaten in Tabellen oder Graphen dar und überführen sie in
+
+       die jeweils andere Darstellungsform (D),
+    □ entwickeln zur Grammatik einer regulären Sprache einen zugehörigen endlichen
+
+       Automaten (M).
+
+GRAMMATIKEN REGULÄRER SPRACHEN
+Die Schülerinnen und Schüler
+
+    □ analysieren und erläutern Grammatiken regulärer Sprachen (A),
+
+30
+    Kompetenzerwartungen und inhaltliche Schwerpunkte in der Qualifikationsphase
+
+    □ modifizieren Grammatiken regulärer Sprachen (M),
+    □ ermitteln die formale Sprache, die durch eine Grammatik erzeugt wird (A),
+    □ entwickeln zu einer regulären Sprache eine Grammatik, die die Sprache erzeugt
+
+       (M),
+    □ entwickeln zur akzeptierten Sprache eines Automaten eine zugehörige Grammatik
+
+       (M),
+    □ beschreiben an Beispielen den Zusammenhang zwischen Automaten und Gram-
+
+       matiken (D).
+
+MÖGLICHKEITEN UND GRENZEN VON AUTOMATEN UND FORMALEN SPRACHEN
+Die Schülerinnen und Schüler
+
+    □ zeigen die Grenzen endlicher Automaten und regulärer Grammatiken im Anwen-
+       dungszusammenhang auf (A).
+
+Inhaltsfeld ������ Informatiksysteme
+
+   Inhaltliche Schwerpunkte
+      Einzelrechner und Rechnernetzwerke
+      Nutzung von Informatiksystemen
+      Sicherheit
+
+EINZELRECHNER UND RECHNERNETZWERKE
+Die Schülerinnen und Schüler
+
+    □ erläutern die Ausführung eines einfachen maschinennahen Programms sowie die
+       Datenspeicherung auf einer „Von-Neumann-Architektur“ (A),
+
+    □ beschreiben und erläutern Netzwerk-Topologien, die Client-Server-Struktur und
+       Protokolle sowie ein Schichtenmodell in Netzwerken (A).
+
+NUTZUNG VON INFORMATIKSYSTEMEN
+Die Schülerinnen und Schüler
+
+    □ nutzen bereitgestellte Informatiksysteme und das Internet reflektiert zur Erschlie-
+       ßung, Aufbereitung und Präsentation fachlicher Inhalte (D),
+
+                                                                                                               31
+Kompetenzbereiche, Inhaltsfelder und Kompetenzerwartungen
+
+    □ nutzen das verfügbare Informatiksystem zur strukturierten Verwaltung von Datei-
+        en unter Berücksichtigung der Rechteverwaltung (K),
+
+    □ wenden eine didaktisch orientierte Entwicklungsumgebung zur Demonstration,
+        zum Entwurf, zur Implementierung und zum Test von Informatiksystemen an (I).
+
+SICHERHEIT
+Die Schülerinnen und Schüler
+
+    □ erläutern Eigenschaften, Funktionsweisen und Aufbau von Datenbanksystemen
+        unter dem Aspekt der sicheren Nutzung (A),
+
+    □ analysieren und erläutern Eigenschaften und Einsatzbereiche symmetrischer und
+        asymmetrischer Verschlüsselungsverfahren (A).
+
+Inhaltsfeld ������ Informatik, Mensch und Gesellschaft
+
+   Inhaltliche Schwerpunkte
+      Wirkungen der Automatisierung
+      Grenzen der Automatisierung
+
+WIRKUNGEN DER AUTOMATISIERUNG
+Die Schülerinnen und Schüler
+
+    □ untersuchen und bewerten anhand von Fallbeispielen Auswirkungen des Einsatzes
+        von Informatiksystemen sowie Aspekte der Sicherheit von Informatiksystemen,
+        des Datenschutzes und des Urheberrechts (A),
+
+    □ untersuchen und bewerten Problemlagen, die sich aus dem Einsatz von Informa-
+        tiksystemen ergeben, hinsichtlich rechtlicher Vorgaben, ethischer Aspekte und
+        gesellschaftlicher Werte unter Berücksichtigung unterschiedlicher Interessenlagen
+       (A).
+
+GRENZEN DER AUTOMATISIERUNG
+Die Schülerinnen und Schüler
+
+    □ untersuchen und beurteilen Grenzen des Problemlösens mit Informatiksystemen
+       (A).
+
+32
+    Kompetenzerwartungen und inhaltliche Schwerpunkte in der Qualifikationsphase
+
+2.3.2 Leistungskurs
+Die nachfolgenden konkretisierten Kompetenzerwartungen sind im Leistungskurs an-
+zustreben:
+
+Inhaltsfeld ������ Daten und ihre Strukturierung
+
+   Inhaltliche Schwerpunkte
+      Objekte und Klassen
+      Datenbanken
+
+OBJEKTE UND KLASSEN
+Die Schülerinnen und Schüler
+
+    □ ermitteln bei der Analyse von Problemstellungen Objekte, ihre Eigenschaften, ihre
+       Operationen und ihre Beziehungen (M),
+
+    □ stellen lineare und nichtlineare Strukturen grafisch dar und erläutern ihren Aufbau
+       (D),
+
+    □ modellieren Klassen mit ihren Attributen, Methoden und Assoziationsbeziehungen
+       unter Angabe von Multiplizitäten (M),
+
+    □ modellieren abstrakte und nicht abstrakte Klassen unter Verwendung von Verer-
+       bung durch Spezialisieren und Generalisieren (M),
+
+    □ ordnen Attributen, Parametern und Rückgaben von Methoden einfache Datenty-
+       pen, Objekttypen oder lineare und nichtlineare Datensammlungen zu (M),
+
+    □ verwenden bei der Modellierung geeigneter Problemstellungen Möglichkeiten
+       der Polymorphie (M),
+
+    □ ordnen Klassen, Attributen und Methoden ihre Sichtbarkeitsbereiche zu (M),
+    □ stellen die Kommunikation zwischen Objekten grafisch dar (D),
+    □ stellen Klassen und ihre Beziehungen in Diagrammen grafisch dar (D),
+    □ dokumentieren Klassen (D),
+    □ analysieren und erläutern objektorientierte Modellierungen (A),
+    □ implementieren Klassen in einer Programmiersprache auch unter Nutzung doku-
+
+       mentierter Klassenbibliotheken (I).
+
+                                                                                                               33
+Kompetenzbereiche, Inhaltsfelder und Kompetenzerwartungen
+
+DATENBANKEN
+Die Schülerinnen und Schüler
+
+    □ ermitteln für anwendungsbezogene Problemstellungen Entitäten, zugehörige
+       Attribute, Relationen und Kardinalitäten (M),
+
+    □ stellen Entitäten mit ihren Attributen und die Beziehungen zwischen Entitäten mit
+        Kardinalitäten in einem Entity-Relationship-Diagramm grafisch dar (D),
+
+    □ modifizieren eine Datenbankmodellierung (M),
+    □ modellieren zu einem Entity-Relationship-Diagramm ein relationales Datenbank-
+
+        schema (M),
+    □ bestimmen Primär- und Sekundärschlüssel (M),
+    □ implementieren ein relationales Datenbankschema als Datenbank (I),
+    □ analysieren und erläutern eine Datenbankmodellierung (A),
+    □ erläutern die Eigenschaften normalisierter Datenbankschemata (A),
+    □ überprüfen Datenbankschemata auf vorgegebene Normalisierungseigenschaften
+
+       (D),
+    □ überführen Datenbankschemata in die 1. bis 3. Normalform (M).
+
+Inhaltsfeld ������ Algorithmen
+
+   Inhaltliche Schwerpunkte
+      Analyse, Entwurf und Implementierung von Algorithmen
+      Algorithmen in ausgewählten informatischen Kontexten
+
+ANALYSE, ENTWURF UND IMPLEMENTIERUNG VON ALGORITHMEN
+Die Schülerinnen und Schüler
+
+    □ analysieren und erläutern Algorithmen und Programme (A),
+    □ modifizieren Algorithmen und Programme (I),
+    □ stellen iterative und rekursive Algorithmen umgangssprachlich und grafisch dar
+
+       (D),
+    □ entwickeln iterative und rekursive Algorithmen unter Nutzung der Strategien
+
+       „Modularisierung“, „Teilen und Herrschen“ und „Backtracking“ (M),
+
+34
+    Kompetenzerwartungen und inhaltliche Schwerpunkte in der Qualifikationsphase
+
+    □ implementieren iterative und rekursive Algorithmen auch unter Verwendung von
+        dynamischen Datenstrukturen (I),
+
+    □ testen Programme systematisch anhand von Beispielen und mithilfe von Testan-
+       wendungen (I).
+
+ALGORITHMEN IN AUSGEWÄHLTEN INFORMATISCHEN KONTEXTEN
+Die Schülerinnen und Schüler
+
+    □ erläutern Operationen dynamischer (linearer und nichtlinearer) Datenstrukturen
+       (A),
+
+    □ implementieren Operationen dynamischer (linearer oder nichtlinearer) Daten-
+        strukturen (I),
+
+    □ implementieren und erläutern iterative und rekursive Such- und Sortierverfahren
+        unterschiedlicher Komplexitätsklassen (Speicherbedarf und Laufzeitverhalten)
+       (I),
+
+    □ beurteilen die Effizienz von Algorithmen unter Berücksichtigung des Speicherbe-
+        darfs und der Zahl der Operationen (A),
+
+    □ ermitteln Ergebnisse von Datenbankabfragen über mehrere verknüpfte Tabellen
+       (D),
+
+    □ erläutern das Prinzip der Nebenläufigkeit (A),
+    □ analysieren und erläutern Algorithmen und Methoden zur Client-Server-Kommu-
+
+        nikation (A),
+    □ entwickeln und implementieren Algorithmen und Methoden zur Client-Server-
+
+        Kommunikation (I).
+
+Inhaltsfeld ������ Formale Sprachen und Automaten
+
+   Inhaltliche Schwerpunkte
+      Syntax und Semantik einer Programmiersprache
+      Endliche Automaten und Kellerautomaten
+      Grammatiken regulärer und kontextfreier Sprachen
+      Scanner, Parser und Interpreter für eine reguläre Sprache
+      Möglichkeiten und Grenzen von Automaten und formalen Sprachen
+
+                                                                                                               35
+Kompetenzbereiche, Inhaltsfelder und Kompetenzerwartungen
+
+SYNTAX UND SEMANTIK EINER PROGRAMMIERSPRACHE
+Die Schülerinnen und Schüler
+
+    □ nutzen die Syntax und Semantik einer Programmiersprache bei der Implementie-
+       rung und zur Analyse von Programmen (I),
+
+    □ beurteilen die syntaktische Korrektheit und die Funktionalität von Programmen
+       (A),
+
+    □ interpretieren Fehlermeldungen und korrigieren den Quellcode (I),
+    □ analysieren und erläutern die Syntax und Semantik einer Datenbankabfrage (A),
+    □ verwenden die Syntax und Semantik einer Datenbankabfragesprache, um Infor-
+
+       mationen aus einem Datenbanksystem zu extrahieren (I).
+
+ENDLICHE AUTOMATEN UND KELLERAUTOMATEN
+Die Schülerinnen und Schüler
+
+    □ analysieren und erläutern die Eigenschaften endlicher Automaten und Kellerauto-
+       maten einschließlich ihres Verhaltens bei bestimmten Eingaben (A),
+
+    □ ermitteln die Sprache, die ein endlicher Automat oder ein Kellerautomat akzeptiert
+       (D),
+
+    □ entwickeln und modifizieren zu einer Problemstellung endliche Automaten oder
+       Kellerautomaten (M),
+
+    □ stellen endliche Automaten in Tabellen oder Graphen dar und überführen sie in
+       die jeweils andere Darstellungsform (D),
+
+    □ entwickeln zur Grammatik einer regulären oder kontextfreien Sprache einen
+       zugehörigen endlichen Automaten oder einen Kellerautomaten (M).
+
+GRAMMATIKEN REGULÄRER UND KONTEXTFREIER SPRACHEN
+Die Schülerinnen und Schüler
+
+    □ analysieren und erläutern Grammatiken regulärer und kontextfreier Sprachen
+       (A),
+
+    □ modifizieren Grammatiken regulärer und kontextfreier Sprachen (M),
+    □ ermitteln die formale Sprache, die durch eine Grammatik erzeugt wird (A),
+    □ entwickeln zu einer regulären oder kontextfreien Sprache eine Grammatik, die
+
+       die Sprache erzeugt (M),
+
+36
+    Kompetenzerwartungen und inhaltliche Schwerpunkte in der Qualifikationsphase
+
+    □ entwickeln zur akzeptierten Sprache eines Automaten eine zugehörige Grammatik
+       (M),
+
+    □ beschreiben an Beispielen den Zusammenhang zwischen Automaten und Gram-
+       matiken (D).
+
+SCANNER, PARSER UND INTERPRETER FÜR EINE REGULÄRE SPRACHE
+Die Schülerinnen und Schüler
+
+    □ modellieren und implementieren Scanner, Parser und Interpreter zu einer gege-
+       benen regulären Sprache (I).
+
+MÖGLICHKEITEN UND GRENZEN VON AUTOMATEN UND FORMALEN SPRACHEN
+Die Schülerinnen und Schüler
+
+    □ erläutern die Grenzen endlicher Automaten und regulärer Sprachen im Anwen-
+       dungszusammenhang (A).
+
+Inhaltsfeld ������ Informatiksysteme
+
+   Inhaltliche Schwerpunkte
+      Einzelrechner und Rechnernetzwerke
+      Nutzung von Informatiksystemen
+      Sicherheit
+
+EINZELRECHNER UND RECHNERNETZWERKE
+Die Schülerinnen und Schüler
+
+    □ erläutern die Ausführung eines einfachen maschinennahen Programms sowie die
+       Datenspeicherung auf einer „Von-Neumann-Architektur“ (A),
+
+    □ beschreiben und erläutern Netzwerk-Topologien, die Client-Server-Struktur und
+       Protokolle sowie ein Schichtenmodell in Netzwerken (A),
+
+    □ analysieren und erläutern Protokolle zur Kommunikation in einem Client-Server-
+       Netzwerk (A),
+
+    □ entwickeln und erweitern Protokolle zur Kommunikation in einem Client-Server-
+       Netzwerk (M).
+
+                                                                                                               37
+Kompetenzbereiche, Inhaltsfelder und Kompetenzerwartungen
+
+NUTZUNG VON INFORMATIKSYSTEMEN
+Die Schülerinnen und Schüler
+
+    □ nutzen bereitgestellte Informatiksysteme und das Internet reflektiert zur Erschlie-
+        ßung, Aufbereitung und Präsentation fachlicher Inhalte (D),
+
+    □ nutzen das verfügbare Informatiksystem zur strukturierten Verwaltung von Daten,
+        zur Organisation von Arbeitsabläufen sowie zur Verteilung und Zusammenfüh-
+        rung von Arbeitsanteilen (K),
+
+    □ wenden didaktisch orientierte Entwicklungsumgebungen zur Demonstration, zum
+        Entwurf, zur Implementierung und zum Test von Informatiksystemen an (I),
+
+    □ entwickeln mit didaktisch orientierten Entwicklungsumgebungen einfache Benut-
+        zungsoberflächen zur Kommunikation mit einem Informatiksystem (M).
+
+SICHERHEIT
+Die Schülerinnen und Schüler
+
+    □ erläutern Eigenschaften und Aufbau von Datenbanksystemen unter dem Aspekt
+        der sicheren Nutzung (A),
+
+    □ analysieren und erläutern Eigenschaften, Funktionsweisen und Einsatzbereiche
+        symmetrischer und asymmetrischer Verschlüsselungsverfahren (A).
+
+Inhaltsfeld ������ Informatik, Mensch und Gesellschaft
+
+   Inhaltliche Schwerpunkte
+      Wirkungen der Automatisierung
+      Grenzen der Automatisierung
+
+WIRKUNGEN DER AUTOMATISIERUNG
+Die Schülerinnen und Schüler
+
+    □ untersuchen und bewerten anhand von Fallbeispielen Auswirkungen des Einsatzes
+        von Informatiksystemen sowie Aspekte der Sicherheit von Informatiksystemen,
+        des Datenschutzes und des Urheberrechts (A),
+
+    □ untersuchen und bewerten Problemlagen, die sich aus dem Einsatz von Informa-
+        tiksystemen ergeben, hinsichtlich rechtlicher Vorgaben, ethischer Aspekte und
+        gesellschaftlicher Werte unter Berücksichtigung unterschiedlicher Interessenlagen
+       (A).
+
+38
+    Kompetenzerwartungen und inhaltliche Schwerpunkte in der Qualifikationsphase
+GRENZEN DER AUTOMATISIERUNG
+Die Schülerinnen und Schüler
+
+    □ untersuchen und beurteilen Grenzen des Problemlösens mit Informatiksystemen
+       (A).
+
+                                                                                                              39
+3 Lernerfolgsüberprüfung und Leistungsbewertung
+
+Erfolgreiches Lernen ist kumulativ. Entsprechend sind die Kompetenzerwartungen im
+Kernlehrplan in der Regel in ansteigender Progression und Komplexität formuliert. Dies
+erfordert, dass Lernerfolgsüberprüfungen darauf ausgerichtet sein müssen, Schülerin-
+nen und Schülern Gelegenheit zu geben, Kompetenzen, die sie in den vorangegange-
+nen Jahren erworben haben, wiederholt und in wechselnden Zusammenhängen unter
+Beweis zu stellen. Für Lehrerinnen und Lehrer sind die Ergebnisse der begleitenden
+Diagnose und Evaluation des Lernprozesses sowie des Kompetenzerwerbs Anlass, die
+Zielsetzungen und die Methoden ihres Unterrichts zu überprüfen und ggf. zu modifizie-
+ren. Für die Schülerinnen und Schüler sollen ein den Lernprozess begleitendes Feedback
+sowie Rückmeldungen zu den erreichten Lernständen eine Hilfe für die Selbsteinschät-
+zung sowie eine Ermutigung für das weitere Lernen darstellen. Die Beurteilung von
+Leistungen soll demnach grundsätzlich mit der Diagnose des erreichten Lernstandes
+und Hinweisen zum individuellen Lernfortschritt verknüpft sein.
+
+   Die Leistungsbewertung ist so anzulegen, dass sie den in den Fachkonferenzen gemäß
+Schulgesetz beschlossenen Grundsätzen entspricht, dass die Kriterien für die Notenge-
+bung den Schülerinnen und Schülern transparent sind und die Korrekturen sowie die
+Kommentierungen den Lernenden auch Erkenntnisse über die individuelle Lernentwick-
+lung ermöglichen. Dazu gehören – neben der Etablierung eines angemessenen Umgangs
+mit eigenen Stärken, Entwicklungsnotwendigkeiten und Fehlern – insbesondere auch
+Hinweise zu individuell erfolgversprechenden allgemeinen und fachmethodischen Lern-
+strategien.
+
+   Im Sinne der Orientierung an den zuvor formulierten Anforderungen sind grundsätz-
+lich alle in Kapitel 2 des Lehrplans ausgewiesenen Kompetenzbereiche („Argumentieren“,
+„Modellieren“, „Implementieren“, „Darstellen und Interpretieren“ und „Kommunizie-
+ren und Kooperieren“) bei der Leistungsbewertung angemessen zu berücksichtigen.
+Überprüfungsformen schriftlicher, mündlicher und ggf. praktischer Art sollen deshalb
+darauf ausgerichtet sein, die Erreichung der dort aufgeführten Kompetenzerwartungen
+zu überprüfen. Ein isoliertes, lediglich auf Reproduktion angelegtes Abfragen einzelner
+Daten und Sachverhalte allein kann dabei den zuvor formulierten Ansprüchen an die
+Leistungsfeststellung nicht gerecht werden.
+
+   Die rechtlich verbindlichen Grundsätze der Leistungsbewertung sind im Schulge-
+
+40
+                                          Beurteilungsbereich „Schriftliche Arbeiten/Klausuren“
+
+setz sowie in der Ausbildungs- und Prüfungsordnung für die gymnasiale Oberstufe
+(APO-GOSt) dargestellt. Demgemäß sind bei der Leistungsbewertung von Schülerin-
+nen und Schülern erbrachte Leistungen in den Beurteilungsbereichen „Schriftliche
+Arbeiten/Klausuren“ sowie „Sonstige Leistungen im Unterricht/Sonstige Mitarbeit“
+entsprechend den in der APO-GOSt angegebenen Gewichtungen zu berücksichtigen.
+Dabei bezieht sich die Leistungsbewertung insgesamt auf die im Zusammenhang mit
+dem Unterricht erworbenen Kompetenzen und nutzt unterschiedliche Formen der
+Lernerfolgsüberprüfung.
+
+   Hinsichtlich der einzelnen Beurteilungsbereiche sind die folgenden Regelungen zu
+beachten.
+
+Beurteilungsbereich „Schriftliche Arbeiten/Klausuren“
+
+Für den Einsatz in Klausuren kommen im Wesentlichen Überprüfungsformen – ggf.
+auch in Kombination – in Betracht, die im letzten Abschnitt dieses Kapitels aufgeführt
+sind. Die Schülerinnen und Schüler müssen mit den Überprüfungsformen, die im Rah-
+men von Klausuren eingesetzt werden, vertraut sein und rechtzeitig sowie hinreichend
+Gelegenheit zur Anwendung haben.
+
+   Über ihre unmittelbare Funktion als Instrument der Leistungsbewertung hinaus sollen
+Klausuren im Laufe der gymnasialen Oberstufe auch zunehmend auf die inhaltlichen
+und formalen Anforderungen des schriftlichen Teils der Abiturprüfungen vorbereiten.
+Dazu gehört u. a. auch die Schaffung angemessener Transparenz im Zusammenhang
+mit einer kriteriengeleiteten Bewertung. Beispiele für Prüfungsaufgaben und Auswer-
+tungskriterien sowie Konstruktionsvorgaben und Operatorenübersichten können im
+Internet auf den Seiten des Schulministeriums abgerufen werden.
+
+   Da in Klausuren neben der Verdeutlichung des fachlichen Verständnisses auch die
+Darstellung bedeutsam ist, muss diesem Sachverhalt bei der Leistungsbewertung hinrei-
+chend Rechnung getragen werden. Gehäufte Verstöße gegen die sprachliche Richtigkeit
+führen zu einer Absenkung der Note gemäß APO-GOSt. Abzüge für Verstöße gegen die
+sprachliche Richtigkeit sollen nicht erfolgen, wenn diese bereits bei der Darstellungsleis-
+tung fachspezifisch berücksichtigt wurden.
+
+   In der Qualifikationsphase wird nach Festlegung durch die Schule eine Klausur durch
+eine Facharbeit ersetzt. Facharbeiten dienen dazu, die Schülerinnen und Schüler mit
+den Prinzipien und Formen selbstständigen, wissenschaftspropädeutischen Lernens
+vertraut zu machen. Die Facharbeit ist eine umfangreichere schriftliche Hausarbeit und
+selbstständig zu verfassen. Umfang und Schwierigkeitsgrad der Facharbeit sind so zu
+gestalten, dass sie ihrer Wertigkeit im Rahmen des Beurteilungsbereichs „Schriftliche
+
+                                                                                                               41
+Lernerfolgsüberprüfung und Leistungsbewertung
+
+Arbeiten/Klausuren“ gerecht wird. Grundsätze der Leistungsbewertung von Fachar-
+beiten regelt die Schule. Die Verpflichtung zur Anfertigung einer Facharbeit entfällt bei
+Belegung eines Projektkurses.
+
+Beurteilungsbereich „Sonstige Leistungen im Unterricht/Sonstige
+Mitarbeit“
+
+Im Beurteilungsbereich „Sonstige Leistungen im Unterricht/Sonstige Mitarbeit“ können
+– neben den nachfolgend aufgeführten Überprüfungsformen – vielfältige weitere zum
+Einsatz kommen, für die kein abschließender Katalog festgesetzt wird. Im Rahmen der
+Leistungsbewertung gelten auch für diese die oben ausgeführten allgemeinen Ansprü-
+che der Lernerfolgsüberprüfung und Leistungsbewertung. Im Verlauf der gymnasialen
+Oberstufe ist auch in diesem Beurteilungsbereich sicherzustellen, dass Formen, die
+im Rahmen der Abiturprüfungen – insbesondere in den mündlichen Prüfungen – von
+Bedeutung sind, frühzeitig vorbereitet und angewendet werden.
+
+   Zu den Bestandteilen der „Sonstigen Leistungen im Unterricht/Sonstigen Mitarbeit“
+zählen u. a. unterschiedliche Formen der selbstständigen und kooperativen Aufgabener-
+füllung, Beiträge zum Unterricht, von der Lehrkraft abgerufene Leistungsnachweise wie
+z. B. die schriftliche Übung, von der Schülerin oder dem Schüler vorbereitete, in abge-
+schlossener Form eingebrachte Elemente zur Unterrichtsarbeit, die z. B. in Form von
+Präsentationen, Protokollen, Referaten und Portfolios möglich werden. Schülerinnen
+und Schüler bekommen durch die Verwendung einer Vielzahl von unterschiedlichen
+Überprüfungsformen vielfältige Möglichkeiten, ihre eigene Kompetenzentwicklung dar-
+zustellen und zu dokumentieren.
+
+   Der Bewertungsbereich „Sonstige Leistungen im Unterricht/Sonstige Mitarbeit“ er-
+fasst die im Unterrichtsgeschehen durch mündliche, schriftliche und ggf. praktische
+Beiträge sichtbare Kompetenzentwicklung der Schülerinnen und Schüler. Der Stand
+der Kompetenzentwicklung in der „Sonstigen Mitarbeit“ wird sowohl durch Beobach-
+tung während des Schuljahres (Prozess der Kompetenzentwicklung) als auch durch
+punktuelle Überprüfungen (Stand der Kompetenzentwicklung) festgestellt.
+
+Überprüfungsformen
+
+Die Kompetenzerwartungen des Kernlehrplans ermöglichen eine Vielzahl von Überprü-
+fungsformen. Im Verlauf der gesamten gymnasialen Oberstufe soll – auch mit Blick auf
+die individuelle Förderung – ein möglichst breites Spektrum der genannten Formen in
+
+42
+                     Überprüfungsformen
+
+schriftlichen, mündlichen oder praktischen Kontexten zum Einsatz gebracht werden.
+Darüber hinaus können weitere Überprüfungsformen nach Entscheidung der Lehrkraft
+eingesetzt werden. Wichtig für die Nutzung der Überprüfungsformen im Rahmen der
+Leistungsbewertung ist es, dass sich die Schülerinnen und Schüler zuvor im Rahmen
+von Anwendungssituationen hinreichend mit diesen vertraut machen konnten. Weitere
+über die Auflistung hinausgehende Überprüfungsformen sind möglich.
+
+Überprüfungsform I   Analyse und Eingrenzung einer kontextbezogenen Problem-
+                     stellung und Entwicklung eines Modells oder Teilmodells mit
+                     erläuternden Begründungen der Entwurfsentscheidungen
+
+Überprüfungsform II  Analyse, Erläuterung und Modifikation eines vorgegebenen
+                     informatischen Modells sowie die vergleichende Beurteilung
+                     unterschiedlicher Entwürfe
+
+Überprüfungsform III Vollständige oder teilweise Implementation einer bereits mo-
+                                  dellierten Problemstellung
+
+Überprüfungsform IV Entwurf und formale Darstellung von Algorithmen zu einer
+                                  vorgegebenen informatischen Problemstellung
+
+Überprüfungsform V   Analyse und Erläuterung von vorgegebenen Algorithmen oder
+                     Programmausschnitten
+
+Überprüfungsform VI  Interpretation gegebener textueller, grafischer oder formaler
+                     Darstellungen informatischer Zusammenhänge und deren
+                     Überführung in eine andere Darstellungsform
+
+Überprüfungsform VII Darstellung, Erläuterung und sachgerechte Anwendung von
+                                  informatischen Begriffen, Verfahren und Lösungsstrategien
+
+Überprüfungsform VIII Analyse und Beurteilung einer Problemlösung oder eines In-
+                                  formatiksystems nach vorgegebenen oder eigenen Kriterien
+
+Überprüfungsform IX  Analyse und Bewertung des Einsatzes eines Informatiksys-
+                     tems in Bezug auf ethische, rechtliche oder gesellschaftliche
+                     Fragestellungen
+
+                     43
+4 Abiturprüfung
+
+Die allgemeinen Regelungen zur schriftlichen und mündlichen Abiturprüfung, mit denen
+zugleich die Vereinbarungen der Kultusministerkonferenz umgesetzt werden, basieren
+auf dem Schulgesetz sowie dem entsprechenden Teil der Ausbildungs- und Prüfungs-
+ordnung für die gymnasiale Oberstufe.
+
+   Fachlich beziehen sich alle Teile der Abiturprüfung auf die in Kapitel 2 dieses Kern-
+lehrplans für das Ende der Qualifikationsphase festgelegte Obligatorik. Bei der Lösung
+schriftlicher wie mündlicher Abituraufgaben sind generell Kompetenzen nachzuwei-
+sen, die im Unterricht der gesamten Qualifikationsphase erworben wurden und deren
+Erwerb breit angelegt wurde.
+
+   Die jährlichen „Vorgaben zu den unterrichtlichen Voraussetzungen für die schriftli-
+chen Prüfungen im Abitur in der gymnasialen Oberstufe“ (Abiturvorgaben), die auf den
+Internetseiten des Schulministeriums abrufbar sind, konkretisieren den Kernlehrplan,
+soweit dies für die Schaffung landesweit einheitlicher Bezüge für die zentral gestell-
+ten Abiturklausuren erforderlich ist. Die Verpflichtung zur Umsetzung des gesamten
+Kernlehrplans bleibt hiervon unberührt.
+
+   Im Hinblick auf die Anforderungen im schriftlichen und mündlichen Teil der Abitur-
+prüfungen ist grundsätzlich von einer Strukturierung in drei Anforderungsbereiche
+auszugehen, die die Transparenz bezüglich des Selbstständigkeitsgrades der erbrachten
+Prüfungsleistung erhöhen soll.
+
+     • Anforderungsbereich I umfasst das Wiedergeben von Sachverhalten und Kenntnis-
+        sen im gelernten Zusammenhang, die Verständnissicherung sowie das Anwenden
+        und Beschreiben geübter Arbeitstechniken und Verfahren.
+
+     • Anforderungsbereich II umfasst das selbstständige Auswählen, Anordnen, Ver-
+        arbeiten, Erklären und Darstellen bekannter Sachverhalte unter vorgegebenen
+        Gesichtspunkten in einem durch Übung bekannten Zusammenhang und das
+        selbstständige Übertragen und Anwenden des Gelernten auf vergleichbare neue
+        Zusammenhänge und Sachverhalte.
+
+     • Anforderungsbereich III umfasst das Verarbeiten komplexer Sachverhalte mit dem
+        Ziel, zu selbstständigen Lösungen, Gestaltungen oder Deutungen, Folgerungen,
+       Verallgemeinerungen, Begründungen und Wertungen zu gelangen. Dabei wählen
+
+44
+                                                                               Schriftliche Abiturprüfung
+
+        die Schülerinnen und Schüler selbstständig geeignete Arbeitstechniken und Ver-
+        fahren zur Bewältigung der Aufgabe, wenden sie auf eine neue Problemstellung
+        an und reflektieren das eigene Vorgehen.
+
+   Für alle Fächer gilt, dass die Aufgabenstellungen in schriftlichen und mündlichen
+Abiturprüfungen alle Anforderungsbereiche berücksichtigen müssen, der Anforderungs-
+bereich II aber den Schwerpunkt bildet.
+
+   Fachspezifisch ist die Ausgestaltung der Anforderungsbereiche an den Kompetenzer-
+wartungen des jeweiligen Kurstyps zu orientieren. Für die Aufgabenstellungen werden
+die für Abiturprüfungen geltenden Operatoren des Faches verwendet, die in einem
+für die Prüflinge nachvollziehbaren Zusammenhang mit den Anforderungsbereichen
+stehen.
+
+   Die Bewertung der Prüfungsleistung erfolgt jeweils auf einer zuvor festgelegten
+Grundlage, die im schriftlichen Abitur aus dem zentral vorgegebenen kriteriellen Bewer-
+tungsraster, im mündlichen Abitur aus dem im Fachprüfungsausschuss abgestimmten
+Erwartungshorizont besteht. Übergreifende Bewertungskriterien für die erbrachten
+Leistungen sind die Komplexität der Gegenstände, die sachliche Richtigkeit und die
+Schlüssigkeit der Aussagen, die Vielfalt der Gesichtspunkte und ihre jeweilige Bedeut-
+samkeit, die Differenziertheit des Verstehens und Darstellens, das Herstellen geeigneter
+Zusammenhänge, die Eigenständigkeit der Auseinandersetzung mit Sachverhalten und
+Problemstellungen, die argumentative Begründung eigener Urteile, Stellungnahmen
+und Wertungen, die Selbstständigkeit und Klarheit in Aufbau und Sprache, die Sicherheit
+im Umgang mit Fachsprache und -methoden sowie die Erfüllung standardsprachlicher
+Normen.
+
+   Hinsichtlich der einzelnen Prüfungsteile sind die folgenden Regelungen zu beachten.
+
+Schriftliche Abiturprüfung
+
+Die Aufgaben für die schriftliche Abiturprüfung werden landesweit zentral gestellt. Alle
+Aufgaben entsprechen den öffentlich zugänglichen Konstruktionsvorgaben und nutzen
+die fachspezifischen Operatoren. Beispiele für Abiturklausuren sind für die Schulen auf
+den Internetseiten des Schulministeriums abrufbar.
+
+   Für die schriftliche Abiturprüfung enthalten die aufgabenbezogenen Unterlagen
+für die Lehrkraft jeweils Hinweise zu Aufgabenart und zugelassenen Hilfsmitteln, die
+Aufgabenstellung, die Materialgrundlage, die Bezüge zum Kernlehrplan und zu den
+Abiturvorgaben, die Vorgaben für die Bewertung der Schülerleistungen sowie den Be-
+
+                                                                                                               45
+Abiturprüfung
+
+wertungsbogen zur Prüfungsarbeit. Die Anforderungen an die zu erbringenden Klausur-
+leistungen werden durch das zentral gestellte kriterielle Bewertungsraster definiert.
+
+   Die Bewertung erfolgt über Randkorrekturen sowie das ausgefüllte Bewertungsraster,
+mit dem die Gesamtleistung dokumentiert wird. Für die Berücksichtigung gehäufter
+Verstöße gegen die sprachliche Richtigkeit gelten die Regelungen aus Kapitel 3 analog
+auch für die schriftliche Abiturprüfung.
+
+   In Informatik kommen alle in Kapitel 3 beschriebenen Aufgabenarten für die schriftli-
+chen Prüfungen in Frage. Die Aufgaben können sich auf ein oder mehrere Inhaltsfelder
+beziehen und mehrere dieser Aufgabenarten enthalten. Teilaufgaben stehen in erkennba-
+rem Sachzusammenhang und hängen nicht so stark voneinander ab, dass nachfolgende
+Teilaufgaben nur lösbar sind, wenn die vorhergehenden korrekt bearbeitet wurden.
+
+   Weitere Details, wie z. B. die Zahl der in Kursen auf grundlegendem und erhöhtem
+Anforderungsniveau in der schriftlichen Abiturprüfung zu bearbeitenden voneinander
+unabhängigen Aufgaben, die Zahl der vorgelegten Aufgaben und die Auswahlmög-
+lichkeiten für die Lehrkraft regeln die jeweiligen Vorgaben für das Zentralabitur. Eine
+Aufgabenauswahl durch die Schülerinnen und Schüler ist nicht vorgesehen.
+
+Mündliche Abiturprüfung
+
+Die Aufgaben für die mündliche Abiturprüfung werden dezentral durch die Fachprüferin
+bzw. den Fachprüfer – im Einvernehmen mit dem jeweiligen Fachprüfungsausschuss
+– gestellt. Dabei handelt es sich um jeweils neue, begrenzte Aufgaben, die dem Prüf-
+ling einschließlich der ggf. notwendigen Texte und Materialien für den ersten Teil der
+mündlichen Abiturprüfung in schriftlicher Form vorgelegt werden. Die Aufgaben für
+die mündliche Abiturprüfung insgesamt sind so zu stellen, dass sie hinreichend breit
+angelegt sind und sich nicht ausschließlich auf den Unterricht eines Kurshalbjahres
+beschränken. Die Berücksichtigung aller Anforderungsbereiche soll eine Beurteilung
+ermöglichen, die das gesamte Notenspektrum umfasst. Auswahlmöglichkeiten für die
+Schülerin bzw. den Schüler bestehen nicht. Der Erwartungshorizont ist zuvor mit dem
+Fachprüfungsausschuss abzustimmen.
+
+   Der Prüfling soll in der Prüfung, die in der Regel mindestens 20, höchstens 30 Minuten
+dauert, in einem ersten Teil selbstständig die vorbereiteten Ergebnisse zur gestellten
+Aufgabe in zusammenhängendem Vortrag präsentieren. In einem zweiten Teil sollen vor
+allem größere fachliche und fachübergreifende Zusammenhänge in einem Prüfungsge-
+spräch angesprochen werden. Es ist nicht zulässig, zusammenhanglose Einzelfragen
+aneinanderzureihen.
+
+46
+                                                                                  Besondere Lernleistung
+
+   Bei der Bewertung mündlicher Prüfungen liegen der im Fachprüfungsausschuss
+abgestimmte Erwartungshorizont sowie die eingangs dargestellten übergreifenden
+Kriterien zugrunde. Die Prüferin oder der Prüfer schlägt dem Fachprüfungsausschuss
+eine Note, ggf. mit Tendenz, vor. Die Mitglieder des Fachprüfungsausschusses stimmen
+über diesen Vorschlag ab.
+
+   Je Prüfung ist eine für den Prüfling neue, begrenzte Aufgabe zu stellen. Für die münd-
+liche Prüfung gelten im Grundsatz die gleichen Anforderungen wie für die schriftlichen
+Prüfungen. Die Aufgabenstellungen für den ersten Prüfungsteil werden jedoch Material
+von geringerem Umfang und weniger komplexe Arbeitsanweisungen enthalten als die
+Aufgaben für die schriftliche Prüfung.
+
+Besondere Lernleistung
+
+Schülerinnen und Schüler können in die Gesamtqualifikation eine besondere Lern-
+leistung einbringen, die im Rahmen oder Umfang eines mindestens zwei Halbjahre
+umfassenden Kurses erbracht wird. Als besondere Lernleistung können ein umfassen-
+der Beitrag aus einem von den Ländern geförderten Wettbewerb, die Ergebnisse des
+Projektkurses oder eines umfassenden fachlichen oder fachübergreifenden Projektes
+gelten.
+
+   Die Absicht, eine besondere Lernleistung zu erbringen, muss spätestens zu Beginn des
+zweiten Jahres der Qualifikationsphase bei der Schule angezeigt werden. Die Schulleite-
+rin oder der Schulleiter entscheidet in Abstimmung mit der Lehrkraft, die als Korrektor
+vorgesehen ist, ob die vorgesehene Arbeit als besondere Lernleistung zugelassen wer-
+den kann. Die Arbeit ist spätestens bis zur Zulassung zur Abiturprüfung abzugeben,
+nach den Maßstäben und dem Verfahren für die Abiturprüfung zu korrigieren und zu
+bewerten. Ein Rücktritt von der besonderen Lernleistung muss bis zur Entscheidung
+über die Zulassung zur Abiturprüfung erfolgt sein.
+
+   In einem Kolloquium von in der Regel 30 Minuten, das im Zusammenhang mit der
+Abiturprüfung nach Festlegung durch die Schulleitung stattfindet, stellt der Prüfling
+vor einem Fachprüfungsausschuss die Ergebnisse der besonderen Lernleistung dar,
+erläutert sie und antwortet auf Fragen. Die Endnote wird aufgrund der insgesamt in
+der besonderen Lernleistung und im Kolloquium erbrachten Leistungen gebildet; eine
+Gewichtung der Teilleistungen findet nicht statt. Bei Arbeiten, an denen mehrere Schü-
+lerinnen und Schüler beteiligt werden, muss die individuelle Schülerleistung erkennbar
+und bewertbar sein.
+
+                                                                                                               47
+5 Anhang – Progressionstabelle zu den übergeordneten
+   Kompetenzerwartungen
+
+Bei einigen Kompetenzerwartungen ist eine Progression zwischen Einführungs- und
+Qualifikationsphase nicht explizit ausgewiesen. Ein Kompetenzzuwachs wird aber gleich-
+wohl erwartet. Dieser ergibt sich immer auch aus
+
+     • der Zugänglichkeit der Kontexte und Beispiele,
+     • dem Umfang und der Komplexität der Problemstellungen sowie der Lösungswege,
+     • den Anforderungen, die an das Abstraktionsvermögen und das analytische Denken
+
+        gestellt werden,
+     • dem zur Problemlösung erforderlichen Grad des Verfügens über Problemlösestra-
+
+        tegien,
+     • dem Grad der Vernetzung der Kompetenzen, die für eine Bearbeitung von Pro-
+
+        blemstellungen erforderlich sind,
+     • dem Grad der Selbstständigkeit der Schülerinnen und Schüler bei der Problemlö-
+
+        sung,
+     • dem Grad der Arbeitsteilung bei der Problemlösung.
+
+Einführungsphase                                   Qualiﬁkationsphase
+
+                                A ﹙A﹚
+
+Die Schülerinnen und Schüler …                     Die Schülerinnen und Schüler …
+
+■ erläutern und begründen methodische Vorgehens-   ■ erläutern und begründen methodische Vorgehens-
+weisen, Entwurfs- und Implementationsentscheidun-  weisen, Entwurfs- und Implementationsentscheidun-
+gen sowie Aussagen über Informatiksysteme,         gen sowie Aussagen über Informatiksysteme,
+
+                                                   ■ zeigen im Problemlösungsprozess Alternativen auf
+                                                   und begründen ihre Auswahlentscheidungen,
+
+■ analysieren und erläutern informatische Modelle, ■ analysieren und erläutern informatische Modelle,
+
+                                                                       (Fortsetzung nächste Seite …)
+
+48
+Anhang – Progressionstabelle zu den übergeordneten Kompetenzerwartungen
+
+(… Fortsetzung)                                    Qualiﬁkationsphase
+
+Einführungsphase
+
+■ analysieren und erläutern Computerprogramme, ■ analysieren und erläutern Computerprogramme,
+
+■ beurteilen die Angemessenheit informatischer     ■ beurteilen die Angemessenheit von Modellierun-
+Modelle.                                           gen und Implementationen,
+
+                                                   ■ erläutern und beurteilen informatische Modelle
+                                                   und Informatiksysteme hinsichtlich ihrer Möglichkei-
+                                                   ten, Grenzen und Auswirkungen.
+
+                                           M ﹙M﹚
+
+Die Schülerinnen und Schüler …                     Die Schülerinnen und Schüler …
+
+■ konstruieren zu kontextbezogenen Problemstel-    ■ konstruieren zu kontextbezogenen Problemstel-
+lungen informatische Modelle,                      lungen informatische Modelle,
+
+■ modiﬁzieren und erweitern informatische          ■ modiﬁzieren und erweitern informatische
+Modelle.                                           Modelle,
+
+                                                   ■ wenden im Modellierungsprozess geeignete
+                                                   Lösungsstrategien an.
+
+                                           I ﹙I﹚
+
+Die Schülerinnen und Schüler …                     Die Schülerinnen und Schüler …
+
+■ implementieren auf der Grundlage von Modellen    ■ implementieren auf der Grundlage von Modellen
+oder Modellausschnitten Computerprogramme,         oder Modellausschnitten Computerprogramme,
+
+■ modiﬁzieren und erweitern Computerprogramme, ■ modiﬁzieren und erweitern Computerprogramme,
+
+■ testen und korrigieren Computerprogramme.        ■ testen und korrigieren Computerprogramme
+                                                   systematisch.
+
+                                D  I ﹙D﹚
+
+Die Schülerinnen und Schüler …                     Die Schülerinnen und Schüler …
+
+■ interpretieren Daten und erläutern Beziehungen   ■ interpretieren Daten und erläutern Beziehungen
+und Abläufe, die in Form von textuellen und graﬁ-  und Abläufe, die in Form von textuellen, graﬁschen
+schen Darstellungen gegeben sind,                  oder formalen Darstellungen gegeben sind,
+
+                                                                       (Fortsetzung nächste Seite …)
+
+                                                                                               49
+Anhang – Progressionstabelle zu den übergeordneten Kompetenzerwartungen
+
+(… Fortsetzung)                                 Qualiﬁkationsphase
+
+Einführungsphase
+
+■ überführen gegebene textuelle und graﬁsche    ■ überführen gegebene textuelle, graﬁsche oder for-
+Darstellungen informatischer Zusammenhänge in   male Darstellungen informatischer Zusammenhänge
+die jeweils andere Darstellungsform,            in eine der anderen Darstellungsformen,
+
+■ stellen informatische Modelle und Abläufe in  ■ stellen informatische Modelle und Abläufe in
+Texten, Tabellen, Diagrammen und Graﬁken dar.   Texten, Tabellen, Diagrammen, Graﬁken und Forma-
+                                                lismen dar.
+
+                                K  K ﹙K﹚
+
+Die Schülerinnen und Schüler …                  Die Schülerinnen und Schüler …
+
+■ verwenden Fachausdrücke bei der Kommunikati- ■ verwenden die Fachsprache bei der Kommunikati-
+
+on über informatische Sachverhalte,             on über informatische Sachverhalte,
+
+■ kommunizieren und kooperieren in Gruppen und ■ organisieren und koordinieren kooperatives und
+
+in Partnerarbeit,                               eigenverantwortliches Arbeiten,
+
+                                                ■ strukturieren den Arbeitsprozess, vereinbaren
+                                                Schnittstellen und führen Ergebnisse zusammen,
+
+                                                ■ beurteilen Arbeitsorganisation, Arbeitsabläufe
+                                                und Ergebnisse,
+
+■ präsentieren Arbeitsabläufe und -ergebnisse.  ■ präsentieren Arbeitsabläufe und -ergebnisse adres-
+                                                satengerecht.
+
+50
+

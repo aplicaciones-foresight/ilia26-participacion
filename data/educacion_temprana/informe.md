@@ -3,25 +3,26 @@
 **Replicación del subindicador (b) del ILIA 2025 (CEPAL/CENIA)** para cinco países
 benchmark no latinoamericanos: **Portugal, España, Estonia, Alemania y Singapur**.
 
-> **BORRADOR (vía híbrida).** Las categorías se derivan de investigación con buscador
-> (WebSearch) porque el entorno de ejecución **bloquea la descarga directa** de los
-> documentos oficiales (ver `README.md`). Quedan **pendientes de confirmación/justificación
-> verbatim** contra los documentos primarios listados en `fuentes/MANIFEST.md`.
+> **VERSIÓN VERIFICADA (cierre verbatim, 2026-06-06).** Las cuatro categorías «5»
+> (ES, DE, EE, SG) están ahora respaldadas por **cita textual verificada como subcadena
+> exacta** del documento primario oficial (reusando `src/verify_verbatim.py:normalizar`+
+> `es_subcadena`). Los PDFs fuente están en `fuentes/<PAÍS>/`; el reporte está en
+> `fuentes/_verify_report.json` (15/15 OK). **PT = 4** está verificado por ausencia.
 >
 > **Decisión metodológica fijada (2026-06-05): regla INCLUSIVA** — la IA presente en
 > *cualquier* asignatura del currículo nacional vigente, **incluidas las electivas**, cuenta
 > como «IA implementada» (categoría 5). Ver la sección de verificación.
 >
-> Fecha de consulta: **2026-06-05**.
+> Fecha de consulta: **2026-06-05**. Fecha de verbatim: **2026-06-06**.
 
 ## Resumen ejecutivo
 
 | País | Cat. | Puntaje | Confianza | Criterio (secundaria) |
 |---|:--:|:--:|---|---|
-| **España (ES)** | **5** | **100** | media-alta | IA **explícita** en saberes básicos de RD 217/2022 (ESO) y RD 243/2022 (Bachillerato) |
-| **Alemania (DE)** | **5** | **100** | media-alta | IA **explícita y vinculante** en *LehrplanPLUS* Bayern (Gym. 11) y *Kernlehrplan* NRW (Sek II) |
-| **Estonia (EE)** | **5** | **100** | media | IA como contenido de la asignatura **electiva** *Informaatika* (regla inclusiva) |
-| **Singapur (SG)** | **5** | **100** | media | *Machine learning* examinable en el syllabus **electivo** *Computing 7155* (regla inclusiva) |
+| **España (ES)** | **5** | **100** | **alta** (verbatim_ok) | IA **nominal** en saberes básicos y criterios de evaluación del BOE: RD 217/2022 (ESO) + RD 243/2022 (Bachillerato) |
+| **Alemania (DE)** | **5** | **100** | **alta** (verbatim_ok) | IA **nominal y vinculante** en *LehrplanPLUS* Bayern (Gym 11, Lernbereich propio de 16 h) y en KLP NRW Sek I Klasse 5/6 (Pflichtfach, Inhaltsfeld «Automaten und künstliche Intelligenz») |
+| **Estonia (EE)** | **5** | **100** | **alta** (verbatim_ok; sustantividad: **subtema**) | IA como contenido de la **electiva** *Informaatika* (Lisa 10 del PRÕK), tema «Infoühiskonna tehnoloogiad» |
+| **Singapur (SG)** | **5** | **100** | **alta** (verbatim_ok; sustantividad: **subtema**) | *AI* y *machine learning* examinables en el syllabus **electivo** *Computing 7155*, Module 5 «Impact of Computing», sección 5.4 «Emerging Technologies» |
 | **Portugal (PT)** | 4 | 75 | alta | TIC implementado; IA **no vigente** (solo en la revisión curricular con horizonte 2027) |
 
 **Lectura.** Con la regla inclusiva, **cuatro de los cinco** países alcanzan la categoría 5:
@@ -31,11 +32,19 @@ en 4 porque su IA **aún no está en vigor**: la incorpora una revisión cuya nu
 consulta en 2027 — y la regla inclusiva relaja el eje «electiva vs universal», **no** el eje
 «implementado vs propuesta».
 
-Conviene tener presente que la regla inclusiva es **generosa**: produce más «5» que una lectura
-estricta. Bajo reglas alternativas (IA solo en asignatura de cursado universal, o IA como
-contenido **sustantivo** y no incidental), **EE y SG volverían a 4** (en SG, *machine learning*
-es un subtema, no un módulo). La elección se registra abajo y debe aplicarse por igual a los
-cinco para que el benchmark sea coherente.
+**Sustantividad (verificado por verbatim 2026-06-06).** El cierre verbatim confirma que:
+- **ES y DE** tienen IA como **contenido sustantivo** del currículo vinculante: en ES, en
+  saberes básicos y criterios de evaluación del BOE; en DE-BY, como **Lernbereich propio**
+  (16 h) en Gym 11; en DE-NRW, como **Inhaltsfeld propio** del Pflichtfach Klasse 5/6.
+- **EE y SG** tienen IA como **subtema**: en EE, 1 de 9 *õpitulemused* del tema
+  «Infoühiskonna tehnoloogiad» dentro de la electiva *Informaatika*; en SG, sección 5.4
+  «Emerging Technologies» con 5 *learning outcomes* dentro del Módulo 5 «Impact of Computing»
+  del syllabus electivo 7155.
+
+Conviene tener presente que la regla inclusiva es **generosa**: produce más «5» que una
+lectura estricta. Bajo reglas alternativas (IA solo en asignatura de cursado universal, o IA
+como contenido **sustantivo** y no incidental), **EE y SG volverían a 4**. La elección se
+registra abajo y se aplica por igual a los cinco para que el benchmark sea coherente.
 
 ## Metodología (resumen; detalle en `README.md`)
 
@@ -48,12 +57,13 @@ cinco para que el benchmark sea coherente.
   currículo nacional vigente, incl. electivas, ⇒ «implementada». (Documentado para
   reproducibilidad; alternativas estrictas anotadas en cada país.)
 - **Doble criterio por país:** TIC vs IA, y propuesta vs implementado.
-- **Disciplina heredada del repo:** «ningún número de memoria»; cada categoría se apoya en
-  evidencia citada con URL. Las citas decisivas se verificarán como **subcadena exacta** del
-  documento primario (lógica de `src/verify_verbatim.py`) cuando se disponga del texto.
-- **Limitación de red (transparente):** `curl/wget` y `WebFetch` devuelven `403 "Host not in
-  allowlist"`; solo **WebSearch** está disponible. Por eso varias citas son *snippets* de
-  buscador o de portales oficiales secundarios, no aún el texto literal del boletín/decreto.
+- **Cierre verbatim (2026-06-06):** los 6 PDFs de Prioridad A se descargaron con `curl` a
+  `fuentes/<PAÍS>/`, se extrajeron a `.txt` con `pdftotext` (HTML para Bayern) y las citas
+  decisivas se verificaron como **subcadena exacta** del texto primario reusando
+  `src/verify_verbatim.py:normalizar`+`es_subcadena`. Reporte en `fuentes/_verify_report.json`.
+- **Limitación previa (resuelta):** WebFetch sigue devolviendo `403 "Host not in allowlist"`,
+  pero `curl` con `-A "Mozilla/5.0"` a los hosts oficiales sí funcionó esta vez, lo que
+  permitió bajar los 6 documentos y cerrar el verbatim.
 
 ---
 
@@ -86,7 +96,7 @@ que la incorporación es de 2027.
 
 ---
 
-## España — Categoría 5 (IA implementado, 100) · confianza media-alta
+## España — Categoría 5 (IA implementado, 100) · confianza alta (verbatim_ok)
 
 **Sistema y niveles.** Secundaria = **ESO** (RD 217/2022) + **Bachillerato** (RD 243/2022);
 marco LOMLOE. Las 17 CCAA desarrollan sobre las enseñanzas mínimas nacionales.
@@ -96,30 +106,37 @@ obligatoria de oferta) con informática, redes, programación y pensamiento comp
 **competencia digital** transversal (DigComp). En Bachillerato, **«Tecnología e Ingeniería
 I/II»**. Vigente desde 2022-23/2023-24.
 
-**IA en secundaria — explícita en norma vigente.** La IA aparece **nominalmente** en los
-saberes básicos de los RD (no solo en la Estrategia Nacional de IA):
+**IA en secundaria — nominal y verificada en el BOE.** El verbatim confirmado contra los
+PDFs consolidados del BOE establece la IA como contenido vinculante:
 
-- *Bachillerato*, «Tecnología e Ingeniería» (portal oficial **Educagob**): «…utilizando
-  **tecnologías emergentes incluyendo inteligencia artificial**, Big data e Internet de las
-  Cosas».
-- *ESO*, «Tecnología y Digitalización»: materiales LOMLOE describen «introducción a módulos de
-  **inteligencia artificial**» (evidencia más débil, pendiente de confirmar en el Anexo II del
-  BOE).
-- *Galicia*: optativa de 4.º ESO **«Intelixencia Artificial para a Sociedade»** (2023-24).
+- *Bachillerato, Tecnología e Ingeniería I*, **Criterio de evaluación 5.1** (RD 243/2022,
+  Anexo II): «5.1 Controlar el funcionamiento de sistemas tecnológicos y robóticos,
+  utilizando lenguajes de programación informática y aplicando las posibilidades que ofrecen
+  las tecnologías emergentes, tales como **inteligencia artificial**, internet de las cosas,
+  big data…»
+- *Bachillerato, Tecnología e Ingeniería II*, **Saberes básicos, E. Sistemas informáticos
+  emergentes**: «**Inteligencia artificial**, big data, bases de datos distribuidas y
+  ciberseguridad.»
+- *ESO, Tecnología y Digitalización*, **Criterio 5.2** (RD 217/2022, Anexo II): «5.2 Programar
+  aplicaciones sencillas […] aplicando herramientas de edición, así como **módulos de
+  inteligencia artificial** que añadan funcionalidades a la solución.»
+- *ESO, Tecnología y Digitalización*, **Saberes básicos, C. Pensamiento computacional,
+  programación y robótica**: «Aplicaciones informáticas sencillas, para ordenador y
+  dispositivos móviles, e **introducción a la inteligencia artificial**.»
 
 **Justificación.** **5** porque la IA es **contenido nominal explícito en normas vinculantes
-vigentes**. Confianza **media-alta**: la cita más sólida procede de **Educagob** (oficial) y de
-materiales docentes, **no aún del BOE literal**. La verificación verbatim del Anexo II de RD
-217/2022 y RD 243/2022 **fija/justifica** el 5 (extracción de la cita; ya no decide categoría).
+vigentes**, ahora con cita textual verificada (verbatim_ok contra los PDFs del BOE). En ES la
+IA aparece tanto en **saberes básicos** como en **criterios de evaluación**, en ESO y en
+Bachillerato — **contenido sustantivo**, no incidental. Confianza **alta**.
 
-**Fuentes:** [RD 217/2022 ESO (BOE)](https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975) ·
-[RD 243/2022 Bachillerato (BOE)](https://www.boe.es/buscar/act.php?id=BOE-A-2022-5521) ·
+**Fuentes:** [RD 217/2022 ESO (BOE PDF consolidado)](https://www.boe.es/buscar/pdf/2022/BOE-A-2022-4975-consolidado.pdf) ·
+[RD 243/2022 Bachillerato (BOE PDF consolidado)](https://www.boe.es/buscar/pdf/2022/BOE-A-2022-5521-consolidado.pdf) ·
 [Educagob — Tecnología e Ingeniería](https://educagob.educacionfpydeportes.gob.es/curriculo/curriculo-lomloe/menu-curriculos-basicos/bachillerato/materias/tecnologia-ingenieria/criterios-eval-primer-curso.html) ·
 [DOG Galicia — IA para a Sociedade](https://www.xunta.gal/dog/Publicados/2023/20230825/AnuncioG0655-100823-0002_es.html)
 
 ---
 
-## Estonia — Categoría 5 (IA implementado, 100, regla inclusiva) · confianza media
+## Estonia — Categoría 5 (IA implementado, 100, regla inclusiva) · confianza alta (verbatim_ok)
 
 **Sistema y niveles.** *Põhikool* (1–9; tramo 7–9 = secundaria inferior) + *Gümnaasium* (10–12).
 Currículos nacionales = reglamentos del Gobierno (consolidados 2024).
@@ -129,27 +146,38 @@ generales **transversales obligatorias** (DigComp 2.1), en todas las asignaturas
 **«Informaatika»** existe como asignatura **electiva** (*valikõppeaine*). ⇒ TIC implementada
 (garantiza ≥4).
 
-**IA en secundaria — contenido del currículo electivo (verificado 2026-06-05).** La IA se
-trata como «conceptos, ejemplos, aplicaciones y riesgos» **dentro de la asignatura electiva de
-Informaatika**, que forma parte del currículo nacional. Aparte, **«AI Leap» (2025)** dota de
-herramientas de IA a ~20.000 estudiantes de 10.º–11.º, pero su **currículo se está definiendo**
-(grupos de trabajo 2025): eso **no** computa como implementado.
+**IA en secundaria — verbatim verificado en el Anexo 10 del PRÕK.** La IA aparece en el
+**reglamento vinculante** del Põhikooli riiklik õppekava, Lisa 10 («Valikõppeaine
+Informaatika», redacción consolidada 2023):
+
+- **III kooliaste · tema «Infoühiskonna tehnoloogiad» · Õpitulemus 6:** «kirjeldab
+  **tehisintellekti** ja asjade interneti rakendusviise majanduses, avalikus sektoris,
+  hariduses ja sellega kaasnevaid võimalikke ohtusid» — *(traducción: describe los usos de la
+  inteligencia artificial y el internet de las cosas en la economía, el sector público y la
+  educación, así como los posibles riesgos asociados)*.
+- **III kooliaste · «Infoühiskonna tehnoloogiad» · Õppesisu:** «Uued tehnoloogiatrendid:
+  **tehisintellekt**, ava- ja suurandmed.» y «**Tehisintellekti** ja asjade interneti
+  mõisted, näited, rakendused ja seonduvad riskid.»
+
+Aparte, **«AI Leap» (2025)** dota de herramientas de IA a ~20.000 estudiantes de 10.º–11.º,
+pero su currículo se está definiendo (grupos de trabajo 2025): eso **no** computa como
+implementado.
 
 **Justificación.** **5 bajo la regla inclusiva:** la IA es contenido del currículo nacional
-vigente a través de una asignatura **electiva** (Informaatika). **Confianza media:** la
-evidencia distingue de forma imprecisa entre el **texto vinculante** del anexo de Informaatika
-(*Lisa*) y los **materiales de apoyo**; *AI Leap* no se computa (en desarrollo). **Nota de
-regla:** bajo un umbral estricto (cursado universal o contenido sustantivo), **EE sería 4**. La
-verificación verbatim del anexo de Informaatika confirmaría el término en el texto vinculante.
+vigente a través de una asignatura **electiva** (Informaatika), con cita textual verificada
+contra el PDF del Riigi Teataja. **Sustantividad: SUBTEMA.** La IA es 1 de 9 *õpitulemused*
+del tema «Infoühiskonna tehnoloogiad», no un módulo propio. **Nota de regla:** bajo un umbral
+estricto (cursado universal o contenido sustantivo), **EE sería 4**. Confianza **alta**:
+verbatim del anexo de Informaatika confirma el término en el texto vinculante.
 
 **Fuentes:** [Gümnaasiumi riiklik õppekava (EN)](https://www.riigiteataja.ee/en/eli/529042024001/consolide) ·
-[PRÕK Lisa — Valikõppeaine Informaatika (PDF)](https://www.riigiteataja.ee/aktilisa/1080/3202/3005/18m_pohi_lisa10.pdf) ·
+[PRÕK Lisa 10 — Valikõppeaine Informaatika (PDF)](https://www.riigiteataja.ee/aktilisa/1080/3202/3005/18m_pohi_lisa10.pdf) ·
 [AI Leap — Eurydice](https://eurydice.eacea.ec.europa.eu/news/estonia-ai-leap-initiative-enhance-learning-and-teaching) ·
 [Valitsus kiitis heaks ajakohastatud riiklikud õppekavad (HTM)](https://www.hm.ee/uudised/valitsus-kiitis-heaks-ajakohastatud-riiklikud-oppekavad)
 
 ---
 
-## Alemania — Categoría 5 (IA implementado, 100) · confianza media-alta
+## Alemania — Categoría 5 (IA implementado, 100) · confianza alta (verbatim_ok)
 
 **Sistema y niveles.** Federal: educación competencia de los 16 **Länder**; la **KMK** coordina
 (no vinculante). Lo vinculante son los *Lehrpläne* de cada Land. Secundaria = **Sek I** + **Sek
@@ -159,48 +187,67 @@ II**. Muestra: Bayern, NRW, Berlín-Brandeburgo, Baden-Württemberg.
 Länder** en Sek I (Informatik-Monitor 2024/25); en la muestra, presente en BY, NRW, BW.
 *Medienbildung* transversal (KMK 2016/21). ⇒ TIC/Informatik implementado.
 
-**IA en secundaria — explícita y vinculante.** La IA figura **nominalmente en currículos de
-Land con rango normativo**:
+**IA en secundaria — verbatim verificado en dos *Lehrpläne* vinculantes.** La IA figura
+nominalmente en los siguientes textos vinculantes vigentes:
 
-- **Bayern**, *LehrplanPLUS* Gymnasium **Jhst. 11**, *Lernbereich* **«Künstliche
-  Intelligenz»**: «*erörtern Ansätze zur Definition des Begriffs Künstliche Intelligenz…*».
-- **NRW**, *Kernlehrplan* Informatik **Sek II**, *Inhaltsfeld* **«Künstliche Intelligenz und
-  maschinelles Lernen»**: «*Maschinelles Lernen als Teilgebiet der Künstlichen Intelligenz…*».
+- **Bayern**, *LehrplanPLUS* Gymnasium **Jhst. 11**, Informatik (NTG): existe el
+  *Lernbereich* **4 «Künstliche Intelligenz» (ca. 16 Std.)** con la Kompetenzerwartung
+  literal: «**diskutieren Ansätze zur Definition des Begriffs Künstliche Intelligenz (KI)**,
+  beschreiben verschiedene Grundideen von Verfahren der KI (u. a. maschinelles Lernen) sowie
+  ihre Anwendungsbereiche.»  *(Corrección al borrador previo: el verbo verbatim es
+  «diskutieren», no «erörtern».)*
+- **NRW**, *Kernlehrplan* **Pflichtfach Informatik Klasse 5/6** (Sek I, vigente desde
+  2021/22): contiene el **Inhaltsfeld «Automaten und künstliche Intelligenz»** con
+  *inhaltliche Schwerpunkte* «Maschinelles Lernen mit Entscheidungsbäumen» y «Maschinelles
+  Lernen mit neuronalen Netzen».  *(Corrección al borrador previo: el KLP GOSt (Sek II) NRW
+  vigente es de 2014 y NO contiene KI; la IA vinculante de NRW está en el KLP Klasse 5/6.)*
 
-**Justificación.** **5:** la IA es contenido explícito de currículos vinculantes vigentes en los
-Länder de mayor peso (BY + NRW ≈ 40 % del alumnado). Bajo la **regla inclusiva**, el caveat de
-federalismo (7/16 Länder sin Pflichtfach Informatik) **pesa menos**: basta con que la IA esté en
-el currículo de Land vigente. **Confianza media-alta:** evidencia más sólida en **Sek II**; no se
-pudo leer el texto literal. Verbatim del *LehrplanPLUS* BY 11 y del *KLP* NRW Sek II justifica el 5.
+**Justificación.** **5:** la IA es contenido explícito de **dos** currículos vinculantes
+vigentes en los Länder de mayor peso (BY + NRW ≈ 40 % del alumnado), con cita textual
+verificada contra los archivos oficiales. **Sustantividad alta:** en BY es un **Lernbereich
+propio** (16 h con Kompetenzerwartungen específicas); en NRW Klasse 5/6 es un **Inhaltsfeld
+propio**. Bajo la regla inclusiva el caveat de federalismo (7/16 Länder sin Pflichtfach
+Informatik) **pesa menos**: basta con que la IA esté en el currículo de Land vigente.
+Confianza **alta** (verbatim_ok).
 
 **Fuentes:** [LehrplanPLUS Bayern — Gym 11 Informatik](https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/11/informatik/ntg) ·
 [Lernbereich «Künstliche Intelligenz» (Bayern)](https://www.lehrplanplus.bayern.de/fachlehrplan/lernbereich/291294) ·
-[KLP Informatik Sek II NRW (PDF)](https://lehrplannavigator.nrw.de/system/files/media/document/file/klp_gost_informatik.pdf) ·
+[KLP Klasse 5/6 Pflichtfach Informatik NRW (PDF, 2021)](https://lehrplannavigator.nrw.de/system/files/media/document/file/si_kl5u6_if_klp_2021_07_01.pdf) ·
+[KLP Informatik GOSt NRW (PDF, 2014; contexto, sin KI)](https://lehrplannavigator.nrw.de/system/files/media/document/file/klp_gost_informatik.pdf) ·
 [Informatik-Monitor 2024/25](https://informatik-monitor.de/2024-25)
 
 ---
 
-## Singapur — Categoría 5 (IA implementado, 100, regla inclusiva) · confianza media
+## Singapur — Categoría 5 (IA implementado, 100, regla inclusiva) · confianza alta (verbatim_ok)
 
 **Sistema y niveles.** *Primary* + **Secondary** (1–4/5; *Full SBB* desde 2024) + *Pre-University*.
 «Secundaria» ILIA = Secondary. Exámenes Singapore-Cambridge GCE O-Level.
 
 **TIC/Computing en secundaria — implementado (electivo).** **«Computing» (Syllabus 7155)** es
 asignatura **electiva** del currículo nacional, con syllabus oficial MOE/SEAB (implementación
-2024) y examen nacional. Cuatro módulos: *Data and Information; Systems and Communications;
-Abstraction and Algorithms; Programming*. ⇒ TIC/Computing implementado (garantiza ≥4).
+2024) y examen nacional. **Cinco** módulos: 1) *Computing Fundamentals*; 2) *Algorithms and
+Programming*; 3) *Spreadsheets*; 4) *Networking*; 5) *Impact of Computing*. ⇒ TIC/Computing
+implementado (garantiza ≥4). *(Corrección al borrador previo, que listaba otros nombres.)*
 
-**IA en secundaria — contenido examinable del syllabus electivo (verificado 2026-06-05).**
-**Machine learning** está incluido y es **examinable** en el syllabus 7155 (specimen paper:
-«*explain how a machine learning system will be different from traditional programming*»). Fuera
-del syllabus, la IA aparece en programas opcionales (*AI for Fun*, *Code for Fun*) y uso
-instrumental vía SLS (no curriculares).
+**IA en secundaria — verbatim verificado en el 7155 (SEAB 2025).** En el **Module 5 «Impact
+of Computing» · sección 5.4 «Emerging Technologies»**, el syllabus oficial enumera 5
+*learning outcomes* sobre IA y ML, todos examinables. Cita literal verificada:
 
-**Justificación.** **5 bajo la regla inclusiva:** ML es contenido del syllabus oficial de una
-asignatura **electiva** del currículo nacional. **Confianza media:** ML figura como **subtema**,
-no como módulo propio (los 4 módulos no incluyen un bloque de IA). **Nota de regla:** bajo un
-umbral de **contenido sustantivo** (no incidental), **SG sería 4**. La verificación verbatim del
-7155 fija la profundidad exacta del contenido de IA/ML.
+- **5.4.1:** «**Describe Artificial Intelligence (AI)** as the ability of a computer to
+  perform complex tasks without constant human guidance and improve its performance as more
+  data is collected.»
+- **5.4.3:** «**Define Machine Learning (ML)** as a technique used in AI and explain the
+  difference between ML and traditional programming.»
+
+Fuera del syllabus, la IA aparece en programas opcionales (*AI for Fun*, *Code for Fun*) y
+uso instrumental vía SLS (no curriculares).
+
+**Justificación.** **5 bajo la regla inclusiva:** AI y ML son contenido del syllabus oficial
+de una asignatura **electiva** del currículo nacional, con cita textual verificada contra el
+PDF de SEAB. **Sustantividad: SUBTEMA.** Los 5 *learning outcomes* de IA/ML viven dentro de la
+**subsección 5.4** del Módulo 5; no existe un módulo propio de IA. **Nota de regla:** bajo un
+umbral de **contenido sustantivo** (no incidental), **SG sería 4**. Confianza **alta**
+(verbatim_ok).
 
 **Fuentes:** [Computing 7155 O-Level 2025 (SEAB, PDF)](https://www.seab.gov.sg/files/O%20Lvl%20Syllabus%20Sch%20Cddts/2025/7155_y25_sy.pdf) ·
 [Computing 7155 specimen paper (SEAB, PDF)](https://www.seab.gov.sg/files/O%20Lvl%20Syllabus%20Sch%20Cddts/2025/7155_y25_sp_1.pdf) ·
@@ -216,15 +263,16 @@ Búsqueda dirigida a descartar un «5 oculto» en los entonces «4» (PT, EE, SG
 - **Portugal:** confirmado **sin IA** en el currículo vigente (AE = D1 + D2); IA solo en revisión
   2027 ⇒ **4 firme**.
 - **Estonia y Singapur:** se halló IA **dentro de una asignatura electiva** del currículo nacional
-  (Informaatika en EE; *machine learning* examinable en el 7155 de SG).
+  (Informaatika en EE; *AI* y *machine learning* examinables en el 7155 de SG).
 
-Eso planteó la pregunta de umbral, resuelta por decisión del operador (**2026-06-05**):
+Eso planteó la pregunta de umbral, resuelta por decisión del operador (**2026-06-05**) y
+ahora informada por el cierre verbatim (2026-06-06):
 
 | Regla | EE | SG | Nota |
 |---|:--:|:--:|---|
 | **(i) Inclusiva — ELEGIDA** | **5** | **5** | IA en cualquier asignatura del currículo nacional, incl. electivas |
 | (ii) Cursado universal | 4 | 4 | exigiría asignatura de cursado universal/casi-universal |
-| (iii) Contenido sustantivo | 4 | 4 | en SG, ML es subtema, no módulo |
+| (iii) Contenido sustantivo | 4 | 4 | en EE, IA = 1/9 LO de un tema; en SG, IA = sección 5.4 (5 LO) dentro del Module 5 |
 
 **Implicación (transparencia):** la regla inclusiva eleva EE y SG a 5; el cuadro resultante
 (4 países en 5) es **más generoso** que el *spread* estricto de la calibración LatAm 2025
@@ -233,15 +281,26 @@ Eso planteó la pregunta de umbral, resuelta por decisión del operador (**2026-
 correspondería la regla (ii)/(iii) y EE/SG volverían a 4. La regla se aplica **por igual** a los
 cinco países.
 
-## Limitaciones y próximos pasos (cierre verbatim)
+## Cierre verbatim (2026-06-06) — qué cambió respecto al borrador
 
-1. **Citas no verbatim aún.** Varias evidencias son *snippets* de buscador o de portales
-   oficiales secundarios (Educagob, ISB, Eurydice…), no el texto literal del documento. Se marcan
-   `pendiente_verbatim`/`websearch_2026-06-05` en `evidencias/evidencias.json`.
-2. **Lógica acumulativa:** los **cuatro «5» (ES, DE, EE, SG)** están cerrados en categoría; solo
-   falta **extraer y verificar la cita** que cada uno usa para justificar el 5 (no cambia la
-   categoría). **PT=4** está verificado.
-3. **Documentos para el verbatim** (en `fuentes/MANIFEST.md`): ES (RD 217/2022, RD 243/2022),
-   DE (*LehrplanPLUS* BY 11, *KLP* NRW Sek II), EE (anexo de Informaatika), SG (syllabus 7155).
-   Para **EE y SG**, el verbatim además mide la **sustantividad** del contenido de IA: si se optara
-   por una regla estricta, ese dato permitiría revertir a 4 con evidencia.
+1. **Las 4 categorías «5» quedan respaldadas por verbatim verificado** (15/15 OK del reporte
+   automático en `fuentes/_verify_report.json`). La confianza de ES, DE, EE y SG sube a
+   **alta**.
+2. **Correcciones detectadas durante el verbatim:**
+   - **DE-BY**: el verbo correcto en la Kompetenzerwartung del Lernbereich 4 KI es
+     «diskutieren», no «erörtern» (la cita del borrador era una paráfrasis).
+   - **DE-NRW**: el KLP GOSt (Sek II, edición 2014) NO contiene KI. La IA vinculante en NRW
+     está en el **KLP Pflichtfach Klasse 5/6 (Sek I, 2021)** como Inhaltsfeld «Automaten und
+     künstliche Intelligenz». La categoría DE = 5 no cambia (Bayern Gym 11 ya basta), pero la
+     ubicación NRW se corrige.
+   - **SG**: los **cinco módulos** oficiales del syllabus 7155 (2025) son Computing
+     Fundamentals · Algorithms and Programming · Spreadsheets · Networking · Impact of
+     Computing — distinto a la lista del borrador previo.
+3. **Sustantividad (nuevo, gracias al verbatim):**
+   - **ES = sustantivo** (saberes básicos + criterios de evaluación, ESO y Bachillerato).
+   - **DE = sustantivo** (Lernbereich propio de 16 h en BY; Inhaltsfeld propio en NRW Kl 5/6).
+   - **EE = subtema** (1 de 9 *õpitulemused* dentro del tema «Infoühiskonna tehnoloogiad»).
+   - **SG = subtema** (sección 5.4 con 5 LO dentro del Módulo 5 «Impact of Computing»).
+   El dato permite, si se opta por una regla estricta, revertir EE y SG a 4 con evidencia.
+4. **Limitaciones residuales.** `WebFetch` sigue restringido; `curl` con `-A "Mozilla/5.0"`
+   funcionó. Para reproducir: `python data/educacion_temprana/fuentes/_verify_run.py`.

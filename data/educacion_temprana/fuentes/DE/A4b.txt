@@ -1,0 +1,722 @@
+Kernlehrplan
+für die Sekundarstufe I - Klasse 5 und 6
+in Nordrhein-Westfalen
+
+Informatik
+
+  Die Online-Fassung des Kernlehrplans, ein Umsetzungsbeispiel für einen schuleigenen Lehrplan sowie
+  weitere Unterstützungsmaterialien können unter www.lehrplannavigator.nrw.de abgerufen werden.
+                Herausgeber:
+  Ministerium für Schule und Bildung
+   des Landes Nordrhein-Westfalen
+Völklinger Straße 49, 40221 Düsseldorf
+
+           Telefon 0211-5867-40
+         Telefax 0211-5867-3220
+
+ poststelle@schulministerium.nrw.de
+        www.schulministerium.nrw
+
+                   Heft 5028
+
+              1. Auflage 2021
+Vorwort
+
+Liebe Leserin, lieber Leser,
+
+Schule hat die Aufgabe, junge Menschen auf ein selbstbestimmtes Leben in unserer
+Gesellschaft und einen erfolgreichen Berufseinstieg vorzubereiten. Ohne digitale und
+grundlegende informatische Kenntnisse ist dies in der heutigen Zeit nicht mehr ange-
+messen möglich. Diese Kompetenzen sind deshalb ein unverzichtbarer Bestandteil der
+Allgemeinbildung und Grundlage für gelingende gesellschaftliche Teilhabe.
+
+Mit dem neuen verpflichtenden Schulfach Informatik werden Schülerinnen und Schüler
+noch besser auf die Anforderungen einer zunehmend von Informatik- und digitalen
+Kommunikationssystemen geprägten Lebens- und Arbeitswelt vorbereitet.
+
+Alle Unterrichtsfächer leisten gemäß Medienkompetenzrahmen NRW einen wichtigen
+Beitrag zur Vermittlung von Medienkompetenzen und Fähigkeiten zum Anwenden und
+Bedienen digitaler Systeme. Im Fach Informatik werden dabei insbesondere die grund-
+legenden Kompetenzen zum Verständnis informatischer Konzepte und Prozesse ver-
+mittelt, um die Arbeitsweise, den Nutzen sowie die Wirkungsweise von
+Informatiksystemen erklären und bewerten zu können. Alle Schülerinnen und Schüler
+sollen beispielsweise Grundkenntnisse im Programmieren und die Funktionsweise von
+Algorithmen im Unterricht erlernen. Der vorliegende Kernlehrplan für das Fach Infor-
+matik legt das notwendige Fundament für diese informatische Grundbildung.
+
+Kernlehrpläne setzen landesweite Standards. Sie konzentrieren sich auf die im Bil-
+dungsgang von den Schülerinnen und Schülern zu erwartenden Lernergebnisse und
+Kompetenzen. Auf welche Weise diese Lernergebnisse erreicht werden, liegt in der
+Verantwortung der Handlungsträger vor Ort und in der pädagogischen Freiheit. Auf
+Schulebene werden die curricularen Vorgaben in schulinternen Lehrplänen konkreti-
+siert. In ihnen verschränken sich die Vorgaben des Kernlehrplanes mit den konkreten
+Rahmenbedingungen der Schule, den Lernvoraussetzungen und Lernmöglichkeiten
+der Schülerinnen und Schüler sowie mit der Einbindung außerschulischer Partner und
+Lernorte.
+
+Zur Unterstützung der Schulen bei dieser wichtigen Aufgabe stellt die Qualitäts- und
+UnterstützungsAgentur – Landesinstitut für Schule NRW Beispiele für schulinterne
+Lehrpläne sowie weitere Angebote bereit. Ich danke allen, die an der Entwicklung der
+Kernlehrpläne mitgewirkt haben und insbesondere all denjenigen, die sie in den Schu-
+len umsetzen. Vor allem danke ich den Lehrerinnen und Lehrern, die sich tagtäglich
+verantwortungsvoll unseren Kindern und Jugendlichen widmen.
+
+Yvonne Gebauer
+Ministerin für Schule und Bildung
+des Landes Nordrhein-Westfalen
+                                     Auszug aus dem Amtsblatt
+                           des Ministeriums für Schule und Bildung
+
+                                  des Landes Nordrhein-Westfalen
+                                                   Nr. 7/21
+
+                Sekundarstufe I; Kernlehrplan Klasse 5 und 6 Informatik
+                          RdErl. d. Ministeriums für Schule und Bildung
+                                 v. 09.06.2021 - 526-6.01.04-160854
+
+Für die Klasse 5 und 6 der Hauptschule, Realschule, Gesamtschule, Sekundarschule
+und des Gymnasiums wird hiermit gemäß § 29 SchulG (BASS 1-1) der Kernlehrplan
+Informatik festgesetzt.
+
+Der Kernlehrplan tritt zum 01.08.2021 aufsteigend ab Klasse 5 in Kraft. Die Veröffent-
+lichung des Kernlehrplans erfolgt in der Schriftenreihe „Schule in NRW“, Heft 5028.
+
+Der Kernlehrplan ist abrufbar über den Lehrplannavigator NRW: https://www.schulent-
+wicklung.nrw.de/lehrplaene/lehrplannavigator-s-i/
+Inhalt
+
+                                                                   Seite
+
+Vorbemerkungen: Kernlehrpläne als kompetenzorientierte
+
+        Unterrichtsvorgaben                                             7
+
+1       Aufgaben und Ziele des Faches                                   8
+
+2       Kompetenzbereiche, Inhaltsfelder und Kompetenzerwartungen       10
+
+2.1 Kompetenzbereiche und Inhaltsfelder des Faches                      12
+
+2.2 Kompetenzerwartungen und inhaltliche Schwerpunkte bis zum Ende der
+
+        Klasse 6                                                        15
+
+3       Lernerfolgsüberprüfung und Leistungsbewertung                   21
+Vorbemerkungen: Kernlehrpläne als kompetenzorientierte Un-
+terrichtsvorgaben
+
+Kernlehrpläne leisten einen wichtigen Beitrag zur Sicherung des Anspruchsniveaus an
+der Einzelschule sowie im ganzen Land und schaffen notwendige Voraussetzungen
+für die Vergleichbarkeit von Lernergebnissen.
+Kernlehrpläne
+• bieten allen an Schule Beteiligten Orientierung über die Aufgaben und Ziele der
+
+   Fächer,
+• geben eine curriculare Stufung vor und legen fest, welche fachbezogenen Kompe-
+
+   tenzen einschließlich zugrundeliegender Wissensbestände Schülerinnen und Schü-
+   ler am Ende der Stufen erworben haben sollen,
+• stellen eine landesweite Obligatorik strukturiert in fachspezifische Inhalte und darauf
+   bezogene fachliche Kompetenzen dar,
+• sind Grundlage für die Überprüfung von Lernergebnissen und Leistungsständen,
+• fokussieren auf überprüfbares fachliches Wissen und Können. Aussagen zu allge-
+   meinen, fächerübergreifend relevanten Bildungs- und Erziehungszielen werden im
+   Wesentlichen außerhalb der Kernlehrpläne, u.a. in Richtlinien und Rahmenvorga-
+   ben getroffen. Sie sind neben den fachspezifischen Vorgaben der Kernlehrpläne bei
+   der Entwicklung von schuleigenen Vorgaben und bei der Gestaltung des Unterrichts
+   zu berücksichtigen.
+• bilden die curriculare Grundlage für die Entwicklung schuleigener Unterrichtsvorga-
+   ben beziehungsweise schulinterner Lehrpläne (§ 29 sowie § 70 SchulG NRW). Da
+   sich Kernlehrpläne auf zentrale fachliche Fertigkeiten und Wissensbestände be-
+   schränken, erhalten Schulen die Möglichkeit, aber auch die Aufgabe, gegebene
+   Freiräume schul- und lerngruppenbezogen auszugestalten. In Verbindung mit dem
+   Schulprogramm erfolgen Schwerpunktsetzungen im Unterricht in inhaltlicher, didak-
+   tischer und methodischer Hinsicht.
+
+                                                                                                                7
+1 Aufgaben und Ziele des Faches
+
+Aufgabe des Faches Informatik ist die Vermittlung einer informatischen Grundbil-
+dung.
+
+Die Fachdisziplin Informatik durchdringt mit den von ihr entwickelten Systemen alle
+Bereiche der Gesellschaft. Sie besitzt einen großen Anteil am Entwicklungsstand un-
+serer digitalisierten, globalisierten Welt und ihre Bedeutung nimmt in allen Bereichen
+des Lebens zu. Um junge Menschen auf ein selbstbestimmtes Leben in einer durch
+Digitalisierung geprägten Gesellschaft vorzubereiten und deren Teilhabe zu gewähr-
+leisten, bedarf es einer informatischen Grundbildung als wichtigen Bestandteil der
+Allgemeinbildung. Die vom Fach Informatik vermittelte informatische Grundbildung
+umfasst Grundkonzepte und Methoden, die der Lebensvorbereitung und Orientierung
+in einer von der Informationstechnologie geprägten Welt dienen.
+
+Die Schülerinnen und Schüler erwerben Fähigkeiten zur kritischen und verantwor-
+tungsvollen Analyse, Modellierung und Implementierung einfacher Informatiksysteme.
+Die informatische Grundbildung schließt die altersgemäße Auseinandersetzung mit
+einer menschengerechten Gestaltung und der Sicherheit von Informatiksystemen so-
+wie den Folgen und Wirkungen ihres Einsatzes ein. Dabei stehen stets fundamentale
+und zeitbeständige informatische Ideen, Konzepte und Methoden im Mittelpunkt.
+
+Ausgangspunkt des Informatikunterrichts der Klassen 5 und 6 sind Fragestellungen
+mit lebensweltlichem Bezug. In der aktiven und altersgemäßen Auseinandersetzung
+mit diesen Fragen erwerben und erweitern Schülerinnen und Schüler Kompetenzen
+zur Lösung informatischer Probleme. Die Auseinandersetzung mit Informatiksystemen
+hat für die Lernenden einen hohen Motivationswert, da Informatiksysteme eine unmit-
+telbare Rückmeldung der Implementationen hinsichtlich Korrektheit und Angemessen-
+heit ermöglichen.
+
+Im Informatikunterricht der Klassen 5 und 6 werden in hohem Maße schüleraktivie-
+rende Methoden eingesetzt, die selbstständiges Lernen ermöglichen und individuelle
+Förderung begünstigen. Unterschiedliche, auch durch Geschlechtersozialisation ge-
+prägte Herangehensweisen, Interessen und Kenntnisse werden, auch durch Maßnah-
+men zum individuellen Fördern und Fordern, angemessen berücksichtigt.
+
+Die in späteren Kapiteln beschriebenen Kompetenzerwartungen sind im Rahmen einer
+informatischen Grundbildung bis zum Ende der 6. Klasse zu erwerben. Ein Teil der
+Kompetenzen versteht sich als verpflichtend für die Schulform Gymnasium sowie als
+Vertiefungs- und Differenzierungsmöglichkeit für leistungsstarke Schülerinnen und
+Schüler an den Schulformen Hauptschule, Realschule, Gesamt- und Sekundarschule
+(Kursivdruck).
+
+8
+Im Rahmen des allgemeinen Bildungs- und Erziehungsauftrags der Schule unterstützt
+der Unterricht im Fach Informatik die Entwicklung einer mündigen und sozial verant-
+wortlichen Persönlichkeit und leistet weitere Beiträge zu fachübergreifenden Quer-
+schnittsaufgaben in Schule und Unterricht. Hierzu zählen u.a.
+
+    • Menschenrechtsbildung,
+    • Werteerziehung,
+    • politische Bildung und Demokratieerziehung,
+    • Bildung für die digitale Welt und Medienbildung,
+    • Bildung für nachhaltige Entwicklung,
+    • geschlechtersensible Bildung,
+    • kulturelle und interkulturelle Bildung.
+
+Sprache ist ein notwendiges Hilfsmittel bei der Entwicklung von Kompetenzen und be-
+sitzt deshalb für den Erwerb einer ökonomischen und politischen Mündigkeit eine be-
+sondere Bedeutung. In der aktiven Auseinandersetzung mit fachlichen Inhalten,
+Prozessen und Ideen erweitert sich der vorhandene Wortschatz und es entwickelt sich
+ein zunehmend differenzierter und bewusster Einsatz von Sprache. Dadurch entste-
+hen Möglichkeiten, Konzepte sowie eigene Wahrnehmungen, Gedanken oder Interes-
+sen angemessen darzustellen.
+
+Die interdisziplinäre Verknüpfung von Schritten einer kumulativen Kompetenzentwick-
+lung, inhaltliche Kooperationen mit anderen Fächern und Lernbereichen sowie außer-
+schulisches Lernen und Kooperationen mit außerschulischen Partnern können sowohl
+zum Erreichen und zur Vertiefung der jeweils fachlichen Ziele als auch zur Erfüllung
+übergreifender Aufgaben beitragen.
+
+Der vorliegende Kernlehrplan ist so gestaltet, dass er Freiräume für Vertiefung, schul-
+eigene Projekte und aktuelle Entwicklungen lässt. Die Umsetzung der verbindlichen
+curricularen Vorgaben in schuleigene Vorgaben liegt in der Gestaltungsfreiheit – und
+Gestaltungspflicht – der Fachkonferenzen sowie in der pädagogischen Verantwortung
+der Lehrerinnen und Lehrer und erfolgt unter Berücksichtigung eines angemessenen
+Verhältnisses von Theorie und Praxis in den Unterrichtsvorhaben. Damit ist der Rah-
+men geschaffen, gezielt Kompetenzen und Interessen der Schülerinnen und Schüler
+aufzugreifen und zu fördern bzw. Ergänzungen der jeweiligen Schule in sinnvoller Er-
+weiterung der Kompetenzen und Inhalte zu ermöglichen.
+
+                                                                                                                9
+2 Kompetenzbereiche, Inhaltsfelder und Kompetenzerwartun-
+    gen
+
+Im Kapitel „Aufgaben und Ziele“ der Kernlehrpläne werden u.a. die Ziele des Faches
+sowie die allgemeinen Kompetenzen, die Schülerinnen und Schüler im jeweiligen Fach
+entwickeln sollen (übergreifende fachliche Kompetenz), beschrieben.
+
+Sie werden ausdifferenziert, indem fachspezifische Kompetenzbereiche und Inhalts-
+felder identifiziert und ausgewiesen werden. Dieses analytische Vorgehen erfolgt, um
+die Strukturierung der fachrelevanten Prozesse einerseits sowie der Gegenstände an-
+dererseits transparent zu machen. In Kompetenzerwartungen werden beide Seiten
+miteinander verknüpft. Damit wird der Tatsache Rechnung getragen, dass der gleich-
+zeitige Einsatz von Können und Wissen bei der Bewältigung von Anforderungssituati-
+onen eine zentrale Rolle spielt.
+
+             Ziele des Faches/
+Übergreifende fachliche Kompetenz
+
+                            Kapitel 1
+
+Kompetenzbereiche        Inhaltsfelder
+        (Prozesse)       (Gegenstände)
+
+            Kapitel 2.1       Kapitel 2.1
+
+                                Kompetenzerwartungen
+                     (Verknüpfung von Prozessen und Gegenständen)
+
+                                                           Kapitel 2.2
+
+Kompetenzbereiche repräsentieren die Grunddimensionen des fachlichen Handelns.
+Sie dienen dazu, die einzelnen Teiloperationen entlang der fachlichen Kerne zu struk-
+turieren und den Zugriff für die am Lehr-Lernprozess Beteiligten zu verdeutlichen.
+Inhaltsfelder systematisieren mit ihren jeweiligen inhaltlichen Schwerpunkten die im
+Unterricht verbindlichen und unverzichtbaren Gegenstände und liefern Hinweise für
+die inhaltliche Ausrichtung des Lehrens und Lernens.
+
+10
+Kompetenzerwartungen führen Prozesse und Gegenstände zusammen und beschrei-
+ben die fachlichen Anforderungen und intendierten Lernergebnisse.
+Kompetenzerwartungen
+
+    • beziehen sich auf beobachtbare Handlungen und sind auf die Bewältigung von
+        Anforderungssituationen ausgerichtet,
+
+    • stellen im Sinne von Regelstandards die erwarteten Kenntnisse, Fähigkeiten
+        und Fertigkeiten auf einem mittleren Abstraktionsgrad dar,
+
+    • beschreiben Ergebnisse eines kumulativen, systematisch vernetzten Lernens,
+    • können in Aufgabenstellungen umgesetzt und überprüft werden.
+Insgesamt ist der Unterricht in der Sekundarstufe I nicht allein auf das Erreichen der
+aufgeführten Kompetenzerwartungen beschränkt, sondern soll es Schülerinnen und
+Schülern ermöglichen, diese weiter auszubauen und darüberhinausgehendes Wissen
+und Können zu erwerben.
+
+                                                                                                               11
+2.1 Kompetenzbereiche und Inhaltsfelder des Faches
+
+Die Entwicklung der für das Fach Informatik angestrebten informatischen Grundbil-
+dung erfolgt durch die Vermittlung grundlegender fachlicher Prozesse, die den unter-
+einander vernetzten Kompetenzbereichen zugeordnet werden können.
+
+Kompetenzbereiche
+
+Argumentieren
+
+Argumentieren umfasst das Erläutern, Begründen und Bewerten informatischer Sach-
+verhalte und Vorgehensweisen in Bezug auf die Analyse, Modellierung und Implemen-
+tation sowie den Einsatz von Informatiksystemen. Die sachgerechte Erläuterung und
+Begründung von Entwurfsentscheidungen, der Auswahl von Lösungsansätzen und der
+fachlichen Zusammenhänge sind notwendig, um das Für und Wider der gewählten
+informatischen Vorgehensweise rational nachvollziehen, reflektieren und diskutieren
+zu können. Die Lernenden werden befähigt, beim Umgang mit Informatiksystemen
+eine eigene Position zu vertreten und vorgegebene oder selbst konstruierte Modelle
+und Informatiksysteme nach ausgewiesenen Kriterien und Maßstäben zu bewerten.
+
+Modellieren und Implementieren
+
+In diesem Kompetenzbereich geht es um die Entwicklung und Implementierung von
+informatischen Modellen. Die Schülerinnen und Schüler lernen, ein Problem aus einem
+inner- oder außerinformatischen Kontext zu lösen und Sachverhalte und Abläufe unter
+informatischem Blickwinkel zu beschreiben. Mithilfe von altersgerechten Methoden der
+Abstraktion und Reduktion finden sie den informatischen Kern einer Problemstellung
+und entwickeln so ein Modell. Das Übertragen des Modells auf ein prozessorgesteu-
+ertes Gerät ist die Implementierung. Sie beinhaltet eine Umsetzung des Modells in
+eine Programmiersprache. Durch den Implementierungsprozess wird das Ergebnis ei-
+ner Modellbildung erlebbar und überprüfbar. Auf dieser Basis werden sowohl das Mo-
+dell als auch die nach der Implementierung erreichten Ergebnisse von den Lernenden
+selbstkritisch hinterfragt.
+
+Darstellen und Interpretieren
+
+Die Darstellung von Ergebnissen auf unterschiedlichen Erarbeitungsstufen begleitet
+den Prozess des Modellierens und Implementierens. Die Informatik hat dazu ein reich-
+haltiges Repertoire an Darstellungsformen entwickelt. Die Lernenden setzen sich mit
+unterschiedlichen Darstellungsformen wie textuellen Darstellungen, Diagrammen,
+Grafiken oder Anschauungsmodellen auseinander. Sie erwerben die Fähigkeit, eigene
+Ergebnisse in geeigneten Darstellungsformen darzubieten und Darstellungen von an-
+deren zu interpretieren. Geeignete Visualisierungen von Sachverhalten unterstützen
+12
+die Lernenden bei der Erläuterung und Interpretation der genannten Zusammenhänge
+im Rahmen des Modellierungsprozesses.
+
+Kommunizieren und Kooperieren
+
+Zum Kommunizieren im Sinne eines fachlichen Austausches gehören die sach- und
+adressatengerechte Darstellung und Dokumentation zur Weitergabe von Sachverhal-
+ten sowie die Nutzung geeigneter Werkzeuge, die die Kommunikation unterstützen.
+Arbeitsteilige und kooperative Vorgehensweisen sind wesentliche Bestandteile bei der
+Entwicklung komplexer Informatiksysteme. Die Kooperation erfolgt durch die Formu-
+lierung gemeinsamer Ziele, die strukturierte Zerlegung in Teilprobleme sowie deren
+Bearbeitung und Zusammenführung. Die Einhaltung von Absprachen und gegenseiti-
+ger Hilfe werden bei der Entwicklung von Informatiksystemen frühzeitig geübt. Ange-
+bunden an unterrichtliche Anlässe bauen Schülerinnen und Schüler nach und nach
+fachsprachliche Kompetenz auf.
+
+Inhaltsfelder
+
+Kompetenzen sind immer an fachliche Inhalte gebunden. Die informatische Grundbil-
+dung soll deshalb mit Blick auf die nachfolgenden Inhaltsfelder bis zum Ende der Klas-
+sen 6 entwickelt werden.
+
+Information und Daten
+
+Die Informatik unterscheidet zwischen Daten und Information. Mithilfe von Codierungs-
+vorschriften werden Informationen durch Daten digital repräsentiert, in Informatiksys-
+temen gespeichert und verarbeitet. Notwendig ist es, zwischen Daten und deren
+Interpretation zu differenzieren. Dabei ist die Interpretation von Daten und die damit
+verbundene Information immer kontextabhängig. Verschlüsselungsverfahren sind eine
+wichtige Grundlage für eine sichere Kommunikation und einen sicheren Datenaus-
+tausch.
+
+Algorithmen
+
+Ein Algorithmus ist eine genaue Beschreibung von Handlungsschritten zur Lösung ei-
+nes Problems und ist als Handlungsanweisung allgegenwärtig. Strukturen und Prinzi-
+pien der Algorithmisierung sind fundamentale Ideen der Informatik. Algorithmen stellen
+eine logische Abfolge von Anweisungen dar, die von Menschen oder durch Informa-
+tiksysteme gesteuerte Maschinen ausgeführt werden können. Sie werden gelesen, in-
+terpretiert, dargestellt, entworfen und mit algorithmischen Grundstrukturen wie
+Sequenzen, Verzweigungen und Schleifen realisiert. Die Entwicklung von Algorithmen
+ermöglicht es, Informatiksysteme nicht nur als reine Anwender zu nutzen, sondern
+
+                                                                                                               13
+diese auch zu gestalten. Die Implementierung von Algorithmen in einer Programmier-
+sprache erfolgt mithilfe einer geeigneten Programmierumgebung.
+
+Automaten und künstliche Intelligenz
+
+Automaten befolgen selbsttätig formalisierte Anweisungen in Form eines Programmes
+und treffen Entscheidungen, die aus einer Verknüpfung von Eingabe und Zustand re-
+sultieren. Im Alltag begegnet man neben beispielsweise Fahrkarten- und Getränkeau-
+tomaten in vielen Bereichen den Anwendungen von Automaten. Algorithmen der
+künstlichen Intelligenz werden bei Empfehlungsdiensten von Streamingangeboten, bei
+Assistenzsystemen im Bereich der Sprach- und Bilderkennung sowie bei Suchmaschi-
+nen eingesetzt. Das maschinelle Lernen als Teilgebiet der künstlichen Intelligenz be-
+schreibt dabei die Fähigkeit selbstlernender Systeme, aus großen Datenmengen
+Muster und Gesetzmäßigkeiten abzuleiten. Dabei sind Entscheidungsbäume und
+künstliche neuronale Netze von besonderer Bedeutung. Das vorwiegend handlungs-
+orientierte und damit altersgemäße Kennenlernen dieser Grundprinzipien des maschi-
+nellen Lernens bietet dabei auch Ansatzpunkte zur klassengemäßen
+Auseinandersetzung mit den gesellschaftlichen Folgen des Einsatzes der künstlichen
+Intelligenz.
+
+Informatiksysteme
+
+Eine spezifische Zusammenstellung von Hardware, Software und Netzwerkkompo-
+nenten zur Lösung eines Anwenderproblems wird als Informatiksystem bezeichnet.
+Insbesondere vernetzte Informatiksysteme prägen die Lebens- und Erfahrungswelt in
+einer globalisierten Welt in besonderem Maße. Die kompetente Nutzung eines Infor-
+matiksystems umfasst ein Verständnis des grundlegenden Aufbaus und der Funkti-
+onsweise seiner Bestandteile.
+
+Informatik, Mensch und Gesellschaft
+
+Informatiksysteme stehen in intensiver Wechselwirkung mit Individuum und Gesell-
+schaft und haben somit eine besondere Bedeutung für die Lebens- und Arbeitswelt.
+Der Fortschritt im Bereich der digitalen Verarbeitung persönlicher Daten ist von gro-
+ßem Nutzen, birgt aber auch Gefahren. Die Entwicklung eines kritischen Bewusstseins
+ermöglicht eine Orientierung in diesem Spannungsfeld. Dies umfasst das Erkennen
+von Entscheidungsspielräumen unter Berücksichtigung von Rechten und Interessen
+des Individuums, der gesellschaftlichen Verantwortung, möglichen Sicherheitsrisiken
+und den Anforderungen zur Datensicherheit (Verfügbarkeit, Vertraulichkeit und Integ-
+rität).
+
+14
+2.2 Kompetenzerwartungen und inhaltliche Schwerpunkte bis zum
+      Ende der Klasse 6
+
+Am Ende der 6. Klasse sollen die Schülerinnen und Schüler – aufbauend auf der Kom-
+petenzentwicklung in der Primarstufe – über die im Folgenden ausgeführten Kompe-
+tenzen bezüglich der obligatorischen Inhalte verfügen.
+
+Kursiv ausgewiesene Kompetenzerwartungen sind verpflichtend für die Schul-
+form Gymnasium. Sie gelten darüber hinaus als vertiefende und ergänzende Dif-
+ferenzierungsmöglichkeiten für leistungsstarke Schülerinnen und Schüler an
+den Schulformen Haupt-, Real-, Gesamt- und Sekundarschule.
+
+Dabei werden zunächst übergeordnete Kompetenzerwartungen zu allen Kompe-
+tenzbereichen aufgeführt. Im Anschluss werden inhaltsfeldbezogen konkretisierte
+Kompetenzerwartungen formuliert.
+
+Übergeordnete Kompetenzerwartungen
+
+Argumentieren (A)
+
+Die Schülerinnen und Schüler
+
+    • formulieren Fragen zu einfachen informatischen Sachverhalten,
+    • äußern Vermutungen zu informatischen Sachverhalten auf der Basis von
+
+         Alltagsvorstellungen oder Vorwissen,
+    • erläutern mögliche Auswirkungen des Einsatzes von Informatiksystemen,
+    • begründen die Auswahl eines Informatiksystems,
+    • bewerten ein Ergebnis einer informatischen Modellierung.
+
+Modellieren und Implementieren (MI)
+
+Die Schülerinnen und Schüler
+
+    • erstellen informatische Modelle zu gegebenen Sachverhalten,
+    • implementieren informatische Modelle unter Verwendung algorithmischer
+
+         Grundstrukturen,
+    • überprüfen Modelle und Implementierungen.
+
+Darstellen und Interpretieren (DI)
+
+Die Schülerinnen und Schüler
+
+    • beschreiben einfache Darstellungen von informatischen Sachverhalten,
+    • stellen informatische Sachverhalte in geeigneter Form dar,
+    • interpretieren informatische Darstellungen.
+
+                                                                                                               15
+Kommunizieren und Kooperieren (KK)
+Die Schülerinnen und Schüler
+
+    • beschreiben einfache informatische Sachverhalte unter Verwendung von
+         Fachbegriffen sachgerecht,
+
+    • anstelle der vorherigen KE: erläutern informatische Sachverhalte unter
+         Verwendung von Fachbegriffen sachgerecht,
+
+    • kooperieren in verschiedenen Formen der Zusammenarbeit bei der
+        Bearbeitung einfacher informatischer Probleme,
+
+    • strukturieren gemeinsam eine Lösung für ein informatisches Problem,
+    • dokumentieren gemeinsam ihren Arbeitsprozess und ihre Ergebnisse auch
+
+        mithilfe digitaler Werkzeuge,
+    • setzen bei der Bearbeitung einer informatischen Problemstellung geeignete
+
+         digitale Werkzeuge zum kollaborativen Arbeiten ein.
+Die Kompetenzen der Schülerinnen und Schüler sollen im Rahmen der Behandlung
+der nachfolgenden Inhaltsfelder entwickelt werden:
+
+    • Information und Daten
+    • Algorithmen
+    • Automaten und künstliche Intelligenz
+    • Informatiksysteme
+    • Informatik, Mensch und Gesellschaft
+
+Konkretisierte Kompetenzerwartungen
+
+Bezieht man übergeordnete Kompetenzerwartungen sowie die unten aufgeführten in-
+haltlichen Schwerpunkte aufeinander, so ergeben sich die nachfolgenden konkreti-
+sierten Kompetenzerwartungen:
+
+16
+Information und Daten
+
+Inhaltliche Schwerpunkte:
+– Daten und ihre Codierung
+– Informationsgehalt von Daten
+– Verschlüsselungsverfahren
+
+Die Schülerinnen und Schüler
+
+• erläutern den Datenbegriff anhand von Beispielen aus ihrer Erfahrungswelt (A),
+• erläutern den Zusammenhang und die Bedeutung von Information und Daten
+
+       (A),
+• stellen eine ausgewählte Information in geeigneter Form als Daten
+
+       formalsprachlich oder graphisch dar (DI),
+• nennen Beispiele für die Codierung von Daten aus ihrer Erfahrungswelt (DI),
+• codieren und decodieren Daten unter Verwendung des Binärsystems (MI),
+• interpretieren ausgewählte Daten als Information im gegebenen Kontext (DI),
+• erläutern Einheiten von Datenmengen (A / KK),
+• vergleichen Datenmengen hinsichtlich ihrer Größe mithilfe anschaulicher
+
+       Beispiele aus ihrer Lebenswelt (DI),
+• erläutern ein einfaches Transpositionsverfahren als Möglichkeit der
+
+       Verschlüsselung (DI),
+• vergleichen verschiedene Verschlüsselungsverfahren unter Berücksichtigung
+
+       von ausgewählten Sicherheitsaspekten (DI).
+
+Algorithmen
+Inhaltliche Schwerpunkte:
+– Algorithmen und algorithmische Grundkonzepte
+– Implementation von Algorithmen
+
+Die Schülerinnen und Schüler
+
+• formulieren zu Abläufen aus dem Alltag eindeutige Handlungsvorschriften (DI),
+
+                                                                                                               17
+• überführen Handlungsvorschriften in einen Programmablaufplan (PAP) oder ein
+       Struktogramm (MI),
+
+• führen Handlungsvorschriften schrittweise aus (MI),
+• identifizieren in Handlungsvorschriften Anweisungen und die algorithmischen
+
+       Grundstrukturen Sequenz, Verzweigung und Schleife (MI),
+• implementieren Algorithmen in einer visuellen Programmiersprache (MI),
+• implementieren Algorithmen unter Berücksichtigung des Prinzips der
+
+       Modularisierung (MI),
+• überprüfen die Wirkungsweise eines Algorithmus durch zielgerichtetes Testen
+
+       (MI),
+• ermitteln durch die Analyse eines Algorithmus dessen Ergebnis (DI),
+• bewerten einen als Quelltext, Programmablaufplan (PAP) oder Struktogramm
+
+       dargestellten Algorithmus hinsichtlich seiner Funktionalität (A).
+
+Automaten und künstliche Intelligenz
+Inhaltliche Schwerpunkte:
+– Aufbau und Wirkungsweise einfacher Automaten
+– Maschinelles Lernen mit Entscheidungsbäumen
+– Maschinelles Lernen mit neuronalen Netzen
+
+Die Schülerinnen und Schüler
+
+• erläutern die Funktionsweise eines Automaten aus ihrer Lebenswelt (A),
+• stellen Abläufe in Automaten graphisch dar (DI),
+• benennen Anwendungsbeispiele künstlicher Intelligenz aus ihrer Lebenswelt
+
+       (A),
+• stellen das Grundprinzip eines Entscheidungsbaumes enaktiv als ein Prinzip
+
+       des maschinellen Lernens dar (DI),
+• beschreiben die grundlegende Funktionsweise künstlicher neuronaler Netze in
+
+       verschiedenen Anwendungsbeispielen (KK).
+
+18
+Informatiksysteme
+Inhaltliche Schwerpunkte:
+– Aufbau und Funktionsweise von Informatiksystemen
+– Anwendung von Informatiksystemen
+
+Die Schülerinnen und Schüler
+
+• benennen Beispiele für (vernetzte) Informatiksysteme aus ihrer Erfahrungswelt
+       (DI),
+
+• benennen Grundkomponenten von (vernetzten) Informatiksystemen und
+       beschreiben ihre Funktionen (DI),
+
+• beschreiben das Prinzip der Eingabe, Verarbeitung und Ausgabe (EVA-Prinzip)
+       als grundlegendes Prinzip der Datenverarbeitung (DI),
+
+• vergleichen Möglichkeiten der Datenverwaltung hinsichtlich ihrer spezifischen
+       Charakteristika (u. a. Speicherort, Kapazität, Aspekte der Datensicherheit) (A),
+
+• setzen zielgerichtet Informatiksysteme zur Verarbeitung von Daten ein (MI),
+• erläutern Prinzipien der strukturierten Dateiverwaltung (A),
+• setzen Informatiksysteme zur Kommunikation und Kooperation ein (KK).
+
+Informatik, Mensch und Gesellschaft
+Inhaltliche Schwerpunkte:
+– Informatiksysteme in der Lebens- und Arbeitswelt
+– Datenbewusstsein
+– Datensicherheit und Sicherheitsregeln
+
+Die Schülerinnen und Schüler
+
+• beschreiben an Beispielen die Bedeutung von Informatiksystemen in der
+       Lebens- und Arbeitswelt (KK),
+
+• benennen an ausgewählten Beispielen Auswirkungen des Einsatzes von
+       Informatiksystemen auf ihre Lebens- und Erfahrungswelt (A/KK),
+
+• anstelle der vorherigen KE: erläutern an ausgewählten Beispielen
+       Auswirkungen des Einsatzes von Informatiksystemen (A/KK),
+
+                                                                                                               19
+• beschreiben anhand von ausgewählten Beispielen die Verarbeitung und
+       Nutzung personenbezogener Daten (DI),
+
+• erläutern anhand von Beispielen aus ihrer Lebenswelt Nutzen und Risiken beim
+       Umgang mit eigenen und fremden Daten auch im Hinblick auf Speicherorte (A),
+
+• beschreiben Maßnahmen zum Schutz von Daten mithilfe von
+       Informatiksystemen (A).
+
+20
+3 Lernerfolgsüberprüfung und Leistungsbewertung
+
+Die rechtlich verbindlichen Grundsätze der Leistungsbewertung sind im Schulgesetz
+(§ 48 SchulG) sowie in der Ausbildungs- und Prüfungsordnung für die Sekundarstufe
+I (§ 6 APO-SI) dargestellt. Im Pflichtunterricht des Faches Informatik erfolgt die Leis-
+tungsbewertung von Schülerinnen und Schülern ausschließlich im Beurteilungsbe-
+reich „Sonstige Leistungen im Unterricht“. Die Leistungsbewertung insgesamt bezieht
+sich auf die im Zusammenhang mit dem Unterricht erworbenen Kompetenzen und
+setzt voraus, dass die Schülerinnen und Schüler hinreichend Gelegenheit hatten, die
+in Kapitel 2 ausgewiesenen Kompetenzen zu erwerben.
+
+Erfolgreiches Lernen ist kumulativ. Dies erfordert, dass Unterricht und Lernerfolgs-
+überprüfungen darauf ausgerichtet sein müssen, Schülerinnen und Schülern Gelegen-
+heit zu geben, Kompetenzen wiederholt und in wechselnden Zusammenhängen unter
+Beweis zu stellen. Für Lehrerinnen und Lehrer sind die Ergebnisse von Lernerfolgs-
+überprüfungen Anlass, die Zielsetzungen und die Methoden ihres Unterrichts zu über-
+prüfen und ggf. zu modifizieren. Für die Schülerinnen und Schüler sollen ein den
+Lernprozess begleitendes Feedback sowie Rückmeldungen zu den erreichten Lern-
+ständen eine Hilfe für die Selbsteinschätzung sowie eine Ermutigung für das weitere
+Lernen darstellen. Dies kann auch in Phasen des Unterrichts erfolgen, in denen keine
+Leistungsbeurteilung durchgeführt wird. Die Beurteilung von Leistungen soll ebenfalls
+grundsätzlich mit der Diagnose des erreichten Lernstandes und Hinweisen zum indivi-
+duellen Lernfortschritt verknüpft sein.
+
+Die Leistungsbewertung ist so anzulegen, dass sie den in den Fachkonferenzen ge-
+mäß Schulgesetz (§ 70 Abs. 4 SchulG) beschlossenen Grundsätzen entspricht, dass
+die Kriterien für die Notengebung den Schülerinnen und Schülern transparent sind und
+die Korrekturen sowie die Kommentierungen den Lernenden auch Erkenntnisse über
+die individuelle Lernentwicklung ermöglichen. Dazu gehören – neben der Etablierung
+eines angemessenen Umgangs mit eigenen Stärken, Entwicklungsnotwendigkeiten
+und Fehlern – insbesondere auch Hinweise zu individuell erfolgversprechenden allge-
+meinen und fachmethodischen Lernstrategien.
+
+Im Sinne der Orientierung an den zuvor formulierten Anforderungen sind grundsätzlich
+alle in Kapitel 2 des Kernlehrplans ausgewiesenen Kompetenzbereiche bei der Leis-
+tungsbewertung angemessen zu berücksichtigen. Überprüfungsformen schriftlicher,
+mündlicher und praktischer Art sollen deshalb darauf ausgerichtet sein, die Erreichung
+der dort aufgeführten Kompetenzerwartungen zu überprüfen. Ein isoliertes, lediglich
+auf Reproduktion angelegtes Abfragen einzelner Daten und Sachverhalte allein kann
+dabei den zuvor formulierten Ansprüchen an die Leistungsfeststellung nicht gerecht
+werden. Durch die zunehmende Komplexität der Lernerfolgsüberprüfung im Verlauf
+
+                                                                                                               21
+der Sekundarstufe I werden die Schülerinnen und Schüler auf die Anforderungen der
+nachfolgenden schulischen und beruflichen Ausbildung vorbereitet.
+
+Beurteilungsbereich „Sonstige Leistungen im Unterricht“
+
+Der Beurteilungsbereich „Sonstige Leistungen im Unterricht“ erfasst die im Unterrichts-
+geschehen durch mündliche, schriftliche und praktische Beiträge erkennbare Kompe-
+tenzentwicklung der Schülerinnen und Schüler. Bei der Bewertung berücksichtigt
+werden die Qualität, die Quantität und die Kontinuität der Beiträge. Die Kompetenzent-
+wicklung im Beurteilungsbereich „Sonstige Leistungen im Unterricht“ wird sowohl
+durch kontinuierliche Beobachtung während des Schuljahres (Prozess der Kompeten-
+zentwicklung) als auch durch punktuelle Überprüfungen (Stand der Kompetenzent-
+wicklung) festgestellt. Bei der Bewertung von Leistungen, die die Schülerinnen und
+Schüler im Rahmen von Partner- oder Gruppenarbeiten erbringen, kann der individu-
+elle Beitrag zum Ergebnis der Partner- bzw. Gruppenarbeit einbezogen werden.
+
+Zum Beurteilungsbereich „Sonstige Leistungen im Unterricht“ – ggf. auch auf der
+Grundlage der außerschulischen Vor- und Nachbereitung von Unterricht – zählen u.a.
+unterschiedliche Formen der selbstständigen und kooperativen Aufgabenerfüllung,
+Beiträge zum Unterricht, von der Lehrkraft abgerufene Leistungsnachweise wie z.B.
+die schriftliche Übung, von der Schülerin oder dem Schüler vorbereitete, in abge-
+schlossener Form eingebrachte Elemente zur Unterrichtsarbeit, die z.B. in Form von
+Implementationen, Präsentationen und Portfolios möglich werden.
+
+Mögliche Überprüfungsformen
+
+Die Kompetenzerwartungen des Kernlehrplans ermöglichen eine Vielzahl von Über-
+prüfungsformen. Im Verlauf der Sekundarstufe I soll ein möglichst breites Spektrum
+der im Folgenden aufgeführten Überprüfungsformen in schriftlichen, mündlichen oder
+praktischen Kontexten zum Einsatz gebracht werden. Darüber hinaus können weitere
+Überprüfungsformen nach Entscheidung der Lehrkraft eingesetzt werden.
+
+Darstellungs- und Dokumentationsaufgaben
+    • Beschreibung und Erläuterung eines informatischen Sachverhalts
+    • Darstellung eines informatischen Zusammenhangs
+    • Dokumentation von Sachverhalten in geeigneter Darstellungsform (z.B. Text,
+         Tabelle, Diagramm)
+
+Modellierungs- und Implementationsaufgaben
+    • Entwicklung eines informatischen Modells
+    • Erstellung eines Quellcodes/Algorithmus
+    • Analyse und Ergänzung eines Modells oder einer Implementation
+
+22
+    • Fehlersuche und -korrektur in einem vorgegebenen Algorithmus oder
+         Programmausschnitt
+
+Präsentationsaufgaben
+    • Vorführung/Demonstration einer informatischen Problemlösung (z.B.
+         Programm)
+    • Kurzvortrag, Referat, Medienprodukt
+
+Begründungs- und Bewertungsaufgaben
+    • Begründung des Vorgehens bei informatischen Problemlösungen
+    • Analyse und Deutung von informatischen Sachverhalten
+    • Stellungnahme zu Texten und Medienbeiträgen
+    • Abwägen zwischen alternativen Lösungswegen
+
+                                                                                                               23
+

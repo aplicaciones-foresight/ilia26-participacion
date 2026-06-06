@@ -1,0 +1,512 @@
+                                                    Vabariigi Valitsuse 6. jaanuari 2011. a määrus nr 1
+                                                                               „Põhikooli riiklik õppekava“
+                                                                                                         Lisa 10
+
+                                           (Vabariigi Valitsuse 23.03.2023 määruse nr 18 sõnastuses)
+
+Valikõppeaine „Informaatika“
+
+1. Üldalused
+1.1. Õppeaine kirjeldus
+Põhikoolis on informaatika õppimisel eesmärgiks õpi- ja töökeskkonna kujundamiseks vajalike
+info- ja kommunikatsioonivahendite rakendamise oskuste omandamine, mis võimaldaks
+põhikooli lõpetajal teha samme IKT-valdkonna karjääri suunal või toetaksid innovaatiliste
+lahenduste leidmist ning rakendamist teistes valdkondades.
+Informaatika õpetamise põhimõtted põhikoolis on:
+1) elulähedus;
+2) aktiivõpe ja loovus;
+3) uuenduslikkus;
+4) koostöö;
+5) teadmusloome;
+6) vaba tarkvara ja avatud sisu, sõltumatus tarkvaratootjast;
+7) turvalisus;
+8) lõimitus ja sidusus.
+Informaatika on arvutiteadusel põhinev õppeaine, mis kuulub valikainena põhikooli õppekavas
+tehnoloogia ainevaldkonda. Põhirõhk on tehnoloogia praktilisel kasutusel. Seda on soovitatav
+õpilastele pakkuda igas kooliastmes vähemalt 35 tundi. Informaatika ainekäsitlus on
+tavapäraselt kontsentriline: varem õpitu juurde tullakse igas järgmises kooliastmes laiendatud
+ja täiendatud kujul tagasi.
+Põhikooli informaatikaõppe sisu koosneb üldistatult kahest komponendist, mille omavahelist
+tasakaalustamist ainekavaga taotletakse:
+1) raalmõtlemine – eluliste ülesannete lahendamise viis, mille puhul kasutatakse algoritmide
+tundmist ja rakendamist, mustrite tuvastamist, probleemi osadeks jaotamist ja üldistamist;
+2) disainmõtlemine – kasutajakeskne, loov ja koostöine eluliste ülesannete lahendamise viis, sh
+probleemi määratlemine, vajaduste võrdlemine, mõtlemine, ehitamine ja katsetamine.
+I kooliastmes õpetab informaatikat üldjuhul klassiõpetaja teistesse õppeainetesse lõimituna või
+eraldi õppeainena, käsitletakse 1–4 õppeteemat: „Digiseade töövahendina“, „Kood“,
+„Digikunst“, „Digitaalne ohutus“.
+II kooliastmes õpetab informaatikat eelistatavalt kvalifitseeritud informaatikaõpetaja eraldi
+õppeainena, käsitletakse 1–4 õppeteemat: „Digiseade töövahendina“, „Programmeerimine“,
+„Digimeedia“, „Digihügieen“.
+III kooliastmes õpetatakse informaatikat valikainena „Infoühiskonna tehnoloogiad“ ja/või
+digiloovtöö formaadis, milles praktilise rühmatööprojekti käigus õpitakse informaatikateadmisi
+rakendama elulise probleemi lahendamiseks. Digiloovtöö väljundid on seotud nt animatsiooni,
+küberturvalisuse, veebidisaini, asjade interneti, robootika, liitreaalsuse või tarkvara prototüübi
+loomisega.
+
+1.2. Õppe- ja kasvatuseesmärgid
+Põhikooli informaatikaõpetusega taotletakse, et õpilane:
+1) mõistab tehnoloogia tööpõhimõtteid ning valdab peamisi võtteid igapäevases õppetöös infot
+otsides, töödeldes ja analüüsides ning taasesitades;
+2) loob, salvestab, taasesitab ja jagab tehnoloogiliste vahendite abil eesmärgist lähtuvalt
+digitaalset sisu privaatsusnõudeid järgides;
+
+                                                             1
+3) teadvustab ning väldib digitaalses keskkonnas tegutsedes tekkida võivaid riske tervisele,
+turvalisusele ja isikuandmete kaitsele;
+4) omab vajalikke oskusi ja teadmisi õpiteeks ja karjäärivalikuks.
+
+1.3. Võimalusi lõiminguks, üldpädevuste arengu toetamiseks ja läbivate teemade
+käsitlemiseks
+Informaatika on kergesti lõimitav kõigi teiste õppeainetega, kuna info- ja
+kommunikatsioonitehnoloogia on tänapäevase õpikeskkonna loomulik osa. See lõiming toimub
+mõlemal suunal: ühelt poolt kasutatakse informaatika õppeülesandeid koostades teiste
+õppeainete teemasid, et luua mõtestatud õppimine, ning teiselt poolt lõimitakse tehnoloogiat ja
+innovatsiooni läbiva teemana teistesse õppeainetesse.
+I kooliastmes käsitletakse info- ja kommunikatsioonitehnoloogiaga seonduvaid teemasid
+üldjuhul lõimituna teiste õppeainetega ja seal keskendutakse informaatika ainekava õppesisus
+peamiselt digipädevuse arendamisele. Alates II kooliastmest on õpetamise keskmes pigem
+informaatika kui arvutiteaduse akadeemilisel distsipliinil põhinev erialane õppesisu ja vastutus
+digipädevuse edasise kujundamise eest laieneb kõigi teiste õppeainete õpetajatele.
+
+1.4. Õppetegevuse kavandamise ja korraldamise põhimõtted
+Õppetegevust kavandades ja korraldades:
+1) lähtutakse õppekava alusväärtustest, üldpädevustest, õppeaine eesmärkidest, õppesisust ja
+oodatavatest õpitulemustest ning toetatakse lõimingut teiste õppeainete ja läbivate teemadega;
+2) jälgitakse, et õpilase õpikoormus (sh kodutööde maht) on mõõdukas;
+3) võimaldatakse õppida üksi ning üheskoos teistega, et toetada õpilaste kujunemist aktiivseteks
+ning iseseisvateks õppijateks;
+4) kasutatakse diferentseeritud õppeülesandeid, mille sisu ja raskusaste toetavad
+individualiseeritud käsitlust ning suurendavad õpimotivatsiooni;
+5) rakendatakse nüüdisaegseid õpikeskkondi ning õppematerjale ja -vahendeid;
+6) laiendatakse õpikeskkonda: veebipõhine personaalne õpikeskkond, arvutiklass, kooliõu,
+muuseumid, näitused, ettevõtted jne;
+7) tagatakse, et õppe vältel õpitakse headest tavadest lähtuvat veebikäitumist, sealhulgas
+virtuaalsetes võrgustikes ning ametlikke infosüsteeme (e-kool, e-õppekeskkond, kooli ja
+omavalitsuse koduleht) kasutades.
+
+Informaatika õppetegevust kavandades on võimalik kasutada erinevaid lähenemisi:
+1) õpetada informaatika teemasid eraldi õppeainetena
+Kool valib ühe õppeteema ja õpetab seda ühes klassis täies mahus 35-tunnise omaette
+õppeainena (nt üks tund nädalas terve õppeaasta jooksul). Terviklik lähenemine võimaldab
+põhjalikumat käsitlust ja kõigi taotletavate õpitulemuste saavutamist;
+2) kombineerida mitme õppeteema osadest oma informaatika õppeaine
+Kool valib õppeteemade hulgast endale sobilikud elemendid, millest kombineeritakse
+õppeaine/kursus. Näiteks I kooliastmes rakendatakse 35-tunnine informaatika valikõppeaine,
+milles on nii digitaalse ohutuse, digimeedia kui ka programmeerimise ja robootika elemente.
+Õpilased saavad igast õppeteemast põgusa ülevaate ja saavutavad valitud õpitulemused;
+3) informaatika õppeteemade lõimimine eri õppeainete tundidesse
+Kool lõimib õppeteemade elemente eri ainete õpetusse (nt kunst, tööõpetus, matemaatika).
+Selline lahendus suunab aineõpetajaid ja IT-spetsialiste enam koostööd tegema, et saavutada
+taotletavad õpitulemused.
+
+1.5. Hindamise põhimõtted
+Hindamisel lähtutakse vastavatest põhikooli riikliku õppekava üldosa sätetest. Informaatika
+õpitulemuste saavutatuse kohta antakse õpilasele tagasisidet õppeprotsessi käigus, lähtudes
+
+                                                             2
+õpilase õpiülesannetest. Kokkuvõtvalt hinnatakse kursuse lõpus. Õpiülesanded võivad olla
+tehtud kas üksi või rühmatööna. Hindamiskriteeriume kirjeldatakse kooli õppekavas.
+Soovitavalt hinnatakse informaatikaõppes:
+1) õppe plaanipärasust, loomingulisust ja ratsionaalsust;
+2) õppekavas ettenähtud õpitulemuste saavutamist ning seonduvate pädevuste olemasolu
+veenvat tõendamist;
+3) loodud materjalide tehnilist teostust, esteetilisust ja originaalsust;
+4) oma praktilise tegevuse mõtestamist;
+5) õpilase isiklikku arengut kursuse jooksul.
+
+1.6. Õppekeskkonna kujundamise põhimõtted
+Kool peab valikkursuse pakkumisel tagama järgmiste vahendite kasutamise:
+1) internetiühendusega arvutite jm digiseadmetega, projektori, kõlarite, kõrvaklappidega
+klassiruum, kus on soovitavalt võimalik laudu, toole ümber paigutada;
+2) vajaduse korral isikliku sülearvuti või nutiseadme kasutamise võimalus;
+3) rühmatöötehnikaid toetavad töövahendid ja -materjalid;
+4) multimeedia salvestus- ja töötlusvahendid ning printeri kasutamise võimalus.
+
+2. Ainekavad
+2.1. Õpitulemused ja õppesisu I kooliastmes
+Õpilane:
+1) kirjeldab, kuidas toimib internet, mis on arvuti riistvara ja tarkvara, toob näiteid
+digitehnoloogia turvalisest ja oskuslikust kasutusest infoühiskonnas;
+2) leiab internetist sobiva teksti, pildi, video, animatsiooni ja viitab selle allikale;
+3) loob, vormistab, salvestab, taasesitab nii individuaalselt kui ka koostöös eri liiki digitaalset
+sisu (tekst, pilt, esitlus, video, animatsioon jne) ja jagab seda, järgides hea tava ja digiohutuse
+nõudeid;
+4) kirjeldab ja väldib digivahendite kasutamisega seotud riske;
+5) kirjeldab elulisi näiteid programmide kasutamisest ja lahendab eakohaseid
+programmeerimisülesandeid mängulistes keskkondades ja/või haridusrobotitega;
+6) kasutab veebikeskkondi ja e-teenuseid hea tava ja digiohutuse nõuetele vastavalt, pöördub
+probleemi ilmnemisel või selle kahtlusel abi saamiseks vanema, õpetaja või mõne abi andva
+institutsiooni poole.
+I kooliastme õppeteemad on „Digiseade töövahendina“, „Digitaalne ohutus“, „Kood“ ja
+„Digikunst“.
+1. Õppeteema „Digiseade töövahendina“ eesmärk on anda õpilastele vajalikud baasoskused
+digiseadme kasutamiseks, sh tekstitöötluseks, info otsimiseks, hindamiseks ja esitamiseks,
+tööks andmetega. Teema on tihedalt lõimitud teiste õppeainetega.
+2. Õppeteema „Digitaalne ohutus“ hõlmab elementaarseid turvanõudeid, privaatsuse ning
+tervisega seotud riske.
+3. Õppeteema „Kood“ kaudu tutvuvad õpilased mänguliselt programmeerimise alustega – see
+on sissejuhatus programmeerimisse ja robootikasse.
+4. Õppeteema „Digikunst“ eesmärk on tutvustada erinevaid digimeediumide loomise
+võimalusi (pilt, video, heli, animatsioon) ja nende töötlemise lihtsamaid võtteid.
+
+2.1.1. Õppeteema „Digitaalne ohutus“
+Õpitulemused
+Õpilane:
+1) kirjeldab tehnoloogilise ja pärismaailma erinevusi ning sarnasusi;
+2) kirjeldab, kuidas töötab internet;
+3) toob näiteid digitehnoloogia ja interneti turvalisest kasutusest (viirusetõrje kasutamine,
+kahtlaste linkide tuvastamine, vajaduse korral suhtluspartneri blokeerimine);
+
+                                                             3
+4) selgitab salasõna turvalisuse nõudeid;
+5) salvestab, taasesitab ja jagab digitaalset sisu, järgides privaatsusnõudeid ning vältides
+küberkiusamist;
+6) mõistab tasulise ja tasuta teenuse erinevusi (nt arvutimängudes, äppides);
+7) pöördub probleemi ilmnemisel või selle kahtlusel abi saamiseks lapsevanema, õpetaja või
+mõne abi andva institutsiooni/teenuse poole;
+8) kirjeldab ja väldib digiseadmete kasutamisega seotud riske tervisele;
+9) selgitab arusaadavalt, korrektset sõnavara kasutades tõrkuva digiseadme või -rakendusega
+tekkinud probleemi; lahendab iseseisvalt või juhendi abil lihtsama tehnilise probleemi.
+Õppesisu
+Digitehnoloogia turvaline kasutamine. Nutirakenduste turvalisus. Turvariskid ja nende
+ennetamine nutiseadme kasutamisel, privaatsus ja andmekaitse. Pahavara ja viirusetõrje.
+Infosüsteemid ja keskkonnad. Internet. Interneti ja wifi turvaline kasutamine. Veebiplatvormid
+ja e-teenused: e-post, välksõnumid, õppeinfosüsteemid, veebipõhised õpikeskkonnad.
+Abikanalid: veebikonstaabel, Targalt Internetis projekt, Lasteabi jne. Identiteedihaldus.
+Kasutajakonto loomine. Salasõna valik, tugevus ja kaitsmine. Failide jagamine interneti
+koostöökeskkonnas, sisse- ja väljalogimine, infosüsteemi ja sotsiaalmeedia turvaline
+kasutamine. Avalik ja privaatne suhtlemine. Avalik ja privaatne digisuhtlus, koostöö
+veebikeskkonnas. Küberkiusamine ja viisakas käitumine võrgus. Eetiline käitumine piltide ja
+videote loomisel, jagamisel, avaldamisel. Internetisuhtlusel kasutatav släng ja lühendid.
+Terviseriskid. Digivahenditest tulenevad terviseriskid. Tervisekaitse reeglid ja harjutused.
+Tehnilised probleemid. Tehniliste probleemide kirjeldamine ja lahendamine tõrkuva
+digivahendi või rakenduse puhul.
+
+2.1.2. Õppeteema „Kood“
+Õpitulemused
+Õpilane:
+1) kasutab mängulises keskkonnas programmeerides lähtuvalt algoritmilisest
+probleemilahendusest mõisteid programm, muutuja, valik, tsükkel, sisend ja väljund;
+2) kirjeldab elulisi näiteid programmide kasutamisest;
+3) selgitab etteantud lihtsa programmi/rakenduse sisu ning ennustab selle töö tulemit;
+4) kavandab ja loob juhiseid järgides lihtsamaid rakendusi, kasutades digitaalseid või füüsilisi
+vahendeid (nt lastele mõeldud hariduslikud programmeerimiskeskkonnad või
+robootikakomplektid);
+5) selgitab programmi testimise vajadust, leiab koodist lihtsamad vead;
+6) laadib internetist alla teiste loodud programme ja kohandab neid, arvestades autoriõigustega.
+Õppesisu
+Programm. Programmjuhtimisega seadmete tööpõhimõtted ja lühiajalugu. Programm.
+Mänguline arenduskeskkond. Algoritmide mõistmine ja rakendamine. Etteantud tegevusjuhise
+(kirjeldus, tegevusskeem) realiseerimine mängulises arenduskeskkonnas. Andmed. Andmete ja
+tegevuste muutmine. Lihtsamad tüüpalgoritmid. Andmed. Objektid. Objektide omadused ja
+meetodid. Muutujad, väärtused. Muutuja kasutamine. Sisendid ja väljundid. Klaviatuur, hiir,
+ekraan. Andurid ja täiturid (robootika). Tegevused. Tegevused ja lihtsamad avaldised.
+Aritmeetika põhitehted, loogikaavaldised (võrdlused). Valikud if ja else. Kordused.
+
+2.1.3. Õppeteema „Digikunst“
+Õpitulemused
+Õpilane:
+1) otsib internetist eritüübilist (nt pilt, video, animatsioon jt) digikunsti ja viitab selle allikale;
+loob digitaalselt joonistuse ja prindib selle vastavalt eesmärgile sobivate seadetega
+(värviline/mustvalge, ühe/kahepoolne jne);
+2) digikunsti loomisel lähtub korrektse käitumise põhimõtetest;
+
+                                                             4
+3) valib kaamera seaded vastavalt pildistamise oludele ning pildistab ja kopeerib foto seadmest
+arvutisse, avab selle sobiva rakendusega;
+4) jälgib ja kasutab teadlikult lihtsamaid pildipinna organiseerimise võtteid;
+5) salvestab heli ja kopeerib selle seadmest arvutisse ning avab selle sobiva rakendusega;
+6) salvestab video ja kopeerib selle seadmest arvutisse ning avab selle sobiva rakendusega;
+7) kombineerib lihtsate võtetega pildi, heli ja video.
+Õppesisu
+Joonistamine. Joonistamine erinevate programmide ja rakendustega. Paberil joonistuse
+skaneerimine. Printimine. Pildistamine. Lihtsamad pildistamise režiimid ja
+kompositsioonivõtted. Foto eksportimine/importimine kaamerast/nutiseadmest arvutisse,
+arvutis avamine. Levinud faililaiendid. Heli. Heli salvestamine. Heli liigutamine seadmest
+arvutisse. Arvutis avamine. Levinud faililaiendid. Video. Video filmimine. Video liigutamine
+seadmest arvutisse. Arvutis avamine. Levinud faililaiendid. Montaaž. Pildi, teksti, heli ja video
+kombineerimine algtasemel. Animatsioon. Autoriõigus ja ohutus. Eetika digikunstis. Teiste
+autorite teoste otsimine ja kasutamine, sh taaskasutus ja viitamine. Digikunsti jagamine,
+seadmete ohutu ning eesmärgipärane kasutamine.
+
+2.1.4. Õppeteema „Digiseade töövahendina“
+Õpitulemused
+Õpilane:
+1) kasutab kooli infosüsteemi ja e-õppekeskkondi vastavalt kokkulepitud reeglitele; sisestab,
+kopeerib, vormindab ja salvestab erinevat tüüpi tekste (nt kuulutusi, plakateid, referaate);
+2) salvestab, kopeerib, kustutab ja jagab faile;
+3) otsib infot erinevatest allikatest, kasutab seda, viidates algallikale;
+4) otsib ja haldab vajalikke andmeid, sisestab need tabelisse, esitleb diagrammina;
+5) koostab ja vormindab esitlust: kujundab slaide, lisab teksti ja pilte.
+Õppesisu
+Töökeskkond. Arvuti, server, rakendustarkvara, pilveteenus, nutiseade. Arvutitehnika ja
+tarkvara põlvkonnad. Kooli infosüsteemide ja e-õppekeskkonna kasutamise reeglid.
+Tekstitöötlus. Teksti sisestamine, vormindamine ja kopeerimine. Pildi lisamine tekstile. Failide
+haldamine. Faili salvestamine, kopeerimine, kustutamine, jagamine. Töö mitme aknaga.
+Infokirjaoskus. Info otsimine erinevatest allikatest, kasutamine, viitamine. Tööriistad. Töö
+andmetega. Andmeotsing ja digiteerimine. Andmete haldamine. Andmete sisestamine
+tabelisse. Diagramm. Andmete esitlemine. Esitluse koostamine. Esitluse vormistamine ja
+kujundamine. Teksti ja pildi lisamine slaidile, slaidi kujundus.
+
+2.2. Õpitulemused ja õppesisu II kooliastmes
+Õpilane:
+1) vormistab ja salvestab digitehnoloogia abil erinevaid tekste, esitlusi ja digimeedia loovtöid
+ning jagab neid, järgides autoriõigusi ja digiohutuse nõudeid;
+2) teeb etteantud andmete põhjal lihtsamat tabeltöötlust, kasutades õpitud valemeid ja esitades
+tulemusi sobivate graafikute abil;
+3) teab programmeerimise põhimõisteid ja rakendab praktilises tegevuses algoritme ja
+programmi loomise etappe ühe haridusliku programmeerimiskeele/arenduskeskkonna näitel
+ja/või haridusrobotitega;
+4) teab ja väldib kübermaailmas valitsevaid riske, haldab ja kaitseb oma digitaalset identiteeti
+ja ohtude realiseerumisel oskab neile adekvaatselt reageerida;
+5) selgitab seadmete väärkasutamisest tekkida võivaid terviseriske ning arvestab nendega.
+II kooliastme õppeteemad on „Digihügieen“, „Programmeerimine“, „Digimeedia“ ja
+„Digiseade töövahendina“.
+1. Õppeteema „Digihügieen“ eesmärk on tagada õpilastele igapäevaseks õppetööks vajalikul
+baastasemel pädevused digiohutuseks ning veebikeskkonnas suhtlemise ja koostööga
+
+                                                             5
+toimetulemiseks.
+2. Õppeteema „Programmeerimine“ eesmärk on süsteemselt tutvustada õpilastele lihtsate
+praktiliste ülesannete kaudu programmeerimise põhimõisteid, algoritmide rakendamist ja
+programmi loomise etappe ühe haridusliku programmeerimiskeele/arenduskeskkonna näitel.
+3. Õppeteema „Digimeedia“ eesmärk on õpetada eri liiki digimeedia (foto, arvutijoonis, video,
+3D-joonis) loomist, selle arvutisse salvestamist, töötlemist ja veebis jagamist, järgides
+autoriõigusi.
+4. Õppeteema „Digiseade töövahendina“ eesmärk on anda õpilastele vajalikud baasoskused
+arvuti kasutamiseks, sh tekstitöötluseks, info otsimiseks, hindamiseks ja esitamiseks, tööks
+andmetega, lähtudes etteantud vormistusnõuetest ja formaatidest. Teema on tihedalt lõimitud
+teiste õppeainetega.
+
+2.2.1. Õppeteema „Digihügieen“
+Õpitulemused
+Õpilane:
+1) järgib veebilehele kommentaare lisades, veebifoorumi ja postiloendi vahendusel toimuvas
+arutelus osaledes nii tunnustatud suhtlusnorme kui ka selle keskkonna nõudeid;
+2) selgitab ebaeetilise digisuhtluse võimalikke tagajärgi ning hindab kriitiliselt veebisuhtluse
+sisu ja turvalisust;
+3) haldab ja kaitseb oma digitaalset identiteeti, sh kasutades mitmeastmelist või -faktorilist
+isikutuvastust ja parooli taaste meetodeid, selgitab oma sotsiaalmeedia vms konto
+privaatsusseadete häälestamise vajadust;
+4) kirjeldab küberkiusamise olemust, kuidas seda märgata ja vastavas olukorras käituda;
+rakendab turvameetmeid oma arvuti ja nutiseadme kaitseks (nt viiruse- ja pahavaratõrje,
+jälitusrakendused jne);
+5) kirjeldab ja väldib digivahendi kasutamisest tekkida võivaid ohte tervisele (sõltuvus, liigese-
+ja rühivead, nägemise halvenemine), teeb vastavaid võimlemisharjutusi (silmadele, randmetele
+jne);
+6) tuvastab ja lahendab iseseisvalt lihtsamaid probleeme tõrkuvate digiseadmete või
+rakendustega.
+Õppesisu
+Digitehnika. Litsentsid (ärivara, jaosvara, proovivara, vabavara, vaba tarkvara) ja nendega
+seotud väljakutsed seadmete heaolule (piraatlus, viirused, pahavara ja selle levimise eripärad,
+tulemüür). Mälupulga ja faili kontroll. Programmide paigaldamine ja eemaldamine.
+Operatsioonisüsteemi ja programmide turvaline seadistamine. Teenuste turvalisus,
+nutirakenduste privaatsusseaded. Internet. Veebisisu kriitiline hindamine, sotsiaalse
+manipuleerimise äratundmine algtasemel. Interneti turvalisus, selle ajalugu ja tänapäevased
+probleemid. Salakiri, šifrid ja andmete krüpteerimine. Infosüsteemid ja veebikeskkonnad.
+Mitmeastmeline või -faktoriline isikutuvastus. Mitme virtuaalse identiteedi haldamine,
+varikonto. Privaatsusseadete muutmine sotsiaalmeedia keskkonnas. Turvaastme tõstmine
+arvutis (privaatne režiim veebilehitsejates, ligipääsuandmete haldamine). Andmete turvaline
+sünkroniseerimine erinevate seadmete vahel. Suhtlemine internetis. Turvaline e-posti manuste
+avamine. Veebikelmused. Suhtlus avalikus ja privaatses ruumis, infovoo filtreerimine.
+Küberkiusamine ja sellega toimetulemine. Netikett. Sexting. Internetisläng. Petukirjad. Abi
+küsimine ja pakkumine võrgusuhtluses tekkinud probleemide puhul. Digivahendite mõju
+tervisele ja keskkonnale. Digiseadmete väärkasutus, sõltuvus. Oma digikäitumise analüüs.
+Ergonoomika digiseadmete kasutamisel. Tervisekaitse reeglid ja harjutused.
+Probleemilahendus. Ühilduvusküsimuste ja lihtsamate turvaprobleemide lahendamine,
+internetikeskkondade võimalike probleemide lahendamine, sh turvalisuse suurendamine ja
+vajalike programmide leidmine erinevatele operatsioonisüsteemidele ja erineva litsentsiga
+(alternatiivsete programmide otsimine internetis).
+
+                                                             6
+2.2.2. Õppeteema „Programmeerimine“
+Õpitulemused
+Õpilane:
+1) mõistab ja kasutab teadlikult järgmisi mõisteid: programm, protsess, algoritm, roll (looja,
+täitja, kasutaja), muutuja, avaldis, valik, tsükkel, alamprogramm, programmeerimiskeel, sisend
+ja väljund;
+2) analüüsib etteantud programmi ja ennustab selle töö tulemust; teeb selles otstarbekaid (oma
+eesmärgile vastavaid) muudatusi ja täiendusi;
+3) koostab programmi etteantud tegevusskeemi, pseudokoodi või sõnalise kirjelduse alusel;
+4) kirjeldab algoritmide ning programmide kasutamise lisandväärtust erinevates
+eluvaldkondades;
+5) koostab lihtsamaid avaldisi ja algoritme (valik, kordus), mida on võimalik kasutada reaalses
+juhtprogrammis;
+6) selgitab rakenduse töö testimise vajadust ja olemust ning parandab tekkinud vead;
+7) koostab lihtsama ülesande (nt sõida mööda joont) täitmiseks valmisdetailidest mehaanilise
+seadme ja selle juhtprogrammi (robootika).
+Õppesisu
+Sissejuhatus programmeerimisse. Programmjuhtimisega seadmete tööpõhimõtted ja ajalugu.
+Programm. Protsess. Roll (looja, täitja, kasutaja). Programmeerimiskeel. Arenduskeskkond.
+Ülevaade erinevatest võimalustest ja konkreetsetest kasutatavatest vahenditest, füüsilised ja
+digitaalsed vahendid. Arenduskeskkond, selle seadistamine. Algoritm. Algoritmi mõiste ja
+liigid, algoritmi koostamine ja realiseerimine. Etteantud tegevusjuhisest (kirjeldus,
+tegevusskeem, pseudokood) arusaamine, ise koostamine ja rakendamine. Andmete ja tegevuste
+otstarbekas muutmine. Lihtsamate tüüpalgoritmide kasutamine. Andmed. Objektid, objektide
+omadused ja meetodid (tegevused), väärtused. Muutujad. Muutujale väärtuse omistamine ja
+kasutamine. Sisendid ja väljundid. Klaviatuur, hiir, ekraan. Andurid, täiturid (robootika).
+Tegevused ja avaldised. Lihtsamad teksti-, loogika- ja arvavaldised. Valikud. Tingimuslause (if
+ja else). Kordused. Lõpmatu kordus. Kordamine teatud arv kordi. Kordamine etteantud
+tingimusel. Kordus korduse sees. Alamprogramm. Alamprogrammi kasutamine.
+Protseduurid/funktsioonid parameetritega. Mehhatroonika (robootika). Füüsikalised nähtused.
+Andurid. Täiturmehhanismid. Robootika. Robootikasüsteemi komponendid: mikrokontroller,
+mootor, andurid, liikurmehhanism. Roboti navigatsioon.
+
+2.2.3. Õppeteema „Digimeedia“
+Õpitulemused
+Õpilane:
+1) selgitab fotokaamera tööpõhimõtteid ja korrektset hooldust, valib kaamera seaded vastavalt
+pildistamisoludele, pildistab (fotokaamera, nutiseade);
+2) valib vastavalt olukorrale sobiva graafikaliigi, tarkvara ja failitüübi, arvestades raster- ja
+vektorgraafika erinevusi;
+3) tuvastab digifoto puudused (kontrast, värvid, teravus, valge tasakaal) ja töötleb fotot
+vastavate tööriistadega puuduste vähendamiseks;
+4) rakendab portreefoto töötlemisel erinevaid võtteid (nt retušeerimine);
+5) kasutab 3D-jooniseid ja printerit eesmärgipäraselt – jooniste arvutisse laadimiseks, nende
+muutmiseks ja printimiseks ettevalmistamiseks, pidades silmas 3D-printeri tööpõhimõtteid ja
+autoriõigusi;
+6) salvestab ja töötleb heli ja videot nutiseadme ja arvuti abil;
+7) kombineerib teksti, heli, pilti ja videot, kasutades erinevaid üleminekuid ja efekte;
+8) nimetab digimeedia arengus olulisi sündmusi;
+9) kirjeldab tehis- ja liitreaalsust ja nendevahelisi erinevusi.
+Õppesisu
+Pildistamine. Kaamera tööpõhimõtted. Lääts, katiku ava, säriaeg, tundlikkus (ISO). Kaamera
+
+                                                             7
+seadistamine. Pildistamine kaamera ja nutiseadmega. Pildi salvestamine arvutis ja nutiseadmes
+(resolutsioon, piksel, faili suurus). Pilditöötlus. Pildiparandused – kontrastid, värvid, teravus.
+Valge tasakaal.
+Arvutigraafika. Vektor- ja rastergraafika. Vektorgraafikaga joonistamine, olemasolevatest
+kujunditest uute loomine. Vektorgraafika värvimine. Värvi üleminekud (gradient).
+3D-graafika. 3D-kujundite omadused. 3D-kujundi loomise protsess: tekstuur, sõrestik,
+varjutamine, renderdamine. Baaskujunditest uue 3D-kujundi loomine. 3D-objektide
+modelleerimine 3D-printimiseks. 3D-jooniste leidmine internetist, allalaadimine, muutmine ja
+3D-printimiseks ettevalmistamine. 3D-printer, selle liigid ja osad, töövõtted ja ohutus.
+Failiformaadid.
+Tehis- ja liitreaalsus (VR, AR). Tehis- ja liitreaalsuse vahelised erinevused, tehnilised
+lahendused, vajalikud lisaseadmed, praktilised rakendused.
+Heli. Erinevad helikandjad. Heli salvestamise ajalugu. Analoog- ja digitaalheli. Heli
+salvestamine ja taasesitamine. Audiokaablid ja -pistikud. Algtasemel helitöötlus.
+Video. Filmimine. Digitaalne video. Videotöötlus: teksti, pildi, heli, ja videoklippide montaaž.
+Autoriõigus ja litsentsid. Autoriõiguste kaitse internetist saadud pildi- ja videoklippide
+taaskasutamisel. Autorile viitamine ja litsentsid. Oma metaandmete lisamine failidele.
+
+2.2.4. Õppeteema „Digiseade töövahendina“
+Õpitulemused
+Õpilane:
+1) sisestab, vormindab ja kopeerib eri tüüpi tekste (sh nt plakatit, kuulutust);
+2) kasutab digiseadet ohutult ja säästlikult;
+3) vormindab referaati vastavalt etteantud juhendile, viitab korrektselt kasutatud allikatele;
+4) salvestab, kopeerib, kustutab ja pakib kokku faile, töötab mitme aknaga;
+5) otsib infot, kasutab ja hindab seda allikakriitiliselt, väldib plagiaati;
+6) koostab etteantud andmestiku põhjal andmetabeli, sagedustabelid ja sobivat tüüpi
+diagrammid (tulp-, sektor- või joondiagrammi), sorteerib ja filtreerib andmeid, kasutab
+lihtsamaid tabelarvutuse funktsioone (summa, aritmeetiline keskmine, max, min), haldab ja
+kaitseb oma andmeid;
+7) koostab ja disainib teksti, diagramme, pilte, audiot, videot ja tabeleid sisaldava esitluse
+etteantud teemal.
+Õppesisu
+Tekstitöötlus. Teksti sisestamine, vormindamine ja kopeerimine. Plakati või kuulutuse
+koostamine ning kujundamine. Töövõtted: ohutu ja säästlik arvutikasutus. Referaadi
+vormindamine: päis ja jalus, lehekülgede nummerdamine; pealkirjade laadid; sisukorra
+automaatne genereerimine; viidete ja kasutatud allikate loetelu automaatne koostamine.
+Failide haldamine. Faili salvestamine, kopeerimine, kustutamine, pakkimine. Töö mitme
+aknaga.
+Infokirjaoskus. Info otsimine, kasutamine, hindamine. Tööriistad. Plagiaat. Allikakriitilisus.
+Töö andmetega. Andmetabeli ja sagedustabeli koostamine. Diagrammi loomine sagedustabeli
+põhjal. Andmete sorteerimine ja filtreerimine. Lihtsamad funktsioonid tabelarvutuses (summa,
+aritmeetiline keskmine, max, min). Andmete kättesaadavus, haldamine ja kaitse.
+Esitluse koostamine. Esitluse disain ja vormistamine. Slaidi ülesehitus ja kujundus. Teksti,
+pildi, tabeli ja diagrammi sisestamine slaidile.
+
+2.3. Õpitulemused ja õppesisu III kooliastmes
+Õpilane:
+1) kasutab eesmärgipäraselt kooli, raamatukogu, kohaliku omavalitsuse ja riigi e-teenuseid ning
+ühismeedia teenuseid, järgides seejuures digiohutuse nõudeid;
+2) kujundab personaalse õpikeskkonna, kasutades tasuta veebiplatvorme ja rakendusi; kirjeldab
+uute tehnoloogiate (nt asjade internet, 3D, liit- ja virtuaalreaalsus) toimimist ja olulisust
+
+                                                             8
+ühiskonnas;
+3) panustab meeskonnaliikmena digitaalse loovtöö tegemisse (nt robootika, asjade interneti,
+veebisaidi, animatsiooni vms kujul) kas programmeerija, disaineri, stsenaristi, kunstniku vm
+rollis;
+4) kirjeldab digitehnoloogia mõju nii keskkonnale kui ka meie füüsilisele ja vaimsele tervisele;
+haldab ja kaitseb oma digitaalset identiteeti, väldib kübermaailmas valitsevaid riske, kuid
+ohtude realiseerumisel reageerib neile adekvaatselt.
+
+2.3.1. Teema „Infoühiskonna tehnoloogiad“
+Õpitulemused
+Õpilane:
+1) kirjeldab infoühiskonna ja riiklike e-teenuste toimimist Eestis;
+2) kasutab etteantud või enda valitud veebipõhist koostöökeskkonda sihipäraselt ja turvaliselt:
+liitub, valib turvalise salasõna, loob kasutaja profiili ning lisab materjale;
+3) loob veebipõhise personaalse õpikeskkonna (nt e-portfoolio) ja reflekteerib selles oma
+õpikogemust;
+4) loob, kohandab ja avaldab digitaalseid õppematerjale (sh 3D-, liit- või virtuaalreaalsuse
+tehnoloogiate abil), lähtudes intellektuaalomandi kaitse headest tavadest ja taaskasutatava sisu
+litsentsi tingimustest;
+5) kasutab eesmärgipäraselt kooli, kohaliku omavalitsuse ja riigi pakutavaid infosüsteeme ning
+ühismeedia platvorme;
+6) kirjeldab tehisintellekti ja asjade interneti rakendusviise majanduses, avalikus sektoris,
+hariduses ja sellega kaasnevaid võimalikke ohtusid;
+7) selgitab ava- ja suurandmete olulisust ja rakendusviise;
+8) kujundab ja kaitseb enda digitaalset identiteeti, väldib kübermaailmas valitsevaid ohtusid,
+kuid nende ilmnemisel reageerib adekvaatselt;
+9) oskab nimetada erinevaid IKT-ameteid, oskab kirjeldada, mida selles ametis tehakse, ja teab,
+missuguseid eeldusi on vaja, et neis ametites töötada.
+Õppesisu
+Eesti e-riik ja e-teenused. Isikutunnistuse kasutamine autentimisel ja digiallkirjastamisel.
+Omavalitsuse veebilehelt e-teenuste leidmine ning kasutamine. Kodanikuportaali eesti.ee
+kasutamine. E-teenuse mõiste ja elukaar, teenusedisain. Digiühiskonna kultuur ja eetika,
+seadused ja regulatsioonid Eestis.
+Internet suhtlus- ja töökeskkonnana. Veebikeskkondadesse kasutajaks registreerumine,
+kasutajaprofiili loomine. Oma virtuaalse identiteedi kaitsmine.
+Turvalise ja eetilise internetikäitumise alused. Probleemide tuvastamine, asitõendite
+võtmine, raporteerimine. Enamlevinud küberkuriteod internetis, kelmused, seadused (oht,
+rünne). Nutiseadme / targa riistvara (kodukasutuses) turvaline kasutamine. Kodu/õpikeskkonna
+turvaaudit. Vaimne tervis tehnoloogiarikkas keskkonnas (nt distantsõppes). Digiprügi,
+isikuandmete kaitse.
+Personaalse õpikeskkonna loomine veebikeskkonnas ja selle haldamine. E-keskkonna
+kasutamine õpikogemuse refleksiooniks. Veebiallikate süsteemne haldamine.
+Sisu tootmine ja taaskasutus. Digitaalse meediasisu loomine digitehnoloogiate abil: 3D, liit-
+ja virtuaalreaalsus. Autoriõigus digiajastul, litsentsid.
+Uued tehnoloogiatrendid: tehisintellekt, ava- ja suurandmed. Tehnoloogiline innovatsioon.
+Tehisintellekti ja asjade interneti mõisted, näited, rakendused ja seonduvad riskid. Ava- ja
+suurandmete olemus, rakendusviisid, seonduvad riskid.
+Karjäär IKT-valdkonnas. Teab ja oskab nimetada erinevaid IKT-valdkonna erialasid ning
+võimalusi edasisteks karjäärivalikuteks. IKT kasutamine ettevõtluses (äriinfotehnoloogiast
+küberturbeni), iduettevõtlus.
+Sissejuhatus digiloovtöösse. Digiloovtöö formaatide tutvustamine: programmeerimine (nt
+mäng, rakendus, animatsioon, kunst), asjade internet, robootika, multimeedia, veebidisain,
+
+                                                             9
+küberhügieen või lahenduse loomine elulises kontekstis. E-töövahendid (ajahalduseks, koostöö
+tegemiseks jne). Toimetulek tehnoloogiaga (seadmete haldamine ja probleemilahendus).
+Projektitöös osalemine, koostöö tegemine, töö ja protsessi hindamine. Projekti aruande
+koostamine ja esitlemine (raport, poster, video, liftikõne vmt).
+2.3.2. Teema „Digiloovtöö“
+Õpitulemused
+Õpilane:
+1) sõnastab digiloovtöö projekti eesmärgid, väljundid, tegevuskava ja ülesanded;
+2) planeerib oma tegevusi;
+3) vormistab arvuti abil digiloovtöö ja selle esitluse, lähtudes etteantud vormistusnõuetest,
+mallidest ja formaatidest ning intellektuaalomandi kaitse nõuetest;
+4) panustab meeskonnaliikmena digiloovtöö tegemisse (nt robootika, asjade interneti,
+tarkvaraprojekti, veebisaidi, turvalisust puudutava lahenduse või animatsiooni kujul);
+5) loob koostöös (ja/või digiloovtöö raames) lihtsama asjade interneti, robootika, turvalisuse
+või muu infoühiskonna tehnoloogia lahenduse elulises kontekstis (nt mudeli, prototüübi) ja
+kogub selle kohta tagasisidet;
+6) koostab ja kannab ette (iseseisvalt või koos tiimikaaslastega) digiloovtöö raporti,
+posterettekande, kaitse- või liftikõne.
+Õppesisu
+Disainmõtlemine, disainiprotsess. Disaini lähtekohad, kasutajate vajadused, tagasisidestamine.
+Loovtöö teema, vajalikkus, eesmärgid, väljundid, ajakava, ressursid.
+Meeskonnatöö korraldamine digivahendite abil. Meeskonnaliikmete rollid ja ülesanded,
+verstapostid.
+Loovtöö dokumenteerimine; tulemuste esitlemine, hindamine, tagasisidestamine;
+meediakajastus.
+
+                                                            10
+

@@ -1,10 +1,11 @@
 {
   "meta": {
-    "descripcion": "Evidencia estructurada del subindicador (b) 'Educación temprana en IA' para 5 países benchmark. Citas decisivas pendientes de verificación verbatim (subcadena exacta) contra el documento primario; ver fuentes/MANIFEST.md.",
+    "descripcion": "Evidencia estructurada del subindicador (b) 'Educación temprana en IA' para 5 países benchmark. Las citas decisivas sobre IA están verificadas como subcadena exacta del documento primario (verbatim_ok) usando src/verify_verbatim.py:normalizar+es_subcadena.",
     "fecha_consulta": "2026-06-05",
-    "decision_metodologica": "Regla inclusiva (2026-06-05): IA en cualquier asignatura del currículo nacional vigente, incl. electivas, cuenta como 'implementada' (cat. 5). Bajo esta regla EE=5 y SG=5; PT=4 (su IA no está vigente).",
-    "metodo": "WebSearch (entorno bloquea descarga directa; ver README.md). fuente_tipo: oficial_primario = texto del boletin/decreto/curriculo; portal_oficial = portal del ministerio/organismo; secundario = prensa/portal docente/agregador.",
-    "campos": ["pais","iso2","nivel","ambito","tipo","estado","cita_o_snippet","idioma","traduccion","fuente_url","fuente_tipo","verificacion"]
+    "fecha_verbatim": "2026-06-06",
+    "decision_metodologica": "Regla inclusiva (2026-06-05): IA en cualquier asignatura del currículo nacional vigente, incl. electivas, cuenta como 'implementada' (cat. 5). Bajo esta regla EE=5 y SG=5; PT=4 (su IA no está vigente). Nota de sustantividad (verbatim 2026-06-06): en EE y SG la IA aparece como SUBTEMA dentro de una asignatura mayor, no como módulo propio.",
+    "metodo": "Documentos descargados con curl a data/educacion_temprana/fuentes/<PAÍS>/ y extraídos con pdftotext. Citas decisivas verificadas con src/verify_verbatim.py:es_subcadena (normaliza solo espacios; tolera caso). Reporte automático en data/educacion_temprana/fuentes/_verify_report.json (15/15 OK).",
+    "campos": ["pais","iso2","nivel","ambito","tipo","estado","cita_o_snippet","idioma","traduccion","fuente_url","fuente_local","fuente_tipo","ubicacion","verificacion","sustantividad"]
   },
   "evidencias": [
     {
@@ -13,7 +14,7 @@
       "cita_o_snippet": "Disciplina de opção com Aprendizagens Essenciais homologadas pelo Despacho n.º 8476-A/2018, regulada pela Portaria 226-A/2018.",
       "idioma": "pt", "traduccion": "Asignatura optativa con Aprendizagens Essenciais homologadas por el Despacho 8476-A/2018, regulada por la Portaria 226-A/2018.",
       "fuente_url": "https://www.dge.mec.pt/sites/default/files/Curriculo/Projeto_Autonomia_e_Flexibilidade/12_aplicacoes_informaticas_b.pdf",
-      "fuente_tipo": "portal_oficial", "verificacion": "pendiente_verbatim"
+      "fuente_tipo": "portal_oficial", "verificacion": "pendiente_verbatim", "nota": "PT=4 ya verificado por ausencia (D1+D2 sin IA); cita del marco TIC, no decisiva para la categoría."
     },
     {
       "pais": "Portugal", "iso2": "PT", "nivel": "ensino secundário",
@@ -21,31 +22,52 @@
       "cita_o_snippet": "incorporando as dimensões do digital e da Inteligência Artificial",
       "idioma": "pt", "traduccion": "incorporando las dimensiones de lo digital y de la Inteligencia Artificial",
       "fuente_url": "https://www.studocu.com/pt/document/universidade-de-lisboa/fisica/meci-informacao-sobre-a-revisao-das-aprendizagens-essenciais-2026/158154683",
-      "fuente_tipo": "secundario", "verificacion": "pendiente_verbatim", "nota": "Revisión con nueva versión prevista 2027 e implementación 2027/28: IA aún NO vigente en el currículo."
+      "fuente_tipo": "secundario", "verificacion": "pendiente_verbatim", "nota": "Revisión con nueva versión prevista 2027 e implementación 2027/28: IA aún NO vigente en el currículo. PT=4 se mantiene firme."
     },
     {
-      "pais": "España", "iso2": "ES", "nivel": "Bachillerato (1.er curso)",
-      "ambito": "Tecnología e Ingeniería (RD 243/2022)", "tipo": "IA", "estado": "implementado",
-      "cita_o_snippet": "control del funcionamiento de sistemas tecnológicos y robóticos mediante lenguajes de programación informática, utilizando tecnologías emergentes incluyendo inteligencia artificial, Big data e Internet de las Cosas",
+      "pais": "España", "iso2": "ES", "nivel": "Bachillerato (Tecnología e Ingeniería I)",
+      "ambito": "RD 243/2022 — Anexo II — «Tecnología e Ingeniería I»", "tipo": "IA", "estado": "implementado",
+      "cita_o_snippet": "5.1 Controlar el funcionamiento de sistemas tecnológicos y robóticos, utilizando lenguajes de programación informática y aplicando las posibilidades que ofrecen las tecnologías emergentes, tales como inteligencia artificial, internet de las cosas, big data",
       "idioma": "es", "traduccion": null,
-      "fuente_url": "https://educagob.educacionfpydeportes.gob.es/curriculo/curriculo-lomloe/menu-curriculos-basicos/bachillerato/materias/tecnologia-ingenieria/criterios-eval-primer-curso.html",
-      "fuente_tipo": "portal_oficial", "verificacion": "pendiente_verbatim", "nota": "Educagob es portal oficial del Ministerio; falta confirmar el término en el texto del RD 243/2022 en el BOE."
+      "fuente_url": "https://www.boe.es/buscar/pdf/2022/BOE-A-2022-5521-consolidado.pdf",
+      "fuente_local": "data/educacion_temprana/fuentes/ES/A2_RD243-2022_BOE-A-2022-5521_consolidado.pdf",
+      "fuente_tipo": "oficial_primario",
+      "ubicacion": "RD 243/2022 (Bachillerato) — Anexo II — «Tecnología e Ingeniería I» — Criterios de evaluación · Competencia específica 5",
+      "verificacion": "verbatim_ok"
     },
     {
-      "pais": "España", "iso2": "ES", "nivel": "ESO (3.er curso)",
-      "ambito": "Tecnología y Digitalización (RD 217/2022)", "tipo": "IA", "estado": "implementado",
-      "cita_o_snippet": "Programación de aplicaciones sencillas para distintos dispositivos empleando elementos de programación e introducción a módulos de inteligencia artificial",
+      "pais": "España", "iso2": "ES", "nivel": "Bachillerato (Tecnología e Ingeniería II)",
+      "ambito": "RD 243/2022 — Anexo II — «Tecnología e Ingeniería II»", "tipo": "IA", "estado": "implementado",
+      "cita_o_snippet": "Inteligencia artificial, big data, bases de datos distribuidas y ciberseguridad.",
       "idioma": "es", "traduccion": null,
-      "fuente_url": "https://tecnodigijrjcieza.wordpress.com/3o-eso-u-7d-inteligencia-artificial/",
-      "fuente_tipo": "secundario", "verificacion": "pendiente_verbatim", "nota": "Evidencia DÉBIL (materiales docentes alineados a LOMLOE, no BOE). Decisiva la verificación del Anexo II del RD 217/2022."
+      "fuente_url": "https://www.boe.es/buscar/pdf/2022/BOE-A-2022-5521-consolidado.pdf",
+      "fuente_local": "data/educacion_temprana/fuentes/ES/A2_RD243-2022_BOE-A-2022-5521_consolidado.pdf",
+      "fuente_tipo": "oficial_primario",
+      "ubicacion": "RD 243/2022 (Bachillerato) — Anexo II — «Tecnología e Ingeniería II» — Saberes básicos · E. Sistemas informáticos emergentes",
+      "verificacion": "verbatim_ok"
     },
     {
-      "pais": "España", "iso2": "ES", "nivel": "ESO",
-      "ambito": "Tecnología y Digitalización (RD 217/2022, Anexo II)", "tipo": "TIC", "estado": "implementado",
-      "cita_o_snippet": "Materia obligatoria de oferta (cursarla en al menos uno de los tres primeros cursos); saberes de informática, redes, programación y pensamiento computacional.",
+      "pais": "España", "iso2": "ES", "nivel": "ESO («Tecnología y Digitalización»)",
+      "ambito": "RD 217/2022 — Anexo II — «Tecnología y Digitalización»", "tipo": "IA", "estado": "implementado",
+      "cita_o_snippet": "5.2 Programar aplicaciones sencillas para distintos dispositivos (ordenadores, dispositivos móviles y otros) empleando los elementos de programación de manera apropiada y aplicando herramientas de edición, así como módulos de inteligencia artificial que añadan funcionalidades a la solución.",
       "idioma": "es", "traduccion": null,
-      "fuente_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4975",
-      "fuente_tipo": "portal_oficial", "verificacion": "pendiente_verbatim"
+      "fuente_url": "https://www.boe.es/buscar/pdf/2022/BOE-A-2022-4975-consolidado.pdf",
+      "fuente_local": "data/educacion_temprana/fuentes/ES/A1_RD217-2022_BOE-A-2022-4975_consolidado.pdf",
+      "fuente_tipo": "oficial_primario",
+      "ubicacion": "RD 217/2022 (ESO) — Anexo II — «Tecnología y Digitalización» — Criterios de evaluación · Competencia específica 5",
+      "verificacion": "verbatim_ok",
+      "nota": "Sustantividad ES: IA aparece NOMINALMENTE en criterios de evaluación y saberes básicos del BOE (texto vinculante)."
+    },
+    {
+      "pais": "España", "iso2": "ES", "nivel": "ESO («Tecnología y Digitalización»)",
+      "ambito": "RD 217/2022 — Anexo II — «Tecnología y Digitalización»", "tipo": "IA", "estado": "implementado",
+      "cita_o_snippet": "Aplicaciones informáticas sencillas, para ordenador y dispositivos móviles, e introducción a la inteligencia artificial.",
+      "idioma": "es", "traduccion": null,
+      "fuente_url": "https://www.boe.es/buscar/pdf/2022/BOE-A-2022-4975-consolidado.pdf",
+      "fuente_local": "data/educacion_temprana/fuentes/ES/A1_RD217-2022_BOE-A-2022-4975_consolidado.pdf",
+      "fuente_tipo": "oficial_primario",
+      "ubicacion": "RD 217/2022 (ESO) — Anexo II — «Tecnología y Digitalización» — Saberes básicos · C. Pensamiento computacional, programación y robótica",
+      "verificacion": "verbatim_ok"
     },
     {
       "pais": "Estonia", "iso2": "EE", "nivel": "põhikool + gümnaasium",
@@ -53,7 +75,7 @@
       "cita_o_snippet": "Digital competence is one of the general competences of the national curriculum, developed across all subjects (aligned to DigComp 2.1).",
       "idioma": "en", "traduccion": "La competencia digital es una de las competencias generales del currículo nacional, desarrollada en todas las asignaturas (alineada a DigComp 2.1).",
       "fuente_url": "https://www.riigiteataja.ee/en/eli/529042024001/consolide",
-      "fuente_tipo": "oficial_primario", "verificacion": "pendiente_verbatim"
+      "fuente_tipo": "oficial_primario", "verificacion": "pendiente_verbatim", "nota": "Paráfrasis del marco TIC transversal (no decisiva para EE=5; lo decisivo es el verbatim de IA en Lisa 10 Informaatika)."
     },
     {
       "pais": "Estonia", "iso2": "EE", "nivel": "gümnaasium (10.º-11.º)",
@@ -61,23 +83,66 @@
       "cita_o_snippet": "The AI Leap Initiative will begin with the training of 3,000 teachers in 2025, after which around 20,000 upper secondary students (grades 10–11) will gain access to AI-powered learning applications.",
       "idioma": "en", "traduccion": "La iniciativa AI Leap comenzará formando a 3.000 docentes en 2025; después, unos 20.000 estudiantes de secundaria superior (grados 10-11) tendrán acceso a aplicaciones de aprendizaje con IA.",
       "fuente_url": "https://eurydice.eacea.ec.europa.eu/news/estonia-ai-leap-initiative-enhance-learning-and-teaching",
-      "fuente_tipo": "portal_oficial", "verificacion": "pendiente_verbatim", "nota": "Dotación de herramientas + formación, NO reforma del currículo: 'propuesta/iniciativa', no 'implementado'."
+      "fuente_tipo": "portal_oficial", "verificacion": "pendiente_verbatim", "nota": "Dotación de herramientas + formación, NO reforma del currículo: NO computa como 'implementado'."
     },
     {
-      "pais": "Alemania", "iso2": "DE", "nivel": "Sek II (Gymnasium, Jhst. 11) — Bayern",
-      "ambito": "LehrplanPLUS, Informatik, Lernbereich 'Künstliche Intelligenz'", "tipo": "IA", "estado": "implementado",
-      "cita_o_snippet": "erörtern Ansätze zur Definition des Begriffs Künstliche Intelligenz, beschreiben verschiedene grundlegende Ideen von KI-Verfahren (u. a. maschinelles Lernen) und deren Anwendungsgebiete",
-      "idioma": "de", "traduccion": "discuten enfoques para definir el concepto de Inteligencia Artificial, describen distintas ideas básicas de procedimientos de IA (entre otros, aprendizaje automático) y sus campos de aplicación",
-      "fuente_url": "https://www.lehrplanplus.bayern.de/fachlehrplan/lernbereich/291294",
-      "fuente_tipo": "portal_oficial", "verificacion": "pendiente_verbatim", "nota": "Confirmar que el Lernbereich KI es obligatorio (Pflicht) en el texto del LehrplanPLUS."
+      "pais": "Estonia", "iso2": "EE", "nivel": "põhikool · III kooliaste (7.º-9.º) — secundaria inferior",
+      "ambito": "Põhikooli riiklik õppekava · Lisa 10 · Valikõppeaine «Informaatika» — Teema «Infoühiskonna tehnoloogiad»",
+      "tipo": "IA", "estado": "implementado_electivo",
+      "cita_o_snippet": "kirjeldab tehisintellekti ja asjade interneti rakendusviise majanduses, avalikus sektoris, hariduses ja sellega kaasnevaid võimalikke ohtusid",
+      "idioma": "et",
+      "traduccion": "describe los usos de la inteligencia artificial y el internet de las cosas en la economía, el sector público y la educación, así como los posibles riesgos asociados",
+      "fuente_url": "https://www.riigiteataja.ee/aktilisa/1080/3202/3005/18m_pohi_lisa10.pdf",
+      "fuente_local": "data/educacion_temprana/fuentes/EE/A5_PROK_Lisa10_Informaatika.pdf",
+      "fuente_tipo": "oficial_primario",
+      "ubicacion": "Põhikooli riiklik õppekava · Lisa 10 · Valikõppeaine «Informaatika» · III kooliaste · Teema «Infoühiskonna tehnoloogiad» · Õpitulemus 6",
+      "verificacion": "verbatim_ok",
+      "sustantividad": "subtema",
+      "nota": "IA aparece como SUBTEMA (1 de 9 õpitulemused del tema «Tecnologías de la sociedad de la información»), NO como módulo propio. Asignatura ELECTIVA (valikõppeaine). Bajo regla estricta de sustantividad, EE volvería a 4."
     },
     {
-      "pais": "Alemania", "iso2": "DE", "nivel": "Sek II (Gymnasium/Gesamtschule) — NRW",
-      "ambito": "Kernlehrplan Informatik, Inhaltsfeld 'Künstliche Intelligenz und maschinelles Lernen'", "tipo": "IA", "estado": "implementado",
-      "cita_o_snippet": "Maschinelles Lernen als Teilgebiet der Künstlichen Intelligenz beschreibt die Fähigkeit selbstlernender Systeme, Muster und Gesetzmäßigkeiten aus datenbasierten großen Datenmengen (Big Data) abzuleiten",
-      "idioma": "de", "traduccion": "El aprendizaje automático, como subcampo de la Inteligencia Artificial, describe la capacidad de sistemas autoaprendices para derivar patrones y regularidades a partir de grandes cantidades de datos (Big Data)",
-      "fuente_url": "https://lehrplannavigator.nrw.de/system/files/media/document/file/klp_gost_informatik.pdf",
-      "fuente_tipo": "oficial_primario", "verificacion": "pendiente_verbatim", "nota": "Documento vinculante (PDF). Confirmar que el Inhaltsfeld KI es obligatorio en Sek II."
+      "pais": "Estonia", "iso2": "EE", "nivel": "põhikool · III kooliaste",
+      "ambito": "Põhikooli riiklik õppekava · Lisa 10 · Valikõppeaine «Informaatika» — Õppesisu (contenidos)",
+      "tipo": "IA", "estado": "implementado_electivo",
+      "cita_o_snippet": "Uued tehnoloogiatrendid: tehisintellekt, ava- ja suurandmed. Tehnoloogiline innovatsioon. Tehisintellekti ja asjade interneti mõisted, näited, rakendused ja seonduvad riskid.",
+      "idioma": "et",
+      "traduccion": "Nuevas tendencias tecnológicas: inteligencia artificial, datos abiertos y macrodatos. Innovación tecnológica. Conceptos, ejemplos, aplicaciones y riesgos asociados de la inteligencia artificial y el internet de las cosas.",
+      "fuente_url": "https://www.riigiteataja.ee/aktilisa/1080/3202/3005/18m_pohi_lisa10.pdf",
+      "fuente_local": "data/educacion_temprana/fuentes/EE/A5_PROK_Lisa10_Informaatika.pdf",
+      "fuente_tipo": "oficial_primario",
+      "ubicacion": "Põhikooli riiklik õppekava · Lisa 10 · Valikõppeaine «Informaatika» · III kooliaste · Teema «Infoühiskonna tehnoloogiad» · Õppesisu",
+      "verificacion": "verbatim_ok",
+      "sustantividad": "subtema"
+    },
+    {
+      "pais": "Alemania", "iso2": "DE", "nivel": "Sek II — Bayern Gymnasium Jhst. 11 (NTG)",
+      "ambito": "LehrplanPLUS Bayern · Informatik · Jhst. 11 (NTG) · Lernbereich 4 «Künstliche Intelligenz»",
+      "tipo": "IA", "estado": "implementado",
+      "cita_o_snippet": "Künstliche Intelligenz (ca. 16 Std.) — diskutieren Ansätze zur Definition des Begriffs Künstliche Intelligenz (KI), beschreiben verschiedene Grundideen von Verfahren der KI (u. a. maschinelles Lernen) sowie ihre Anwendungsbereiche.",
+      "idioma": "de",
+      "traduccion": "Inteligencia artificial (aprox. 16 horas) — discuten enfoques para definir el concepto de Inteligencia Artificial (IA), describen distintas ideas básicas de procedimientos de IA (entre otros, aprendizaje automático) y sus campos de aplicación.",
+      "fuente_url": "https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/11/informatik/ntg",
+      "fuente_local": "data/educacion_temprana/fuentes/DE/A3_LehrplanPLUS_Bayern_Gym11_Informatik_ntg.html",
+      "fuente_tipo": "oficial_primario",
+      "ubicacion": "LehrplanPLUS Bayern · Gymnasium · Jhst. 11 · Informatik (NTG) · Lernbereich 4 «Künstliche Intelligenz» · Kompetenzerwartungen",
+      "verificacion": "verbatim_ok",
+      "sustantividad": "modulo",
+      "nota": "Lernbereich propio (16 h) con Kompetenzerwartungen específicas: maschinelles Lernen, k-Nächste-Nachbarn/Entscheidungsbaum, Perzeptron, künstliche neuronale Netze. Sustantividad alta."
+    },
+    {
+      "pais": "Alemania", "iso2": "DE", "nivel": "Sek I — NRW · Pflichtfach Informatik · Klasse 5/6",
+      "ambito": "KLP NRW · Sek I · Klasse 5/6 · Pflichtfach Informatik (2021/22) · Inhaltsfeld «Automaten und künstliche Intelligenz»",
+      "tipo": "IA", "estado": "implementado",
+      "cita_o_snippet": "Automaten und künstliche Intelligenz — Inhaltliche Schwerpunkte: – Aufbau und Wirkungsweise einfacher Automaten – Maschinelles Lernen mit Entscheidungsbäumen – Maschinelles Lernen mit neuronalen Netzen",
+      "idioma": "de",
+      "traduccion": "Autómatas e inteligencia artificial — Énfasis de contenido: – estructura y modo de funcionamiento de autómatas sencillos – aprendizaje automático con árboles de decisión – aprendizaje automático con redes neuronales",
+      "fuente_url": "https://lehrplannavigator.nrw.de/system/files/media/document/file/si_kl5u6_if_klp_2021_07_01.pdf",
+      "fuente_local": "data/educacion_temprana/fuentes/DE/A4b_KLP_NRW_SekI_Kl5u6_Informatik_2021.pdf",
+      "fuente_tipo": "oficial_primario",
+      "ubicacion": "KLP NRW · Sek I · Klasse 5/6 · Pflichtfach Informatik · Inhaltsfeld «Automaten und künstliche Intelligenz»",
+      "verificacion": "verbatim_ok",
+      "sustantividad": "modulo",
+      "nota": "CORRECCIÓN: el MANIFEST apuntaba al KLP GOSt (Sek II, edición 2014) que NO contiene KI. La IA está como Inhaltsfeld del KLP Pflichtfach Informatik Klasse 5/6 (NRW, 2021), texto vinculante. El KLP GOSt Informatik (PDF de 2014; lehrplannavigator.nrw.de) se mantiene como contexto pero no aporta verbatim de KI."
     },
     {
       "pais": "Alemania", "iso2": "DE", "nivel": "Sek I",
@@ -85,23 +150,49 @@
       "cita_o_snippet": "Informatik es Pflichtfach (obligatoria) en 9 de 16 Länder en Sek I (Informatik-Monitor 2024/25); en la muestra: Bayern, NRW (Kl. 5-6), Baden-Württemberg (desde 2025/26).",
       "idioma": "es", "traduccion": null,
       "fuente_url": "https://informatik-monitor.de/2024-25",
-      "fuente_tipo": "secundario", "verificacion": "pendiente_verbatim"
+      "fuente_tipo": "secundario", "verificacion": "pendiente_verbatim", "nota": "Paráfrasis del Informatik-Monitor; el verbatim decisivo de IA está en A3 (Bayern) y A4b (NRW)."
     },
     {
-      "pais": "Singapur", "iso2": "SG", "nivel": "Secondary (G3 / O-Level)",
-      "ambito": "Computing (Syllabus 7155)", "tipo": "TIC", "estado": "implementado",
-      "cita_o_snippet": "Computing (Syllabus 7155) elective with official MOE/SEAB syllabus (implementation 2024); four modules: Data and Information; Systems and Communications; Abstraction and Algorithms; Programming.",
-      "idioma": "en", "traduccion": "Computing (Syllabus 7155) electiva con syllabus oficial MOE/SEAB (implementación 2024); cuatro módulos: Datos e Información; Sistemas y Comunicaciones; Abstracción y Algoritmos; Programación.",
+      "pais": "Singapur", "iso2": "SG", "nivel": "Secondary (Upper Secondary, G3 / O-Level)",
+      "ambito": "Computing 7155 O-Level Syllabus (SEAB, 2025) — currículo nacional", "tipo": "TIC", "estado": "implementado",
+      "cita_o_snippet": "The syllabus consists of five modules as follows: Module 1 Computing Fundamentals; Module 2 Algorithms and Programming; Module 3 Spreadsheets; Module 4 Networking; Module 5 Impact of Computing.",
+      "idioma": "en",
+      "traduccion": "El syllabus consta de cinco módulos: 1) Fundamentos de Computación; 2) Algoritmos y Programación; 3) Hojas de Cálculo; 4) Redes; 5) Impacto de la Computación.",
       "fuente_url": "https://www.seab.gov.sg/files/O%20Lvl%20Syllabus%20Sch%20Cddts/2025/7155_y25_sy.pdf",
-      "fuente_tipo": "portal_oficial", "verificacion": "pendiente_verbatim", "nota": "Verificar si los módulos incluyen un tema explícito de IA/ML (el specimen paper lo sugiere)."
+      "fuente_local": "data/educacion_temprana/fuentes/SG/A6_Computing_7155_OLvl_2025.pdf",
+      "fuente_tipo": "oficial_primario",
+      "ubicacion": "Computing 7155 O-Level Syllabus (SEAB, 2025) · Syllabus content · cinco módulos (lista oficial)",
+      "verificacion": "verbatim_ok",
+      "nota": "CORRECCIÓN: la lista original (Data and Information / Systems and Communications / Abstraction and Algorithms / Programming) no coincide con el syllabus 7155 vigente 2025. Los módulos oficiales son los cinco indicados arriba."
     },
     {
-      "pais": "Singapur", "iso2": "SG", "nivel": "Secondary",
-      "ambito": "Conocimiento de IA (respuesta parlamentaria MOE)", "tipo": "IA", "estado": "no_curricular",
-      "cita_o_snippet": "students will develop foundational knowledge of AI through coding programmes, the Science curriculum and through their facilitated use of AI through assignments",
-      "idioma": "en", "traduccion": "los estudiantes desarrollarán conocimiento fundamental de IA a través de programas de codificación, el currículo de Ciencias y mediante el uso facilitado de IA en sus trabajos",
-      "fuente_url": "https://www.moe.gov.sg/news/parliamentary-replies/20230109-artificial-intelligence",
-      "fuente_tipo": "portal_oficial", "verificacion": "pendiente_verbatim", "nota": "IA vía programas y uso instrumental, NO un syllabus obligatorio de IA: 'no_curricular'."
+      "pais": "Singapur", "iso2": "SG", "nivel": "Secondary (O-Level Computing 7155, electivo)",
+      "ambito": "Computing 7155 · Module 5 «Impact of Computing» · 5.4 Emerging Technologies",
+      "tipo": "IA", "estado": "implementado_electivo",
+      "cita_o_snippet": "Describe Artificial Intelligence (AI) as the ability of a computer to perform complex tasks without constant human guidance and improve its performance as more data is collected.",
+      "idioma": "en",
+      "traduccion": "Describe la inteligencia artificial (IA) como la capacidad de un computador para realizar tareas complejas sin guía humana constante y para mejorar su rendimiento a medida que se recolectan más datos.",
+      "fuente_url": "https://www.seab.gov.sg/files/O%20Lvl%20Syllabus%20Sch%20Cddts/2025/7155_y25_sy.pdf",
+      "fuente_local": "data/educacion_temprana/fuentes/SG/A6_Computing_7155_OLvl_2025.pdf",
+      "fuente_tipo": "oficial_primario",
+      "ubicacion": "Computing 7155 O-Level Syllabus (SEAB, 2025) · Module 5 «Impact of Computing» · 5.4 Emerging Technologies · Learning outcome 5.4.1",
+      "verificacion": "verbatim_ok",
+      "sustantividad": "subtema",
+      "nota": "IA es SUBTEMA: la sección 5.4 «Emerging Technologies» tiene 5 learning outcomes (5.4.1–5.4.5) dentro del Module 5 «Impact of Computing». NO hay un módulo propio de IA. Bajo regla estricta de sustantividad, SG volvería a 4."
+    },
+    {
+      "pais": "Singapur", "iso2": "SG", "nivel": "Secondary (O-Level Computing 7155, electivo)",
+      "ambito": "Computing 7155 · Module 5 «Impact of Computing» · 5.4 Emerging Technologies",
+      "tipo": "IA", "estado": "implementado_electivo",
+      "cita_o_snippet": "Define Machine Learning (ML) as a technique used in AI and explain the difference between ML and traditional programming.",
+      "idioma": "en",
+      "traduccion": "Define el aprendizaje automático (ML) como una técnica usada en IA y explica la diferencia entre ML y la programación tradicional.",
+      "fuente_url": "https://www.seab.gov.sg/files/O%20Lvl%20Syllabus%20Sch%20Cddts/2025/7155_y25_sy.pdf",
+      "fuente_local": "data/educacion_temprana/fuentes/SG/A6_Computing_7155_OLvl_2025.pdf",
+      "fuente_tipo": "oficial_primario",
+      "ubicacion": "Computing 7155 O-Level Syllabus (SEAB, 2025) · Module 5 «Impact of Computing» · 5.4 Emerging Technologies · Learning outcome 5.4.3",
+      "verificacion": "verbatim_ok",
+      "sustantividad": "subtema"
     },
     {
       "pais": "Portugal", "iso2": "PT", "nivel": "ensino secundário (12.º)",
@@ -110,22 +201,6 @@
       "idioma": "en", "traduccion": "Las Aprendizagens Essenciais se organizan en dos dominios: D1 (Algoritmia y Programación) y D2 (Multimedia).",
       "fuente_url": "https://curriculonacional.dge.mec.pt/organizacao-curricular/aplicacoes-informaticas-b",
       "fuente_tipo": "portal_oficial", "verificacion": "websearch_2026-06-05", "nota": "Currículo vigente SIN IA; la IA entra solo en la revisión con nueva versión a consulta en 2027. Confirma PT=4 firme."
-    },
-    {
-      "pais": "Estonia", "iso2": "EE", "nivel": "gümnaasium / põhikool (electivo)",
-      "ambito": "Informaatika (valikõppeaine/electiva) + AI Leap (en desarrollo)", "tipo": "IA", "estado": "electivo/en_desarrollo",
-      "cita_o_snippet": "AI concepts, examples, applications and associated risks are covered in elective informatics courses; the AI Leap upper-secondary curriculum is being defined by working groups (2025).",
-      "idioma": "en", "traduccion": "Conceptos de IA, ejemplos, aplicaciones y riesgos asociados se tratan en cursos electivos de informática; el currículo de AI Leap para secundaria superior lo están definiendo grupos de trabajo (2025).",
-      "fuente_url": "https://www.riigiteataja.ee/aktilisa/1080/3202/3005/18m_pohi_lisa10.pdf",
-      "fuente_tipo": "oficial_primario", "verificacion": "websearch_2026-06-05", "nota": "BORDERLINE 4/5: IA en asignatura ELECTIVA, no obligatoria; currículo AI Leap aún no implementado. El verbatim del anexo de Informaatika mediría la sustantividad."
-    },
-    {
-      "pais": "Singapur", "iso2": "SG", "nivel": "Secondary (electivo 7155)",
-      "ambito": "Computing 7155 — machine learning (examinable)", "tipo": "IA", "estado": "electivo_subtema",
-      "cita_o_snippet": "explain how a machine learning system will be different from traditional programming",
-      "idioma": "en", "traduccion": "explica en qué se diferenciará un sistema de aprendizaje automático de la programación tradicional",
-      "fuente_url": "https://www.seab.gov.sg/files/O%20Lvl%20Syllabus%20Sch%20Cddts/2025/7155_y25_sp_1.pdf",
-      "fuente_tipo": "oficial_primario", "verificacion": "websearch_2026-06-05", "nota": "BORDERLINE 4/5: ML examinable en el 7155 ELECTIVO pero como subtema (los 4 módulos no incluyen un bloque de IA). El verbatim del 7155 mediría la sustantividad."
     }
   ]
 }
