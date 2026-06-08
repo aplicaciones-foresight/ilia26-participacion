@@ -37,7 +37,7 @@ casi todo** (dashboards, APIs de datos, PDFs, incluso Wikipedia). Por eso:
 | 2 | Nº inversiones privadas (71) | — | — | — | — | — | última década | ETO CAT (Crunchbase) | ❌ No accesible · ruta manual |
 | 3 | Valor total est. inversión priv. (72) | — | — | — | — | — | última década | ETO CAT (Crunchbase) | ❌ No accesible · ruta manual |
 | 4 | **Gasto I+D / PIB %** (73) | **1,50** | **1,84**¹ | **1,85**² | **3,17** | **1,73**³ | 2024 (SG 2022) | Nac./Eurostat/OCDE + WB | ✅ Verificado · ALTA |
-| 5 | Desarrollo de aplicaciones (76) | **92,13** | **94,28** | **100,00** | **94,26** | **88,61** | **2019**⁴ | GSMA MCI (score 0–100) | ⚠️ Determinístico, pero edición 2019 |
+| 5 | Desarrollo de aplicaciones (76) | **89,30** | **96,73** | **100,00** | **94,75** | **86,24** | **2024** | GSMA MCI 2025 (score 0–100) | ✅ Archivo oficial · ALTA |
 | 6 | **Relevancia prod. software** (80) — *total · 2025* | 0,03189 · 0,00788 | 0,03571 · 0,00655 | 0,02589 · 0,00822 | 0,08960 · 0,01899 | 0,03280 · 0,00768 | 2020Q1–2025Q4 / 2025 | GitHub Innovation Graph | ✅ Determinístico · ALTA |
 | 7 | Desarrollo de IA — modelos HF (81) | n/d | n/d | n/d | n/d | n/d | — | Hugging Face | ❌ Conteos no accesibles · inventario de orgs listo |
 | 8 | Familias de patentes IA (82) | — | — | SG 661/297⁵ | DE ~436⚠️ | — | 2017-20 / ambiguo | OECD.AI/CSET | ⚠️ Parcial · BAJA-MEDIA |
@@ -45,7 +45,7 @@ casi todo** (dashboards, APIs de datos, PDFs, incluso Wikipedia). Por eso:
 | 10 | Inventores de patentes IA (84) | — | — | — | — | — | — | (no en OECD.AI) | ❌ No publicado · requiere EPO/Lens |
 | 11 | Gobierno digital — OSI (92) | — | — | — | — | — | 2024 | UN E-Gov Survey | ❌ OSI no accesible · EGDI como similar⁶ |
 
-¹ Estonia: 1,84% (2023, sólido); ~2,0% (2024, provisional). · ² Singapur: 1,85% (2022); el WB da 2,16% pero es 2020. · ³ Portugal: ~1,73% (OCDE/CEIC) / 1,75% (DGEEC nacional), 2024. · ⁴ GSMA: solo fue accesible la edición 2020 (dato 2019); el 2024/2025 requiere descarga manual. · ⁵ Singapur: 661 solicitudes / 297 concedidas (ventana 2017-2020). · ⁶ EGDI 2024 verificado: Estonia 0,97274 (#2), Singapur 0,96912 (#3).
+¹ Estonia: 1,84% (2023, sólido); ~2,0% (2024, provisional). · ² Singapur: 1,85% (2022); el WB da 2,16% pero es 2020. · ³ Portugal: ~1,73% (OCDE/CEIC) / 1,75% (DGEEC nacional), 2024. · ⁴ GSMA: dato 2024 del archivo oficial MCI 2025 (Index Scores); scores re-normalizados entre ediciones → no comparar con ediciones previas. · ⁵ Singapur: 661 solicitudes / 297 concedidas (ventana 2017-2020). · ⁶ EGDI 2024 verificado: Estonia 0,97274 (#2), Singapur 0,96912 (#3).
 
 **Leyenda:** ✅ entregado · ⚠️ parcial/con reserva · ❌ no accesible desde el entorno (dato existe; ruta manual provista) · — sin valor · n/d sin conteo.
 
@@ -61,13 +61,13 @@ casi todo** (dashboards, APIs de datos, PDFs, incluso Wikipedia). Por eso:
 - **Confianza:** ALTA (ES, EE-2023, DE); MEDIA-ALTA (PT, EE-2024); MEDIA (SG).
 - **Per cápita:** N/A (ya es un ratio sobre PIB).
 
-### 5 ⚠️ Desarrollo de aplicaciones (ID 76) — `desarrollo_aplicaciones_gsma.md`
+### 5 ✅ Desarrollo de aplicaciones (ID 76) — `desarrollo_aplicaciones_gsma.md`
 - **Definición ILIA:** nº de apps desarrolladas localmente, per cápita (GSMA Mobile Connectivity Index).
-- **Indicador exacto MCI:** **"Apps developed per person"** = *"number of active mobile apps developed per person"* (fuente Appfigures). El MCI publica **solo el score 0–100**; el **bruto per cápita es propietario (no público)**.
-- **Valores (score 0–100, 2019):** ES **92,13** · EE **94,28** · SG **100,00** · DE **94,26** · PT **88,61**.
-- **Método:** descarga determinística del CSV espejo (GitHub OCTO Flat Data del `MCI_Data_2020.xlsx`), columna "Apps developed per person". Reproducido por mí leyendo la columna exacta.
-- **Reserva importante:** solo fue accesible la **edición 2020 (dato 2019)**. Para ILIA 2026 hay que bajar el **2024/2025** manualmente (ruta en el archivo). SG saturado en 100 desde 2017.
-- **Confianza:** ALTA para el score 2019; BAJA para "edición vigente".
+- **Indicador exacto MCI:** **"Locally developed apps per person"** (enabler *Content and Services* → dimensión *Local Relevance*; fuente Appfigures). El MCI publica **solo el score 0–100**; el bruto per cápita es propietario (no público).
+- **Valores (score 0–100, 2024):** ES **89,30** · EE **96,73** · SG **100,00** · DE **94,75** · PT **86,24**.
+- **Método:** lectura directa del archivo oficial **`MCI_data_2025.xlsx`** (hoja *Index Scores*, col. "Locally developed apps per person", Year = 2024), provisto por el operador.
+- **Reserva:** los scores se re-normalizan entre ediciones → no comparar con ediciones previas. SG saturado en 100.
+- **Confianza:** ALTA.
 
 ### 6 ✅ Relevancia de Producción de Software (ID 80) — `github_relevancia_sw.py`, `relevancia_sw_resultados.csv`
 - **Definición ILIA:** proporción entre el total de *inbounds recibidos* y el total de repositorios por país en GitHub.
@@ -118,8 +118,8 @@ Por el bloqueo de red del entorno, estos datos **existen** pero debes sacarlos t
 inversión** → cat.eto.tech (30 s/país); **(8) Familias de patentes** → cat.eto.tech;
 **(9-10) Aplicantes/Inventores** → Lens/Espacenet (cambio de fuente); **(7) modelos
 HF** → API de HF con la lista de orgs provista; **(11) OSI** → CSV World Bank Data360
-o Technical Appendix UN. Entregados y verificados: **(4) Gasto I+D/PIB**, **(6)
-Relevancia de software**; entregado con reserva de año: **(5) Desarrollo de apps**.
+o Technical Appendix UN. Entregados y verificados: **(4) Gasto I+D/PIB**, **(5)
+Desarrollo de apps** (2024, archivo oficial MCI 2025) y **(6) Relevancia de software**.
 
 ## Archivos de esta entrega
 - `REPORTE_INDICADORES_5_PAISES.md` (este) · `gasto_id_pib.md` · `desarrollo_aplicaciones_gsma.md`
