@@ -38,7 +38,7 @@ casi todo** (dashboards, APIs de datos, PDFs, incluso Wikipedia). Por eso:
 | 3 | Valor total est. inversión priv. (72) | — | — | — | — | — | última década | ETO CAT (Crunchbase) | ❌ No accesible · ruta manual |
 | 4 | **Gasto I+D / PIB %** (73) | **1,50** | **1,84**¹ | **1,85**² | **3,17** | **1,73**³ | 2024 (SG 2022) | Nac./Eurostat/OCDE + WB | ✅ Verificado · ALTA |
 | 5 | Desarrollo de aplicaciones (76) | **92,13** | **94,28** | **100,00** | **94,26** | **88,61** | **2019**⁴ | GSMA MCI (score 0–100) | ⚠️ Determinístico, pero edición 2019 |
-| 6 | **Relevancia prod. software** (80) — *total · 2025* | 0,478 · 0,118 | 0,528 · 0,097 | 0,304 · 0,097 | 1,381 · 0,293 | 0,473 · 0,111 | 2020Q1–2025Q4 / 2025 | GitHub Innovation Graph | ✅ Determinístico · ALTA |
+| 6 | **Relevancia prod. software** (80) — *total · 2025* | 0,03189 · 0,00788 | 0,03571 · 0,00655 | 0,02589 · 0,00822 | 0,08960 · 0,01899 | 0,03280 · 0,00768 | 2020Q1–2025Q4 / 2025 | GitHub Innovation Graph | ✅ Determinístico · ALTA |
 | 7 | Desarrollo de IA — modelos HF (81) | n/d | n/d | n/d | n/d | n/d | — | Hugging Face | ❌ Conteos no accesibles · inventario de orgs listo |
 | 8 | Familias de patentes IA (82) | — | — | SG 661/297⁵ | DE ~436⚠️ | — | 2017-20 / ambiguo | OECD.AI/CSET | ⚠️ Parcial · BAJA-MEDIA |
 | 9 | Aplicantes de patentes IA (83) | — | — | — | — | — | — | (no en OECD.AI) | ❌ No publicado · requiere EPO/Lens |
@@ -71,22 +71,23 @@ casi todo** (dashboards, APIs de datos, PDFs, incluso Wikipedia). Por eso:
 
 ### 6 ✅ Relevancia de Producción de Software (ID 80) — `github_relevancia_sw.py`, `relevancia_sw_resultados.csv`
 - **Definición ILIA:** proporción entre el total de *inbounds recibidos* y el total de repositorios por país en GitHub.
-- **Dos versiones** (por ventana de inbounds; denominador común = repos stock 2025 Q4):
+- **Dos versiones** (por ventana de inbounds; denominador común = **repos acumulado total** = suma de los 24 trimestres 2020 Q1–2025 Q4, según metodología ILIA):
 
-  | País | repos (2025Q4) | inbounds TOTAL (2020Q1–2025Q4) | **REL total** | inbounds 2025 | **REL 2025** |
+  | País | repos acum. (24 trim.) | inbounds TOTAL | **REL total** | inbounds 2025 | **REL 2025** |
   |---|---|---|---|---|---|
-  | ES | 5.805.695 | 2.777.625 | **0,47843** | 686.582 | **0,11826** |
-  | EE | 416.635 | 219.851 | **0,52768** | 40.306 | **0,09674** |
-  | SG | 6.719.641 | 2.045.930 | **0,30447** | 649.800 | **0,09670** |
-  | DE | 9.976.837 | 13.781.473 | **1,38135** | 2.920.604 | **0,29274** |
-  | PT | 1.542.206 | 730.046 | **0,47338** | 170.886 | **0,11081** |
+  | ES | 87.092.474 | 2.777.625 | **0,03189** | 686.582 | **0,00788** |
+  | EE | 6.156.090 | 219.851 | **0,03571** | 40.306 | **0,00655** |
+  | SG | 79.025.220 | 2.045.930 | **0,02589** | 649.800 | **0,00822** |
+  | DE | 153.809.309 | 13.781.473 | **0,08960** | 2.920.604 | **0,01899** |
+  | PT | 22.260.641 | 730.046 | **0,03280** | 170.886 | **0,00768** |
 
-  - **Versión total:** inbounds acumulados de toda la serie (24 trimestres, 2020 Q1–2025 Q4).
-  - **Versión 2025:** inbounds solo del año 2025 (Q1–Q4).
-  - **Singapur sin agregado "EU"** (único afectado): REL total **0,27734**, REL 2025 **0,08907**.
+  - **Versión total:** inbounds acumulados de toda la serie (24 trimestres) ÷ repos acumulado total.
+  - **Versión 2025:** inbounds solo de 2025 ÷ repos acumulado total (mismo denominador).
+  - **Singapur sin agregado "EU"** (único afectado): REL total **0,02358**, REL 2025 **0,00757**.
+  - *Alternativa* (2025 inbounds ÷ repos acumulado de 2025, ventanas pareadas): ES 0,03083 · EE 0,02609 · SG 0,02627 · DE 0,07762 · PT 0,02944. Disponible en el CSV (`relevancia_2025_repos2025`) por si prefieres parear ventanas.
 - **Método (determinístico):** descarga de `repositories.csv` y `economy_collaborators.csv` del GitHub Innovation Graph (CC0). El datasheet define collaborators como *git pushes + PRs de un dev [source] a un repo de [destination]* → **inbound recibido = Σ weight con destination = país**. Sin auto-bucles. Script `github_relevancia_sw.py` reproduce ambas versiones; CSV con todos los componentes.
-- **Denominador:** se usa el **stock actual de repos (2025 Q4)** = "total de repositorios por país". Si tu metodología 2025 sumaba repos por trimestre, el CSV trae los componentes crudos para recomputar.
-- **Confianza:** ALTA (dato crudo oficial). Reserva: confirmar contra el cálculo ILIA 2025 (a) ventana total vs 2025 y (b) denominador (stock 2025Q4 vs suma de trimestres).
+- **Denominador:** **repos acumulado total** = Σ de los conteos trimestrales de repos (2020 Q1–2025 Q4), conforme tu metodología.
+- **Confianza:** ALTA (dato crudo oficial).
 
 ### 1–3 ❌ Empresas de IA / Nº inversiones / Valor inversión (IDs 70-72) — `empresas_inversion_eto.md`
 - **Estado:** **NO ACCESIBLE** desde el entorno. Los números por país de ETO CAT se sirven dinámicamente (Cloud Function `cat-collab-eto`) y el dataset está en Zenodo (`cat.zip`); ninguno entra en el allowlist de `curl` y WebFetch da 403.
