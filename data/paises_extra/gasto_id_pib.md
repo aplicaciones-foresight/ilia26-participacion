@@ -1,31 +1,36 @@
 # Gasto en I+D como % del PIB (GERD/PIB) — ID 73
 
-> Fuente ILIA original (CEPAL) **no cubre** estos países → se usan fuentes
-> equivalentes: oficinas nacionales / Eurostat / OCDE (último dato) + World Bank
-> `GB.XPD.RSDV.GD.ZS` como contraste. Recolección vía WebSearch (los hosts de
-> datos dieron 403). **Verificado por un segundo agente independiente (red-team).**
+> **Fuentes: solo oficiales (oficinas nacionales de estadística) o multinacionales
+> (Eurostat, OCDE, Banco Mundial).** Se descartaron agregadores secundarios (CEIC,
+> SSTI, Statista, prensa). Año = último disponible.
 
-| País | Valor % PIB (último) | Año | Fuente principal | Contraste / verificación | Veredicto |
-|---|---|---|---|---|---|
-| España (ES) | **1,50** | 2024 | INE (definitivo 2024) | Eurostat; WB 1,44% (2022) | ✅ CONFIRMA (oficial) |
-| Estonia (EE) | **2,0** (prov.) · **1,84** (2023) | 2024 / 2023 | Statistics Estonia (ERR) | Eurostat; WB 1,78% (2022) | ✅ CONFIRMA (1,84 sólido; 2,0 provisional) |
-| Singapur (SG) | **1,85** | 2022 | OECD MSTI / SSTI | WB **2,16% (2020)**; Statista 1,92% | ✅ CONFIRMA con matiz (no mezclar años) |
-| Alemania (DE) | **3,17** | 2024 | Destatis / GTAI | Eurostat ~3,13%; WB 3,13% (2022) | ✅ CONFIRMA |
-| Portugal (PT) | **1,73**–1,75 | 2024 | OCDE/CEIC ≈1,73 · DGEEC nac. 1,75 | Eurostat; WB 1,70% (2022) | ✅ CONFIRMA (magnitud) |
+| País | Valor % PIB | Año | Fuente oficial / multinacional (URL) |
+|---|---|---|---|
+| 🇪🇸 España | **1,50** | 2024 | **INE** (oficial): https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176754&menu=ultiDatos&idp=1254735576669 · Eurostat ~1,49–1,50 |
+| 🇪🇪 Estonia | **2,0** | 2024 | **Statistics Estonia** (oficial): https://www.stat.ee/en/node/4565 · Eurostat (ddn-20251204-2) |
+| 🇸🇬 Singapur | **2,16** (2020) · **~1,85** (2022) | 2020 / 2022 | **World Bank** GB.XPD.RSDV.GD.ZS: https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS?locations=SG · **OECD MSTI**: https://www.oecd.org/en/data/indicators/gross-domestic-spending-on-r-d.html · **A*STAR** (oficial): https://www.a-star.edu.sg/News/national-survey-of-rie |
+| 🇩🇪 Alemania | **3,13** (Eurostat) · **3,17** (Destatis) | 2024 | **Eurostat**: https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20251204-2 · **Destatis** (oficial) |
+| 🇵🇹 Portugal | **1,73** | 2024 | **DGEEC** (oficial), "Principais indicadores de I&D 2024": https://www.dgeec.medu.pt/api/ficheiros/694559aac82132f5733eb2da · Eurostat |
 
-**Confianza:** ALTA (ES, EE-2023, DE) · MEDIA-ALTA (EE-2024 provisional, PT) · MEDIA (SG, por rebasing del PIB / dispersión 1,85/1,92/2,16 según año).
+Fuente multinacional común de contraste: World Bank `GB.XPD.RSDV.GD.ZS` →
+https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS
 
-**Notas:**
-- SG: 1,85% es **2022**; el 2,16% del World Bank es **2020** (no es contradicción, son años distintos). Para "último disponible" → 1,85% (2022).
-- PT: el valor más citado independientemente es **~1,73% (OCDE/CEIC, 2024)**; la
-  encuesta nacional DGEEC da 1,75% (2024). Diferencia ~0,02 pp por base de PIB.
+## Notas por país
+- **España (1,50 %, 2024):** dato oficial INE (gasto interno en I+D ≈ 23.931 M€).
+- **Estonia (2,0 %, 2024):** Statistics Estonia (nivel récord). Cifra oficial
+  redondeada a 1 decimal; Eurostat confirma a Estonia con uno de los mayores
+  aumentos 2014–2024 (+0,58 pp).
+- **Singapur:** discrepancia por **rebasing del PIB**. El único valor multinacional
+  con cifra exacta verificable aquí es **World Bank = 2,16 % (2020)** (último año WB).
+  **OCDE MSTI** da **~1,85 % (2022)** (compila la encuesta nacional). La fuente
+  **oficial primaria** es la *National Survey of R&D* de A*STAR; el valor exacto
+  2022/2023 está en el PDF de la encuesta (no legible desde este entorno) →
+  **confirmar manualmente** en A*STAR / OECD Data Explorer. Confianza MEDIA.
+- **Alemania (2024):** Eurostat **3,13 %** (multinacional, comparable) vs Destatis
+  **3,17 %** (oficial nacional); difieren ~0,04 pp por base de PIB.
+- **Portugal (1,73 %, 2024):** DGEEC oficial (encuesta IPCTN, metodología Frascati
+  alineada con Eurostat/OCDE). Resuelve la duda previa 1,73 vs 1,75 → **1,73 %**.
 
-Fuentes:
-- World Bank GB.XPD.RSDV.GD.ZS: https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS
-- INE España 2024: https://www.ine.es/dyngs/Prensa/en/IMASD2024.htm
-- Eurostat (I+D 2024): https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20251204-2
-- ERR News (Estonia 2024): https://news.err.ee/1609555567/estonia-s-r-d-spending-hits-record-level
-- SSTI (Singapur): https://ssti.org/blog/useful-stats-international-comparison-rd-expenditures
-- CEIC (Singapur): https://www.ceicdata.com/en/singapore/technology/sg-research-and-development-expenditure--of-gdp
-- GTAI/Destatis (Alemania 2024): https://www.gtai.de/en/invest/business-location-germany/rd-framework/r-d-spending-in-germany-increases-by-3-8-percent-in-2024-1991334
-- Público/DGEEC (Portugal 2024): https://www.publico.pt/2025/07/31/ciencia/noticia/despesa-investigacao-desenvolvimento-atingiu-49-mil-milhoes-euros-2024-2142384
+## Confianza
+ALTA: España, Estonia, Alemania, Portugal (fuente oficial nacional + multinacional,
+2024). MEDIA: Singapur (años distintos por fuente; exacto oficial a confirmar en A*STAR).

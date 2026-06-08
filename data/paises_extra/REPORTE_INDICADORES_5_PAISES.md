@@ -36,7 +36,7 @@ casi todo** (dashboards, APIs de datos, PDFs, incluso Wikipedia). Por eso:
 | 1 | Empresas de IA (70) | — | — | — | — | — | última década | ETO CAT | ❌ No accesible · ruta manual |
 | 2 | Nº inversiones privadas (71) | — | — | — | — | — | última década | ETO CAT (Crunchbase) | ❌ No accesible · ruta manual |
 | 3 | Valor total est. inversión priv. (72) | — | — | — | — | — | última década | ETO CAT (Crunchbase) | ❌ No accesible · ruta manual |
-| 4 | **Gasto I+D / PIB %** (73) | **1,50** | **1,84**¹ | **1,85**² | **3,17** | **1,73**³ | 2024 (SG 2022) | Nac./Eurostat/OCDE + WB | ✅ Verificado · ALTA |
+| 4 | **Gasto I+D / PIB %** (73) | **1,50** | **2,0**¹ | **2,16 / ~1,85**² | **3,13 / 3,17** | **1,73** | 2024 (SG 2020/22) | INE · Statistics Estonia · Eurostat · Destatis · DGEEC · OCDE · WB | ✅ Oficial/multinac. |
 | 5 | Desarrollo de aplicaciones (76) | **89,30** | **96,73** | **100,00** | **94,75** | **86,24** | **2024** | GSMA MCI 2025 (score 0–100) | ✅ Archivo oficial · ALTA |
 | 6 | **Relevancia prod. software** (80) — *total · 2025* | 0,03189 · 0,00788 | 0,03571 · 0,00655 | 0,02589 · 0,00822 | 0,08960 · 0,01899 | 0,03280 · 0,00768 | 2020Q1–2025Q4 / 2025 | GitHub Innovation Graph | ✅ Determinístico · ALTA |
 | 7 | Desarrollo de IA — modelos HF (81) | n/d | n/d | n/d | n/d | n/d | — | Hugging Face | ❌ Conteos no accesibles · inventario de orgs listo |
@@ -45,7 +45,7 @@ casi todo** (dashboards, APIs de datos, PDFs, incluso Wikipedia). Por eso:
 | 10 | Inventores de patentes IA (84) | — | — | — | — | — | — | (no en OECD.AI) | ❌ No publicado · requiere EPO/Lens |
 | 11 | Gobierno digital — OSI (92) | — | — | — | — | — | 2024 | UN E-Gov Survey | ❌ OSI no accesible · EGDI como similar⁶ |
 
-¹ Estonia: 1,84% (2023, sólido); ~2,0% (2024, provisional). · ² Singapur: 1,85% (2022); el WB da 2,16% pero es 2020. · ³ Portugal: ~1,73% (OCDE/CEIC) / 1,75% (DGEEC nacional), 2024. · ⁴ GSMA: dato 2024 del archivo oficial MCI 2025 (Index Scores); scores re-normalizados entre ediciones → no comparar con ediciones previas. · ⁵ Singapur: 661 solicitudes / 297 concedidas (ventana 2017-2020). · ⁶ EGDI 2024 verificado: Estonia 0,97274 (#2), Singapur 0,96912 (#3).
+¹ Estonia 2,0% (2024, Statistics Estonia oficial). · ² Singapur: World Bank 2,16% (2020) y OCDE MSTI ~1,85% (2022); valor exacto oficial a confirmar en A*STAR. · ⁴ GSMA: dato 2024 del archivo oficial MCI 2025 (Index Scores); scores re-normalizados entre ediciones → no comparar con ediciones previas. · ⁵ Singapur: 661 solicitudes / 297 concedidas (ventana 2017-2020). · ⁶ EGDI 2024 verificado: Estonia 0,97274 (#2), Singapur 0,96912 (#3).
 
 **Leyenda:** ✅ entregado · ⚠️ parcial/con reserva · ❌ no accesible desde el entorno (dato existe; ruta manual provista) · — sin valor · n/d sin conteo.
 
@@ -55,10 +55,10 @@ casi todo** (dashboards, APIs de datos, PDFs, incluso Wikipedia). Por eso:
 
 ### 4 ✅ Gasto en I+D como % del PIB (ID 73) — `gasto_id_pib.md`
 - **Definición ILIA:** proporción del gasto en I+D respecto al PIB.
-- **Valores (último disponible):** ES **1,50%** (2024) · EE **1,84%** (2023; ~2,0% 2024 prov.) · SG **1,85%** (2022) · DE **3,17%** (2024) · PT **~1,73–1,75%** (2024).
-- **Método:** la fuente ILIA (CEPAL) no cubre estos países → oficinas nacionales (INE, Statistics Estonia, Destatis, DGEEC), Eurostat y OCDE, con World Bank `GB.XPD.RSDV.GD.ZS` como contraste. Doble fuente por país.
-- **Validación independiente (red-team):** CONFIRMA todos. Correcciones: PT converge en ~1,73% (OCDE/CEIC); SG 1,85% es 2022 (no confundir con WB 2020 = 2,16%).
-- **Confianza:** ALTA (ES, EE-2023, DE); MEDIA-ALTA (PT, EE-2024); MEDIA (SG).
+- **Fuentes (solo oficiales/multinacionales):** la fuente ILIA original (CEPAL) no cubre estos países → oficinas nacionales (INE, Statistics Estonia, Destatis, DGEEC) + multinacionales (Eurostat 2024, OCDE MSTI, World Bank).
+- **Valores (último disponible):** ES **1,50 %** (2024, INE) · EE **2,0 %** (2024, Statistics Estonia) · SG **2,16 %** (2020, World Bank) / **~1,85 %** (2022, OCDE MSTI) · DE **3,13 %** (2024, Eurostat) / **3,17 %** (Destatis) · PT **1,73 %** (2024, DGEEC).
+- **Método:** WebSearch restringida a dominios oficiales/multinacionales; cada valor con su URL en `gasto_id_pib.md`.
+- **Confianza:** ALTA (ES, EE, DE, PT); MEDIA (SG, por rebasing del PIB → valor/año varían por fuente; exacto oficial a confirmar en A*STAR / OECD Data Explorer).
 - **Per cápita:** N/A (ya es un ratio sobre PIB).
 
 ### 5 ✅ Desarrollo de aplicaciones (ID 76) — `desarrollo_aplicaciones_gsma.md`
