@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 """Informe comparado en CSV: dos escenarios (inclusivo/estricto) con sus argumentos,
 la cita verbatim, el enlace a la fuente oficial y la PÁGINA del PDF donde validar.
+Regla adoptada: INCLUSIVA, confirmada con el equipo ILIA (los cursos electivos se
+consideran). El escenario estricto se reporta solo como sensibilidad informativa.
 Reutiliza fuentes/_verify_report.json (15/15 verbatim_ok).
 Salidas:
   data/educacion_temprana/informe_comparado.csv   (1 fila por cita + Portugal)
@@ -48,25 +50,34 @@ def src_for(cid):
             "SG-A6": "fuentes/SG/A6_Computing_7155_OLvl_2025.pdf"}.get(
             next(k for k in ["ES-A1","ES-A2","DE-A3","DE-A4b","EE-A5","SG-A6"] if cid.startswith(k)))
 
+NOTA_EE = ("Curso ELECTIVO: la IA de Estonia está en la asignatura electiva Informaatika "
+           "(valikõppeaine). Conforme a la metodología del ILIA (confirmada con el equipo del "
+           "índice), los cursos electivos se consideran parte del currículo nacional -> categoría 5; "
+           "aparece como subtema.")
+NOTA_SG = ("Curso ELECTIVO: la IA/ML de Singapur está en la asignatura electiva Computing 7155. "
+           "Conforme a la metodología del ILIA (confirmada con el equipo del índice), los cursos "
+           "electivos se consideran parte del currículo nacional -> categoría 5; aparece como "
+           "subtema (sección 5.4).")
+
 PAIS = {
  "ES": dict(pais="España", nivel="ESO (1.º–4.º) + Bachillerato (1.º–2.º)", chile="7º básico – 4º medio",
-   ci=5, pi=100, ce=5, pe=100,
+   ci=5, pi=100, ce=5, pe=100, nota="",
    ai="IA nominal en saberes básicos y criterios de evaluación de RD 217/2022 (ESO) y RD 243/2022 (Bachillerato), normas vinculantes vigentes.",
    ae="Se mantiene en 5: la IA está en «Tecnología y Digitalización» (ESO, materia obligatoria de oferta, cuasi-universal); no es subtema de electiva."),
  "DE": dict(pais="Alemania", nivel="Sek I (Kl. 5–10) + Sek II (Kl. 11–12/13)", chile="5º básico – 4º medio",
-   ci=5, pi=100, ce=5, pe=100,
+   ci=5, pi=100, ce=5, pe=100, nota="",
    ai="IA nominal y vinculante en LehrplanPLUS Bayern (Gym 11.º) y KLP NRW Sek I (Klasse 5/6).",
    ae="Se mantiene en 5: en Bayern la IA es un Lernbereich dedicado (≈16 h) = contenido sustantivo (caveat: obligatorio solo en parte de los Länder/vías)."),
  "EE": dict(pais="Estonia", nivel="Põhikool 7.º–9.º + Gümnaasium 10.º–12.º", chile="8º básico – 4º medio",
-   ci=5, pi=100, ce=4, pe=75,
-   ai="Regla inclusiva: IA es contenido del currículo nacional en la asignatura electiva Informaatika.",
-   ae="Baja a 4: la IA es un subtema (1 de 9 õpitulemused) en una asignatura ELECTIVA; no sustantiva ni de cursado universal."),
+   ci=5, pi=100, ce=4, pe=75, nota=NOTA_EE,
+   ai="Regla inclusiva (confirmada con ILIA: los cursos electivos se consideran): la IA es contenido del currículo nacional en la asignatura ELECTIVA Informaatika -> categoría 5.",
+   ae="(Informativo, NO adoptado) Una lectura estricta lo bajaría a 4: la IA es subtema (1 de 9 õpitulemused) en asignatura electiva, no de cursado universal."),
  "SG": dict(pais="Singapur", nivel="Secondary 1–4/5", chile="8º básico – 3º medio",
-   ci=5, pi=100, ce=4, pe=75,
-   ai="Regla inclusiva: IA/ML es contenido examinable del syllabus electivo Computing 7155.",
-   ae="Baja a 4: IA/ML es subtema (sección 5.4, 5 learning outcomes) en una asignatura ELECTIVA; no sustantiva."),
+   ci=5, pi=100, ce=4, pe=75, nota=NOTA_SG,
+   ai="Regla inclusiva (confirmada con ILIA: los cursos electivos se consideran): IA/ML es contenido examinable del syllabus ELECTIVO Computing 7155 -> categoría 5.",
+   ae="(Informativo, NO adoptado) Una lectura estricta lo bajaría a 4: IA/ML es subtema (sección 5.4, 5 learning outcomes) en asignatura electiva."),
  "PT": dict(pais="Portugal", nivel="Ensino secundário 10.º–12.º (+ 3.º ciclo 7.º–9.º)", chile="7º básico – 4º medio",
-   ci=4, pi=75, ce=4, pe=75,
+   ci=4, pi=75, ce=4, pe=75, nota="",
    ai="TIC implementado (Aplicações Informáticas B); IA NO vigente (solo en la revisión MECI con horizonte 2027).",
    ae="Igual a 4: sin IA en el currículo vigente; el TIC implementado fija la categoría."),
 }
@@ -95,8 +106,9 @@ def meta(cid):
         return ("SG",tipo,"Computing 7155 — O-Level Syllabus (SEAB, 2025)","https://www.seab.gov.sg/files/O%20Lvl%20Syllabus%20Sch%20Cddts/2025/7155_y25_sy.pdf","fuentes/SG/A6_Computing_7155_OLvl_2025.pdf")
 
 cols = ["pais","iso2","cat_inclusiva","puntaje_inclusiva","cat_estricta","puntaje_estricta",
-        "argumento_inclusiva","argumento_estricta","tipo","nivel_secundaria","equivalente_chile",
-        "documento","ubicacion","pagina_pdf","cita_verbatim","traduccion_es","url_fuente","archivo_local","verificacion"]
+        "argumento_inclusiva","argumento_estricta","nota_curso_electivo","tipo","nivel_secundaria",
+        "equivalente_chile","documento","ubicacion","pagina_pdf","cita_verbatim","traduccion_es",
+        "url_fuente","archivo_local","verificacion"]
 rows, miss = [], []
 for it in REPORT["items"]:
     cid = it["id"]; iso, tipo, doc, url, loc = meta(cid); P = PAIS[iso]
@@ -104,14 +116,15 @@ for it in REPORT["items"]:
     if pg == "?": miss.append(cid)
     rows.append({"pais":P["pais"],"iso2":iso,"cat_inclusiva":P["ci"],"puntaje_inclusiva":P["pi"],
         "cat_estricta":P["ce"],"puntaje_estricta":P["pe"],"argumento_inclusiva":P["ai"],"argumento_estricta":P["ae"],
-        "tipo":tipo,"nivel_secundaria":P["nivel"],"equivalente_chile":P["chile"],"documento":doc,
-        "ubicacion":it["ubicacion"],"pagina_pdf":pg,"cita_verbatim":it["cita"],"traduccion_es":TR.get(cid,""),
-        "url_fuente":url,"archivo_local":loc,"verificacion":"verbatim_ok"})
+        "nota_curso_electivo":P["nota"],"tipo":tipo,"nivel_secundaria":P["nivel"],"equivalente_chile":P["chile"],
+        "documento":doc,"ubicacion":it["ubicacion"],"pagina_pdf":pg,"cita_verbatim":it["cita"],
+        "traduccion_es":TR.get(cid,""),"url_fuente":url,"archivo_local":loc,"verificacion":"verbatim_ok"})
 
 P = PAIS["PT"]
 rows.append({"pais":"Portugal","iso2":"PT","cat_inclusiva":4,"puntaje_inclusiva":75,"cat_estricta":4,"puntaje_estricta":75,
-    "argumento_inclusiva":P["ai"],"argumento_estricta":P["ae"],"tipo":"IA ausente","nivel_secundaria":P["nivel"],
-    "equivalente_chile":P["chile"],"documento":"AE Aplicações Informáticas B (12.º) — Aprendizagens Essenciais vigentes",
+    "argumento_inclusiva":P["ai"],"argumento_estricta":P["ae"],"nota_curso_electivo":P["nota"],"tipo":"IA ausente",
+    "nivel_secundaria":P["nivel"],"equivalente_chile":P["chile"],
+    "documento":"AE Aplicações Informáticas B (12.º) — Aprendizagens Essenciais vigentes",
     "ubicacion":"Dominios D1 (Algoritmia e Programação) + D2 (Multimédia) — sin mención de IA",
     "pagina_pdf":"n/a (verificado por ausencia)",
     "cita_verbatim":"(El currículo vigente no contiene «inteligência artificial»; la IA solo aparece en la revisión MECI con horizonte 2027.)",
@@ -122,22 +135,22 @@ with open(BASE/"informe_comparado.csv","w",encoding="utf-8-sig",newline="") as f
     w = csv.DictWriter(fh, fieldnames=cols); w.writeheader(); w.writerows(rows)
 
 cols2 = ["iso2","pais","nivel_secundaria","equivalente_chile","cat_inclusiva","puntaje_inclusiva",
-         "argumento_inclusiva","cat_estricta","puntaje_estricta","argumento_estricta"]
+         "argumento_inclusiva","cat_estricta","puntaje_estricta","argumento_estricta","nota_curso_electivo"]
 order = ["ES","DE","EE","SG","PT"]; s = []
 for iso in order:
     P = PAIS[iso]
     s.append({"iso2":iso,"pais":P["pais"],"nivel_secundaria":P["nivel"],"equivalente_chile":P["chile"],
         "cat_inclusiva":P["ci"],"puntaje_inclusiva":P["pi"],"argumento_inclusiva":P["ai"],
-        "cat_estricta":P["ce"],"puntaje_estricta":P["pe"],"argumento_estricta":P["ae"]})
+        "cat_estricta":P["ce"],"puntaje_estricta":P["pe"],"argumento_estricta":P["ae"],"nota_curso_electivo":P["nota"]})
 pi = sum(PAIS[i]["pi"] for i in order)/5; pe = sum(PAIS[i]["pe"] for i in order)/5
 s.append({"iso2":"—","pais":"PROMEDIO DEL GRUPO","nivel_secundaria":"","equivalente_chile":"",
-    "cat_inclusiva":"","puntaje_inclusiva":pi,"argumento_inclusiva":"4 de 5 países en categoría 5",
-    "cat_estricta":"","puntaje_estricta":pe,"argumento_estricta":"EE y SG bajan a 4 (IA = subtema en asignatura electiva)"})
+    "cat_inclusiva":"","puntaje_inclusiva":pi,"argumento_inclusiva":"Regla adoptada (ILIA): inclusiva — 4 de 5 países en categoría 5",
+    "cat_estricta":"","puntaje_estricta":pe,"argumento_estricta":"Sensibilidad informativa (no adoptada): EE y SG bajan a 4",
+    "nota_curso_electivo":"Cursos electivos SÍ se consideran (confirmado con ILIA); nota explícita para EE y SG"})
 with open(BASE/"calculo_comparado.csv","w",encoding="utf-8-sig",newline="") as fh:
     w = csv.DictWriter(fh, fieldnames=cols2); w.writeheader(); w.writerows(s)
 
-print(f"informe_comparado.csv: {len(rows)} filas")
+print(f"informe_comparado.csv: {len(rows)} filas, {len(cols)} columnas")
 print(f"calculo_comparado.csv: {len(s)} filas | promedio inclusiva={pi} estricta={pe}")
 print("pdftotext:", "sí" if _HAS_PDFTOTEXT else "no -> pypdf")
-print("páginas:", {it["id"]: r["pagina_pdf"] for it, r in zip(REPORT["items"], rows)})
 if miss: print("NO HALLADAS:", miss)

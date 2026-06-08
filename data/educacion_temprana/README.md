@@ -9,10 +9,10 @@ Comparte la **metodología y el espíritu auditable** del resto del repo (pipeli
 participación ciudadana), pero vive aislado en esta carpeta y no toca el cálculo del
 otro indicador.
 
-> **Estado: BORRADOR (vía híbrida).** Las categorías de esta entrega se derivan de
-> investigación con buscador (WebSearch) y se marcan para **confirmación verbatim**
-> contra los documentos primarios decisivos (ver `fuentes/MANIFEST.md`). Ninguna
-> categoría es definitiva hasta esa verificación.
+> **Estado: VERIFICADO (cierre verbatim 2026-06-06).** Las categorías están respaldadas por
+> **cita textual verificada como subcadena exacta** del documento oficial primario
+> (`fuentes/_verify_report.json`, 15/15 OK). Resultado: **ES = DE = EE = SG = 5 (100), PT = 4
+> (75)**; promedio del grupo **95**.
 
 ## Qué mide el subindicador (b)
 
@@ -50,10 +50,11 @@ la categoría se apoya **enteramente en la revisión de sus currículos nacional
   estrategia/plan/piloto no curricular (eso último ⇒ "propuesta").
 - **Calibración LatAm 2025** (referencia de coherencia): categoría 5 = Brasil, Chile,
   Costa Rica, Ecuador, Rep. Dominicana, Uruguay; el resto, categoría 4.
-- **Decisión de umbral (2026-06-05): regla INCLUSIVA** — la IA presente en *cualquier*
-  asignatura del currículo nacional vigente, **incluidas las electivas**, cuenta como «IA
-  implementada» (cat. 5). Bajo esta regla, **EE y SG = 5**. (Reglas más estrictas —cursado
-  universal o contenido sustantivo— devolverían EE y SG a 4; se aplica por igual a los cinco.)
+- **Regla de umbral (confirmada con el equipo del ILIA): INCLUSIVA** — los **cursos electivos se
+  consideran** parte del currículo nacional; la IA en *cualquier* asignatura vigente (incl.
+  electivas) cuenta como «IA implementada» (cat. 5). Por ello **EE y SG = 5**, con **nota
+  explicativa** (su IA vive en una asignatura electiva: *Informaatika* / *Computing 7155*). Una
+  lectura estricta —solo informativa— los situaría en 4 (promedio 85 vs 95).
 
 ### Términos de búsqueda por idioma (para IA explícita)
 - ES: «inteligencia artificial», «IA»

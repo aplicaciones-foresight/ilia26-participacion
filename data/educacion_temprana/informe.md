@@ -9,9 +9,10 @@ benchmark no latinoamericanos: **Portugal, España, Estonia, Alemania y Singapur
 > `es_subcadena`). Los PDFs fuente están en `fuentes/<PAÍS>/`; el reporte está en
 > `fuentes/_verify_report.json` (15/15 OK). **PT = 4** está verificado por ausencia.
 >
-> **Decisión metodológica fijada (2026-06-05): regla INCLUSIVA** — la IA presente en
-> *cualquier* asignatura del currículo nacional vigente, **incluidas las electivas**, cuenta
-> como «IA implementada» (categoría 5). Ver la sección de verificación.
+> **Regla metodológica (confirmada con el equipo del ILIA): INCLUSIVA** — los **cursos electivos
+> se consideran** parte del currículo nacional; la IA en *cualquier* asignatura vigente (incl.
+> electivas) cuenta como «IA implementada» (categoría 5). **Estonia y Singapur** llevan **nota
+> explicativa** (su IA vive en una asignatura electiva); ver la nota metodológica más abajo.
 >
 > Fecha de consulta: **2026-06-05**. Fecha de verbatim: **2026-06-06**.
 
@@ -41,10 +42,14 @@ consulta en 2027 — y la regla inclusiva relaja el eje «electiva vs universal�
   «Emerging Technologies» con 5 *learning outcomes* dentro del Módulo 5 «Impact of Computing»
   del syllabus electivo 7155.
 
-Conviene tener presente que la regla inclusiva es **generosa**: produce más «5» que una
-lectura estricta. Bajo reglas alternativas (IA solo en asignatura de cursado universal, o IA
-como contenido **sustantivo** y no incidental), **EE y SG volverían a 4**. La elección se
-registra abajo y se aplica por igual a los cinco para que el benchmark sea coherente.
+**Cursos electivos — Estonia y Singapur (confirmado con el ILIA).** En estos dos países la IA del
+currículo nacional vigente se imparte en una **asignatura electiva** (Estonia: *Informaatika*,
+*valikõppeaine*; Singapur: *Computing 7155*), no troncal, y aparece como **subtema**. Conforme a la
+metodología del ILIA —**confirmada con el equipo del índice, los cursos electivos se consideran**
+parte del currículo nacional—, ambos se clasifican en **categoría 5**. Se documenta por transparencia.
+
+A título **informativo** (sensibilidad, **no adoptada**): una lectura estricta que exigiera
+contenido troncal/sustantivo dejaría a EE y SG en 4 y el promedio del grupo en **85** (en vez de 95).
 
 ## Metodología (resumen; detalle en `README.md`)
 
@@ -53,9 +58,9 @@ registra abajo y se aplica por igual a los cinco para que el benchmark sea coher
 - **Rúbrica (Cuadro 2, p. 63 del ILIA):** 1=sin propuesta (0) · 2=propuesta TIC (25) ·
   3=propuesta IA (50) · 4=TIC implementado (75) · 5=IA implementado (100). Orden ordinal y
   **acumulativo**: alcanzado el 5, no hay nivel superior.
-- **Decisión de umbral (2026-06-05): regla inclusiva** — IA en cualquier asignatura del
-  currículo nacional vigente, incl. electivas, ⇒ «implementada». (Documentado para
-  reproducibilidad; alternativas estrictas anotadas en cada país.)
+- **Regla de umbral (confirmada con el equipo del ILIA): inclusiva** — los cursos electivos se
+  consideran; IA en cualquier asignatura vigente (incl. electivas) ⇒ «implementada». Estonia y
+  Singapur llevan nota explicativa. (Lectura estricta = solo sensibilidad informativa.)
 - **Doble criterio por país:** TIC vs IA, y propuesta vs implementado.
 - **Cierre verbatim (2026-06-06):** los 6 PDFs de Prioridad A se descargaron con `curl` a
   `fuentes/<PAÍS>/`, se extrajeron a `.txt` con `pdftotext` (HTML para Bayern) y las citas

@@ -26,12 +26,19 @@ El subindicador (b) es **uno de los tres componentes** de «Alfabetización en I
 Mapeo categoría→puntaje (Cuadro 2, p. 63 del ILIA): `1→0 · 2→25 · 3→50 · 4→75 · 5→100`. Sin
 normalización (mapeo directo).
 
-## Sensibilidad a la regla de umbral
+## Regla adoptada y nota sobre cursos electivos
+
+**Regla adoptada (confirmada con el equipo del ILIA): inclusiva** — los **cursos electivos se
+consideran** parte del currículo nacional. Por ello **Estonia y Singapur = 5**: su IA vive en una
+asignatura **electiva** (Estonia: *Informaatika*; Singapur: *Computing 7155*) y aparece como
+**subtema**; se documenta por transparencia.
+
+A título **informativo** (sensibilidad, no adoptada), una lectura estricta dejaría a EE y SG en 4:
 
 | Escenario | EE | SG | **Promedio grupo** |
 |---|:--:|:--:|:--:|
-| **Inclusiva** (elegida) | 5 (100) | 5 (100) | **95** |
-| Estricta (sustantivo / universal) | 4 (75) | 4 (75) | **85** |
+| **Inclusiva** (adoptada, ILIA) | 5 (100) | 5 (100) | **95** |
+| Estricta (solo informativa) | 4 (75) | 4 (75) | **85** |
 
 España, Alemania y Portugal **no cambian** entre escenarios.
 
@@ -43,5 +50,5 @@ España, Alemania y Portugal **no cambian** entre escenarios.
 - **Reproducibilidad:** cada puntaje se deriva de evidencia citada y verificada *verbatim*
   (`fuentes/_verify_report.json`, 15/15 OK); ningún número de memoria (regla de oro del repo).
 - **Coherencia:** el criterio «implementado vs propuesta» que separa el 4 del 5 se aplicó igual que
-  en la calibración LatAm; la única decisión añadida (electivas) está documentada y su impacto,
-  acotado en la tabla de sensibilidad.
+  en la calibración LatAm; los **cursos electivos se consideran (confirmado con el ILIA)**, con
+  nota explícita para Estonia y Singapur.

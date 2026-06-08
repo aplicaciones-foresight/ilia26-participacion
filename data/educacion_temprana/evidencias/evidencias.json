@@ -3,7 +3,7 @@
     "descripcion": "Evidencia estructurada del subindicador (b) 'Educación temprana en IA' para 5 países benchmark. Las citas decisivas sobre IA están verificadas como subcadena exacta del documento primario (verbatim_ok) usando src/verify_verbatim.py:normalizar+es_subcadena.",
     "fecha_consulta": "2026-06-05",
     "fecha_verbatim": "2026-06-06",
-    "decision_metodologica": "Regla inclusiva (2026-06-05): IA en cualquier asignatura del currículo nacional vigente, incl. electivas, cuenta como 'implementada' (cat. 5). Bajo esta regla EE=5 y SG=5; PT=4 (su IA no está vigente). Nota de sustantividad (verbatim 2026-06-06): en EE y SG la IA aparece como SUBTEMA dentro de una asignatura mayor, no como módulo propio.",
+    "decision_metodologica": "Regla inclusiva CONFIRMADA con el equipo ILIA: los cursos electivos se consideran parte del currículo nacional; la IA en cualquier asignatura vigente (incl. electivas) cuenta como 'implementada' (cat. 5). EE=5 y SG=5: su IA vive en una asignatura ELECTIVA (EE Informaatika; SG Computing 7155) y aparece como SUBTEMA -> se documenta con nota explicativa por transparencia. PT=4 (IA no vigente). Sensibilidad informativa (NO adoptada): bajo regla estricta EE y SG serían 4 (promedio 85 vs 95).",
     "metodo": "Documentos descargados con curl a data/educacion_temprana/fuentes/<PAÍS>/ y extraídos con pdftotext. Citas decisivas verificadas con src/verify_verbatim.py:es_subcadena (normaliza solo espacios; tolera caso). Reporte automático en data/educacion_temprana/fuentes/_verify_report.json (15/15 OK).",
     "campos": ["pais","iso2","nivel","ambito","tipo","estado","cita_o_snippet","idioma","traduccion","fuente_url","fuente_local","fuente_tipo","ubicacion","verificacion","sustantividad"]
   },

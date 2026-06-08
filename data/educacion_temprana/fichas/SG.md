@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Categoría** | **5 — IA implementado** (regla inclusiva) |
+| **Categoría** | **5 — IA implementado** (regla inclusiva, confirmada con ILIA) |
 | **Puntaje** | **100** |
 | **Confianza** | alta (`verbatim_ok`) |
 | **Nivel evaluado** | Secundaria: Secondary 1–4/5 |
@@ -28,9 +28,13 @@ currículo nacional, con syllabus oficial MOE/SEAB (implementación 2024) y exam
 
 **Justificación.** Bajo la **regla inclusiva**, AI/ML como contenido del syllabus oficial de una
 asignatura **electiva** del currículo nacional ⇒ **categoría 5**. **Sustantividad = subtema**
-(sección 5.4, 5 *learning outcomes*, dentro del Módulo 5), no un módulo propio de IA. **Bajo una
-regla estricta, SG volvería a 4.** Los programas extracurriculares (*AI for Fun*, *Code for Fun*)
-no computan como currículo.
+(sección 5.4, 5 *learning outcomes*, dentro del Módulo 5), no un módulo propio de IA. Los programas extracurriculares (*AI for Fun*, *Code for Fun*) no computan como currículo.
+
+**Nota — curso electivo (confirmado con el ILIA).** La IA/ML de Singapur se imparte en una asignatura
+**electiva** (*Computing 7155*), no troncal, y aparece como **subtema** (sección 5.4). Conforme a la
+metodología del ILIA —**confirmada con el equipo del índice, los cursos electivos se consideran**
+parte del currículo nacional—, Singapur se clasifica en **categoría 5**. *(Sensibilidad informativa,
+no adoptada: una lectura estricta que exigiera contenido troncal lo situaría en 4.)*
 
 **Fuentes.** [Computing 7155 O-Level 2025 (SEAB, PDF)](https://www.seab.gov.sg/files/O%20Lvl%20Syllabus%20Sch%20Cddts/2025/7155_y25_sy.pdf).
 Local: `fuentes/SG/A6_Computing_7155_OLvl_2025.pdf`. Verbatim: `_verify_report.json` (`SG-A6-*`).

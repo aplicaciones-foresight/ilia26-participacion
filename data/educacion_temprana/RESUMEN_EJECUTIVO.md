@@ -29,21 +29,26 @@ Estonia, Alemania y Singapur**— mediante revisión del **currículo escolar of
   16 h en Baviera). En **Estonia y Singapur** la IA es un **subtema** dentro de una asignatura
   **electiva**.
 
-## Decisión metodológica y sensibilidad
+## Regla metodológica y nota sobre cursos electivos
 
-- **Regla aplicada (registrada): inclusiva** — la IA presente en *cualquier* asignatura del
-  currículo nacional vigente, **incluidas las electivas**, cuenta como «implementada».
-- **Sensibilidad:** bajo una regla **estricta** (IA solo si es contenido *sustantivo* o de cursado
-  *universal*), **Estonia y Singapur volverían a 4** y el promedio del grupo pasaría de **95 a 85**.
+- **Regla aplicada (confirmada con el equipo del ILIA): inclusiva.** Los **cursos electivos se
+  consideran** parte del currículo nacional; la IA en *cualquier* asignatura vigente —troncal o
+  **electiva**— cuenta como «IA implementada» (categoría 5).
+- **Nota — Estonia y Singapur (cursos electivos).** En estos dos países el contenido de IA del
+  currículo nacional vigente se imparte en una **asignatura electiva** (Estonia: *Informaatika*,
+  *valikõppeaine*; Singapur: *Computing 7155*), no troncal de cursado universal, y aparece como
+  **subtema**. Por la regla del ILIA (electivos cuentan), ambos se clasifican en **categoría 5**;
+  se documenta esta condición por transparencia.
+- **Sensibilidad (informativa, no adoptada).** Una lectura estricta que exigiera contenido troncal
+  o sustantivo dejaría a Estonia y Singapur en 4 y el promedio del grupo en **85** (en vez de 95).
 
 | Escenario | EE | SG | **Promedio grupo** |
 |---|:--:|:--:|:--:|
-| **Inclusiva** (elegida) | 5 | 5 | **95** |
-| Estricta | 4 | 4 | **85** |
+| **Inclusiva** (adoptada, ILIA) | 5 | 5 | **95** |
+| Estricta (solo informativa) | 4 | 4 | **85** |
 
-**Recomendación.** Reportar ambos valores (95 / 85) y, para comparabilidad, alinear la regla con
-la convención que usó **SITEAL** en la calibración latinoamericana (en LatAm 2025, categoría 5 =
-Brasil, Chile, Costa Rica, Ecuador, Rep. Dominicana, Uruguay; resto = 4).
+> Calibración LatAm 2025 (referencia): categoría 5 = Brasil, Chile, Costa Rica, Ecuador, Rep.
+> Dominicana, Uruguay; resto = 4.
 
 > Detalle por país en `informe.md` y `fichas/`; trazabilidad de cada cita en
 > `evidencias/evidencias.json` y `fuentes/_verify_report.json`.
