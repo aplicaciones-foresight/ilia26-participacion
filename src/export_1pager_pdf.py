@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-export_1pager_pdf.py — Genera el 1-pager de instrucciones de validación (PDF).
+export_1pager_pdf.py — 1-pager de instrucciones de validación (PDF, 1 página).
 
+Acompaña a la planilla simple `planilla_validacion_ILIA2026.xlsx`: los 3 revisores
+evalúan TODOS los casos de forma independiente y se discuten los desacuerdos.
 Salida: data/gates/INSTRUCCIONES_validacion_ILIA2026.pdf
-Una sola página, para compartir con el equipo de validación (Gate 1/Gate 2).
 """
 import os
 import sys
@@ -14,11 +15,10 @@ from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import cm
 from reportlab.platypus import (ListFlowable, ListItem, Paragraph, SimpleDocTemplate,
-                                Spacer, HRFlowable)
+                                HRFlowable)
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 AZUL = colors.HexColor("#1F4E78")
-AMBAR = colors.HexColor("#7F6000")
 
 H1 = ParagraphStyle("H1", fontName="Helvetica-Bold", fontSize=15, leading=17, textColor=AZUL, spaceAfter=2)
 SUB = ParagraphStyle("SUB", fontName="Helvetica", fontSize=8.5, leading=11, textColor=colors.HexColor("#555555"), spaceAfter=4)
@@ -34,26 +34,27 @@ def bullets(items):
 
 
 def build():
-    story = []
-    story.append(Paragraph("ILIA 2026 · Validación de casos de IA en Participación Ciudadana", H1))
-    story.append(Paragraph("Guía rápida para <b>Natalia</b> y <b>Nicole</b> — planilla "
-                           "<b>validacion_candidatos_ILIA2026</b> (Google Sheets)", SUB))
-    story.append(HRFlowable(width="100%", thickness=1, color=AZUL, spaceAfter=4))
+    s = []
+    s.append(Paragraph("ILIA 2026 · Validación de casos de IA en Participación Ciudadana", H1))
+    s.append(Paragraph("Guía rápida para <b>Natalia</b>, <b>Nicole</b> y el <b>3er revisor</b> — planilla "
+                       "<b>planilla_validacion_ILIA2026</b> (Google Sheets)", SUB))
+    s.append(HRFlowable(width="100%", thickness=1, color=AZUL, spaceAfter=4))
 
-    story.append(Paragraph("1) Qué les pedimos", H2))
-    story.append(Paragraph("Revisar los <b>candidatos</b> que encontró la búsqueda y decidir, caso por caso, "
-                           "si el caso <b>ENTRA</b> al índice 2026. Empiecen por los <b>18 prioritarios</b>: en la "
-                           "hoja <b>Candidatos</b>, filtren <b>Tipo = NUEVO</b> y <b>NUEVO (dudoso)</b>.", BODY))
+    s.append(Paragraph("1) Qué les pedimos", H2))
+    s.append(Paragraph("Cada uno de los <b>3 revisores evalúa, por su cuenta, TODOS los casos</b> de la planilla "
+                       "(~18 filas) y decide si el caso <b>ENTRA</b> al índice 2026. Cada quien escribe en "
+                       "<b>su propia columna</b> (Natalia / Nicole / 3er revisor). No hace falta repartirse: "
+                       "todos miran todo; después discutimos solo donde no coincidamos.", BODY))
 
-    story.append(Paragraph("2) El criterio (lo único que decide)", H2))
-    story.append(Paragraph("<b>ENTRA</b> si, <b>dentro de un proceso participativo</b> (consulta pública, plan de "
-                           "desarrollo, presupuesto participativo, asamblea/cabildo, iniciativa o referendo, diálogo "
-                           "ciudadano), se usa <b>IA sobre el CONTENIDO de los aportes</b> de la gente: recolectar, "
-                           "<b>clasificar, analizar/agrupar por temas, sintetizar</b>, mediar o personalizar. El tema "
-                           "del proceso da igual; lo que importa es que la IA procese lo que la ciudadanía aporta.", BODY))
+    s.append(Paragraph("2) El criterio (lo único que decide)", H2))
+    s.append(Paragraph("<b>ENTRA</b> si, <b>dentro de un proceso participativo</b> (consulta pública, plan de "
+                       "desarrollo, presupuesto participativo, asamblea/cabildo, iniciativa o referendo, diálogo "
+                       "ciudadano), se usa <b>IA sobre el CONTENIDO de los aportes</b> de la gente: recolectar, "
+                       "<b>clasificar, analizar/agrupar por temas, sintetizar</b>, mediar o personalizar. El tema "
+                       "del proceso da igual; importa que la IA procese lo que la ciudadanía aporta.", BODY))
 
-    story.append(Paragraph("3) Qué NO entra (excluir)", H2))
-    story.append(bullets([
+    s.append(Paragraph("3) Qué NO entra (excluir)", H2))
+    s.append(bullets([
         "Chatbots de <b>atención</b>, preguntas frecuentes o trámites.",
         "IA de <b>conteo o integridad electoral</b>.",
         "<b>Votación</b> entre opciones cerradas (sin texto libre que se analice).",
@@ -61,32 +62,30 @@ def build():
         "Consultas <b>SOBRE</b> la IA que no usan IA en su proceso.",
         "<b>Encuestas</b> de opinión; y estudios o prototipos <b>no desplegados</b>.",
     ]))
-    story.append(Paragraph("Regla de la prensa: una nota periodística es solo <b>señal</b> &#8594; marquen "
-                           "<b>DUDA</b>; la evidencia firme es institucional.", NOTE))
+    s.append(Paragraph("Regla de la prensa: una nota periodística es solo <b>señal</b> &#8594; marquen "
+                       "<b>DUDA</b>; la evidencia firme es institucional.", NOTE))
 
-    story.append(Paragraph("4) Cómo hacerlo (≈10–15 min por caso)", H2))
-    story.append(Paragraph("En cada fila lean <b>“Señal / evidencia”</b>, <b>“Qué verificar”</b> y abran las "
-                           "<b>URLs</b>. Luego completen las <b>columnas en ámbar</b>:", BODY))
-    story.append(bullets([
-        "<b>¿Elegible?</b>: SI / NO / DUDA.",
-        "<b>Decisión</b>: Aprobar Fase 2 / Verificar / Descartar.",
-        "<b>Nivel (0–3)</b>: 0 no hay · 1 anuncio · 2 caso puntual · 3 permanente (uso repetido en el tiempo).",
-        "<b>Tipo convocante</b>: quién dirige el proceso (gobierno local/nacional, otra institución pública, "
-        "empresa, universidad, sociedad civil, organización internacional).",
-        "<b>Comentarios</b>: por qué, y qué falta confirmar.",
+    s.append(Paragraph("4) Cómo votar cada caso (≈5–10 min)", H2))
+    s.append(Paragraph("En cada fila lean <b>“Qué es y cómo usa IA”</b> y <b>“A verificar”</b>, y abran el "
+                       "<b>Enlace</b>. Luego, en <b>su</b> columna, elijan del menú:", BODY))
+    s.append(bullets([
+        "<b>SI</b> = cumple el criterio (la IA procesa el contenido de los aportes).",
+        "<b>NO</b> = cae en alguna exclusión.",
+        "<b>DUDA</b> = falta evidencia para decidir (anoten por qué en “Comentarios”).",
     ]))
-    story.append(Paragraph("Si dudan, marquen <b>DUDA</b> + comentario; no fuercen un valor.", BODY))
+    s.append(Paragraph("Voten de forma independiente (sin mirar la columna del otro). Usen <b>Comentarios para "
+                       "discutir</b> para dejar el porqué o qué falta confirmar.", BODY))
 
-    story.append(Paragraph("5) Cómo dividirse el trabajo", H2))
-    story.append(Paragraph("Sugerencia: <b>Natalia</b> toma BR, CO, CL, MX; <b>Nicole</b> toma el resto (PA, CU, VE, "
-                           "TT, etc.). Den un <b>segundo par de ojos</b> a los marcados DUDA.", BODY))
+    s.append(Paragraph("5) Qué pasa con los desacuerdos", H2))
+    s.append(Paragraph("La columna <b>¿Coinciden?</b> se calcula sola: queda en <b>verde “DE ACUERDO”</b> si los "
+                       "3 votaron igual, o en <b>rojo “DISCUTIR”</b> si hay diferencias. En la reunión revisamos "
+                       "solo las filas en rojo.", BODY))
 
-    story.append(Paragraph("6) Cuándo terminamos", H2))
-    story.append(Paragraph("Cuando las <b>18 filas prioritarias</b> tengan ¿Elegible? + Decisión + Comentario. "
-                           "Avísennos y seguimos con la <b>Fase 2</b> (extracción con evidencia textual) de los "
-                           "aprobados. Dudas de criterio: escríbannos.", BODY))
-
-    return story
+    s.append(Paragraph("6) Cuándo terminamos", H2))
+    s.append(Paragraph("Cuando los <b>3</b> hayan votado <b>todas</b> las filas. Avísennos y juntamos las "
+                       "decisiones: los SI acordados pasan a la <b>Fase 2</b> (extracción con evidencia textual); "
+                       "los “DISCUTIR” se resuelven en la reunión. Dudas de criterio: escríbannos.", BODY))
+    return s
 
 
 def main(argv=None):

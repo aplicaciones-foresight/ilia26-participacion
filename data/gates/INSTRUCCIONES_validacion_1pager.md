@@ -1,14 +1,14 @@
 # ILIA 2026 · Validación de casos de IA en Participación Ciudadana
 
-**Guía rápida para Natalia y Nicole** — planilla **validacion_candidatos_ILIA2026** (Google Sheets)
+**Guía rápida para Natalia, Nicole y el 3er revisor** — planilla **planilla_validacion_ILIA2026** (Google Sheets)
 
 ---
 
 ### 1) Qué les pedimos
-Revisar los **candidatos** que encontró la búsqueda y decidir, caso por caso, si el caso **ENTRA** al índice 2026. Empiecen por los **18 prioritarios**: en la hoja **Candidatos**, filtren **Tipo = NUEVO** y **NUEVO (dudoso)**.
+Cada uno de los **3 revisores evalúa, por su cuenta, TODOS los casos** de la planilla (~18 filas) y decide si el caso **ENTRA** al índice 2026. Cada quien escribe en **su propia columna** (Natalia / Nicole / 3er revisor). No hace falta repartirse: todos miran todo; después discutimos solo donde no coincidamos.
 
 ### 2) El criterio (lo único que decide)
-**ENTRA** si, **dentro de un proceso participativo** (consulta pública, plan de desarrollo, presupuesto participativo, asamblea/cabildo, iniciativa o referendo, diálogo ciudadano), se usa **IA sobre el CONTENIDO de los aportes** de la gente: recolectar, **clasificar, analizar/agrupar por temas, sintetizar**, mediar o personalizar. El tema del proceso da igual; lo que importa es que la IA procese lo que la ciudadanía aporta.
+**ENTRA** si, **dentro de un proceso participativo** (consulta pública, plan de desarrollo, presupuesto participativo, asamblea/cabildo, iniciativa o referendo, diálogo ciudadano), se usa **IA sobre el CONTENIDO de los aportes** de la gente: recolectar, **clasificar, analizar/agrupar por temas, sintetizar**, mediar o personalizar. El tema del proceso da igual; importa que la IA procese lo que la ciudadanía aporta.
 
 ### 3) Qué NO entra (excluir)
 - Chatbots de **atención**, preguntas frecuentes o trámites.
@@ -20,18 +20,16 @@ Revisar los **candidatos** que encontró la búsqueda y decidir, caso por caso, 
 
 *Regla de la prensa: una nota periodística es solo **señal** → marquen **DUDA**; la evidencia firme es institucional.*
 
-### 4) Cómo hacerlo (≈10–15 min por caso)
-En cada fila lean **“Señal / evidencia”**, **“Qué verificar”** y abran las **URLs**. Luego completen las **columnas en ámbar**:
-- **¿Elegible?**: SI / NO / DUDA.
-- **Decisión**: Aprobar Fase 2 / Verificar / Descartar.
-- **Nivel (0–3)**: 0 no hay · 1 anuncio · 2 caso puntual · 3 permanente (uso repetido en el tiempo).
-- **Tipo convocante**: quién dirige el proceso (gobierno local/nacional, otra institución pública, empresa, universidad, sociedad civil, organización internacional).
-- **Comentarios**: por qué, y qué falta confirmar.
+### 4) Cómo votar cada caso (≈5–10 min)
+En cada fila lean **“Qué es y cómo usa IA”** y **“A verificar”**, y abran el **Enlace**. Luego, en **su** columna, elijan del menú:
+- **SI** = cumple el criterio (la IA procesa el contenido de los aportes).
+- **NO** = cae en alguna exclusión.
+- **DUDA** = falta evidencia para decidir (anoten por qué en “Comentarios”).
 
-Si dudan, marquen **DUDA** + comentario; no fuercen un valor.
+Voten de forma **independiente** (sin mirar la columna del otro). Usen **Comentarios para discutir** para el porqué o qué falta confirmar.
 
-### 5) Cómo dividirse el trabajo
-Sugerencia: **Natalia** toma BR, CO, CL, MX; **Nicole** toma el resto (PA, CU, VE, TT, etc.). Den un **segundo par de ojos** a los marcados DUDA.
+### 5) Qué pasa con los desacuerdos
+La columna **¿Coinciden?** se calcula sola: queda en **verde “DE ACUERDO”** si los 3 votaron igual, o en **rojo “DISCUTIR”** si hay diferencias. En la reunión revisamos solo las filas en rojo.
 
 ### 6) Cuándo terminamos
-Cuando las **18 filas prioritarias** tengan ¿Elegible? + Decisión + Comentario. Avísennos y seguimos con la **Fase 2** (extracción con evidencia textual) de los aprobados. Dudas de criterio: escríbannos.
+Cuando los **3** hayan votado **todas** las filas. Avísennos y juntamos las decisiones: los SI acordados pasan a la **Fase 2** (extracción con evidencia textual); los “DISCUTIR” se resuelven en la reunión. Dudas de criterio: escríbannos.
