@@ -3,18 +3,23 @@
 """
 export_planilla_validacion.py — Planilla SIMPLE de validación en equipo.
 
-Una sola hoja: un caso por fila, una columna por revisor (SI/NO/DUDA) y una
-columna "¿Coinciden?" que marca DISCUTIR donde los 3 no están de acuerdo.
-Pensada para subir a Google Drive y que los 3 evalúen TODOS los casos.
+Una sola hoja, un caso por fila, en 3 bloques (columna "Bloque"):
+  1. NUEVOS / dudosos  — hallazgos cuya elegibilidad hay que decidir.
+  2. Baseline 2025     — casos del índice 2025: ratificar que siguen en 2026.
+  3. Excluido (revisar) — excluidos en 2025 que podrían reingresar (ver
+                          src/analizar_reingreso.py).
+Una columna por revisor (SI/NO/DUDA) + "¿Coinciden?" (verde DE ACUERDO / rojo
+DISCUTIR) para discutir solo los desacuerdos. Todos evalúan todos los casos.
 
 Salida: data/gates/planilla_validacion_ILIA2026.xlsx
-Revisores por defecto: Natalia, Nicole, "Revisor 3" (renombrable en la planilla).
 """
 from __future__ import annotations
 import csv
 import os
 import sys
+import unicodedata
 
+import openpyxl
 from openpyxl import Workbook
 from openpyxl.styles import Alignment, Font, PatternFill
 from openpyxl.utils import get_column_letter
@@ -32,88 +37,138 @@ WRAP = Alignment(wrap_text=True, vertical="top")
 CENTER = Alignment(horizontal="center", vertical="center", wrap_text=True)
 
 
-def _hint(notas: str) -> str:
+def _norm(s):
+    s = "".join(c for c in unicodedata.normalize("NFKD", str(s)) if not unicodedata.combining(c))
+    return s.lower().strip()
+
+
+def _hint(notas):
     drop = ("fuente=", "año baseline", "año=")
     parts = [p.strip() for p in (notas or "").split(";")]
     parts = [p for p in parts if p and not any(p.lower().startswith(d) for d in drop)]
     return "; ".join(parts)
 
 
+def _read_csv(path):
+    p = os.path.join(ROOT, path)
+    if not os.path.exists(p):
+        return []
+    with open(p, newline="", encoding="utf-8") as fh:
+        return list(csv.DictReader(fh))
+
+
+def _bbdd_desc():
+    """caso(normalizado) -> (descripción breve, link) desde la BBDD 2025."""
+    wb = openpyxl.load_workbook(os.path.join(ROOT, "data/baseline/BBDD_IA_Participacion_2025.xlsx"), data_only=True)
+    ws = wb["BBDD Casos"]
+    out = {}
+    for row in ws.iter_rows(min_row=2, max_row=ws.max_row, values_only=True):
+        if not row[0] or not row[1]:
+            continue
+        caso = str(row[1]).strip()
+        desc = str(row[4]).strip() if row[4] else ""
+        link = ""
+        for i in (21, 20, 22):
+            if len(row) > i and row[i] and str(row[i]).strip():
+                link = str(row[i]).strip(); break
+        out[_norm(caso)] = (desc, link)
+    return out
+
+
+def construir_filas():
+    cand = _read_csv("data/candidatos/candidatos.csv")
+    desc = _bbdd_desc()
+    filas = []  # (orden, Bloque, País, Caso, Tipo, Qué es, A verificar, Enlace)
+
+    # Bloque 1: NUEVOS / dudosos
+    for r in cand:
+        tb = r["tipo_baseline"]
+        if not str(tb).startswith("nuevo"):
+            continue
+        tipo = "NUEVO" if tb == "nuevo" else "dudoso"
+        enlace = r["urls"].split("|")[0].strip() if r["urls"] else ""
+        filas.append((0 if tb == "nuevo" else 1, "1. NUEVOS / dudosos", r["pais"],
+                      r["nombre_tentativo"], tipo, r["senal"], _hint(r["notas"]), enlace))
+
+    # Bloque 2: Baseline 2025 (activos)
+    for r in cand:
+        if r["tipo_baseline"] != "activo_2025":
+            continue
+        reverif = "reconfirmado web" in (r["notas"] or "")
+        tipo = "Baseline (reverif. 2026)" if reverif else "Baseline 2025"
+        d, link = desc.get(_norm(r["nombre_tentativo"]), ("", ""))
+        quees = d or r["senal"]
+        verificar = ("Ratificar que sigue activo en 2026 y recodificar (convocante/nivel). "
+                     + ("Hay señal de actividad 2026." if reverif else "Falta señal de actividad 2026."))
+        enlace = link or (r["urls"].split("|")[0].strip() if r["urls"] else "")
+        filas.append((2, "2. Baseline 2025", r["pais"], r["nombre_tentativo"], tipo,
+                      quees, verificar, enlace))
+
+    # Bloque 3: Excluidos a revisar (reingreso)
+    for r in _read_csv("data/candidatos/excluidos_revisar.csv"):
+        quees = r.get("por_que_revisar", "")
+        verificar = f"Motivo exclusión 2025: {r.get('motivo_2025','')}. Revisar si ahora hay IA sobre el contenido."
+        filas.append((3, "3. Excluido (revisar)", r["pais"], r["caso"],
+                      "Excluido 2025 (revisar)", quees, verificar, r.get("enlace", "")))
+
+    filas.sort(key=lambda x: (x[0], x[2], x[3]))
+    return filas
+
+
 def main(argv=None):
-    src = os.path.join(ROOT, "data", "candidatos", "candidatos.csv")
-    with open(src, newline="", encoding="utf-8") as fh:
-        rows = [r for r in csv.DictReader(fh) if str(r["tipo_baseline"]).startswith("nuevo")]
-
-    def tipo(r):
-        return "NUEVO" if r["tipo_baseline"] == "nuevo" else "dudoso"
-    rows.sort(key=lambda r: (0 if r["tipo_baseline"] == "nuevo" else 1, r["pais"], r["nombre_tentativo"]))
-
-    wb = Workbook()
-    ws = wb.active; ws.title = "Validación"
-
-    headers = ["País", "Caso", "Tipo", "Qué es y cómo usa IA (evidencia)", "A verificar",
-               "Enlace"] + REVISORES + ["¿Coinciden?", "Comentarios para discutir"]
+    filas = construir_filas()
+    wb = Workbook(); ws = wb.active; ws.title = "Validación"
+    headers = ["Bloque", "País", "Caso", "Tipo", "Qué es y cómo usa IA (evidencia)",
+               "A verificar", "Enlace"] + REVISORES + ["¿Coinciden?", "Comentarios para discutir"]
     ws.append(headers)
-
-    for r in rows:
-        enlace = (r["urls"].split("|")[0].strip() if r["urls"] else "")
-        ws.append([r["pais"], r["nombre_tentativo"], tipo(r), r["senal"],
-                   _hint(r["notas"]), enlace, "", "", "", "", ""])
+    for _, bloque, pais, caso, tipo, quees, verif, enlace in filas:
+        ws.append([bloque, pais, caso, tipo, quees, verif, enlace, "", "", "", "", ""])
     n = ws.max_row
 
-    # columnas: A País B Caso C Tipo D Qué es E A verificar F Enlace
-    #           G/H/I revisores  J ¿Coinciden?  K Comentarios
-    rev_cols = ["G", "H", "I"]
-    # estilo de encabezado
+    # columnas: A Bloque B País C Caso D Tipo E Qué es F A verificar G Enlace
+    #           H/I/J revisores  K ¿Coinciden?  L Comentarios
+    rev_cols = ["H", "I", "J"]
     for c in range(1, len(headers) + 1):
-        cell = ws.cell(row=1, column=c)
-        letter = get_column_letter(c)
-        if letter in rev_cols + ["J", "K"]:
+        cell = ws.cell(row=1, column=c); letter = get_column_letter(c)
+        if letter in rev_cols + ["K", "L"]:
             cell.fill = AMBAR; cell.font = DARK_BOLD
         else:
             cell.fill = AZUL; cell.font = WHITE_BOLD
         cell.alignment = CENTER
     ws.row_dimensions[1].height = 30
 
-    widths = [6, 40, 9, 60, 38, 34, 11, 11, 11, 16, 34]
+    widths = [20, 6, 38, 22, 58, 36, 32, 10, 10, 11, 15, 30]
     for i, w in enumerate(widths, 1):
         ws.column_dimensions[get_column_letter(i)].width = w
     for row in range(2, n + 1):
-        for col in (2, 4, 5, 6, 11):
+        for col in (3, 5, 6, 7, 12):
             ws.cell(row=row, column=col).alignment = WRAP
 
-    ws.freeze_panes = "C2"
+    ws.freeze_panes = "D2"
     ws.auto_filter.ref = f"A1:{get_column_letter(len(headers))}{n}"
 
-    # menús desplegables SI/NO/DUDA para los 3 revisores
-    dv = DataValidation(type="list", formula1='"SI,NO,DUDA"', allow_blank=True,
-                        showDropDown=False)
+    dv = DataValidation(type="list", formula1='"SI,NO,DUDA"', allow_blank=True)
     ws.add_data_validation(dv)
     for col in rev_cols:
         dv.add(f"{col}2:{col}{n}")
 
-    # ¿Coinciden? — fórmula (nombres de función en inglés para compatibilidad xlsx/Sheets)
     for row in range(2, n + 1):
-        ws.cell(row=row, column=10).value = (
-            f'=IF(COUNTA(G{row}:I{row})<3,"(faltan votos)",'
-            f'IF(AND(G{row}=H{row},H{row}=I{row}),"DE ACUERDO","DISCUTIR"))')
-        ws.cell(row=row, column=10).alignment = Alignment(horizontal="center")
+        ws.cell(row=row, column=11).value = (
+            f'=IF(COUNTA(H{row}:J{row})<3,"(faltan votos)",'
+            f'IF(AND(H{row}=I{row},I{row}=J{row}),"DE ACUERDO","DISCUTIR"))')
+        ws.cell(row=row, column=11).alignment = Alignment(horizontal="center")
+    ws.conditional_formatting.add(f"K2:K{n}", CellIsRule(operator="equal", formula=['"DISCUTIR"'],
+                                  fill=PatternFill("solid", fgColor="FFC7CE")))
+    ws.conditional_formatting.add(f"K2:K{n}", CellIsRule(operator="equal", formula=['"DE ACUERDO"'],
+                                  fill=PatternFill("solid", fgColor="C6EFCE")))
 
-    # resaltar acuerdos/desacuerdos
-    ws.conditional_formatting.add(
-        f"J2:J{n}", CellIsRule(operator="equal", formula=['"DISCUTIR"'],
-                               fill=PatternFill("solid", fgColor="FFC7CE")))
-    ws.conditional_formatting.add(
-        f"J2:J{n}", CellIsRule(operator="equal", formula=['"DE ACUERDO"'],
-                               fill=PatternFill("solid", fgColor="C6EFCE")))
-
-    # nota corta arriba (fila congelada aparte no; usamos un comentario en A1)
-    ws["A1"].comment = None
-
-    dst = os.path.join(ROOT, "data", "gates", "planilla_validacion_ILIA2026.xlsx")
-    os.makedirs(os.path.dirname(dst), exist_ok=True)
+    dst = os.path.join(ROOT, "data/gates/planilla_validacion_ILIA2026.xlsx")
     wb.save(dst)
-    print(f"[ok] {dst}  ({n-1} casos · revisores: {', '.join(REVISORES)})")
+    from collections import Counter
+    cb = Counter(f[1] for f in filas)
+    print(f"[ok] {dst}  ({n-1} casos)")
+    for k in sorted(cb):
+        print(f"     {k}: {cb[k]}")
     return 0
 
 

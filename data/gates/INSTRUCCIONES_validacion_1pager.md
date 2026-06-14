@@ -5,7 +5,9 @@
 ---
 
 ### 1) Qué les pedimos
-Cada uno de los **3 revisores evalúa, por su cuenta, TODOS los casos** de la planilla (~18 filas) y decide si el caso **ENTRA** al índice 2026. Cada quien escribe en **su propia columna** (Natalia / Nicole / 3er revisor). No hace falta repartirse: todos miran todo; después discutimos solo donde no coincidamos.
+Cada uno de los **3 revisores evalúa, por su cuenta, TODOS los casos** de la planilla y escribe en **su propia columna** (Natalia / Nicole / 3er revisor). Todos miran todo; después discutimos solo donde no coincidamos.
+
+La planilla tiene **3 bloques** (columna “Bloque”): **1) Nuevos/dudosos** = ¿el caso ENTRA?; **2) Baseline 2025** = ¿sigue entrando en 2026?; **3) Excluido (revisar)** = ¿reingresa? En los tres, **SI** = entra / sigue / reingresa.
 
 ### 2) El criterio (lo único que decide)
 **ENTRA** si, **dentro de un proceso participativo** (consulta pública, plan de desarrollo, presupuesto participativo, asamblea/cabildo, iniciativa o referendo, diálogo ciudadano), se usa **IA sobre el CONTENIDO de los aportes** de la gente: recolectar, **clasificar, analizar/agrupar por temas, sintetizar**, mediar o personalizar. El tema del proceso da igual; importa que la IA procese lo que la ciudadanía aporta.

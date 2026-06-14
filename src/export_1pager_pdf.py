@@ -42,9 +42,11 @@ def build():
 
     s.append(Paragraph("1) Qué les pedimos", H2))
     s.append(Paragraph("Cada uno de los <b>3 revisores evalúa, por su cuenta, TODOS los casos</b> de la planilla "
-                       "(~18 filas) y decide si el caso <b>ENTRA</b> al índice 2026. Cada quien escribe en "
-                       "<b>su propia columna</b> (Natalia / Nicole / 3er revisor). No hace falta repartirse: "
-                       "todos miran todo; después discutimos solo donde no coincidamos.", BODY))
+                       "y escribe en <b>su propia columna</b> (Natalia / Nicole / 3er revisor). Todos miran todo; "
+                       "después discutimos solo donde no coincidamos. La planilla tiene <b>3 bloques</b> (columna "
+                       "“Bloque”): <b>1) Nuevos/dudosos</b> = ¿el caso ENTRA?; <b>2) Baseline 2025</b> = ¿sigue "
+                       "entrando en 2026?; <b>3) Excluido (revisar)</b> = ¿reingresa? En los tres, <b>SI</b> = "
+                       "entra / sigue / reingresa.", BODY))
 
     s.append(Paragraph("2) El criterio (lo único que decide)", H2))
     s.append(Paragraph("<b>ENTRA</b> si, <b>dentro de un proceso participativo</b> (consulta pública, plan de "
