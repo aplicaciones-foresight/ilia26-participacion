@@ -46,6 +46,7 @@ parts = [
     cover,
     rd("RESUMEN_EJECUTIVO.md"),
     rd("informe.md"),
+    rd("narrativas_por_pais.md"),
     "# Anexo A — Fichas por país\n\n" + fichas,
     rd("INTEGRACION_INDICE.md"),
     verif,

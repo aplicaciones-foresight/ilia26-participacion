@@ -9,6 +9,8 @@ import csv, pathlib
 import openpyxl
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
+import sys as _sys; _sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from _narrativas import NARR, ORDER
 
 BASE = pathlib.Path(__file__).resolve().parents[1]
 OUT = BASE / "entrega" / "INFORME_FINAL_2026-06-06.xlsx"
@@ -127,6 +129,28 @@ for pais, nivel, chile in [
     ("Alemania","Sek I (Kl. 5–10) + Sek II (Kl. 11–12/13)","5º básico – 4º medio"),
     ("Singapur","Secondary 1–4/5","8º básico – 3º medio")]:
     ws3.cell(r,1,pais); ws3.cell(r,2,f"{nivel}   ·   ≈ Chile: {chile}"); r += 1
+
+# ---------- Hoja 4: Narrativa por país ----------
+ws4 = wb.create_sheet("Narrativa por país")
+ws4.column_dimensions["A"].width = 16
+ws4.column_dimensions["B"].width = 118
+ws4.cell(1, 1, "Narrativa por país — resumen oficial").font = TITLE
+nr = 3
+for iso in ORDER:
+    d = NARR[iso]
+    h1 = ws4.cell(nr, 1, f"{d['pais']} ({iso})"); h1.font = Font(bold=True, color="FFFFFF", size=11); h1.fill = HDR_FILL
+    h2 = ws4.cell(nr, 2, f"Categoría {d['cat']} — {d['pje']} puntos"); h2.font = Font(bold=True, color="FFFFFF", size=11); h2.fill = HDR_FILL
+    nr += 1
+    ws4.cell(nr, 1, "Análisis").font = Font(bold=True, size=9)
+    pc = ws4.cell(nr, 2, d["parrafo"]); pc.alignment = Alignment(wrap_text=True, vertical="top"); pc.font = Font(size=9)
+    ws4.row_dimensions[nr].height = 170
+    nr += 1
+    ws4.cell(nr, 1, "Fuentes").font = Font(bold=True, size=9)
+    for label, url in d["fuentes"]:
+        c = ws4.cell(nr, 2, label); c.hyperlink = url
+        c.font = Font(size=9, color="0563C1", underline="single"); c.alignment = Alignment(vertical="top")
+        nr += 1
+    nr += 1
 
 wb.save(OUT)
 print(f"OK -> {OUT.relative_to(BASE.parents[1])}  ({OUT.stat().st_size} bytes)")
