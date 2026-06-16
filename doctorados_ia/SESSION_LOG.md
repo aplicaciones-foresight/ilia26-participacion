@@ -17,13 +17,17 @@ en 5 países de referencia (DE, ES, PT, SG, EE). Metodología completa en
 |---|---|---|---|---|---|
 | Estonia (EE) | 3 | ✅ COMPLETO | 0 | 3 | 0 |
 | Singapur (SG) | 4 | ✅ COMPLETO | 4 | 0 | 0 |
-| Portugal (PT) | 9 | ⏳ pendiente | – | – | – |
+| Portugal (PT) | 9 | ✅ COMPLETO | 6 | 2 | 1 |
 | España (ES) | 38 | ⏳ pendiente | – | – | – |
 | Alemania (DE) | 49 | ⏳ pendiente | – | – | – |
-| **Total** | **103** | **7/103** | **4** | **3** | **0** |
+| **Subtotal hecho** | **16/103** | | **10** | **5** | **1** |
+| **Total objetivo** | **103** | | | | |
 
 Entregables ya escritos: `paises/estonia.md`, `paises/singapur.md`,
-`clasificacion.csv` (7 filas), `universidades_qs2026.csv` (7 filas).
+`paises/portugal.md`, `clasificacion.csv` (16 filas),
+`universidades_qs2026.csv` (16 filas).
+
+> **Forman competencias en IA (CUMPLE+PARCIAL) hasta ahora = 15/16.**
 
 ## Datos QS 2026 ya confirmados para países pendientes (no perder)
 **Portugal (9):** Lisboa (#230), Porto (#237), NOVA Lisboa (#327), Coimbra,
