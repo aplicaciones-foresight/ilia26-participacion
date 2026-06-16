@@ -85,11 +85,11 @@ PEND = [
  ("1","Ciberseguridad GCI — 5 pilares (133-137)","EE, SG, DE, PT","World Bank Data360 (indicadores por pilar: ITU_GCI_*_SCORE) o anexo PDF GCI 2024. España YA completa (20/20/20/19,74/20)."),
  ("1","GIRAI — 2 áreas (138-139)","los 5","global-index.ai → Explore data → país → dimensión/área (Data protection & privacy; Safety, accuracy & reliability)."),
  ("2","Familias de patentes IA (82)","ES/EE/PT (DE reconfirmar; SG actualizar)","cat.eto.tech → dataset 'Patent' → país (AI patent applications/granted)."),
- ("2","Aplicantes e Inventores de patentes IA (83-84)","los 5","NO existen en OECD.AI. Lens.org/Espacenet: CPC G06N facetado por país del SOLICITANTE / del INVENTOR."),
+ ("2","Aplicantes (83)=país del solicitante · Inventores (84)=país del inventor","los 5","NO existen en OECD.AI. Consultas listas en patentes_consultas_lens_espacenet.md (Lens facetado por país de la parte). Falta: lista CPC + ventana de ILIA 2025 (decisión: replicar)."),
  ("2","Desarrollo de IA — modelos Hugging Face (81)","los 5","API HF: huggingface.co/api/models?author=<ORG> por org (ver notas Económicos), sumar por país."),
  ("2","NRI energía limpia — España (144)","ES","Página país https://networkreadinessindex.org/country/spain/ o PDF país 2025 (indicador 'Affordable & clean energy')."),
  ("3","Verbatim de estrategia (ítems PRELIM)","los 5","Pasarme los PDF de las estrategias (krattAI/White Paper EE; NAIS 2.0 SG; KI-Strategie/Aktionsplan DE; Estrategia IA 2024 ES; ANIA 2026-30 PT) → codificación verbatim."),
- ("3","Decisiones metodológicas","UE / SG","(a) cómo puntuar el EU AI Act como 'iniciativa legal' en países UE; (b) si el Update SG may-2026 cambia 'Antigüedad'; (c) confirmar ISO SC42 de Estonia (=0)."),
+ ("3","Decisiones metodológicas (estado)","UE/SG/EE","RESUELTO 2026-06-16: EU AI Act=iniciativa legal (128=3); SG Antigüedad (104)=4 (Update may-2026); ERNC=renovables total; patentes 83=solicitante/84=inventor. PENDIENTE: confirmar ISO SC42 Estonia (=0) en iso.org; lista CPC+ventana de patentes de ILIA 2025."),
  ("3","I+D/PIB oficial exacto — Singapur (73, económico)","SG","A*STAR National Survey of R&D (PDF). Hoy: WB 2,16% (2020) / OCDE ~1,85% (2022)."),
 ]
 r = 2

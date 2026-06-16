@@ -8,7 +8,7 @@ Detalle/fuentes/dudas por país: gobernanza_<país>.md, FUENTES_*, INCERTIDUMBRE
 | Subdim | Indicador (ID) | EE | SG | DE | ES | PT |
 |---|---|---|---|---|---|---|
 | Visión e Institucionalidad | Existencia de estrategia (103) | 3 | 3 | 3 | 3 | 3 |
-|  | Antigüedad (104) | 4 | 3 | 3 | 4 | 4 |
+|  | Antigüedad (104) | 4 | 4 | 3 | 4 | 4 |
 |  | Actualización (105) | 3 | 3 | 3 | 3 | 3 |
 |  | Mecanismos de evaluación (106) | 3 (PRELIM) | 3 (PRELIM) | 3 | 3 | 3 |
 |  | Presupuesto (107) | 3 | 3 | 3 | 3 | 3 |

@@ -24,7 +24,7 @@ def st(v):
 # ---- Matriz consolidada (subdim, indicador(ID), fuente, EE, SG, DE, ES, PT, nota) ----
 G = [
  ("Visión e Institucionalidad", "Existencia de estrategia (103)", "Estrategia nac. + OECD.AI", "3","3","3","3","3",""),
- ("", "Antigüedad (104)", "Estrategia", "4","3","3","4","4","EE: White Paper 2024-30 · SG: NAIS 2.0 2023 · DE: Aktionsplan 2023 · ES: Estrategia 2024 · PT: ANIA 2026-30"),
+ ("", "Antigüedad (104)", "Estrategia", "4","4","3","4","4","EE: White Paper 2024-30 · SG: Update NAIS may-2026 = estrategia vigente (decisión operador) · DE: Aktionsplan 2023 · ES: Estrategia 2024 · PT: ANIA 2026-30"),
  ("", "Actualización (105)", "Estrategia", "3","3","3","3","3",""),
  ("", "Mecanismos de evaluación (106)", "Estrategia", "3 (PRELIM)","3 (PRELIM)","3","3","3",""),
  ("", "Presupuesto (107)", "Estrategia", "3","3","3","3","3","EE €85M · SG >S$1.000M · DE €5.000M · ES €1.500M · PT >€400M"),

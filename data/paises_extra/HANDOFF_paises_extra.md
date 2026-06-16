@@ -42,6 +42,10 @@ Definiciones/rúbricas salen del Excel del operador `Subindicadores_ILIA_2026_v_
 4. **Año = último disponible** (documentado). Valor **bruto**; per cápita donde el índice normaliza.
 5. **I+D/PIB = fuentes oficiales o multinacionales** (oficinas nacionales, Eurostat, OCDE, World Bank); descartar CEIC/SSTI/Statista/prensa.
 6. **Relevancia de software (GitHub):** denominador = **repos acumulado total** (suma de los 24 trimestres); **dos versiones**: inbounds total y solo 2025.
+7. **EU AI Act = iniciativa legal (128)=3** en países UE (EE/DE/ES/PT); no se exige ley nacional propia. *(confirmado 2026-06-16)*
+8. **Singapur Antigüedad (104)=4** — el Update NAIS de may-2026 cuenta como estrategia vigente. *(confirmado 2026-06-16)*
+9. **ERNC (145) = % renovables total (EMBER)**, sin excluir gran hidro. *(confirmado 2026-06-16)*
+10. **Patentes: 83 = país del solicitante · 84 = país del inventor**; CPC/ventana = **replicar ILIA 2025** (pendiente su especificación). *(confirmado 2026-06-16)*
 
 ## 4. Estado — Bloque A (económicos), 5 países
 | Indicador (ID) | Estado | Valores / nota |
@@ -88,14 +92,17 @@ Detalle/fuentes/dudas por país: `gobernanza_{estonia,singapur,alemania,espana,p
 7. **NRI energía — España** (144) → networkreadinessindex.org/country/spain/.
 8. **PDFs de estrategias** (para cerrar los PRELIM verbatim): krattAI/White Paper EE; NAIS 2.0 SG; KI-Strategie/Aktionsplan DE; Estrategia IA 2024 ES; ANIA 2026-2030 PT.
 
-## 7. Decisiones metodológicas ABIERTAS (resolver con el operador)
-- **EU AI Act como "iniciativa legal" (128)** en países UE (EE/DE/ES/PT): hoy se puntúa 3. ¿Se acepta el reglamento UE como iniciativa, o se exige ley nacional? (Afecta también 129/130.)
-- **Singapur "Antigüedad" (104):** ¿el Update de may-2026 cuenta como estrategia nueva (→4) o se mantiene NAIS 2.0 2023 (→3)?
-- **ISO SC 42 de Estonia (125)=0:** confirmar a mano en iso.org (confianza MEDIA).
-- **ERNC (145) para ES y PT:** EMBER no separa gran/pequeña hidro. "% renovables total" vs "ERNC excl. gran hidro" difiere mucho (ES hidro ~12%, PT ~31%). Definir cuál usa ILIA.
-- **Patentes:** definir la consulta de IA (CPC G06N narrow vs taxonomía WIPO amplia), atribución (país del solicitante vs del inventor) y ventana de años, **replicando lo que ILIA usó para los demás países**. → plantillas listas para pegar en `patentes_consultas_lens_espacenet.md` (decisiones D1–D4).
-- **Definiciones "Aplicantes" vs "Inventores" están CRUZADAS en el Excel del operador** (la de "Aplicantes" describe inventores y viceversa) → fijar antes de contar.
-- **Dos "Gobierno Digital" en el Excel** (ID 92 OSI = el elegido; ID 113 = tópico de estrategia, ya cubierto como #113).
+## 7. Decisiones metodológicas — estado (tras consulta al operador 2026-06-16)
+**RESUELTAS (aplicadas en `G`/docs):**
+- ✅ **EU AI Act como "iniciativa legal" (128)** en países UE (EE/DE/ES/PT): **se acepta** el reglamento UE → **128=3** (ES/DE además ley nacional). 129/130 sin cambio.
+- ✅ **Singapur "Antigüedad" (104):** el Update may-2026 **cuenta como estrategia vigente nueva → 104=4** (aplicado).
+- ✅ **ERNC (145) ES/PT:** **% renovables total (EMBER)** (método único para los 5). ES 57,34% · PT 85,19%.
+- ✅ **Patentes — atribución / cruce del Excel:** **83 = país del solicitante · 84 = país del inventor** (ignorar el cruce de definiciones del Excel).
+
+**ABIERTAS / pendientes de insumo:**
+- ⏳ **Patentes — definición CPC y ventana:** decisión = **replicar ILIA 2025**. Falta que el operador pase (o se localice) la **lista CPC/IPC + ventana + dedup** de 2025. Plantillas: `patentes_consultas_lens_espacenet.md` (D1/D3).
+- ⏳ **ISO SC 42 de Estonia (125)=0:** verificación manual en iso.org (confianza MEDIA) — sigue como 0 (DUDA).
+- ℹ️ **Dos "Gobierno Digital" en el Excel** (ID 92 OSI = el elegido; ID 113 = tópico, ya cubierto): sin acción.
 
 ## 8. Inventario de archivos (`data/paises_extra/`)
 **Entregables principales:** `Planilla_ILIA2026_paises_extra.xlsx` (4 hojas: LÉEME, Económicos 5, Gobernanza 5, Pendientes) · `Indicadores_ILIA2026_por_pais.pdf` (PDF por país; **gobernanza de los 5 países** ✅ regenerado 2026-06-16, 25 pág) · `REPORTE_INDICADORES_5_PAISES.md`.

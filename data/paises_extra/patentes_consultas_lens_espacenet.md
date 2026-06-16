@@ -17,13 +17,14 @@ país de la parte) o Espacenet/PATSTAT.
 
 | # | Decisión | Opciones | Recomendación (a confirmar con el operador / método ILIA 2025) |
 |---|---|---|---|
-| D1 | **Definición de "IA" (CPC)** | (a) Núcleo **G06N** (+ subgrupos); (b) Taxonomía **amplia WIPO/OECD** (añade G06F, G06T/G06V visión, G10L voz, G06Q, A61B…) | **Replicar EXACTAMENTE lo que ILIA 2025 usó para los demás países.** Si no consta, usar (a) G06N como base reproducible y documentar. |
-| D2 | **Atribución por país** | País del **solicitante** (applicant) vs país del **inventor** | 83 = **país del solicitante**; 84 = **país del inventor**. ⚠️ Ver D2-bis. |
-| D2-bis | **Definiciones CRUZADAS en el Excel del operador** | La definición de "Aplicantes" describe inventores y viceversa | **Fijar el mapeo 83↔solicitante / 84↔inventor antes de contar.** No contar hasta resolver. |
-| D3 | **Ventana de años** | p. ej. última década; por fecha de **prioridad** vs **publicación** | Replicar ILIA 2025. Por defecto: **2015–2025 por fecha de publicación** (`pd`), y reportar también prioridad. |
+| D1 | **Definición de "IA" (CPC)** | (a) Núcleo **G06N** (+ subgrupos); (b) Taxonomía **amplia WIPO/OECD** (añade G06F, G06T/G06V visión, G10L voz, G06Q, A61B…) | **DECISIÓN operador (2026-06-16): replicar ILIA 2025.** ⏳ Falta su lista CPC/IPC. Hasta tenerla, base reproducible = (a) **G06N** documentado. |
+| D2 | **Atribución por país** | País del **solicitante** (applicant) vs país del **inventor** | ✅ **RESUELTO (operador): 83 = país del solicitante · 84 = país del inventor.** |
+| D2-bis | **Definiciones CRUZADAS en el Excel del operador** | La definición de "Aplicantes" describe inventores y viceversa | ✅ **RESUELTO con D2:** 83↔solicitante, 84↔inventor (ignorar el cruce del Excel). |
+| D3 | **Ventana de años** | p. ej. última década; por fecha de **prioridad** vs **publicación** | **= replicar ILIA 2025** (⏳ pendiente su ventana). Por defecto: **2015–2025 por publicación** (`pd`). |
 | D4 | **Nivel de conteo / dedup** | Familia simple vs documento; entidades **distintas** vs apariciones | 82 = **familias** (simple family). 83/84 = **entidades/personas DISTINTAS** (deduplicadas), no apariciones. |
 
-**Mientras D1–D4 no estén fijadas, estas consultas quedan como BORRADOR ejecutable, no como dato final.**
+**Estado (2026-06-16):** D2/D2-bis **fijadas por el operador** (83=solicitante · 84=inventor). D1/D3 = **replicar ILIA 2025**:
+ejecutar en cuanto el operador pase la **lista CPC/IPC + ventana** usadas en 2025. Hasta entonces, BORRADOR ejecutable con la base **G06N / 2015–2025**.
 
 ---
 
