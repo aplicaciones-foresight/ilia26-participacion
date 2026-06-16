@@ -50,17 +50,16 @@ Heidelberg (#80), FU Berlin (#88), KIT (#98), U. Freiburg (~top-10 DE). Fuentes:
 *(Falta enumerar las ~43 restantes — hacer por bandas de rank.)*
 
 ## Plan de continuación (orden sugerido)
-1. **Portugal (9)** — lista casi cerrada; clasificar las 9. Ojo: ISCTE y Católica
-   son más de gestión, pero evaluar sus escuelas de tecnología/ciencia de datos
-   (no excluir la universidad entera; excluir sólo programas de Negocios/Economía).
-2. **España (38)** — enumerar por bandas de rank y clasificar. Candidatas fuertes
-   a CUMPLE: UPC, UPM, UPV (politécnicas, con coursework), UGR, UAM, UC3M.
-3. **Alemania (49)** — enumerar por bandas; mayoría *research-based* → muchas
-   PARCIAL; excepciones con escuelas doctorales estructuradas (TUM, RWTH, KIT,
-   Saarland, Tübingen-IMPRS, etc.).
-4. Consolidar: actualizar `clasificacion.csv` + `universidades_qs2026.csv`,
-   escribir `RESUMEN.md` (conteos por país y total: CUMPLE, PARCIAL, suma) y
-   `DUDAS_ACCESO_MANUAL.md` (lista priorizada de verificación manual).
+1. ✅ **Portugal (9)** — hecho.
+2. ⏳ **España (38)** — **lanzado a un agente** `general-purpose` (escribe
+   `paises/espana.md` + devuelve filas CSV). Pendiente: fusionar filas al
+   `clasificacion.csv` + `universidades_qs2026.csv` y commit.
+3. ⏳ **Alemania (49)** — **lanzado a un agente** (escribe `paises/alemania.md` +
+   devuelve filas CSV). Mismo merge pendiente.
+4. Consolidar: actualizar CSVs, completar `DUDAS_ACCESO_MANUAL.md` (sección D) y
+   escribir `RESUMEN.md` (conteos por país y total: CUMPLE, PARCIAL, suma).
+
+> `DUDAS_ACCESO_MANUAL.md` ya creado con EE/SG/PT (secciones A–C).
 
 > **Opción de aceleración:** si el presupuesto de `WebSearch` lo permite, lanzar
 > agentes `general-purpose` en paralelo (uno por banda de rank de ES/DE) con la
