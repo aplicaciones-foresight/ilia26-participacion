@@ -6,6 +6,7 @@ from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
 from generar_pdf_indicadores import ECON, ECON_CELLS  # económicos (fuente única)
+from datos_gobernanza import G, st  # gobernanza 5 países (fuente única) + estado/color
 
 OK = PatternFill("solid", fgColor="C6EFCE"); PART = PatternFill("solid", fgColor="FFEB9C")
 MAN = PatternFill("solid", fgColor="FFC7CE"); HDR = PatternFill("solid", fgColor="1F4E78")
@@ -13,12 +14,6 @@ SUBF = PatternFill("solid", fgColor="DDEBF7")
 WHITEB = Font(color="FFFFFF", bold=True, size=10); BOLD = Font(bold=True)
 WRAP = Alignment(wrap_text=True, vertical="top"); THIN = Border(*[Side(style="thin", color="D9D9D9")]*4)
 FILLS = {"ok": OK, "partial": PART, "manual": MAN, "na": MAN}
-
-def st(v):
-    s = str(v).upper()
-    if any(k in s for k in ["PEND", "NO OBT", "N/D", "NO ENC", "NE"]): return "manual"
-    if any(k in s for k in ["PRELIM", "DUDA", "BAJA"]): return "partial"
-    return "ok"
 
 def header(ws, headers, widths, row=1):
     for c, (h, w) in enumerate(zip(headers, widths), 1):
@@ -63,47 +58,7 @@ for idt, name, sugg, desc in ECON:
 ws.freeze_panes = "B2"
 
 # ---- Gobernanza (5 países) ----
-# (subdim, indicador(ID), fuente, EE, SG, DE, ES, PT, nota)
-G = [
- ("Visión e Institucionalidad", "Existencia de estrategia (103)", "Estrategia nac. + OECD.AI", "3","3","3","3","3",""),
- ("", "Antigüedad (104)", "Estrategia", "4","3","3","4","4","EE: White Paper 2024-30 · SG: NAIS 2.0 2023 · DE: Aktionsplan 2023 · ES: Estrategia 2024 · PT: ANIA 2026-30"),
- ("", "Actualización (105)", "Estrategia", "3","3","3","3","3",""),
- ("", "Mecanismos de evaluación (106)", "Estrategia", "3 (PRELIM)","3 (PRELIM)","3","3","3",""),
- ("", "Presupuesto (107)", "Estrategia", "3","3","3","3","3","EE €85M · SG >S$1.000M · DE €5.000M · ES €1.500M · PT >€400M"),
- ("", "Hoja de ruta (108)", "Estrategia", "3","3","3","3","3",""),
- ("", "Tópico: Ética y gobernanza (109)", "Estrategia", "1","1","1","1","1",""),
- ("", "Tópico: Infraestructura y tecnología (110)", "Estrategia", "1","1","1","1","1",""),
- ("", "Tópico: Desarrollo de capacidades (111)", "Estrategia", "1","1","1","1","1",""),
- ("", "Tópico: Datos (112)", "Estrategia", "1","1","1","1","1",""),
- ("", "Tópico: Gobierno digital (113)", "Estrategia", "1","1","1","1","1",""),
- ("", "Tópico: Industria y emprendimiento (114)", "Estrategia", "1","1","1","1","1",""),
- ("", "Tópico: I+D (115)", "Estrategia", "1","1","1","1","1",""),
- ("", "Tópico: Cooperación reg./int'l (116)", "Estrategia", "1","1","1","1","1",""),
- ("", "Tópico: Perspectiva de género (117)", "Estrategia", "0","0","0","1 (PRELIM)","0","Solo ES recoge género (mención transversal); resto NO ENCONTRADO/0"),
- ("", "Tópico: Sostenibilidad (118)", "Estrategia", "1 (BAJA)","1 (PRELIM)","1 (PRELIM)","1","0 (PRELIM)","PT: solo principio en EDN, no eje en ANIA"),
- ("", "Particip. ciudadana elaboración (119)", "Estrategia", "2 (PRELIM)","1 (PRELIM)","2","3 (PRELIM)","4","PT: consulta pública con resultados"),
- ("", "Multistakeholder elaboración (121)", "Estrategia", "3 (PRELIM)","3 (PRELIM)","4 (PRELIM)","4 (PRELIM)","5","PT: Gob+4"),
- ("", "Multistakeholder implementación (122)", "Estrategia", "4 (PRELIM)","4 (PRELIM)","4 (PRELIM)","4","4 (PRELIM)",""),
- ("", "Institucionalidad (123)", "Estrategia + OECD.AI", "5","5","5","5","5","ES: SEDIA+AESIA · DE: 3 min+PLS+BNetzA · PT: AMA+FCT+ANACOM"),
- ("", "Coordinación interinstitucional (124)", "Estrategia", "3","3","3","3","3",""),
- ("Vinculación Internacional", "ISO SC 42 / IA (125)", "iso.org/6794475", "0 (DUDA)","2","2","2","1","EE: no figura (verificar) · PT: Observador"),
- ("", "ISO SC 27 / Seguridad (126)", "iso.org/45306", "2","2","2","2","1","PT: Observador"),
- ("", "Acuerdos internacionales de IA (127)", "OECD/CEPAL", "2","2","2","2","2","GPAI: miembros DE/ES; EE/SG/PT no individual"),
- ("Regulación", "Iniciativa legal sobre IA (128)", "Legislación nac./UE", "3","1","3","3","3","UE: EU AI Act (EE/DE/ES/PT). SG: soft law=1. ES/DE: además ley nacional"),
- ("", "Clasificación de riesgo (129)", "Legislación/marco", "1","1 (PRELIM)","1","1","1",""),
- ("", "Exploración regulatoria / sandbox (130)", "Legislación/marco", "1","1","1","1","1 (PRELIM)","ES: 1er sandbox UE"),
- ("", "Ley de protección de datos (131)", "DLA Piper", "1","1","1","1","1",""),
- ("", "Autoridad de protección de datos (132)", "DLA Piper", "1","1","1","1","1","AKI/PDPC/BfDI/AEPD/CNPD"),
- ("IA Ética, Responsable y Segura", "Ciberseguridad — Legal (133)", "UIT GCI 2024", "PEND","PEND","PEND","20","PEND","Solo ES con pilares; resto Tier 1, pilares en anexo PDF"),
- ("", "Ciberseguridad — Técnico (134)", "UIT GCI 2024", "PEND","PEND","PEND","20","PEND",""),
- ("", "Ciberseguridad — Organizacional (135)", "UIT GCI 2024", "PEND","PEND","PEND","20","PEND",""),
- ("", "Ciberseguridad — Desarrollo de capacidades (136)", "UIT GCI 2024", "PEND","PEND","PEND","19,74","PEND",""),
- ("", "Ciberseguridad — Cooperación (137)", "UIT GCI 2024", "PEND","PEND","PEND","20","PEND",""),
- ("", "GIRAI — Protección de datos y privacidad (138)", "GIRAI", "NE","NE","NE","NE","NE","Portal JS/PDF → extracción manual"),
- ("", "GIRAI — Seguridad, precisión y confiabilidad (139)", "GIRAI", "NE","NE","NE","NE","NE","Idem"),
- ("", "Energía limpia y asequible — NRI (144)", "NRI/Portulans", "80,71","86,87","86,44","PEND","88,16","ES: ver página país NRI"),
- ("", "% ERNC matriz eléctrica (145)", "EMBER", "55,75%","4,93%","58,64%","57,34%","85,19%","2024, renovables total. ES/PT/DE: ERNC excl. gran hidro es menor (ver energia_*.md)"),
-]
+# Matriz G (subdim, indicador(ID), fuente, EE, SG, DE, ES, PT, nota): fuente única en datos_gobernanza.py.
 ws = wb.create_sheet("Gobernanza (5 países)")
 header(ws, ["Subdimensión", "Indicador (ID)", "Fuente", "EE", "SG", "DE", "ES", "PT", "Notas / banderas"],
        [22, 38, 18, 9, 9, 9, 9, 9, 46])

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Genera un PDF de trabajo con los indicadores recolectados por país (ILIA 2026)."""
-import os
+import os, re
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle
@@ -10,6 +10,7 @@ from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import (Paragraph, SimpleDocTemplate, Spacer, HRFlowable,
                                 KeepTogether, PageBreak)
+from datos_gobernanza import G, st, GOB_META, gov_sources, COUNTRY_GIDX  # gobernanza 5 países (fuente única)
 
 DJ = "/usr/share/fonts/truetype/dejavu"
 pdfmetrics.registerFont(TTFont("DJ", f"{DJ}/DejaVuSans.ttf"))
@@ -33,14 +34,14 @@ def esc(t): return t.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&g
 def link(url): return f'<a href="{esc(url)}" color="#1F4E78">{esc(url)}</a>'
 
 
-def block(idtag, name, sugg, desc, dato, color, fuentes, pend):
+def block(idtag, name, sugg, desc, dato, color, fuentes, pend, notelabel="Pendiente / dudas"):
     fs = " · ".join(link(u) for u in fuentes) if fuentes else "—"
     parts = [Paragraph(f'<b>[{esc(idtag)}] {esc(name)}</b>  <font size=7 color="#777777">— fuente: {esc(sugg)}</font>', H3),
              Paragraph(esc(desc), DESC),
              Paragraph(f'<b>Dato encontrado:</b> <font color="{color.hexval() if hasattr(color,"hexval") else color}">{esc(dato)}</font>', BODY),
              Paragraph(f'<b>Fuente(s):</b> {fs}', SRC)]
     if pend:
-        parts.append(Paragraph(f'<b><font color="#9A6700">Pendiente / dudas:</font></b> {esc(pend)}', BODY))
+        parts.append(Paragraph(f'<b><font color="#9A6700">{esc(notelabel)}:</font></b> {esc(pend)}', BODY))
     parts.append(Spacer(1, 3))
     return KeepTogether(parts)
 
@@ -132,118 +133,42 @@ ECON_CELLS = {
  },
 }
 
-# ---------- BLOQUE GOBERNANZA (EE/SG) ----------
-ISO42="https://www.iso.org/committee/6794475.html?view=participation"
-ISO27="https://www.iso.org/committee/45306.html?view=participation"
-DLP_EE="https://www.dlapiperdataprotection.com/?t=law&c=EE"; DLP_SG="https://www.dlapiperdataprotection.com/index.html?t=law&c=SG"
-GCI="https://www.itu.int/epublications/publication/global-cybersecurity-index-2024"
-GIRAI="https://www.global-index.ai"; NRI="https://networkreadinessindex.org"
-EMBER="https://ember-energy.org/data/electricity-data-explorer/"
-EE_STR=["https://oecd.ai/en/dashboards/national/estonia","https://regulations.ai/regulations/RAI-EE-NA-DAIWPXX-2024"]
-SG_STR=["https://www.smartnation.gov.sg/initiatives/national-ai-strategy/","https://file.go.gov.sg/nais2023.pdf"]
-PREL="codificado sin el texto primario (PDF 403) → confirmar verbatim con el PDF."
-# id, name, desc, [sources], ee(val,status,pend), sg(val,status,pend)
-GOV = [
- ("SUB","Visión e Institucionalidad",),
- ("103","Existencia de la estrategia","Estrategia/política nacional de IA vigente, respaldada por institución pública (1 No/2 En proceso/3 Tiene).",None,
-   ("3 (Tiene)","ok",""),("3 (Tiene)","ok","")),
- ("104","Antigüedad","Año de publicación de la estrategia vigente (1 No/2 2019-21/3 2022-23/4 2024-25).",None,
-   ("4 (White Paper 2024-2030)","ok","Depende de tomar el White Paper 2024-2030 como 'la estrategia'."),
-   ("3 (NAIS 2.0 dic-2023)","ok","Si el Update may-2026 cuenta como estrategia nueva → 4.")),
- ("105","Actualización","¿La estrategia se ha actualizado? (1 No/2 En proceso/3 Actualizada o planificada).",None,
-   ("3","ok",""),("3","ok","")),
- ("106","Mecanismos de evaluación","¿Método de seguimiento de metas? (1 No/2 Informal/3 Claro).",None,
-   ("3","partial",PREL),("3","partial",PREL)),
- ("107","Presupuesto","¿Presupuesto asignado? (1 No/2 Menciona/3 Monto especificado).",None,
-   ("3 (€85M 2024-26)","ok","Confirmar que cuenta como presupuesto de la estrategia."),
-   ("3 (>S$1.000M/5 años)","ok","")),
- ("108","Hoja de ruta","¿Plan de acción? (1 No/2 Menciona/3 Plan especificado).",None,
-   ("3 (Action Plan Kratt)","ok",""),("3 (15 Acciones)","ok","")),
- ("109-118","10 Tópicos de la estrategia (binario 0/1 c/u)","Ética y gobernanza · Infraestructura y tecnología · Desarrollo de capacidades · Datos · Gobierno digital · Industria y emprendimiento · I+D · Cooperación reg./int'l · Perspectiva de género · Sostenibilidad. (1 = recogido + plan de acción).",None,
-   ("9 en 1 · Género=0 · Sostenibilidad=1(BAJA)","partial","Rúbrica exige 'aspecto + plan de acción' por tópico → confirmar plan por tópico en el PDF. Género=0 por ausencia de evidencia."),
-   ("9 en 1 · Género=0 · Sostenibilidad=1","partial","Idem. Género=0 (búsqueda contaminada por homónimo).")),
- ("119","Participación ciudadana (elaboración)","Mecanismos de participación ciudadana en la creación de la política (1 No … 5 >1 mecanismo).",None,
-   ("2 (informal)","partial","Se apoya en debate 'kratt law' 2017-19, anterior a la estrategia 2024."),
-   ("1 (No)","partial","La consulta hallada fue del MGF GenAI, no de NAIS 2.0.")),
- ("121","Multistakeholder (elaboración)","Stakeholders en la creación (1 Solo gob … 5 Gob+4).",None,
-   ("3 (Gob+2)","partial",PREL),("3 (Gob+2)","partial",PREL)),
- ("122","Multistakeholder (implementación)","Stakeholders en la implementación (1 Solo gob … 5 Gob+4).",None,
-   ("4 (Gob+3)","partial",PREL),("4 (Gob+3)","partial",PREL)),
- ("123","Existencia de institucionalidad","Entidad pública con mandato de liderar/coordinar la política de IA (1 No … 5 >1 institución).",None,
-   ("5 (MKM/MEAC, Riigikantselei, RIA, Eesti.ai)","ok",""),
-   ("5 (SNDGG, IMDA, AISG, PDPC, AI Verify, NAIC)","ok","Verificar fecha/mandato del NAIC (feb-2026).")),
- ("124","Coordinación interinstitucional","Mecanismo de coordinación (1 No/2 Informal/3 Mecanismo claro).",None,
-   ("3","ok",""),("3","ok","")),
- ("SUB","Vinculación Internacional",),
- ("125","ISO/IEC JTC 1/SC 42 (IA)","Membresía del organismo nacional (0 No/1 Observador/2 Participante).",[ISO42],
-   ("0 (No participa)","partial","DUDA PRINCIPAL EE: no figura en la lista; confianza MEDIA → verificar en iso.org."),
-   ("2 (Participante)","ok","")),
- ("126","ISO/IEC JTC 1/SC 27 (Seguridad)","Membresía (0/1/2).",[ISO27],
-   ("2 (Participante)","ok",""),("2 (Participante)","ok","")),
- ("127","Acuerdos/comités internacionales de IA","Incorporación a acuerdos (0 ninguno/1 uno/2 dos o más).",None,
-   ("2 (OECD AI Principles + EU Coordinated Plan + CoE vía UE)","ok","GPAI: EE no es miembro."),
-   ("2 (ASEAN + OECD + UNESCO ref.)","ok","Verificar adhesión formal a OECD AI Principles y membresía GPAI.")),
- ("SUB","Regulación",),
- ("128","Iniciativa legal sobre IA","Proyectos/leyes de IA (1 No/2 Borrador/3 Sí tiene).",None,
-   ("3 (EU AI Act)","ok","Decisión metodológica: cómo puntuar el EU AI Act en países UE (no hay ley nacional propia)."),
-   ("1 (soft law, sin ley dura)","ok","Correcto por rúbrica, pero NO es debilidad: marcos voluntarios muy maduros. Sugerir nota cualitativa.")),
- ("129","Clasificación de riesgo de sistemas de IA","¿La iniciativa legal clasifica riesgo? (0 No/1 Sí).",None,
-   ("1 (EU AI Act)","ok",""),("1 (en marco voluntario)","partial","Se sostiene sobre el marco, no una ley → confirmar criterio.")),
- ("130","Exploración regulatoria / sandbox","¿Se contempla sandbox? (0 No/1 Sí).",None,
-   ("1 (sandbox EE-FI)","ok",""),("1 (AI Verify)","ok","")),
- ("131","Ley de protección de datos personales","¿Ley vigente? (0 No/1 Sí).",[DLP_EE,DLP_SG],
-   ("1 (GDPR + PDPA)","ok",""),("1 (PDPA 2012)","ok","")),
- ("132","Autoridad de protección de datos","¿Autoridad de fiscalización? (0 No/1 Sí).",None,
-   ("1 (AKI — aki.ee)","ok",""),("1 (PDPC — pdpc.gov.sg)","ok","")),
- ("SUB","IA Ética, Responsable y Segura",),
- ("133-137","Ciberseguridad — 5 pilares (GCI 2024)","Legal · Técnico · Organizacional · Desarrollo de capacidades · Cooperación (0–100 c/u; en GCI cada pilar /20).",[GCI],
-   ("PENDIENTE (Tier 1; total ~95,04)","manual","Los 5 pilares por país están en el anexo PDF del GCI 2024 (403). Total de fuente secundaria."),
-   ("PENDIENTE (Tier 1; total ~99,86)","manual","Idem.")),
- ("138","GIRAI — Protección de datos y privacidad","Puntaje 0–100 (pilar Derechos Humanos).",[GIRAI],
-   ("NO ENCONTRADO","manual","En portal JS / figuras PDF → extracción manual (portal GIRAI)."),
-   ("NO ENCONTRADO","manual","Idem. (SG también en Fig.19 informe LIRNEasia).")),
- ("139","GIRAI — Seguridad, precisión y confiabilidad","Puntaje 0–100 (pilar Gobernanza de IA Responsable).",[GIRAI],
-   ("NO ENCONTRADO","manual","Extracción manual (portal GIRAI)."),
-   ("NO ENCONTRADO","manual","Idem.")),
- ("144","Energía limpia y asequible (NRI)","Indicador 'Affordable & clean energy' del Network Readiness Index.",[NRI],
-   ("80,71 (ed. 2025)","ok","Confirmar edición (2024 vs 2025)."),
-   ("86,87 (ed. 2025)","ok","Confirmar edición.")),
- ("145","% ERNC en matriz eléctrica (EMBER)","% de generación eléctrica renovable (ERNC ≈ renovables; hidro ~0).",[EMBER],
-   ("55,75 % (2024) / 59,57 % (2025)","ok","Determinístico. EMBER no separa 'no convencional'/gran hidro (marginal aquí)."),
-   ("4,93 % (2024) / 5,49 % (2025)","ok","Determinístico.")),
-]
+# ---------- BLOQUE GOBERNANZA (5 países) ----------
+# La matriz de gobernanza (38 subindicadores × 5 países) y sus metadatos viven en
+# datos_gobernanza.py (fuente única que también alimenta la planilla .xlsx).
 
 def build():
     story = [Paragraph("ILIA 2026 — Indicadores recolectados por país", H1),
-             Paragraph("Borrador de trabajo para llenar la planilla oficial · 2026-06-14 · "
-                       "Países: España, Estonia, Singapur, Alemania, Portugal (económicos); "
-                       "Estonia y Singapur (gobernanza). Detalle y más fuentes en data/paises_extra/.", SUB),
+             Paragraph("Borrador de trabajo para llenar la planilla oficial · 2026-06-16 · "
+                       "Económicos (11 indicadores) y Gobernanza (38 subindicadores) para los 5 países: "
+                       "España, Estonia, Singapur, Alemania, Portugal. Detalle y más fuentes en data/paises_extra/.", SUB),
              Paragraph("Estados: <font color='#1A7F37'>verde</font>=listo · "
-                       "<font color='#9A6700'>ámbar</font>=parcial/PRELIM · "
+                       "<font color='#9A6700'>ámbar</font>=parcial/PRELIM/duda · "
                        "<font color='#B42318'>rojo</font>=no obtenido / extracción manual.", SUB),
              HRFlowable(width="100%", color=AZUL, thickness=1.1, spaceAfter=4)]
-    govd = {g[0]: g for g in GOV if g[0] != "SUB"}
     for ci, (country, cells) in enumerate(ECON_CELLS.items()):
         if ci: story.append(PageBreak())
+        cc = country.split("(")[1].rstrip(")")          # "España (ES)" -> "ES"
+        gidx = COUNTRY_GIDX[cc]
         story.append(Paragraph(country, H1))
         story.append(Paragraph("A. Investigación, adopción y desarrollo (11 indicadores)", H2))
         for idt, name, sugg, desc in ECON:
             dato, status, fuentes, pend = cells[idt]
             story.append(block(idt, name, sugg, desc, dato, C[status], fuentes, pend))
-        if country.startswith(("Estonia", "Singapur")):
-            isEE = country.startswith("Estonia")
-            story.append(Spacer(1, 4))
-            story.append(Paragraph("B. Gobernanza (38 subindicadores)", H2))
-            for g in GOV:
-                if g[0] == "SUB":
-                    story.append(Paragraph(g[1], H3)); continue
-                idt, name, desc, src = g[1-1], g[1], g[2], g[3]
-                idt = g[0]
-                cell = g[4] if isEE else g[5]
-                val, status, pend = cell
-                fuentes = src if src else []
-                story.append(block(idt, name, sugg="ver RUBRICAS/FUENTES", desc=desc,
-                                   dato=val, color=C[status], fuentes=fuentes, pend=pend))
+        story.append(Spacer(1, 4))
+        story.append(Paragraph("B. Gobernanza (38 subindicadores)", H2))
+        for row in G:
+            sub, ind, nota, val = row[0], row[1], row[8], row[gidx]
+            if sub:
+                story.append(Paragraph(sub, H3))
+            m = re.search(r"\((\d+)\)", ind)
+            idt = m.group(1) if m else ""
+            name = re.sub(r"\s*\(\d+\)\s*$", "", ind)
+            desc, srckind = GOB_META.get(idt, (ind, "estrategia"))
+            story.append(block(idt, name, sugg="rúbrica / detalle por país",
+                               desc=desc, dato=val, color=C[st(val)],
+                               fuentes=gov_sources(srckind, cc), pend=nota,
+                               notelabel="Nota / banderas"))
     out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "Indicadores_ILIA2026_por_pais.pdf")
     SimpleDocTemplate(out, pagesize=A4, topMargin=1.2*cm, bottomMargin=1.2*cm,
                       leftMargin=1.4*cm, rightMargin=1.4*cm,
