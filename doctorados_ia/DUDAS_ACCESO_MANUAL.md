@@ -6,6 +6,13 @@ este entorno **no puede abrir páginas web** (sólo búsqueda — ver
 
 ---
 
+## 0. Resueltos en la ronda de validación (2026-06-16)
+- **UEM** (ES): NO CUMPLE → **PARCIAL** (Doctorado en Ing. de Control y Sistemas Inteligentes).
+- **Potsdam/HPI** (DE): PARCIAL → **CUMPLE** (escuela doctoral estructurada + research school de IA).
+- **UCAM** (ES): **PARCIAL** confirmado (Doctorado en Ing. Informática + grupo UKEIM).
+- **Católica** (PT), **IE** (ES), **Hohenheim** (DE): **NO CUMPLE** confirmados (sin doctorado Tec/Ing con IA).
+- **Estonia:** universo confirmado (Tartu / TalTech #635 / Tallinn U 1001–1200; *Life Sciences* fuera del ranking general).
+
 ## A. Limitación global (afecta a TODO el estudio)
 `WebFetch`/`curl` → **HTTP 403** contra cualquier dominio (universidades, QS,
 Wikipedia…). Toda la clasificación se hizo con **snippets de búsqueda**. Por eso:

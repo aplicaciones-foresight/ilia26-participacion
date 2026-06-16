@@ -52,7 +52,7 @@
 | 33 | University of Bremen | ~530 (conf.) | Promotion en CS (AICOR Institute for AI) | Fac. 3 Math/CS (cartesium; M. Beetz) | Sí | Sí | NoVerif. | Sí | **CUMPLE** | Media-Alta |
 | 34 | University of Duisburg-Essen (UDE) | ~801–850 (conf.) | Promotion en CS / Applied Cognitive Science | Fac. Eng. — CS & Applied Cognitive Science | Sí | Indicio | NoVerif. | Indicio | **PARCIAL** | Media |
 | 35 | Bielefeld University | ~1001–1200 (conf.) | Promotion vía CITEC Graduate School | Faculty of Technology (CITEC; B. Hammer) | Sí | Sí | Indicio | Sí | **CUMPLE** | Media-Alta |
-| 36 | University of Potsdam | ~477 (conf.) | Promotion (Dr. rer. nat.) en CS (HPI Research School) | Inst. CS / Hasso Plattner Institute (HPI) | Sí | Indicio | NoVerif. | Indicio | **PARCIAL** | Media |
+| 36 | University of Potsdam | ~477 | Promotion en CS (HPI Research School — currículo estructurado) | Digital Eng. Faculty / HPI (Research School) | Sí | Sí | Indicio | Sí | **CUMPLE** | Media-Alta |
 | 37 | University of Regensburg | ~448 (conf.) | Promotion en Informatics & Data Science | Faculty of Informatics & Data Science (FIDS) | Sí | Indicio | NoVerif. | Indicio | **PARCIAL** | Media |
 | 38 | Philipps University Marburg | ~771–780 (conf.) | Promotion (Dr. rer. nat.) en CS | Dept. Math & CS (campo AI & Data Analytics) | Sí | Indicio | NoVerif. | Indicio | **PARCIAL** | Media-Baja |
 | 39 | TU Braunschweig | ~711–720 (conf.) | Promotion en CS (Institute of AI) | Dept. CS (Institute of Artificial Intelligence) | Sí | Indicio | NoVerif. | Sí | **PARCIAL** | Media-Alta |
@@ -67,8 +67,13 @@
 | 48 | University of Kassel | ~501–600 (conf.) | Promotion en CS (Intelligent Embedded Systems) | Dept. EE/CS (ITeG; secc. IES — ML) | Sí | Indicio | Indicio | Sí | **PARCIAL** | Media |
 | 49 | RPTU Kaiserslautern-Landau | ~1201–1400 (conf.) | Graduate School of Computer Science (Promotion) | Dept. CS / DFKI Kaiserslautern | Sí | Sí | Indicio | Sí | **CUMPLE** | Media-Alta |
 
-**Conteo Alemania:** CUMPLE = 18 · PARCIAL = 30 · NO_CUMPLE = 1 ·
+**Conteo Alemania (tras validación):** CUMPLE = 19 · PARCIAL = 29 · NO_CUMPLE = 1 ·
 **Forman competencias en IA (CUMPLE+PARCIAL) = 48/49.**
+
+> **Cambio post-validación:** **Potsdam (HPI)** pasó de PARCIAL a **CUMPLE** (escuela
+> doctoral estructurada + research school de métodos de IA). **Hohenheim** confirmada
+> **NO CUMPLE** (AIDAHO = certificado, no doctorado). Conteo autoritativo en
+> `../RESUMEN.md` y la planilla `entregables/`.
 
 > **Patrón confirmado:** predomina PARCIAL (30/49) por el modelo *research-based*
 > del doctorado alemán — C1 (líneas de IA) es casi universal vía grupos/centros,
@@ -368,7 +373,9 @@
   de ML y sistemas cognitivos. Perfil doctoral IA específico no verificable.
 - **Fuentes:** `uni-due.de/cs/en/`.
 
-### 36. University of Potsdam — ~#477 (confirmar) — PARCIAL (Media; candidato a CUMPLE)
+### 36. University of Potsdam — ~#477 — CUMPLE (Media-Alta; validado)
+> **Validado:** la HPI Research School (Digital Engineering Faculty) tiene **currículo
+> doctoral estructurado** y una research school de **métodos de IA** → **CUMPLE**.
 - **C1 — Sí.** Institute of CS + **Hasso Plattner Institute (HPI)** (excelencia en
   IT systems engineering) con **HPI Research School** y grupos ML; programa Data
   Science and AI con HPI. Falta confirmar oferta/perfil doctoral IA formal.

@@ -18,9 +18,15 @@ en 5 países de referencia (DE, ES, PT, SG, EE). Metodología completa en
 | Estonia (EE) | 3 | ✅ COMPLETO | 0 | 3 | 0 |
 | Singapur (SG) | 4 | ✅ COMPLETO | 4 | 0 | 0 |
 | Portugal (PT) | 9 | ✅ COMPLETO | 6 | 2 | 1 |
-| España (ES) | 38 | ✅ COMPLETO (normalizado) | 20 | 16 | 2 |
-| Alemania (DE) | 49 | ✅ COMPLETO | 18 | 30 | 1 |
-| **TOTAL** | **103/103** | ✅ | **48** | **51** | **4** |
+| España (ES) | 38 | ✅ COMPLETO (norm.+valid.) | 20 | 17 | 1 |
+| Alemania (DE) | 49 | ✅ COMPLETO (valid.) | 19 | 29 | 1 |
+| **TOTAL** | **103/103** | ✅ | **49** | **51** | **3** |
+
+> **Tras ronda de validación (2026-06-16):** UEM NO→PARCIAL; Potsdam PARCIAL→CUMPLE;
+> UCAM PARCIAL confirmado; Católica/IE/Hohenheim NO CUMPLE confirmados; Estonia
+> universo confirmado (TalTech #635, Tallinn U 1001–1200). Entregables en
+> `entregables/` (planilla `.xlsx` + informe `.docx`), generados por
+> `build_entregables.py` desde `clasificacion.csv`.
 
 > **Forman competencias en IA (CUMPLE+PARCIAL) = 99/103.** Conteo estricto (sólo
 > CUMPLE) = 48. Ver `RESUMEN.md`. ES/DE se hicieron con agentes `general-purpose`;

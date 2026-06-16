@@ -51,17 +51,22 @@ páginas completas — `WebFetch`/`curl` = HTTP 403; ver `../METODOLOGIA.md` §6
 | 31 | Universitat Ramon Llull (URL) | ≈970¹ | Doctorat en *TIC / Enginyeria* (La Salle Campus BCN) | La Salle-URL (grup Data Science & AI) | Sí | Indicio | NoVerif. | Indicio | **PARCIAL**ⁿ | Media-Baja |
 | 32 | Universidad Pontificia Comillas (ICAI) | ≈980¹ | Doctorado en *Ing. para la Industria/Sistemas* (ICAI) | ICAI (Inst. **IIT**; IA = área estratégica) | Sí | Indicio | NoVerif. | Indicio | **PARCIAL**ⁿ | Media-Baja |
 | 33 | Universidad de Deusto | ≈990¹ | Doctorado en *Ing. para la Sociedad de la Información y Desarrollo Sostenible* | Fac. Ingeniería (Inst. **DeustoTech**) | Sí | Indicio | NoVerif. | Sí | **PARCIAL**ⁿ | Media-Baja |
-| 34 | Universidad Europea de Madrid (UEM) | 901–950 | (sin doctorado Tec/Ing con IA confirmado; existe Máster IA) | Esc. Arquitectura Ing. y Diseño | Indicio* | No | No | No | **NO CUMPLE*** | Baja |
+| 34 | Universidad Europea de Madrid (UEM) | 901–950 | Doctorado en *Ing. de Control y Sistemas Inteligentes* (validado) | Esc. de Doctorado e Investigación | Indicio | Indicio | NoVerif. | Indicio | **PARCIAL** | Media |
 | 35 | Universitat Jaume I (UJI) | 1001–1200 | Doctorado en *Informática* / *Ciencias* (Sistemas Inteligentes) | ESTCE (Inst. **INIT**; máster Sist. Inteligentes) | Sí | Indicio | NoVerif. | Indicio | **PARCIAL**ⁿ | Media-Baja |
 | 36 | IE University | 1001–1200² | (PhD confirmado sólo en **IE Business School** — excluido; Sci&Tech sin PhD CS/IA confirmado) | School of Science & Technology | Indicio* | No | No | No | **NO CUMPLE*** | Baja |
 | 37 | UCAM Univ. Católica San Antonio de Murcia | 1201–1400 | (Esc. Doctorado EIDUCAM; doctorado Tec/Ing con IA no confirmado) | Esc. Politécnica (Grado Ing. Informática) | Indicio* | Indicio | No | Indicio | **PARCIAL*** | Baja |
 | 38 | Universidad de Cantabria (UC) | ≈600–800¹³ | Doctorado en *Ciencia y Tecnología (línea Informática/TIC)* | ETSIIT / E.T.S. Náutica (DUDA pertenencia) | Indicio | Indicio | NoVerif. | Indicio | **PARCIAL** | Baja |
 
-**Conteo España (38 universidades / 38 filas) — clasificación normalizada:**
+**Conteo España (38) — normalizado + validado:**
 - **CUMPLE = 20**
-- **PARCIAL = 16** (4 originales + **12 reclasificadas**, marcadas con ⁿ)
-- **NO CUMPLE = 2** (UEM*, IE*) — ambas `requiere_acceso_manual` ALTA
-- **Forman competencias en IA (CUMPLE + PARCIAL) = 36/38.**
+- **PARCIAL = 17** (5 + **12 reclasificadas** ⁿ; incluye **UEM** tras validación)
+- **NO CUMPLE = 1** (IE University)
+- **Forman competencias en IA (CUMPLE + PARCIAL) = 37/38.**
+
+> **Post-validación:** **UEM** NO CUMPLE→**PARCIAL** (Doctorado en Ing. de Control y
+> Sistemas Inteligentes); **UCAM** PARCIAL confirmado (Doctorado en Ing. Informática
+> + UKEIM); **IE** NO CUMPLE confirmado (sin PhD Sci-Tech). Conteo autoritativo en
+> `../RESUMEN.md` y la planilla `entregables/`.
 
 > **ⁿ ⚠️ Normalización de consistencia (importante).** El análisis original del país
 > propuso **32 CUMPLE**. Para respetar la **regla de la metodología**

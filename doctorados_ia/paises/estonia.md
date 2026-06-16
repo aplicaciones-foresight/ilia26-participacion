@@ -9,8 +9,8 @@
 | # | Universidad | QS 2026 | Programa doctoral evaluado | Facultad/Escuela | C1 | C2 | C3 | C4 | Clasificación | Confianza |
 |---|---|---|---|---|---|---|---|---|---|---|
 | 1 | University of Tartu | 362 | Doctorado en *Mathematics and Computer Science* (especialización Computer Science) | Faculty of Science and Technology — Institute of Computer Science | Sí | Indicio | NoVerif. | Sí | **PARCIAL** | Media-Alta |
-| 2 | Tallinn University of Technology (TalTech) | ≈621–635¹ | Doctorado en *Information and Communication Technology* | School of IT — Dept. of Software Science | Sí | Indicio | NoVerif. | Indicio | **PARCIAL** | Media |
-| 3 | Tallinn University | 901–950 | Doctorado en *Information Society Technologies* | School of Digital Technologies | Sí | Indicio | NoVerif. | Indicio | **PARCIAL** | Media-Baja |
+| 2 | Tallinn University of Technology (TalTech) | 635 | Doctorado en *Information and Communication Technology* | School of IT — Dept. of Software Science | Sí | Indicio | NoVerif. | Indicio | **PARCIAL** | Media |
+| 3 | Tallinn University | 1001–1200 | Doctorado en *Information Society Technologies* | School of Digital Technologies | Sí | Indicio | NoVerif. | Indicio | **PARCIAL** | Media-Baja |
 
 **Conteo Estonia:** CUMPLE = 0 · PARCIAL = 3 · NO CUMPLE = 0 ·
 **Forman competencias en IA (CUMPLE+PARCIAL) = 3/3.**
@@ -20,7 +20,7 @@
 > individualizado y no hay plan de estudios público que permita confirmar ≥3
 > cursos (C3) → **PARCIAL**. Ninguna es NO CUMPLE.
 
-¹ Discrepancia de fuentes en el puesto de TalTech (una indica =635, otra 621). **Requiere confirmación.**
+**Nota (validado):** TalTech **#635** y Tallinn University **1001–1200** confirmados en QS 2026 (resuelta la discrepancia previa 621/635).
 
 ---
 
@@ -96,4 +96,4 @@
 - TalTech #≈621–635 — `yocket.com/universities/tallinn-university-of-technology-4085/rankings`; `topuniversities.com/universities/tallinn-university-technology-taltech` (⚠ discrepancia 621/635).
 - Tallinn University #901–950 — `universityguru.com/university/tallinn-university-tallinn`; `topuniversities.com/universities/tallinn-university`.
 - Confirmación de que son **3** las estonias en QS 2026: `study.eu/best-universities/estonia` ("top 3"); filtro país `topuniversities.com/world-university-rankings?countries=ee`.
-- **Nota:** *Estonian University of Life Sciences* aparece mencionada pero **no** se confirmó en el QS World 2026 (verificar manualmente si se quiere descartar formalmente).
+- **Validado:** *Estonian University of Life Sciences* **NO** está en el QS World 2026 general (sólo en rankings by-subject). Las 3 estonias del ranking general son **Tartu, TalTech y Tallinn University**.
