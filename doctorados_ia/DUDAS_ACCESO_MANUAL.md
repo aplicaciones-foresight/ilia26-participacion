@@ -59,7 +59,47 @@ Wikipedia…). Toda la clasificación se hizo con **snippets de búsqueda**. Por
 
 ---
 
-## D. España y Alemania
-Se completará esta sección al cerrar los agentes de **ES (38)** y **DE (49)**, con
-sus propios ítems de acceso manual (esperado: muchos doctorados alemanes
-*research-based* sin plan público → C3 `NoVerificable`).
+## D. España (38) — ítems de acceso manual
+
+### 🔴 ALTA (cambian la clasificación)
+1. **UEM (Europea de Madrid)** — NO_CUMPLE provisional (debut QS): confirmar si su
+   Escuela de Doctorado tiene un doctorado Tec/Ing con líneas de IA (tiene Máster
+   en IA + Escuela de Ingeniería). Si sí → PARCIAL/CUMPLE.
+2. **IE University** — NO_CUMPLE provisional: el único PhD confirmado es de **IE
+   Business School (excluido)**. Verificar si la **School of Science & Technology**
+   ofrece doctorado propio en CS/IA. Confirmar también el rank.
+3. **UCAM** — PARCIAL provisional (debut QS): confirmar si **EIDUCAM** ofrece
+   doctorado Tec/Ing con IA; si no, baja a NO_CUMPLE.
+4. **Universidad de Cantabria** — PARCIAL + **pertenencia QS dudosa**: verificar
+   (a) que esté en QS 2026 y (b) doctorado TIC con IA; si no, sustituir
+   (Girona / Lleida / Pública de Navarra / Politécnica de Cartagena / Jaén / Almería).
+
+### 🟠 MEDIA — verificar C2 (perfil) de las 12 reclasificadas CUMPLE→PARCIAL
+**UNIZAR, URV, UCLM, UA, UVigo, UCO, ULL, ULPGC, URL, Comillas, Deusto, UJI**:
+tienen C1 (línea/centro de IA) sólido pero C2=Indicio y C3=NoVerificable. Abrir el
+**perfil de egreso / actividades formativas** del doctorado: si declara IA o ≥3
+cursos → suben a CUMPLE.
+
+### 🟡 BAJA — confirmar C2/C3 de las CUMPLE (ya cuentan)
+UB y UAH (PARCIAL con másteres de IA fuertes); y los puestos exactos de QS (todos
+aprox. salvo UB/UAM y los 3 debuts) en `topuniversities.com/...?countries=es`.
+
+## E. Alemania (49) — ítems de acceso manual
+
+### 🟠 Candidatas a upgrade PARCIAL → CUMPLE (verificar C2/C3)
+- **Potsdam (HPI Research School)**, **Mannheim (DWS — IA/Responsible AI)**,
+  **Kassel (cursos Pattern Recognition & ML I–II)**, **Augsburg (HCAI/ISSE)**,
+  **Paderborn (PACE/SFB)**. En todas C1 es sólido; falta confirmar perfil/cursos
+  doctorales (excluyendo, en Mannheim, la *Business School*).
+
+### 🟡 Confirmar C3 (coursework) de las CUMPLE sin curso público (subir confianza)
+- TUM (MCML PhD), LMU (GraduateCenter), KIT (KCDS), TU Berlin (BIFOLD GS), Freiburg
+  (ELLIS PhD), Bonn (Lamarr), FAU (AIBE), Bremen (AICOR), RPTU (GSCS) — abrir el
+  catálogo de cursos de cada escuela/centro.
+
+### 🔴/🟠 Otros
+- **Hohenheim** (único NO_CUMPLE alemán): verificar si el certificado **AIDAHO**
+  alimenta/asocia un doctorado en CS/Data Science/IA → de ser así, PARCIAL.
+- **Membresía/ranks QS:** posible **debut TU Hamburg-Harburg (TUHH)** y posiciones
+  de la cola (RPTU, Augsburg, Bielefeld, Hohenheim, Düsseldorf) a cotejar en
+  `topuniversities.com/...?countries=de`. Top-29 confirmados por búsqueda.

@@ -18,10 +18,14 @@ en 5 países de referencia (DE, ES, PT, SG, EE). Metodología completa en
 | Estonia (EE) | 3 | ✅ COMPLETO | 0 | 3 | 0 |
 | Singapur (SG) | 4 | ✅ COMPLETO | 4 | 0 | 0 |
 | Portugal (PT) | 9 | ✅ COMPLETO | 6 | 2 | 1 |
-| España (ES) | 38 | ⏳ pendiente | – | – | – |
-| Alemania (DE) | 49 | ⏳ pendiente | – | – | – |
-| **Subtotal hecho** | **16/103** | | **10** | **5** | **1** |
-| **Total objetivo** | **103** | | | | |
+| España (ES) | 38 | ✅ COMPLETO (normalizado) | 20 | 16 | 2 |
+| Alemania (DE) | 49 | ✅ COMPLETO | 18 | 30 | 1 |
+| **TOTAL** | **103/103** | ✅ | **48** | **51** | **4** |
+
+> **Forman competencias en IA (CUMPLE+PARCIAL) = 99/103.** Conteo estricto (sólo
+> CUMPLE) = 48. Ver `RESUMEN.md`. ES/DE se hicieron con agentes `general-purpose`;
+> España se **normalizó** a la regla `CUMPLE ⟺ C1 ∧ (C2=Sí ∨ C3=Sí)` (12 casos
+> CUMPLE→PARCIAL). Alemania ya venía conforme a la regla.
 
 Entregables ya escritos: `paises/estonia.md`, `paises/singapur.md`,
 `paises/portugal.md`, `clasificacion.csv` (16 filas),
