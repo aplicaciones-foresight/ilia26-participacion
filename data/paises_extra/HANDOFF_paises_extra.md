@@ -93,15 +93,15 @@ Detalle/fuentes/dudas por país: `gobernanza_{estonia,singapur,alemania,espana,p
 - **Singapur "Antigüedad" (104):** ¿el Update de may-2026 cuenta como estrategia nueva (→4) o se mantiene NAIS 2.0 2023 (→3)?
 - **ISO SC 42 de Estonia (125)=0:** confirmar a mano en iso.org (confianza MEDIA).
 - **ERNC (145) para ES y PT:** EMBER no separa gran/pequeña hidro. "% renovables total" vs "ERNC excl. gran hidro" difiere mucho (ES hidro ~12%, PT ~31%). Definir cuál usa ILIA.
-- **Patentes:** definir la consulta de IA (CPC G06N narrow vs taxonomía WIPO amplia), atribución (país del solicitante vs del inventor) y ventana de años, **replicando lo que ILIA usó para los demás países**.
+- **Patentes:** definir la consulta de IA (CPC G06N narrow vs taxonomía WIPO amplia), atribución (país del solicitante vs del inventor) y ventana de años, **replicando lo que ILIA usó para los demás países**. → plantillas listas para pegar en `patentes_consultas_lens_espacenet.md` (decisiones D1–D4).
 - **Definiciones "Aplicantes" vs "Inventores" están CRUZADAS en el Excel del operador** (la de "Aplicantes" describe inventores y viceversa) → fijar antes de contar.
 - **Dos "Gobierno Digital" en el Excel** (ID 92 OSI = el elegido; ID 113 = tópico de estrategia, ya cubierto como #113).
 
 ## 8. Inventario de archivos (`data/paises_extra/`)
-**Entregables principales:** `Planilla_ILIA2026_paises_extra.xlsx` (4 hojas: LÉEME, Económicos 5, Gobernanza 5, Pendientes) · `Indicadores_ILIA2026_por_pais.pdf` (PDF por país; **gobernanza solo EE/SG** — pendiente regenerar con DE/ES/PT) · `REPORTE_INDICADORES_5_PAISES.md`.
-**Económicos (.md):** `gasto_id_pib.md`, `desarrollo_aplicaciones_gsma.md`, `empresas_inversion_eto.md`, `desarrollo_ia_hf_orgs.md`, `patentes_ia_oecdai.md`, `gobierno_digital_osi.md`. Datos: `relevancia_sw_resultados.csv`, `desarrollo_apps_gsma_mci2025.csv`, `poblacion_total_worldbank.csv`.
+**Entregables principales:** `Planilla_ILIA2026_paises_extra.xlsx` (4 hojas: LÉEME, Económicos 5, Gobernanza 5, Pendientes) · `Indicadores_ILIA2026_por_pais.pdf` (PDF por país; **gobernanza de los 5 países** ✅ regenerado 2026-06-16, 25 pág) · `REPORTE_INDICADORES_5_PAISES.md`.
+**Económicos (.md):** `gasto_id_pib.md`, `desarrollo_aplicaciones_gsma.md`, `empresas_inversion_eto.md`, `desarrollo_ia_hf_orgs.md`, `patentes_ia_oecdai.md`, `patentes_consultas_lens_espacenet.md` (consultas listas 83/84), `gobierno_digital_osi.md`. Datos: `relevancia_sw_resultados.csv`, `desarrollo_apps_gsma_mci2025.csv`, `poblacion_total_worldbank.csv`.
 **Gobernanza (`gobernanza/`):** `REPORTE_gobernanza_5paises.md`, `RUBRICAS_gobernanza.md`, `gobernanza_{estonia,singapur,alemania,espana,portugal}.md`, `gobernanza_estandares_datos_ciber.md` (EE/SG), `gobernanza_estandares_DE_ES_PT.md`, `etica_seguridad_energia.md` (EE/SG), `etica_seguridad_DE_ES_PT.md`, `energia_DE_ES_PT.md`, `FUENTES_gobernanza_EE_SG.md`, `INCERTIDUMBRES_gobernanza_EE_SG.md`, `REPORTE_gobernanza_EE_SG.md`.
-**Scripts reproducibles:** `github_relevancia_sw.py` (indicador 80), `generar_planilla.py` (xlsx + matriz md), `generar_pdf_indicadores.py` (PDF).
+**Scripts reproducibles:** `datos_gobernanza.py` (**fuente única de gobernanza**: matriz `G` 5 países + rúbricas/fuentes), `github_relevancia_sw.py` (indicador 80), `generar_planilla.py` (xlsx + matriz md), `generar_pdf_indicadores.py` (PDF por país, 5 países).
 
 ## 9. Cómo regenerar
 ```bash
@@ -110,13 +110,13 @@ python3 github_relevancia_sw.py     # recalcula indicador 80 desde GitHub (red: 
 python3 generar_planilla.py         # Planilla .xlsx (5 países) + REPORTE_gobernanza_5paises.md
 python3 generar_pdf_indicadores.py  # PDF por país
 ```
-Para editar valores de gobernanza: la fuente de verdad es la lista `G` en `generar_planilla.py`
-(y `ECON`/`ECON_CELLS` para económicos en `generar_pdf_indicadores.py`).
+Para editar valores de gobernanza: la fuente de verdad es la lista `G` en `datos_gobernanza.py`
+(la consumen el PDF y la planilla, sin copias). Económicos: `ECON`/`ECON_CELLS` en `generar_pdf_indicadores.py`.
 
 ## 10. Próximos pasos sugeridos para la nueva sesión
 1. Si el operador sube **PDFs de estrategias** → parsearlos y cerrar los ítems **PRELIM** (verbatim) de gobernanza.
 2. Si sube **export de GCI 2024 / OSI / ETO CAT** → parsear y rellenar el rojo.
-3. **Regenerar el PDF** para incluir Gobernanza de DE/ES/PT (hoy solo EE/SG): extender `generar_pdf_indicadores.py` con datos de los 5 (o renderizar la matriz `G` de `generar_planilla.py`).
-4. Preparar **consultas Lens/Espacenet** listas para pegar (aplicantes/inventores de patentes).
+3. ✅ HECHO (2026-06-16): el PDF incluye Gobernanza de los 5 países, renderizada desde la matriz `G` (fuente única `datos_gobernanza.py`); planilla y PDF ya no pueden divergir.
+4. ✅ HECHO (2026-06-16): consultas Lens/Espacenet (aplicantes/inventores) listas en `patentes_consultas_lens_espacenet.md` (a la espera de fijar D1–D4 de §7).
 5. Resolver las **decisiones metodológicas abiertas** (§7) con el operador y re-puntuar lo afectado.
 6. Pedir/confirmar la **metodología ILIA 2025** de patentes y de "Relevancia de software" (denominador/ventana) para asegurar comparabilidad.
