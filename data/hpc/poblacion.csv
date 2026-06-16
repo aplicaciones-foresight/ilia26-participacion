@@ -1,0 +1,9 @@
+pais_iso,pais,poblacion,fuente,fecha_dato,nota
+DE,Alemania,83577141,Eurostat,2024-12-31,"WB 2024 ~83.5M; unificar a una sola fuente antes de publicar"
+ES,Espana,49078000,INE (provisional),2025-01-01,"WB 2024 ~48.8M; cifra INE 01-01-2025"
+PT,Portugal,10749600,Eurostat,2025-01-01,"WB 2024 ~10.64M"
+EE,Estonia,1371986,Banco Mundial,2024,"World Bank SP.POP.TOTL 2024"
+SG,Singapur,6036860,Banco Mundial,2024,"World Bank SP.POP.TOTL 2024 (poblacion total, incl. no residentes)"
+# DECISION ABIERTA: fijar UNA sola fuente/anio para los 5 (recomendado: Banco Mundial 2024).
+# data.worldbank.org/indicator/SP.POP.TOTL  ->  EE=1,371,986 ; SG=6,036,860 (verificados).
+# Para DE/ES/PT, sustituir por Banco Mundial 2024 si se exige consistencia estricta de fuente.

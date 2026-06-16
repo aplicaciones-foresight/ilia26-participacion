@@ -1,0 +1,30 @@
+acelerador,fabricante,fp64_vector_tflops,fp64_matrix_tensor_tflops,fp16_bf16_tensor_tflops_denso,uso_principal,nota
+NVIDIA V100 SXM2,NVIDIA,7.8,,125,HPC,FP16 via Tensor Core 1ra gen
+NVIDIA V100 PCIe,NVIDIA,7.0,,112,HPC,
+NVIDIA A100 SXM,NVIDIA,9.7,19.5,312,HPC/IA,sparse FP16 624
+NVIDIA A100 PCIe,NVIDIA,9.7,19.5,312,HPC/IA,mismo computo que SXM
+NVIDIA A30,NVIDIA,5.2,10.3,165,HPC/IA,
+NVIDIA A40,NVIDIA,0.58,,149,Inferencia/Grafica,FP64 muy bajo (1/32 FP32)
+NVIDIA L40,NVIDIA,1.4,,181,Inferencia/Grafica,FP64 muy bajo; verificar
+NVIDIA L40S,NVIDIA,1.4,,362,Inferencia/IA,FP64 muy bajo; verificar
+NVIDIA H100 SXM5,NVIDIA,34,67,989,HPC/IA,sparse FP16 1979; Rpeak HPL usa FP64 TC 67
+NVIDIA H100 PCIe,NVIDIA,26,51,756,HPC/IA,
+NVIDIA H100 NVL,NVIDIA,34,67,989,HPC/IA,por GPU; verificar
+NVIDIA H200 SXM,NVIDIA,34,67,989,HPC/IA,mismo computo que H100; mas HBM
+NVIDIA GH200 (GPU Hopper),NVIDIA,34,67,989,HPC/IA,1 GH200 = 1 GPU Hopper (clase H100)
+NVIDIA GB200 (por GPU Blackwell),NVIDIA,,40,2250,IA,FP64 reducido en Blackwell; VERIFICAR
+NVIDIA B200,NVIDIA,,37,2250,IA,FP64 ~37-40 TC; VERIFICAR
+AMD Instinct MI100,AMD,11.5,,184.6,HPC,
+AMD Instinct MI210,AMD,22.6,45.3,181,HPC,
+AMD Instinct MI250,AMD,45.3,90.5,362.1,HPC,
+AMD Instinct MI250X,AMD,47.9,95.7,383,HPC,usado en LUMI/Frontier
+AMD Instinct MI300A (APU),AMD,61.3,122.6,980.6,HPC/IA,VERIFICAR variante
+AMD Instinct MI300X,AMD,81.7,163.4,1307.4,HPC/IA,verificado AMD datasheet
+AMD Instinct MI325X,AMD,81.7,163.4,1307.4,HPC/IA,mismo computo MI300X; mas HBM; verificar
+Intel Data Center GPU Max 1550 (Ponte Vecchio),Intel,26,52,,HPC,FP64 ~52 con matriz XMX; verificar
+Intel Data Center GPU Max 1100,Intel,22,,,HPC,verificar
+NEC SX-Aurora TSUBASA VE (Type 10/20),NEC,2.45,,,HPC vectorial,por Vector Engine; verificar tipo
+Fujitsu A64FX,Fujitsu,3.4,,,HPC (CPU vectorial),NO es GPU; FP64 por CPU; para sistemas tipo Deucalion-ARM
+# Valores en TFLOP/s pico por tarjeta. Verificar contra datasheet del fabricante.
+# Convencion: para GPU FP64 coherente con Rpeak TOP500, usar la columna fp64_matrix_tensor cuando exista
+# (en NVIDIA datacenter modernas el Rpeak HPL se calcula con FP64 Tensor-Core).
