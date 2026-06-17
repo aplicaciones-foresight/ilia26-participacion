@@ -105,17 +105,18 @@ Detalle/fuentes/dudas por país: `gobernanza_{estonia,singapur,alemania,espana,p
 - ℹ️ **Dos "Gobierno Digital" en el Excel** (ID 92 OSI = el elegido; ID 113 = tópico, ya cubierto): sin acción.
 
 ## 8. Inventario de archivos (`data/paises_extra/`)
-**Entregables principales:** `Planilla_ILIA2026_paises_extra.xlsx` (4 hojas: LÉEME, Económicos 5, Gobernanza 5, Pendientes) · `Indicadores_ILIA2026_por_pais.pdf` (PDF por país; **gobernanza de los 5 países** ✅ regenerado 2026-06-16, 25 pág) · `REPORTE_INDICADORES_5_PAISES.md`.
+**Entregables principales:** `Planilla_ILIA2026_paises_extra.xlsx` (4 hojas: LÉEME, Económicos 5, Gobernanza 5, Pendientes) · `Indicadores_ILIA2026_por_pais.pdf` (PDF por país; **gobernanza de los 5 países** ✅ regenerado 2026-06-16, 25 pág) · **`por_pais/Planilla_<CC>_<País>_ILIA2026.xlsx`** (una por país: lo que hay + lo que falta/cómo obtenerlo por indicador) · **`Resumen_por_pais_ILIA2026.pdf`** (qué se hizo / qué queda por país) · `REPORTE_INDICADORES_5_PAISES.md`.
 **Económicos (.md):** `gasto_id_pib.md`, `desarrollo_aplicaciones_gsma.md`, `empresas_inversion_eto.md`, `desarrollo_ia_hf_orgs.md`, `patentes_ia_oecdai.md`, `patentes_consultas_lens_espacenet.md` (consultas listas 83/84), `gobierno_digital_osi.md`. Datos: `relevancia_sw_resultados.csv`, `desarrollo_apps_gsma_mci2025.csv`, `poblacion_total_worldbank.csv`.
 **Gobernanza (`gobernanza/`):** `REPORTE_gobernanza_5paises.md`, `RUBRICAS_gobernanza.md`, `gobernanza_{estonia,singapur,alemania,espana,portugal}.md`, `gobernanza_estandares_datos_ciber.md` (EE/SG), `gobernanza_estandares_DE_ES_PT.md`, `etica_seguridad_energia.md` (EE/SG), `etica_seguridad_DE_ES_PT.md`, `energia_DE_ES_PT.md`, `FUENTES_gobernanza_EE_SG.md`, `INCERTIDUMBRES_gobernanza_EE_SG.md`, `REPORTE_gobernanza_EE_SG.md`.
-**Scripts reproducibles:** `datos_gobernanza.py` (**fuente única de gobernanza**: matriz `G` 5 países + rúbricas/fuentes), `github_relevancia_sw.py` (indicador 80), `generar_planilla.py` (xlsx + matriz md), `generar_pdf_indicadores.py` (PDF por país, 5 países).
+**Scripts reproducibles:** `datos_gobernanza.py` (**fuente única de gobernanza**: matriz `G` 5 países + rúbricas/fuentes), `github_relevancia_sw.py` (indicador 80), `generar_planilla.py` (xlsx + matriz md), `generar_pdf_indicadores.py` (PDF por país, 5 países), `generar_por_pais.py` (5 planillas por país + PDF resumen por país).
 
 ## 9. Cómo regenerar
 ```bash
 cd data/paises_extra
 python3 github_relevancia_sw.py     # recalcula indicador 80 desde GitHub (red: raw.githubusercontent)
 python3 generar_planilla.py         # Planilla .xlsx (5 países) + REPORTE_gobernanza_5paises.md
-python3 generar_pdf_indicadores.py  # PDF por país
+python3 generar_pdf_indicadores.py  # PDF por país (5 países)
+python3 generar_por_pais.py         # 5 planillas por país (por_pais/) + Resumen_por_pais_ILIA2026.pdf
 ```
 Para editar valores de gobernanza: la fuente de verdad es la lista `G` en `datos_gobernanza.py`
 (la consumen el PDF y la planilla, sin copias). Económicos: `ECON`/`ECON_CELLS` en `generar_pdf_indicadores.py`.
