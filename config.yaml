@@ -165,6 +165,8 @@ descubrimiento:
     - { id: A.12, nombre: "Compras/licitaciones públicas (SECOP, ComprasNet, COMPR.AR, Mercado Público)", operable: true, requiere_anexo_b: false }
     - { id: A.13, nombre: "Premios e innovación pública (Gobernarte-BID, OGP Awards, CLAD, labs)",          operable: true, requiere_anexo_b: false }
     - { id: A.14, nombre: "Proveedores/herramientas (Citibeats, Go Vocal, Pol.is, Remesh, Decidim-IA…)",     operable: true, requiere_anexo_b: false }
+    # Canal de CRUCE con inventario externo (incorporado tras el cruce con BD_IA_LATAM).
+    - { id: A.15, nombre: "Inventario IA sector público ALC (BD_IA_LATAM, Gutiérrez et al.) — cruce contra lo ya identificado (src/cruce_inventario_ia_latam.py)", operable: true, requiere_anexo_b: false }
   # Términos de búsqueda ampliados (cruzar participación × técnica, ES/PT/EN).
   terminos:
     participacion: ["consulta pública", "audiencia pública", "presupuesto participativo",

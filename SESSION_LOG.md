@@ -138,3 +138,28 @@ en `descubrimiento_web.md`, `piloto_busqueda_ampliada.md`,
 - ✅ Ningún número fuera de tablas generadas por el motor.
 - ✅ `candidatos.csv` cubre los 20 países y registra canal de origen.
 - ✅ Toda decisión abierta vive en `config.yaml`, no hardcodeada.
+
+---
+
+## Addendum 2026-06-19 — Canal A.15 (cruce con inventario IA-LATAM)
+
+Cruce del inventario externo **BD_IA_LATAM** (1.028 sistemas de IA del sector
+público de ALC; 1.009 en los 20 países) contra lo ya identificado
+(`candidatos.csv` + baseline). Script reproducible: `src/cruce_inventario_ia_latam.py`
+(canal **A.15** en `config.yaml`); reporte en `data/gates/cruce_inventario_ia_latam.md`.
+
+- Señal de participación: 37 sistemas (la categoría BID «Participación ciudadana
+  e interacción con ciudadanos» mezcla participación con **atención**, así que la
+  mayoría son chatbots de servicio / PQRS / biometría electoral).
+- **1 caso nuevo elegible** incorporado a `candidatos.csv`: **ID 752 — Câmara dos
+  Deputados (BR)**, "Análisis de las opiniones ciudadanas sobre los proyectos de
+  ley" (IA categoriza argumentos a favor/en contra de aportes ciudadanos; distinto
+  del Senado/e-Cidadania). Canal `A.15`, `tipo_baseline=nuevo` → Gate 1 / Fase 2.
+- ID 763 (CL, "Asistente de argumentación") sale por núcleo pero es la plataforma
+  **CAMINAR** (ya en excluidos) y es herramienta para el parlamentario, no aporte
+  ciudadano.
+- Meta-hallazgo: este inventario **no es buena fuente** para el indicador (0 hits
+  en presupuesto participativo / consulta ciudadana / deliberación / cabildo /
+  decidim). El descubrimiento web dirigido ya lo supera; aporte neto = 1 caso.
+- El .xlsx del inventario **no se versiona** (`data/external/*.xlsx` en `.gitignore`);
+  colocarlo en `data/external/BD_IA_LATAM.xlsx` para reproducir el cruce.

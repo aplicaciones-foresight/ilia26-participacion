@@ -15,3 +15,6 @@ Thumbs.db
 
 # Payloads de Fase 2: regenerables con `extract.py --prepare` (evitar bloat)
 data/fetched/*/_payload_*.txt
+
+# Insumo externo del canal A.15 (archivo grande, no versionar)
+data/external/*.xlsx
