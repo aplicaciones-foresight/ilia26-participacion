@@ -29,6 +29,30 @@ def gid(ind):
 def gname(ind):
     return re.sub(r"\s*\(\d+\)\s*$", "", ind)
 
+# Clasificación de cada URL: oficial/primaria (gobierno, BOE/DR, ISO/ITU, OCDE, dato primario)
+# vs secundaria (prensa, despachos, agregadores). Las oficiales se listan primero.
+_SECUNDARIA = ("cms.law", "publico.pt", "observador.pt", "eco.sapo.pt", "dig.watch", "news.err.ee",
+               "statbase.org", "lirneasia.net", "medium.com", "wikipedia.org", "gleichstellungsbericht.de",
+               "regulations.ai", "dlapiperdataprotection.com", "artificialintelligenceact.eu", "tiiny.site")
+_OFICIAL = (".gov", ".gob.es", ".bund.de", "bundesnetzagentur.de", "bmas.de", "bundesregierung.de",
+            "europa.eu", "boe.es", "diariodarepublica.pt", "iso.org", "itu.int", "worldbank.org",
+            "networkreadinessindex.org", "global-index.ai", "globalcenter.ai", "ember-energy.org",
+            "githubusercontent.com", "oecd.ai", "oecd.org", "unesco.org", "aki.ee", "riigiteataja.ee",
+            "riigikantselei.ee", "valitsus.ee", "kratid.ee", "e-estonia.com", "incode2030.gov.pt",
+            "anacom.pt", "cnpd.pt", "aepd.es", "bsc.es", "ki-strategie-deutschland.de",
+            "plattform-lernende-systeme.de", "acatech.de", "knowledge4policy.ec.europa.eu", "asean.org")
+
+def _tipo(url):
+    if any(t in url for t in _SECUNDARIA): return "secundaria"
+    if any(t in url for t in _OFICIAL): return "oficial"
+    return "secundaria"
+
+def _fuentes_txt(urls):
+    ofi = [u for u in urls if _tipo(u) == "oficial"]
+    sec = [u for u in urls if _tipo(u) == "secundaria"]
+    if not (ofi or sec): return "—"
+    return "\n".join([f"[oficial] {u}" for u in ofi] + [f"[secundaria] {u}" for u in sec])
+
 def check_completo():
     """Aborta si falta justificación/fuente para algún subindicador de algún país."""
     ids = [gid(row[1]) for row in G]
@@ -54,11 +78,12 @@ def write_xlsx(cc):
     ws.cell(2, 1, "Puntaje propuesto por la rúbrica + por qué + fuentes. "
                   "Verde=listo · Ámbar=parcial/PRELIM/duda · Rojo=falta (extracción manual). "
                   f"Generado {FECHA}.").font = Font(size=9)
-    ws.cell(3, 1, "Compendio exhaustivo de URLs: gobernanza/FUENTES_gobernanza_EE_SG.md (EE/SG) · "
-                  "gobernanza_<país>.md, gobernanza_estandares_*.md, etica_seguridad_*.md, energia_*.md (DE/ES/PT). "
+    ws.cell(3, 1, "Cada URL va etiquetada [oficial] (gobierno, BOE/Diário da República, ISO/ITU, OCDE, dato primario) "
+                  "o [secundaria] (prensa, despacho, agregador). Compendio exhaustivo: gobernanza/FUENTES_gobernanza_EE_SG.md "
+                  "(EE/SG) · gobernanza_<país>.md, gobernanza_estandares_*.md, etica_seguridad_*.md, energia_*.md (DE/ES/PT). "
                   "Rúbricas: gobernanza/RUBRICAS_gobernanza.md.").font = Font(size=8, italic=True, color="555555")
     headers = ["ID", "Subindicador", "Puntaje\npropuesto", "Escala / rúbrica",
-               "Por qué el puntaje (justificación + confianza)", "Fuentes y URLs"]
+               "Por qué el puntaje (justificación + confianza)", "Fuentes y URLs  ([oficial] primaria · [secundaria] corrobora)"]
     widths = [6, 30, 12, 44, 62, 60]
     hr = 5
     for c, (h, w) in enumerate(zip(headers, widths), 1):
@@ -76,7 +101,7 @@ def write_xlsx(cc):
         rubrica = GOB_META.get(idt, ("", ""))[0]
         just, conf, urls = GOBDET.get(cc, {}).get(idt, ("", "", []))
         porque = just + (f"  [confianza: {conf}]" if conf else "")
-        fuentes = "\n".join(urls) if urls else "—"
+        fuentes = _fuentes_txt(urls)
         s = st(val)
         ws.cell(r, 1, idt); ws.cell(r, 2, name).font = BOLD
         ws.cell(r, 3, val).fill = FILLS[s]; ws.cell(r, 4, rubrica)

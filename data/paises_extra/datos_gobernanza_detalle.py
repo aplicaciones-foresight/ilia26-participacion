@@ -336,3 +336,36 @@ GOBDET["PT"] = {
  "144": ("88,16 en 'Affordable & clean energy' (overall NRI 61,54; rank 32), ed. 2025.", "MEDIA-ALTA", [PT_NRI]),
  "145": ("85,19 % (2024) / 80,95 % (2025) renovable total. Excl. toda hidro 53,69 %; hidro 31,50 % → si ILIA excluyera gran hidro, baja mucho.", "ALTA", [OWID, EMBER]),
 }
+
+# ---- Segundas fuentes verificadas (ninguna celda queda con una sola URL) ----
+# URLs del compendio FUENTES_*.md y de búsqueda (jun-2026). Solo enlaces vistos en resultados.
+AIACT_REF = "https://artificialintelligenceact.eu"
+AIACT_SANDBOX = "https://artificialintelligenceact.eu/ai-regulatory-sandbox-approaches-eu-member-state-overview/"
+WIKI_SC27 = "https://en.wikipedia.org/wiki/ISO/IEC_JTC_1/SC_27"
+GIRAI_CORR = "https://girai-report-2024-corrected-edition.tiiny.site/"
+GLOBALCENTER = "https://www.globalcenter.ai/"
+NRI_FULL = "https://download.networkreadinessindex.org/reports/data/2025/nri-2025.pdf"
+def DLPA(cc): return f"https://www.dlapiperdataprotection.com/?t=authority&c={cc}"
+
+def _add(cc, idt, *urls):
+    j, c, u = GOBDET[cc][idt]
+    GOBDET[cc][idt] = (j, c, u + [x for x in urls if x not in u])
+
+for _cc in GOBDET:                       # ISO SC 27: espejo con lista de miembros
+    _add(_cc, "126", WIKI_SC27)
+for _cc in ("EE", "DE", "ES", "PT"):     # GIRAI: edición corregida + editor (Global Center on AI)
+    _add(_cc, "138", GIRAI_CORR); _add(_cc, "139", GLOBALCENTER)
+_add("ES", "125", JTC1_SC42)
+for _cc in ("SG", "DE", "ES", "PT"):     # Autoridad de datos: ficha DLA Piper (autoridad)
+    _add(_cc, "132", DLPA(_cc))
+_add("ES", "130", AIACT_SANDBOX); _add("EE", "130", AIACT_SANDBOX); _add("SG", "130", SG_MGFGEN)
+_add("SG", "129", SG_AIV); _add("DE", "129", AIACT_REF); _add("PT", "129", AIACT_REF)
+_add("ES", "106", ES_M24); _add("PT", "106", PT_DIGITAL); _add("PT", "112", PT_DIGITAL)
+_add("PT", "124", PT_DIGITAL); _add("PT", "122", PT_CMS)
+_add("DE", "110", DE_KISTRAT); _add("DE", "113", DE_AKT_PDF); _add("DE", "119", DE_KISTRAT)
+_add("SG", "113", SG_NAIS); _add("SG", "118", SG_INFO); _add("SG", "124", SG_MDDI)
+_add("EE", "117", EE_FACT); _add("SG", "117", SG_SN)   # género NO ENCONTRADO: 2ª fuente que tampoco lo recoge
+_add("EE", "144", "https://download.networkreadinessindex.org/reports/countries/2025/estonia.pdf")
+_add("SG", "144", "https://download.networkreadinessindex.org/reports/countries/2025/singapore.pdf")
+_add("ES", "144", "https://download.networkreadinessindex.org/reports/countries/2025/spain.pdf")
+_add("DE", "144", NRI_FULL); _add("PT", "144", NRI_FULL)
