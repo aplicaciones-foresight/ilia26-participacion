@@ -10,12 +10,13 @@ Plan de Acción `https://regulations.ai/regulations/RAI-EE-NA-ADAPKXX-2024` · p
 
 ---
 
-## 1. Cambios de puntaje (2)
+## 1. Cambio de puntaje (1) y corrección
 
 | ID | Subindicador | Antes | Después | Motivo (texto primario) |
 |---|---|---|---|---|
-| **118** | Tópico: Sostenibilidad | 1 (BAJA) | **0** | La sostenibilidad **ambiental** no es *arengusuund* (línea de desarrollo) ni área de acción. "kestlik areng" se refiere al **desarrollo sostenible de la economía de datos** (p.6/26); "rohepööre" aparece 1 sola vez (p.17, conservación de datos). ⚠️ Si ILIA define "Sostenibilidad" en sentido amplio (desarrollo sostenible), se mantendría 1 → **decisión del operador**. |
 | **121** | Multistakeholder (elaboración) | 3 (Gob+2) | **4** (Gob+3) | El "Kaasatud osapooled" enumera Gob + sector privado (ITL, empresas, consorcios, parques científicos) + academia (universidades) + sociedad civil (*vabaühendused*) → Gob+3. |
+
+> **Corrección 2026-06-17 — Sostenibilidad (118) = 1, NO 0.** En una primera lectura bajé 118 a 0 por una **búsqueda incompleta** (faltaron los sinónimos estonios `säästev/säästva`, `energiasäästlik`, `rohejalajälg`, `kestlikkuse tööriist`). La búsqueda exhaustiva confirma que la sostenibilidad/medioambiente **sí se aborda con acciones** (ver §3) → **118 = 1**. Por tanto el **único cambio de la validación es 121 (3→4)**; 118 vuelve a 1, ahora **confirmado** con texto primario (antes era "1 BAJA").
 
 ## 2. Confirmaciones (sin cambio de puntaje; se quita PRELIM)
 
@@ -50,7 +51,7 @@ Plan de Acción `https://regulations.ai/regulations/RAI-EE-NA-ADAPKXX-2024` · p
 | 115 | I+D | 1 | VR §6.1.4/§6.2.5 "**Teadus- ja arendustegevus**"; PA §3.9 "**Teadus- ja arendustegevuse** ning hariduse ja kompetentside suunalised tegevused". | I+D como línea de desarrollo con acciones. |
 | 116 | Cooperación reg./int'l | 1 | VR §6.3.5 "**Rahvusvaheline koostöö**"; PA p.4 "…on ühtlasi Eesti riiklik tehisintellekti strateegia **Euroopa Liidu kooskõlastatud** tehisintellekti tegevuskava mõistes". | Cooperación internacional como sección; alineado al Plan Coordinado de la UE. |
 | 117 | Perspectiva de género | **0** | VR p.30 "**soolist võrdsust mõõdetakse** naiste ja meeste osakaaluna nende inimeste hulgas, kellel on elementaarsed või sellest kõrgema taseme digioskused". | El género aparece **solo como métrica** (desagregación por sexo de competencias digitales), **no** como eje con plan → 0. |
-| 118 | Sostenibilidad | **0** | VR p.6/26 "…tagatud on selle **kestlik areng** – Eesti on maailma suurima andmemajanduse osakaaluga riik"; p.17 "…**rohepööret** arvestades kaaluma, millised andmed väärivad säilitamist". | "kestlik areng" = desarrollo sostenible de la **economía de datos** (no ambiental); "rohepööre" 1 mención. No es eje con plan → 0 (ver ⚠️ §1). |
+| 118 | Sostenibilidad | **1** | PA p.16-17 "…panustamist nn **energiasäästliku ehk «rohelise» TI** arendamisse, eeskätt arvutusefektiivsete meetodite arendamise teel"; VR p.43 "…panust … ning **säästva arengu eesmärke**" (IA del sector público alineada a ODS); VR p.38 "Näide 2 (**kestlikkuse tööriist**)"; PA p.17 "digilahendused, mis aitavad kaasa **kestlikkusele energeetikas, ehituses ja transpordis**"; VR p.13 "**Globaalse rohejalajälje** vähendamise kontekstis…". | IA verde/eficiente, alineación con ODS, herramienta de sostenibilidad, soluciones de energía/edificación/transporte y gestión "verde" de datos → recogido **+ acciones = 1**. |
 
 ## 4. Cita de elaboración multistakeholder (119/121/122)
 

@@ -22,7 +22,7 @@ Detalle/fuentes/dudas por país: gobernanza_<país>.md, FUENTES_*, INCERTIDUMBRE
 |  | Tópico: I+D (115) | 1 | 1 | 1 | 1 | 1 |
 |  | Tópico: Cooperación reg./int'l (116) | 1 | 1 | 1 | 1 | 1 |
 |  | Tópico: Perspectiva de género (117) | 0 | 0 | 0 | 1 (PRELIM) | 0 |
-|  | Tópico: Sostenibilidad (118) | 0 | 1 (PRELIM) | 1 (PRELIM) | 1 | 0 (PRELIM) |
+|  | Tópico: Sostenibilidad (118) | 1 | 1 (PRELIM) | 1 (PRELIM) | 1 | 0 (PRELIM) |
 |  | Particip. ciudadana elaboración (119) | 2 | 1 (PRELIM) | 2 | 3 (PRELIM) | 4 |
 |  | Multistakeholder elaboración (121) | 4 | 3 (PRELIM) | 4 (PRELIM) | 4 (PRELIM) | 5 |
 |  | Multistakeholder implementación (122) | 4 | 4 (PRELIM) | 4 (PRELIM) | 4 | 4 (PRELIM) |

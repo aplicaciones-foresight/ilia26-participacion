@@ -38,7 +38,7 @@ G = [
  ("", "Tópico: I+D (115)", "Estrategia", "1","1","1","1","1",""),
  ("", "Tópico: Cooperación reg./int'l (116)", "Estrategia", "1","1","1","1","1",""),
  ("", "Tópico: Perspectiva de género (117)", "Estrategia", "0","0","0","1 (PRELIM)","0","Solo ES recoge género (mención transversal); resto NO ENCONTRADO/0"),
- ("", "Tópico: Sostenibilidad (118)", "Estrategia", "0","1 (PRELIM)","1 (PRELIM)","1","0 (PRELIM)","EE: validado en Valge raamat (no es eje; 'kestlik areng' = econ. de datos); PT: solo principio en EDN, no eje en ANIA"),
+ ("", "Tópico: Sostenibilidad (118)", "Estrategia", "1","1 (PRELIM)","1 (PRELIM)","1","0 (PRELIM)","EE: validado con texto primario — IA verde/ODS/herramienta de sostenibilidad/rohejalajälg; PT: solo principio en EDN, no eje en ANIA"),
  ("", "Particip. ciudadana elaboración (119)", "Estrategia", "2","1 (PRELIM)","2","3 (PRELIM)","4","EE: stakeholders ('Kaasatud osapooled'), no consulta ciudadana; PT: consulta pública con resultados"),
  ("", "Multistakeholder elaboración (121)", "Estrategia", "4","3 (PRELIM)","4 (PRELIM)","4 (PRELIM)","5","EE: Gob+3 (ITL/empresas + universidades + vabaühendused), p.8/12; PT: Gob+4"),
  ("", "Multistakeholder implementación (122)", "Estrategia", "4","4 (PRELIM)","4 (PRELIM)","4","4 (PRELIM)",""),
