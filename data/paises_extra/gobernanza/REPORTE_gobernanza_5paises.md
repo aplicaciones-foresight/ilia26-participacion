@@ -10,7 +10,7 @@ Detalle/fuentes/dudas por país: gobernanza_<país>.md, FUENTES_*, INCERTIDUMBRE
 | Visión e Institucionalidad | Existencia de estrategia (103) | 3 | 3 | 3 | 3 | 3 |
 |  | Antigüedad (104) | 4 | 4 | 3 | 4 | 4 |
 |  | Actualización (105) | 3 | 3 | 3 | 3 | 3 |
-|  | Mecanismos de evaluación (106) | 3 (PRELIM) | 3 (PRELIM) | 3 | 3 | 3 |
+|  | Mecanismos de evaluación (106) | 3 | 3 (PRELIM) | 3 | 3 | 3 |
 |  | Presupuesto (107) | 3 | 3 | 3 | 3 | 3 |
 |  | Hoja de ruta (108) | 3 | 3 | 3 | 3 | 3 |
 |  | Tópico: Ética y gobernanza (109) | 1 | 1 | 1 | 1 | 1 |
@@ -22,10 +22,10 @@ Detalle/fuentes/dudas por país: gobernanza_<país>.md, FUENTES_*, INCERTIDUMBRE
 |  | Tópico: I+D (115) | 1 | 1 | 1 | 1 | 1 |
 |  | Tópico: Cooperación reg./int'l (116) | 1 | 1 | 1 | 1 | 1 |
 |  | Tópico: Perspectiva de género (117) | 0 | 0 | 0 | 1 (PRELIM) | 0 |
-|  | Tópico: Sostenibilidad (118) | 1 (BAJA) | 1 (PRELIM) | 1 (PRELIM) | 1 | 0 (PRELIM) |
-|  | Particip. ciudadana elaboración (119) | 2 (PRELIM) | 1 (PRELIM) | 2 | 3 (PRELIM) | 4 |
-|  | Multistakeholder elaboración (121) | 3 (PRELIM) | 3 (PRELIM) | 4 (PRELIM) | 4 (PRELIM) | 5 |
-|  | Multistakeholder implementación (122) | 4 (PRELIM) | 4 (PRELIM) | 4 (PRELIM) | 4 | 4 (PRELIM) |
+|  | Tópico: Sostenibilidad (118) | 0 | 1 (PRELIM) | 1 (PRELIM) | 1 | 0 (PRELIM) |
+|  | Particip. ciudadana elaboración (119) | 2 | 1 (PRELIM) | 2 | 3 (PRELIM) | 4 |
+|  | Multistakeholder elaboración (121) | 4 | 3 (PRELIM) | 4 (PRELIM) | 4 (PRELIM) | 5 |
+|  | Multistakeholder implementación (122) | 4 | 4 (PRELIM) | 4 (PRELIM) | 4 | 4 (PRELIM) |
 |  | Institucionalidad (123) | 5 | 5 | 5 | 5 | 5 |
 |  | Coordinación interinstitucional (124) | 3 | 3 | 3 | 3 | 3 |
 | Vinculación Internacional | ISO SC 42 / IA (125) | 0 (DUDA) | 2 | 2 | 2 | 1 |

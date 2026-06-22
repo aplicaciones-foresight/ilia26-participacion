@@ -66,7 +66,7 @@ Detalle: `REPORTE_INDICADORES_5_PAISES.md` + un .md por indicador. Población pe
 
 ## 5. Estado — Bloque B (gobernanza), 5 países
 Matriz consolidada: **`gobernanza/REPORTE_gobernanza_5paises.md`** y hoja "Gobernanza (5 países)" de la planilla.
-Cobertura: **138 verde · 21 ámbar (PRELIM) · 31 rojo (manual)** de 190 celdas.
+Cobertura: **143 verde · 16 ámbar · 31 rojo (manual)** de 190 celdas (Estonia validada con texto primario 2026-06-17).
 - ✅ **Listo** (con dato/puntaje): existencia/antigüedad/actualización/presupuesto/hoja de ruta, 8-9 tópicos, institucionalidad, coordinación, ISO, ley+autoridad de datos, acuerdos int'l, regulación IA, NRI (salvo ES), ERNC.
 - ⚠️ **PRELIM** (sin texto primario de la estrategia): mecanismos de evaluación, género, sostenibilidad, participación ciudadana, multistakeholder, clasificación de riesgo (SG/PT).
 - ❌ **Manual**: **GCI 5 pilares** (solo España completa: 20/20/20/19,74/20), **GIRAI 2 áreas** (los 5), **OSI**, NRI España.
@@ -79,7 +79,7 @@ Detalle/fuentes/dudas por país: `gobernanza_{estonia,singapur,alemania,espana,p
 - 🇪🇸 ES: fuerte (AESIA 1ª agencia IA UE; 1er sandbox UE; EU AI Act + ley nacional; **Género=1**; GCI 5 pilares completos).
 - 🇵🇹 PT: **nueva Agenda 2026-2030** (Antigüedad=4, >€400M, consulta con resultados=4, multistakeholder Gob+4=5); pero **ISO=Observador** (SC42=1/SC27=1), Género=0, Sostenibilidad=0.
 - 🇩🇪 DE: KI-Strategie 2018→Aktionsplan 2023 (Antigüedad=3); €5.000M; EU AI Act+KI-MIG; GPAI fundador; Género=0; GCI total 97,85.
-- 🇪🇪 EE: Antigüedad=4; **ISO SC42=0** (a verificar).
+- 🇪🇪 EE: Antigüedad=4; **ISO SC42=0** (a verificar). **Validada con texto primario** (Valge raamat/Tegevuskava, ver `gobernanza/VALIDACION_estonia_primaria.md`): cambios Sostenibilidad(118)=0 y Multistakeholder elab.(121)=4; resto confirmado (PRELIM retirado).
 - 🇸🇬 SG: iniciativa legal=1 (soft law).
 
 ## 6. Pendientes priorizados (acción manual del equipo)
@@ -107,7 +107,7 @@ Detalle/fuentes/dudas por país: `gobernanza_{estonia,singapur,alemania,espana,p
 ## 8. Inventario de archivos (`data/paises_extra/`)
 **Entregables principales:** `Planilla_ILIA2026_paises_extra.xlsx` (4 hojas: LÉEME, Económicos 5, Gobernanza 5, Pendientes) · `Indicadores_ILIA2026_por_pais.pdf` (PDF por país; **gobernanza de los 5 países** ✅ regenerado 2026-06-16, 25 pág) · **`por_pais/Planilla_<CC>_<País>_ILIA2026.xlsx`** (una por país: lo que hay + lo que falta/cómo obtenerlo por indicador) · **`Resumen_por_pais_ILIA2026.pdf`** (qué se hizo / qué queda por país) · **`por_pais/Gobernanza_<CC>_<País>_ILIA2026.xlsx`** (gobernanza detallada por país: puntaje + escala + por qué + todas las URLs) · `REPORTE_INDICADORES_5_PAISES.md`.
 **Económicos (.md):** `gasto_id_pib.md`, `desarrollo_aplicaciones_gsma.md`, `empresas_inversion_eto.md`, `desarrollo_ia_hf_orgs.md`, `patentes_ia_oecdai.md`, `patentes_consultas_lens_espacenet.md` (consultas listas 83/84), `gobierno_digital_osi.md`. Datos: `relevancia_sw_resultados.csv`, `desarrollo_apps_gsma_mci2025.csv`, `poblacion_total_worldbank.csv`.
-**Gobernanza (`gobernanza/`):** `REPORTE_gobernanza_5paises.md`, `RUBRICAS_gobernanza.md`, `gobernanza_{estonia,singapur,alemania,espana,portugal}.md`, `gobernanza_estandares_datos_ciber.md` (EE/SG), `gobernanza_estandares_DE_ES_PT.md`, `etica_seguridad_energia.md` (EE/SG), `etica_seguridad_DE_ES_PT.md`, `energia_DE_ES_PT.md`, `FUENTES_gobernanza_EE_SG.md`, `INCERTIDUMBRES_gobernanza_EE_SG.md`, `REPORTE_gobernanza_EE_SG.md`.
+**Gobernanza (`gobernanza/`):** `VALIDACION_estonia_primaria.md` (citas verbatim del Valge raamat/Tegevuskava), `REPORTE_gobernanza_5paises.md`, `RUBRICAS_gobernanza.md`, `gobernanza_{estonia,singapur,alemania,espana,portugal}.md`, `gobernanza_estandares_datos_ciber.md` (EE/SG), `gobernanza_estandares_DE_ES_PT.md`, `etica_seguridad_energia.md` (EE/SG), `etica_seguridad_DE_ES_PT.md`, `energia_DE_ES_PT.md`, `FUENTES_gobernanza_EE_SG.md`, `INCERTIDUMBRES_gobernanza_EE_SG.md`, `REPORTE_gobernanza_EE_SG.md`.
 **Scripts reproducibles:** `datos_gobernanza.py` (**fuente única de gobernanza**: matriz `G` 5 países + rúbricas/fuentes), `datos_gobernanza_detalle.py` (justificación "por qué el puntaje" + **URLs específicas a documentos/anuncios, ≥2 fuentes por celda (190/190), etiquetadas oficial/secundaria** por subindicador/país), `github_relevancia_sw.py` (indicador 80), `generar_planilla.py` (xlsx + matriz md), `generar_pdf_indicadores.py` (PDF por país, 5 países), `generar_por_pais.py` (5 planillas por país + PDF resumen), `generar_gobernanza_por_pais.py` (planilla de **gobernanza detallada** por país).
 
 ## 9. Cómo regenerar
