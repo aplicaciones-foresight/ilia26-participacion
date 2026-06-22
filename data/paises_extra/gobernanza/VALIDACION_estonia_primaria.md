@@ -14,7 +14,7 @@ Plan de Acción `https://regulations.ai/regulations/RAI-EE-NA-ADAPKXX-2024` · p
 
 | ID | Subindicador | Antes | Después | Motivo (texto primario) |
 |---|---|---|---|---|
-| **119** | Particip. ciudadana (elaboración) | 2 | **4** | En la elaboración del plan se hicieron **2 encuestas ómnibus con 2150 residentes** (actitudes/expectativas/temores; resultado "**77%** Eesti elanikest suhtub pigem positiivselt", VR p.44) + **220 *kaasamisintervjuud*** (PA p.6). Mecanismo con resultados publicados → 4 (defendible **5**: >1 mecanismo). |
+| **119** | Particip. ciudadana (elaboración) | 2 | **5** | **>1 mecanismo** en la elaboración, con resultados publicados: **2 encuestas ómnibus, 2150 residentes** (resultado "**77%** … suhtub pigem positiivselt", VR p.44) **+ 220 *kaasamisintervjuud*** (PA p.6). 119 mide *mecanismos* (≥2 → 5); el nº de sectores va en 121. |
 | **121** | Multistakeholder (elaboración) | 3 (Gob+2) | **4** (Gob+3) | El "Kaasatud osapooled" enumera Gob + sector privado (ITL, empresas, consorcios, parques científicos) + academia (universidades) + sociedad civil (*vabaühendused*) → Gob+3. |
 
 > **Corrección 2026-06-17 — Sostenibilidad (118) = 1, NO 0.** En una primera lectura bajé 118 a 0 por una **búsqueda incompleta** (faltaron los sinónimos estonios `säästev/säästva`, `energiasäästlik`, `rohejalajälg`, `kestlikkuse tööriist`). La búsqueda exhaustiva confirma que la sostenibilidad/medioambiente **sí se aborda con acciones** (ver §3) → **118 = 1**. Por tanto el **único cambio de la validación es 121 (3→4)**; 118 vuelve a 1, ahora **confirmado** con texto primario (antes era "1 BAJA").

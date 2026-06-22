@@ -39,7 +39,7 @@ G = [
  ("", "Tópico: Cooperación reg./int'l (116)", "Estrategia", "1","1","1","1","1",""),
  ("", "Tópico: Perspectiva de género (117)", "Estrategia", "0","0","0","1 (PRELIM)","0","Solo ES recoge género (mención transversal); resto NO ENCONTRADO/0"),
  ("", "Tópico: Sostenibilidad (118)", "Estrategia", "1","1 (PRELIM)","1 (PRELIM)","1","0 (PRELIM)","EE: validado con texto primario — IA verde/ODS/herramienta de sostenibilidad/rohejalajälg; PT: solo principio en EDN, no eje en ANIA"),
- ("", "Particip. ciudadana elaboración (119)", "Estrategia", "4","1 (PRELIM)","2","3 (PRELIM)","4","EE: 2 encuestas ómnibus (2150 residentes) + 220 entrevistas, resultados publicados; PT: consulta pública con resultados"),
+ ("", "Particip. ciudadana elaboración (119)", "Estrategia", "5","1 (PRELIM)","2","3 (PRELIM)","4","EE: >1 mecanismo (2 encuestas ómnibus 2150 residentes + 220 entrevistas), resultados publicados; PT: consulta pública con resultados"),
  ("", "Multistakeholder elaboración (121)", "Estrategia", "4","3 (PRELIM)","4 (PRELIM)","4 (PRELIM)","5","EE: Gob+3 (ITL/empresas + universidades + vabaühendused), p.8/12; PT: Gob+4"),
  ("", "Multistakeholder implementación (122)", "Estrategia", "4","4 (PRELIM)","4 (PRELIM)","4","4 (PRELIM)",""),
  ("", "Institucionalidad (123)", "Estrategia + OECD.AI", "5","5","5","5","5","ES: SEDIA+AESIA · DE: 3 min+PLS+BNetzA · PT: AMA+FCT+ANACOM"),
