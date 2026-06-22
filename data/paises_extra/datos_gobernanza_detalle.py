@@ -166,7 +166,7 @@ GOBDET["EE"] = {
  "138": ("NO ENCONTRADO; Estonia está cubierta por GIRAI, pero el puntaje por área se renderiza en portal JS/PDF.", "MANUAL", [GIRAI]),
  "139": ("NO ENCONTRADO (portal JS/PDF).", "MANUAL", [GIRAI]),
  "144": ("80,71 (80,7064) en 'Affordable & clean energy', NRI ed. 2025.", "MEDIA-ALTA", [EE_NRI]),
- "145": ("55,75 % (2024) / 59,57 % (2025) de generación renovable. Determinístico: 3,49/6,26 TWh = 55,75 %. ERNC ≈ renovables (hidro ~0,5 %).", "ALTA", [OWID, EMBER]),
+ "145": ("Energía limpia 2025 = 60,26 % (renovables 60,26 % + nuclear 0; incl. hidro 0,48 %). EMBER, determinístico (renov 3,73/6,19 TWh). A confirmar con CENIA.", "ALTA", [EMBER, OWID]),
 }
 
 # ================= SINGAPUR =================
@@ -208,7 +208,7 @@ GOBDET["SG"] = {
  "138": ("NO ENCONTRADO; SG cubierto por GIRAI (score global 53,77). Por área: portal JS/PDF; alt. LIRNEasia Fig.19.", "MANUAL", [GIRAI, SG_LIRNE]),
  "139": ("NO ENCONTRADO (portal JS/PDF; alt. LIRNEasia).", "MANUAL", [GIRAI, SG_LIRNE]),
  "144": ("86,87 (86,8722) en 'Affordable & clean energy', NRI ed. 2025.", "MEDIA-ALTA", [SG_NRI]),
- "145": ("4,93 % (2024) / 5,49 % (2025) de generación renovable. Determinístico: 2,94/59,61 TWh = 4,93 %. Hidro 0 %.", "ALTA", [OWID, EMBER]),
+ "145": ("Energía limpia 2025 = 5,49 % (renovables 5,49 % + nuclear 0; Bio+Solar, sin hidro). EMBER, determinístico (3,30/60,15 TWh). A confirmar con CENIA.", "ALTA", [EMBER, OWID]),
 }
 
 # ================= ALEMANIA =================
@@ -250,7 +250,7 @@ GOBDET["DE"] = {
  "138": ("NO ENCONTRADO; DE cubierto por GIRAI; puntaje por área en portal JS/PDF.", "MANUAL", [GIRAI]),
  "139": ("NO ENCONTRADO (portal JS/PDF).", "MANUAL", [GIRAI]),
  "144": ("86,44 en 'Affordable & clean energy', NRI ed. 2025.", "MEDIA-ALTA", [DE_NRI]),
- "145": ("58,64 % (2024) / 59,09 % (2025) renovable total. Excl. toda hidro 53,84 %; hidro 4,81 %. (ERNC excl. gran hidro: efecto menor.)", "ALTA", [OWID, EMBER]),
+ "145": ("Energía limpia 2025 = 59,09 % (renovables 59,09 % + nuclear 0; incl. hidro 3,91 %). EMBER, determinístico (renov 295,74/500,47 TWh). A confirmar con CENIA.", "ALTA", [EMBER, OWID]),
 }
 
 # ================= ESPAÑA =================
@@ -292,7 +292,7 @@ GOBDET["ES"] = {
  "138": ("NO ENCONTRADO; ES cubierta por GIRAI; puntaje por área en portal JS/PDF.", "MANUAL", [GIRAI]),
  "139": ("NO ENCONTRADO (portal JS/PDF).", "MANUAL", [GIRAI]),
  "144": ("NO OBTENIDO el subíndice (rank NRI global 25); leer en la página país / PDF 2025.", "MANUAL", [ES_NRI]),
- "145": ("57,34 % (2024) / 55,86 % (2025) renovable total. Excl. toda hidro 45,09 %; hidro 12,25 % → si ILIA excluyera gran hidro, baja bastante.", "ALTA", [OWID, EMBER]),
+ "145": ("Energía limpia 2025 = 74,65 % = renovables 55,86 % + NUCLEAR 18,79 % (incl. hidro 11,38 %). EMBER, determinístico ((160,86+54,10)/287,97 TWh). A confirmar con CENIA.", "ALTA", [EMBER, OWID]),
 }
 
 # ================= PORTUGAL =================
@@ -334,7 +334,7 @@ GOBDET["PT"] = {
  "138": ("NO ENCONTRADO; PT cubierto por GIRAI; puntaje por área en portal JS/PDF.", "MANUAL", [GIRAI]),
  "139": ("NO ENCONTRADO (portal JS/PDF).", "MANUAL", [GIRAI]),
  "144": ("88,16 en 'Affordable & clean energy' (overall NRI 61,54; rank 32), ed. 2025.", "MEDIA-ALTA", [PT_NRI]),
- "145": ("85,19 % (2024) / 80,95 % (2025) renovable total. Excl. toda hidro 53,69 %; hidro 31,50 % → si ILIA excluyera gran hidro, baja mucho.", "ALTA", [OWID, EMBER]),
+ "145": ("Energía limpia 2025 = 80,90 % (renovables 80,90 % + nuclear 0; incl. hidro 29,72 %). EMBER, determinístico (renov 41,37/51,14 TWh). A confirmar con CENIA.", "ALTA", [EMBER, OWID]),
 }
 
 # ---- Segundas fuentes verificadas (ninguna celda queda con una sola URL) ----

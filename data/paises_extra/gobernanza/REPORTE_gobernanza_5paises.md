@@ -44,4 +44,4 @@ Detalle/fuentes/dudas por país: gobernanza_<país>.md, FUENTES_*, INCERTIDUMBRE
 |  | GIRAI — Protección de datos y privacidad (138) | NE | NE | NE | NE | NE |
 |  | GIRAI — Seguridad, precisión y confiabilidad (139) | NE | NE | NE | NE | NE |
 |  | Energía limpia y asequible — NRI (144) | 80,71 | 86,87 | 86,44 | PEND | 88,16 |
-|  | % ERNC matriz eléctrica (145) | 55,75% | 4,93% | 58,64% | 57,34% | 85,19% |
+|  | % ERNC matriz eléctrica (145) | 60,26% | 5,49% | 59,09% | 74,65% | 80,90% |

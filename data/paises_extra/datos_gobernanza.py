@@ -60,7 +60,7 @@ G = [
  ("", "GIRAI — Protección de datos y privacidad (138)", "GIRAI", "NE","NE","NE","NE","NE","Portal JS/PDF → extracción manual"),
  ("", "GIRAI — Seguridad, precisión y confiabilidad (139)", "GIRAI", "NE","NE","NE","NE","NE","Idem"),
  ("", "Energía limpia y asequible — NRI (144)", "NRI/Portulans", "80,71","86,87","86,44","PEND","88,16","ES: ver página país NRI"),
- ("", "% ERNC matriz eléctrica (145)", "EMBER", "55,75%","4,93%","58,64%","57,34%","85,19%","2024, renovables total. ES/PT/DE: ERNC excl. gran hidro es menor (ver energia_*.md)"),
+ ("", "% ERNC matriz eléctrica (145)", "EMBER 2025", "60,26%","5,49%","59,09%","74,65%","80,90%","Energía limpia = renovables + NUCLEAR (incl. hidro). EMBER 2025, determinístico (energia_limpia_ember2025.py). Solo ES tiene nuclear (18,79%). A confirmar con CENIA"),
 ]
 
 # Índice de columna de cada país dentro de cada fila de G.

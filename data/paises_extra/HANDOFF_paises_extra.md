@@ -44,7 +44,7 @@ Definiciones/rúbricas salen del Excel del operador `Subindicadores_ILIA_2026_v_
 6. **Relevancia de software (GitHub):** denominador = **repos acumulado total** (suma de los 24 trimestres); **dos versiones**: inbounds total y solo 2025.
 7. **EU AI Act = iniciativa legal (128)=3** en países UE (EE/DE/ES/PT); no se exige ley nacional propia. *(confirmado 2026-06-16)*
 8. **Singapur Antigüedad (104)=4** — el Update NAIS de may-2026 cuenta como estrategia vigente. *(confirmado 2026-06-16)*
-9. **ERNC (145) = % renovables total (EMBER)**, sin excluir gran hidro. *(confirmado 2026-06-16)*
+9. **Energía limpia (145) = renovables + NUCLEAR, incl. hidro (EMBER 2025)**; ES 74,65 · EE 60,26 · SG 5,49 · DE 59,09 · PT 80,90. *(actualizado 2026-06-22; a confirmar con CENIA)*
 10. **Patentes: 83 = país del solicitante · 84 = país del inventor**; CPC/ventana = **replicar ILIA 2025** (pendiente su especificación). *(confirmado 2026-06-16)*
 
 ## 4. Estado — Bloque A (económicos), 5 países
@@ -96,7 +96,7 @@ Detalle/fuentes/dudas por país: `gobernanza_{estonia,singapur,alemania,espana,p
 **RESUELTAS (aplicadas en `G`/docs):**
 - ✅ **EU AI Act como "iniciativa legal" (128)** en países UE (EE/DE/ES/PT): **se acepta** el reglamento UE → **128=3** (ES/DE además ley nacional). 129/130 sin cambio.
 - ✅ **Singapur "Antigüedad" (104):** el Update may-2026 **cuenta como estrategia vigente nueva → 104=4** (aplicado).
-- ✅ **ERNC (145) ES/PT:** **% renovables total (EMBER)** (método único para los 5). ES 57,34% · PT 85,19%.
+- ✅ **Energía limpia (145):** **renovables + nuclear, incl. hidro (EMBER 2025)** → ES 74,65% · EE 60,26% · SG 5,49% · DE 59,09% · PT 80,90% (determinístico `energia_limpia_ember2025.py`; a confirmar con CENIA).
 - ✅ **Patentes — atribución / cruce del Excel:** **83 = país del solicitante · 84 = país del inventor** (ignorar el cruce de definiciones del Excel).
 
 **ABIERTAS / pendientes de insumo:**
