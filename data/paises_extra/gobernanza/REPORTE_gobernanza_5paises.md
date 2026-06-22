@@ -10,7 +10,7 @@ Detalle/fuentes/dudas por país: gobernanza_<país>.md, FUENTES_*, INCERTIDUMBRE
 | Visión e Institucionalidad | Existencia de estrategia (103) | 3 | 3 | 3 | 3 | 3 |
 |  | Antigüedad (104) | 4 | 4 | 3 | 4 | 4 |
 |  | Actualización (105) | 3 | 3 | 3 | 3 | 3 |
-|  | Mecanismos de evaluación (106) | 3 | 3 (PRELIM) | 3 | 3 | 3 |
+|  | Mecanismos de evaluación (106) | 3 | 3 | 3 | 3 | 3 |
 |  | Presupuesto (107) | 3 | 3 | 3 | 3 | 3 |
 |  | Hoja de ruta (108) | 3 | 3 | 3 | 3 | 3 |
 |  | Tópico: Ética y gobernanza (109) | 1 | 1 | 1 | 1 | 1 |
@@ -22,17 +22,17 @@ Detalle/fuentes/dudas por país: gobernanza_<país>.md, FUENTES_*, INCERTIDUMBRE
 |  | Tópico: I+D (115) | 1 | 1 | 1 | 1 | 1 |
 |  | Tópico: Cooperación reg./int'l (116) | 1 | 1 | 1 | 1 | 1 |
 |  | Tópico: Perspectiva de género (117) | 0 | 0 | 0 | 1 (PRELIM) | 0 |
-|  | Tópico: Sostenibilidad (118) | 1 | 1 (PRELIM) | 1 (PRELIM) | 1 | 0 (PRELIM) |
-|  | Particip. ciudadana elaboración (119) | 5 | 1 (PRELIM) | 2 | 3 (PRELIM) | 4 |
-|  | Multistakeholder elaboración (121) | 5 | 3 (PRELIM) | 4 (PRELIM) | 4 (PRELIM) | 5 |
-|  | Multistakeholder implementación (122) | 4 | 4 (PRELIM) | 4 (PRELIM) | 4 | 4 (PRELIM) |
+|  | Tópico: Sostenibilidad (118) | 1 | 1 | 1 (PRELIM) | 1 | 0 (PRELIM) |
+|  | Particip. ciudadana elaboración (119) | 5 | 1 | 2 | 3 (PRELIM) | 4 |
+|  | Multistakeholder elaboración (121) | 5 | 4 | 4 (PRELIM) | 4 (PRELIM) | 5 |
+|  | Multistakeholder implementación (122) | 4 | 4 | 4 (PRELIM) | 4 | 4 (PRELIM) |
 |  | Institucionalidad (123) | 5 | 5 | 5 | 5 | 5 |
 |  | Coordinación interinstitucional (124) | 3 | 3 | 3 | 3 | 3 |
 | Vinculación Internacional | ISO SC 42 / IA (125) | 0 (DUDA) | 2 | 2 | 2 | 1 |
 |  | ISO SC 27 / Seguridad (126) | 2 | 2 | 2 | 2 | 1 |
 |  | Acuerdos internacionales de IA (127) | 2 | 2 | 2 | 2 | 2 |
 | Regulación | Iniciativa legal sobre IA (128) | 3 | 1 | 3 | 3 | 3 |
-|  | Clasificación de riesgo (129) | 1 | 1 (PRELIM) | 1 | 1 | 1 |
+|  | Clasificación de riesgo (129) | 1 | 1 | 1 | 1 | 1 |
 |  | Exploración regulatoria / sandbox (130) | 1 | 1 | 1 | 1 | 1 (PRELIM) |
 |  | Ley de protección de datos (131) | 1 | 1 | 1 | 1 | 1 |
 |  | Autoridad de protección de datos (132) | 1 | 1 | 1 | 1 | 1 |
