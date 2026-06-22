@@ -79,7 +79,7 @@ Detalle/fuentes/dudas por país: `gobernanza_{estonia,singapur,alemania,espana,p
 - 🇪🇸 ES: fuerte (AESIA 1ª agencia IA UE; 1er sandbox UE; EU AI Act + ley nacional; **Género=1**; GCI 5 pilares completos).
 - 🇵🇹 PT: **nueva Agenda 2026-2030** (Antigüedad=4, >€400M, consulta con resultados=4, multistakeholder Gob+4=5); pero **ISO=Observador** (SC42=1/SC27=1), Género=0, Sostenibilidad=0.
 - 🇩🇪 DE: KI-Strategie 2018→Aktionsplan 2023 (Antigüedad=3); €5.000M; EU AI Act+KI-MIG; GPAI fundador; Género=0; GCI total 97,85.
-- 🇪🇪 EE: Antigüedad=4; **ISO SC42=0** (a verificar). **Validada con texto primario** (Valge raamat/Tegevuskava, ver `gobernanza/VALIDACION_estonia_primaria.md`): único cambio Multistakeholder elab.(121)=3→4; Sostenibilidad(118)=1 confirmado (IA verde/ODS/herramienta de sostenibilidad); resto confirmado (PRELIM retirado).
+- 🇪🇪 EE: Antigüedad=4; **ISO SC42=0** (a verificar). **Validada con texto primario** (Valge raamat/Tegevuskava, ver `gobernanza/VALIDACION_estonia_primaria.md`): cambios Particip. ciudadana(119)=2→4 (2 encuestas ómnibus 2150 residentes + 220 entrevistas) y Multistakeholder elab.(121)=3→4; Sostenibilidad(118)=1 y Género(117)=0 confirmados; resto confirmado (PRELIM retirado).
 - 🇸🇬 SG: iniciativa legal=1 (soft law).
 
 ## 6. Pendientes priorizados (acción manual del equipo)

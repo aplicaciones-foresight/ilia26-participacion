@@ -10,10 +10,11 @@ Plan de Acción `https://regulations.ai/regulations/RAI-EE-NA-ADAPKXX-2024` · p
 
 ---
 
-## 1. Cambio de puntaje (1) y corrección
+## 1. Cambios de puntaje (2) y corrección
 
 | ID | Subindicador | Antes | Después | Motivo (texto primario) |
 |---|---|---|---|---|
+| **119** | Particip. ciudadana (elaboración) | 2 | **4** | En la elaboración del plan se hicieron **2 encuestas ómnibus con 2150 residentes** (actitudes/expectativas/temores; resultado "**77%** Eesti elanikest suhtub pigem positiivselt", VR p.44) + **220 *kaasamisintervjuud*** (PA p.6). Mecanismo con resultados publicados → 4 (defendible **5**: >1 mecanismo). |
 | **121** | Multistakeholder (elaboración) | 3 (Gob+2) | **4** (Gob+3) | El "Kaasatud osapooled" enumera Gob + sector privado (ITL, empresas, consorcios, parques científicos) + academia (universidades) + sociedad civil (*vabaühendused*) → Gob+3. |
 
 > **Corrección 2026-06-17 — Sostenibilidad (118) = 1, NO 0.** En una primera lectura bajé 118 a 0 por una **búsqueda incompleta** (faltaron los sinónimos estonios `säästev/säästva`, `energiasäästlik`, `rohejalajälg`, `kestlikkuse tööriist`). La búsqueda exhaustiva confirma que la sostenibilidad/medioambiente **sí se aborda con acciones** (ver §3) → **118 = 1**. Por tanto el **único cambio de la validación es 121 (3→4)**; 118 vuelve a 1, ahora **confirmado** con texto primario (antes era "1 BAJA").
@@ -27,9 +28,7 @@ Plan de Acción `https://regulations.ai/regulations/RAI-EE-NA-ADAPKXX-2024` · p
 | 105 | Actualización | 3 | 3ª generación (2019→2022→2024). |
 | 106 | Mec. de evaluación | 3 | Sección "Tegevuste elluviimine ja seire": *juhtrühmad* (MKM) dirigen y monitorean; metas y *tulemusmõõdikud* en "Eesti digiühiskond 2030" (p.12, 22). |
 | 107 | Presupuesto | 3 | "2019–2021 … eelarve … 10 miljonit eurot, 2022–2023 … 20 miljonit eurot" (Tegevuskava p.4) + €85 M anunciados 2024-26. |
-| 108 | Hoja de ruta | 3 | Plan de Acción con *tegevused* por área (público, privado, T&A, lengua, derecho, HPC). |
-| 119 | Particip. ciudadana (elab.) | 2 | "Kaasatud osapooled" (p.12) = stakeholders organizados, **no** consulta ciudadana abierta con resultados publicados. |
-| 122 | Multistakeholder (impl.) | 4 | *juhtrühmad* (MKM + asutused + "avaliku sektori välised võtmepartnerid", p.12). |
+| 108 | Hoja de ruta | 3 | Plan de Acción con *tegevused* por área (público, privado, T&A, lengua, derecho, HPC). || 122 | Multistakeholder (impl.) | 4 | *juhtrühmad* (MKM + asutused + "avaliku sektori välised võtmepartnerid", p.12). |
 | 123 | Institucionalidad | 5 | Autoría: MKM + Justiitsministeerium + HTM + Riigikantselei (>1 institución). |
 | 124 | Coordinación interinst. | 3 | *juhtrühmad* interinstitucionales liderados por MKM (p.12). |
 | 128 | Iniciativa legal | 3 | EU AI Act; el AP es la estrategia nacional EE "EL kooskõlastatud tegevuskava mõistes" (p.4). |
@@ -50,7 +49,7 @@ Plan de Acción `https://regulations.ai/regulations/RAI-EE-NA-ADAPKXX-2024` · p
 | 114 | Industria y emprendimiento | 1 | VR p.6 "jätkuv innovatsioon ja **kasvav konkurentsivõime erasektoris**"; PA §2.5 "**Erasektori** suunalised tegevused". | Innovación y competitividad del sector privado; área de acción dedicada. |
 | 115 | I+D | 1 | VR §6.1.4/§6.2.5 "**Teadus- ja arendustegevus**"; PA §3.9 "**Teadus- ja arendustegevuse** ning hariduse ja kompetentside suunalised tegevused". | I+D como línea de desarrollo con acciones. |
 | 116 | Cooperación reg./int'l | 1 | VR §6.3.5 "**Rahvusvaheline koostöö**"; PA p.4 "…on ühtlasi Eesti riiklik tehisintellekti strateegia **Euroopa Liidu kooskõlastatud** tehisintellekti tegevuskava mõistes". | Cooperación internacional como sección; alineado al Plan Coordinado de la UE. |
-| 117 | Perspectiva de género | **0** | VR p.30 "**soolist võrdsust mõõdetakse** naiste ja meeste osakaaluna nende inimeste hulgas, kellel on elementaarsed või sellest kõrgema taseme digioskused". | El género aparece **solo como métrica** (desagregación por sexo de competencias digitales), **no** como eje con plan → 0. |
+| 117 | Perspectiva de género | **0** | VR p.30 "**soolist võrdsust mõõdetakse** naiste ja meeste osakaaluna…" (única mención de igualdad, como métrica). Barrido exhaustivo: **solo 5 coincidencias** de género en ambos PDF; "diskrimineerimine" es genérica (riesgo p.20; proyecto algorítmico EE-LT p.55, no de género). | Género solo como **variable de medición**; sin proyecto/cuota/presupuesto/campaña de género. Inclusión vía accesibilidad/*erivajadused* y territorio. → 0 (validado, coincide con la revisión externa). |
 | 118 | Sostenibilidad | **1** | PA p.16-17 "…panustamist nn **energiasäästliku ehk «rohelise» TI** arendamisse, eeskätt arvutusefektiivsete meetodite arendamise teel"; VR p.43 "…panust … ning **säästva arengu eesmärke**" (IA del sector público alineada a ODS); VR p.38 "Näide 2 (**kestlikkuse tööriist**)"; PA p.17 "digilahendused, mis aitavad kaasa **kestlikkusele energeetikas, ehituses ja transpordis**"; VR p.13 "**Globaalse rohejalajälje** vähendamise kontekstis…". | IA verde/eficiente, alineación con ODS, herramienta de sostenibilidad, soluciones de energía/edificación/transporte y gestión "verde" de datos → recogido **+ acciones = 1**. |
 
 ## 4. Cita de elaboración multistakeholder (119/121/122)
