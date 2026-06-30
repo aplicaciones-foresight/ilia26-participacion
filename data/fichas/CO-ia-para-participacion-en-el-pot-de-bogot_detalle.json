@@ -1,0 +1,95 @@
+{
+ "caso_id": "CO-ia-para-participacion-en-el-pot-de-bogot",
+ "pais": "CO",
+ "nombre_caso": "IA para participación en el POT de Bogotá (Control Visible / Auditoría General)",
+ "bloque": "1-dudoso",
+ "proceso_participativo": "El proceso participativo REAL de referencia es la formulación/revisión del Plan de Ordenamiento Territorial (POT) de Bogotá, cuyo convocante sería la Secretaría Distrital de Planeación / Concejo de Bogotá (gobierno local). SIN EMBARGO, el caso documentado NO es un despliegue institucional dentro de ese proceso: es un ARTÍCULO ACADÉMICO ('Factibilidad de inteligencia artificial para la participación ciudadana en la planificación urbana de Bogotá: caso del POT') de una investigación aplicada de enfoque mixto y alcance exploratorio que mide la FACTIBILIDAD/ACEPTACIÓN de una herramienta de IA PROPUESTA para fomentar la participación ciudadana en el POT. La 'participación' del estudio consistió en encuestar a 395 ciudadanos y entrevistar a expertos urbanistas para evaluar la aceptación de la propuesta, NO en aplicar IA al contenido de aportes ciudadanos de un proceso participativo institucional en curso.",
+ "ano_inicio": 2025,
+ "ano_cierre": 2025,
+ "estado_actividad": "cerrado",
+ "evidencia_actividad_2026": "No se hallaron evidencias de actividad en 2026. El producto es un artículo de investigación publicado el 26-jun-2025 en la revista Control Visible (Vol. 5(5), pp. 146-165, DOI 10.70254/controlvisible.2025.5.63). No se halló evidencia de que la herramienta de IA propuesta haya sido implementada institucionalmente por la Secretaría Distrital de Planeación, el Concejo de Bogotá ni la Auditoría General después de la publicación, ni de continuidad operativa en 2026.",
+ "organizacion_a_cargo": "Autores afiliados a la Fundación Universitaria del Área Andina (Areandina), Maestría en Innovación (estudiantes de maestría y docentes con formación de PhD/Máster). La revista Control Visible es editada y publicada por la Auditoría General de la República de Colombia mediante convocatoria abierta y permanente a investigadores y académicos externos; es decir, la Auditoría es la EDITORA de la revista, NO la institución que ejecuta o despliega el estudio/herramienta. El convocante del PROCESO participativo de referencia (POT) sería gobierno local (SDP/Concejo de Bogotá), distinto de los autores del estudio.",
+ "tipo_convocante": [
+  "universidad"
+ ],
+ "tipo_organizacion": "Público",
+ "tipo_proceso": [
+  "Participación Digital"
+ ],
+ "etapas_uso_IA": [],
+ "continuidad": "Uso único",
+ "nivel_consolidacion": 0,
+ "sistema_IA": "Herramienta de inteligencia artificial PROPUESTA (no desplegada) orientada a fomentar la participación ciudadana en la planificación urbana (POT). El artículo evalúa la factibilidad de aceptación de dicha herramienta; no se identifica una IA en operación procesando aportes reales, ni el modelo/familia técnica concreta, ni un prototipo funcional verificado en producción.",
+ "tipos_IA_familia": null,
+ "usa_LLM_generativa": "no-claro",
+ "funcion_IA": "Función PROPUESTA (no implementada institucionalmente): según el estudio, una herramienta de IA permitiría a la ciudadanía expresar observaciones y perspectivas de forma más efectiva y mejoraría la transparencia y accesibilidad de la participación en la toma de decisiones del POT. El estudio en sí no aplica IA sobre el contenido de aportes ciudadanos de un proceso institucional, sino que mide la aceptación de la propuesta vía encuesta (395 ciudadanos) y entrevistas a expertos.",
+ "rol_IA": "no-claro",
+ "usa_IA_en_proceso": "no-claro",
+ "tipo_desarrollador_IA": [
+  "Academia"
+ ],
+ "origen_desarrollador": "Nacional",
+ "entra_tentativo": "DUDA",
+ "justificacion_elegibilidad": "DUDA con fuerte inclinación a NO ENTRAR. El criterio de elegibilidad exige que dentro de un proceso participativo se use IA sobre el CONTENIDO de los aportes ciudadanos, con DESPLIEGUE real institucional. Aquí el caso documentado es un ARTÍCULO ACADÉMICO (Fundación Universitaria del Área Andina, Maestría en Innovación; publicado en la revista Control Visible de la Auditoría General) de una 'investigación aplicada de enfoque mixto y alcance exploratorio dada la innovación de la propuesta', cuyo objetivo es 'identificar la factibilidad de aceptación de una herramienta de inteligencia artificial' para la participación en el POT. Es decir, PROPONE/EVALÚA una herramienta de IA y mide su aceptación encuestando a 395 ciudadanos y entrevistando a expertos urbanistas; NO despliega IA sobre aportes reales de un proceso participativo institucional en curso. Según la regla 'si es un ARTÍCULO ACADÉMICO que PROPONE/DISEÑA una metodología sin DESPLIEGUE real institucional → DUDA/NO'. No se halló evidencia de que la Secretaría Distrital de Planeación, el Concejo de Bogotá o la Auditoría hayan implementado la herramienta. Por ello: usa_IA_en_proceso=no-claro (la encuesta es metodología de investigación, no IA aplicada a aportes), rol_IA=no-claro, nivel_consolidacion=0 (ni anuncio institucional de despliegue), tipo_convocante=universidad (autor del estudio; el convocante del POT —gobierno local— no es quien hace ni despliega el estudio).",
+ "confianza": "MEDIA",
+ "evidencia_verbatim": {
+  "pais": "Factibilidad de inteligencia artificial para la participación ciudadana en la planificación urbana de Bogotá: caso del POT",
+  "tipo_proceso": "El objetivo de la investigación es identificar la factibilidad de aceptación de una herramienta de inteligencia artificial orientada a fomentar la participación ciudadana en los procesos de toma de decisiones dentro de la planificación urbana de Bogotá, específicamente en el Plan de Ordenamiento Territorial (POT).",
+  "etapas_uso_IA": null,
+  "estado_actividad": "El estudio fue publicado en la revista Control Visible, Vol. 5 (2025), pp. 146-165, con DOI: 10.70254/controlvisible.2025.5.63.",
+  "nivel_consolidacion": "Se llevó a cabo una investigación aplicada de enfoque mixto y alcance exploratorio dada la innovación de la propuesta. Se recolectaron datos de 395 ciudadanos y de entrevistas a expertos urbanistas.",
+  "tipo_convocante": "A researcher from Fundación Universitaria del Área Andina conducted research to identify the feasibility of acceptance of an artificial intelligence tool aimed at promoting citizen participation in decision-making processes within urban planning in Bogotá, specifically in the Territorial Organization Plan (POT).",
+  "usa_IA_en_proceso": "Se recolectaron datos de 395 ciudadanos y de entrevistas a expertos urbanistas. Los resultados reflejan que la herramienta mejora significativamente la transparencia y accesibilidad, aunque persisten desafíos relacionados con la inclusión de sectores vulnerables y la percepción de representatividad.",
+  "rol_IA": null
+ },
+ "fuentes": [
+  {
+   "url": "https://controlvisible.auditoria.gov.co/index.php/rcf/article/view/63",
+   "estado": "403 (WebFetch y curl bloqueados: CONNECT tunnel failed / 403 por policy denial del gateway de egreso hacia auditoria.gov.co; metadatos y resumen recuperados vía WebSearch)",
+   "cita": "Factibilidad de inteligencia artificial para la participación ciudadana en la planificación urbana de Bogotá: caso del POT. El objetivo de la investigación es identificar la factibilidad de aceptación de una herramienta de inteligencia artificial orientada a fomentar la participación ciudadana en los procesos de toma de decisiones dentro de la planificación urbana de Bogotá, específicamente en el Plan de Ordenamiento Territorial (POT). Se llevó a cabo una investigación aplicada de enfoque mixto y alcance exploratorio dada la innovación de la propuesta. Se recolectaron datos de 395 ciudadanos y de entrevistas a expertos urbanistas. Los resultados reflejan que la herramienta mejora significativamente la transparencia y accesibilidad, aunque persisten desafíos relacionados con la inclusión de sectores vulnerables y la percepción de representatividad. Publicado en Control Visible, Vol. 5(5), pp. 146-165, DOI 10.70254/controlvisible.2025.5.63 (publicado 26-jun-2025)."
+  },
+  {
+   "url": "https://controlvisible.auditoria.gov.co/index.php/rcf/article/view/63/103",
+   "estado": "403 (vista HTML 'Vista'/galley del artículo; WebFetch y curl bloqueados por policy denial del gateway; URL identificada vía WebSearch como versión de lectura del artículo)",
+   "cita": "Vista de Factibilidad de inteligencia artificial para la participación ciudadana en la planificación urbana de Bogotá: caso del POT | Control Visible (galley HTML del artículo view/63)."
+  },
+  {
+   "url": "https://controlvisible.auditoria.gov.co/index.php/rcf",
+   "estado": "403 (página de la revista; WebFetch/curl bloqueados; contenido recuperado vía WebSearch)",
+   "cita": "Control Visible es una revista financiada, editada y publicada por la Auditoría General de la República de Colombia, con convocatoria abierta y permanente que invita a investigadores y académicos externos a publicar artículos sobre control fiscal y gestión pública."
+  },
+  {
+   "url": "https://doi.org/10.70254/controlvisible.2025.5.63",
+   "estado": "no-verificado-directo (DOI del artículo; resolución no abierta vía WebFetch por bloqueo del gateway al destino auditoria.gov.co; DOI consistente entre múltiples resultados de WebSearch)",
+   "cita": "DOI 10.70254/controlvisible.2025.5.63 — Control Visible, Vol. 5, núm. 5 (2025), pp. 146-165."
+  }
+ ],
+ "gaps": [
+  {
+   "campo": "organizacion_a_cargo (nombres y afiliación exacta de autores)",
+   "motivo": "WebSearch confirma de forma consistente que los autores están afiliados a la Fundación Universitaria del Área Andina (Maestría en Innovación: estudiante(s) de maestría —especialista en gerencia de proyectos y en auditoría forense— y docentes PhD/Máster), pero el sitio devuelve 403 a WebFetch/curl y no se pudo leer la página de créditos para listar nombres completos verbatim.",
+   "url_para_buscar": "https://controlvisible.auditoria.gov.co/index.php/rcf/article/view/63"
+  },
+  {
+   "campo": "usa_IA_en_proceso / rol_IA / sistema_IA (¿prototipo real o solo propuesta conceptual?)",
+   "motivo": "El resumen indica claramente una evaluación de 'factibilidad de aceptación' de una herramienta de IA (propuesta) mediante encuesta y entrevistas. No se pudo leer el texto completo para confirmar si se construyó algún prototipo/demostrador técnico de la herramienta o si la IA queda íntegramente en el plano propositivo. En cualquier caso no hay despliegue institucional en el proceso del POT.",
+   "url_para_buscar": "https://controlvisible.auditoria.gov.co/index.php/rcf/article/view/63/103"
+  },
+  {
+   "campo": "tipos_IA_familia / usa_LLM_generativa / funcion_IA (detalle técnico)",
+   "motivo": "No se identificó en las fuentes accesibles la familia técnica de IA propuesta (p. ej. NLP/clasificación/clustering/LLM) ni si contempla IA generativa. El acceso al PDF está bloqueado por el gateway (403).",
+   "url_para_buscar": "https://controlvisible.auditoria.gov.co/index.php/rcf/article/download/63/103"
+  },
+  {
+   "campo": "estado_actividad / despliegue institucional posterior",
+   "motivo": "No se halló evidencia (prensa o fuente oficial) de que la Secretaría Distrital de Planeación, el Concejo de Bogotá o la Auditoría General hayan adoptado o implementado la herramienta propuesta tras la publicación de jun-2025. Confirma carácter de estudio, no de piloto institucional.",
+   "url_para_buscar": "https://www.sdp.gov.co/gestion-territorial/plan-de-ordenamiento-territorial"
+  }
+ ],
+ "alertas": [
+  "ELEGIBILIDAD: Caso clasificado DUDA con fuerte inclinación a NO. Es un ARTÍCULO ACADÉMICO/ESTUDIO EXPLORATORIO de la Fundación Universitaria del Área Andina (publicado en la revista Control Visible de la Auditoría General) que PROPONE y mide la factibilidad/aceptación de una herramienta de IA para la participación en el POT, encuestando a 395 ciudadanos y entrevistando expertos. NO es un piloto ni despliegue institucional que aplique IA sobre el contenido de aportes ciudadanos de un proceso participativo real en curso. Según la regla de elegibilidad, propuesta/diseño sin despliegue institucional → DUDA/NO.",
+  "DISTINCIÓN CONVOCANTE vs AUTOR: El convocante del PROCESO participativo de referencia (POT) sería el gobierno local (Secretaría Distrital de Planeación / Concejo de Bogotá), pero el ESTUDIO lo realizan autores académicos (Areandina) y lo publica la Auditoría General como editora de revista. Para tipo_convocante se consigna 'universidad' por ser quien produce/conduce el caso documentado (el estudio); NO se atribuye a la Auditoría la ejecución de la herramienta (solo edita la revista), ni se atribuye al gobierno local un despliegue que no se documenta.",
+  "ACCESO BLOQUEADO: El dominio controlvisible.auditoria.gov.co (y auditoria.gov.co) devuelve 403 a WebFetch y a curl (CONNECT tunnel failed, response 403) por policy denial del gateway de egreso. Todo el contenido verbatim y los metadatos se recuperaron vía la herramienta WebSearch, que sí accede al texto subyacente. Las citas en español del resumen son fiables y consistentes entre varias consultas independientes; una cita de tipo_convocante quedó disponible solo en su versión en inglés (paráfrasis de WebSearch del original) y se marca como tal. No se pudo verificar puntuación/ortografía carácter a carácter ni listar nombres de autores.",
+  "NO CONFUNDIR con casos distintos hallados en las búsquedas que SÍ son despliegues institucionales y constituyen otros casos potenciales: (a) Secretaría Distrital de Planeación de Bogotá — 'Por primera vez la ciudadanía podrá participar en la construcción del Plan de Desarrollo de Bogotá a través de Inteligencia Artificial' (sdp.gov.co); (b) 'Chatico', asistente virtual de Bogotá (2022). Ambos son ajenos a este artículo del POT y no deben fusionarse con esta ficha."
+ ]
+}

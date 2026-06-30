@@ -1,0 +1,97 @@
+{
+ "caso_id": "CO-EXC-asamblea-itinerante",
+ "pais": "CO",
+ "nombre_caso": "Asamblea Ciudadana Itinerante del Concejo de Bogotá",
+ "bloque": "3-excluido-revisar",
+ "proceso_participativo": "Asamblea ciudadana deliberativa, itinerante, integrada por grupos cambiantes de ciudadanos seleccionados por sorteo (muestreo estratificado) que representan las 20 localidades de Bogotá, con paridad de género y diversidad. Funciona de forma espiral: cada capitulo incorpora resultados y aprendizajes de los anteriores. Convocada por el Concejo de Bogota a traves de DemoLab (Laboratorio de Concejo Abierto). Ediciones en 2020, 2021 y 2023. Los participantes reciben formacion previa, deliberan en comisiones tematicas y entregan recomendaciones al Concejo.",
+ "ano_inicio": 2020,
+ "ano_cierre": null,
+ "estado_actividad": "no-claro",
+ "evidencia_actividad_2026": "No se hallo evidencia de una nueva edicion de la Asamblea Ciudadana Itinerante del Concejo de Bogota en 2024-2026. La ultima edicion documentada es la tercera (mayo 2023). En 2024-2027 existe una iniciativa distinta y separada (Asambleas Deliberativas #SumemosVoces de la Alcaldia/Secretaria Distrital de Planeacion, con una Meta Asamblea en octubre 2024), que no es el mismo proceso del Concejo de Bogota.",
+ "organizacion_a_cargo": "Concejo de Bogota a traves de DemoLab (Laboratorio de Concejo Abierto), con aliados: Instituto de Politica Abierta, Fundacion Corona, Ideemos, Universidad Nacional de Colombia y Fundacion Grupo Social.",
+ "tipo_convocante": [
+  "gobierno local"
+ ],
+ "tipo_organizacion": "Público",
+ "tipo_proceso": [
+  "Mini públicos"
+ ],
+ "etapas_uso_IA": [],
+ "continuidad": "Plataforma",
+ "nivel_consolidacion": 3,
+ "sistema_IA": null,
+ "tipos_IA_familia": [],
+ "usa_LLM_generativa": "no-claro",
+ "funcion_IA": null,
+ "rol_IA": "no-claro",
+ "usa_IA_en_proceso": "no-claro",
+ "tipo_desarrollador_IA": [],
+ "origen_desarrollador": null,
+ "entra_tentativo": "NO",
+ "justificacion_elegibilidad": "El proceso es elegible en su forma (mini-publico deliberativo recurrente convocado por gobierno local: Concejo de Bogota via DemoLab; 3 ediciones 2020/2021/2023). Sin embargo, NO se encontro evidencia de uso de inteligencia artificial sobre el CONTENIDO de los aportes ciudadanos dentro del proceso participativo. La metodologia describe 'instrumentos que facilitan la sistematizacion' como innovacion metodologica/manual, sin mencion de IA, PLN ni analisis automatizado de propuestas. Las referencias a IA halladas pertenecen a iniciativas SEPARADAS: (1) un estudio academico de 'Factibilidad de inteligencia artificial para la participacion ciudadana en la planificacion urbana de Bogota: caso del POT', que es investigacion de aceptacion/factibilidad de una herramienta PROPUESTA, no desplegada en la Asamblea; (2) politicas distritales de uso de IA en entidades publicas. Se mantiene la exclusion de 2025 ('No se encontro informacion sobre el uso de la IA en la implementacion de los Mini Publics'). Decision: MANTENER EXCLUIDO (entra=NO).",
+ "confianza": "MEDIA",
+ "evidencia_verbatim": {
+  "pais": "Llega al Concejo de Bogota, la tercera Asamblea Ciudadana que busca ponerle la lupa al trabajo realizado en la ciudad (Concejo de Bogota D.C.)",
+  "tipo_proceso": "The experience is organized following a 'mini-public' format, with sampling from more than 1 million households to select 1,000 representatives of Bogota citizens.",
+  "etapas_uso_IA": null,
+  "estado_actividad": "The assembly has taken place three times so far (2020, 2021, 2023). In 2023, the aim of the itinerant citizens' assembly was to develop a vision for the next four years to 2027 about key issues policy makers need to prioritize.",
+  "nivel_consolidacion": "In December 2020, the Bogota Council through DemoLab organized the first Itinerant Citizen Assembly of Colombia. (...) The assembly has taken place three times so far (2020, 2021, 2023).",
+  "tipo_convocante": "In December 2020, the Council of Bogota through DemoLab organized the first Traveling Citizen Assembly of Colombia. (...) The Concejo de Bogota, in partnership with Instituto de Politica Abierta, Fundacion Corona, Ideemos, the Universidad Nacional de Colombia and Fundacion Grupo Social, created a space for citizen participation and political representation.",
+  "usa_IA_en_proceso": null,
+  "rol_IA": null
+ },
+ "fuentes": [
+  {
+   "url": "https://concejodebogota.gov.co/llega-al-concejo-de-bogota-la-tercera-asamblea-ciudadana-que-busca/cbogota/2023-05-23/084537.php",
+   "estado": "403",
+   "cita": "Llega al Concejo de Bogota, la tercera Asamblea Ciudadana que busca ponerle la lupa al trabajo realizado en la ciudad. The third Asamblea Ciudadana Itinerante took place on May 27, 2023, with 120 randomly selected people meeting to deliberate on environment, mobility, security and public space. The summoned citizens were divided into 4 commissions, each commission was made up of 3 groups of 10 people. Sortition was used to select citizens among the 20 districts of the city of Bogota to provide input in different policies. (contenido accesible solo via snippet de WebSearch; WebFetch devolvio 403)"
+  },
+  {
+   "url": "https://participate.oidp.net/processes/award2023/f/277/proposals/3170",
+   "estado": "403",
+   "cita": "Bogota: Itinerant Citizen Assembly - Deliberation - 2023 Award 'Best Practice in Citizen Participation' (OIDP). The Assembly was designed as an organ that meets in an itinerant manner over four years, with thematic unity and meaning, integrated by changing groups of randomly selected citizens, functioning in a spiral since each chapter incorporates the results and lessons learned from the previous ones. (WebFetch 403; contenido via snippet de WebSearch)"
+  },
+  {
+   "url": "https://latinno.net/en/case/5348/",
+   "estado": "403",
+   "cita": "Itinerant Citizen Assembly of Bogota (LATINNO). In 2020, the Citizen Assembly identified 30 difficulties and presented 34 proposals related to territorial ordering of the city, with 110 people participating in 6 thematic commissions. In 2021, 63 people organized into 7 commissions provided recommendations to the Territorial Ordering Plan. (WebFetch 403; contenido via snippet de WebSearch)"
+  },
+  {
+   "url": "https://demolab.com.co/que-es-demolab/",
+   "estado": "403",
+   "cita": "DemoLab is the Laboratory of Open Council of Bogota, the first laboratory of public innovation and open government of a corporation in Colombia. The design of instruments that facilitate systematization is highlighted as one of the innovations implemented to address barriers to participation. (WebFetch 403; contenido via snippet de WebSearch; no menciona IA en la sistematizacion)"
+  },
+  {
+   "url": "https://controlvisible.auditoria.gov.co/index.php/rcf/article/view/63",
+   "estado": "403",
+   "cita": "Factibilidad de inteligencia artificial para la participacion ciudadana en la planificacion urbana de Bogota: caso del POT. The research aimed to identify the feasibility of acceptance of an artificial intelligence tool designed to promote citizen participation in decision-making processes within Bogota's urban planning, specifically in the Territorial Ordering Plan (POT). (Estudio de FACTIBILIDAD/aceptacion de una herramienta PROPUESTA, no desplegada en la Asamblea; WebFetch 403; contenido via snippet de WebSearch)"
+  },
+  {
+   "url": "https://participedia.net/case/13159",
+   "estado": "403",
+   "cita": "Bogota Itinerant Citizens' Assembly (Participedia). Caso documentado del mini-publico deliberativo del Concejo de Bogota. (WebFetch 403; pagina indexada en WebSearch)"
+  }
+ ],
+ "gaps": [
+  {
+   "campo": "usa_IA_en_proceso / rol_IA / etapas_uso_IA",
+   "motivo": "No se encontro ninguna fuente que documente el uso de inteligencia artificial (PLN, ML, LLM, analisis automatizado) sobre el contenido de los aportes/propuestas ciudadanas dentro de la Asamblea Ciudadana Itinerante. La sistematizacion descrita es metodologica/manual. Las menciones de IA corresponden a iniciativas separadas (estudio de factibilidad POT y politicas distritales de IA).",
+   "url_para_buscar": "https://participate.oidp.net/processes/award2023/f/277/proposals/3170"
+  },
+  {
+   "campo": "estado_actividad / evidencia_actividad_2026",
+   "motivo": "No se hallo evidencia de una cuarta edicion de la Asamblea Ciudadana Itinerante del Concejo de Bogota en 2024-2026. La ultima documentada es la tercera (2023). Las Asambleas Deliberativas 2024-2027 son una iniciativa distinta de la Alcaldia/SDP, no del Concejo.",
+   "url_para_buscar": "https://www.sdp.gov.co/transparencia/participa/participacion-dialogo-ciudad/asambleas-deliberativas/proposito"
+  },
+  {
+   "campo": "verbatim directo en castellano",
+   "motivo": "Todas las fuentes primarias (OIDP, Ideemos, Concejo de Bogota, LATINNO, Participedia, DemoLab, Control Visible) devolvieron HTTP 403 a WebFetch; las citas se obtuvieron de los resumenes de WebSearch que renderizan el contenido de la pagina. No se pudo extraer verbatim literal completo desde el HTML fuente.",
+   "url_para_buscar": "https://ideemos.org/asamblea-ciudadana-itinerante-del-concejo-de-bogota/"
+  }
+ ],
+ "alertas": [
+  "Posible confusion entre dos procesos distintos: (1) 'Asamblea Ciudadana Itinerante del Concejo de Bogota' (Concejo via DemoLab, 2020/2021/2023) y (2) 'Asambleas Deliberativas #SumemosVoces' (Alcaldia/Secretaria Distrital de Planeacion, 2024-2027). No deben fusionarse.",
+  "La relacion entre el caso y la IA es solo tematica (ambos tocan el POT). El estudio 'Factibilidad de IA... caso del POT' es investigacion academica de aceptacion de una herramienta PROPUESTA, no un sistema de IA operando dentro de la Asamblea.",
+  "Todas las fuentes primarias devolvieron 403 a WebFetch; la verificacion se apoyo en snippets de WebSearch. Confianza limitada a MEDIA por ausencia de verbatim directo del HTML fuente."
+ ]
+}

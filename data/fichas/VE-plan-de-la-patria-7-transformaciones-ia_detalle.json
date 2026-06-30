@@ -1,0 +1,117 @@
+{
+  "caso_id": "VE-plan-de-la-patria-7-transformaciones-ia",
+  "pais": "VE",
+  "nombre_caso": "Plan de la Patria 7 Transformaciones (7T) - IA y Big Data en la sistematización de propuestas de la Consulta Popular",
+  "bloque": "1-dudoso",
+  "proceso_participativo": "Proceso de consulta/debate para la elaboración del Plan de la Patria de las 7 Grandes Transformaciones (7T) 2025-2031, conducido por el Gobierno Bolivariano de Venezuela (Ministerio del Poder Popular de Planificación / Vicepresidencia). Durante ~2 meses (2024) se desplegó un proceso de debate sectorial y territorial con opción de propuesta individual, mediante más de 63.000 asambleas de base. Según fuentes oficiales: 3.437.434 participantes registrados vía Carnet de la Patria, 33.780 relatores/sistematizadores registrados en un portal para la sistematización de propuestas, y 34.491 propuestas procesadas/cargadas. Las propuestas se cargaron en un sistema informático y la asistencia se georreferenció con aplicaciones de código QR del Carnet de la Patria, construyéndose un Sistema de Información Geográfica (SIG) con base de datos de propuestas y asambleas. SEÑAL DUDOSA: prensa estatal (Correo del Orinoco, mar-2026; replicado por fevp.gob.ve y laprensademonagas.com) afirma que el Plan 'ha procesado más de 500.000 propuestas... usando herramientas de IA y Big Data'. En paralelo, y como EJE TEMÁTICO del plan, Maduro instruyó 'incluir la Inteligencia Artificial en el Plan de las 7T' como prioridad nacional (de ahí derivan el Plan Nacional de IA, el Código de Ética de IA feb-2026 y el Proyecto de Ley de IA), lo que NO equivale a IA analizando el contenido de los aportes ciudadanos de la consulta.",
+  "ano_inicio": 2024,
+  "ano_cierre": 2025,
+  "estado_actividad": "activo",
+  "evidencia_actividad_2026": "El Plan de la Patria 7T 2025-2031 fue promulgado como Ley Orgánica el 24-05-2025 y rige el periodo 2025-2031 (vigente en 2026). La nota de Correo del Orinoco que enmarca la afirmación de IA+Big Data sobre las propuestas es de marzo de 2026, dentro de un ciclo continuado de consultas populares (la AN reportó ~20.000 participantes el 19-03-2026, acumulado histórico de 6.176.000 en procesos de debate/consulta) y del despliegue 2026 del Plan Nacional de IA (Código de Ética de IA presentado 19-02-2026). No obstante, el PROCESO PARTICIPATIVO específico de elaboración del Plan 7T (debate de propuestas) fue puntual (2024) y cerró con la presentación/promulgación del plan; lo que permanece activo en 2026 es la implementación del plan y la agenda separada de IA soberana.",
+  "organizacion_a_cargo": "Gobierno Bolivariano de Venezuela: Ministerio del Poder Popular de Planificación (MPPP) y Vicepresidencia de la República (Delcy Rodríguez), bajo instrucción del Presidente Nicolás Maduro. La agenda de IA (eje del plan) es coordinada por el Ministerio del Poder Popular para Ciencia y Tecnología (MINCYT, ministra Gabriela Jiménez). Difusión: Correo del Orinoco (medio estatal).",
+  "tipo_convocante": ["gobierno nacional"],
+  "tipo_organizacion": "Público",
+  "tipo_proceso": ["Participación Digital", "Gobernanza Colaborativa"],
+  "etapas_uso_IA": [],
+  "continuidad": "Uso único",
+  "nivel_consolidacion": 1,
+  "sistema_IA": "NO HAY EVIDENCIA TÉCNICA de un sistema de IA que analice el contenido de las propuestas. El procesamiento documentado es: (a) un sistema informático/portal donde 33.780 relatores HUMANOS cargaron y sistematizaron 34.491 propuestas; (b) un Sistema de Información Geográfica (SIG) con georreferenciación vía QR del Carnet de la Patria. La afirmación de 'IA y Big Data procesando 500.000+ propuestas' proviene exclusivamente de prensa estatal (Correo del Orinoco) sin nombrar modelo, proveedor, técnica ni corroboración académica/técnica independiente. Por separado existe un 'Plan Nacional de IA' (65 proyectos, Código de Ética, Ley de IA) que es un EJE del plan de gobierno, no una herramienta aplicada a los aportes de la consulta.",
+  "tipos_IA_familia": [],
+  "usa_LLM_generativa": "no-claro",
+  "funcion_IA": "No corroborada. La prensa estatal atribuye a 'IA y Big Data' el procesamiento/sistematización de las propuestas del poder popular para convertir el flujo de información en políticas públicas y 'desarrollar algoritmos propios para la toma de decisiones', pero sin descripción técnica. La función verificable de procesamiento de las propuestas recae en relatores humanos + un SIG (georreferenciación y base de datos), no en IA. La IA, como tema del plan, apunta a soberanía tecnológica, educación, economía y telecomunicaciones, no al análisis de los aportes de la consulta.",
+  "rol_IA": "no-claro",
+  "usa_IA_en_proceso": "no-claro",
+  "tipo_desarrollador_IA": ["Gobierno"],
+  "origen_desarrollador": "Nacional",
+  "entra_tentativo": "DUDA",
+  "justificacion_elegibilidad": "DUDA. Hay un proceso participativo claro (consulta/debate nacional para construir el Plan de la Patria 7T, con +63.000 asambleas, 3,4 M de participantes y 34.491 propuestas) cuyo CONTENIDO sí fue recolectado, cargado, sistematizado y agrupado. El problema es el ACTOR del análisis: la evidencia técnica verificable indica sistematización por 33.780 RELATORES HUMANOS apoyados por un sistema informático y un SIG (georreferenciación), NO por IA. La única afirmación de que 'IA y Big Data procesaron 500.000+ propuestas' proviene de prensa estatal única (Correo del Orinoco, replicada en mirrors estatales y un diario regional que repite el framing), sin proveedor, sin descripción técnica y sin corroboración independiente; además contradice la cifra oficial verificable (34.491). Adicionalmente, 'incluir la IA en el Plan de las 7T' describe a la IA como EJE TEMÁTICO/PRIORIDAD del plan (origen del Plan Nacional de IA, Ley y Código de Ética), no como herramienta que procesa los aportes; por la regla del índice, si la IA es solo un eje temático del plan → NO. Por tanto NO se puede afirmar que haya IA real sobre el contenido de los aportes: queda DUDA (tendiente a NO) hasta verificación manual con MPPP/MINCYT. Si se exigiera binario sin nueva evidencia, el caso caería en NO por falta de corroboración técnica.",
+  "confianza": "BAJA",
+  "evidencia_verbatim": {
+    "pais": "Venezuela impulsa el debate sobre Inteligencia Artificial bajo principios de soberanía y ética (titular, Correo del Orinoco, medio estatal de la República Bolivariana de Venezuela).",
+    "tipo_proceso": "El Presidente Nicolás Maduro convocó al pueblo a debatir el Plan de la Patria en un proceso inédito... que incluyó un proceso de debate de dos meses desplegado tanto sectorial como territorialmente, así como con la opción de presentación de propuestas individuales. Las propuestas se cargaron en un sistema informático y la asistencia a las asambleas se georreferenció mediante aplicaciones de código QR del Carnet de la Patria.",
+    "etapas_uso_IA": null,
+    "estado_actividad": "El Plan de la Patria de las 7 Transformaciones (7T) 2025-2031 fue promulgado como Ley Orgánica el 24 de mayo de 2025 [y rige el periodo 2025-2031].",
+    "nivel_consolidacion": "3.437.434 participantes registrados a través del Carnet de la Patria, 33.780 relatores/sistematizadores registrados en el portal para la sistematización de propuestas, y 34.491 propuestas procesadas.",
+    "tipo_convocante": "El Presidente Nicolás Maduro convocó al pueblo a debatir el Plan de la Patria... El Gobierno convocó a 2,5 millones de venezolanos a debatir el plan de acción, con al menos 63.000 asambleas de base.",
+    "usa_IA_en_proceso": "El Plan de la Patria ha procesado más de 500.000 propuestas generadas desde las bases populares usando herramientas de Inteligencia Artificial y Big Data. Este proceso de sistematización permite que el flujo de información del poder popular se convierta en políticas públicas eficientes, garantizando la soberanía tecnológica y el desarrollo de algoritmos propios para la toma de decisiones. (AFIRMACIÓN DE PRENSA ESTATAL — Correo del Orinoco / mirror fevp.gob.ve, mar-2026 —, sin corroboración técnica independiente; contradice la cifra oficial de 34.491 propuestas y la sistematización por relatores humanos + SIG.)",
+    "rol_IA": null
+  },
+  "fuentes": [
+    {
+      "url": "http://www.correodelorinoco.gob.ve/venezuela-impulsa-el-debate-sobre-inteligencia-artificial-bajo-principios-de-soberania-y-etica/",
+      "estado": "403",
+      "cita": "Venezuela impulsa el debate sobre Inteligencia Artificial bajo principios de soberanía y ética. El Plan de la Patria ha procesado más de 500.000 propuestas generadas desde las bases populares usando herramientas de Inteligencia Artificial y Big Data... garantizando la soberanía tecnológica y el desarrollo de algoritmos propios para la toma de decisiones. (WebFetch dio HTTP 403 tanto en https como en http; contenido recuperado vía snippets de WebSearch que indexan esta URL oficial. FUENTE ESTATAL — afirmación política, no evidencia técnica.)"
+    },
+    {
+      "url": "https://www.fevp.gob.ve/venezuela-se-enfoca-en-la-ia-etica-y-soberana-para-el-desarrollo-nacional/",
+      "estado": "403",
+      "cita": "Venezuela se enfoca en la IA ética y soberana para el desarrollo nacional. El Estado venezolano ha iniciado un proceso inédito de adaptación tecnológica para responder a grandes volúmenes de datos; el Plan de la Patria ha procesado más de 500.000 propuestas... usando IA y Big Data. (Mirror estatal del mismo framing; WebFetch 403; vía WebSearch. No constituye corroboración independiente.)"
+    },
+    {
+      "url": "https://noticias.patria.org.ve/presidente-maduro-instruye-incluir-inteligencia-artificial-ia-en-plan-de-7t/",
+      "estado": "403",
+      "cita": "Presidente Maduro instruye incluir la Inteligencia Artificial (IA) en el Plan de las 7T. El presidente instruyó a la vicepresidenta Delcy Rodríguez incluir la Inteligencia Artificial en el plan sexenal, Plan de las 7T, como una de las grandes prioridades de Venezuela, urgiendo a coordinar todos los centros de investigación, ciencia y universidades. (Evidencia clave de que la IA es un EJE/PRIORIDAD del plan, NO una herramienta de análisis de los aportes. WebFetch 403; vía WebSearch.)"
+    },
+    {
+      "url": "https://es.wikipedia.org/wiki/Plan_de_la_Patria",
+      "estado": "403",
+      "cita": "[Plan de la Patria 7T 2025-2031] Las propuestas fueron cargadas en un sistema informático y la asistencia a las asambleas georreferenciada mediante aplicaciones de código QR del Carnet de la Patria; 3.437.434 participantes registrados, 33.780 relatores/sistematizadores y 34.491 propuestas. (Describe sistematización por humanos + sistema informático/SIG, sin mención de IA procesando el contenido. WebFetch 403; contenido vía WebSearch.)"
+    },
+    {
+      "url": "https://www.desarrollominero.gob.ve/wp-content/uploads/2024/04/plan-patria-2019-2025.pdf",
+      "estado": "no-verificado",
+      "cita": "Documento PDF oficial del Plan de la Patria referenciado repetidamente en resultados; usado como respaldo de las cifras metodológicas (34.491 propuestas, 33.780 relatores, georreferenciación, SIG). No se pudo extraer texto verbatim página por página (PDF no leído directamente); cifras corroboradas vía múltiples snippets de WebSearch."
+    },
+    {
+      "url": "https://laprensademonagas.com/venezuela-impulsa-su-politica-de-inteligencia-artificial-con-regulacion-legal-y-etica/",
+      "estado": "no-verificado",
+      "cita": "Diario regional que replica el framing estatal de IA soberana/Big Data en el Plan de la Patria; repite la narrativa oficial y NO aporta verificación técnica independiente del procesamiento con IA de las propuestas. (Listado en WebSearch; no leído verbatim.)"
+    },
+    {
+      "url": "https://mincyt.gob.ve/venezuela-avanza-inteligencia-artificial/",
+      "estado": "403",
+      "cita": "MINCYT describe el avance del Plan Nacional de IA (65 proyectos, Código de Ética, Ley de IA, soberanía de datos, aplicaciones en educación/economía/telecomunicaciones). Confirma que la IA es una agenda/EJE separado del país, no una herramienta documentada de análisis de los aportes de la consulta del Plan 7T. WebFetch 403; vía WebSearch."
+    }
+  ],
+  "gaps": [
+    {
+      "campo": "usa_IA_en_proceso",
+      "motivo": "No hay corroboración independiente (proveedor, académico, técnico) de que IA/Big Data hayan procesado/analizado el CONTENIDO de las propuestas. La única afirmación proviene de prensa estatal (Correo del Orinoco) y mirrors, sin descripción técnica y contradiciendo la cifra oficial (34.491 propuestas vs. '500.000'). La evidencia verificable apunta a relatores humanos + SIG. Verificar con MPPP (metodología oficial de sistematización) y MINCYT.",
+      "url_para_buscar": "https://mppp.gob.ve/2024/03/26/plan-de-la-patria-al-2031-traza-el-rumbo-a-la-venezuela-de-prosperidad-igualdad-y-bienestar/"
+    },
+    {
+      "campo": "rol_IA",
+      "motivo": "Imposible determinar si el rol de la IA es 'contenido' (analizar aportes) o inexistente en el proceso, por ausencia de detalle técnico. La afirmación estatal mezcla 'sistematización' (función de los relatores) con 'IA y Big Data' sin separar qué hizo la máquina y qué hicieron las personas.",
+      "url_para_buscar": "https://www.mincyt.gob.ve/"
+    },
+    {
+      "campo": "sistema_IA",
+      "motivo": "Ningún sistema/modelo/proveedor de IA es nombrado para el análisis de las propuestas. No se sabe si existe software de NLP/clustering, ni si 'algoritmos propios para la toma de decisiones' se aplicaron realmente a los aportes o es lenguaje aspiracional del Plan Nacional de IA.",
+      "url_para_buscar": "https://mincyt.gob.ve/wp-content/uploads/2026/02/Codigo_de_Etica_de_Inteligencia_Artificial_de_la_Republica_Bolivariana-1.pdf"
+    },
+    {
+      "campo": "etapas_uso_IA",
+      "motivo": "Sin confirmar que la IA intervenga en alguna etapa (Análisis sería la candidata). No marcada por falta de evidencia técnica. Verificar si el portal/sistema de sistematización incorporó algún componente de IA.",
+      "url_para_buscar": "https://gobiernocomunal.planpatria.gob.ve/"
+    },
+    {
+      "campo": "tipos_IA_familia",
+      "motivo": "Familia técnica de IA no especificada ni confirmada (no hay evidencia de que se usara IA sobre los aportes).",
+      "url_para_buscar": "https://mincyt.gob.ve/venezuela-avanza-inteligencia-artificial/"
+    },
+    {
+      "campo": "nivel_consolidacion",
+      "motivo": "Marcado 1 (anuncio): la afirmación de IA+Big Data sobre las propuestas es esencialmente un enunciado de prensa estatal sin despliegue técnico verificado. El PROCESO participativo en sí (consulta del Plan 7T) sí ocurrió, pero el uso de IA sobre el contenido no está consolidado más allá del anuncio. Verificar si hubo ediciones recurrentes con IA real.",
+      "url_para_buscar": "https://www.comunas.gob.ve/2024/03/11/consulta-popular-nacional-2024-combinacion-perfecta-entre-pueblo-gobierno/"
+    }
+  ],
+  "alertas": [
+    "ALERTA_PRENSA_ESTATAL: la afirmación central (IA+Big Data procesaron 500.000+ propuestas) proviene de un medio del Estado (Correo del Orinoco, .gob.ve) y mirrors estatales/oficialistas. Es AFIRMACIÓN POLÍTICA, no evidencia técnica. No se halló corroboración independiente (proveedor, paper, académico). Tratar con escepticismo alto.",
+    "ALERTA_CONTRADICCION_CIFRAS: la cifra estatal de IA ('más de 500.000 propuestas') contradice la cifra metodológica oficial verificable de 34.491 propuestas (con 33.780 relatores y 3,4 M de participantes). Esta discrepancia de un orden de magnitud refuerza que '500.000' es retórica y que el dato robusto es 34.491.",
+    "ALERTA_EJE_VS_HERRAMIENTA: 'incluir la IA en el Plan de las 7T' = IA como EJE TEMÁTICO/PRIORIDAD del plan de gobierno (de ahí el Plan Nacional de IA, Ley de IA y Código de Ética feb-2026), NO una herramienta que procesa los aportes de la consulta. Por la regla del índice, eje temático ≠ elegibilidad. Esta es la base de la calificación DUDA (tendiente a NO).",
+    "ALERTA_PROCESAMIENTO_HUMANO+SIG: la evidencia técnica verificable indica que las 34.491 propuestas fueron cargadas/sistematizadas por 33.780 RELATORES HUMANOS en un sistema informático/portal, con georreferenciación vía SIG y QR del Carnet de la Patria. Esto es procesamiento humano + sistema de información geográfica, NO IA de análisis de contenido.",
+    "ALERTA_FUENTES_403: todas las URLs .gob.ve (correodelorinoco, mincyt, fevp, noticias.patria) y es.wikipedia devolvieron HTTP 403 a WebFetch (en http y https). Las citas se recuperaron vía snippets de WebSearch que indexan esas mismas URLs. Conviene verificación manual directa.",
+    "ALERTA_CONFIANZA_BAJA: confianza=BAJA por depender de una sola narrativa estatal repetida en varios portales oficialistas (no fuentes independientes), sin corroboración técnica y con contradicción de cifras. No elevar a MEDIA sin documento metodológico del MPPP o confirmación técnica del MINCYT/proveedor.",
+    "ALERTA_VERIFICACION_MANUAL: se recomienda verificación manual con (1) MPPP — metodología oficial de sistematización del Plan 7T; (2) MINCYT — si el Plan Nacional de IA incluyó algún componente real aplicado a los aportes de la consulta; (3) documento PDF del Plan de la Patria 7T para confirmar/desmentir el rol de IA. URLs en gaps."
+  ]
+}

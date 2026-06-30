@@ -1,0 +1,73 @@
+{
+ "caso_id": "CO-descongestion-de-solicitudes-diarias-del",
+ "pais": "CO",
+ "nombre_caso": "Descongestión de solicitudes diarias del programa Ingreso Solidario",
+ "bloque": "2-baseline",
+ "proceso_participativo": "El Departamento Administrativo para la Prosperidad Social (DPS) implementó un sistema de Inteligencia Artificial para descongestionar las solicitudes diarias del programa Ingreso Solidario, que recibía más de 10.000 correos cada día. Empleando herramientas de QnA Maker para la clasificación semántica de consultas y Azure Logic Apps para extracción de metadatos (remitente, asunto, adjuntos y contenido), el proyecto redujo en un 50 % el tiempo dedicado por los funcionarios de Participación Ciudadana, transformó un backlog de tres meses de correos en solo dos semanas y pasó de respuestas en dos meses a respuestas en cuestión de minutos.",
+ "ano_inicio": "2020",
+ "ano_cierre": null,
+ "estado_actividad": "activo",
+ "evidencia_actividad_2026": null,
+ "organizacion_a_cargo": "Prosperidad Social",
+ "tipo_convocante": [
+  "gobierno nacional"
+ ],
+ "tipo_organizacion": [
+  "Público"
+ ],
+ "tipo_proceso": [
+  "Gobernanza Colaborativa"
+ ],
+ "etapas_uso_IA": [
+  "Análisis"
+ ],
+ "continuidad": [
+  "Plataforma"
+ ],
+ "nivel_consolidacion": 2,
+ "sistema_IA": "Azure QnA Maker (NLP)",
+ "tipos_IA_familia": [
+  "NLP"
+ ],
+ "usa_LLM_generativa": "no",
+ "funcion_IA": "Clasificación de consultas, respuesta adaptativa a ciudadanos, extracción de metadatos.",
+ "rol_IA": "apoyo",
+ "usa_IA_en_proceso": "sí",
+ "tipo_desarrollador_IA": [
+  "Privado"
+ ],
+ "origen_desarrollador": "Internacional",
+ "entra_tentativo": "NO",
+ "justificacion_elegibilidad": "EXCLUSIÓN FIRME (recodificación 2026): Exclusión FIRME (recodificación 2026): atención/apoyo, no contenido participativo",
+ "confianza": "MEDIA (baseline 2025; sin señal web 2026 nueva)",
+ "evidencia_verbatim": {
+  "pais": "Caso del índice ILIA 2025 (BBDD oficial del equipo)",
+  "tipo_proceso": "Governanza Colaborativa",
+  "etapas_uso_IA": "Análisis",
+  "estado_actividad": "BBDD 2025: Activo",
+  "nivel_consolidacion": "Continuidad (BBDD 2025): Plataforma",
+  "tipo_convocante": "Prosperidad Social",
+  "usa_IA_en_proceso": "Clasificación de consultas, respuesta adaptativa a ciudadanos, extracción de metadatos.",
+  "rol_IA": "Clasificación de consultas, respuesta adaptativa a ciudadanos, extracción de metadatos."
+ },
+ "fuentes": [
+  {
+   "url": "https://prosperidadsocial.gov.co/Noticias/inteligencia-artificial-la-herramienta-que-descongestiono-10-000-solicitudes-diarias-de-ingreso-solidario/",
+   "estado": "baseline-2025",
+   "cita": ""
+  }
+ ],
+ "gaps": [
+  {
+   "campo": "evidencia_actividad_2026",
+   "motivo": "caso 'Activo' sin señal web de actividad/recurrencia 2026 confirmada",
+   "url_para_buscar": "https://prosperidadsocial.gov.co/Noticias/inteligencia-artificial-la-herramienta-que-descongestiono-10-000-solicitudes-diarias-de-ingreso-solidario/"
+  }
+ ],
+ "alertas": [
+  "usa_LLM_generativa='no' derivado de Tipos de IA 2025 (sin 'LLM'); verificar si cambió en 2026",
+  "recodificación 2026: Exclusión FIRME (recodificación 2026): atención/apoyo, no contenido participativo",
+  "Datos brutos del índice ILIA 2025 (BBDD validada por el equipo); recodificación 2026 (convocante 7-cat, nivel 0-3) y reverificación de actividad 2026."
+ ],
+ "fuente_datos": "baseline_2025_bbdd+recod2026+reverif_web2026"
+}

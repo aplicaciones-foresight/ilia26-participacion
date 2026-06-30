@@ -1,0 +1,68 @@
+{
+ "caso_id": "HN-redpublica-iverify",
+ "pais": "HN",
+ "nombre_caso": "RedPública + iVerify ",
+ "bloque": "2-baseline",
+ "proceso_participativo": "Plataforma digital que recibe propuestas de ley y proyectos sociales, con un módulo de análisis que agrupa temas y genera tableros de tendencias. Integra iVerify, una herramienta que utiliza aprendizaje automático para detectar y clasificar desinformación electoral antes de su publicación.",
+ "ano_inicio": "2023",
+ "ano_cierre": null,
+ "estado_actividad": "activo",
+ "evidencia_actividad_2026": "reconfirmado web (institucional): Reverificación: plataforma de propuestas ciudadanas con módulo de análisis de tendencias; evidencia de IA central débil, revisar en Fase 2.",
+ "organizacion_a_cargo": "Programa de las Naciones Unidas para el Desarrollo (PNUD) en colaboración con CEUTEC y la Unión Europea.",
+ "tipo_convocante": [
+  "organización internacional",
+  "universidad"
+ ],
+ "tipo_organizacion": [
+  "Público"
+ ],
+ "tipo_proceso": [
+  "Referendos e Iniciativas Populares"
+ ],
+ "etapas_uso_IA": [
+  "Análisis"
+ ],
+ "continuidad": [
+  "Uso único"
+ ],
+ "nivel_consolidacion": 2,
+ "sistema_IA": "Procesamiento de lenguaje natural para clasificar propuestas.",
+ "tipos_IA_familia": [
+  "NLP - Tópicos"
+ ],
+ "usa_LLM_generativa": "no",
+ "funcion_IA": "\tDetectar y clasificar desinformación electoral antes de su publicación; analizar y agrupar temas de propuestas ciudadanas.",
+ "rol_IA": "contenido",
+ "usa_IA_en_proceso": "sí",
+ "tipo_desarrollador_IA": [
+  "Gobierno",
+  "Academia"
+ ],
+ "origen_desarrollador": "Internacional, Nacional",
+ "entra_tentativo": "SI",
+ "justificacion_elegibilidad": "Caso del índice 2025; ratificar vigencia 2026 y recodificación.",
+ "confianza": "ALTA (baseline 2025 + reverif. web 2026)",
+ "evidencia_verbatim": {
+  "pais": "Caso del índice ILIA 2025 (BBDD oficial del equipo)",
+  "tipo_proceso": "Referendos e Iniciativas Populares",
+  "etapas_uso_IA": "Análisis",
+  "estado_actividad": "reconfirmado web (institucional): Reverificación: plataforma de propuestas ciudadanas con módulo de análisis de tendencias; evidencia de IA central débil, revisar en Fase 2.",
+  "nivel_consolidacion": "Continuidad (BBDD 2025): Uso único",
+  "tipo_convocante": "Programa de las Naciones Unidas para el Desarrollo (PNUD) en colaboración con CEUTEC y la Unión Europea.",
+  "usa_IA_en_proceso": "\tDetectar y clasificar desinformación electoral antes de su publicación; analizar y agrupar temas de propuestas ciudadanas.",
+  "rol_IA": "\tDetectar y clasificar desinformación electoral antes de su publicación; analizar y agrupar temas de propuestas ciudadanas."
+ },
+ "fuentes": [
+  {
+   "url": "https://www.undp.org/es/honduras/historias/participacion-ciudadana-con-innovacion-digital-traves-de-redpublica-honduras",
+   "estado": "baseline-2025",
+   "cita": ""
+  }
+ ],
+ "gaps": [],
+ "alertas": [
+  "usa_LLM_generativa='no' derivado de Tipos de IA 2025 (sin 'LLM'); verificar si cambió en 2026",
+  "Datos brutos del índice ILIA 2025 (BBDD validada por el equipo); recodificación 2026 (convocante 7-cat, nivel 0-3) y reverificación de actividad 2026."
+ ],
+ "fuente_datos": "baseline_2025_bbdd+recod2026+reverif_web2026"
+}

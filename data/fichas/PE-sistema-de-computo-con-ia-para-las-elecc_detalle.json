@@ -1,0 +1,67 @@
+{
+ "caso_id": "PE-sistema-de-computo-con-ia-para-las-elecc",
+ "pais": "PE",
+ "nombre_caso": "Sistema de cómputo con IA para las Elecciones Generales 2026",
+ "bloque": "2-baseline",
+ "proceso_participativo": "La ONPE implementará un sistema de cómputo de resultados que usa IA (OCR) para reconocer los números de las actas escaneadas, agilizando el conteo y aumentando la transparencia.",
+ "ano_inicio": "2026",
+ "ano_cierre": null,
+ "estado_actividad": "desconocido",
+ "evidencia_actividad_2026": null,
+ "organizacion_a_cargo": "Oficina Nacional de Procesos Electorales (ONPE)",
+ "tipo_convocante": [
+  "gobierno nacional"
+ ],
+ "tipo_organizacion": [
+  "Público"
+ ],
+ "tipo_proceso": [
+  "Referendos e Iniciativas Populares"
+ ],
+ "etapas_uso_IA": [
+  "Implementación"
+ ],
+ "continuidad": [
+  "Plataforma"
+ ],
+ "nivel_consolidacion": 1,
+ "sistema_IA": "Reconocimiento óptico de caracteres con IA. ",
+ "tipos_IA_familia": [
+  "Visión computacional"
+ ],
+ "usa_LLM_generativa": "no",
+ "funcion_IA": "Reconocer y validar los números de las actas y alertar discrepancias",
+ "rol_IA": "apoyo",
+ "usa_IA_en_proceso": "sí",
+ "tipo_desarrollador_IA": [
+  "Gobierno"
+ ],
+ "origen_desarrollador": "Nacional",
+ "entra_tentativo": "NO",
+ "justificacion_elegibilidad": "EXCLUSIÓN FIRME (recodificación 2026): Exclusión FIRME (recodificación 2026): conteo electoral (OCR), no participación; estado 'Próximamente' = anuncio",
+ "confianza": "MEDIA (baseline 2025; sin señal web 2026 nueva)",
+ "evidencia_verbatim": {
+  "pais": "Caso del índice ILIA 2025 (BBDD oficial del equipo)",
+  "tipo_proceso": "Referendos e Iniciativas Populares",
+  "etapas_uso_IA": "Implementación",
+  "estado_actividad": "BBDD 2025: Proximamente",
+  "nivel_consolidacion": "Continuidad (BBDD 2025): Plataforma",
+  "tipo_convocante": "Oficina Nacional de Procesos Electorales (ONPE)",
+  "usa_IA_en_proceso": "Reconocer y validar los números de las actas y alertar discrepancias",
+  "rol_IA": "Reconocer y validar los números de las actas y alertar discrepancias"
+ },
+ "fuentes": [
+  {
+   "url": "https://cheleloyborolas.com/index.php?Itemid=103&catid=10&id=72545%3Ajefe-de-la-onpe-presenta-avances-en-la-organizacion-de-las-elecciones-generales-2026&option=com_content&view=article",
+   "estado": "baseline-2025",
+   "cita": ""
+  }
+ ],
+ "gaps": [],
+ "alertas": [
+  "usa_LLM_generativa='no' derivado de Tipos de IA 2025 (sin 'LLM'); verificar si cambió en 2026",
+  "recodificación 2026: Exclusión FIRME (recodificación 2026): conteo electoral (OCR), no participación; estado 'Próximamente' = anuncio",
+  "Datos brutos del índice ILIA 2025 (BBDD validada por el equipo); recodificación 2026 (convocante 7-cat, nivel 0-3) y reverificación de actividad 2026."
+ ],
+ "fuente_datos": "baseline_2025_bbdd+recod2026+reverif_web2026"
+}

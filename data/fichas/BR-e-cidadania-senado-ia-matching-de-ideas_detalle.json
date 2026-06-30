@@ -1,0 +1,119 @@
+{
+  "caso_id": "BR-e-cidadania-senado-ia-matching-de-ideas",
+  "pais": "BR",
+  "nombre_caso": "e-Cidadania Senado - IA matching de ideas legislativas",
+  "bloque": "1-nuevo",
+  "proceso_participativo": "Portal e-Cidadania del Senado Federal de Brasil, módulo 'Ideia Legislativa', donde la población envía sugerencias para crear o mejorar leyes. Tradicionalmente una idea debía reunir 20.000 apoyos en 4 meses para ser formalizada como Sugestão Legislativa y analizada por la Comissão de Direitos Humanos e Legislação Participativa (CDH). A fines de 2025 / enero 2026 el Senado desplegó una herramienta de inteligencia artificial (búsqueda semántica) sobre el banco de ideias legislativas (145.993 ideias a enero 2026) que, a pedido de la Consultoria Legislativa cuando un senador prepara un proyecto, busca y selecciona las ideas ciudadanas temáticamente compatibles para incorporarlas y citarlas en la justificación del proyecto de ley, sin exigir el mínimo de apoyos.",
+  "ano_inicio": 2025,
+  "ano_cierre": null,
+  "estado_actividad": "activo",
+  "evidencia_actividad_2026": "Herramienta anunciada como en uso por la prensa del propio Senado el 15-16 de enero de 2026 y con material multimedia (Rádio Senado, TV Senado) en enero-febrero de 2026; primer resultado concreto ya producido: la idea de Cândida Magalhães incorporada al PL 6.125/2025 del senador Jorge Kajuru. No se halló evidencia de >=2 ediciones/usos recurrentes documentados; consolidación es de uso puntual con primer caso exitoso.",
+  "organizacion_a_cargo": "Senado Federal do Brasil - Consultoria Legislativa en conjunto con el Programa e-Cidadania (Secretaria de Transparência / Coordenação do e-Cidadania). Herramienta desarrollada por el servidor Alisson Bruno (coordenador do e-Cidadania) en el marco del Desafio de Inovação do Senado.",
+  "tipo_convocante": [
+    "gobierno nacional"
+  ],
+  "tipo_organizacion": "Público",
+  "tipo_proceso": [
+    "Participación Digital",
+    "Referendos e Iniciativas Populares"
+  ],
+  "etapas_uso_IA": [
+    "Análisis",
+    "Traducción Política"
+  ],
+  "continuidad": "Plataforma",
+  "nivel_consolidacion": 2,
+  "sistema_IA": "Herramienta de inteligencia artificial de búsqueda semántica desarrollada internamente por el servidor Alisson Bruno (Desafio de Inovação do Senado). Realiza una búsqueda sobre el banco de ideias legislativas del e-Cidadania para seleccionar las sugerencias ciudadanas temáticamente compatibles con un proyecto de ley en preparación por la Consultoria Legislativa. No se publica el detalle técnico del modelo (embeddings/semantic search), por lo que la familia exacta no está confirmada documentalmente.",
+  "tipos_IA_familia": [
+    "NLP",
+    "Búsqueda semántica"
+  ],
+  "usa_LLM_generativa": "no-claro",
+  "funcion_IA": "Recolectar/recuperar y emparejar (matching) el contenido de las ideas legislativas ciudadanas con proyectos de ley: con IA se hace una búsqueda en el banco de ideias legislativas y se seleccionan las compatibles con la propuesta del senador, que luego pueden incorporarse al proyecto y citarse en su justificación. Transforma un archivo antes subutilizado en fuente para fundamentar justificaciones, inspirar redacciones y orientar ajustes de los proyectos parlamentarios.",
+  "rol_IA": "contenido",
+  "usa_IA_en_proceso": "sí",
+  "tipo_desarrollador_IA": [
+    "Gobierno"
+  ],
+  "origen_desarrollador": "Nacional",
+  "entra_tentativo": "SI",
+  "justificacion_elegibilidad": "Dentro de un proceso participativo formal (e-Cidadania / Ideia Legislativa, mecanismo de iniciativa ciudadana del Senado) se usa IA sobre el CONTENIDO de los aportes ciudadanos: una búsqueda semántica sobre el banco de 145.993 ideias legislativas recupera, clasifica por afinidad temática y empareja las sugerencias compatibles con un proyecto de ley, que se incorporan y citan en su justificación. Es procesamiento de contenido (recuperar/agrupar/sintetizar aportes), no apoyo logístico. Convocante = Senado Federal (gobierno nacional, poder legislativo). Caso DISTINTO del baseline 'Portal e-Cidadania: Marcado automático de respuestas en audiencias' (marzo 2025), que trata del marcado de respuestas en audiencias interactivas; este es la herramienta de matching de ideias legislativas a proyectos de ley (ene 2026, Alisson Bruno, Desafio de Inovação).",
+  "confianza": "ALTA",
+  "evidencia_verbatim": {
+    "pais": "Cidadãos ajudam a escrever projetos de lei com ferramenta de inteligência artificial — Senado Notícias (Senado Federal, Brasil), 16/01/2026.",
+    "tipo_proceso": "uma nova ferramenta de inteligência artificial criada pelo Senado permite que ideias enviadas ao portal e-Cidadania influenciem projetos de lei — mesmo quando não atingem o número mínimo de apoios antes exigido",
+    "etapas_uso_IA": "Com o uso da inteligência artificial, é feita uma busca no banco de ideias legislativas e, então, são selecionadas aquelas que são compatíveis com a proposta em questão. As ideias selecionadas podem ser incorporadas ao projeto e citadas em sua justificação",
+    "estado_actividad": "IA vai aproximar ideias legislativas do e-Cidadania a projetos de senadores — Rádio Senado, 15/01/2026 (matéria de divulgação da ferramenta em uso no início de 2026)",
+    "nivel_consolidacion": "O primeiro resultado já veio: uma sugestão enviada por Cândida Magalhães, de São Paulo, que pedia atendimento psicológico gratuito para filhos de mulheres vítimas de violência doméstica, foi identificada pela ferramenta e incorporada a um projeto de lei: o PL 6.125/2025",
+    "tipo_convocante": "uma nova ferramenta de inteligência artificial criada pelo Senado",
+    "usa_IA_en_proceso": "Quando um senador pede ajuda à Consultoria Legislativa para elaborar um projeto, a equipe de consultores solicita ao e-Cidadania uma lista de sugestões feitas pelos cidadãos. Com o uso da inteligência artificial, é feita uma busca no banco de ideias legislativas",
+    "rol_IA": "Com o uso da inteligência artificial, é feita uma busca no banco de ideias legislativas e, então, são selecionadas aquelas que são compatíveis com a proposta em questão"
+  },
+  "fuentes": [
+    {
+      "url": "https://www12.senado.leg.br/noticias/materias/2026/01/16/cidadaos-ajudam-a-escrever-projetos-de-lei-com-ferramenta-de-inteligencia-artificial",
+      "estado": "403",
+      "cita": "Cidadãos ajudam a escrever projetos de lei com ferramenta de inteligência artificial. Matéria oficial Agência Senado (16/01/2026). WebFetch devolvió HTTP 403; contenido recuperado vía WebSearch y réplicas de prensa. Texto clave: 'uma nova ferramenta de inteligência artificial criada pelo Senado permite que ideias enviadas ao portal e-Cidadania influenciem projetos de lei'; 'Com o uso da inteligência artificial, é feita uma busca no banco de ideias legislativas e, então, são selecionadas aquelas que são compatíveis com a proposta'; 'A ferramenta foi desenvolvida pelo servidor Alisson Bruno a partir do Desafio de Inovação do Senado'."
+    },
+    {
+      "url": "https://www.poder360.com.br/poder-congresso/ia-do-senado-usa-sugestoes-enviadas-por-cidadaos-em-projetos-de-lei/",
+      "estado": "403",
+      "cita": "IA do Senado usa sugestões enviadas por cidadãos em projetos de lei (Poder360, prensa independiente). WebFetch 403; contenido vía WebSearch: confirma que la IA hace búsqueda en el banco de ideias legislativas del e-Cidadania para seleccionar las compatibles e incorporarlas a proyectos de ley, con el PL 6.125/2025 como primer resultado y Alisson Bruno como desarrollador en el Desafio de Inovação."
+    },
+    {
+      "url": "https://www12.senado.leg.br/radio/1/noticia/2026/01/15/ia-vai-aproximar-ideias-legislativas-do-e-cidadania-e-projetos-de-senadores",
+      "estado": "403",
+      "cita": "IA vai aproximar ideias legislativas do e-Cidadania a projetos de senadores — Rádio Senado (15/01/2026). WebFetch 403; vía WebSearch: 'desde o fim de 2025 é usada tecnologia de inteligência artificial para identificar ideias legislativas apresentadas por internautas que tenham relação temática com projetos que senadores queiram apresentar', parceria entre Consultoria Legislativa e programa e-Cidadania."
+    },
+    {
+      "url": "https://www.senado.gov.br/bi-arqs/Arquimedes/ecidadania/rel-ideia-legislativa-completo-pdf.pdf",
+      "estado": "OK",
+      "cita": "Relatório oficial de Business Intelligence del e-Cidadania (Senado): 'Ideias Legislativas Ideias 145.993 Autores 79.411 Apoios 12.361.842 Apoiadores'. Confirma el tamaño del banco de ideias legislativas (145.993) sobre el que opera la búsqueda semántica."
+    },
+    {
+      "url": "https://www.contabeis.com.br/noticias/74734/senado-usa-ia-para-aproveitar-ideias-enviadas-por-cidadaos/",
+      "estado": "403",
+      "cita": "Senado usa IA para aproveitar ideias enviadas por cidadãos (Contábeis, réplica de la matéria Agência Senado). WebFetch 403; vía WebSearch reproduce el mismo texto: búsqueda con IA en el banco de ideias legislativas, selección de compatibles, incorporación al proyecto, PL 6.125/2025, Alisson Bruno y Desafio de Inovação."
+    },
+    {
+      "url": "https://momentomt.com.br/politica-nacional/cidadaos-ajudam-a-escrever-projetos-de-lei-com-ferramenta-de-inteligencia-artificial/",
+      "estado": "403",
+      "cita": "Réplica de la matéria de Agência Senado (Momento MT). WebFetch 403; contenido confirmado vía WebSearch, idéntico a la fuente oficial."
+    },
+    {
+      "url": "https://www12.senado.leg.br/noticias/materias/2025/03/28/e-cidadania-utiliza-ia-para-marcar-respostas-aos-cidadaos-em-audiencias",
+      "estado": "403",
+      "cita": "E-Cidadania utiliza IA para marcar respostas aos cidadãos em audiências (28/03/2025). Es el CASO BASELINE DISTINTO (marcado de respuestas en audiencias interactivas), no este caso de matching de ideas legislativas. Listado para evidenciar la diferenciación."
+    }
+  ],
+  "gaps": [
+    {
+      "campo": "tipos_IA_familia / usa_LLM_generativa",
+      "motivo": "Las fuentes describen 'busca' semántica con IA pero no publican el detalle técnico (embeddings, modelo, si usa LLM generativa). No se pudo confirmar familia exacta ni uso de LLM.",
+      "url_para_buscar": "https://www12.senado.leg.br/noticias/materias/2026/01/16/cidadaos-ajudam-a-escrever-projetos-de-lei-com-ferramenta-de-inteligencia-artificial"
+    },
+    {
+      "campo": "ano_inicio (mes exacto / fecha de despliegue)",
+      "motivo": "Rádio Senado indica 'desde o fim de 2025'; la divulgación oficial es enero 2026. No hay fecha exacta de puesta en producción.",
+      "url_para_buscar": "https://www12.senado.leg.br/radio/1/noticia/2026/01/15/ia-vai-aproximar-ideias-legislativas-do-e-cidadania-e-projetos-de-senadores"
+    },
+    {
+      "campo": "nivel_consolidacion (>=2 ediciones)",
+      "motivo": "Solo se documenta un caso exitoso (PL 6.125/2025). No hay evidencia pública de uso recurrente (>=2 ediciones) que justifique nivel 3.",
+      "url_para_buscar": "https://www.poder360.com.br/poder-congresso/ia-do-senado-usa-sugestoes-enviadas-por-cidadaos-em-projetos-de-lei/"
+    },
+    {
+      "campo": "evidencia_verbatim (cita textual exacta verificada en HTML)",
+      "motivo": "Todas las páginas HTML (Senado oficial y réplicas de prensa) devolvieron 403 a WebFetch por anti-bot/Cloudflare. Las citas verbatim en portugués se reconstruyeron a partir de los extractos de WebSearch, que reproducen consistentemente el mismo texto en 8+ medios; no fue posible una verificación carácter-a-carácter sobre el HTML fuente, salvo el relatório BI (PDF, estado OK).",
+      "url_para_buscar": "https://www12.senado.leg.br/noticias/materias/2026/01/16/cidadaos-ajudam-a-escrever-projetos-de-lei-com-ferramenta-de-inteligencia-artificial"
+    }
+  ],
+  "alertas": [
+    "Las URLs oficiales del Senado (www12.senado.leg.br: matéria, Rádio Senado, TV Senado) y las réplicas de prensa (poder360, contabeis, momentomt, tribunadosertao, folhadecuritiba, esmaelmorais) devolvieron HTTP 403 a WebFetch (anti-bot del origen, no fallo del proxy). El contenido se recuperó vía WebSearch, que devolvió el texto de Agência Senado de forma consistente en 8+ medios independientes. La única fuente fetcheada con estado OK es el relatório BI del e-Cidadania (PDF) que confirma las 145.993 ideias.",
+    "Distinción del baseline CONFIRMADA: el caso baseline 'Portal e-Cidadania: Marcado automático de respuestas en audiencias' corresponde a la matéria del 28/03/2025 sobre marcado de respuestas en audiencias interactivas; ESTE caso es la herramienta de búsqueda semántica/matching de ideias legislativas a proyectos de ley, divulgada 15-16/01/2026, desarrollada por Alisson Bruno en el Desafio de Inovação. Son sistemas y funciones distintas dentro del mismo portal e-Cidadania.",
+    "rol_IA=contenido bien fundamentado: la IA opera sobre el contenido de las ideas ciudadanas (búsqueda semántica/temática para emparejar y seleccionar), no como apoyo logístico.",
+    "Detalle técnico del modelo no publicado: 'busca' semántica inferida; usa_LLM_generativa marcado no-claro y familia IA con baja certeza técnica.",
+    "tipo_proceso: se asignó 'Participación Digital' (e-Cidadania es plataforma digital de participación) y 'Referendos e Iniciativas Populares' (Ideia Legislativa es un mecanismo de iniciativa ciudadana del Senado); ambos con cierta interpretación clasificatoria.",
+    "etapas_uso_IA: 'Análisis' (procesa/recupera y agrupa por afinidad temática los aportes) y 'Traducción Política' (las ideas seleccionadas se incorporan y citan en la justificación del proyecto de ley); la segunda etiqueta es interpretativa."
+  ]
+}

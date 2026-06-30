@@ -1,0 +1,96 @@
+{
+ "caso_id": "CO-isidatainsights-reto-de-ciudad-datos-con",
+ "pais": "CO",
+ "nombre_caso": "ISIDataInsights / Reto de Ciudad 'Datos con Historia' (SDP Bogotá)",
+ "bloque": "1-nuevo",
+ "proceso_participativo": "Reto de Ciudad No. 1 'Datos con Historia': convocatoria de innovación abierta de la Oficina Laboratorio de Ciudad de la Secretaría Distrital de Planeación (SDP) de Bogotá y la Corporación Maloka (primero de los cinco retos de la estrategia '5 en Innovación' del Plan de Desarrollo 'Bogotá Camina Segura' 2024-2028), realizada entre el 30 de octubre y el 15 de noviembre de 2024. El reto buscaba automatizar la recolección, análisis y categorización de información cualitativa gestionada por la SDP (incluidos los aportes ciudadanos y la información generada por entidades distritales sobre planes y políticas en ejecución) mediante desarrollo tecnológico, para integrarla en la toma de decisiones de planeación urbana. La solución ganadora, ISIDataInsights (de Inversiones Gutiérrez García y Cía – IGG), procesa documentos, valida su consistencia y aplica modelos de IA para identificar patrones clave. NOTA: el caso es la HERRAMIENTA GANADORA del concurso, en fase de integración a los sistemas del Distrito; no se halló evidencia de su aplicación operativa a los aportes de un proceso participativo concreto.",
+ "ano_inicio": 2024,
+ "ano_cierre": null,
+ "estado_actividad": "en desarrollo / implementación",
+ "evidencia_actividad_2026": "No se hallaron evidencias de actividad ni de aplicación operativa en 2026. La documentación pública disponible corresponde a oct-dic 2024 (convocatoria del reto 30-oct a 15-nov 2024; anuncio de la solución ganadora ~dic 2024). Las fuentes indican que, tras ganar, ISIDataInsights 'entra en una tercera etapa, donde será integrada a los sistemas de información del Distrito' (lenguaje prospectivo). No se encontró ningún reporte de 2025 o 2026 que confirme integración finalizada, despliegue operativo, ni análisis de aportes de un proceso participativo concreto con la herramienta. Búsquedas específicas para 2025-2026 no arrojaron resultados sobre uso real.",
+ "organizacion_a_cargo": "Convocante: Secretaría Distrital de Planeación de Bogotá (SDP) – Oficina Laboratorio de Ciudad, junto con la Corporación Maloka (aliado operador de la convocatoria de innovación abierta). Desarrollador de la solución ganadora ISIDataInsights: Inversiones Gutiérrez García y Cía S. en C. – IGG (empresa privada, Colombia), en co-creación con los equipos técnicos de la SDP.",
+ "tipo_convocante": [
+  "gobierno local"
+ ],
+ "tipo_organizacion": "Público",
+ "tipo_proceso": [
+  "Gobernanza Colaborativa"
+ ],
+ "etapas_uso_IA": [
+  "Análisis"
+ ],
+ "continuidad": "Uso único",
+ "nivel_consolidacion": 1,
+ "sistema_IA": "ISIDataInsights, herramienta desarrollada por Inversiones Gutiérrez García y Cía – IGG. Según las fuentes, 'permite procesar documentos en diversos formatos, validar la consistencia de la información y aplicar modelos de inteligencia artificial para identificar patrones clave', y cuenta con una interfaz diseñada para la usabilidad que facilita la visualización de resultados y el análisis de datos cualitativos. No se especifica la familia técnica concreta de los modelos de IA (NLP/clustering/LLM, etc.).",
+ "tipos_IA_familia": null,
+ "usa_LLM_generativa": "no-claro",
+ "funcion_IA": "Procesar documentos en diversos formatos, validar la consistencia de la información y aplicar modelos de inteligencia artificial para identificar patrones clave en información cualitativa de planeación urbana, con el propósito de incorporar de manera eficiente y sistemática los aportes ciudadanos y la información generada por las entidades distritales sobre planes y políticas en ejecución. Facilita la visualización de resultados y el análisis de datos cualitativos. (Función descrita para la herramienta ganadora; aún en fase de integración, sin aplicación operativa documentada a un proceso participativo concreto.)",
+ "rol_IA": "contenido",
+ "usa_IA_en_proceso": "no-claro",
+ "tipo_desarrollador_IA": [
+  "Privado"
+ ],
+ "origen_desarrollador": "Nacional",
+ "entra_tentativo": "DUDA",
+ "justificacion_elegibilidad": "DUDA. Por un lado, la herramienta ISIDataInsights está diseñada para operar sobre el CONTENIDO de información cualitativa de planeación, incluyendo explícitamente 'los aportes ciudadanos' (procesar, validar consistencia, aplicar modelos de IA para identificar patrones clave, analizar datos cualitativos), lo que en principio encaja con el criterio de IA sobre el contenido de los aportes dentro de un marco de planeación. Por otro lado, el caso documentado es una HERRAMIENTA GANADORA de un concurso de innovación abierta (Reto de Ciudad 'Datos con Historia', SDP+Maloka, oct-nov 2024) que, al cierre de las fuentes, 'entra en una tercera etapa, donde será integrada a los sistemas de información del Distrito' — es decir, en fase de integración prospectiva, SIN evidencia de aplicación operativa real a los aportes de un proceso participativo concreto (consulta, cabildo, presupuesto participativo, etc.). Conforme a la regla de elegibilidad ('herramienta ganadora de concurso pero aún sin aplicación a un proceso participativo concreto → DUDA'), se clasifica como DUDA con nivel de consolidación bajo (1, anuncio). ADVERTENCIA IMPORTANTE: existe una iniciativa distinta y separada de la SDP donde la ciudadanía participa en la construcción del Plan de Desarrollo mediante IA a través del agente virtual 'Chatico' (WhatsApp); esa NO es ISIDataInsights y no debe conflarse con este caso.",
+ "confianza": "MEDIA",
+ "evidencia_verbatim": {
+  "pais": "El reto 'Datos con Historia' fue una iniciativa de innovación abierta liderada por la Oficina Laboratorio de Ciudad de la Secretaría Distrital de Planeación y Maloka, que se desarrolló entre el 30 de octubre y el 15 de noviembre de 2024, y buscó mejorar la gestión de la información cualitativa en la planeación de Bogotá.",
+  "tipo_proceso": "Este reto es el primero de los cinco previstos en la estrategia '5 en Innovación' del Plan de Desarrollo 'Bogotá Camina Segura'. [...] una iniciativa de innovación abierta enfocada en resolver desafíos relacionados con la automatización, recolección, análisis y categorización de información cualitativa para mejorar la toma de decisiones en planeación urbana.",
+  "etapas_uso_IA": "Esta herramienta, desarrollada en co-creación con los equipos técnicos de la Secretaría Distrital de Planeación, permite procesar documentos en diversos formatos, validar la consistencia de la información y aplicar modelos de inteligencia artificial para identificar patrones clave.",
+  "estado_actividad": "Con este resultado, ISIDataInsights entra en una tercera etapa, donde será integrada a los sistemas de información del Distrito para optimizar el análisis de datos cualitativos y fortalecer el desarrollo de futuras políticas urbanas.",
+  "nivel_consolidacion": "El equipo de desarrollo de la propuesta ganadora recibió una suma de 90.000.000 de pesos y acompañamiento de expertos para desarrollar, aprobar e implementar la propuesta.",
+  "tipo_convocante": "El reto 'Datos con Historia' fue una iniciativa de innovación abierta liderada por la Oficina Laboratorio de Ciudad de la Secretaría Distrital de Planeación y Maloka.",
+  "usa_IA_en_proceso": "El propósito fue encontrar nuevas formas de incorporar, de manera eficiente y sistemática, los aportes ciudadanos y la información clave generada por las entidades distritales sobre planes y políticas públicas en ejecución.",
+  "rol_IA": "permite procesar documentos en diversos formatos, validar la consistencia de la información y aplicar modelos de inteligencia artificial para identificar patrones clave [...] facilita la visualización de resultados y el análisis de datos cualitativos a través de una interfaz diseñada para la usabilidad."
+ },
+ "fuentes": [
+  {
+   "url": "https://www.sdp.gov.co/noticias/bogota-cuenta-nueva-solucion-optimizar-analisis-de-informacion-cualitativa-basada-ciencia-tecnologia",
+   "estado": "403 (WebFetch y curl bloqueados por policy denial del gateway de egreso para sdp.gov.co; contenido recuperado vía WebSearch)",
+   "cita": "Bogotá ya cuenta con una nueva solución para optimizar el análisis de información cualitativa, basada en ciencia, tecnología e innovación. [...] dentro del reto 'Datos con Historia', que es el primero de cinco retos que se realizan en la ciudad como parte del plan de desarrollo 'Bogotá Camina Segura'. [...] Inversiones Gutiérrez García y Cía. fue seleccionada como la mejor solución y pasará a la fase de implementación. (Publicación oficial SDP, ~dic 2024.)"
+  },
+  {
+   "url": "https://maloka.org/noticias/toma-decisiones-planeacion-urbana/",
+   "estado": "403 (WebFetch y curl bloqueados por policy denial del gateway para maloka.org; contenido recuperado vía WebSearch)",
+   "cita": "ISIDataInsights, creada por Inversiones Gutiérrez García y CIA – IGG, fue seleccionada como la propuesta ganadora. Esta herramienta, desarrollada en co-creación con los equipos técnicos de la Secretaría Distrital de Planeación, permite procesar documentos en diversos formatos, validar la consistencia de la información y aplicar modelos de inteligencia artificial para identificar patrones clave. [...] El propósito fue encontrar nuevas formas de incorporar, de manera eficiente y sistemática, los aportes ciudadanos y la información clave generada por las entidades distritales sobre planes y políticas públicas en ejecución. [...] ISIDataInsights entra en una tercera etapa, donde será integrada a los sistemas de información del Distrito para optimizar el análisis de datos cualitativos y fortalecer el desarrollo de futuras políticas urbanas."
+  },
+  {
+   "url": "https://maloka.org/reto-de-ciudad-1/",
+   "estado": "403 (WebFetch y curl bloqueados por policy denial; contenido recuperado vía WebSearch)",
+   "cita": "El reto 'Datos con Historia' [...] convocó a innovadores, startups, empresas y grupos de investigación, con la solución ganadora ISIDataInsights, creada por Inversiones Gutiérrez García. El equipo de desarrollo ganador recibió 90 millones de pesos y acompañamiento en una etapa final donde la solución propuesta debe desarrollarse, probarse e implementarse. [Pregunta del reto:] ¿Cómo automatizar la recolección, análisis y categorización de la información cualitativa gestionada por la SDP a través de desarrollo tecnológico, de modo que esa información pueda integrarse efectivamente en la toma de decisiones y optimizar la planeación urbana?"
+  },
+  {
+   "url": "https://www.eltiempo.com/bogota/el-proyecto-ganador-de-la-convocatoria-de-la-secretaria-de-planeacion-para-abordar-problemas-urbanos-de-bogota-3441475",
+   "estado": "403 (WebFetch bloqueado por policy denial para eltiempo.com; contenido y título recuperados vía WebSearch)",
+   "cita": "El proyecto ganador de la convocatoria de la Secretaría de Planeación para abordar problemas urbanos de Bogotá. [...] La iniciativa 'Datos con Historia' [...] tuvo lugar entre el 30 de octubre y el 15 de noviembre de 2024 [...]. La propuesta ganadora fue ISIDataInsights, desarrollada por Inversiones Gutiérrez García y CIA – IGG [...]. ISIDataInsights entra en una tercera etapa, donde será integrada a los sistemas de información del Distrito."
+  },
+  {
+   "url": "https://www.sdp.gov.co/noticias/bogota-cuenta-herramienta-innovadora-abordar-los-problemas-urbanos-aporte-de-la-ciudadania",
+   "estado": "403 (WebFetch/curl bloqueados por policy denial; contenido recuperado vía WebSearch)",
+   "cita": "Bogotá cuenta con una herramienta innovadora para abordar los problemas urbanos con aporte de la ciudadanía. [...] su implementación contribuye a mejorar la calidad de la información, reducir los tiempos de procesamiento y fortalecer la incorporación de los aportes ciudadanos y reportes institucionales en los procesos de planeación estratégica de la ciudad."
+  }
+ ],
+ "gaps": [
+  {
+   "campo": "usa_IA_en_proceso / estado_actividad (aplicación operativa a un proceso participativo concreto)",
+   "motivo": "Las fuentes (oct-dic 2024) confirman que ISIDataInsights ganó el reto y 'será integrada' a los sistemas del Distrito (lenguaje prospectivo), pero NO se halló evidencia de que la herramienta haya sido efectivamente integrada y aplicada al análisis de los aportes de un proceso participativo concreto (consulta, cabildo, presupuesto participativo, construcción del PDD). Es el punto crítico que mantiene el caso en DUDA.",
+   "url_para_buscar": "https://www.sdp.gov.co/noticias (buscar reportes 2025-2026 sobre integración/uso operativo de ISIDataInsights y de la estrategia '5 en Innovación')"
+  },
+  {
+   "campo": "tipos_IA_familia / usa_LLM_generativa",
+   "motivo": "Las fuentes describen 'modelos de inteligencia artificial para identificar patrones clave' y 'análisis de datos cualitativos', pero no especifican la familia técnica (NLP, clustering, modelos de lenguaje, LLM generativo, etc.) ni el stack tecnológico de la herramienta.",
+   "url_para_buscar": "https://isidatainsights.com / perfil de Inversiones Gutiérrez García y Cía (IGG); ficha técnica de la solución en Maloka/SDP"
+  },
+  {
+   "campo": "nivel_consolidacion (verificación de despliegue)",
+   "motivo": "Se documenta un único anuncio/edición (Reto No. 1, 2024) y fase de integración. Para subir de '1 anuncio' a '2 puntual' o '3 recurrente' haría falta evidencia de al menos un uso real implementado, o de ediciones/aplicaciones posteriores.",
+   "url_para_buscar": "https://maloka.org/convocatoria-sdp/ y reportes de gestión SDP 2025"
+  }
+ ],
+ "alertas": [
+  "RIESGO DE CONFUSIÓN: existe una iniciativa SEPARADA de la SDP de Bogotá titulada 'Por primera vez la ciudadanía podrá participar en la construcción del Plan de Desarrollo de Bogotá a través de Inteligencia Artificial', que corresponde al agente virtual 'Chatico' (chatbot en WhatsApp para recoger propuestas ciudadanas al PDD 'Bogotá Camina Segura' 2024-2028). Chatico NO es ISIDataInsights; son sistemas y casos distintos. Este caso (CO-isidatainsights...) se refiere exclusivamente a la herramienta ganadora del Reto 'Datos con Historia'. No conflar ambos.",
+  "Los dominios de las fuentes primarias (sdp.gov.co, maloka.org, eltiempo.com) devuelven 403 tanto a WebFetch como a curl por policy denial del gateway de egreso. El contenido fue recuperado mediante la herramienta WebSearch (que sí accede al texto subyacente y devuelve fragmentos consistentes y corroborados entre SDP, Maloka y El Tiempo). En consecuencia, las citas en evidencia_verbatim y fuentes reflejan la redacción reportada por el crawler de búsqueda; no fue posible abrir el HTML directo para verificar puntuación/ortografía carácter a carácter, por lo que algunas citas pueden tener variaciones menores respecto al original.",
+  "El caso está fuertemente fundamentado para el periodo del concurso (oct-dic 2024) pero carece por completo de evidencia de actividad o despliegue en 2025-2026; la clasificación como 'en desarrollo / implementación' y nivel '1 anuncio' refleja esa ausencia."
+ ]
+}

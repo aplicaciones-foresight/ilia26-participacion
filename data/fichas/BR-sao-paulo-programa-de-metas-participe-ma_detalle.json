@@ -1,0 +1,116 @@
+{
+  "caso_id": "BR-sao-paulo-programa-de-metas-participe-ma",
+  "pais": "BR",
+  "nombre_caso": "São Paulo - Programa de Metas / Participe Mais (Gemini)",
+  "bloque": "1-nuevo",
+  "proceso_participativo": "Consulta pública del Programa de Metas 2025-2028 / Plano Plurianual (PPA) 2026-2029 / Planos de Ação das Subprefeituras (PAS) 2026-2029 de la Prefeitura de São Paulo, realizada en el portal Participe Mais (Participe+), plataforma de participación social de la Prefeitura construida sobre el software libre Decidim (basado en CONSUL/Decidim de Madrid-Barcelona). La consulta estuvo abierta del 7/04/2025 al 11/05/2025; el ciclo participativo incluyó 36 audiencias públicas híbridas en la ciudad (abril-mayo 2025) y recibió 6.368 propostas y más de 31.000 interacciones ciudadanas (sugerencias, apoyos, propuestas y críticas). Sobre ese material, en mayo de 2025 Carolina Borges -Agente de Governo Aberto de la Prefeitura- desarrolló una herramienta (Python + Pandas + Google Gemini) que clasifica las propostas en categorías, las ordena por asunto y cantidad de apoyos y genera relatórios y painéis visuales (ranking de temas más recurrentes y participación por distrito y subprefeitura), 'facilitando a divulgação das propostas à população'. La herramienta y su metodología se presentaron en la oficina 'Análise de Dados com Inteligência Artificial na Gestão Pública: Programa de Metas' de la Escola do Parlamento de la Câmara Municipal de São Paulo (15/12/2025), realizada en parceria con el Programa Agentes de Governo Aberto da Prefeitura.",
+  "ano_inicio": 2025,
+  "ano_cierre": 2025,
+  "estado_actividad": "concluido",
+  "evidencia_actividad_2026": "La consulta pública del Programa de Metas se desarrolló de abril a mayo de 2025 y el Programa de Metas 2025-2028 final (132 metas) fue entregado a la Câmara Municipal el 30/09/2025. La herramienta de IA fue desarrollada en mayo de 2025 y presentada en la oficina de la Escola do Parlamento el 15/12/2025. No se halló evidencia de uso/edición en 2026 ni de adopción operacional recurrente; es un uso puntual ligado a un único ciclo (edición 2025 del Programa de Metas).",
+  "organizacion_a_cargo": "Proceso participativo (Programa de Metas / PPA / PAS): Prefeitura de São Paulo (Secretaria Municipal de Planejamento / Casa Civil / Coordenadoria de Governo Aberto, portal Participe Mais). Herramienta de IA: desarrollada por Carolina Borges, Agente de Governo Aberto de São Paulo (formación en Ciência da Computação y posgrado en Gestão e Controle Social de Políticas Públicas por la Escola de Contas do TCM-SP; experiencia profesional, académica y voluntaria), presentada en la oficina de la Escola do Parlamento da Câmara Municipal de São Paulo en parceria con el Programa Agentes de Governo Aberto. No se confirmó que la Prefeitura adoptara esta herramienta como su pipeline oficial de análisis del proceso.",
+  "tipo_convocante": [
+    "gobierno local"
+  ],
+  "tipo_organizacion": "Público",
+  "tipo_proceso": [
+    "Participación Digital",
+    "Gobernanza Colaborativa"
+  ],
+  "etapas_uso_IA": [
+    "Análisis"
+  ],
+  "continuidad": "Uso único",
+  "nivel_consolidacion": 2,
+  "sistema_IA": "Herramienta de análisis de datos construida en Python con la librería Pandas y la IA generativa Google Gemini. A partir de la base de propostas exportada del portal Participe Mais, clasifica las propuestas ciudadanas en categorías temáticas, las ordena por asunto y por cantidad de apoyos, y produce relatórios y painéis visuales: ranking de los temas más recurrentes y participación por distrito y subprefeitura. Se describe el uso de prompts/comandos a la IA (con 'ajustes necessários nos comandos para a Inteligência Artificial' como desafío reportado). No se publica el detalle técnico (modelo Gemini exacto, prompts), por lo que la implementación se conoce solo por descripción.",
+  "tipos_IA_familia": [
+    "LLM generativa",
+    "NLP",
+    "Clasificación de texto"
+  ],
+  "usa_LLM_generativa": "sí",
+  "funcion_IA": "Clasificar y organizar el CONTENIDO de las propuestas ciudadanas enviadas a la consulta pública: la IA (Google Gemini) categoriza por tema las 6.368 propostas, las rankea por asunto y cantidad de apoyos y alimenta painéis de participación por distrito/subprefeitura, con el objetivo declarado de 'facilitar a divulgação das propostas à população'. Es procesamiento del contenido de los aportes (clasificar/agrupar/sintetizar), no apoyo meramente logístico.",
+  "rol_IA": "contenido",
+  "usa_IA_en_proceso": "sí",
+  "tipo_desarrollador_IA": [
+    "Sociedad Civil",
+    "Gobierno"
+  ],
+  "origen_desarrollador": "Nacional",
+  "entra_tentativo": "DUDA",
+  "justificacion_elegibilidad": "A favor de ENTRAR: dentro de un proceso participativo real y formal (consulta pública del Programa de Metas 2025-2028 / PPA / PAS de la Prefeitura de São Paulo en el portal Participe Mais/Decidim, abr-may 2025, 6.368 propostas y 31.000+ interacciones) se usó IA generativa (Google Gemini, vía Python+Pandas) sobre el CONTENIDO de los aportes ciudadanos: clasificación temática, ranking por asunto/apoyos y painéis por subprefeitura. Eso es procesamiento de contenido (rol_IA=contenido), no logística ni chatbot informativo. Convocante = Prefeitura de São Paulo = gobierno local. DUDA porque no se pudo verificar el USO OPERACIONAL OFICIAL por parte de la Prefeitura: la herramienta fue desarrollada por una Agente de Governo Aberto (Carolina Borges; perfil sociedad civil/voluntario dentro del programa municipal) y su existencia y resultados están documentados a través de una oficina formativa de la Escola do Parlamento (Câmara Municipal, poder legislativo) sobre datos reales del proceso, sin evidencia pública de que la Prefeitura la haya adoptado como su pipeline de análisis ni de que sus salidas hayan determinado formalmente la versión final del plan (la incorporación de 6 metas se atribuye al ciclo participativo, sin mención de esta herramienta). Queda ambiguo si cuenta como instancia de IA desplegada dentro del proceso participativo oficial o como una iniciativa de sociedad civil/educativa sobre datos del proceso.",
+  "confianza": "MEDIA",
+  "evidencia_verbatim": {
+    "pais": "Programa de Metas 2025-2028, PPA e PAS 2026-2029 - portal Participe Mais da Prefeitura de São Paulo (participemais.prefeitura.sp.gov.br/legislation/processes/323).",
+    "tipo_proceso": "as sugestões enviadas pela população para o PPA (Plano Plurianual) 2026-2029, durante a consulta pública do Programa de Metas no portal Participe Mais, que é a plataforma de participação social da Prefeitura",
+    "etapas_uso_IA": "Em maio de 2025, foi elaborada uma ferramenta que classifica as propostas para o Programa de Metas em categorias e as ordena por assunto e quantidade de apoios, facilitando a divulgação das propostas. (...) exibição dos relatórios e painéis visuais gerados pela análise destacam: ranking dos temas mais recorrentes; participação em cada distrito e subprefeitura",
+    "estado_actividad": "Após o Ciclo Participativo, com 36 audiências públicas híbridas pela cidade (abril e maio), recebimento de 6.368 propostas e mais de 31 mil interações dos cidadãos (...) através do site de consultas públicas da Prefeitura - ParticipeMais, a gestão incorporou seis metas a mais à versão inicial de 126",
+    "nivel_consolidacion": "Em maio de 2025, foi elaborada uma ferramenta que classifica as propostas para o Programa de Metas em categorias e as ordena por assunto e quantidade de apoios (...) No desenvolvimento da ferramenta foram utilizados conhecimentos em dados abertos, inteligência artificial e gestão pública.",
+    "tipo_convocante": "através do site de consultas públicas da Prefeitura - ParticipeMais, a gestão incorporou seis metas a mais à versão inicial de 126",
+    "usa_IA_en_proceso": "A metodologia demonstra a solução com exposição de trechos de código e explicação das tecnologias utilizadas: Python, Pandas, Google Gemini. (...) desafios reais encontrados, como o alto volume de dados, otimização do tempo de análise e ajustes necessários nos comandos para a Inteligência Artificial",
+    "rol_IA": "uma ferramenta que classifica as propostas para o Programa de Metas em categorias e as ordena por assunto e quantidade de apoios"
+  },
+  "fuentes": [
+    {
+      "url": "https://www.saopaulo.sp.leg.br/escoladoparlamento/cursos/em-andamento/oficina-analise-de-dados-com-inteligencia-artificial-na-gestao-publica-programa-de-metas/",
+      "estado": "403",
+      "cita": "Oficina 'Análise de Dados com Inteligência Artificial na Gestão Pública: Programa de Metas' - Escola do Parlamento, Câmara Municipal de São Paulo. WebFetch devolvió HTTP 403 (denegación de política del gateway / anti-bot del origen .leg.br); contenido recuperado vía WebSearch. Texto clave reproducido consistentemente: 'Em maio de 2025, foi elaborada uma ferramenta que classifica as propostas para o Programa de Metas em categorias e as ordena por assunto e quantidade de apoios, facilitando a divulgação das propostas'; 'tecnologias utilizadas: Python, Pandas, Google Gemini'; 'ranking dos temas mais recorrentes; participação em cada distrito e subprefeitura'; oficina em parceria com o Programa Agentes de Governo Aberto da Prefeitura; instrutora Carolina Borges; data 15/12/2025, online, 100 vagas."
+    },
+    {
+      "url": "https://www.saopaulo.sp.leg.br/escoladoparlamento/cursos/cursos-anteriores/cursos-realizados-em-2025/oficina-analise-de-dados-com-inteligencia-artificial-na-gestao-publica-programa-de-metas/",
+      "estado": "403",
+      "cita": "Versión 'cursos-realizados-em-2025' de la misma oficina (Escola do Parlamento). WebFetch 403; vía WebSearch confirma: 'as sugestões enviadas pela população para o PPA 2026-2029, durante a consulta pública do Programa de Metas no portal Participe Mais'; perfil de la desarrolladora Carolina Borges (Ciência da Computação + posgrado em Gestão e Controle Social de Políticas Públicas pela Escola de Contas do TCM; experiência profissional, acadêmica e voluntária); 'No desenvolvimento da ferramenta foram utilizados conhecimentos em dados abertos, inteligência artificial e gestão pública'."
+    },
+    {
+      "url": "https://www.saopaulo.sp.leg.br/blog/programa-de-metas-oficina-da-escola-do-parlamento-abordara-uso-da-inteligencia-artificial-na-analise-de-dados-da-gestao-publica/",
+      "estado": "403",
+      "cita": "Nota del Portal da Câmara Municipal de São Paulo sobre la oficina. WebFetch 403; vía WebSearch confirma que la oficina presenta casos reales de IA aplicada a datos públicos, 'com foco nas sugestões enviadas pela população para o PPA 2026-2029, durante a consulta pública do Programa de Metas no portal Participe Mais', y describe la ferramenta (Python, Pandas, Google Gemini) que clasifica/rankea las propostas y genera painéis por distrito y subprefeitura."
+    },
+    {
+      "url": "https://prefeitura.sp.gov.br/web/casa_civil/w/programa-de-metas-prev%C3%AA-r-57-bilh%C3%B5es-em-investimentos-em-quatro-anos",
+      "estado": "403",
+      "cita": "Noticia oficial Prefeitura/Casa Civil sobre el Programa de Metas 2025-2028 (R$ 57 bi). WebFetch 403; vía WebSearch: 'Após o Ciclo Participativo, com 36 audiências públicas híbridas pela cidade (abril e maio), recebimento de 6.368 propostas e mais de 31 mil interações dos cidadãos com sugestões, apoios, propostas e críticas através do site de consultas públicas da Prefeitura - ParticipeMais, a gestão incorporou seis metas a mais à versão inicial de 126'; entrega à Câmara em 30/09/2025; versión final 132 metas. NO atribuye la incorporación a la herramienta de IA."
+    },
+    {
+      "url": "https://participemais.prefeitura.sp.gov.br/legislation/processes/323",
+      "estado": "403",
+      "cita": "Proceso 323 'Programa de Metas 2025-2028, PPA e PAS 2026-2029' en el portal Participe Mais (Participe+). WebFetch 403; vía WebSearch confirma que es el espacio de la consulta pública donde se recibieron las sugerencias para el PPA 2026-2029; portal Participe Mais = plataforma de participación social de la Prefeitura (software Decidim, basado en el de Madrid; São Paulo y Madrid en la Open Government Partnership)."
+    },
+    {
+      "url": "https://prefeitura.sp.gov.br/web/relacoes_institucionais/w/coordenadoria_de_governo_aberto/253369",
+      "estado": "403",
+      "cita": "Programa Agentes de Governo Aberto (Coordenadoria de Governo Aberto da Prefeitura). WebFetch 403; vía WebSearch: programa que capacita y engancha a la sociedad civil en la agenda de gobierno abierto; los Agentes son 'pessoas físicas cujos projetos foram credenciados por meio de Edital de Credenciamento... cidadãos e representantes da sociedade civil', remunerados con bolsa (hasta R$ 7,4 mil); usan la plataforma Participe+; programa reconocido por OCDE y OIDP. Marco institucional de Carolina Borges como Agente de Governo Aberto."
+    }
+  ],
+  "gaps": [
+    {
+      "campo": "usa_IA_en_proceso / entra_tentativo (uso operacional oficial)",
+      "motivo": "No se halló evidencia de que la Prefeitura de São Paulo haya adoptado oficialmente la herramienta de Carolina Borges como su pipeline de análisis de las propostas, ni de que sus salidas (ranking/painéis) hayan determinado formalmente la versión final del Programa de Metas. La existencia y los resultados de la herramienta se documentan a través de una oficina formativa de la Escola do Parlamento (Câmara Municipal) sobre datos reales del proceso. Por eso se marca DUDA.",
+      "url_para_buscar": "https://prefeitura.sp.gov.br/web/casa_civil/w/programa-de-metas-prev%C3%AA-r-57-bilh%C3%B5es-em-investimentos-em-quatro-anos"
+    },
+    {
+      "campo": "tipo_desarrollador_IA / origen_desarrollador",
+      "motivo": "Carolina Borges es Agente de Governo Aberto (programa de la Prefeitura) con perfil de sociedad civil/voluntaria, pero también actúa dentro de un programa municipal y como instructora de la Escola do Parlamento. La frontera Sociedad Civil vs. Gobierno es difusa; se marcaron ambas. No hay equipo/empresa identificado más allá de ella. Origen Nacional (São Paulo, Brasil).",
+      "url_para_buscar": "https://www.saopaulo.sp.leg.br/escoladoparlamento/cursos/cursos-anteriores/cursos-realizados-em-2025/oficina-analise-de-dados-com-inteligencia-artificial-na-gestao-publica-programa-de-metas/"
+    },
+    {
+      "campo": "sistema_IA / usa_LLM_generativa (detalle técnico)",
+      "motivo": "Se confirma 'Google Gemini' como tecnología (LLM generativa), pero no se publica el modelo exacto, los prompts ni el detalle del pipeline (cómo se combinan Pandas y Gemini para la clasificación). usa_LLM_generativa='sí' se basa en la mención explícita de Google Gemini.",
+      "url_para_buscar": "https://www.saopaulo.sp.leg.br/escoladoparlamento/cursos/em-andamento/oficina-analise-de-dados-com-inteligencia-artificial-na-gestao-publica-programa-de-metas/"
+    },
+    {
+      "campo": "evidencia_verbatim (verificación carácter a carácter en HTML)",
+      "motivo": "Todas las páginas relevantes (.leg.br Escola do Parlamento, prefeitura.sp.gov.br, participemais, oidp.net) devolvieron HTTP 403 a WebFetch (denegación de política del gateway/anti-bot). Las citas en portugués se reconstruyeron a partir de extractos de WebSearch, que reproducen el mismo texto de forma consistente entre pasadas y entre páginas, pero no fue posible verificar el HTML fuente carácter a carácter.",
+      "url_para_buscar": "https://www.saopaulo.sp.leg.br/blog/programa-de-metas-oficina-da-escola-do-parlamento-abordara-uso-da-inteligencia-artificial-na-analise-de-dados-da-gestao-publica/"
+    }
+  ],
+  "alertas": [
+    "DUDA CENTRAL confirmada parcialmente: la herramienta (Python+Pandas+Google Gemini) SÍ procesa el contenido de las 6.368 propostas reales de la consulta pública oficial (clasifica, rankea por tema/apoyos, mapea por subprefeitura), pero su uso OPERACIONAL OFICIAL por la Prefeitura NO está verificado. Está documentada a través del programa Agentes de Governo Aberto + una oficina de la Escola do Parlamento (Câmara Municipal) sobre datos reales, sin evidencia de que sea el pipeline oficial de análisis del proceso. Por eso entra_tentativo=DUDA y confianza=MEDIA.",
+    "Desarrolladora identificada: Carolina Borges, Agente de Governo Aberto de São Paulo (ediciones 2020, 2021, 2024), formación en Ciência da Computação y posgrado en Gestão e Controle Social de Políticas Públicas (Escola de Contas do TCM-SP), con experiencia voluntaria. Perfil sociedad civil dentro de un programa municipal; instructora de la oficina de la Escola do Parlamento (15/12/2025).",
+    "Distinción institucional: el proceso participativo (Programa de Metas/PPA/PAS, Participe Mais) lo convoca la Prefeitura de São Paulo (Poder Ejecutivo = gobierno local); la oficina donde se presenta la herramienta es de la Escola do Parlamento de la Câmara Municipal (Poder Legislativo). El convocante del PROCESO es el gobierno local; el desarrollo/difusión de la herramienta involucra al programa municipal Agentes de Governo Aberto y a la Câmara.",
+    "Todas las URLs gubernamentales y de OIDP devolvieron HTTP 403 a WebFetch (política del gateway/anti-bot, confirmado en $HTTPS_PROXY/__agentproxy/status con 'connect_rejected'/'403 to CONNECT' para dominios .org.br). El contenido se recuperó vía WebSearch con texto consistente entre múltiples pasadas; no se pudo abrir ninguna página fuente directamente.",
+    "Cifras del proceso cruzadas y consistentes en múltiples búsquedas: consulta abierta 07/04/2025-11/05/2025; 36 audiencias híbridas; 6.368 propostas; 31.000+ interacciones; versión inicial 126 metas -> 132 finales (6 incorporadas); R$ 57 bi; entrega a la Câmara 30/09/2025.",
+    "tipo_proceso: se asignó 'Participación Digital' (consulta pública en plataforma digital Participe Mais/Decidim) y 'Gobernanza Colaborativa' (instrumento de planificación estratégica municipal co-construido con la población); etiquetas con cierta interpretación. No es Presupuesto Participativo en sentido estricto, aunque el PPA es un plan presupuestario plurianual.",
+    "rol_IA=contenido fundamentado: la IA opera sobre el contenido de las propuestas (clasificación temática y ranking), no como mero apoyo logístico; por eso NO se clasificó como rol_IA='apoyo'."
+  ]
+}

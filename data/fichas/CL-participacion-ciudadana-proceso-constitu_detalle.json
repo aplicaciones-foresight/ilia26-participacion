@@ -1,0 +1,67 @@
+{
+ "caso_id": "CL-participacion-ciudadana-proceso-constitu",
+ "pais": "CL",
+ "nombre_caso": "Participación Ciudadana Proceso Constitucional",
+ "bloque": "2-baseline",
+ "proceso_participativo": "Análisis de los resultados obtenidos de los Diálogos Ciudadanos Autoconvocados dentro del proceso constitucional",
+ "ano_inicio": "2023",
+ "ano_cierre": null,
+ "estado_actividad": "cerrado",
+ "evidencia_actividad_2026": null,
+ "organizacion_a_cargo": "Secretaría de Participación Ciudadana",
+ "tipo_convocante": [
+  "gobierno nacional"
+ ],
+ "tipo_organizacion": [
+  "Público"
+ ],
+ "tipo_proceso": [
+  "Gobernanza Colaborativa"
+ ],
+ "etapas_uso_IA": [
+  "Análisis"
+ ],
+ "continuidad": [
+  "Uso único"
+ ],
+ "nivel_consolidacion": 2,
+ "sistema_IA": "Procesamiento de Lenguaje Natural (NLP)",
+ "tipos_IA_familia": [
+  "NLP - Tópicos"
+ ],
+ "usa_LLM_generativa": "no",
+ "funcion_IA": "Identificación de tópicos (nodos centrales) y visualización de frases",
+ "rol_IA": "contenido",
+ "usa_IA_en_proceso": "sí",
+ "tipo_desarrollador_IA": [
+  "Privado"
+ ],
+ "origen_desarrollador": "Nacional",
+ "entra_tentativo": "SI",
+ "justificacion_elegibilidad": "Aplica a los dos casos homónimos (autoconvocados y audiencias)",
+ "confianza": "MEDIA (baseline 2025; sin señal web 2026 nueva)",
+ "evidencia_verbatim": {
+  "pais": "Caso del índice ILIA 2025 (BBDD oficial del equipo)",
+  "tipo_proceso": "Governanza Colaborativa",
+  "etapas_uso_IA": "Análisis",
+  "estado_actividad": "BBDD 2025: Cerrado",
+  "nivel_consolidacion": "Continuidad (BBDD 2025): Uso único",
+  "tipo_convocante": "Secretaría de Participación Ciudadana",
+  "usa_IA_en_proceso": "Identificación de tópicos (nodos centrales) y visualización de frases",
+  "rol_IA": "Identificación de tópicos (nodos centrales) y visualización de frases"
+ },
+ "fuentes": [
+  {
+   "url": "https://www.secretariadeparticipacion.cl/wp-content/uploads/2023/10/Informe-SPC-Final.pdf",
+   "estado": "baseline-2025",
+   "cita": ""
+  }
+ ],
+ "gaps": [],
+ "alertas": [
+  "usa_LLM_generativa='no' derivado de Tipos de IA 2025 (sin 'LLM'); verificar si cambió en 2026",
+  "recodificación 2026: Aplica a los dos casos homónimos (autoconvocados y audiencias)",
+  "Datos brutos del índice ILIA 2025 (BBDD validada por el equipo); recodificación 2026 (convocante 7-cat, nivel 0-3) y reverificación de actividad 2026."
+ ],
+ "fuente_datos": "baseline_2025_bbdd+recod2026+reverif_web2026"
+}

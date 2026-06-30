@@ -1,0 +1,80 @@
+{
+ "caso_id": "BR-portal-e-cidadania-marcado-automatico-de",
+ "pais": "BR",
+ "nombre_caso": "Portal e-Cidadania: Marcado automático de respuestas ciudadanas en videos de audiencias públicas",
+ "bloque": "2-baseline",
+ "proceso_participativo": "Implementación de IA para identificar y marcar en los videos de eventos las respuestas dadas a preguntas ciudadanas, incluso cuando estas no fueron respondidas directamente durante las audiencias.",
+ "ano_inicio": "2025",
+ "ano_cierre": null,
+ "estado_actividad": "activo",
+ "evidencia_actividad_2026": "reconfirmado web (institucional): Reconfirmado 2025: la IA analiza transcripciones de 1.800+ audiencias y marca 2.700+ preguntas ciudadanas como respondidas.",
+ "organizacion_a_cargo": "Senado Federal de Brasil",
+ "tipo_convocante": [
+  "gobierno nacional"
+ ],
+ "tipo_organizacion": [
+  "Público"
+ ],
+ "tipo_proceso": [
+  "Gobernanza Colaborativa"
+ ],
+ "etapas_uso_IA": [
+  "Traducción Política"
+ ],
+ "continuidad": [
+  "Plataforma"
+ ],
+ "nivel_consolidacion": 2,
+ "sistema_IA": "Modelo de IA desarrollado internamente para análisis de transcripciones y videos.",
+ "tipos_IA_familia": [
+  "Voz a Texto",
+  "LLM",
+  "NLP"
+ ],
+ "usa_LLM_generativa": "sí",
+ "funcion_IA": "Identificar y marcar momentos en los videos donde las preguntas ciudadanas fueron respondidas, ya sea directa o indirectamente.",
+ "rol_IA": "contenido",
+ "usa_IA_en_proceso": "sí",
+ "tipo_desarrollador_IA": [
+  "Gobierno"
+ ],
+ "origen_desarrollador": "Nacional",
+ "entra_tentativo": "SI",
+ "justificacion_elegibilidad": "Plataforma activa; posible nivel 3 si se verifica recurrencia (override)",
+ "confianza": "ALTA (baseline 2025 + reverif. web 2026)",
+ "evidencia_verbatim": {
+  "pais": "Caso del índice ILIA 2025 (BBDD oficial del equipo)",
+  "tipo_proceso": "Governanza Colaborativa",
+  "etapas_uso_IA": "Traducción Política",
+  "estado_actividad": "reconfirmado web (institucional): Reconfirmado 2025: la IA analiza transcripciones de 1.800+ audiencias y marca 2.700+ preguntas ciudadanas como respondidas.",
+  "nivel_consolidacion": "Continuidad (BBDD 2025): Plataforma",
+  "tipo_convocante": "Senado Federal de Brasil",
+  "usa_IA_en_proceso": "Identificar y marcar momentos en los videos donde las preguntas ciudadanas fueron respondidas, ya sea directa o indirectamente.",
+  "rol_IA": "Identificar y marcar momentos en los videos donde las preguntas ciudadanas fueron respondidas, ya sea directa o indirectamente."
+ },
+ "fuentes": [
+  {
+   "url": "https://www12.senado.leg.br/noticias/materias/2025/03/28/e-cidadania-utiliza-ia-para-marcar-respostas-aos-cidadaos-em-audiencias",
+   "estado": "baseline-2025",
+   "cita": ""
+  },
+  {
+   "url": "https://ipen-network.org/spotlight-on-public-engagement-practice-brazil/",
+   "estado": "baseline-2025",
+   "cita": ""
+  }
+ ],
+ "gaps": [
+  {
+   "campo": "nivel_consolidacion",
+   "motivo": "posible nivel 3 (permanente/recurrente) si se confirma recurrencia con evidencia",
+   "url_para_buscar": "https://www12.senado.leg.br/noticias/materias/2025/03/28/e-cidadania-utiliza-ia-para-marcar-respostas-aos-cidadaos-em-audiencias"
+  }
+ ],
+ "alertas": [
+  "usa_LLM_generativa derivado de Tipos de IA (BBDD 2025: contiene 'LLM')",
+  "recodificación 2026: Plataforma activa; posible nivel 3 si se verifica recurrencia (override)",
+  "Datos brutos del índice ILIA 2025 (BBDD validada por el equipo); recodificación 2026 (convocante 7-cat, nivel 0-3) y reverificación de actividad 2026."
+ ],
+ "fuente_datos": "baseline_2025_bbdd+recod2026+reverif_web2026"
+}

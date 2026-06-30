@@ -1,0 +1,107 @@
+{
+  "caso_id": "CL-lxs-400-chile-delibera",
+  "pais": "CL",
+  "nombre_caso": "LXS 400 - Chile Delibera",
+  "bloque": "1-nuevo",
+  "proceso_participativo": "Encuesta deliberativa nacional (Deliberative Poll, modelo de James S. Fishkin) convocada por el Senado de Chile (Comisión Desafíos del Futuro) junto a la Fundación Tribu, el Centro para la Democracia Deliberativa de la Universidad de Stanford, la Universidad de Chile, la Asociación Chilena de Municipalidades (AChM) y el Servicio de Registro Civil. Un mini-público de ~400-514 ciudadanos seleccionados aleatoriamente y representativos del país deliberó de forma online (vía Zoom y la Stanford Online Deliberation Platform) los días 5, 6 y 7 de marzo de 2021 sobre reformas a pensiones y salud, en grupos pequeños y sesiones plenarias, de cara al debate constitucional. El proceso comenzó en diciembre de 2020 con la selección de la muestra y la entrega de material informativo equilibrado (argumentos a favor y en contra). La plataforma online de Stanford incorporó un moderador automatizado (IA) que controlaba los tiempos y distribuía equitativamente los turnos de palabra (colas de habla, temporizador, sistema de señal para determinar quién hablaba a continuación); en paralelo, el Centro de Microdatos de la U. de Chile usó tecnología basada en IA para seleccionar la muestra representativa.",
+  "ano_inicio": 2020,
+  "ano_cierre": 2021,
+  "estado_actividad": "inactivo",
+  "evidencia_actividad_2026": null,
+  "organizacion_a_cargo": "Senado de Chile (Comisión Desafíos del Futuro, Ciencia, Tecnología e Innovación) y Fundación Tribu, con la Universidad de Stanford (Center for Deliberative Democracy / Deliberative Democracy Lab), la Universidad de Chile (Centro de Microdatos), la Asociación Chilena de Municipalidades (AChM) y el Servicio de Registro Civil e Identificación.",
+  "tipo_convocante": ["gobierno nacional", "universidad", "sociedad civil"],
+  "tipo_organizacion": "Mixto",
+  "tipo_proceso": ["Mini públicos"],
+  "etapas_uso_IA": ["Implementación", "Planificación"],
+  "continuidad": "Uso único",
+  "nivel_consolidacion": 2,
+  "sistema_IA": "Stanford Online Deliberation Platform (plataforma de deliberación online del Center for Deliberative Democracy / Deliberative Democracy Lab de la Universidad de Stanford) con moderador automatizado (automated moderator) para facilitar la Encuesta Deliberativa online. Adicionalmente, el Centro de Microdatos de la U. de Chile empleó tecnología basada en IA para la selección de la muestra representativa.",
+  "tipos_IA_familia": ["Moderación/facilitación automatizada", "Sistema de reglas/temporización", "Muestreo estadístico asistido por IA"],
+  "usa_LLM_generativa": "no",
+  "funcion_IA": "El moderador automatizado de la Stanford Online Deliberation Platform gestiona la LOGÍSTICA de la deliberación: mantiene los tiempos y distribuye equitativamente los derechos/turnos de palabra, permite a los participantes formar colas de habla (speaking queues), aplica agendas con tiempos (timed agendas), controla mediante un sistema de señal automatizado a quién se le pide la siguiente intervención y un temporizador para cuánto tiempo tiene cada participante; además solicita argumentos a favor y en contra de las propuestas, incentiva a quienes no están hablando y consulta si todas las posturas fueron exploradas. Es decir, estructura la CONVERSACIÓN (turnos, tiempos, equidad de participación), no analiza ni sintetiza automáticamente el CONTENIDO de los aportes en reportes. En paralelo, la IA del Centro de Microdatos de la U. de Chile se usó para seleccionar la muestra representativa (~400 de un universo de ~35.000 / 18 millones de habitantes). El análisis sustantivo de resultados se hizo mediante encuesta cuantitativa (CLCERT/Centro de Microdatos) y un informe cualitativo, no mediante síntesis automática por IA del contenido deliberado.",
+  "rol_IA": "apoyo",
+  "usa_IA_en_proceso": "sí",
+  "tipo_desarrollador_IA": ["Academia"],
+  "origen_desarrollador": "Internacional",
+  "entra_tentativo": "NO",
+  "justificacion_elegibilidad": "Es inequívocamente un PROCESO PARTICIPATIVO (mini-público / encuesta deliberativa de ~400-514 ciudadanos sobre pensiones y salud, convocado por el Senado). Sin embargo, la DUDA CENTRAL se resuelve en contra de la elegibilidad: la IA empleada (moderador automatizado de la Stanford Online Deliberation Platform) gestiona TURNOS DE HABLA y LOGÍSTICA de la deliberación (mantener el tiempo, distribuir equitativamente los derechos de palabra, colas de habla, agendas con tiempos, sistema de señal para quién habla a continuación), pero NO procesa, clasifica, agrupa ni sintetiza el CONTENIDO de los aportes. La fuente más autorizada (OCDE 2025) lo describe textualmente: 'The platform used an AI tool to keep time and distribute speaking rights equitably'. Según el criterio explícito de elegibilidad ('si la IA solo gestiona TURNOS DE HABLA / logística de la deliberación SIN procesar el contenido de los aportes -> rol_IA=apoyo -> NO/DUDA'), el caso NO entra. El segundo uso de IA documentado (selección de la muestra por el Centro de Microdatos) es de muestreo, tampoco procesa el contenido de los aportes. Se deja constancia (alerta) de un signo ambiguo: entre los entregables planificados figuraba 'un reporte de Inteligencia Artificial (IA)', pero ninguna fuente confirma que ese informe consistiera en un análisis/síntesis automática por IA del contenido deliberado (lo más probable: informe metodológico sobre el uso de IA en el proceso, o reutilización del rotulo 'IA' por la selección muestral); el análisis sustantivo se hizo por encuesta cuantitativa (CLCERT/Microdatos) e informe cualitativo. Por la fuerza de la evidencia de la OCDE y de Stanford sobre la función del moderador automatizado, se resuelve NO (con confianza ALTA en el rol de la IA, dejando la duda residual del 'reporte de IA' como alerta).",
+  "confianza": "ALTA",
+  "evidencia_verbatim": {
+    "pais": "In 2020, the Senate of Chile partnered with the Stanford Center for Deliberative Democracy to involve citizens in the online deliberative process 'LXS 400 - Chile Delibera' performed through the Stanford Online Deliberation Platform. (OCDE 2025, 'AI in civic participation and open government')",
+    "tipo_proceso": "Over 500 citizens representative of the Chilean society discussed in small groups and deliberated in plenary sessions on health and pension reforms. (OCDE 2025) / Entre el 5 y el 7 de marzo, 400 personas seleccionadas a traves de una metodologia aleatoria y representativas de todo Chile se reunieron para deliberar sobre dos de los temas publicos mas importantes para el pais: pensiones y salud.",
+    "etapas_uso_IA": "The platform used an AI tool to keep time and distribute speaking rights equitably, allowing participants to form speaking queues and discuss in small groups with timed agendas. (OCDE 2025) / El Centro de Microdatos de la Universidad de Chile, usando tecnologia basada en Inteligencia Artificial (IA), selecciono esta muestra representativa.",
+    "estado_actividad": null,
+    "nivel_consolidacion": "Lxs 400: Chile Delibera... es un evento de participacion ciudadana de escala nacional realizado en Chile desde el 9 de diciembre de 2020, con su evento principal a fines de marzo de 2021. (Wikipedia ES) [Evento puntual de una edicion 2020-2021; no se hallaron ediciones posteriores recurrentes].",
+    "tipo_convocante": "La iniciativa fue impulsada por la Fundacion Tribu; el Senado a traves de la Comision de Desafios del Futuro; la Asociacion Chilena de Municipalidades; la Universidad de Chile; y el Centro para la Democracia Deliberativa de la Universidad de Stanford.",
+    "usa_IA_en_proceso": "The platform used an AI tool to keep time and distribute speaking rights equitably... (OCDE 2025) [confirma que SI se uso IA dentro del proceso, en rol de facilitacion/logistica].",
+    "rol_IA": "The platform used an AI tool to keep time and distribute speaking rights equitably, allowing participants to form speaking queues and discuss in small groups with timed agendas. (OCDE 2025) / An automated moderator controls perspective elicitation, with an automated cue system to determine which participant to elicit a perspective from next and an automated timer to determine how long each participant has to state their perspective. (descripcion de la Stanford Online Deliberation Platform)"
+  },
+  "fuentes": [
+    {
+      "url": "https://www.oecd.org/en/publications/2025/06/governing-with-artificial-intelligence_398fa287/full-report/ai-in-civic-participation-and-open-government_51227ce7.html",
+      "estado": "403",
+      "cita": "In 2020, the Senate of Chile partnered with the Stanford Center for Deliberative Democracy to involve citizens in the online deliberative process 'LXS 400 - Chile Delibera' performed through the Stanford Online Deliberation Platform. The platform used an AI tool to keep time and distribute speaking rights equitably, allowing participants to form speaking queues and discuss in small groups with timed agendas. Over 500 citizens representative of the Chilean society discussed in small groups and deliberated in plenary sessions on health and pension reforms. (OCDE, 'Governing with Artificial Intelligence', Public Governance Committee, declasificado 5 sept. 2025; capitulo 'AI in civic participation and open government'. URL devuelve HTTP 403 a WebFetch; contenido recuperado de forma consistente via WebSearch sobre la misma URL de la OCDE. FUENTE CLAVE que resuelve el rol de la IA como facilitacion/logistica.)"
+    },
+    {
+      "url": "https://deliberation.stanford.edu/news/lxs-400-national-deliberative-poll-chile",
+      "estado": "403",
+      "cita": "Pagina del Deliberative Democracy Lab (Center for Deliberative Democracy) de Stanford sobre 'Lxs 400: National Deliberative Poll in Chile'. Confirma que ~400 personas se reunieron de forma remota a traves de una plataforma creada en Stanford para debatir politicas publicas en grupos de discusion sobre reformas a pensiones y salud (modelo de Encuesta Deliberativa de Fishkin). (HTTP 403 a WebFetch; contenido recuperado via WebSearch.)"
+    },
+    {
+      "url": "https://deliberation.stanford.edu/tools-and-resources/online-deliberation-platform",
+      "estado": "403",
+      "cita": "Descripcion de la Stanford Online Deliberation Platform: plataforma de discusion en video para grupos pequenos con un moderador automatizado que facilita una conversacion estructurada y equitativa. 'An automated moderator controls perspective elicitation, with an automated cue system to determine which participant to elicit a perspective from next and an automated timer to determine how long each participant has to state their perspective. It requests arguments for and against proposals, prods the people who aren't speaking, and gives participants the opportunity to weigh in on whether all sides of the issue have been fully explored.' Usada en Encuestas Deliberativas nacionales en Chile, Canada y EE.UU. (HTTP 403 a WebFetch; contenido via WebSearch.)"
+    },
+    {
+      "url": "https://www.senado.cl/comunicaciones/noticias/chile-delibera-lxs-400-un-fin-de-semana-de-democracia-deliberativa-online",
+      "estado": "403",
+      "cita": "Nota del Senado de Chile: 'Chile Delibera LXS 400: un fin de semana de democracia deliberativa online'. Entre el 5 y el 7 de marzo (2021), 400 personas seleccionadas a traves de una metodologia aleatoria y representativas de todo Chile se reunieron para deliberar sobre pensiones y salud. La iniciativa fue impulsada por el Senado (Comision de Desafios del Futuro), la Fundacion Tribu, la AChM, la Universidad de Chile y el Centro para la Democracia Deliberativa de la Universidad de Stanford. (HTTP 403 a WebFetch; contenido recuperado via WebSearch.)"
+    },
+    {
+      "url": "https://es.wikipedia.org/wiki/Lxs_400:_Chile_Delibera",
+      "estado": "403",
+      "cita": "Articulo de Wikipedia en espanol 'Lxs 400: Chile Delibera' (originalmente 'Deliberacion Pais'): evento de participacion ciudadana de escala nacional desde el 9 de diciembre de 2020, con evento principal a fines de marzo de 2021. En la primera implementacion participaron 514 personas de todas las regiones, seleccionadas por sorteo aleatorio. El Centro de Microdatos de la U. de Chile uso tecnologia basada en IA para seleccionar la muestra. Entre los entregables planificados (primera semana de abril) se menciona un reporte cuantitativo, uno cualitativo, otro de Inteligencia Artificial (IA) y una propuesta de politica publica. Dirigido por el Senado junto a la Fundacion Tribu, Stanford, la AChM, la U. de Chile y el Servicio de Registro Civil. (HTTP 403 a WebFetch; contenido recuperado via WebSearch.)"
+    },
+    {
+      "url": "https://www.uchile.cl/noticias/171543/lanzamiento-de-iniciativa-lxs-400-chile-delibera-",
+      "estado": "403",
+      "cita": "Nota de la Universidad de Chile sobre el lanzamiento de 'Lxs 400: Chile Delibera' como modelo inedito de democracia deliberativa desarrollado por el Centro para la Democracia Deliberativa de Stanford, con participacion de la U. de Chile (Centro de Microdatos) en la seleccion de la muestra y el analisis. (HTTP 403 a WebFetch; contenido recuperado via WebSearch.)"
+    },
+    {
+      "url": "https://tribu.ong/lxs400",
+      "estado": "403",
+      "cita": "Pagina de la Fundacion Tribu sobre LXS 400 (organizacion ejecutora del proceso junto al Senado). No se pudo recuperar contenido detallado verbatim (HTTP 403 a WebFetch; sin extracto util via WebSearch)."
+    }
+  ],
+  "gaps": [
+    {
+      "campo": "rol_IA (reporte de IA)",
+      "motivo": "Entre los entregables planificados se menciona 'un reporte de Inteligencia Artificial (IA)' (junto a un reporte cuantitativo, uno cualitativo y una propuesta de politica publica). Ninguna fuente accesible aclara si ese informe consistio en un analisis/sintesis AUTOMATICA por IA del CONTENIDO de los aportes (lo que inclinaria hacia rol_IA='contenido' y elegibilidad SI) o si es un informe metodologico sobre el uso de IA (moderador automatizado / seleccion muestral). La evidencia disponible (OCDE, Stanford) describe la funcion de la IA como facilitacion/logistica, por lo que se resuelve 'apoyo'; queda como duda residual.",
+      "url_para_buscar": "https://es.wikipedia.org/wiki/Lxs_400:_Chile_Delibera"
+    },
+    {
+      "campo": "estado_actividad / evidencia_actividad_2026",
+      "motivo": "El evento fue puntual (deliberacion principal marzo 2021); no se hallo evidencia de actividad en 2026 ni de ediciones posteriores recurrentes. Se marca 'inactivo' por ausencia de nuevas ediciones, pero no hay cita textual que declare el cierre formal del proceso.",
+      "url_para_buscar": "https://www.lxs400.cl/noticias/"
+    },
+    {
+      "campo": "nivel_consolidacion",
+      "motivo": "Se documenta una unica edicion 2020-2021; no se confirmaron >=2 ediciones recurrentes, por lo que se asigna nivel 2 (puntual). No se hallo una segunda edicion en 2022-2023.",
+      "url_para_buscar": "https://www.senado.cl/comunicaciones/noticias/chile-delibera-lxs-400-un-fin-de-semana-de-democracia-deliberativa-online"
+    },
+    {
+      "campo": "fuentes (verbatim directo)",
+      "motivo": "Todas las URLs clave (OCDE, Stanford, Senado, Wikipedia, U. de Chile, Tribu) devuelven HTTP 403 a WebFetch; las citas se recuperaron via WebSearch sobre esas mismas URLs. Las citas en ingles de la OCDE y de Stanford fueron devueltas casi textualmente por WebSearch; las citas en espanol pueden ser parafrasis/traduccion del contenido indexado, no transcripcion directa de la pagina renderizada.",
+      "url_para_buscar": "https://www.oecd.org/en/publications/2025/06/governing-with-artificial-intelligence_398fa287/full-report/ai-in-civic-participation-and-open-government_51227ce7.html"
+    }
+  ],
+  "alertas": [
+    "ELEGIBILIDAD (duda central resuelta): la IA del proceso (moderador automatizado de la Stanford Online Deliberation Platform) gestiona TURNOS DE HABLA, TIEMPOS y EQUIDAD de participacion (colas de habla, agendas con tiempos, sistema de senal para quien habla a continuacion, temporizador), es decir LOGISTICA de la deliberacion, NO el analisis/sintesis del CONTENIDO de los aportes. OCDE 2025 textual: 'The platform used an AI tool to keep time and distribute speaking rights equitably'. Por el criterio explicito (IA solo gestiona turnos/logistica -> rol_IA=apoyo -> NO/DUDA), entra_tentativo=NO.",
+    "SEGUNDO USO DE IA: el Centro de Microdatos de la U. de Chile uso IA para SELECCIONAR la muestra representativa (muestreo estadistico), tampoco procesa el contenido de los aportes; refuerza el rol 'apoyo' (etapa de Planificacion).",
+    "DUDA RESIDUAL: entre los entregables planificados figura 'un reporte de Inteligencia Artificial (IA)'; ninguna fuente confirma que sea sintesis automatica por IA del contenido deliberado. Si futura evidencia probara que la IA estructuro/sintetizo el contenido de los aportes en reportes, el caso pasaria a rol_IA='contenido' y entra=SI/DUDA. Por ahora la evidencia (OCDE + Stanford) apunta a facilitacion/logistica.",
+    "CIFRA DE PARTICIPANTES: las fuentes varian entre ~400 (nombre/convocatoria), 'over 500' (OCDE) y 514 (Wikipedia, primera implementacion); el rotulo 'LXS 400' refiere al objetivo de ~400 deliberantes representativos.",
+    "FECHAS/ANOS: proceso iniciado en diciembre de 2020 (seleccion de muestra y entrega de material); deliberacion principal online 5-7 de marzo de 2021; entregables/analisis hacia abril-mayo de 2021. ano_inicio=2020, ano_cierre=2021. La OCDE fecha la asociacion en 2020.",
+    "DESARROLLADOR: la plataforma y el modelo (Encuesta Deliberativa de Fishkin) son de la Universidad de Stanford (Academia, origen Internacional). Convocante mixto: gobierno nacional (Senado) + universidad (Stanford, U. de Chile) + sociedad civil (Fundacion Tribu) + otra institucion publica (Registro Civil, AChM). tipo_organizacion=Mixto.",
+    "FUENTES: WebFetch bloqueado con HTTP 403 en todas las URLs clave; contenido y citas recuperados via WebSearch (8 consultas convergentes). La cita decisiva de la OCDE fue devuelta casi textual por WebSearch en multiples consultas, lo que sustenta confianza ALTA en el rol de la IA."
+  ]
+}

@@ -1,0 +1,72 @@
+{
+ "caso_id": "CR-diara",
+ "pais": "CR",
+ "nombre_caso": "dIAra",
+ "bloque": "2-baseline",
+ "proceso_participativo": "Sistema de monitoreo de la ejecución de los proyectos de obras públicas en tiempo real mediante inteligencia artificial, donde los ciudadanos pueden fiscalizar y levantar alertas en caso de irregularidades y corrupción en el proyecto",
+ "ano_inicio": "2024",
+ "ano_cierre": null,
+ "estado_actividad": "activo",
+ "evidencia_actividad_2026": "reconfirmado web (institucional): Reconfirmado 2025 (OGP Open Gov Challenge): visión computacional procesa alertas de inspectores ciudadanos sobre obras públicas; meta de 10 proyectos.",
+ "organizacion_a_cargo": "Contraloría General de la República de Costa Rica",
+ "tipo_convocante": [
+  "otra institución pública"
+ ],
+ "tipo_organizacion": [
+  "Público"
+ ],
+ "tipo_proceso": [
+  "Participación Digital"
+ ],
+ "etapas_uso_IA": [
+  "Traducción Política"
+ ],
+ "continuidad": [
+  "Plataforma"
+ ],
+ "nivel_consolidacion": 2,
+ "sistema_IA": "Reconocimiento de imágenes",
+ "tipos_IA_familia": [
+  "Visión computacional"
+ ],
+ "usa_LLM_generativa": "no",
+ "funcion_IA": "Procesamiento de imágenes captadas en las obras para detectar y clasificar recursos constructivos (maquinaria, personal), generar alertas sobre desviaciones y facilitar la fiscalización en tiempo real.",
+ "rol_IA": "contenido",
+ "usa_IA_en_proceso": "sí",
+ "tipo_desarrollador_IA": [
+  "Academia"
+ ],
+ "origen_desarrollador": "Nacional",
+ "entra_tentativo": "SI",
+ "justificacion_elegibilidad": "Revisar rol_IA: monitoreo de obras (traducción política)",
+ "confianza": "ALTA (baseline 2025 + reverif. web 2026)",
+ "evidencia_verbatim": {
+  "pais": "Caso del índice ILIA 2025 (BBDD oficial del equipo)",
+  "tipo_proceso": "Participación Digital",
+  "etapas_uso_IA": "Traducción Política",
+  "estado_actividad": "reconfirmado web (institucional): Reconfirmado 2025 (OGP Open Gov Challenge): visión computacional procesa alertas de inspectores ciudadanos sobre obras públicas; meta de 10 proyectos.",
+  "nivel_consolidacion": "Continuidad (BBDD 2025): Plataforma",
+  "tipo_convocante": "Contraloría General de la República de Costa Rica",
+  "usa_IA_en_proceso": "Procesamiento de imágenes captadas en las obras para detectar y clasificar recursos constructivos (maquinaria, personal), generar alertas sobre desviaciones y facilitar la fiscalización en tiempo real.",
+  "rol_IA": "Procesamiento de imágenes captadas en las obras para detectar y clasificar recursos constructivos (maquinaria, personal), generar alertas sobre desviaciones y facilitar la fiscalización en tiempo real."
+ },
+ "fuentes": [
+  {
+   "url": "https://www.opengovpartnership.org/the-open-gov-challenge/costa-rica-artificial-intelligence-alerts-citizen-control-public-infrastructure/",
+   "estado": "baseline-2025",
+   "cita": ""
+  },
+  {
+   "url": "https://www.camtic.org/actualidad-tic/contraloria-presento-diara-solucion-tecnologica-para-monitorear-obra-publica/",
+   "estado": "baseline-2025",
+   "cita": ""
+  }
+ ],
+ "gaps": [],
+ "alertas": [
+  "usa_LLM_generativa='no' derivado de Tipos de IA 2025 (sin 'LLM'); verificar si cambió en 2026",
+  "recodificación 2026: Revisar rol_IA: monitoreo de obras (traducción política)",
+  "Datos brutos del índice ILIA 2025 (BBDD validada por el equipo); recodificación 2026 (convocante 7-cat, nivel 0-3) y reverificación de actividad 2026."
+ ],
+ "fuente_datos": "baseline_2025_bbdd+recod2026+reverif_web2026"
+}

@@ -1,0 +1,105 @@
+{
+ "caso_id": "BR-catedra-brasil-co-lab-usp-ia-generativa",
+ "pais": "BR",
+ "nombre_caso": "Cátedra Brasil / Co:Lab USP - IA generativa en presupuesto participativo (SP)",
+ "bloque": "1-dudoso",
+ "proceso_participativo": "Investigación académica (Co:Lab USP / Cátedra Brasil-Alemania, GETIP) sobre el uso de IA generativa para apoyar a la ciudadanía a redactar y estructurar propuestas en procesos de participación, tomando como referencia el orçamento participativo de São Paulo. Descrito como 'pesquisas em andamento' / proyecto de investigación-prototipo, no como una herramienta oficial desplegada en el proceso real (que opera vía la plataforma Participe+/Participe Mais de la Prefeitura, sin IA generativa confirmada).",
+ "ano_inicio": 2025,
+ "ano_cierre": null,
+ "estado_actividad": "activo (investigación en curso)",
+ "evidencia_actividad_2026": "Indicios de actividad reciente (2025): post del blog Co:Lab fechado 2025-03-28 'A IA Generativa e o Futuro da Participação Cidadã: Pesquisas em Andamento'; Policy Brief de scope.uni-muenster.de fechado Jan/2025 (Campagnucci e Vaz); aparición en página 'Projetos em andamento' del Co:Lab. No se encontró evidencia específica de continuidad en 2026 ni de despliegue en producción.",
+ "organizacion_a_cargo": "Co:Lab / Colaboratório de Desenvolvimento e Participação (EACH-USP) y GETIP - Grupo de Estudos em Tecnologia e Inovação na Gestão Pública; investigador José Carlos Vaz (titular da Cátedra CAPES Brasil-Alemanha na Universidade de Münster); coautora Fernanda Campagnucci.",
+ "tipo_convocante": [
+  "universidad"
+ ],
+ "tipo_organizacion": "Público",
+ "tipo_proceso": [
+  "Presupuestos Participativos",
+  "Participación Digital"
+ ],
+ "etapas_uso_IA": [
+  "Implementación"
+ ],
+ "continuidad": "Uso único",
+ "nivel_consolidacion": 1,
+ "sistema_IA": "Sistema de IA generativa basado en grandes modelos de lenguaje (LLM) descrito en la investigación: asistente que dialoga con la ciudadanía, hace preguntas y ayuda a redactar/estructurar la propuesta (ej. 'rede de ciclovias na zona leste de São Paulo') y a convertirla en un texto viable. Se citan sistemas como ChatGPT y DeepSeek como referentes tecnológicos. No es un producto desplegado verificado.",
+ "tipos_IA_familia": [
+  "LLM / IA generativa (NLP)"
+ ],
+ "usa_LLM_generativa": "sí",
+ "funcion_IA": "Asistir a la ciudadanía a formular, redactar y estructurar propuestas de forma comprensible y jurídicamente/financieramente viable; reducir asimetrías para que las propuestas no fracasen por obstáculos legales o financieros; servir de puente entre gobierno y sociedad. (Descrito como capacidad investigada/prototipada, no como servicio en producción.)",
+ "rol_IA": "contenido",
+ "usa_IA_en_proceso": "no",
+ "tipo_desarrollador_IA": [
+  "Academia"
+ ],
+ "origen_desarrollador": "Nacional",
+ "entra_tentativo": "NO",
+ "justificacion_elegibilidad": "Aunque el rol de la IA descrita sería sobre el CONTENIDO de los aportes (ayuda a redactar/estructurar propuestas de orçamento participativo), todas las fuentes encuadran el caso como INVESTIGACIÓN/PROTOTIPO en curso ('Pesquisas em Andamento', 'projetos em andamento', estudio que 'analisou até onde é possível avançar'). No se halló evidencia de un DESPLIEGUE real en un proceso participativo concreto: el orçamento participativo oficial de São Paulo opera mediante la plataforma Participe+/Participe Mais sin IA generativa confirmada. Según el criterio (estudio/investigación/prototipo sin despliegue real -> NO/DUDA), se marca entra=NO, con usa_IA_en_proceso='no' (no en producción).",
+ "confianza": "MEDIA",
+ "evidencia_verbatim": {
+  "pais": "Co:Lab / Colaboratório de Desenvolvimento e Participação (COLAB-USP) opera na USP Leste (EACH-USP), São Paulo, Brasil. (Localización institucional confirmada por colab.each.usp.br; no cita textual exacta recuperable por bloqueo 403 de la página.)",
+  "tipo_proceso": "No projeto da Cátedra Brasil, há o orçamento participativo da cidade em que cidadãos podem dar sugestões sobre o orçamento público com auxílio da inteligência artificial. (snippet de búsqueda sobre jornal.usp.br / Cátedra Brasil)",
+  "etapas_uso_IA": "um cidadão pode propor uma rede de ciclovias na zona leste de São Paulo e a IA o ajuda a escrever essa proposta, fazendo perguntas sobre seus objetivos. (snippet de búsqueda; describe el apoyo de IA en la fase de generación/redacción de la propuesta)",
+  "estado_actividad": "A IA Generativa e o Futuro da Participação Cidadã: Pesquisas em Andamento (título del post Co:Lab, 2025-03-28; 'pesquisas em andamento' = investigación en curso)",
+  "nivel_consolidacion": "Co:Lab USP has a research project titled 'A IA Generativa e o Futuro da Participação Cidadã: Pesquisas em Andamento' ... updated as of March 28, 2025. (snippet; encuadra como proyecto de investigación, sin ediciones recurrentes ni despliegue)",
+  "tipo_convocante": "José Carlos Vaz, from the USP Public Policy Management course / professor at the University of São Paulo's School of Arts, Sciences and Humanities (EACH) ... coordinates GETIP. (snippet; convocante = universidad USP)",
+  "usa_IA_en_proceso": null,
+  "rol_IA": "AI could help generate proposals based on knowledge databases and transform them into legally viable drafts / a IA o ajuda a escrever essa proposta. (snippet; rol sobre el contenido del aporte, pero en marco de investigación)"
+ },
+ "fuentes": [
+  {
+   "url": "https://colab.each.usp.br/blog/2025/03/28/a-ia-generativa-e-o-futuro-da-participacao-cidada-pesquisas-em-andamento/",
+   "estado": "403",
+   "cita": "Título recuperado vía búsqueda: 'A IA Generativa e o Futuro da Participação Cidadã: Pesquisas em Andamento' (Co:Lab, 2025-03-28). WebFetch devolvió HTTP 403; contenido obtenido por snippets de búsqueda. Encuadra el trabajo como investigación en curso sobre IA generativa para mejorar la calidad y efectividad de la participación ciudadana."
+  },
+  {
+   "url": "https://jornal.usp.br/radio-usp/ia-tem-potencial-para-ampliar-participacao-politica-online-e-auxiliar-gestores-em-decisoes/",
+   "estado": "403",
+   "cita": "Vía snippets: 'No projeto da Cátedra Brasil, há o orçamento participativo da cidade em que cidadãos podem dar sugestões sobre o orçamento público com auxílio da inteligência artificial'; 'um cidadão pode propor uma rede de ciclovias na zona leste de São Paulo e a IA o ajuda a escrever essa proposta'. José Carlos Vaz explica os resultados do projeto que 'analisou até onde é possível avançar na participação política on-line'. WebFetch devolvió HTTP 403."
+  },
+  {
+   "url": "https://scope.uni-muenster.de/wp-content/uploads/2025/01/PT-BR-Policy-Brief-AI_Jan2025.pdf",
+   "estado": "403",
+   "cita": "Policy Brief 'Inteligência Artificial para Participação', Fernanda Campagnucci e José Carlos Vaz, Jan/2025 (SCOPE - Universidade de Münster). Documento de recomendación/investigación de políticas; localizado vía búsqueda. WebFetch devolvió HTTP 403, no se pudo extraer cita textual completa."
+  },
+  {
+   "url": "https://colab.each.usp.br/projetos-em-andamento-2/",
+   "estado": "403",
+   "cita": "Página 'Projetos em andamento' del Co:Lab; lista la línea de investigación sobre IA generativa y participación ciudadana. Confirma carácter de proyecto en curso (no concluido / no producto). WebFetch no accedido; referenciado por búsqueda."
+  },
+  {
+   "url": "https://participemais.prefeitura.sp.gov.br/budgets",
+   "estado": "OK-ref",
+   "cita": "Plataforma oficial 'Participe+' / 'Participe Mais' de la Prefeitura de São Paulo, donde se recogen las propuestas del orçamento participativo/orçamento cidadão (presencial en audiencias y online). No se menciona IA generativa como funcionalidad oficial desplegada; refuerza que la herramienta de IA descrita por el Co:Lab no está en producción en el proceso oficial."
+  }
+ ],
+ "gaps": [
+  {
+   "campo": "usa_IA_en_proceso",
+   "motivo": "No se halló evidencia de un despliegue real de la herramienta de IA generativa dentro del orçamento participativo oficial de São Paulo (ni cita textual de despliegue ni mención en la plataforma Participe+). Todo apunta a investigación/prototipo.",
+   "url_para_buscar": "https://participemais.prefeitura.sp.gov.br/budgets"
+  },
+  {
+   "campo": "estado_actividad",
+   "motivo": "Página primaria (blog Co:Lab) y Jornal da USP bloqueadas con HTTP 403 vía WebFetch; no se pudo obtener cita textual exacta del cuerpo, solo título y snippets. Falta confirmar fechas de inicio/fin exactas y si continúa activa en 2026.",
+   "url_para_buscar": "https://colab.each.usp.br/blog/2025/03/28/a-ia-generativa-e-o-futuro-da-participacao-cidada-pesquisas-em-andamento/"
+  },
+  {
+   "campo": "sistema_IA",
+   "motivo": "No se obtuvo el detalle técnico verificado del sistema (modelo/LLM concreto, si es prototipo funcional o conceptual). Posible detalle en el Policy Brief, bloqueado por 403.",
+   "url_para_buscar": "https://scope.uni-muenster.de/wp-content/uploads/2025/01/PT-BR-Policy-Brief-AI_Jan2025.pdf"
+  },
+  {
+   "campo": "tipo_proceso",
+   "motivo": "Falta cita textual completa (no snippet) que confirme que el orçamento participativo es el proceso de referencia y el alcance exacto; la página fuente está bloqueada (403).",
+   "url_para_buscar": "https://colab.each.usp.br/blog/tag/ia-generativa/"
+  }
+ ],
+ "alertas": [
+  "ESTADO = INVESTIGACIÓN / PROTOTIPO en curso ('Pesquisas em Andamento'), NO despliegue oficial confirmado. El orçamento participativo de São Paulo opera vía Participe+/Participe Mais sin IA generativa verificada en producción.",
+  "Convocante/desarrollador = universidad (USP / EACH / Co:Lab / GETIP), no gobierno; reduce elegibilidad como caso de proceso participativo con IA desplegada.",
+  "Limitación de evidencia: las 3 fuentes primarias (blog Co:Lab, Jornal da USP, Policy Brief PDF) devolvieron HTTP 403 vía WebFetch (bloqueo del proxy); las citas se obtuvieron de snippets de búsqueda y no son citas textuales completas verificadas del cuerpo. Confianza limitada a MEDIA.",
+  "El ejemplo concreto (IA ayuda a redactar propuesta de 'rede de ciclovias na zona leste') describe el rol de la IA sobre el CONTENIDO del aporte; si en el futuro se confirma despliegue real en el proceso participativo, el caso podría reclasificarse a entra=SI."
+ ]
+}

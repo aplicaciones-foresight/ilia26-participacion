@@ -1,0 +1,72 @@
+{
+ "caso_id": "CR-u-report-costa-rica-chatbot-juvenil",
+ "pais": "CR",
+ "nombre_caso": "U-Report Costa Rica – chatbot juvenil",
+ "bloque": "2-baseline",
+ "proceso_participativo": "U-Report es una plataforma global de UNICEF que empodera a adolescentes y jóvenes, permitiéndoles opinar sobre temas sociales cruciales a través de canales que ya utilizan, como WhatsApp, SMS y Facebook Messenger.",
+ "ano_inicio": null,
+ "ano_cierre": null,
+ "estado_actividad": "activo",
+ "evidencia_actividad_2026": "reconfirmado web (institucional): Reconfirmado 2024-2025: consulta juvenil de UNICEF con 8.404 participantes; resultados analizados para incidir en política pública.",
+ "organizacion_a_cargo": "Unicef",
+ "tipo_convocante": [
+  "organización internacional"
+ ],
+ "tipo_organizacion": [
+  "Público"
+ ],
+ "tipo_proceso": [
+  "Participación Digital"
+ ],
+ "etapas_uso_IA": [
+  "Análisis"
+ ],
+ "continuidad": [
+  "Plataforma"
+ ],
+ "nivel_consolidacion": 2,
+ "sistema_IA": "Algoritmos de NLP",
+ "tipos_IA_familia": [
+  "NLP"
+ ],
+ "usa_LLM_generativa": "no",
+ "funcion_IA": "La inteligencia artificial de U-Report analiza miles de opiniones enviadas por texto para transformarlas en datos útiles. Utilizando Procesamiento de Lenguaje Natural (PLN), la IA lee y clasifica automáticamente los mensajes de los jóvenes para identificar los temas, tendencias y sentimientos más importantes, convirtiendo sus voces en evidencia clara para la toma de decisiones.",
+ "rol_IA": "contenido",
+ "usa_IA_en_proceso": "sí",
+ "tipo_desarrollador_IA": [
+  "Sociedad Civil",
+  "Privado"
+ ],
+ "origen_desarrollador": "Internacional",
+ "entra_tentativo": "SI",
+ "justificacion_elegibilidad": "Caso del índice 2025; ratificar vigencia 2026 y recodificación.",
+ "confianza": "ALTA (baseline 2025 + reverif. web 2026)",
+ "evidencia_verbatim": {
+  "pais": "Caso del índice ILIA 2025 (BBDD oficial del equipo)",
+  "tipo_proceso": "Participación Digital",
+  "etapas_uso_IA": "Análisis",
+  "estado_actividad": "reconfirmado web (institucional): Reconfirmado 2024-2025: consulta juvenil de UNICEF con 8.404 participantes; resultados analizados para incidir en política pública.",
+  "nivel_consolidacion": "Continuidad (BBDD 2025): Plataforma",
+  "tipo_convocante": "Unicef",
+  "usa_IA_en_proceso": "La inteligencia artificial de U-Report analiza miles de opiniones enviadas por texto para transformarlas en datos útiles. Utilizando Procesamiento de Lenguaje Natural (PLN), la IA lee y clasifica automáticamente los mensajes de los jóvenes para identificar los temas, tendencias y sentimientos más importantes, convirtiendo sus voces en evidencia clara para la toma de decisiones.",
+  "rol_IA": "La inteligencia artificial de U-Report analiza miles de opiniones enviadas por texto para transformarlas en datos útiles. Utilizando Procesamiento de Lenguaje Natural (PLN), la IA lee y clasifica automáticamente los mensajes de los jóvenes para identificar los temas, tendencias y sentimientos más importantes, convirtiendo sus voces en evidencia clara para la toma de decisiones."
+ },
+ "fuentes": [
+  {
+   "url": "https://costarica.ureport.in/",
+   "estado": "baseline-2025",
+   "cita": ""
+  },
+  {
+   "url": "https://www.unicef.org/costarica/comunicados-prensa/plataforma-mundial-u-report-llega-costa-rica",
+   "estado": "baseline-2025",
+   "cita": ""
+  }
+ ],
+ "gaps": [],
+ "alertas": [
+  "usa_LLM_generativa='no' derivado de Tipos de IA 2025 (sin 'LLM'); verificar si cambió en 2026",
+  "Datos brutos del índice ILIA 2025 (BBDD validada por el equipo); recodificación 2026 (convocante 7-cat, nivel 0-3) y reverificación de actividad 2026."
+ ],
+ "fuente_datos": "baseline_2025_bbdd+recod2026+reverif_web2026"
+}

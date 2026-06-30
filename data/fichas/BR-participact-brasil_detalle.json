@@ -1,0 +1,77 @@
+{
+ "caso_id": "BR-participact-brasil",
+ "pais": "BR",
+ "nombre_caso": "ParticipACT Brasil",
+ "bloque": "2-baseline",
+ "proceso_participativo": "ParticipAct es una plataforma brasileña de ciencia ciudadana de código abierto que permite a los ciudadanos reportar problemas urbanos directamente a las agencias públicas a través de una aplicación web y móvil. Utiliza inteligencia artificial para facilitar el registro de los reportes, analizar los datos y mejorar la comunicación con el público mediante chatbots, con el fin de fomentar la colaboración para resolver los problemas de la ciudad.",
+ "ano_inicio": "2018",
+ "ano_cierre": null,
+ "estado_actividad": "activo",
+ "evidencia_actividad_2026": null,
+ "organizacion_a_cargo": "ParticipAct",
+ "tipo_convocante": [
+  "universidad"
+ ],
+ "tipo_organizacion": [
+  "Privado"
+ ],
+ "tipo_proceso": [
+  "Gobernanza Colaborativa"
+ ],
+ "etapas_uso_IA": [
+  "Análisis",
+  "Implementación",
+  "Traducción Política"
+ ],
+ "continuidad": [
+  "Plataforma"
+ ],
+ "nivel_consolidacion": 2,
+ "sistema_IA": null,
+ "tipos_IA_familia": [
+  "NLP",
+  "Chatbot - Inespecífico",
+  "ML - Inespecífico"
+ ],
+ "usa_LLM_generativa": "no",
+ "funcion_IA": "Análisis de sentimientos de ciudadanos, chatbots para interacción, NLP para analizar la información.",
+ "rol_IA": "contenido",
+ "usa_IA_en_proceso": "sí",
+ "tipo_desarrollador_IA": [
+  "Academia"
+ ],
+ "origen_desarrollador": "Nacional",
+ "entra_tentativo": "SI",
+ "justificacion_elegibilidad": "Convocante ambiguo: universidad vs sociedad civil",
+ "confianza": "MEDIA (baseline 2025; sin señal web 2026 nueva)",
+ "evidencia_verbatim": {
+  "pais": "Caso del índice ILIA 2025 (BBDD oficial del equipo)",
+  "tipo_proceso": "Governanza Colaborativa",
+  "etapas_uso_IA": "Análisis, Implementación, Traducción Política",
+  "estado_actividad": "BBDD 2025: Activo",
+  "nivel_consolidacion": "Continuidad (BBDD 2025): Plataforma",
+  "tipo_convocante": "ParticipAct",
+  "usa_IA_en_proceso": "Análisis de sentimientos de ciudadanos, chatbots para interacción, NLP para analizar la información.",
+  "rol_IA": "Análisis de sentimientos de ciudadanos, chatbots para interacción, NLP para analizar la información."
+ },
+ "fuentes": [
+  {
+   "url": "https://site.participact.com.br/",
+   "estado": "baseline-2025",
+   "cita": ""
+  }
+ ],
+ "gaps": [
+  {
+   "campo": "evidencia_actividad_2026",
+   "motivo": "caso 'Activo' sin señal web de actividad/recurrencia 2026 confirmada",
+   "url_para_buscar": "https://site.participact.com.br/"
+  }
+ ],
+ "alertas": [
+  "usa_LLM_generativa='no' derivado de Tipos de IA 2025 (sin 'LLM'); verificar si cambió en 2026",
+  "recodificación 2026: Convocante ambiguo: universidad vs sociedad civil",
+  "Datos brutos del índice ILIA 2025 (BBDD validada por el equipo); recodificación 2026 (convocante 7-cat, nivel 0-3) y reverificación de actividad 2026."
+ ],
+ "fuente_datos": "baseline_2025_bbdd+recod2026+reverif_web2026"
+}

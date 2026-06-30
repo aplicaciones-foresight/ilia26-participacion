@@ -1,0 +1,100 @@
+{
+  "caso_id": "CO-citibeats-pnud-colombia-deliberacion-pub",
+  "pais": "CO",
+  "nombre_caso": "Citibeats + PNUD Colombia (analítica de datos para la deliberación pública juvenil)",
+  "bloque": "1-nuevo",
+  "proceso_participativo": "Iniciativa del Laboratorio de Aceleración del PNUD Colombia que, en el contexto del paro nacional de 2021, usó la plataforma de IA Citibeats para monitorear y agrupar en tiempo real las opiniones y propuestas de la juventud colombiana sobre la coyuntura del país, con el fin de 'mejorar la deliberación pública'. La IA filtra y clasifica contenido de fuentes abiertas (Twitter, Facebook, Instagram, foros, blogs, noticias y comentarios de video). En paralelo, el PNUD y aliados como El Avispero generaron espacios presenciales para contrastar lo dicho en las conversaciones en línea; no hay evidencia de que Citibeats procesara los aportes de un proceso participativo formal convocado (consulta, cabildo o deliberación con inputs estructurados), sino principalmente social listening de medios digitales.",
+  "ano_inicio": 2021,
+  "ano_cierre": null,
+  "estado_actividad": "desconocido",
+  "evidencia_actividad_2026": null,
+  "organizacion_a_cargo": "PNUD Colombia - Laboratorio de Aceleración (Accelerator Lab), con la plataforma de IA Citibeats (empresa, España)",
+  "tipo_convocante": ["organización internacional"],
+  "tipo_organizacion": "Mixto",
+  "tipo_proceso": ["Participación Digital"],
+  "etapas_uso_IA": ["Análisis"],
+  "continuidad": "Uso único",
+  "nivel_consolidacion": 2,
+  "sistema_IA": "Citibeats - plataforma comercial de analítica de datos / IA ética para comprensión social en tiempo real (NLP + Machine Learning).",
+  "tipos_IA_familia": ["NLP", "Machine Learning", "Clasificación de texto", "Análisis de sentimiento", "Clustering temático"],
+  "usa_LLM_generativa": "no",
+  "funcion_IA": "Citibeats monitorea y da seguimiento en tiempo real a opiniones y propuestas, filtrando contenido relevante de fuentes de datos abiertas (Twitter, Facebook Public Pages, Instagram, foros, blogs, noticias y comentarios de video), clasificando las opiniones de los usuarios en categorías y extrayendo conocimiento y patrones de forma automática. En el proyecto del PNUD se analizaron alrededor de 2,1 millones de documentos para identificar los principales tópicos de interés de la juventud (las categorías predominantes giraron en torno a Paz y Justicia, Gobernanza e Inclusión Social) y comprender mejor las preocupaciones de los jóvenes para informar decisiones.",
+  "rol_IA": "contenido",
+  "usa_IA_en_proceso": "no-claro",
+  "tipo_desarrollador_IA": ["Privado"],
+  "origen_desarrollador": "Internacional",
+  "entra_tentativo": "NO",
+  "justificacion_elegibilidad": "La IA (Citibeats) SÍ procesa el contenido de las voces ciudadanas (recolecta, clasifica, agrupa por tópicos y sintetiza opiniones y propuestas de la juventud), lo que en abstracto es un rol de 'contenido'. SIN EMBARGO, la fuente principal (blog del PNUD) describe consistentemente que las fuentes de datos analizadas por la IA son MEDIOS DIGITALES ABIERTOS (Twitter, Facebook, Instagram, foros, blogs, noticias, comentarios de video; ~2,1M de documentos), es decir SOCIAL LISTENING de redes, NO los aportes de un proceso participativo formal convocado (consulta pública, cabildo, deliberación con inputs estructurados). Los espacios presenciales (con El Avispero) se usaron para 'contrastar lo que se dice en las conversaciones en línea', no como insumo de la IA. Existió en paralelo una plataforma de diálogo juvenil convocada (universidades + iglesia + PNUD), pero NO hay evidencia de que Citibeats analizara los aportes de esa deliberación convocada. Según el criterio de elegibilidad ('social listening en redes' = NO ENTRA; estudio/monitoreo de opinión sin proceso participativo convocado cuyos aportes se procesen), el caso NO entra. Se deja constancia de DUDA porque el PNUD lo enmarca explícitamente en 'deliberación pública' y reivindica espacios presenciales y propuestas juveniles; pero la evidencia del insumo real de la IA apunta a escucha de redes.",
+  "confianza": "MEDIA",
+  "evidencia_verbatim": {
+    "pais": "Data analytics to improve public deliberation in Colombia (UNDP Colombia / El PNUD en Colombia, blog, Bogotá, Colombia).",
+    "tipo_proceso": "Citibeats facilita la comprensión social de la situación actual de Colombia mediante el monitoreo y seguimiento en tiempo real de las opiniones y propuestas expresadas en espacios digitales y presenciales, buscando identificar los principales tópicos de interés de la población.",
+    "etapas_uso_IA": "Citibeats utiliza algoritmos que combinan NLP (Procesamiento de Lenguaje Natural) y ML (Machine Learning), filtrando contenido relevante de distintas fuentes de datos abiertas (Twitter, Facebook, Instagram, foros, blogs, noticias y comentarios de video), clasificando las opiniones e información de los usuarios en categorías y extrayendo conocimiento y patrones de forma automática, en tiempo real.",
+    "estado_actividad": null,
+    "nivel_consolidacion": "El PNUD Colombia está experimentando con Citibeats, una plataforma de inteligencia artificial (IA) ética y responsable. (proyecto descrito como experimentación/piloto del Laboratorio de Aceleración, diciembre 2021).",
+    "tipo_convocante": "El Programa de las Naciones Unidas para el Desarrollo (PNUD) en Colombia está experimentando con Citibeats... La tecnologia sirve como un habilitador que permite acelerar la comprensión social respecto a los espacios de deliberación pública y las propuestas, necesidades y preocupaciones de la juventud colombiana.",
+    "usa_IA_en_proceso": "El PNUD y aliados estratégicos, como El Avispero, han generado espacios presenciales para contrastar lo que se dice en las conversaciones en línea, donde los jóvenes destacan preocupaciones sobre la corrupción en el país, la necesidad de prevenir la violencia de género y la importancia de promover la educación.",
+    "rol_IA": "El proyecto de comprensión ciudadana analizó 2.129.502 documentos. Las principales categorías de conversación en Colombia giraron en torno a Paz y Justicia, Gobernanza e Inclusión Social."
+  },
+  "fuentes": [
+    {
+      "url": "https://www.undp.org/es/colombia/blog/analitica-de-datos-para-mejorar-la-deliberacion-publica-en-colombia",
+      "estado": "403",
+      "cita": "El PNUD Colombia está experimentando con Citibeats, una plataforma de inteligencia artificial (IA) ética y responsable. La tecnología sirve como un habilitador que permite acelerar la comprensión social respecto a los espacios de deliberación pública y las propuestas, necesidades y preocupaciones de la juventud colombiana. (URL devuelve HTTP 403 a WebFetch; contenido recuperado vía WebSearch sobre la misma URL del PNUD)."
+    },
+    {
+      "url": "https://www.undp.org/es/colombia/blog/data-analytics-improve-public-deliberation-colombia",
+      "estado": "403",
+      "cita": "Citibeats facilita la comprensión social de la situación actual de Colombia mediante el monitoreo y seguimiento en tiempo real de las opiniones y propuestas expresadas en espacios digitales y presenciales... Citibeats utiliza algoritmos que combinan NLP y ML, filtrando contenido relevante de distintas fuentes de datos abiertas (Twitter, Facebook Public Pages, Instagram, foros, blogs, noticias y comentarios de video), clasificando las opiniones de los usuarios en categorías y extrayendo conocimiento y patrones de forma automática, en tiempo real. (HTTP 403 a WebFetch; contenido recuperado vía WebSearch)."
+    },
+    {
+      "url": "https://www.co.undp.org/content/colombia/es/home/Blog/2021/diciembre/data-analytics-to-improve-public-deliberation-in-colombia.html",
+      "estado": "403",
+      "cita": "Versión archivada del blog del PNUD Colombia con fecha en la ruta '/2021/diciembre/', lo que fija el año de inicio en diciembre de 2021. El PNUD y aliados estratégicos, como El Avispero, generaron espacios presenciales para contrastar lo que se dice en las conversaciones en línea. El proyecto de comprensión ciudadana analizó 2.129.502 documentos; las principales categorías giraron en torno a Paz y Justicia, Gobernanza e Inclusión Social. (HTTP 403 a WebFetch; contenido recuperado vía WebSearch)."
+    },
+    {
+      "url": "https://www.undp.org/es/colombia/press-releases/universidades-p%C3%BAblicas-y-privadas-la-iglesia-cat%C3%B3lica-en-bogot%C3%A1-y-el-pnud-habilitan-una-plataforma-presencial-y-virtual-para",
+      "estado": "403",
+      "cita": "Universidades públicas y privadas, la iglesia católica en Bogotá y el PNUD habilitan una plataforma (presencial y virtual) para fortalecer el diálogo entre la población joven de la capital. La plataforma se desarrolló en escenarios virtuales y presenciales basados en la escucha y la empatía, con 'múltiples epicentros' en puntos de Bogotá donde los jóvenes mantuvieron presencia durante las manifestaciones (junio 2021). Proceso de diálogo juvenil convocado; sin evidencia de que Citibeats procesara sus aportes. (HTTP 403 a WebFetch; contenido recuperado vía WebSearch)."
+    },
+    {
+      "url": "https://blogthinkbig.com/citibeats-datos-objetivos-en-tiempo-real-para-un-impacto-social-positivo",
+      "estado": "403",
+      "cita": "Artículo de Telefónica/Think Big sobre Citibeats: 'Datos objetivos en tiempo real para un impacto social positivo'. Describe a Citibeats como plataforma de IA que estructura, analiza y sintetiza opiniones de grandes volúmenes de datos textuales de cualquier fuente, con énfasis en participación ciudadana y compromiso cívico. (HTTP 403 a WebFetch; metadatos vía WebSearch)."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/matteo-mezzanotte-67412817_latam-colombian-undp-activity-6879002241148170241-oxKI",
+      "estado": "no-encontrado",
+      "cita": "Publicación de LinkedIn de Matteo Mezzanotte (Citibeats) referenciando el proyecto #LATAM #Colombian #undp; no se pudo recuperar el contenido detallado del post (requiere autenticación)."
+    }
+  ],
+  "gaps": [
+    {
+      "campo": "usa_IA_en_proceso / rol_IA",
+      "motivo": "No se confirma que la IA haya procesado los aportes de un proceso participativo FORMAL convocado (consulta, cabildo, deliberación con inputs estructurados). La evidencia indica que la IA analizó medios digitales abiertos (social listening); los espacios presenciales se usaron para contrastar, no como insumo de la IA. La duda es decisiva para la elegibilidad.",
+      "url_para_buscar": "https://www.undp.org/es/colombia/blog/analitica-de-datos-para-mejorar-la-deliberacion-publica-en-colombia"
+    },
+    {
+      "campo": "estado_actividad / evidencia_actividad_2026",
+      "motivo": "No hay evidencia de continuidad ni de actividad en 2026; el proyecto se describe como experimentación de 2021. No se hallaron fechas de cierre ni ediciones posteriores.",
+      "url_para_buscar": "https://www.undp.org/es/colombia/laboratorio-aceleracion"
+    },
+    {
+      "campo": "nivel_consolidacion",
+      "motivo": "Se documenta un uso puntual (un piloto/experimento que analizó ~2,1M de documentos) sin evidencia de ≥2 ediciones recurrentes; se asigna nivel 2. No se confirmó si Citibeats se volvió plataforma permanente del PNUD Colombia.",
+      "url_para_buscar": "https://www.undp.org/es/colombia/blog/data-analytics-improve-public-deliberation-colombia"
+    },
+    {
+      "campo": "ano_cierre",
+      "motivo": "No documentado en las fuentes halladas.",
+      "url_para_buscar": "https://www.co.undp.org/content/colombia/es/home/Blog/2021/diciembre/data-analytics-to-improve-public-deliberation-in-colombia.html"
+    }
+  ],
+  "alertas": [
+    "ELEGIBILIDAD (duda central resuelta): la IA analiza principalmente fuentes digitales abiertas (Twitter, Facebook, Instagram, foros, blogs, noticias, comentarios de video; ~2,1M documentos) = SOCIAL LISTENING de redes, no los aportes de un proceso participativo convocado. Por eso entra_tentativo=NO, aunque el PNUD lo enmarca en 'deliberación pública' (de ahí la DUDA). Existió en paralelo una plataforma de diálogo juvenil convocada (universidades+iglesia+PNUD) pero sin evidencia de que Citibeats procesara sus inputs.",
+    "FUENTES: todas las URLs del PNUD (undp.org y co.undp.org) y de prensa tecnológica devuelven HTTP 403 a WebFetch; el contenido y las citas se recuperaron de forma consistente mediante WebSearch (8 consultas convergentes sobre las mismas URLs). Las citas verbatim son reconstrucciones/traducciones del texto del blog devuelto por WebSearch, no transcripción directa de la página renderizada; confianza MEDIA por esta razón.",
+    "DESARROLLADOR: Citibeats es una empresa con sede en Barcelona, España (Privado, origen Internacional). El convocante/operador es el PNUD (organización internacional); el tipo_organizacion se marca Mixto por la colaboración PNUD (público internacional) + Citibeats (privado) + aliados de sociedad civil (El Avispero) y universidades.",
+    "usa_LLM_generativa=no: el proyecto es de 2021 y la descripción técnica es NLP+ML clásico (clasificación, sentimiento, clustering), sin mención de LLM generativa.",
+    "Antecedente: no es la primera colaboración Citibeats-PNUD; en 2020, con UNESCO, lanzaron un proyecto con tecnología Citibeats contra la desinformación de COVID-19 en República Dominicana (refuerza el perfil de social listening de la herramienta)."
+  ]
+}

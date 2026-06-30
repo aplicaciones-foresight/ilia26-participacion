@@ -1,0 +1,120 @@
+{
+  "caso_id": "CL-senador-virtual-crowdlaw-goblab-uai-imfd",
+  "pais": "CL",
+  "nombre_caso": "Senador Virtual / CrowdLaw (GobLab UAI + IMFD)",
+  "bloque": "1-dudoso",
+  "proceso_participativo": "Senador Virtual (desde 2003; relanzado en 2020 como 'Congreso Virtual' con apoyo del BID), plataforma digital del Congreso de Chile (Senado y, desde 2020, Cámara de Diputadas y Diputados) en la que la ciudadanía conoce proyectos de ley en tramitacion, vota a favor/en contra y deja comentarios/opiniones antes de la votacion parlamentaria. Sobre ese proceso, el GobLab UAI (Escuela de Gobierno, Universidad Adolfo Ibanez) en alianza con la Universidad de Harvard y mediante convenio con el Senado desarrollo el proyecto de investigacion aplicada 'CrowdLaw', que estudia 15-16 anios de participacion ciudadana en la plataforma. El reto declarado del proyecto es el procesamiento de la gran cantidad de informacion recogida; la investigacion usa una metodologia mixta (analisis estadistico, entrevistas, etnografia digital). Por separado, el IMFD (Instituto Milenio Fundamentos de los Datos) desarrolla NLP aplicado a leyes mediante la plataforma 'Vincula', orientada a conectar el conocimiento cientifico/academico con el Congreso, NO a sistematizar los aportes ciudadanos de Senador Virtual.",
+  "ano_inicio": 2018,
+  "ano_cierre": null,
+  "estado_actividad": "activo",
+  "evidencia_actividad_2026": "La plataforma de participacion (Senador Virtual / Congreso Virtual) sigue activa en 2026: el sitio congresovirtual.cl/senadorvirtual.cl esta operativo y la prensa institucional refiere un relanzamiento/acto del 'Congreso Virtual' en junio de 2026 (>130.000 personas participantes). El COMPONENTE de investigacion CrowdLaw (GobLab UAI) se documenta principalmente 2018-2023 (publicaciones 2022-2024); no se halla evidencia de uso de IA/NLP integrado a la plataforma en produccion en 2026. La elegibilidad depende del componente IA, no de la plataforma en si.",
+  "organizacion_a_cargo": "Plataforma de participacion: Congreso Nacional de Chile (Senado y Camara de Diputadas y Diputados) via el Grupo Bicameral de Transparencia, con apoyo del Banco Interamericano de Desarrollo (BID) para la version 'Congreso Virtual' (2018-2020). Componente de investigacion 'CrowdLaw': GobLab UAI (Escuela de Gobierno, Universidad Adolfo Ibanez; directora Maria Paz Hermosilla) en alianza con la Universidad de Harvard (Harvard-UAI Collaborative Research Fund / David Rockefeller Center for Latin American Studies). El IMFD (Instituto Milenio Fundamentos de los Datos, PUC) aparece en el ecosistema de investigacion en NLP/datos, pero su producto NLP documentado (plataforma 'Vincula') conecta investigadores con el Congreso, no procesa los aportes ciudadanos de Senador Virtual.",
+  "tipo_convocante": [
+    "gobierno nacional"
+  ],
+  "tipo_organizacion": "Público",
+  "tipo_proceso": [
+    "Participación Digital"
+  ],
+  "etapas_uso_IA": [
+    "Análisis"
+  ],
+  "continuidad": "Plataforma",
+  "nivel_consolidacion": 3,
+  "sistema_IA": "No se verifica un sistema de IA en produccion que procese el CONTENIDO de los aportes ciudadanos integrado a la plataforma Senador Virtual / Congreso Virtual. El proyecto CrowdLaw (GobLab UAI + Harvard) es investigacion academica con metodologia mixta (analisis estadistico, entrevistas, etnografia digital) sobre 15-16 anios de participacion; las fuentes no describen NLP/clasificacion automatica aplicada de forma operativa al texto de los comentarios dentro del proceso. La actualizacion 'Congreso Virtual' (BID, 2020) anadio 'analisis de datos' y reportes con visualizaciones para la comision (analitica descriptiva/visualizacion), no IA generativa ni NLP de contenido confirmados. El IMFD aplica NLP en la plataforma 'Vincula' (conocimiento cientifico -> leyes), que es un proceso distinto y no opera sobre los aportes ciudadanos. Familia y detalle tecnico no confirmados para un despliegue sobre los aportes.",
+  "tipos_IA_familia": [],
+  "usa_LLM_generativa": "no-claro",
+  "funcion_IA": "En el componente verificado (investigacion CrowdLaw) la IA/NLP no opera de forma integrada al proceso participativo: la investigacion describe analisis estadistico, entrevistas y etnografia digital para entender caracteristicas, dinamicas e impacto de la participacion en Senador Virtual; el 'desafio mas grande y menos resuelto' declarado es el procesamiento de la gran cantidad de informacion recogida, pero no se documenta una herramienta de NLP en produccion que sistematice/clasifique/resuma automaticamente los aportes ciudadanos dentro de la plataforma. La funcion de IA elegible (sistematizacion automatica del contenido de los aportes) no esta verificada en produccion.",
+  "rol_IA": "no-claro",
+  "usa_IA_en_proceso": "no-claro",
+  "tipo_desarrollador_IA": [
+    "Academia"
+  ],
+  "origen_desarrollador": "Nacional",
+  "entra_tentativo": "DUDA",
+  "justificacion_elegibilidad": "La plataforma Senador Virtual / Congreso Virtual es un proceso participativo digital del Congreso de Chile (gobierno nacional) plenamente activo y consolidado (>16 anios, >130.000 participantes), pero la plataforma en si NO usa IA sobre el contenido de los aportes y por tanto no basta. El componente con IA/NLP es el proyecto CrowdLaw del GobLab UAI (+ Harvard), que la evidencia describe consistentemente como INVESTIGACION ACADEMICA de metodologia mixta (analisis estadistico, entrevistas, etnografia digital) aplicada retrospectivamente a 15-16 anios de datos de la plataforma, NO como un despliegue de IA integrado al proceso participativo. La 'senial IMFD + NLP' del caso se refiere a un producto distinto (plataforma 'Vincula' del IMFD: NLP para conectar conocimiento cientifico con la creacion de leyes), que no procesa los aportes ciudadanos de Senador Virtual. Como el NLP/IA sobre el contenido de los aportes solo aparece como investigacion (no integrada al proceso) y no como despliegue en produccion, la elegibilidad es DUDA, con usa_IA_en_proceso = no-claro/no. Convocante del proceso = gobierno nacional (Senado/Congreso); desarrollador del componente IA = universidad (GobLab UAI) + academia (Harvard / IMFD).",
+  "confianza": "MEDIA",
+  "evidencia_verbatim": {
+    "pais": "Since 2003, Chile has had a digital platform for citizen participation, Senador Virtual, where individuals can participate and give their opinion in legislative debates prior to the vote of the senators. (GobLab UAI, '16 years of CrowdLaw in the Chilean parliament' / Proyecto CrowdLaw)",
+    "tipo_proceso": "El Congreso Virtual es la nueva version actualizada de Senador Virtual, una de las herramientas de participacion ciudadana mas antiguas de America Latina; permite votar y dar opiniones sobre proyectos de ley en debate. (Senado de Chile / BID, 'Congreso Virtual: la remozada plataforma de participacion ciudadana')",
+    "etapas_uso_IA": "GobLab's Crowdlaw project includes a descriptive analysis to understand the characteristics, operation and impact of Senador Virtual ... followed by a search for patterns of participation among users through statistical and demographic analysis. (GobLab UAI, Proyecto CrowdLaw)",
+    "estado_actividad": "More than 130,000 people participate in debates of different projects. Congreso Virtual is a tool with which you can vote and give opinions on legislative projects under debate. (Senado de Chile, Congreso Virtual, 2026)",
+    "nivel_consolidacion": "The Congreso Virtual is the new updated version of Senador Virtual, one of the oldest citizen participation tools in Latin America. It emerged in the late 1990s/2003 and has been functioning for 18 years. (Senado de Chile / GobLab UAI)",
+    "tipo_convocante": "Through an agreement with the Chilean Senate, it investigates 15 years of citizen participation on the Senador Virtual platform. In 2018, the Bicameral Transparency Group obtained support from the Inter-American Development Bank (BID) to develop Congreso Virtual. (GobLab UAI / Senado de Chile)",
+    "usa_IA_en_proceso": null,
+    "rol_IA": null
+  },
+  "fuentes": [
+    {
+      "url": "https://goblab.uai.cl/en/crowdlaw/",
+      "estado": "403",
+      "cita": "Proyecto CrowdLaw - GobLab UAI. WebFetch devolvio HTTP 403 (anti-bot Cloudflare del dominio goblab.uai.cl). Contenido recuperado via WebSearch de forma consistente: 'GobLab's Crowdlaw project includes a descriptive analysis to understand the characteristics, operation and impact of Senador Virtual, followed by a search for patterns of participation among users through statistical and demographic analysis'; 'Crowdlaw in Chile is focused on the main challenge and least resolved issue of citizen participation policies: the processing of the large amount of information collected'. Describe investigacion, no IA en produccion sobre los aportes."
+    },
+    {
+      "url": "https://goblab.uai.cl/en/16-years-of-crowdlaw-in-the-chilean-parliament/",
+      "estado": "403",
+      "cita": "16 anios de CrowdLaw en el parlamento chileno - GobLab UAI. WebFetch 403; via WebSearch: 'Since 2003, Chile has had a digital platform for citizen participation, Senador Virtual, where individuals can participate and give their opinion in legislative debates prior to the vote of the senators.' Confirma pais (Chile), proceso (Senador Virtual) y enfoque de investigacion."
+    },
+    {
+      "url": "https://ciudadaniadigital.uai.cl/en/2023/03/13/unpacking-the-democratic-affordances-of-crowdlaw-concept-and-practice-it-feels-like-being-part-of-the-game/",
+      "estado": "403",
+      "cita": "Feddersen & Santana (2022), 'Unpacking the democratic affordances of CrowdLaw concept and practice'. WebFetch 403; via WebSearch: estudio desarrollado por UAI y Harvard, 'Based on a mixed-methods approach of statistical analysis, interviews, and a digital ethnography'; investiga 15 anios de Senador Virtual mediante convenio con el Senado. Confirma naturaleza de INVESTIGACION ACADEMICA (mixed-methods), no despliegue de IA."
+    },
+    {
+      "url": "https://imfd.cl/en/nlp-para-conectar-el-conocimiento-cientifico-con-la-creacion-de-leyes-en-chile/",
+      "estado": "403",
+      "cita": "IMFD: 'NLP para conectar el conocimiento cientifico con la creacion de leyes en Chile'. WebFetch 403; via WebSearch: corresponde a la plataforma 'Vincula' del equipo de Innovacion del IMFD, que conecta a investigadores y academicos con el Congreso Nacional para leyes basadas en evidencia. Es el producto NLP del IMFD, pero NO procesa los aportes ciudadanos de Senador Virtual: aclara que la senial 'IMFD + NLP' es un proceso distinto."
+    },
+    {
+      "url": "https://blogs.iadb.org/conocimiento-abierto/es/congreso-virtual-plataforma-procesos-legislativos-abiertos/",
+      "estado": "403",
+      "cita": "BID (Abierto al Publico): 'Congreso virtual: una plataforma para abrir procesos legislativos'. WebFetch 403; via WebSearch: en 2018 el Grupo Bicameral de Transparencia obtuvo apoyo del BID para desarrollar Congreso Virtual, actualizando Senador Virtual en disenio, funcionalidades y 'analisis de datos' para visualizar la participacion y elaborar un reporte con visualizaciones para la comision. Es analitica/visualizacion descriptiva, no NLP/IA de contenido confirmado."
+    },
+    {
+      "url": "https://www.senado.cl/comunicaciones/noticias/congreso-virtual-la-remozada-plataforma-de-participacion-ciudadana",
+      "estado": "no-verificado",
+      "cita": "Senado de Chile: 'Congreso Virtual: la remozada plataforma de participacion ciudadana'. Via WebSearch: describe el relanzamiento de Senador Virtual como Congreso Virtual con apoyo del BID, mas de 16 anios de antiguedad, herramienta para votar y opinar sobre proyectos de ley. Confirma proceso participativo, convocante (Congreso) y consolidacion; no menciona IA/NLP sobre los aportes."
+    },
+    {
+      "url": "https://congresovirtual.cl/",
+      "estado": "no-verificado",
+      "cita": "Sitio oficial Congreso Virtual / Senador Virtual (senadorvirtual.cl). Operativo en 2026 (>130.000 participantes segun prensa institucional). Confirma actividad 2026 de la PLATAFORMA, sin evidencia de IA en produccion sobre el contenido de los aportes."
+    },
+    {
+      "url": "https://gobierno.uai.cl/investigacion/senador-virtual/",
+      "estado": "403",
+      "cita": "Escuela de Gobierno UAI - investigacion 'Senador Virtual'. WebFetch 403; listada como pagina institucional del proyecto de investigacion (no de un despliegue de IA). Refuerza la clasificacion como linea de investigacion academica."
+    }
+  ],
+  "gaps": [
+    {
+      "campo": "usa_IA_en_proceso / rol_IA (cita textual exacta)",
+      "motivo": "No se halla ninguna fuente que afirme que se aplique NLP/IA al CONTENIDO de los aportes ciudadanos integrado en produccion a la plataforma Senador Virtual / Congreso Virtual. Las fuentes describen investigacion (mixed-methods) y analitica descriptiva/visualizacion. Por eso ambos campos quedan en 'no-claro' y su verbatim es null.",
+      "url_para_buscar": "https://goblab.uai.cl/en/crowdlaw/"
+    },
+    {
+      "campo": "tipos_IA_familia / usa_LLM_generativa",
+      "motivo": "Al no verificarse un sistema de IA en produccion sobre los aportes, no hay detalle tecnico (NLP, clasificacion, clustering, LLM). Si el GobLab aplico NLP/ML de forma instrumental dentro de la investigacion, las fuentes publicas no lo especifican carácter-a-carácter.",
+      "url_para_buscar": "https://goblab.uai.cl/en/papers/"
+    },
+    {
+      "campo": "evidencia_actividad_2026 (componente IA)",
+      "motivo": "La PLATAFORMA esta activa en 2026, pero no se documenta actividad 2026 de un componente de IA sobre los aportes. La fecha de cierre real del proyecto de investigacion CrowdLaw no esta publicada (publicaciones hasta 2022-2024).",
+      "url_para_buscar": "https://goblab.uai.cl/en/category/crowdlaw/"
+    },
+    {
+      "campo": "evidencia_verbatim (verificacion en HTML)",
+      "motivo": "Todas las paginas de goblab.uai.cl, ciudadaniadigital.uai.cl, gobierno.uai.cl, imfd.cl y blogs.iadb.org devolvieron HTTP 403 a WebFetch (anti-bot). Las citas se reconstruyeron a partir de extractos de WebSearch consistentes en multiples fuentes; no fue posible verificacion carácter-a-carácter sobre el HTML fuente.",
+      "url_para_buscar": "https://goblab.uai.cl/en/crowdlaw/"
+    }
+  ],
+  "alertas": [
+    "ESTADO DEL CASO: el componente con IA/NLP es INVESTIGACION ACADEMICA (GobLab UAI + Harvard, convenio con el Senado, ~2018-2023), de metodologia mixta (analisis estadistico, entrevistas, etnografia digital) aplicada retrospectivamente a los datos de Senador Virtual. NO se verifica un despliegue de IA en produccion integrado al proceso participativo. Por ello entra_tentativo=DUDA y usa_IA_en_proceso=no-claro.",
+    "DESAMBIGUACION CLAVE: la 'senial IMFD + NLP' del prompt mezcla dos cosas. El producto NLP documentado del IMFD es la plataforma 'Vincula' ('NLP para conectar el conocimiento cientifico con la creacion de leyes en Chile'), que conecta investigadores con el Congreso, y NO procesa los aportes ciudadanos de Senador Virtual. No hay evidencia de que el IMFD aplique NLP al contenido de los aportes de Senador Virtual en produccion.",
+    "La plataforma Senador Virtual / Congreso Virtual en si NO usa IA sobre el contenido de los aportes; la actualizacion BID (2020) anadio 'analisis de datos' y reportes con visualizaciones para las comisiones (analitica descriptiva/visualizacion), no NLP/IA generativa confirmados. La plataforma sola no basta para elegibilidad.",
+    "nivel_consolidacion=3 y estado_actividad=activo se refieren a la PLATAFORMA participativa (>16 anios, multiples ediciones, >130.000 participantes, activa en 2026), no a un componente de IA. La consolidacion del componente IA seria ~0-1 (investigacion).",
+    "Todas las URLs de UAI (goblab/gobierno/ciudadaniadigital), imfd.cl y blogs.iadb.org devolvieron HTTP 403 a WebFetch (anti-bot del origen, no fallo del proxy). Verbatim reconstruido via WebSearch; senado.cl y congresovirtual.cl quedan como 'no-verificado' por no haberse fetcheado el HTML.",
+    "ano_inicio=2018 se asigna por el convenio Senado-BID y el arranque de la linea CrowdLaw; la plataforma base (Senador Virtual) existe desde 2003 y el relanzamiento 'Congreso Virtual' es 2020. Se documenta un acto/relanzamiento de Congreso Virtual en junio de 2026.",
+    "tipo_desarrollador_IA=Academia y origen=Nacional describen el componente de investigacion (GobLab UAI + Harvard + IMFD). Harvard introduce un origen Internacional en la alianza de investigacion, pero el desarrollador principal del eventual componente IA es nacional (UAI/IMFD)."
+  ]
+}

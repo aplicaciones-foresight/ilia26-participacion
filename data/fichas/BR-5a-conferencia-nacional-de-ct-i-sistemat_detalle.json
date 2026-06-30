@@ -1,0 +1,96 @@
+{
+ "caso_id": "BR-5a-conferencia-nacional-de-ct-i-sistemat",
+ "pais": "BR",
+ "nombre_caso": "5ª Conferência Nacional de CT&I - sistematización con IA",
+ "bloque": "1-nuevo",
+ "proceso_participativo": "Proceso participativo de consulta pública nacional para la construcción de la nueva Estrategia Nacional de Ciencia, Tecnología e Innovación (ENCTI 2030). Comprendió más de 200 etapas preparatorias (18 reuniones temáticas, 157 conferencias libres, 27 conferencias estaduales, 14 municipales y 5 regionales), con más de 100 mil participantes en 221 eventos, culminando en la etapa nacional en Brasília (30-31 jul y 1 ago 2024). La Subcomissão de Sistematização e Documentação usó IA para transcribir, analizar, sistematizar y sintetizar las contribuciones, produciendo e-books de síntesis y los Libros Lilás (rec. de la sociedad) y Violeta (documento de referencia) que orientan la ENCTI.",
+ "ano_inicio": 2023,
+ "ano_cierre": 2025,
+ "estado_actividad": "cerrado",
+ "evidencia_actividad_2026": "No se hallaron evidencias de actividad en 2026. El proceso participativo concluyó en 2024 (etapa nacional jul/ago 2024); el Livro Lilás se lanzó en dic/2024 y el Livro Violeta (documento de referencia) fue entregado al MCTI en abr/2025. Los productos orientan la ENCTI hasta 2030 pero el ciclo de la 5ª edición está cerrado.",
+ "organizacion_a_cargo": "Ministério da Ciência, Tecnologia e Inovação (MCTI), con organización del Centro de Gestão e Estudos Estratégicos (CGEE). La sistematización con IA fue ejecutada por la empresa TDS Company (Porto Digital, Recife, PE) con curaduría de la Subcomissão de Sistematização e Documentação, coordinada por Francilene Garcia.",
+ "tipo_convocante": [
+  "gobierno nacional"
+ ],
+ "tipo_organizacion": "Público",
+ "tipo_proceso": [
+  "Participación Digital",
+  "Gobernanza Colaborativa"
+ ],
+ "etapas_uso_IA": [
+  "Análisis"
+ ],
+ "continuidad": "Uso único",
+ "nivel_consolidacion": 2,
+ "sistema_IA": "Herramientas de Inteligencia Artificial (transcripción de audios/videos, análisis, sistematización y síntesis de las discusiones) operadas por la empresa TDS Company; la plataforma Strateegia (de TDS Company) fue usada para la recolección de recomendaciones en la etapa nacional. No se identifica con certeza el modelo/familia técnica de IA empleado en la sistematización.",
+ "tipos_IA_familia": null,
+ "usa_LLM_generativa": "no-claro",
+ "funcion_IA": "Compilar, transcribir (audios y videos de las reuniones preparatorias), analizar, sistematizar, cruzar y sintetizar el contenido de las contribuciones ciudadanas de más de 200 etapas preparatorias (~4 mil horas de reuniones), incorporando los relatorios de cada sesión, para producir los documentos de síntesis (e-books) y los Libros Lilás/Violeta que orientan la ENCTI. Curaduría humana por la Subcomissão de Sistematização.",
+ "rol_IA": "contenido",
+ "usa_IA_en_proceso": "sí",
+ "tipo_desarrollador_IA": [
+  "Privado"
+ ],
+ "origen_desarrollador": "Nacional",
+ "entra_tentativo": "SI",
+ "justificacion_elegibilidad": "Caso elegible. Dentro de un proceso participativo nacional formal (conferencia nacional con consulta a la sociedad para la nueva ENCTI), se usó IA sobre el CONTENIDO de los aportes ciudadanos: transcripción, análisis, sistematización, cruce y síntesis de ~4 mil horas de reuniones preparatorias y de las contribuciones de más de 200 etapas, generando los documentos de síntesis que orientaron la Estrategia Nacional. El rol de la IA es sobre contenido (no solo logística), con curaduría humana (colaboración humano-IA). El nivel de consolidación es 'puntual' (2): aunque la conferencia es recurrente (5ª edición), el uso de IA para la sistematización es de implementación única en esta edición, sin evidencia de que fuera práctica recurrente en ediciones previas ni de su institucionalización como plataforma permanente.",
+ "confianza": "ALTA",
+ "evidencia_verbatim": {
+  "pais": "A 5ª Conferência Nacional de Ciência, Tecnologia e Inovação (5CNCTI) utilizou o recurso de Inteligência Artificial (IA) para a compilação de dados e discussões realizadas nas reuniões preparatórias – temáticas, livres e etapas regionais.",
+  "tipo_proceso": "A 5CNCTI utilizou a plataforma Strateegia, da TDS Company, para a participação do público na etapa nacional em Brasília, permitindo aos participantes nas modalidades presencial e online sugerir recomendações para a Estratégia Nacional de Ciência, Tecnologia e Inovação (ENCTI) durante os três dias do evento.",
+  "etapas_uso_IA": "Segundo Ruy Belfort, CEO da TDS Company, o trabalho da IA consistiu na transcrição, análise, sistematização e síntese das discussões que resultaram em dois e-books, recentemente lançados na 76ª Reunião da SBPC, em Belém.",
+  "estado_actividad": "Livro Lilás: relata os trabalhos realizados nos três dias da Conferência Nacional (30 e 31 de julho e 1º de agosto de 2024).",
+  "nivel_consolidacion": "A sistematização foi feita pela empresa pernambucana TDS Company, instalada no Porto Digital do Recife e a curadoria, realizada pela Subcomissão de Sistematização e Documentação da conferência, coordenada por Francilene Garcia.",
+  "tipo_convocante": "A 5ª Conferência Nacional de Ciência, Tecnologia e Inovação (5CNCTI) foi conduzida pelo MCTI e organizada pelo CGEE (Centro de Gestão e Estudos Estratégicos).",
+  "usa_IA_en_proceso": "A produção do livro teve o uso de ferramentas de inteligência artificial para sistematizar os áudios, vídeos e incorporar os relatórios feitos em cada sessão.",
+  "rol_IA": "Segundo Ruy Belfort, CEO da TDS Company, o trabalho da IA consistiu na transcrição, análise, sistematização e síntese das discussões que resultaram em dois e-books."
+ },
+ "fuentes": [
+  {
+   "url": "https://5cncti.org.br/noticias/5cncti-utilizou-colaboracao-humano-ia-para-comunicar-resultados-alcancados-na-fase-preparatoria/",
+   "estado": "403 (WebFetch/curl bloqueados por policy denial del gateway; contenido recuperado vía WebSearch)",
+   "cita": "A 5ª Conferência Nacional de Ciência, Tecnologia e Inovação (5CNCTI) utilizou o recurso de Inteligência Artificial (IA) para a compilação de dados e discussões realizadas nas reuniões preparatórias – temáticas, livres e etapas regionais. A sistematização foi feita pela empresa pernambucana TDS Company (...) e a curadoria, realizada pela Subcomissão de Sistematização e Documentação da conferência, coordenada por Francilene Garcia. Segundo Ruy Belfort, CEO da TDS Company, o trabalho da IA consistiu na transcrição, análise, sistematização e síntese das discussões que resultaram em dois e-books."
+  },
+  {
+   "url": "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/2024/07/e-books-resumem-4-mil-horas-de-reunioes-preparatorias-da-5cncti-com-uso-da-ia",
+   "estado": "403 (WebFetch bloqueado por policy denial; contenido y título recuperados vía WebSearch)",
+   "cita": "E-books resumem 4 mil horas de reuniões preparatórias da 5CNCTI com uso da IA. (...) A IA realizou a transcrição de todos os vídeos gerados que foram somados a relatórios de coordenadores e consultores, mais a curadoria pela Subcomissão de Sistematização e Documentação."
+  },
+  {
+   "url": "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/2024/12/livro-lilas-reune-recomendacoes-da-sociedade-durante-a-5a-conferencia-nacional-de-ciencia-tecnologia-e-inovacao",
+   "estado": "403 (WebFetch bloqueado por policy denial; contenido recuperado vía WebSearch)",
+   "cita": "A produção do livro teve o uso de ferramentas de inteligência artificial para sistematizar os áudios, vídeos e incorporar os relatórios feitos em cada sessão. Os textos foram revisados por membros da comissão responsável pela sistematização e documentação da Conferência."
+  },
+  {
+   "url": "https://agenciagov.ebc.com.br/noticias/202408/5a-conferencia-nacional-ct-i-publico-recorde-temas-urgentes",
+   "estado": "403 (WebFetch bloqueado; contenido recuperado vía WebSearch)",
+   "cita": "Mais de 100 mil pessoas participaram de 221 eventos preparatórios para a 5CNCTI nos últimos seis meses – entre conferências regionais, estaduais, municipais, livres e temáticas. Um documento com a compilação do que foi discutido na 5CNCTI deveria ser apresentado em até dez dias, com a inteligência artificial sendo usada em sua elaboração."
+  },
+  {
+   "url": "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/2025/04/livro-violeta-da-5a-conferencia-nacional-e-entregue-ao-mcti",
+   "estado": "403 (WebFetch bloqueado; título/contenido recuperados vía WebSearch)",
+   "cita": "Livro Violeta da 5ª Conferência Nacional é entregue ao MCTI. (...) teve sua versão final revisada por Francilene Garcia, Alaor Chaves (UFMG) e Luiz Antônio Elias (INPI). Os documentos foram produzidos com o objetivo de contribuir para propor recomendações para a elaboração de uma nova Estratégia Nacional de Ciência, Tecnologia e Inovação (ENCTI) até 2030."
+  }
+ ],
+ "gaps": [
+  {
+   "campo": "tipos_IA_familia / usa_LLM_generativa",
+   "motivo": "Las fuentes describen funciones (transcripción, análisis, sistematización, síntesis) pero no especifican la familia técnica concreta ni si se usó un LLM generativo. La síntesis sugiere capacidades generativas, pero no hay confirmación explícita del modelo/herramienta (no se nombra GPT u otro).",
+   "url_para_buscar": "https://5cncti.org.br/noticias/e-books-com-sintese-das-reunioes-preparatorias-da-5cncti-serao-apresentados-na-76a-sbpc/"
+  },
+  {
+   "campo": "tipo_desarrollador_IA",
+   "motivo": "Se confirma que la sistematización fue ejecutada por TDS Company (Privado, nacional) con su plataforma Strateegia; falta confirmar si el modelo de IA subyacente fue propio de TDS o un servicio de terceros (lo que podría añadir otro tipo de desarrollador).",
+   "url_para_buscar": "https://www.tds.company/"
+  },
+  {
+   "campo": "etapas_uso_IA (Traducción Política)",
+   "motivo": "La IA participó en Análisis (sistematización/síntesis de aportes). No queda claro si el documento producido por IA fue insumo directo y formal de 'traducción política' (incorporación a la ENCTI) o si esa traducción la hicieron exclusivamente los redactores humanos de los Libros Lilás/Violeta.",
+   "url_para_buscar": "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/cct/agenda/livrovioleta_5CNCTI.pdf"
+  }
+ ],
+ "alertas": [
+  "Los dominios oficiales (5cncti.org.br, gov.br, agenciagov.ebc.com.br, sbpcnet.org.br, proifes.org.br) devuelven 403 a WebFetch/curl por policy denial del gateway de egreso. El contenido verbatim fue recuperado a través de la herramienta WebSearch, que sí accede al texto subyacente. Las citas son fiables y corroboradas entre múltiples fuentes independientes (MCTI oficial, sitio 5cncti, agenciagov, CETENE/Consecti), pero no se pudo abrir el HTML directo para verificar puntuación/ortografía exacta carácter a carácter.",
+  "El término 'sistematización con IA' está bien documentado para la FASE PREPARATORIA y los e-books de síntesis. Para los Libros Lilás/Violeta (documentos finales) las fuentes mencionan uso de IA para sistematizar audios/videos/relatorios, pero con fuerte redacción y revisión humana (35 redactores/revisores en el Violeta), por lo que el peso relativo IA vs. humano en el producto final que orienta la ENCTI debe leerse como colaboración humano-IA, no IA autónoma."
+ ]
+}

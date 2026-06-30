@@ -1,0 +1,70 @@
+{
+ "caso_id": "CO-echo-hablamed-medellin",
+ "pais": "CO",
+ "nombre_caso": "ECHO – HáblameD Medellín",
+ "bloque": "2-baseline",
+ "proceso_participativo": "IA que capta voz ciudadana en debates guiados y clasifica cada enunciado en metas ODS, generando visualizaciones para la planificación territorial",
+ "ano_inicio": "2019",
+ "ano_cierre": null,
+ "estado_actividad": "cerrado",
+ "evidencia_actividad_2026": "reconfirmado web (institucional): Reconfirmado: la IA del UNFPA clasifica por ODS las conversaciones ciudadanas captadas en campo (5.000+ personas, 16 comunas).",
+ "organizacion_a_cargo": "UNFPA Colombia (Laboratorio de Innovación) y Personería de Medellín",
+ "tipo_convocante": [
+  "organización internacional",
+  "gobierno local"
+ ],
+ "tipo_organizacion": [
+  "Mixto"
+ ],
+ "tipo_proceso": [
+  "Gobernanza Colaborativa"
+ ],
+ "etapas_uso_IA": [
+  "Implementación",
+  "Análisis"
+ ],
+ "continuidad": [
+  "Uso único"
+ ],
+ "nivel_consolidacion": 2,
+ "sistema_IA": "Procesamiento de Lenguaje Natural (NLP), Speech to Text",
+ "tipos_IA_familia": [
+  "Voz a Texto",
+  "NLP",
+  "LLM"
+ ],
+ "usa_LLM_generativa": "sí",
+ "funcion_IA": "Analizar las percepciones ciudadanas y vincularlas con los ODS, facilitando la toma de decisiones en la planificación del desarrollo local.",
+ "rol_IA": "contenido",
+ "usa_IA_en_proceso": "sí",
+ "tipo_desarrollador_IA": [
+  "Gobierno"
+ ],
+ "origen_desarrollador": "Internacional",
+ "entra_tentativo": "SI",
+ "justificacion_elegibilidad": "Caso del índice 2025; ratificar vigencia 2026 y recodificación.",
+ "confianza": "ALTA (baseline 2025 + reverif. web 2026)",
+ "evidencia_verbatim": {
+  "pais": "Caso del índice ILIA 2025 (BBDD oficial del equipo)",
+  "tipo_proceso": "Governanza Colaborativa",
+  "etapas_uso_IA": "Implementación, Análisis",
+  "estado_actividad": "reconfirmado web (institucional): Reconfirmado: la IA del UNFPA clasifica por ODS las conversaciones ciudadanas captadas en campo (5.000+ personas, 16 comunas).",
+  "nivel_consolidacion": "Continuidad (BBDD 2025): Uso único",
+  "tipo_convocante": "UNFPA Colombia (Laboratorio de Innovación) y Personería de Medellín",
+  "usa_IA_en_proceso": "Analizar las percepciones ciudadanas y vincularlas con los ODS, facilitando la toma de decisiones en la planificación del desarrollo local.",
+  "rol_IA": "Analizar las percepciones ciudadanas y vincularlas con los ODS, facilitando la toma de decisiones en la planificación del desarrollo local."
+ },
+ "fuentes": [
+  {
+   "url": "https://colombia.unfpa.org/es/news/primeros-resultados-de-echo-en-colombia",
+   "estado": "baseline-2025",
+   "cita": ""
+  }
+ ],
+ "gaps": [],
+ "alertas": [
+  "usa_LLM_generativa derivado de Tipos de IA (BBDD 2025: contiene 'LLM')",
+  "Datos brutos del índice ILIA 2025 (BBDD validada por el equipo); recodificación 2026 (convocante 7-cat, nivel 0-3) y reverificación de actividad 2026."
+ ],
+ "fuente_datos": "baseline_2025_bbdd+recod2026+reverif_web2026"
+}

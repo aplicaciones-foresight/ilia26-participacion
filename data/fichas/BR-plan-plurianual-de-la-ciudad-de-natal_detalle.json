@@ -1,0 +1,69 @@
+{
+ "caso_id": "BR-plan-plurianual-de-la-ciudad-de-natal",
+ "pais": "BR",
+ "nombre_caso": "Plan Plurianual de la ciudad de Natal",
+ "bloque": "2-baseline",
+ "proceso_participativo": "Recolección de información a través de tres preguntas habilitadas por WhatsApp para diseñar el Plan Plurianual de la ciudad 2026-2029",
+ "ano_inicio": "2025",
+ "ano_cierre": null,
+ "estado_actividad": "activo",
+ "evidencia_actividad_2026": "reconfirmado web (institucional): Reconfirmado: modelos de lenguaje identifican el tema de cada mensaje ciudadano por WhatsApp; nueva edición PPA 2026-2029 'Plano Natal Pra Frente'.",
+ "organizacion_a_cargo": "Prefeitura Municipal de Natal, a través de la Secretaría Municipal de Planeamiento (SEMPLA)",
+ "tipo_convocante": [
+  "gobierno local"
+ ],
+ "tipo_organizacion": [
+  "Público"
+ ],
+ "tipo_proceso": [
+  "Gobernanza Colaborativa"
+ ],
+ "etapas_uso_IA": [
+  "Implementación",
+  "Análisis"
+ ],
+ "continuidad": [
+  "Plataforma"
+ ],
+ "nivel_consolidacion": 2,
+ "sistema_IA": "Chatbot de IA",
+ "tipos_IA_familia": [
+  "LLM",
+  "NLP"
+ ],
+ "usa_LLM_generativa": "sí",
+ "funcion_IA": "Interactuar con los ciudadanos y sistematizar respuestas para generar propuestas",
+ "rol_IA": "contenido",
+ "usa_IA_en_proceso": "sí",
+ "tipo_desarrollador_IA": [
+  "Gobierno",
+  "Privado"
+ ],
+ "origen_desarrollador": "Nacional, Internacional",
+ "entra_tentativo": "SI",
+ "justificacion_elegibilidad": "Caso del índice 2025; ratificar vigencia 2026 y recodificación.",
+ "confianza": "ALTA (baseline 2025 + reverif. web 2026)",
+ "evidencia_verbatim": {
+  "pais": "Caso del índice ILIA 2025 (BBDD oficial del equipo)",
+  "tipo_proceso": "Governanza Colaborativa",
+  "etapas_uso_IA": "Implementación, Análisis",
+  "estado_actividad": "reconfirmado web (institucional): Reconfirmado: modelos de lenguaje identifican el tema de cada mensaje ciudadano por WhatsApp; nueva edición PPA 2026-2029 'Plano Natal Pra Frente'.",
+  "nivel_consolidacion": "Continuidad (BBDD 2025): Plataforma",
+  "tipo_convocante": "Prefeitura Municipal de Natal, a través de la Secretaría Municipal de Planeamiento (SEMPLA)",
+  "usa_IA_en_proceso": "Interactuar con los ciudadanos y sistematizar respuestas para generar propuestas",
+  "rol_IA": "Interactuar con los ciudadanos y sistematizar respuestas para generar propuestas"
+ },
+ "fuentes": [
+  {
+   "url": "https://www.natal.rn.gov.br/news/post2/42103",
+   "estado": "baseline-2025",
+   "cita": ""
+  }
+ ],
+ "gaps": [],
+ "alertas": [
+  "usa_LLM_generativa derivado de Tipos de IA (BBDD 2025: contiene 'LLM')",
+  "Datos brutos del índice ILIA 2025 (BBDD validada por el equipo); recodificación 2026 (convocante 7-cat, nivel 0-3) y reverificación de actividad 2026."
+ ],
+ "fuente_datos": "baseline_2025_bbdd+recod2026+reverif_web2026"
+}

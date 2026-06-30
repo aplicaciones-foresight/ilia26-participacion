@@ -1,0 +1,103 @@
+{
+ "caso_id": "CO-dnp-dialogos-regionales-vinculantes-pnd",
+ "pais": "CO",
+ "nombre_caso": "DNP - Diálogos Regionales Vinculantes (PND 2022-2026)",
+ "bloque": "1-dudoso",
+ "proceso_participativo": "Diálogos Regionales Vinculantes (DRV) convocados por el Gobierno Nacional (Presidencia + DNP) para construir las bases del Plan Nacional de Desarrollo 2022-2026 'Colombia, Potencia Mundial de la Vida'. 51 diálogos regionales, ~250.000 participantes, 2.115 mesas de diálogo, 89.788 propuestas ciudadanas recolectadas y sistematizadas.",
+ "ano_inicio": 2022,
+ "ano_cierre": 2023,
+ "estado_actividad": "inactivo",
+ "evidencia_actividad_2026": "No se encontró evidencia de actividad del proceso en 2026. El ejercicio fue un proceso puntual atado a la formulación del PND 2022-2026: inició en septiembre de 2022 y los resultados oficiales se publicaron el 6 de febrero de 2023. No se hallaron nuevas ediciones ni continuidad operativa del componente de sistematización con IA hacia 2026.",
+ "organizacion_a_cargo": "Departamento Nacional de Planeación (DNP) de Colombia. El análisis cuantitativo lo realizó la 'Unidad de Científicos de Datos' del DNP; el análisis cualitativo se desarrolló de manera conjunta entre el DNP y la Universidad Externado de Colombia (Facultad de Ciencias Sociales y Humanas).",
+ "tipo_convocante": [
+  "gobierno nacional"
+ ],
+ "tipo_organizacion": "Público",
+ "tipo_proceso": [
+  "Participación Digital",
+  "Mini públicos"
+ ],
+ "etapas_uso_IA": [
+  "Análisis"
+ ],
+ "continuidad": "Uso único",
+ "nivel_consolidacion": 2,
+ "sistema_IA": null,
+ "tipos_IA_familia": [],
+ "usa_LLM_generativa": "no-claro",
+ "funcion_IA": "Sistematización y análisis de 89.788 propuestas ciudadanas. La evidencia hallada describe un análisis CUANTITATIVO por FRECUENCIA/RECURRENCIA realizado por la 'Unidad de Científicos de Datos' del DNP, más una categorización (agrupación en 17-19 categorías de intervención territorial / 18 categorías) y jerarquización de contenidos articulada con las cinco transformaciones del PND. NO se encontró evidencia técnica de uso de NLP, machine learning, topic modeling ni clasificación automática.",
+ "rol_IA": "no-claro",
+ "usa_IA_en_proceso": "no-claro",
+ "tipo_desarrollador_IA": [
+  "Gobierno"
+ ],
+ "origen_desarrollador": "Nacional",
+ "entra_tentativo": "DUDA",
+ "justificacion_elegibilidad": "El caso es un proceso participativo claro (construcción participativa del PND 2022-2026: diálogos/mesas, ~250.000 participantes, 89.788 propuestas) y SÍ hubo análisis del CONTENIDO de los aportes (clasificación/agrupación en categorías + síntesis para el PND), lo que apuntaría a SI. SIN EMBARGO, la duda central no se resuelve a favor de IA: todas las fuentes encontradas (documentos oficiales del DNP, análisis académico Externado, NGOs) describen el método como análisis por FRECUENCIA/RECURRENCIA de las propuestas + categorización/jerarquización (codificación en categorías predefinidas) realizado por la 'Unidad de Científicos de Datos'. NO existe confirmación explícita de NLP/ML/topic modeling/clasificación automática. Análisis por frecuencia simple no constituye IA según el criterio del índice → DUDA. Falta evidencia técnica específica del método (ver gaps).",
+ "confianza": "MEDIA",
+ "evidencia_verbatim": {
+  "pais": "Documentos oficiales del Departamento Nacional de Planeación (DNP - Departamento Nacional de Planeación) de Colombia sobre los Diálogos Regionales Vinculantes para el Plan Nacional de Desarrollo 2022-2026.",
+  "tipo_proceso": "En los 51 Diálogos Regionales Vinculantes, los colombianos expresaron sus necesidades y propuestas en 2.115 mesas de diálogo entre transformacionales y poblacionales, y se entregaron más de 89.000 propuestas que fueron claves para la definición de los pilares y la construcción del Plan Nacional de Desarrollo 2022-2026.",
+  "etapas_uso_IA": "the quantitative analysis information was organized, which the DNP Data Scientists Unit conducted on the [...] proposals (análisis cuantitativo realizado por la Unidad de Científicos de Datos del DNP sobre las propuestas, en la etapa de análisis/sistematización).",
+  "estado_actividad": "Results were officially published on February 6, 2023. The exercise lasted three months [...] The dialogues officially began in mid-September 2022 in Turbaco (Bolívar).",
+  "nivel_consolidacion": "More than 250,000 Colombians participated in 51 Regional Binding Dialogues [...] 89,788 proposals were collected that inspired the construction of the five major transformations of the National Development Plan 2022-2026.",
+  "tipo_convocante": "The exercise lasted three months with dialogue and listening sessions convened by President Petro [...] The National Planning Department (DNP) presented official results of 51 Regional Binding Dialogues.",
+  "usa_IA_en_proceso": null,
+  "rol_IA": "The categorization results come from reading [...] proposals and their recurrence in each Regional Binding Dialogue (DRV), which determined by frequency the [...] aspects on which participants focus the development of their territory. In the second chapter, the quantitative analysis information was organized, which the DNP Data Scientists Unit conducted on the [...] proposals."
+ },
+ "fuentes": [
+  {
+   "url": "https://dialogosregionales.dnp.gov.co/",
+   "estado": "403",
+   "cita": "Sitio oficial de los Diálogos Regionales Vinculantes (DNP). No accesible vía WebFetch (HTTP 403). Por buscadores: '51 Regional Binding Dialogues, ~250.000 participantes, 89.788 propuestas que inspiraron las cinco transformaciones del PND 2022-2026'."
+  },
+  {
+   "url": "https://colaboracion.dnp.gov.co/CDT/PublishingImages/dialogos_regionales/Analisis-cualitativos/DNP_DRV15Colombianos-en-el-Exterior.pdf",
+   "estado": "403",
+   "cita": "Documento oficial DNP de análisis. Por snippet de búsqueda: 'The categorization results come from reading [...] proposals and their recurrence in each Regional Binding Dialogue (DRV), which determined by frequency the [...] aspects on which participants focus the development of their territory. In the second chapter, the quantitative analysis information was organized, which the DNP Data Scientists Unit conducted on the [...] proposals.'"
+  },
+  {
+   "url": "https://www.dnp.gov.co/Prensa_/Noticias/Paginas/dnp-publica-resultados-de-los-dialogos-regionales-vinculantes.aspx",
+   "estado": "ok-via-busqueda",
+   "cita": "'The National Planning Department (DNP) presented official results of 51 Regional Binding Dialogues, where approximately 250,000 people participated and delivered over 89,000 proposals that inspired the bases of the National Development Plan 2022-2026.' Resultados publicados oficialmente el 6 de febrero de 2023."
+  },
+  {
+   "url": "https://bdigital.uexternado.edu.co/entities/publication/6ff4f32f-4e7a-465d-af92-d1c4f67ae153",
+   "estado": "403",
+   "cita": "Análisis académico Universidad Externado de Colombia. Por snippet: 'El proyecto Análisis de los diálogos regionales vinculantes fue desarrollado de manera conjunta entre la Facultad de Ciencias Sociales y Humanas y el Departamento de Planeación Nacional (DNP) [...] propuestas agrupadas en 17 categorías de intervención territorial, articuladas con base en los cinco pilares de transformación que componen el Plan Nacional de Desarrollo (PND).' No menciona NLP/ML."
+  },
+  {
+   "url": "https://ideaspaz.org/publicaciones/investigaciones-analisis/2023-03/dialogo-en-el-gobierno-de-gustavo-petro-que-nos-dejan-los-dialogos-regionales-vinculantes-en-la-planeacion-del-desarrollo",
+   "estado": "403",
+   "cita": "Análisis FIP (Fundación Ideas para la Paz). Por snippet de búsqueda: 'Los aportes de la ciudadanía se sistematizan pero no tienen trazabilidad, y eso compromete su incidencia. Se propone publicar el listado de las 89.788 propuestas recibidas y elaborar una ruta técnica para saber si quedan incluidas en los programas del Plan de Desarrollo.' Crítica metodológica; no menciona IA/NLP."
+  },
+  {
+   "url": "https://transparenciacolombia.org.co/wp-content/uploads/2023/05/Sintesis-Dialogos-Vinculantes-PND-2022-2026-MCA_Diagramado.pdf",
+   "estado": "403",
+   "cita": "Síntesis Transparencia por Colombia sobre los DRV-PND. No accesible vía WebFetch (403). Documento de monitoreo del proceso participativo."
+  }
+ ],
+ "gaps": [
+  {
+   "campo": "rol_IA / usa_IA_en_proceso / sistema_IA",
+   "motivo": "No se encontró evidencia técnica explícita de uso de NLP, machine learning, topic modeling o clasificación automática. Todas las fuentes describen el método como análisis por FRECUENCIA/RECURRENCIA + categorización/codificación manual en categorías predefinidas por la 'Unidad de Científicos de Datos' del DNP. Sin confirmación de IA, el rol_IA queda 'no-claro' y el caso en DUDA. Se requiere el documento metodológico técnico del DNP que detalle si se usó procesamiento automatizado de texto sobre las 89.788 propuestas.",
+   "url_para_buscar": "https://dialogosregionales.dnp.gov.co/resultados-dialogos"
+  },
+  {
+   "campo": "funcion_IA (método técnico de sistematización)",
+   "motivo": "Documentos oficiales del DNP (colaboracion.dnp.gov.co) y dataset en datos.gov.co retornan 403 vía WebFetch; no se pudo leer el detalle metodológico completo (¿software, algoritmos, criterios de codificación, manual vs automático?).",
+   "url_para_buscar": "https://www.datos.gov.co/widgets/vbcj-pami"
+  },
+  {
+   "campo": "tipo_proceso",
+   "motivo": "El proceso combina rasgos de mini-públicos (mesas de diálogo regionales presenciales con metodología deliberativa) y participación digital (plataforma web dialogosregionales.dnp.gov.co que recogía/visualizaba propuestas). Conviene confirmar el peso del canal digital frente a las mesas presenciales para clasificar con precisión.",
+   "url_para_buscar": "https://dialogosregionales.dnp.gov.co/"
+  }
+ ],
+ "alertas": [
+  "Señal previa del caso indicaba 'análisis por frecuencia/recurrencia' por la Unidad de Científicos de Datos: la evidencia web CONFIRMA esa descripción (frecuencia/recurrencia + categorización) y NO halla NLP/ML → resultado DUDA, consistente con bloque '1-dudoso'.",
+  "Riesgo de falso positivo: 'Unidad de Científicos de Datos' y 'análisis cuantitativo' pueden sugerir IA, pero las fuentes solo respaldan estadística de frecuencia y agrupación en categorías; no asumir NLP sin documento técnico.",
+  "Limitación de acceso: el dominio oficial dnp.gov.co / colaboracion.dnp.gov.co y varios PDFs académicos devuelven HTTP 403 vía WebFetch; la evidencia verbatim proviene mayormente de snippets de buscador, no de lectura directa de la fuente primaria. Verificar citas contra el PDF original antes de uso definitivo.",
+  "Existen análisis académicos de terceros con minería de texto sobre datos relacionados (p. ej. arXiv 2504.04325 sobre audiencias de la JEP), pero corresponden a OTRO proceso (JEP), no a los DRV; no usar como evidencia de IA en los DRV."
+ ]
+}

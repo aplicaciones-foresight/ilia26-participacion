@@ -1,0 +1,103 @@
+{
+ "caso_id": "CO-EXC-paqueveas",
+ "pais": "CO",
+ "nombre_caso": "Pa' que veás (Cali)",
+ "bloque": "3-excluido-revisar",
+ "proceso_participativo": "Monitor de inversion publica de la Alcaldia de Santiago de Cali. Es una plataforma digital (web y movil) de transparencia y control social construida sobre la iniciativa MapaInversiones / InvestmentMap del Banco Interamericano de Desarrollo (BID). Permite a la ciudadania consultar, filtrar y hacer seguimiento al avance de mas de 1.400 proyectos financiados con recursos publicos en las 22 comunas y 15 corregimientos de Cali (sectores salud, seguridad, infraestructura, deporte, cultura, desarrollo economico), asi como los contratos asociados. Lanzamiento oficial el 6 de marzo de 2025. Funcion central: traducir el lenguaje presupuestal complejo en datos claros para el ciudadano promedio (dashboard de datos abiertos). En su forma es una plataforma de Participacion Digital de control social, pero su nucleo es visualizacion/consulta de datos de gasto publico, NO el procesamiento de aportes/quejas ciudadanas. Funcionalidades de 'reportes ciudadanos, alertas de irregularidades y envio de fotografias por la comunidad' aparecen anunciadas como evolucion FUTURA, no como capacidad operativa actual procesada por IA.",
+ "ano_inicio": 2025,
+ "ano_cierre": null,
+ "estado_actividad": "activo",
+ "evidencia_actividad_2026": "La plataforma sigue activa en 2026: en marzo de 2026 cumplio su primer ano con cifras record (mas de 440.000 visitas, mas de 1.400 proyectos, mas de 3.000 lideres comunitarios capacitados; mencion honorifica de Open Government Partnership en el Open Gov Challenge de octubre). El sitio paqueveas.cali.gov.co esta operativo. Para 2026 el compromiso anunciado es fortalecer la participacion del sector empresarial en la contratacion publica y seguir democratizando el acceso a la informacion. En septiembre de 2025 se anuncio una nueva funcion para seguimiento al programa 'Invertir para Crecer'.",
+ "organizacion_a_cargo": "Alcaldia de Santiago de Cali (Oficina Asesora de Transparencia / administracion del alcalde Alejandro Eder), con apoyo tecnico del Banco Interamericano de Desarrollo (BID) y su iniciativa MapaInversiones / InvestmentMap. Codigo publicado en el repositorio Code for Development del BID (open source).",
+ "tipo_convocante": [
+  "gobierno local"
+ ],
+ "tipo_organizacion": "Público",
+ "tipo_proceso": [
+  "Participación Digital"
+ ],
+ "etapas_uso_IA": [],
+ "continuidad": "Plataforma",
+ "nivel_consolidacion": 3,
+ "sistema_IA": null,
+ "tipos_IA_familia": [],
+ "usa_LLM_generativa": "no-claro",
+ "funcion_IA": null,
+ "rol_IA": "no-claro",
+ "usa_IA_en_proceso": "no",
+ "tipo_desarrollador_IA": [],
+ "origen_desarrollador": null,
+ "entra_tentativo": "NO",
+ "justificacion_elegibilidad": "Se revisa por su analogia con dIAra (bots que recopilan quejas ciudadanas y predicen riesgos en obras). Sin embargo, NO se encontro evidencia de uso de inteligencia artificial sobre el CONTENIDO de los aportes/quejas ciudadanas dentro de un proceso participativo. 'Pa' que veas' es, en su nucleo, un MONITOR DE INVERSION PUBLICA (dashboard de datos abiertos) construido sobre MapaInversiones del BID: visualiza, filtra y permite hacer seguimiento al gasto y los contratos publicos. Las menciones a IA en Cali (chatbots para consulta ciudadana, analisis predictivo para mitigacion de riesgos naturales como deslizamientos/dengue, seguridad) pertenecen a iniciativas SEPARADAS del ecosistema smart-city de la Alcaldia y se listan junto a 'Pa' que veas' solo como ejemplos de la estrategia de IA de la ciudad; el monitor aparece encuadrado unicamente en 'gestion eficiente de datos para... seguimiento a la inversion publica', no como IA aplicada a quejas. Las funcionalidades de reportes ciudadanos, alertas de irregularidades y envio de fotografias por la comunidad estan anunciadas como evolucion FUTURA del sistema ('continuara evolucionando con nuevas funcionalidades'), no operan hoy y no hay evidencia de que vayan a ser procesadas por IA sobre su contenido. No se cumple la REGLA DE REINGRESO (IA sobre el contenido de los aportes ciudadanos dentro de un proceso participativo). Se mantiene la exclusion de 2025 ('No evidencia de uso de IA'). Decision: MANTENER EXCLUIDO (entra=NO).",
+ "confianza": "ALTA",
+ "evidencia_verbatim": {
+  "pais": "The Municipal Government of Cali, Colombia, has unveiled ¡Pa' que Veás! (For You to See), an interactive platform on which citizens can quickly and easily monitor detailed information on the progress of over 1,000 publicly financed projects in the city. (IDB - iadb.org)",
+  "tipo_proceso": "Available online and on mobile devices, ¡Pa' que Veás! allows Cali residents to consult projects and associated contracts in the city's 22 districts and 15 surrounding rural districts in sectors like health, security, infrastructure, sports, culture and economic development. Users can filter information by location, agency responsible and progress made. (IDB - iadb.org)",
+  "etapas_uso_IA": null,
+  "estado_actividad": "¡Pa' que Veás!, el monitor de inversion publica de Cali, celebra su primer ano con cifras record. La plataforma supero las 440.000 visitas con el acompanamiento tecnico del Banco Interamericano de Desarrollo (BID) y permite acceder a informacion detallada sobre el avance de mas de 1.400 proyectos. (cali.gov.co, boletin 191603, marzo 2026)",
+  "nivel_consolidacion": "The system was developed jointly by the municipal government and the MapaInversiones or InvestmentMap initiative of the Inter-American Development Bank (IDB). Cali is the region's first city to implement this type of tool under the InvestmentMap initiative. (IDB - iadb.org)",
+  "tipo_convocante": "This tool, driven by the Municipality in partnership with the Inter-American Development Bank (BID), is transforming how residents access information about public projects and contracts in their territory. La apuesta de Alejandro Eder por la transparencia y el control social eficiente. (cali.gov.co / iadb.org)",
+  "usa_IA_en_proceso": "The Cali government demonstrated the use of AI in chatbots for citizen consultation, predictive analysis for natural risk mitigation, and efficient data management for optimizing government decisions and public investment monitoring ('Pa'que veás'). (cali.gov.co, boletin 186293 'Cali, lider en innovacion e implementacion de la inteligencia artificial en Colombia' — 'Pa' que veas' queda encuadrado solo en 'gestion eficiente de datos para... seguimiento a la inversion publica', NO en IA sobre quejas/aportes ciudadanos)",
+  "rol_IA": null
+ },
+ "fuentes": [
+  {
+   "url": "https://www.iadb.org/en/news/city-cali-launches-platform-monitoring-public-investment-idb-support",
+   "estado": "403",
+   "cita": "City of Cali Launches Platform for Monitoring Public Investment, with IDB Support. The Municipal Government of Cali has unveiled ¡Pa' que Veás! (For You to See), an interactive platform on which citizens can quickly and easily monitor detailed information on the progress of over 1,000 publicly financed projects. The system was developed jointly by the municipal government and the MapaInversiones / InvestmentMap initiative of the IDB. Cali is the region's first city to implement this type of tool under the InvestmentMap initiative. Citizens, journalists, entrepreneurs and civil society representatives participated in initial stages of platform development through collaborative workshops. The platform's code is publicly available in the IDB's Code for Development repository. (Fuente internacional independiente; WebFetch devolvio 403; contenido via snippet de WebSearch. NO menciona IA sobre el contenido de aportes/quejas ciudadanas)"
+  },
+  {
+   "url": "https://www.cali.gov.co/boletines/publicaciones/186293/cali-lider-en-innovacion-e-implementacion-de-la-inteligencia-artificial-en-colombia/",
+   "estado": "403",
+   "cita": "Cali, lider en innovacion e implementacion de la inteligencia artificial en Colombia. The Cali government demonstrated the use of AI in chatbots for citizen consultation, predictive analysis for natural risk mitigation, and efficient data management for optimizing governmental decisions and tracking public investment ('Pa'que veás'). (WebFetch 403; via snippet de WebSearch. CLAVE: el monitor 'Pa' que veas' se cita unicamente bajo 'gestion eficiente de datos / seguimiento a la inversion publica'; los usos de IA — chatbots, analisis predictivo de riesgos naturales — son iniciativas SEPARADAS del ecosistema smart-city, no IA aplicada a quejas/aportes dentro del monitor)"
+  },
+  {
+   "url": "https://www.cali.gov.co/boletines/publicaciones/191603/pa-que-veas-el-monitor-de-inversion-publica-de-cali-celebra-su-primer-ano-con-cifras-record/",
+   "estado": "403",
+   "cita": "¡Pa' que Veás!, el monitor de inversion publica de Cali, celebra su primer ano con cifras record. Supero las 440.000 visitas con acompanamiento tecnico del BID; permite acceder a informacion del avance de mas de 1.400 proyectos en 22 comunas y 15 corregimientos. La administracion Eder capacito a mas de 3.000 lideres comunitarios. En octubre, Open Government Partnership otorgo a Cali una mencion honorifica en el Open Gov Challenge. Para 2026 el compromiso es fortalecer la participacion del sector empresarial en la contratacion publica. (Evidencia de actividad 2026; WebFetch 403; via snippet de WebSearch)"
+  },
+  {
+   "url": "https://www.cali.gov.co/gobierno/publicaciones/184844/pa-que-veas-cali-primera-ciudad-con-un-monitor-de-inversion--publica-en-america-latina/",
+   "estado": "403",
+   "cita": "'¡Pa' que Veás!' Cali, primera ciudad con un monitor de inversion publica en America Latina. Plataforma digital que ofrece a la ciudadania acceso facil a la informacion sobre la inversion de recursos y la ejecucion de proyectos. Cuenta con el respaldo del BID y su iniciativa 'MapaInversiones', presente en 14 paises de la region. Lanzamiento oficial el 6 de marzo de 2025; permite monitorear en tiempo real el avance de mas de 1.400 proyectos en las 22 comunas y 15 corregimientos de Cali. El sistema continuara evolucionando con nuevas funcionalidades como reportes ciudadanos, alertas de irregularidades, integracion de fotografias y canales de interaccion directa con la comunidad. (WebFetch 403; via snippet de WebSearch. Los reportes ciudadanos / alertas / fotos se describen como evolucion FUTURA, no como capacidad actual procesada por IA)"
+  },
+  {
+   "url": "https://www.elpais.com.co/cali/ciudadanos-podran-vigilar-el-uso-de-recursos-publicos-por-medio-de-la-plataforma-pa-que-veas-asi-funciona-0622.html",
+   "estado": "403",
+   "cita": "Ciudadanos vigilaran el uso de recursos publicos por medio de: 'Pa' Que Veás'. Herramienta digital de la Alcaldia de Cali en alianza con el BID para que los caleños monitoreen contratacion y ejecucion de proyectos en las 22 comunas y 15 corregimientos. (Prensa regional; WebFetch 403; via snippet de WebSearch. No documenta IA sobre el contenido de aportes ciudadanos)"
+  },
+  {
+   "url": "https://caliescribe.com/2025/03/07/plataforma-pa-que-veas-necesaria-e-insuficiente/",
+   "estado": "403",
+   "cita": "Plataforma 'Pa' Que Veás', necesaria e insuficiente. Articulo critico que evalua la plataforma de inversion publica / control social. (Prensa local critica; WebFetch 403; pagina indexada en WebSearch. No reporta IA aplicada a quejas/aportes ciudadanos)"
+  },
+  {
+   "url": "https://www.cali.gov.co/tic/publicaciones/181895/alcaldia-de-cali-implementa-herramienta-de-inteligencia-artificial-para-pronosticar-el-riesgo-de-deslizamientos-de-tierra/",
+   "estado": "403",
+   "cita": "Alcaldia de Cali implementa herramienta de Inteligencia Artificial para pronosticar el riesgo de deslizamientos de tierra. (Iniciativa de IA SEPARADA — analisis predictivo de riesgos naturales — distinta del monitor 'Pa' que veas'; evidencia de que los usos de IA de Cali son sistemas independientes y no procesan aportes ciudadanos dentro del monitor. WebFetch 403; via snippet de WebSearch)"
+  }
+ ],
+ "gaps": [
+  {
+   "campo": "usa_IA_en_proceso / rol_IA / etapas_uso_IA",
+   "motivo": "No se encontro ninguna fuente que documente IA (PLN, ML, LLM, analisis automatizado) operando sobre el CONTENIDO de quejas/aportes/reportes ciudadanos dentro de 'Pa' que veas'. El monitor es un dashboard de datos de inversion publica (MapaInversiones del BID). Los usos de IA de Cali (chatbots, analisis predictivo de deslizamientos/dengue/seguridad) son sistemas separados.",
+   "url_para_buscar": "https://www.cali.gov.co/boletines/publicaciones/186293/cali-lider-en-innovacion-e-implementacion-de-la-inteligencia-artificial-en-colombia/"
+  },
+  {
+   "campo": "rol_IA (funcionalidad futura de reportes ciudadanos)",
+   "motivo": "Las funcionalidades anunciadas de reportes ciudadanos, alertas de irregularidades y envio de fotografias por la comunidad estan descritas como evolucion FUTURA de la plataforma. No hay evidencia de que esten operativas en 2026 ni de que su contenido sea procesado por IA. Reverificar si en futuras ediciones se despliega con analisis automatizado de los aportes.",
+   "url_para_buscar": "https://intranet.cali.gov.co/2025/09/15/nuestro-monitor-de-inversion-pa-que-veas-tendra-nueva-funcion-para-hacer-seguimiento-a-invertir-para-crecer-2/"
+  },
+  {
+   "campo": "verbatim directo en castellano",
+   "motivo": "Todas las fuentes (iadb.org, cali.gov.co, El Pais, caliescribe, cwmas, occidente.co) devolvieron HTTP 403 a WebFetch; las citas se obtuvieron de los resumenes de WebSearch que renderizan el contenido. No se pudo extraer verbatim literal completo desde el HTML fuente.",
+   "url_para_buscar": "https://www.cali.gov.co/gobierno/publicaciones/184844/pa-que-veas-cali-primera-ciudad-con-un-monitor-de-inversion--publica-en-america-latina/"
+  }
+ ],
+ "alertas": [
+  "Analogia con dIAra NO se sostiene: dIAra aplica IA al contenido de quejas ciudadanas; 'Pa' que veas' es un monitor de inversion publica (MapaInversiones del BID) que visualiza gasto/contratos, sin IA sobre aportes ciudadanos.",
+  "Posible confusion por co-mencion: el boletin 'Cali, lider en IA' lista 'Pa' que veas' junto a chatbots y analisis predictivo, pero el monitor solo se encuadra en 'gestion eficiente de datos / seguimiento a la inversion publica'. Los usos de IA (chatbots de consulta, prediccion de deslizamientos/dengue/seguridad) son iniciativas SEPARADAS del ecosistema smart-city de Cali.",
+  "Funcionalidades de reportes ciudadanos / alertas de irregularidades / fotografias estan anunciadas como evolucion FUTURA, no como capacidad actual; no procesadas por IA hasta donde documentan las fuentes.",
+  "Todas las fuentes primarias devolvieron 403 a WebFetch; la verificacion se apoyo en snippets de WebSearch. Pese a ello, la convergencia de >=2 fuentes independientes (BID + Alcaldia + prensa) sobre la naturaleza de dashboard sostiene confianza ALTA para la decision de exclusion."
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "caso_id": "CL-estrategia-de-gobierno-digital-informe-p",
+ "pais": "CL",
+ "nombre_caso": "Estrategia de Gobierno Digital. Informe proceso participativo segunda consulta ciudadana",
+ "bloque": "2-baseline",
+ "proceso_participativo": "Uso de IA para analizar datos cualitativos en consulta ciudadana.",
+ "ano_inicio": "2025",
+ "ano_cierre": null,
+ "estado_actividad": "cerrado",
+ "evidencia_actividad_2026": null,
+ "organizacion_a_cargo": "Secretaría de Gobierno Digital",
+ "tipo_convocante": [
+  "gobierno nacional"
+ ],
+ "tipo_organizacion": [
+  "Público"
+ ],
+ "tipo_proceso": [
+  "Gobernanza Colaborativa"
+ ],
+ "etapas_uso_IA": [
+  "Análisis"
+ ],
+ "continuidad": [
+  "Uso único"
+ ],
+ "nivel_consolidacion": 2,
+ "sistema_IA": "No especificado, probablemente NLP.",
+ "tipos_IA_familia": [
+  "NLP - Tópicos"
+ ],
+ "usa_LLM_generativa": "no",
+ "funcion_IA": "Identificar patrones, sintetizar las principales críticas y estructurar las conclusiones de manera clara y coherente de datos cualitativos en encuesta de consulta ciudadana",
+ "rol_IA": "contenido",
+ "usa_IA_en_proceso": "sí",
+ "tipo_desarrollador_IA": [
+  "Privado"
+ ],
+ "origen_desarrollador": "Nacional",
+ "entra_tentativo": "SI",
+ "justificacion_elegibilidad": "Caso del índice 2025; ratificar vigencia 2026 y recodificación.",
+ "confianza": "MEDIA (baseline 2025; sin señal web 2026 nueva)",
+ "evidencia_verbatim": {
+  "pais": "Caso del índice ILIA 2025 (BBDD oficial del equipo)",
+  "tipo_proceso": "Governanza Colaborativa",
+  "etapas_uso_IA": "Análisis",
+  "estado_actividad": "BBDD 2025: Cerrado",
+  "nivel_consolidacion": "Continuidad (BBDD 2025): Uso único",
+  "tipo_convocante": "Secretaría de Gobierno Digital",
+  "usa_IA_en_proceso": "Identificar patrones, sintetizar las principales críticas y estructurar las conclusiones de manera clara y coherente de datos cualitativos en encuesta de consulta ciudadana",
+  "rol_IA": "Identificar patrones, sintetizar las principales críticas y estructurar las conclusiones de manera clara y coherente de datos cualitativos en encuesta de consulta ciudadana"
+ },
+ "fuentes": [
+  {
+   "url": "https://participacion.digital.gob.cl/es-CL/folders/consultas-ciudadanas",
+   "estado": "baseline-2025",
+   "cita": ""
+  }
+ ],
+ "gaps": [],
+ "alertas": [
+  "usa_LLM_generativa='no' derivado de Tipos de IA 2025 (sin 'LLM'); verificar si cambió en 2026",
+  "Datos brutos del índice ILIA 2025 (BBDD validada por el equipo); recodificación 2026 (convocante 7-cat, nivel 0-3) y reverificación de actividad 2026."
+ ],
+ "fuente_datos": "baseline_2025_bbdd+recod2026+reverif_web2026"
+}

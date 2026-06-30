@@ -1,0 +1,78 @@
+{
+ "caso_id": "GT-guatemala-joven-conversa",
+ "pais": "GT",
+ "nombre_caso": "Guatemala Joven Conversa ",
+ "bloque": "2-baseline",
+ "proceso_participativo": "Iniciativa de diálogos digitales asistidos por inteligencia artificial que reunió a más de 300 jóvenes de los 22 departamentos de Guatemala para discutir temas como la reforma electoral, la participación juvenil en el desarrollo y la lucha contra la corrupción.",
+ "ano_inicio": "2024",
+ "ano_cierre": null,
+ "estado_actividad": "activo",
+ "evidencia_actividad_2026": "reconfirmado web (institucional): Reconfirmado: diálogos digitales con IA (DPPA ONU + Fundación Esquipulas); 300+ jóvenes; la IA permite intercambios anónimos y votación de aportes para identifi",
+ "organizacion_a_cargo": "Oficina del Coordinador Residente de las Naciones Unidas en Guatemala y Fundación Esquipulas para la Paz, la Democracia, el Desarrollo y la Integración",
+ "tipo_convocante": [
+  "organización internacional",
+  "sociedad civil"
+ ],
+ "tipo_organizacion": [
+  "Mixto"
+ ],
+ "tipo_proceso": [
+  "Gobernanza Colaborativa"
+ ],
+ "etapas_uso_IA": [
+  "Implementación"
+ ],
+ "continuidad": [
+  "Uso único"
+ ],
+ "nivel_consolidacion": 2,
+ "sistema_IA": "Procesamiento de lenguaje natural (NLP)",
+ "tipos_IA_familia": [
+  "NLP - Sentiment",
+  "NLP - Tópicos"
+ ],
+ "usa_LLM_generativa": "no",
+ "funcion_IA": "Facilitar diálogos anónimos en tiempo real, permitir votaciones sobre opiniones y generar alertas sobre desviaciones en la ejecución de obras",
+ "rol_IA": "contenido",
+ "usa_IA_en_proceso": "sí",
+ "tipo_desarrollador_IA": [
+  "Gobierno"
+ ],
+ "origen_desarrollador": "Internacional",
+ "entra_tentativo": "SI",
+ "justificacion_elegibilidad": "Caso del índice 2025; ratificar vigencia 2026 y recodificación.",
+ "confianza": "ALTA (baseline 2025 + reverif. web 2026)",
+ "evidencia_verbatim": {
+  "pais": "Caso del índice ILIA 2025 (BBDD oficial del equipo)",
+  "tipo_proceso": "Governanza Colaborativa",
+  "etapas_uso_IA": "Implementación",
+  "estado_actividad": "reconfirmado web (institucional): Reconfirmado: diálogos digitales con IA (DPPA ONU + Fundación Esquipulas); 300+ jóvenes; la IA permite intercambios anónimos y votación de aportes para identifi",
+  "nivel_consolidacion": "Continuidad (BBDD 2025): Uso único",
+  "tipo_convocante": "Oficina del Coordinador Residente de las Naciones Unidas en Guatemala y Fundación Esquipulas para la Paz, la Democracia, el Desarrollo y la Integración",
+  "usa_IA_en_proceso": "Facilitar diálogos anónimos en tiempo real, permitir votaciones sobre opiniones y generar alertas sobre desviaciones en la ejecución de obras",
+  "rol_IA": "Facilitar diálogos anónimos en tiempo real, permitir votaciones sobre opiniones y generar alertas sobre desviaciones en la ejecución de obras"
+ },
+ "fuentes": [
+  {
+   "url": "https://dppa.medium.com/usando-el-poder-de-la-ia-para-impulsar-la-participaci%C3%B3n-pol%C3%ADtica-de-los-j%C3%B3venes-en-guatemala-6f6d7bf45a47",
+   "estado": "baseline-2025",
+   "cita": ""
+  },
+  {
+   "url": "https://www.fundaesq.org/guatemala-joven-la-voz-de-una-generacion-de-cambios/?utm_source=chatgpt.com",
+   "estado": "baseline-2025",
+   "cita": ""
+  },
+  {
+   "url": "https://dppa.un.org/en/using-power-of-ai-to-boost-youth-political-participation-guatemala",
+   "estado": "baseline-2025",
+   "cita": ""
+  }
+ ],
+ "gaps": [],
+ "alertas": [
+  "usa_LLM_generativa='no' derivado de Tipos de IA 2025 (sin 'LLM'); verificar si cambió en 2026",
+  "Datos brutos del índice ILIA 2025 (BBDD validada por el equipo); recodificación 2026 (convocante 7-cat, nivel 0-3) y reverificación de actividad 2026."
+ ],
+ "fuente_datos": "baseline_2025_bbdd+recod2026+reverif_web2026"
+}

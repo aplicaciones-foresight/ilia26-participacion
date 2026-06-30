@@ -1,0 +1,100 @@
+{
+  "caso_id": "CO-EXC-procuraduria",
+  "pais": "CO",
+  "nombre_caso": "Mini-Public del diálogo social de la Procuraduría",
+  "bloque": "3-excluido-revisar",
+  "proceso_participativo": "Mini-público / diálogo social impulsado por la Procuraduría General de la Nación de Colombia (estrategia de 'Diálogo Social' / 'Diálogo para construir consensos' / 'Escuelas de Diálogo de la PGN'), con facilitación metodológica del laboratorio de innovación democrática ideemos. Se describe como un mecanismo y metodología de diálogo deliberativo para tejer acuerdos entre la sociedad civil, el sector privado, las instituciones públicas y la academia, basado en la confianza ciudadana en el diálogo para alcanzar la convivencia pacífica. Es un proceso participativo deliberativo ELEGIBLE por su naturaleza (mini-público), pero NO se encontró evidencia de que se utilice inteligencia artificial sobre el CONTENIDO de los aportes ciudadanos (sistematización, clasificación o análisis automatizado de las contribuciones).",
+  "ano_inicio": null,
+  "ano_cierre": null,
+  "estado_actividad": "desconocido",
+  "evidencia_actividad_2026": "Indicio de continuidad de la estrategia 'Diálogos para construir consensos' de la Procuraduría: existe un 'Informe de gestión 2025 – Diálogos para construir consensos' (informegestion.daeprocuraduria.com) y eventos del ciclo 'Diálogo para construir consensos' en noviembre de 2025; sin embargo, no se vincula explícitamente con el mini-público facilitado por ideemos ni con uso de IA sobre los aportes.",
+  "organizacion_a_cargo": "Convocante: Procuraduría General de la Nación (PGN), Colombia (otra institución pública). Facilitador/diseño metodológico: ideemos - Laboratorio de Innovación Democrática SAS (sociedad civil, Bogotá, Colombia).",
+  "tipo_convocante": ["otra institución pública", "sociedad civil"],
+  "tipo_organizacion": "Público",
+  "tipo_proceso": ["Mini públicos"],
+  "etapas_uso_IA": [],
+  "continuidad": "Uso único",
+  "nivel_consolidacion": 0,
+  "sistema_IA": null,
+  "tipos_IA_familia": [],
+  "usa_LLM_generativa": "no-claro",
+  "funcion_IA": null,
+  "rol_IA": "no-claro",
+  "usa_IA_en_proceso": "no-claro",
+  "tipo_desarrollador_IA": [],
+  "origen_desarrollador": null,
+  "entra_tentativo": "NO",
+  "justificacion_elegibilidad": "Se MANTIENE EXCLUIDO (entra=NO), confirmando el motivo de exclusión de 2025 ('No se encontró información sobre el uso de la IA en la implementación de los Mini Publics'). El proceso es ELEGIBLE por su naturaleza (mini-público / diálogo social deliberativo convocado por la Procuraduría General de la Nación y facilitado por ideemos), pero la REGLA DE REINGRESO exige evidencia de IA sobre el CONTENIDO de los aportes ciudadanos dentro del proceso participativo, y NO se encontró ninguna. Todas las fuentes describen el diálogo social como una METODOLOGÍA de deliberación y construcción de acuerdos (mesas, escuelas de diálogo, espacios de investigación y diálogo), sin mención de procesamiento de lenguaje natural, machine learning, clasificación/clustering automatizado, relatoría asistida por IA ni sistematización automatizada de las contribuciones. Las referencias a IA de la Procuraduría que sí aparecen son AJENAS al proceso participativo: (a) una herramienta de consulta con IA para la Guía Disciplinaria (asuntos disciplinarios, nov-2025) y (b) preparación frente a redes/algoritmos/IA y desinformación para 'proteger la democracia' (foro Semana). Ninguna procesa los aportes de los mini-públicos. No se trata de DUDA porque no hay indicios reales (aunque no concluyentes) de IA sobre el contenido de los aportes; simplemente hay ausencia de evidencia, igual que en 2025.",
+  "confianza": "MEDIA",
+  "evidencia_verbatim": {
+    "pais": "Ideemos Laboratorio De Innovación Democrática S A S en BOGOTA (Colombia). | 'Para la Procuraduría General de la Nación (PGN), el diálogo social ha sido la metodología y el mecanismo que ha pavimentado el camino para tejer acuerdos entre la sociedad civil, el sector privado, las instituciones públicas y la academia.'",
+    "tipo_proceso": "Ideemos diseña nuevos mecanismos de participación y diálogo como asambleas ciudadanas, mini públicos, conferencias de consenso, hackatones, crowdlaw, diálogos y plataformas de democracia digital. | 'Para la Procuraduría General de la Nación (PGN), el diálogo social ha sido la metodología y el mecanismo que ha pavimentado el camino para tejer acuerdos entre la sociedad civil, el sector privado, las instituciones públicas y la academia, basado en la confianza ciudadana en el diálogo para lograr la convivencia pacífica.'",
+    "etapas_uso_IA": null,
+    "estado_actividad": null,
+    "nivel_consolidacion": null,
+    "tipo_convocante": "Para la Procuraduría General de la Nación (PGN), el diálogo social ha sido la metodología y el mecanismo... entre la sociedad civil, el sector privado, las instituciones públicas y la academia. (convocante = Procuraduría General de la Nación; facilitador = ideemos).",
+    "usa_IA_en_proceso": null,
+    "rol_IA": null
+  },
+  "fuentes": [
+    {
+      "url": "https://ideemos.org/mini-public-del-dialogo-social-de-la-procuraduria/",
+      "estado": "403",
+      "cita": "URL fuente original del caso (ideemos). WebFetch devuelve HTTP 403 Forbidden de forma consistente; el dominio ideemos.org bloquea el acceso automatizado. No se pudo extraer el texto de la página ni vía WebFetch ni vía web.archive.org (bloqueado para esta herramienta). En los snippets de WebSearch sobre esta misma URL/dominio NO aparece ninguna mención de inteligencia artificial, NLP, machine learning ni sistematización automatizada de los aportes del mini-público."
+    },
+    {
+      "url": "https://ideemos.org/que-ideamos/",
+      "estado": "403",
+      "cita": "Página de servicios/proyectos de ideemos (HTTP 403 a WebFetch). Vía WebSearch: 'Ideemos diseña nuevos mecanismos de participación y diálogo tales como asambleas ciudadanas, mini públicos, conferencias de consenso, hackatones, crowdlaw, diálogos y plataformas de democracia digital.' Describe el portafolio metodológico (mini públicos, deliberación, plataformas de democracia digital) sin mención de IA aplicada al contenido de los aportes del diálogo social de la Procuraduría."
+    },
+    {
+      "url": "https://escuelasdialogopgn.com/quienes-somos/",
+      "estado": "no-encontrado",
+      "cita": "Micrositio oficial de la Procuraduría 'Escuelas de Diálogo PGN' (escuelasdialogopgn.com). WebFetch falla con DNS (getaddrinfo ENOTFOUND) a través del proxy. Vía WebSearch: 'Para la Procuraduría General de la Nación (PGN), el diálogo social ha sido la metodología y el mecanismo que ha pavimentado el camino para tejer acuerdos entre la sociedad civil, el sector privado, las instituciones públicas y la academia, basado en la confianza ciudadana en el diálogo para lograr la convivencia pacífica.' y 'El objetivo de las Escuelas de Resolución de Disputas (ERDS) es construir espacios de investigación, discusión, diálogo y creación de conocimiento para brindar las herramientas necesarias para la adecuada identificación, prevención, transformación y seguimiento de acuerdos sobre conflictos sociales en los territorios.' No se menciona IA sobre el contenido de los aportes."
+    },
+    {
+      "url": "https://www.procuraduria.gov.co/Pages/procuraduria-estara-vanguardia-avances-tecnologicos-inteligencia-artificial-procurador-general.aspx",
+      "estado": "no-verificado-directo",
+      "cita": "Título indexado: '«La Procuraduría estará a la vanguardia de los avances tecnológicos y de la Inteligencia Artificial», Procurador General'. Referencia a una postura institucional general sobre IA, NO a la aplicación de IA sobre los aportes del mini-público / diálogo social. No constituye evidencia de IA sobre el contenido de las contribuciones ciudadanas."
+    },
+    {
+      "url": "https://intranet.cali.gov.co/2025/11/25/procuraduria-presenta-actualizacion-de-la-guia-disciplinaria-y-nueva-herramienta-de-consulta-con-inteligencia-artificial/",
+      "estado": "no-verificado-directo",
+      "cita": "Título indexado: 'Procuraduría presenta actualización de la Guía Disciplinaria y nueva herramienta de consulta con Inteligencia Artificial' (nov-2025). El uso de IA documentado de la Procuraduría es una herramienta de consulta para la Guía Disciplinaria (asuntos disciplinarios), AJENA al proceso participativo y al contenido de los aportes ciudadanos del diálogo social."
+    },
+    {
+      "url": "https://informegestion.daeprocuraduria.com/",
+      "estado": "403",
+      "cita": "'Informe de gestión 2025 – Diálogos para construir consensos' (DAE Procuraduría). HTTP 403 a WebFetch. Indicio de continuidad de la estrategia de diálogos de la Procuraduría en 2025, pero el snippet no vincula con ideemos, mini-públicos específicos ni con uso de IA sobre los aportes."
+    }
+  ],
+  "gaps": [
+    {
+      "campo": "usa_IA_en_proceso / rol_IA",
+      "motivo": "No se encontró ninguna evidencia de uso de IA sobre el CONTENIDO de los aportes ciudadanos del mini-público (sistematización, clasificación, clustering, relatoría o análisis automatizado de las contribuciones). Campo decisivo para la elegibilidad. La fuente original (ideemos) devuelve 403 y no fue posible verificar su texto completo de forma directa; se requiere acceso directo o archivo de la página para descartar/confirmar.",
+      "url_para_buscar": "https://ideemos.org/mini-public-del-dialogo-social-de-la-procuraduria/"
+    },
+    {
+      "campo": "ano_inicio / ano_cierre / nivel_consolidacion",
+      "motivo": "No se hallaron fechas concretas de la(s) edición(es) del mini-público del diálogo social de la Procuraduría facilitado por ideemos, ni el número de ediciones (1 puntual vs >=2 recurrente). No se pudo asignar nivel de consolidación con respaldo verbatim.",
+      "url_para_buscar": "https://ideemos.org/proyectos/"
+    },
+    {
+      "campo": "estado_actividad / evidencia_actividad_2026",
+      "motivo": "La estrategia 'Diálogos para construir consensos' de la Procuraduría muestra actividad en 2025, pero no se confirmó si el mini-público específico facilitado por ideemos sigue activo en 2026 ni si incorpora IA. Falta verificación directa.",
+      "url_para_buscar": "https://informegestion.daeprocuraduria.com/"
+    },
+    {
+      "campo": "tipo_proceso / metodología detallada",
+      "motivo": "Se confirma la naturaleza de mini-público / diálogo social (elegible), pero falta el detalle metodológico de cómo se recogen y procesan los aportes (presencial, deliberación, relatoría), necesario para descartar definitivamente cualquier componente de IA.",
+      "url_para_buscar": "https://escuelasdialogopgn.com/quienes-somos/"
+    }
+  ],
+  "alertas": [
+    "DECISIÓN: se MANTIENE EXCLUIDO (entra=NO), confirmando la exclusión 2025. El proceso es ELEGIBLE por su naturaleza (mini-público / diálogo social convocado por la Procuraduría y facilitado por ideemos), pero NO hay evidencia de IA sobre el CONTENIDO de los aportes ciudadanos, que es el requisito de reingreso. No es DUDA: es ausencia de evidencia, no indicio no concluyente.",
+    "ACCESO A FUENTES: la URL original del caso (ideemos.org/mini-public-del-dialogo-social-de-la-procuraduria/) y todo ideemos.org devuelven HTTP 403 a WebFetch; el micrositio escuelasdialogopgn.com falla por DNS (ENOTFOUND) vía proxy; web.archive.org está bloqueado para esta herramienta. Toda la información se reconstruyó a partir de snippets de WebSearch, no de transcripción directa de las páginas renderizadas; por ello confianza MEDIA. Las citas verbatim provienen de los extractos devueltos por WebSearch sobre esas mismas URLs.",
+    "IA DE LA PROCURADURÍA ES AJENA AL PROCESO: las menciones reales de IA en la Procuraduría se refieren a (a) herramienta de consulta con IA para la Guía Disciplinaria (asuntos disciplinarios, nov-2025) y (b) preparación frente a redes, algoritmos e IA / desinformación para proteger la democracia (foro Semana). Ninguna procesa los aportes del mini-público / diálogo social. No deben confundirse con IA sobre el contenido de las contribuciones ciudadanas.",
+    "tipo_convocante: la Procuraduría General de la Nación se clasifica como 'otra institución pública' (órgano de control autónomo, no es gobierno nacional del ejecutivo ni gobierno local). Facilitador ideemos = sociedad civil (laboratorio de innovación democrática, SAS, Bogotá). tipo_organizacion=Público (proceso convocado por institución pública).",
+    "RECOMENDACIÓN: si en una revisión posterior se logra acceso directo (o copia archivada) a la página de ideemos del caso y/o a informes metodológicos de las Escuelas de Diálogo PGN, verificar específicamente si la relatoría o sistematización de los aportes usa NLP/LLM. Hasta entonces, mantener excluido."
+  ]
+}

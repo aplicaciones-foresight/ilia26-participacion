@@ -1,0 +1,72 @@
+{
+ "caso_id": "MX-presupuesto-creces",
+ "pais": "MX",
+ "nombre_caso": "Presupuesto CRECES",
+ "bloque": "2-baseline",
+ "proceso_participativo": "Presupuesto participativo del Ayuntamiento de Hermosillo en México. Utiliza un chatbot que a través de IA simplifica y facilita la votación de los presupuestos participativos",
+ "ano_inicio": "2025",
+ "ano_cierre": null,
+ "estado_actividad": "activo",
+ "evidencia_actividad_2026": null,
+ "organizacion_a_cargo": "Ayundamiento de Hermosilla",
+ "tipo_convocante": [
+  "gobierno local"
+ ],
+ "tipo_organizacion": [
+  "Público"
+ ],
+ "tipo_proceso": [
+  "Presupuestos Participativos"
+ ],
+ "etapas_uso_IA": [
+  "Implementación"
+ ],
+ "continuidad": [
+  "Uso único"
+ ],
+ "nivel_consolidacion": 2,
+ "sistema_IA": "Chatbot a través de WhatsA´´ ",
+ "tipos_IA_familia": [
+  "Chatbot - Inespecífico"
+ ],
+ "usa_LLM_generativa": "no",
+ "funcion_IA": "Facilitar las votaciones haciéndolo en forma conversacional",
+ "rol_IA": "contenido",
+ "usa_IA_en_proceso": "sí",
+ "tipo_desarrollador_IA": [
+  "Privado"
+ ],
+ "origen_desarrollador": "Nacional",
+ "entra_tentativo": "SI",
+ "justificacion_elegibilidad": "Caso del índice 2025; ratificar vigencia 2026 y recodificación.",
+ "confianza": "MEDIA (baseline 2025; sin señal web 2026 nueva)",
+ "evidencia_verbatim": {
+  "pais": "Caso del índice ILIA 2025 (BBDD oficial del equipo)",
+  "tipo_proceso": "Presupuestos Participativos",
+  "etapas_uso_IA": "Implementación",
+  "estado_actividad": "BBDD 2025: Activo",
+  "nivel_consolidacion": "Continuidad (BBDD 2025): Uso único",
+  "tipo_convocante": "Ayundamiento de Hermosilla",
+  "usa_IA_en_proceso": "Facilitar las votaciones haciéndolo en forma conversacional",
+  "rol_IA": "Facilitar las votaciones haciéndolo en forma conversacional"
+ },
+ "fuentes": [
+  {
+   "url": "https://presupuestocreces.hermosillo.gob.mx/",
+   "estado": "baseline-2025",
+   "cita": ""
+  }
+ ],
+ "gaps": [
+  {
+   "campo": "evidencia_actividad_2026",
+   "motivo": "caso 'Activo' sin señal web de actividad/recurrencia 2026 confirmada",
+   "url_para_buscar": "https://presupuestocreces.hermosillo.gob.mx/"
+  }
+ ],
+ "alertas": [
+  "usa_LLM_generativa='no' derivado de Tipos de IA 2025 (sin 'LLM'); verificar si cambió en 2026",
+  "Datos brutos del índice ILIA 2025 (BBDD validada por el equipo); recodificación 2026 (convocante 7-cat, nivel 0-3) y reverificación de actividad 2026."
+ ],
+ "fuente_datos": "baseline_2025_bbdd+recod2026+reverif_web2026"
+}

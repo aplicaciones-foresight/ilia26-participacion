@@ -1,0 +1,79 @@
+{
+ "caso_id": "CO-chatico",
+ "pais": "CO",
+ "nombre_caso": "Chatico",
+ "bloque": "2-baseline",
+ "proceso_participativo": "Atención automatizada mediante procesamiento de lenguaje natural, análisis de datos y algoritmos de inteligencia artificial para responder consultas ciudadanas sobre más de 400 temas de interés.\n\n",
+ "ano_inicio": "2024",
+ "ano_cierre": null,
+ "estado_actividad": "activo",
+ "evidencia_actividad_2026": "reconfirmado web (institucional): Reconfirmado 2024-2028: NLP y tecnologías semánticas procesaron 147.422 participaciones (10% propuestas libres) para el Plan Distrital de Desarrollo. Citado por",
+ "organizacion_a_cargo": "Secretaría General de la Alcaldía Mayor de Bogotá",
+ "tipo_convocante": [
+  "gobierno local"
+ ],
+ "tipo_organizacion": [
+  "Público"
+ ],
+ "tipo_proceso": [
+  "Referendos e Iniciativas Populares",
+  "Presupuestos Participativos"
+ ],
+ "etapas_uso_IA": [
+  "Implementación"
+ ],
+ "continuidad": [
+  "Plataforma"
+ ],
+ "nivel_consolidacion": 2,
+ "sistema_IA": "Procesamiento de lenguaje natural (NLP)",
+ "tipos_IA_familia": [
+  "NLP",
+  "LLM"
+ ],
+ "usa_LLM_generativa": "sí",
+ "funcion_IA": "Interactuar con ciudadanos, responder consultas y plataforma para votar en causas ciudadanas y presupuesto participativo",
+ "rol_IA": "contenido",
+ "usa_IA_en_proceso": "sí",
+ "tipo_desarrollador_IA": [
+  "Privado",
+  "Gobierno"
+ ],
+ "origen_desarrollador": "Nacional",
+ "entra_tentativo": "SI",
+ "justificacion_elegibilidad": "Caso del índice 2025; ratificar vigencia 2026 y recodificación.",
+ "confianza": "ALTA (baseline 2025 + reverif. web 2026)",
+ "evidencia_verbatim": {
+  "pais": "Caso del índice ILIA 2025 (BBDD oficial del equipo)",
+  "tipo_proceso": "Referendos e Iniciativas Populares, Presupuestos Participativos",
+  "etapas_uso_IA": "Implementación",
+  "estado_actividad": "reconfirmado web (institucional): Reconfirmado 2024-2028: NLP y tecnologías semánticas procesaron 147.422 participaciones (10% propuestas libres) para el Plan Distrital de Desarrollo. Citado por",
+  "nivel_consolidacion": "Continuidad (BBDD 2025): Plataforma",
+  "tipo_convocante": "Secretaría General de la Alcaldía Mayor de Bogotá",
+  "usa_IA_en_proceso": "Interactuar con ciudadanos, responder consultas y plataforma para votar en causas ciudadanas y presupuesto participativo",
+  "rol_IA": "Interactuar con ciudadanos, responder consultas y plataforma para votar en causas ciudadanas y presupuesto participativo"
+ },
+ "fuentes": [
+  {
+   "url": "https://secretariageneral.gov.co/noticias/chatico-el-agente-virtual-de-servicio-la-ciudadania-supero-los-36-millones-de-conversaciones",
+   "estado": "baseline-2025",
+   "cita": ""
+  },
+  {
+   "url": "https://bogota.gov.co/mi-ciudad/gestion-publica/distrito-presenta-su-agente-virtual-chatico-que-guia-la-ciudadania",
+   "estado": "baseline-2025",
+   "cita": ""
+  },
+  {
+   "url": "https://bogota.gov.co/mi-ciudad/participacion-y-cultura-ciudadana/plan-desarrollo-bogota-camina-segura-tuvo-147-mil-aportes-ciudadanos",
+   "estado": "baseline-2025",
+   "cita": ""
+  }
+ ],
+ "gaps": [],
+ "alertas": [
+  "usa_LLM_generativa derivado de Tipos de IA (BBDD 2025: contiene 'LLM')",
+  "Datos brutos del índice ILIA 2025 (BBDD validada por el equipo); recodificación 2026 (convocante 7-cat, nivel 0-3) y reverificación de actividad 2026."
+ ],
+ "fuente_datos": "baseline_2025_bbdd+recod2026+reverif_web2026"
+}

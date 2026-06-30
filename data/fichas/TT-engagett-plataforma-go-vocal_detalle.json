@@ -1,0 +1,116 @@
+{
+  "caso_id": "TT-engagett-plataforma-go-vocal",
+  "pais": "TT",
+  "nombre_caso": "EngageTT (engage.gov.tt) sobre plataforma Go Vocal (antes CitizenLab) - consulta del National Digital Transformation Strategy (NDTS) 2024-2027",
+  "bloque": "1-dudoso",
+  "proceso_participativo": "EngageTT (engage.gov.tt) es la plataforma de participacion ciudadana del Ministry of Digital Transformation de Trinidad y Tobago (desde mayo 2025 fusionado en el Ministry of Public Administration and Artificial Intelligence, MPAAI), lanzada en el simposio del NDTS el 12 de febrero de 2025 junto al BID (IDB). Se usa como canal de participacion en el proceso de planificacion nacional del National Digital Transformation Strategy (NDTS) 2024-2027, donde ciudadanos, empresas y partes interesadas reciben actualizaciones y aportan retroalimentacion via encuestas, sondeos (polls), un 'Open Forum' de ideas y el envio de propuestas. La instancia corre sobre el software Go Vocal (antes CitizenLab) -confirmado por la ruta interna 'projects/e-democracy-govocal-internal'-. Go Vocal incorpora un modulo de IA/NLP de 'Sensemaking' (analisis y resumen automatico de aportes), pero NO se halla evidencia de que la instancia de Trinidad active esas funciones de IA sobre el CONTENIDO de los aportes; podria estar usando la plataforma solo como formulario de encuestas/ideas. Existe ademas AskNDTS, un chatbot/PWA de IA conversacional para responder preguntas sobre el NDTS (rol de FAQ informativo, EXCLUIDO del criterio).",
+  "ano_inicio": 2025,
+  "ano_cierre": null,
+  "estado_actividad": "activo",
+  "evidencia_actividad_2026": "El dominio engage.gov.tt permanece operativo en 2026 bajo el Ministry of Public Administration and Artificial Intelligence (MPAAI), con el proyecto del NDTS y secciones de Open Forum/ideas accesibles; el ministerio declara que ya no busca insumos para la version inicial del NDTS pero 'welcomes feedback or comments' de forma continua. No se hallo registro de una nueva edicion/proceso participativo distinto en 2026.",
+  "organizacion_a_cargo": "Ministry of Digital Transformation de Trinidad y Tobago (desde el 23-may-2025 fusionado en el Ministry of Public Administration and Artificial Intelligence, MPAAI), en colaboracion con el Banco Interamericano de Desarrollo (BID/IDB). Plataforma de software: Go Vocal (antes CitizenLab), empresa belga.",
+  "tipo_convocante": ["gobierno nacional"],
+  "tipo_organizacion": "Público",
+  "tipo_proceso": ["Participación Digital", "Gobernanza Colaborativa"],
+  "etapas_uso_IA": [],
+  "continuidad": "Plataforma",
+  "nivel_consolidacion": 1,
+  "sistema_IA": "Plataforma Go Vocal (antes CitizenLab), software de participacion ciudadana que ofrece de forma nativa un modulo de IA/NLP llamado 'Sensemaking' (analisis y resumen automatico de aportes ciudadanos, deteccion de patrones y vinculos estadisticos). En la instancia de Trinidad (engage.gov.tt) NO se confirma activacion de dicho modulo de IA sobre el contenido de los aportes. Aparte, AskNDTS es un chatbot de IA conversacional (FAQ sobre el NDTS), pero no procesa aportes de un proceso participativo (excluido).",
+  "tipos_IA_familia": ["NLP", "Resumen automatico", "Clasificacion/agrupacion de texto (capacidad de la plataforma, activacion no confirmada en TT)"],
+  "usa_LLM_generativa": "no-claro",
+  "funcion_IA": "Capacidad de la plataforma Go Vocal: el modulo 'Sensemaking' analiza y resume automaticamente grandes conjuntos de aportes, detecta patrones entre grupos y descubre vinculos estadisticamente significativos entre demografia, experiencia y prioridades, reduciendo el tiempo de analisis. NO confirmado que la instancia de Trinidad lo active sobre el contenido de los aportes del NDTS. La unica IA confirmada en el ecosistema TT es AskNDTS, un chatbot conversacional que responde preguntas sobre el NDTS (FAQ informativo, no procesa aportes).",
+  "rol_IA": "no-claro",
+  "usa_IA_en_proceso": "no-claro",
+  "tipo_desarrollador_IA": ["Privado"],
+  "origen_desarrollador": "Internacional",
+  "entra_tentativo": "DUDA",
+  "justificacion_elegibilidad": "El caso ocurre dentro de un PROCESO PARTICIPATIVO genuino: la consulta/planificacion nacional del National Digital Transformation Strategy (NDTS) 2024-2027, convocada por el gobierno nacional (Ministry of Digital Transformation, hoy MPAAI), con recoleccion de aportes via EngageTT (encuestas, sondeos, Open Forum de ideas, envio de propuestas). La plataforma subyacente Go Vocal (antes CitizenLab) SI dispone de un modulo de IA/NLP ('Sensemaking') capaz de recolectar/clasificar/agrupar/sintetizar el contenido de los aportes. SIN EMBARGO, la DUDA CENTRAL no se resuelve: NO existe evidencia de que la instancia de Trinidad ACTIVE esas funciones de IA sobre el contenido de los aportes; toda la documentacion hallada describe a EngageTT como canal de 'surveys and polls' / feedback y Open Forum (es decir, posible uso solo como formulario), sin mencion de analisis automatico por IA de las contribuciones. La unica IA confirmada y desplegada (AskNDTS) es un chatbot de FAQ conversacional, EXCLUIDO por el criterio (chatbot informativo). Existe un PDF 'NDTS 2025 - Actionable Feedback & Implementation Plan' que sugiere que la retroalimentacion fue sintetizada en un plan, pero NO hay evidencia de que esa sintesis se hiciera con IA (pudo ser manual). Por tanto: usa_IA_en_proceso=no-claro, rol_IA=no-claro y entra_tentativo=DUDA, con gap explicito sobre la activacion del NLP de Go Vocal en TT.",
+  "confianza": "MEDIA",
+  "evidencia_verbatim": {
+    "pais": "Project: National Digital Transformation Strategy | Ministry of Digital Transformation, Trinidad and Tobago (engage.gov.tt/projects/national-digital-transformation-strategy). Ruta interna confirmatoria: engage.gov.tt/projects/e-democracy-govocal-internal (la instancia corre sobre Go Vocal).",
+    "tipo_proceso": "EngageTT es una plataforma en linea (engage.gov.tt) donde ciudadanos, empresas y partes interesadas pueden recibir actualizaciones en tiempo real sobre iniciativas de transformacion digital y ofrecer retroalimentacion via encuestas y sondeos (polls); el Ministro anima a todos a participar y enviar ideas y comentarios sobre el NDTS, que se disena para evolucionar mediante el compromiso y la colaboracion continuos. Incluye un 'Open Forum' (engage.gov.tt/ideas/open-forum) y 'Input: Submitting Proposals' (engage.gov.tt/ideas/submitting-proposals).",
+    "etapas_uso_IA": null,
+    "estado_actividad": "The National Strategy for a Digital TT is finalized, and while the Ministry of Digital Transformation is no longer seeking input, they welcome feedback or comments through the citizen engagement digital platform Engage TT. (engage.gov.tt sigue operativo en 2026 bajo MPAAI).",
+    "nivel_consolidacion": "The Ministry of Digital Transformation (MDT) officially presented the National Digital Transformation Strategy (NDTS) 2024-2027... launched during a NDTS Symposium in collaboration with the Inter-American Development Bank (IDB) on Wednesday, February 12th 2025. A major highlight... was the introduction of two new digital tools (EngageTT y AskNDTS). (Lanzamiento/anuncio unico en feb-2025; plataforma de uso continuo pero sin >=2 ediciones de proceso participativo documentadas).",
+    "tipo_convocante": "The Ministry of Digital Transformation (MDT) officially presented the National Digital Transformation Strategy (NDTS) 2024-2027... and introduced the EngageTT website - an online platform where citizens, businesses, and stakeholders can get real-time updates on digital transformation initiatives, and offer feedback via surveys and polls. (Convocante: gobierno nacional / Ministry of Digital Transformation, hoy MPAAI).",
+    "usa_IA_en_proceso": null,
+    "rol_IA": null
+  },
+  "fuentes": [
+    {
+      "url": "https://engage.gov.tt/projects/national-digital-transformation-strategy",
+      "estado": "403",
+      "cita": "Pagina del proyecto 'National Digital Transformation Strategy' en la plataforma EngageTT. WebFetch devuelve HTTP 403 (bloqueo de scraping del sitio). Via WebSearch se confirma que es el proceso participativo del NDTS donde se recoge feedback via encuestas, sondeos, Open Forum e ideas; no se menciona analisis por IA de los aportes."
+    },
+    {
+      "url": "https://engage.gov.tt/projects/e-democracy-govocal-internal",
+      "estado": "403",
+      "cita": "Ruta interna 'e-democracy-govocal-internal' en engage.gov.tt que confirma que la instancia de participacion ciudadana de Trinidad corre sobre el software Go Vocal (antes CitizenLab). WebFetch HTTP 403; existencia y titulo verificados via WebSearch ('Engage.gov.tt | Ministry of Digital Transformation, Trinidad and Tobago')."
+    },
+    {
+      "url": "https://mdt.gov.tt/resources/ministry-launches-digital-tools-to-drive-national-digital-transformation-strategy-2024-2027/",
+      "estado": "no-encontrado",
+      "cita": "Comunicado del Ministry of Digital Transformation: 'The Ministry of Digital Transformation (MDT) officially presented the National Digital Transformation Strategy (NDTS) 2024-2027... launched during a NDTS Symposium in collaboration with the Inter-American Development Bank (IDB) on Wednesday, February 12th 2025. A major highlight... was the introduction of two new digital tools... the EngageTT website - an online platform where citizens, businesses, and stakeholders can get real-time updates on digital transformation initiatives, and offer feedback via surveys and polls.' (mdt.gov.tt da error de DNS/ENOTFOUND a WebFetch -dominio del ministerio previo a la fusion en MPAAI-; contenido recuperado de forma consistente via WebSearch sobre la misma URL)."
+    },
+    {
+      "url": "https://engage.gov.tt/pages/faq",
+      "estado": "403",
+      "cita": "Pagina FAQ de EngageTT. Via WebSearch: 'AskNDTS is an AI-powered Chatbot dedicated to help citizens understand the NDTS, its digital initiatives, and its impact on the citizens.' y 'AskNDTS is a progressive web application (mdt.gov.tt/askNDTS/ask/) where citizens can interact and receive personalized, conversational responses about the NDTS.' (IA confirmada = chatbot FAQ, EXCLUIDA del criterio)."
+    },
+    {
+      "url": "https://www.govocal.com/en-uk/platform-features/sensemaking",
+      "estado": "403",
+      "cita": "Pagina de producto de Go Vocal: 'Sensemaking: AI-powered input analysis and summarization'. Via WebSearch: 'Go Vocal successfully launched its Sensemaking tool... saving governments at least 50% in analysis time. The tool can analyse and instantly summarize big data sets automatically and spot patterns across groups and uncover statistically significant links between demographics, lived experience, and priorities.' Demuestra la CAPACIDAD de IA/NLP de la plataforma, no su activacion en la instancia TT (WebFetch HTTP 403)."
+    },
+    {
+      "url": "https://www.govocal.com/en-uk/news/citizenlab-rebrands-to-go-vocal",
+      "estado": "403",
+      "cita": "Anuncio del rebranding de CitizenLab a Go Vocal. Via WebSearch: 'The platform leverages artificial intelligence and natural language processing to automatically moderate and analyze citizens inputs as well as offer automated reports with insights into decision-making.' Confirma que el desarrollador es la empresa Go Vocal (antes CitizenLab), fundada en 2015, con sede en Belgica (Privado, origen Internacional)."
+    },
+    {
+      "url": "https://engage.gov.tt/uploads/51c7a0a3-20e6-46aa-8b13-72bd21a4f9c2/idea_file/file/ac51ce34-6291-4c02-a83f-caa33d60915b/National_Digital_Transformation_Strategy__NDTS__2025_-Actionable_Feedback___Implementation_Plan.pdf",
+      "estado": "no-verificado",
+      "cita": "Documento alojado en EngageTT titulado 'National Digital Transformation Strategy (NDTS) 2025 - Actionable Feedback & Implementation Plan'. Indica que la retroalimentacion ciudadana fue sintetizada en un plan accionable, pero NO especifica si se uso IA/NLP para esa sintesis (pudo ser manual). Hallado via WebSearch; contenido del PDF no recuperado/verificado en detalle."
+    },
+    {
+      "url": "https://www.ttt.live/national-digital-transformation-strategy-2/",
+      "estado": "no-verificado",
+      "cita": "Cobertura de prensa (TTT News) sobre el NDTS 2024-2027 y el lanzamiento de EngageTT como plataforma de participacion ciudadana. Refuerza el caracter de proceso participativo de planificacion nacional convocado por el ministerio."
+    }
+  ],
+  "gaps": [
+    {
+      "campo": "usa_IA_en_proceso / rol_IA / etapas_uso_IA",
+      "motivo": "DUDA CENTRAL no resuelta: no hay evidencia de que la instancia de Trinidad (engage.gov.tt) ACTIVE el modulo de IA/NLP 'Sensemaking' de Go Vocal sobre el CONTENIDO de los aportes (recolectar/clasificar/agrupar/sintetizar). Toda la documentacion describe EngageTT como canal de encuestas/sondeos/ideas (posible uso solo como formulario). La unica IA confirmada (AskNDTS) es un chatbot FAQ excluido. Decisivo para la elegibilidad.",
+      "url_para_buscar": "https://engage.gov.tt/projects/national-digital-transformation-strategy"
+    },
+    {
+      "campo": "usa_IA_en_proceso (sintesis del feedback)",
+      "motivo": "Existe un PDF 'NDTS 2025 - Actionable Feedback & Implementation Plan' que sintetiza la retroalimentacion, pero no se confirma si la sintesis/agrupacion se hizo con IA (Go Vocal Sensemaking) o manualmente por el equipo del ministerio.",
+      "url_para_buscar": "https://engage.gov.tt/uploads/51c7a0a3-20e6-46aa-8b13-72bd21a4f9c2/idea_file/file/ac51ce34-6291-4c02-a83f-caa33d60915b/National_Digital_Transformation_Strategy__NDTS__2025_-Actionable_Feedback___Implementation_Plan.pdf"
+    },
+    {
+      "campo": "usa_LLM_generativa",
+      "motivo": "No se confirma si Go Vocal Sensemaking usa LLM generativa ni, en su caso, si AskNDTS usa un LLM. AskNDTS esta excluido (chatbot FAQ) y la activacion de Sensemaking en TT no esta confirmada, por lo que el campo queda no-claro.",
+      "url_para_buscar": "https://www.govocal.com/en-uk/platform-features/sensemaking"
+    },
+    {
+      "campo": "nivel_consolidacion",
+      "motivo": "EngageTT se lanzo en feb-2025 como plataforma de uso continuo, pero no hay >=2 ediciones de un proceso participativo documentadas (mas alla del NDTS 2024-2027). Se asigna nivel 1 (anuncio/lanzamiento + uso inicial). Verificar si se abrieron nuevos procesos participativos en 2026 bajo MPAAI.",
+      "url_para_buscar": "https://engage.gov.tt/projects"
+    },
+    {
+      "campo": "ano_cierre / estado_actividad",
+      "motivo": "La consulta inicial del NDTS ya no busca insumos ('no longer seeking input') pero la plataforma sigue 'welcoming feedback'. No hay fecha de cierre formal del proceso participativo.",
+      "url_para_buscar": "https://engage.gov.tt/pages/information"
+    }
+  ],
+  "alertas": [
+    "ELEGIBILIDAD (DUDA): proceso participativo genuino (consulta/planificacion nacional del NDTS 2024-2027, convocante gobierno nacional) sobre plataforma Go Vocal que TIENE IA/NLP de sensemaking, PERO sin evidencia de que la instancia TT active esa IA sobre el contenido de los aportes. Por eso usa_IA_en_proceso=no-claro, rol_IA=no-claro y entra_tentativo=DUDA. Si se confirmara que NO se activa la IA -> tenderia a NO; si se confirmara activacion del NLP sobre aportes -> SI.",
+    "EXCLUSION explicita: AskNDTS es un chatbot/PWA de IA conversacional (FAQ sobre el NDTS), que segun el criterio (chatbot informativo/FAQ) NO cuenta como IA sobre el contenido de los aportes. Es la unica IA confirmada y desplegada en el ecosistema TT del NDTS.",
+    "CONFIRMACION TECNICA: engage.gov.tt corre sobre Go Vocal (antes CitizenLab), confirmado por la ruta interna 'projects/e-democracy-govocal-internal' indexada por buscadores.",
+    "FUENTES: engage.gov.tt y govocal.com devuelven HTTP 403 a WebFetch (bloqueo de scraping a nivel de sitio, no del proxy: el estado del proxy esta 'enabled' y solo registra un fallo ajeno a un dominio .br); mdt.gov.tt da ENOTFOUND (DNS) -el dominio del ministerio previo fue absorbido tras la fusion en MPAAI en may-2025-. Todo el contenido y las citas se recuperaron de forma convergente via WebSearch (>=8 consultas). Confianza MEDIA por dependencia de snippets de WebSearch y por la duda central sin resolver.",
+    "DESARROLLADOR: Go Vocal (antes CitizenLab) es una empresa fundada en 2015 con sede en Belgica (Privado, origen Internacional). Convocante/operador del proceso = gobierno nacional de Trinidad y Tobago (Ministry of Digital Transformation / MPAAI), con colaboracion del BID/IDB.",
+    "CONTEXTO INSTITUCIONAL: el 23-may-2025 el Ministry of Public Administration y el Ministry of Digital Transformation se fusionaron en el Ministry of Public Administration and Artificial Intelligence (MPAAI); engage.gov.tt ahora figura bajo MPAAI."
+  ]
+}

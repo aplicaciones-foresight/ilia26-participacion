@@ -1,0 +1,101 @@
+{
+  "caso_id": "CL-el-chile-que-queremos-ecqq-minciencia",
+  "pais": "CL",
+  "nombre_caso": "El Chile que Queremos (ECQQ) - MinCiencia",
+  "bloque": "1-nuevo",
+  "proceso_participativo": "Iniciativa gubernamental de diálogos ciudadanos y escucha social presentada por el Gobierno de Chile el 22 de noviembre de 2019, en el marco del Acuerdo por la Justicia Social y el Acuerdo por una Nueva Constitución tras el estallido social. Entre noviembre de 2019 y marzo de 2020, la ciudadanía pudo participar mediante diálogos grupales (cabildos) o consultas individuales en el sitio www.chilequequeremos.cl, registrando sus necesidades y propuestas para complementar futuras políticas públicas. El proceso fue un esfuerzo conjunto de los Ministerios de Desarrollo Social y Familia, de Ciencia/Tecnología/Conocimiento e Innovación (MinCiencia), de Agricultura, la SEGEGOB y la División de Gobierno Digital. El Ministerio de Ciencia fue responsable de SISTEMATIZAR los aportes ciudadanos usando ciencia de datos / IA: el repositorio público MinCiencia/ECQQ contiene el código que clasifica las contribuciones (texto libre de los aportes) mediante redes neuronales recurrentes (RNN) y árboles de decisión (Random Forest), y sistematiza emociones y necesidades mediante análisis de tópicos (NLP/LDA) sobre el contenido de diálogos y consultas individuales.",
+  "ano_inicio": 2019,
+  "ano_cierre": 2020,
+  "estado_actividad": "cerrado",
+  "evidencia_actividad_2026": null,
+  "organizacion_a_cargo": "Gobierno de Chile - proceso conjunto liderado por el Ministerio de Desarrollo Social y Familia; sistematización de los aportes con ciencia de datos/IA a cargo del Ministerio de Ciencia, Tecnología, Conocimiento e Innovación (MinCiencia). Participaron también Ministerio de Agricultura, SEGEGOB y División de Gobierno Digital.",
+  "tipo_convocante": ["gobierno nacional"],
+  "tipo_organizacion": "Público",
+  "tipo_proceso": ["Participación Digital", "Gobernanza Colaborativa"],
+  "etapas_uso_IA": ["Análisis"],
+  "continuidad": "Uso único",
+  "nivel_consolidacion": 2,
+  "sistema_IA": "Conjunto de modelos de aprendizaje automático y NLP desarrollados por MinCiencia (código público en GitHub: MinCiencia/ECQQ) para sistematizar las contribuciones ciudadanas: clasificación de contribuciones con redes neuronales recurrentes (RNN) y con árboles de decisión (Random Forest), agrupamiento/sistematización de emociones y análisis de tópicos de necesidades (NLP/LDA). Visualización mediante dashboards (Apache Superset).",
+  "tipos_IA_familia": ["NLP", "Clasificación de texto", "Modelado de tópicos (LDA)", "Redes neuronales recurrentes (RNN)", "Random Forest", "Clasificación de emociones", "Machine Learning"],
+  "usa_LLM_generativa": "no",
+  "funcion_IA": "La IA procesa el CONTENIDO de los aportes ciudadanos (texto libre de diálogos y consultas individuales): clasifica las contribuciones mediante redes neuronales recurrentes (carpeta contributions_rnn) y mediante árboles de decisión/Random Forest (carpeta randomforest), sistematiza las emociones expresadas (Grouping Emotions.ipynb) y analiza los tópicos de necesidades personales y país (Analisis de Topicos - Necesidades.ipynb). El objetivo es sistematizar ~130.000 aportes ciudadanos para informar políticas públicas.",
+  "rol_IA": "contenido",
+  "usa_IA_en_proceso": "sí",
+  "tipo_desarrollador_IA": ["Gobierno"],
+  "origen_desarrollador": "Nacional",
+  "entra_tentativo": "SI",
+  "justificacion_elegibilidad": "ENTRA. Existe un PROCESO PARTICIPATIVO real y convocado por el gobierno nacional (diálogos ciudadanos y consultas individuales 'El Chile que Queremos', nov 2019 - mar 2020, ~130.810 participantes en 345 comunas), y la IA se aplica directamente sobre el CONTENIDO de los aportes: el Ministerio de Ciencia sistematizó las contribuciones con ciencia de datos, y el código público (MinCiencia/ECQQ) demuestra clasificación de contribuciones con RNN y Random Forest, y sistematización de emociones y análisis de tópicos de necesidades (LDA/NLP) sobre el texto libre de diálogos y consultas. Cumple el criterio: dentro de un proceso participativo se usa IA para clasificar/analizar/agrupar/sintetizar los aportes. CONFIRMADO DISTINTO del caso baseline 'Estudio dIAlogos - Percepciones de Futuro': dIAlogos lo desarrollaron Fundación Encuentros del Futuro + Merlín Research (~15.413 participantes, ~100.000 ideas, robots cognitivos, 2020-2021, estudio de percepciones de futuro), mientras que ECQQ es un proceso de gobierno (MinCiencia + Desarrollo Social), 2019-2020, ~130.810 participantes en 345 comunas, con código propio en GitHub. Son dos casos diferentes (distinta organización, fecha, escala, metodología y datos).",
+  "confianza": "ALTA",
+  "evidencia_verbatim": {
+    "pais": "El Chile que Queremos cierra etapa de diálogos con más de 130 mil participantes en las 345 comunas del país (titular de noticia del Ministerio de Desarrollo Social y Familia - Gobierno de Chile).",
+    "tipo_proceso": "El Gobierno presentó la iniciativa el viernes 22 de noviembre de 2019. La participación fue posible hasta el 31 de marzo a través de diálogos ciudadanos o consultas individuales en www.chilequequeremos.cl (gob.cl).",
+    "etapas_uso_IA": "Este repositorio contiene los procedimientos para realizar la clasificación de las contribuciones con redes neuronales (README del repositorio MinCiencia/ECQQ, carpeta contributions_rnn).",
+    "estado_actividad": "130.810 personas participaron en los Diálogos Ciudadanos impulsados por El Chile Que Queremos, desde noviembre de 2019 hasta marzo de 2020. La decisión de concluir anticipadamente los diálogos ciudadanos fue parte de las medidas del gobierno para frenar la propagación del COVID-19, aunque la plataforma permaneció abierta hasta el 31 de marzo de 2020.",
+    "nivel_consolidacion": "130.810 personas participaron en los Diálogos Ciudadanos impulsados por El Chile Que Queremos, desde noviembre de 2019 hasta marzo de 2020 (proceso único, una sola edición).",
+    "tipo_convocante": "El Gobierno presentó 'El Chile que Queremos', iniciativa de diálogos y escucha social para avanzar en nuevas propuestas para el país. La iniciativa fue un esfuerzo conjunto entre los Ministerios de Desarrollo Social y Familia, de Ciencia, Tecnología, Conocimiento e Innovación, de Agricultura, la Secretaría General de Gobierno y la División de Gobierno Digital (gob.cl / desarrollosocialyfamilia.gob.cl).",
+    "usa_IA_en_proceso": "La información recibida de la ciudadanía es sistematizada por el Ministerio de Ciencias, siendo la ciencia de datos una herramienta clave para este amplio y participativo ejercicio de escucha. / clasificación de las contribuciones con árboles de decisión (README MinCiencia/ECQQ).",
+    "rol_IA": "Grouping Emotions.ipynb que sirve para sistematizar las Emociones / Analisis de Topicos - Necesidades.ipynb que sirve para sistematizar tanto las necesidades personales como las del país (README MinCiencia/ECQQ)."
+  },
+  "fuentes": [
+    {
+      "url": "https://github.com/MinCiencia/ECQQ",
+      "estado": "ok",
+      "cita": "README de 'El Chile que queremos': 'En este repositorio se pueden encontrar las siguientes carpetas'. contributions_rnn: 'los procedimientos para realizar la clasificación de las contribuciones con redes neuronales'. randomforest: 'clasificación de las contribuciones con árboles de decisión'. nemotion / 'Grouping Emotions.ipynb que sirve para sistematizar las Emociones'. 'Analisis de Topicos - Necesidades.ipynb' para sistematizar necesidades personales y del país. Pipeline.ipynb realiza la limpieza de datos de consultas individuales y diálogos. Incluye procesamiento de datos NNA (niños, niñas y adolescentes) y dashboards (superset-ecqq). Cuenta oficial: MinCiencia (Ministerio de Ciencia, Tecnología, Conocimiento e Innovación). Confirmado vía WebFetch a raw.githubusercontent.com y WebSearch."
+    },
+    {
+      "url": "https://www.desarrollosocialyfamilia.gob.cl/noticias/el-chile-que-queremos-cierra-etapa-de-dialogos-con-mas-de-130-mil-participantes-en-las-345-comunas-d",
+      "estado": "403",
+      "cita": "'El Chile que Queremos cierra etapa de diálogos con más de 130 mil participantes en las 345 comunas del país.' Más de 130.000 participantes; los diálogos cubrieron todas las comunas de Chile; incluyó más de 11.000 personas mayores, más de 13.000 niños, niñas y adolescentes y más de 23.000 vecinos. La información recibida de la ciudadanía fue sistematizada por el Ministerio de Ciencias, con la ciencia de datos como herramienta clave. (HTTP 403 a WebFetch; contenido recuperado vía WebSearch sobre la misma URL del Gobierno de Chile)."
+    },
+    {
+      "url": "https://www.gob.cl/noticias/gobierno-presenta-el-chile-que-queremos-iniciativa-de-dialogos-y-escucha-social-para-avanzar-en-nuevas-propuestas-para-el-pais/",
+      "estado": "403",
+      "cita": "El Gobierno presentó la iniciativa el viernes 22 de noviembre de 2019. La participación fue posible hasta el 31 de marzo a través de diálogos ciudadanos o consultas individuales en www.chilequequeremos.cl. La información recibida de la ciudadanía sería sistematizada por el Ministerio de Ciencias; en marzo el Ministerio de Ciencias realizaría el análisis de resultados encabezado por un Comité de Sistematización. Esfuerzo conjunto de los Ministerios de Desarrollo Social y Familia, de Ciencia Tecnología Conocimiento e Innovación, de Agricultura, la SEGEGOB y la División de Gobierno Digital. (HTTP 403 a WebFetch; contenido recuperado vía WebSearch sobre la misma URL del Gobierno de Chile)."
+    },
+    {
+      "url": "https://www.rln.cl/regional/69621-con-mas-de-130-mil-participantes-concluyen-los-dialogos-ciudadanos-de-el-chile-que-queremos",
+      "estado": "ok",
+      "cita": "'Con más de 130 mil participantes concluyen los diálogos ciudadanos de el Chile que Queremos.' 130.810 personas participaron en los Diálogos Ciudadanos de noviembre de 2019 a marzo de 2020. La información recibida de la ciudadanía es sistematizada por el Ministerio de Ciencias, con la ciencia de datos como herramienta clave para este amplio y participativo ejercicio de escucha. Principales temáticas: salud, pensiones, educación, seguridad y trabajo (recuperado vía WebSearch)."
+    },
+    {
+      "url": "https://www.gob.cl/noticias/el-chile-que-queremos-53-mil-personas-de-317-comunas-han-participado-en-los-dialogos/",
+      "estado": "403",
+      "cita": "Hito intermedio del proceso: 'El Chile que Queremos: 53 mil personas de 317 comunas han participado en los diálogos' (confirma escala creciente del proceso de diálogos y consultas individuales convocado por el Gobierno). (HTTP 403 a WebFetch; título y contexto recuperados vía WebSearch)."
+    },
+    {
+      "url": "https://latinno.net/es/case/4151/",
+      "estado": "403",
+      "cita": "Ficha de la base de datos LATINNO titulada 'Diálogos Ciudadanos: El Chile que Queremos', que cataloga el proceso como caso de innovación democrática/participación ciudadana en Chile. (HTTP 403 a WebFetch; existencia y título confirmados vía WebSearch)."
+    },
+    {
+      "url": "https://estudiodialogos.cl/",
+      "estado": "ok",
+      "cita": "FUENTE DE CONTRASTE (caso baseline distinto): 'Diálogos | IA para conocer el futuro'. El estudio dIAlogos nació de una alianza entre Fundación Encuentros del Futuro y la empresa Merlín Research, con asesoría técnica del CNID y del Language Technology Institute (LTI) de Carnegie Mellon, y apoyo del Ministerio de Ciencia, Futuro360 y Fundación VTR; ~15.413 participantes mediante entrevistas con robots cognitivos, web y presencial, codificando más de 100.000 ideas (2020-2021). DISTINTO de ECQQ por organización, fecha, escala, metodología y datos (recuperado vía WebSearch)."
+    }
+  ],
+  "gaps": [
+    {
+      "campo": "evidencia_actividad_2026",
+      "motivo": "El proceso de diálogos cerró en marzo de 2020 (proceso de gobierno de la administración 2018-2022); no hay evidencia de actividad ni continuidad en 2026. estado_actividad=cerrado.",
+      "url_para_buscar": "https://github.com/MinCiencia/ECQQ/activity"
+    },
+    {
+      "campo": "ano_cierre / informe final",
+      "motivo": "Las fuentes indican que el informe final con resultados se entregaría hacia mayo de 2020 y un Comité de Sistematización analizaría los datos, pero no se localizó el documento/informe oficial final completo con URL directa (las URLs gob.cl devuelven 403 a WebFetch). Se confirma el cierre del proceso participativo en marzo de 2020.",
+      "url_para_buscar": "https://www.chilequequeremos.cl"
+    },
+    {
+      "campo": "rol_IA (integración formal del output)",
+      "motivo": "Está confirmado que MinCiencia sistematizó los aportes con IA (RNN, Random Forest, LDA, emociones), pero no se localizó documentación que detalle cómo el output exacto de los modelos se tradujo en políticas/propuestas específicas (Traducción Política). Por eso etapas_uso_IA se limita a 'Análisis' con evidencia textual.",
+      "url_para_buscar": "https://minciencia.gob.cl/noticias/"
+    }
+  ],
+  "alertas": [
+    "DUDA CENTRAL RESUELTA: ECQQ (El Chile que Queremos) es un CASO DISTINTO del baseline 'Estudio dIAlogos - Percepciones de Futuro'. ECQQ = proceso de gobierno (MinCiencia + Ministerio de Desarrollo Social y Familia), nov 2019 - mar 2020, ~130.810 participantes en 345 comunas, código propio en GitHub (RNN/Random Forest/LDA/emociones). dIAlogos = Fundación Encuentros del Futuro + Merlín Research (con asesoría de CMU-LTI), ~15.413 participantes, ~100.000 ideas, robots cognitivos, 2020-2021, estudio de percepciones de futuro. Distintos en organización, fecha, escala, metodología y datos.",
+    "ELEGIBILIDAD: caso ENTRA con confianza ALTA. Proceso participativo convocado por el gobierno nacional + IA sobre el CONTENIDO de los aportes (clasificación con redes neuronales y Random Forest, sistematización de emociones y análisis de tópicos de necesidades) documentada en código público.",
+    "FUENTES 403: las URLs oficiales del Gobierno de Chile (gob.cl, desarrollosocialyfamilia.gob.cl) y LATINNO devuelven HTTP 403 a WebFetch; el contenido y las citas se recuperaron de forma consistente vía WebSearch sobre esas mismas URLs y se corroboraron con prensa accesible (rln.cl). El README de GitHub se verificó vía WebFetch a raw.githubusercontent.com. Por convergencia de >5 fuentes (gob.cl, Desarrollo Social, prensa, GitHub) la confianza es ALTA.",
+    "MEJORA RESPECTO A PASADAS PREVIAS: las pasadas _A/_B/_conciliada se basaron únicamente en el README de GitHub (confianza BAJA, país=null, proceso no confirmado). Esta ficha incorpora múltiples fuentes institucionales y de prensa que confirman país (CL), proceso participativo (diálogos ciudadanos + consultas individuales), convocante (gobierno nacional), fechas (2019-2020), escala (~130.810 participantes, 345 comunas) y que la IA se aplica sobre el contenido de los aportes.",
+    "usa_LLM_generativa=no: las técnicas son ML/NLP clásico (RNN, Random Forest, LDA, clasificación de emociones) de 2019-2020; sin mención de modelos de lenguaje generativos.",
+    "nivel_consolidacion=2 (puntual): una sola edición del proceso 'El Chile que Queremos' (2019-2020), sin ediciones recurrentes; el código quedó público pero no como plataforma de uso continuo."
+  ]
+}
