@@ -1,28 +1,28 @@
 pais,caso,tipo_convocante,nivel_consolidacion,nivel_consolidacion_override,rol_IA,fuente_convocante,nota
-BO,Bolivia Conversa,gobierno nacional|organización internacional,2,,contenido,"Vicepresidencia del Estado Plurinacional de Bolivia y Sistema de Naciones Unidas",
-BR,Portal e-Cidadania: Marcado automático de respuestas ciudadanas en videos de audiencias públicas,gobierno nacional,2,,contenido,"Senado Federal de Brasil","Plataforma activa; posible nivel 3 si se verifica recurrencia (override)"
-BR,Plan Plurianual de la ciudad de Natal,gobierno local,2,,contenido,"Prefeitura Municipal de Natal (SEMPLA)",
-BR,Colab,empresa,2,,contenido,"Colab (plataforma GovTech)","Plataforma desde 2013; posible nivel 3 con evidencia de recurrencia"
-BR,ParticipACT Brasil,universidad,2,,contenido,"ParticipAct (plataforma académica de ciencia ciudadana)","Convocante ambiguo: universidad vs sociedad civil"
-CL,Cabildos 2016,otra institución pública,2,,contenido,"Biblioteca del Congreso Nacional","BCN: otra institución pública vs gobierno nacional"
-CL,Estudio dIAlogos - Percepciones de Futuro,sociedad civil|empresa,2,,contenido,"Fundación Encuentros del Futuro y Merlín Research",
-CL,Tenemos que hablar de Chile,universidad,2,,contenido,"Universidad de Chile y Pontificia Universidad Católica de Chile","Escenario B: caso en revisión (puede salir)"
-CL,Jornada de Escucha Lanzamiento Instituto de Políticas Públicas UNAB,universidad,2,,contenido,"Universidad Andres Bello",
-CL,Participación Ciudadana Proceso Constitucional,gobierno nacional,2,,contenido,"Secretaría de Participación Ciudadana","Aplica a los dos casos homónimos (autoconvocados y audiencias)"
-CL,La voz de los nuevos votantes,universidad,2,,contenido,"Universidad Andres Bello",
-CL,Un encuentro para la equidad de género en la movilidad en Chile,universidad,2,,contenido,"Universidad Andres Bello",
-CL,Estrategia de Gobierno Digital. Informe proceso participativo segunda consulta ciudadana,gobierno nacional,2,,contenido,"Secretaría de Gobierno Digital",
-CO,ECHO – HáblameD Medellín,organización internacional|gobierno local,2,,contenido,"UNFPA Colombia y Personería de Medellín",
-CO,Tenemos que hablar de Colombia,universidad|empresa|sociedad civil,2,,contenido,"Seis universidades colombianas, Grupo SURA y Fundación Ideas para la Paz",
-CO,Chatico,gobierno local,2,,contenido,"Secretaría General de la Alcaldía Mayor de Bogotá",
-CO,Descongestión de solicitudes diarias del programa Ingreso Solidario,gobierno nacional,2,,apoyo,"Departamento Administrativo para la Prosperidad Social (DPS)","Exclusión FIRME (recodificación 2026): atención/apoyo, no contenido participativo"
-CR,dIAra,otra institución pública,2,,contenido,"Contraloría General de la República de Costa Rica","Revisar rol_IA: monitoreo de obras (traducción política)"
-CR,U-Report Costa Rica – chatbot juvenil,organización internacional,2,,contenido,"UNICEF",
-DO,CiudadanIA,empresa|universidad|gobierno nacional,2,,contenido,"GENIA Latinoamérica, UNICARIBE, MINPRE y OGTIC","Escenario B: caso en revisión (puede salir). GENIA: empresa/soc. civil (ambiguo)"
-EC,PAGA IA,gobierno nacional|sociedad civil,2,,contenido,"Gobierno Abierto Ecuador y Fundación de Ayuda por Internet (Fundapi)",
-GT,Guatemala Joven Conversa,organización internacional|sociedad civil,2,,contenido,"Coordinador Residente de la ONU en Guatemala y Fundación Esquipulas",
-HN,RedPública + iVerify,organización internacional|universidad,2,,contenido,"PNUD, CEUTEC y la Unión Europea",
-MX,Sufragio seguro,universidad,2,,apoyo,"Tecnológico Nacional de México","Exclusión FIRME (recodificación 2026): integridad/proceso electoral, no contenido"
-MX,Presupuesto CRECES,gobierno local,2,,contenido,"Ayuntamiento de Hermosillo",
-PE,Consulta Ciudadana sobre el Proyecto Nacional de Educación,otra institución pública,2,,contenido,"Consejo Nacional de Educación del Perú","CNE: organismo autónomo (otra pública) vs gobierno nacional"
-PE,Sistema de cómputo con IA para las Elecciones Generales 2026,gobierno nacional,1,,apoyo,"Oficina Nacional de Procesos Electorales (ONPE)","Exclusión FIRME (recodificación 2026): conteo electoral (OCR), no participación; estado 'Próximamente' = anuncio"
+BO,Bolivia Conversa,gobierno nacional|organización internacional,2,,contenido,Vicepresidencia del Estado Plurinacional de Bolivia y Sistema de Naciones Unidas,
+BR,Portal e-Cidadania: Marcado automático de respuestas ciudadanas en videos de audiencias públicas,gobierno nacional,2,,contenido,Senado Federal de Brasil,Plataforma activa; posible nivel 3 si se verifica recurrencia (override)
+BR,Plan Plurianual de la ciudad de Natal,gobierno local,2,,contenido,Prefeitura Municipal de Natal (SEMPLA),| VALIDACIÓN 2026: IA sobre el contenido NO verificada en búsqueda web; confirmar rol_IA con cita verbatim antes de incluir.
+BR,Colab,empresa,2,,contenido,Colab (plataforma GovTech),Plataforma desde 2013; posible nivel 3 con evidencia de recurrencia
+BR,ParticipACT Brasil,universidad,2,,contenido,ParticipAct (plataforma académica de ciencia ciudadana),Convocante ambiguo: universidad vs sociedad civil | VALIDACIÓN 2026: IA periférica (no actúa sobre el contenido deliberativo); revisar encaje metodológico.
+CL,Cabildos 2016,otra institución pública,2,,contenido,Biblioteca del Congreso Nacional,BCN: otra institución pública vs gobierno nacional
+CL,Estudio dIAlogos - Percepciones de Futuro,sociedad civil|empresa,2,,contenido,Fundación Encuentros del Futuro y Merlín Research,
+CL,Tenemos que hablar de Chile,universidad,2,,contenido,Universidad de Chile y Pontificia Universidad Católica de Chile,Escenario B: caso en revisión (puede salir) | VALIDACIÓN 2026: IA sobre el contenido NO verificada en búsqueda web; confirmar rol_IA con cita verbatim antes de incluir.
+CL,Jornada de Escucha Lanzamiento Instituto de Políticas Públicas UNAB,universidad,2,,contenido,Universidad Andres Bello,| VALIDACIÓN 2026: IA sobre el contenido NO verificada en búsqueda web; confirmar rol_IA con cita verbatim antes de incluir.
+CL,Participación Ciudadana Proceso Constitucional,gobierno nacional,2,,contenido,Secretaría de Participación Ciudadana,Aplica a los dos casos homónimos (autoconvocados y audiencias)
+CL,La voz de los nuevos votantes,universidad,2,,contenido,Universidad Andres Bello,| VALIDACIÓN 2026: IA sobre el contenido NO verificada en búsqueda web; confirmar rol_IA con cita verbatim antes de incluir.
+CL,Un encuentro para la equidad de género en la movilidad en Chile,universidad,2,,contenido,Universidad Andres Bello,
+CL,Estrategia de Gobierno Digital. Informe proceso participativo segunda consulta ciudadana,gobierno nacional,2,,contenido,Secretaría de Gobierno Digital,| VALIDACIÓN 2026: IA sobre el contenido NO verificada en búsqueda web; confirmar rol_IA con cita verbatim antes de incluir.
+CO,ECHO – HáblameD Medellín,organización internacional|gobierno local,2,,contenido,UNFPA Colombia y Personería de Medellín,
+CO,Tenemos que hablar de Colombia,universidad|empresa|sociedad civil,2,,contenido,"Seis universidades colombianas, Grupo SURA y Fundación Ideas para la Paz",| VALIDACIÓN 2026: IA sobre el contenido NO verificada en búsqueda web; confirmar rol_IA con cita verbatim antes de incluir.
+CO,Chatico,gobierno local,2,,contenido,Secretaría General de la Alcaldía Mayor de Bogotá,
+CO,Descongestión de solicitudes diarias del programa Ingreso Solidario,gobierno nacional,2,,apoyo,Departamento Administrativo para la Prosperidad Social (DPS),"Exclusión FIRME (recodificación 2026): atención/apoyo, no contenido participativo"
+CR,dIAra,otra institución pública,2,,contenido,Contraloría General de la República de Costa Rica,Revisar rol_IA: monitoreo de obras (traducción política) | VALIDACIÓN 2026: IA periférica (no actúa sobre el contenido deliberativo); revisar encaje metodológico.
+CR,U-Report Costa Rica – chatbot juvenil,organización internacional,2,,contenido,UNICEF,| VALIDACIÓN 2026: IA sobre el contenido NO verificada en búsqueda web; confirmar rol_IA con cita verbatim antes de incluir.
+DO,CiudadanIA,empresa|universidad|gobierno nacional,2,,contenido,"GENIA Latinoamérica, UNICARIBE, MINPRE y OGTIC",Escenario B: caso en revisión (puede salir). GENIA: empresa/soc. civil (ambiguo) | VALIDACIÓN 2026: IA sobre el contenido NO verificada en búsqueda web; confirmar rol_IA con cita verbatim antes de incluir.
+EC,PAGA IA,gobierno nacional|sociedad civil,2,,contenido,Gobierno Abierto Ecuador y Fundación de Ayuda por Internet (Fundapi),
+GT,Guatemala Joven Conversa,organización internacional|sociedad civil,2,,contenido,Coordinador Residente de la ONU en Guatemala y Fundación Esquipulas,
+HN,RedPública + iVerify,organización internacional|universidad,2,,contenido,"PNUD, CEUTEC y la Unión Europea",| VALIDACIÓN 2026: IA periférica (no actúa sobre el contenido deliberativo); revisar encaje metodológico.
+MX,Sufragio seguro,universidad,2,,apoyo,Tecnológico Nacional de México,"Exclusión FIRME (recodificación 2026): integridad/proceso electoral, no contenido"
+MX,Presupuesto CRECES,gobierno local,2,,contenido,Ayuntamiento de Hermosillo,| VALIDACIÓN 2026: IA sobre el contenido NO verificada en búsqueda web; confirmar rol_IA con cita verbatim antes de incluir.
+PE,Consulta Ciudadana sobre el Proyecto Nacional de Educación,otra institución pública,2,,contenido,Consejo Nacional de Educación del Perú,CNE: organismo autónomo (otra pública) vs gobierno nacional
+PE,Sistema de cómputo con IA para las Elecciones Generales 2026,gobierno nacional,1,,apoyo,Oficina Nacional de Procesos Electorales (ONPE),"Exclusión FIRME (recodificación 2026): conteo electoral (OCR), no participación; estado 'Próximamente' = anuncio"
