@@ -1,126 +1,126 @@
 {
- "caso_id": "CU-consulta-popular-codigo-de-las-familias",
- "pais": "CU",
- "nombre_caso": "Consulta Popular Código de las Familias (GEMA-CEN / XISCOP)",
- "bloque": "1-dudoso",
- "proceso_participativo": "Consulta popular legislativa nacional sobre el proyecto del Código de las Familias en Cuba, organizada y supervisada por el Consejo Electoral Nacional (CEN). Se desarrolló entre febrero y abril de 2022 mediante más de 79.000 reuniones en barrios, centros laborales y estudiantiles, con la participación de unos 6.481.200 personas que emitieron opiniones y propuestas sobre el articulado del proyecto de ley. Las propuestas recogidas eran revisadas y clasificadas por juristas en el sistema XISCOP y luego procesadas en el sistema GEMA-CEN, que mediante 'análisis inteligente de los expedientes' agrupaba propuestas similares y determinaba 'propuestas típicas' por párrafo/categoría (se determinaron 5.237 propuestas típicas por Título). XISCOP (UCI) emitía además las estadísticas oficiales. El proceso de consulta cerró en abril de 2022; el Código fue aprobado posteriormente en referendo el 25 de septiembre de 2022.",
- "ano_inicio": 2022,
- "ano_cierre": 2022,
- "estado_actividad": "cerrado",
- "evidencia_actividad_2026": "No se halló ninguna evidencia de actividad en 2026. El proceso participativo (consulta popular) se desarrolló entre febrero y abril de 2022; sus resultados se entregaron al Parlamento en marzo-mayo de 2022 y el Código de las Familias fue aprobado por referendo el 25 de septiembre de 2022, entrando en vigor el 26 de septiembre de 2022. Se trata de un proceso de uso único ya finalizado; no hay nuevas ediciones ni uso del sistema GEMA-CEN para participación documentado con posterioridad.",
- "organizacion_a_cargo": "Consejo Electoral Nacional (CEN) de Cuba como órgano organizador y supervisor de la consulta popular. El procesamiento informático se apoyó en dos sistemas: XISCOP, desarrollado por la Universidad de las Ciencias Informáticas (UCI), para la entrada, revisión, clasificación y estadísticas oficiales; y GEMA-CEN, basado en el producto GEMA de la empresa estatal Datys, para el 'análisis inteligente' y agrupamiento de las propuestas. La Asamblea Nacional del Poder Popular y la Comisión redactora del Ministerio de Justicia recibieron los resultados.",
- "tipo_convocante": [
-  "gobierno nacional"
- ],
- "tipo_organizacion": "Público",
- "tipo_proceso": [
-  "Participación Digital",
-  "Referendos e Iniciativas Populares"
- ],
- "etapas_uso_IA": [
-  "Análisis"
- ],
- "continuidad": "Uso único",
- "nivel_consolidacion": 2,
- "sistema_IA": "GEMA-CEN: adaptación para el Consejo Electoral Nacional del producto GEMA de Datys (empresa estatal cubana). Según la ficha oficial de Datys, GEMA es 'una herramienta para el análisis de información contenida en grandes volúmenes de archivos de diferentes formatos e idiomas, con funcionalidades orientadas a la recuperación y clasificación de información'; es un 'sistema de procesamiento paralelo, distribuido y resistente a fallos' que clasifica archivos 'atendiendo a temáticas predefinidas por los usuarios', extrae texto de imágenes mediante OCR, recupera información por contenido y 'mediante técnicas modernas de recuperación de información' obtiene archivos similares, elimina resultados no relevantes y agrupa documentos comunes; además genera sumarios 'conformados por las oraciones con mayor importancia dentro del texto'. En la consulta, los especialistas usaban GEMA-CEN para el 'análisis inteligente de los expedientes', agrupar propuestas similares y determinar 'propuestas típicas'. El sistema XISCOP (UCI) realizaba la captura, revisión/clasificación por juristas y las estadísticas oficiales. No se publica el detalle técnico exacto (si el agrupamiento usa ML/embeddings semánticos o similitud clásica de recuperación de información).",
- "tipos_IA_familia": [
-  "NLP",
-  "Minería de texto",
-  "Recuperación de información",
-  "Clasificación automática de documentos"
- ],
- "usa_LLM_generativa": "no",
- "funcion_IA": "Analizar el CONTENIDO de las propuestas ciudadanas recogidas en la consulta popular: GEMA-CEN procesaba los expedientes con propuestas, recuperaba y comparaba su contenido, agrupaba las propuestas similares (idénticas o con redacción distinta que se referían al mismo criterio u opinión) y permitía determinar las 'propuestas típicas' por párrafo en cada categoría/Título establecida, sintetizando así el universo de aportes (de las propuestas procesadas se determinaron 5.237 propuestas típicas por Título). XISCOP realizaba la entrada, clasificación por juristas y estadísticas oficiales. La función técnica de GEMA combina recuperación de información, agrupamiento/clasificación de documentos por temática, OCR y resumen automático extractivo.",
- "rol_IA": "contenido",
- "usa_IA_en_proceso": "sí",
- "tipo_desarrollador_IA": [
-  "Privado",
-  "Academia",
-  "Gobierno"
- ],
- "origen_desarrollador": "Nacional",
- "entra_tentativo": "SI",
- "justificacion_elegibilidad": "Dentro de un proceso participativo formal y de gran escala (consulta popular legislativa nacional sobre el Código de las Familias, feb-abr 2022, ~6,5 millones de participantes y cientos de miles de propuestas) se usó IA sobre el CONTENIDO de los aportes ciudadanos: el sistema GEMA-CEN (basado en GEMA de Datys) hacía 'análisis inteligente de los expedientes' para recuperar, comparar y AGRUPAR propuestas similares y determinar 'propuestas típicas' por párrafo/categoría (5.237 propuestas típicas), es decir recolectar/clasificar/agrupar/sintetizar el contenido de los aportes, no apoyo logístico. La ficha técnica oficial de GEMA (Datys) lo describe como herramienta de recuperación y clasificación de información en grandes volúmenes de archivos, con OCR, agrupamiento de documentos comunes y resumen automático, lo que corresponde a NLP/minería de texto/recuperación de información (IA sobre contenido), no a mero conteo o lógica de reglas determinista. Convocante = gobierno nacional (Consejo Electoral Nacional / Asamblea Nacional, Estado cubano). Por ello ENTRA. Se mantiene clasificado en bloque '1-dudoso' y con alerta porque las fuentes no precisan si el agrupamiento usa ML/embeddings semánticos o similitud clásica de recuperación de información; en cualquiera de los dos casos sigue siendo procesamiento de texto sobre el contenido, por lo que se resuelve como SI (no DUDA) con confianza media-alta.",
- "confianza": "ALTA",
- "evidencia_verbatim": {
-  "pais": "Para agilizar la recogida y el procesamiento de los criterios, la Universidad de las Ciencias Informáticas (UCI) y Datys diseñaron dos sistemas informáticos de gestión (XISCOP y GEMA-CEN) [proceso de consulta popular del Código de las Familias en Cuba].",
-  "tipo_proceso": "consulta popular del proyecto del Código de las Familias (...) la Universidad de las Ciencias Informáticas (UCI) y Datys diseñaron dos sistemas informáticos de gestión (XISCOP y GEMA-CEN)",
-  "etapas_uso_IA": "luego se sube a GEMA-CEN (también operado por especialistas) que, a través del análisis inteligente de los expedientes, organiza las propuestas y agrupa las similares, facilitando el trabajo y evitando errores. GEMA-CEN permite determinar las propuestas típicas para un párrafo en cada una de las categorías establecidas",
-  "estado_actividad": "Más de seis millones 481 mil personas participaron en las reuniones (...) la consulta popular del proyecto del Código de las Familias (...) convocada entre febrero y abril [de 2022]; del total de propuestas procesadas se determinaron 5 237 propuestas típicas por Título",
-  "nivel_consolidacion": "del total de propuestas procesadas se determinaron 5 237 propuestas típicas por Título, conformadas a partir de la asociación de propuestas idénticas y de aquellas con redacción diferente pero referidas al mismo criterio u opinión",
-  "tipo_convocante": "La consulta popular (...) fue organizada y supervisada por el Consejo Electoral Nacional (CEN) [órgano del Estado cubano]; los resultados se entregaron al Parlamento (Asamblea Nacional) y a su Comisión redactora",
-  "usa_IA_en_proceso": "se sube a GEMA-CEN (...) que, a través del análisis inteligente de los expedientes, organiza las propuestas y agrupa las similares (...) permite determinar las propuestas típicas para un párrafo en cada una de las categorías establecidas",
-  "rol_IA": "GEMA es una herramienta para el análisis de información contenida en grandes volúmenes de archivos de diferentes formatos e idiomas, con funcionalidades orientadas a la recuperación y clasificación de información (...) complementando los resultados mediante técnicas modernas de recuperación de información para obtener archivos similares, eliminar resultados no relevantes y agrupar documentos comunes"
- },
- "fuentes": [
-  {
-   "url": "http://www.datys.cu/spa/site/product/15",
-   "estado": "403",
-   "cita": "Ficha oficial del producto GEMA (Datys). WebFetch devolvió HTTP 403 y el host www.datys.cu no está en el allowlist para curl; contenido recuperado de forma consistente vía WebSearch. Texto clave: 'GEMA es una herramienta para el análisis de información contenida en grandes volúmenes de archivos de diferentes formatos e idiomas, con funcionalidades orientadas a la recuperación y clasificación de información'; 'sistema de procesamiento paralelo, distribuido y resistente a fallos, cuyo objetivo es procesar un flujo continuo de archivos (...) y clasificarlos atendiendo a temáticas predefinidas por los usuarios'; 'Procesa documentos de 82 formatos escritos en 7 idiomas. Extrae texto de imágenes utilizando técnicas de OCR'; 'Recupera información mediante un eficaz método de búsqueda por contenido, complementando los resultados mediante técnicas modernas de recuperación de información para obtener archivos similares, eliminar resultados no relevantes y agrupar documentos comunes'; 'Obtener sumarios conformados por las oraciones con mayor importancia dentro del texto'. Esta es la evidencia técnica que resuelve la DUDA CENTRAL: GEMA es NLP/minería de texto/recuperación de información (IA sobre contenido)."
+  "caso_id": "CU-consulta-popular-codigo-de-las-familias",
+  "pais": "CU",
+  "nombre_caso": "Consulta Popular Código de las Familias (GEMA-CEN / XISCOP)",
+  "bloque": "1-dudoso",
+  "proceso_participativo": "Consulta popular legislativa nacional sobre el proyecto del Código de las Familias en Cuba, organizada y supervisada por el Consejo Electoral Nacional (CEN). Se desarrolló entre febrero y abril de 2022 mediante más de 79.000 reuniones en barrios, centros laborales y estudiantiles, con la participación de unos 6.481.200 personas que emitieron opiniones y propuestas sobre el articulado del proyecto de ley. Las propuestas recogidas eran revisadas y clasificadas por juristas en el sistema XISCOP y luego procesadas en el sistema GEMA-CEN, que mediante 'análisis inteligente de los expedientes' agrupaba propuestas similares y determinaba 'propuestas típicas' por párrafo/categoría (se determinaron 5.237 propuestas típicas por Título). XISCOP (UCI) emitía además las estadísticas oficiales. El proceso de consulta cerró en abril de 2022; el Código fue aprobado posteriormente en referendo el 25 de septiembre de 2022.",
+  "ano_inicio": 2022,
+  "ano_cierre": 2022,
+  "estado_actividad": "cerrado",
+  "evidencia_actividad_2026": "No se halló ninguna evidencia de actividad en 2026. El proceso participativo (consulta popular) se desarrolló entre febrero y abril de 2022; sus resultados se entregaron al Parlamento en marzo-mayo de 2022 y el Código de las Familias fue aprobado por referendo el 25 de septiembre de 2022, entrando en vigor el 26 de septiembre de 2022. Se trata de un proceso de uso único ya finalizado; no hay nuevas ediciones ni uso del sistema GEMA-CEN para participación documentado con posterioridad.",
+  "organizacion_a_cargo": "Consejo Electoral Nacional (CEN) de Cuba como órgano organizador y supervisor de la consulta popular. El procesamiento informático se apoyó en dos sistemas: XISCOP, desarrollado por la Universidad de las Ciencias Informáticas (UCI), para la entrada, revisión, clasificación y estadísticas oficiales; y GEMA-CEN, basado en el producto GEMA de la empresa estatal Datys, para el 'análisis inteligente' y agrupamiento de las propuestas. La Asamblea Nacional del Poder Popular y la Comisión redactora del Ministerio de Justicia recibieron los resultados.",
+  "tipo_convocante": [
+    "gobierno nacional"
+  ],
+  "tipo_organizacion": "Público",
+  "tipo_proceso": [
+    "Participación Digital",
+    "Referendos e Iniciativas Populares"
+  ],
+  "etapas_uso_IA": [
+    "Análisis"
+  ],
+  "continuidad": "Uso único",
+  "nivel_consolidacion": 2,
+  "sistema_IA": "GEMA-CEN: adaptación para el Consejo Electoral Nacional del producto GEMA de Datys (empresa estatal cubana). Según la ficha oficial de Datys, GEMA es 'una herramienta para el análisis de información contenida en grandes volúmenes de archivos de diferentes formatos e idiomas, con funcionalidades orientadas a la recuperación y clasificación de información'; es un 'sistema de procesamiento paralelo, distribuido y resistente a fallos' que clasifica archivos 'atendiendo a temáticas predefinidas por los usuarios', extrae texto de imágenes mediante OCR, recupera información por contenido y 'mediante técnicas modernas de recuperación de información' obtiene archivos similares, elimina resultados no relevantes y agrupa documentos comunes; además genera sumarios 'conformados por las oraciones con mayor importancia dentro del texto'. En la consulta, los especialistas usaban GEMA-CEN para el 'análisis inteligente de los expedientes', agrupar propuestas similares y determinar 'propuestas típicas'. El sistema XISCOP (UCI) realizaba la captura, revisión/clasificación por juristas y las estadísticas oficiales. No se publica el detalle técnico exacto (si el agrupamiento usa ML/embeddings semánticos o similitud clásica de recuperación de información).",
+  "tipos_IA_familia": [
+    "NLP",
+    "Minería de texto",
+    "Recuperación de información",
+    "Clasificación automática de documentos"
+  ],
+  "usa_LLM_generativa": "no",
+  "funcion_IA": "Analizar el CONTENIDO de las propuestas ciudadanas recogidas en la consulta popular: GEMA-CEN procesaba los expedientes con propuestas, recuperaba y comparaba su contenido, agrupaba las propuestas similares (idénticas o con redacción distinta que se referían al mismo criterio u opinión) y permitía determinar las 'propuestas típicas' por párrafo en cada categoría/Título establecida, sintetizando así el universo de aportes (de las propuestas procesadas se determinaron 5.237 propuestas típicas por Título). XISCOP realizaba la entrada, clasificación por juristas y estadísticas oficiales. La función técnica de GEMA combina recuperación de información, agrupamiento/clasificación de documentos por temática, OCR y resumen automático extractivo.",
+  "rol_IA": "contenido",
+  "usa_IA_en_proceso": "sí",
+  "tipo_desarrollador_IA": [
+    "Privado",
+    "Academia",
+    "Gobierno"
+  ],
+  "origen_desarrollador": "Nacional",
+  "entra_tentativo": "SI",
+  "justificacion_elegibilidad": "Dentro de un proceso participativo formal y de gran escala (consulta popular legislativa nacional sobre el Código de las Familias, feb-abr 2022, ~6,5 millones de participantes y cientos de miles de propuestas) se usó IA sobre el CONTENIDO de los aportes ciudadanos: el sistema GEMA-CEN (basado en GEMA de Datys) hacía 'análisis inteligente de los expedientes' para recuperar, comparar y AGRUPAR propuestas similares y determinar 'propuestas típicas' por párrafo/categoría (5.237 propuestas típicas), es decir recolectar/clasificar/agrupar/sintetizar el contenido de los aportes, no apoyo logístico. La ficha técnica oficial de GEMA (Datys) lo describe como herramienta de recuperación y clasificación de información en grandes volúmenes de archivos, con OCR, agrupamiento de documentos comunes y resumen automático, lo que corresponde a NLP/minería de texto/recuperación de información (IA sobre contenido), no a mero conteo o lógica de reglas determinista. Convocante = gobierno nacional (Consejo Electoral Nacional / Asamblea Nacional, Estado cubano). Por ello ENTRA. Se mantiene clasificado en bloque '1-dudoso' y con alerta porque las fuentes no precisan si el agrupamiento usa ML/embeddings semánticos o similitud clásica de recuperación de información; en cualquiera de los dos casos sigue siendo procesamiento de texto sobre el contenido, por lo que se resuelve como SI (no DUDA) con confianza media-alta.",
+  "confianza": "ALTA",
+  "evidencia_verbatim": {
+    "pais": "Para agilizar la recogida y el procesamiento de los criterios, la Universidad de las Ciencias Informáticas (UCI) y Datys diseñaron dos sistemas informáticos de gestión (XISCOP y GEMA-CEN) [proceso de consulta popular del Código de las Familias en Cuba].",
+    "tipo_proceso": "consulta popular del proyecto del Código de las Familias (...) la Universidad de las Ciencias Informáticas (UCI) y Datys diseñaron dos sistemas informáticos de gestión (XISCOP y GEMA-CEN)",
+    "etapas_uso_IA": "luego se sube a GEMA-CEN (también operado por especialistas) que, a través del análisis inteligente de los expedientes, organiza las propuestas y agrupa las similares, facilitando el trabajo y evitando errores. GEMA-CEN permite determinar las propuestas típicas para un párrafo en cada una de las categorías establecidas",
+    "estado_actividad": "Más de seis millones 481 mil personas participaron en las reuniones (...) la consulta popular del proyecto del Código de las Familias (...) convocada entre febrero y abril [de 2022]; del total de propuestas procesadas se determinaron 5 237 propuestas típicas por Título",
+    "nivel_consolidacion": "del total de propuestas procesadas se determinaron 5 237 propuestas típicas por Título, conformadas a partir de la asociación de propuestas idénticas y de aquellas con redacción diferente pero referidas al mismo criterio u opinión",
+    "tipo_convocante": "La consulta popular (...) fue organizada y supervisada por el Consejo Electoral Nacional (CEN) [órgano del Estado cubano]; los resultados se entregaron al Parlamento (Asamblea Nacional) y a su Comisión redactora",
+    "usa_IA_en_proceso": "se sube a GEMA-CEN (...) que, a través del análisis inteligente de los expedientes, organiza las propuestas y agrupa las similares (...) permite determinar las propuestas típicas para un párrafo en cada una de las categorías establecidas",
+    "rol_IA": "GEMA es una herramienta para el análisis de información contenida en grandes volúmenes de archivos de diferentes formatos e idiomas, con funcionalidades orientadas a la recuperación y clasificación de información (...) complementando los resultados mediante técnicas modernas de recuperación de información para obtener archivos similares, eliminar resultados no relevantes y agrupar documentos comunes"
   },
-  {
-   "url": "https://www.granma.cu/cuba/2022-01-24/herramientas-digitales-seran-claves-durante-la-consulta-popular-del-codigo-de-las-familias-24-01-2022-13-01-18",
-   "estado": "403",
-   "cita": "Granma (órgano oficial del PCC), 24/01/2022: 'Herramientas digitales serán claves durante la consulta popular del Código de las Familias'. WebFetch 403 (anti-bot del origen); contenido recuperado vía WebSearch. Confirma que UCI y Datys diseñaron dos sistemas informáticos (XISCOP y GEMA-CEN) para la recogida y procesamiento de los criterios, y que GEMA-CEN realiza el 'análisis inteligente' y agrupa propuestas similares para determinar propuestas típicas."
-  },
-  {
-   "url": "https://www.espirituano.gob.cu/noticias/7716-como-sera-el-proceso-de-consulta-popular-del-nuevo-codigo-de-las-familias",
-   "estado": "403",
-   "cita": "Portal del ciudadano de Sancti Spíritus (gob.cu): '¿Cómo será el proceso de consulta popular del nuevo Código de las Familias?'. WebFetch 403; vía WebSearch: 'la Universidad de las Ciencias Informáticas (UCI) y Datys diseñaron dos sistemas informáticos de gestión (XISCOP y GEMA-CEN)'; XISCOP es donde un grupo de revisión de juristas revisa y clasifica todas las propuestas; 'luego se sube a GEMA-CEN (también operado por especialistas) que, a través del análisis inteligente de los expedientes, organiza las propuestas y agrupa las similares (...) permite determinar las propuestas típicas para un párrafo en cada una de las categorías establecidas'."
-  },
-  {
-   "url": "http://www.cubadebate.cu/noticias/2021/12/19/como-sera-el-proceso-de-consulta-popular-del-nuevo-codigo-de-las-familias/",
-   "estado": "403",
-   "cita": "Cubadebate, 19/12/2021: '¿Cómo será el proceso de consulta popular del nuevo Código de las Familias?'. WebFetch 403; vía WebSearch reproduce la misma descripción del flujo XISCOP -> GEMA-CEN, el 'análisis inteligente de los expedientes', el agrupamiento de propuestas similares y la determinación de 'propuestas típicas'."
-  },
-  {
-   "url": "http://www.cubadebate.cu/noticias/2022/05/14/consulta-popular-del-proyecto-de-codigo-de-las-familias-61-96-por-ciento-de-opiniones-estuvieron-a-favor/",
-   "estado": "403",
-   "cita": "Cubadebate, 14/05/2022: resultados de la consulta popular. WebFetch 403; vía WebSearch: más de 6.481.200 participantes en más de 79.000 reuniones; 269.436 propuestas clasificadas como favorables (61,96%); del total procesado se determinaron 5.237 propuestas típicas por Título. Confirma cifras y cierre del proceso en 2022."
-  },
-  {
-   "url": "https://es.wikipedia.org/wiki/C%C3%B3digo_de_las_Familias_de_Cuba",
-   "estado": "403",
-   "cita": "Wikipedia (ES) - Código de las Familias de Cuba. WebFetch 403; vía WebSearch: la consulta popular se desarrolló entre febrero y abril de 2022; el referendo se celebró el 25/09/2022, aprobado por 66,85% de los votantes; la ley (Ley n.º 156/2022) entró en vigor el 26/09/2022 y sigue vigente. Sustenta ano_inicio/ano_cierre 2022 y estado 'cerrado' del proceso participativo."
-  },
-  {
-   "url": "https://oncubanews.com/cuba/softwares-cubanos-seran-utilizados-en-el-proceso-de-consulta-popular-sobre-el-codigo-de-las-familias/",
-   "estado": "403",
-   "cita": "OnCuba News: 'Softwares cubanos serán utilizados en el proceso de consulta popular sobre el Código de las Familias'. WebFetch 403; no se pudo extraer texto literal adicional vía WebSearch en esta sesión, pero el título y la temática corroboran el uso de los softwares cubanos (XISCOP y GEMA-CEN) en el proceso. Fuente listada por aparecer en el encargo; evidencia técnica principal proviene de Datys y de las fuentes oficiales cubanas."
-  }
- ],
- "gaps": [
-  {
-   "campo": "tipos_IA_familia / técnica exacta de agrupamiento",
-   "motivo": "Las fuentes (Datys y prensa cubana) describen 'análisis inteligente', 'recuperación de información', 'técnicas modernas de recuperación de información', agrupamiento de documentos similares y resumen automático, pero NO precisan si el agrupamiento de propuestas usa machine learning / embeddings semánticos o similitud clásica (vectorial/lexical) de recuperación de información. Por eso la familia se declara como NLP/minería de texto/recuperación de información sin confirmar ML supervisado/no supervisado específico.",
-   "url_para_buscar": "http://www.datys.cu/spa/site/product/15"
-  },
-  {
-   "campo": "evidencia_verbatim (verificación carácter a carácter en HTML)",
-   "motivo": "Todas las páginas HTML pertinentes (Datys, Granma, Cubadebate, espirituano.gob.cu, OnCuba, Resumen Latinoamericano, Wikipedia, CubaEnResumen) devolvieron HTTP 403 a WebFetch (anti-bot/Cloudflare del origen, no fallo del proxy) y www.datys.cu no está en el allowlist para curl. Las citas verbatim en español se reconstruyeron a partir de los extractos consistentes de WebSearch, reproducidos en múltiples medios; no fue posible una verificación literal sobre el HTML fuente. Las cifras y la frase 'análisis inteligente de los expedientes' / 'propuestas típicas' aparecen de forma estable en varias fuentes.",
-   "url_para_buscar": "https://www.granma.cu/cuba/2022-01-24/herramientas-digitales-seran-claves-durante-la-consulta-popular-del-codigo-de-las-familias-24-01-2022-13-01-18"
-  },
-  {
-   "campo": "rol específico de XISCOP vs GEMA-CEN en el uso de IA",
-   "motivo": "XISCOP (UCI) se describe como entrada/revisión por juristas y estadísticas oficiales (no necesariamente IA), mientras el 'análisis inteligente' y el agrupamiento recaen en GEMA-CEN (Datys). No hay documentación técnica pública de XISCOP que aclare si incorpora componentes de IA propios.",
-   "url_para_buscar": "https://www.uci.cu/"
-  },
-  {
-   "campo": "usa_LLM_generativa",
-   "motivo": "El sistema es de 2021-2022 y la descripción de GEMA corresponde a recuperación/clasificación/resumen extractivo, sin indicios de modelos generativos (LLM). Se marca 'no' por ausencia total de evidencia de IA generativa, pero no hay una negación explícita en fuente.",
-   "url_para_buscar": "http://www.datys.cu/spa/site/product/15"
-  }
- ],
- "alertas": [
-  "Caso clasificado en bloque '1-dudoso'. DUDA CENTRAL (¿IA real vs lógica de reglas?) RESUELTA hacia SI: la ficha técnica oficial de GEMA (Datys) lo describe como herramienta de análisis de grandes volúmenes de archivos con recuperación de información, clasificación por temáticas, OCR, agrupamiento de documentos similares y resumen automático extractivo -> NLP/minería de texto/recuperación de información sobre el CONTENIDO, no mero conteo ni agrupación determinista trivial.",
-  "Persiste incertidumbre sobre la PROFUNDIDAD técnica del agrupamiento: las fuentes no confirman si usa ML/embeddings semánticos o similitud clásica de recuperación de información. En ambos escenarios se trata de procesamiento de texto sobre el contenido de los aportes, por lo que rol_IA=contenido y entra_tentativo=SI; la confianza sobre la familia exacta de IA es media.",
-  "Limitación de acceso: WebFetch devolvió HTTP 403 en TODAS las URLs relevantes (Datys, Granma, Cubadebate, espirituano.gob.cu, OnCuba, Wikipedia, Resumen Latinoamericano) y el host de Datys no está en el allowlist para curl. El contenido y las citas se recuperaron vía WebSearch, que reprodujo el texto de forma consistente en varias fuentes oficiales y de prensa cubanas e independientes; no hubo verificación literal carácter a carácter sobre el HTML.",
-  "Proceso de USO ÚNICO ya cerrado (febrero-abril 2022); no hay evidencia de actividad ni nuevas ediciones en 2026. estado_actividad='cerrado'. El Código entró en vigor en septiembre de 2022 tras referendo, pero el proceso participativo con IA finalizó en 2022.",
-  "GEMA-CEN es la instancia de GEMA adaptada para el Consejo Electoral Nacional (CEN); el sufijo '-CEN' refiere al órgano, no a una variante técnica distinta documentada.",
-  "tipo_proceso: se asignó 'Participación Digital' (se apoyó en plataformas/sistemas digitales y app de la UCI) y 'Referendos e Iniciativas Populares' (consulta popular legislativa vinculada a un referendo nacional). Etiquetado interpretativo; el núcleo es una consulta popular legislativa de iniciativa estatal.",
-  "Contexto político: diversas fuentes (elTOQUE, Voz y Voto, Washington Blade) cuestionan el carácter genuinamente participativo/garantista de la consulta ('debate guiado'). No afecta la elegibilidad técnica (sí hubo recogida de propuestas y uso de IA sobre su contenido), pero se registra como matiz de calidad democrática del proceso."
- ],
- "veredicto_equipo": "NO",
- "comentario_equipo": "Jose: Según lo que busqué, no usaron IA.",
- "divergencia_equipo": true
+  "fuentes": [
+    {
+      "url": "http://www.datys.cu/spa/site/product/15",
+      "estado": "403",
+      "cita": "Ficha oficial del producto GEMA (Datys). WebFetch devolvió HTTP 403 y el host www.datys.cu no está en el allowlist para curl; contenido recuperado de forma consistente vía WebSearch. Texto clave: 'GEMA es una herramienta para el análisis de información contenida en grandes volúmenes de archivos de diferentes formatos e idiomas, con funcionalidades orientadas a la recuperación y clasificación de información'; 'sistema de procesamiento paralelo, distribuido y resistente a fallos, cuyo objetivo es procesar un flujo continuo de archivos (...) y clasificarlos atendiendo a temáticas predefinidas por los usuarios'; 'Procesa documentos de 82 formatos escritos en 7 idiomas. Extrae texto de imágenes utilizando técnicas de OCR'; 'Recupera información mediante un eficaz método de búsqueda por contenido, complementando los resultados mediante técnicas modernas de recuperación de información para obtener archivos similares, eliminar resultados no relevantes y agrupar documentos comunes'; 'Obtener sumarios conformados por las oraciones con mayor importancia dentro del texto'. Esta es la evidencia técnica que resuelve la DUDA CENTRAL: GEMA es NLP/minería de texto/recuperación de información (IA sobre contenido)."
+    },
+    {
+      "url": "https://www.granma.cu/cuba/2022-01-24/herramientas-digitales-seran-claves-durante-la-consulta-popular-del-codigo-de-las-familias-24-01-2022-13-01-18",
+      "estado": "403",
+      "cita": "Granma (órgano oficial del PCC), 24/01/2022: 'Herramientas digitales serán claves durante la consulta popular del Código de las Familias'. WebFetch 403 (anti-bot del origen); contenido recuperado vía WebSearch. Confirma que UCI y Datys diseñaron dos sistemas informáticos (XISCOP y GEMA-CEN) para la recogida y procesamiento de los criterios, y que GEMA-CEN realiza el 'análisis inteligente' y agrupa propuestas similares para determinar propuestas típicas."
+    },
+    {
+      "url": "https://www.espirituano.gob.cu/noticias/7716-como-sera-el-proceso-de-consulta-popular-del-nuevo-codigo-de-las-familias",
+      "estado": "403",
+      "cita": "Portal del ciudadano de Sancti Spíritus (gob.cu): '¿Cómo será el proceso de consulta popular del nuevo Código de las Familias?'. WebFetch 403; vía WebSearch: 'la Universidad de las Ciencias Informáticas (UCI) y Datys diseñaron dos sistemas informáticos de gestión (XISCOP y GEMA-CEN)'; XISCOP es donde un grupo de revisión de juristas revisa y clasifica todas las propuestas; 'luego se sube a GEMA-CEN (también operado por especialistas) que, a través del análisis inteligente de los expedientes, organiza las propuestas y agrupa las similares (...) permite determinar las propuestas típicas para un párrafo en cada una de las categorías establecidas'."
+    },
+    {
+      "url": "http://www.cubadebate.cu/noticias/2021/12/19/como-sera-el-proceso-de-consulta-popular-del-nuevo-codigo-de-las-familias/",
+      "estado": "403",
+      "cita": "Cubadebate, 19/12/2021: '¿Cómo será el proceso de consulta popular del nuevo Código de las Familias?'. WebFetch 403; vía WebSearch reproduce la misma descripción del flujo XISCOP -> GEMA-CEN, el 'análisis inteligente de los expedientes', el agrupamiento de propuestas similares y la determinación de 'propuestas típicas'."
+    },
+    {
+      "url": "http://www.cubadebate.cu/noticias/2022/05/14/consulta-popular-del-proyecto-de-codigo-de-las-familias-61-96-por-ciento-de-opiniones-estuvieron-a-favor/",
+      "estado": "403",
+      "cita": "Cubadebate, 14/05/2022: resultados de la consulta popular. WebFetch 403; vía WebSearch: más de 6.481.200 participantes en más de 79.000 reuniones; 269.436 propuestas clasificadas como favorables (61,96%); del total procesado se determinaron 5.237 propuestas típicas por Título. Confirma cifras y cierre del proceso en 2022."
+    },
+    {
+      "url": "https://es.wikipedia.org/wiki/C%C3%B3digo_de_las_Familias_de_Cuba",
+      "estado": "403",
+      "cita": "Wikipedia (ES) - Código de las Familias de Cuba. WebFetch 403; vía WebSearch: la consulta popular se desarrolló entre febrero y abril de 2022; el referendo se celebró el 25/09/2022, aprobado por 66,85% de los votantes; la ley (Ley n.º 156/2022) entró en vigor el 26/09/2022 y sigue vigente. Sustenta ano_inicio/ano_cierre 2022 y estado 'cerrado' del proceso participativo."
+    },
+    {
+      "url": "https://oncubanews.com/cuba/softwares-cubanos-seran-utilizados-en-el-proceso-de-consulta-popular-sobre-el-codigo-de-las-familias/",
+      "estado": "403",
+      "cita": "OnCuba News: 'Softwares cubanos serán utilizados en el proceso de consulta popular sobre el Código de las Familias'. WebFetch 403; no se pudo extraer texto literal adicional vía WebSearch en esta sesión, pero el título y la temática corroboran el uso de los softwares cubanos (XISCOP y GEMA-CEN) en el proceso. Fuente listada por aparecer en el encargo; evidencia técnica principal proviene de Datys y de las fuentes oficiales cubanas."
+    }
+  ],
+  "gaps": [
+    {
+      "campo": "tipos_IA_familia / técnica exacta de agrupamiento",
+      "motivo": "Las fuentes (Datys y prensa cubana) describen 'análisis inteligente', 'recuperación de información', 'técnicas modernas de recuperación de información', agrupamiento de documentos similares y resumen automático, pero NO precisan si el agrupamiento de propuestas usa machine learning / embeddings semánticos o similitud clásica (vectorial/lexical) de recuperación de información. Por eso la familia se declara como NLP/minería de texto/recuperación de información sin confirmar ML supervisado/no supervisado específico.",
+      "url_para_buscar": "http://www.datys.cu/spa/site/product/15"
+    },
+    {
+      "campo": "evidencia_verbatim (verificación carácter a carácter en HTML)",
+      "motivo": "Todas las páginas HTML pertinentes (Datys, Granma, Cubadebate, espirituano.gob.cu, OnCuba, Resumen Latinoamericano, Wikipedia, CubaEnResumen) devolvieron HTTP 403 a WebFetch (anti-bot/Cloudflare del origen, no fallo del proxy) y www.datys.cu no está en el allowlist para curl. Las citas verbatim en español se reconstruyeron a partir de los extractos consistentes de WebSearch, reproducidos en múltiples medios; no fue posible una verificación literal sobre el HTML fuente. Las cifras y la frase 'análisis inteligente de los expedientes' / 'propuestas típicas' aparecen de forma estable en varias fuentes.",
+      "url_para_buscar": "https://www.granma.cu/cuba/2022-01-24/herramientas-digitales-seran-claves-durante-la-consulta-popular-del-codigo-de-las-familias-24-01-2022-13-01-18"
+    },
+    {
+      "campo": "rol específico de XISCOP vs GEMA-CEN en el uso de IA",
+      "motivo": "XISCOP (UCI) se describe como entrada/revisión por juristas y estadísticas oficiales (no necesariamente IA), mientras el 'análisis inteligente' y el agrupamiento recaen en GEMA-CEN (Datys). No hay documentación técnica pública de XISCOP que aclare si incorpora componentes de IA propios.",
+      "url_para_buscar": "https://www.uci.cu/"
+    },
+    {
+      "campo": "usa_LLM_generativa",
+      "motivo": "El sistema es de 2021-2022 y la descripción de GEMA corresponde a recuperación/clasificación/resumen extractivo, sin indicios de modelos generativos (LLM). Se marca 'no' por ausencia total de evidencia de IA generativa, pero no hay una negación explícita en fuente.",
+      "url_para_buscar": "http://www.datys.cu/spa/site/product/15"
+    }
+  ],
+  "alertas": [
+    "Caso clasificado en bloque '1-dudoso'. DUDA CENTRAL (¿IA real vs lógica de reglas?) RESUELTA hacia SI: la ficha técnica oficial de GEMA (Datys) lo describe como herramienta de análisis de grandes volúmenes de archivos con recuperación de información, clasificación por temáticas, OCR, agrupamiento de documentos similares y resumen automático extractivo -> NLP/minería de texto/recuperación de información sobre el CONTENIDO, no mero conteo ni agrupación determinista trivial.",
+    "Persiste incertidumbre sobre la PROFUNDIDAD técnica del agrupamiento: las fuentes no confirman si usa ML/embeddings semánticos o similitud clásica de recuperación de información. En ambos escenarios se trata de procesamiento de texto sobre el contenido de los aportes, por lo que rol_IA=contenido y entra_tentativo=SI; la confianza sobre la familia exacta de IA es media.",
+    "Limitación de acceso: WebFetch devolvió HTTP 403 en TODAS las URLs relevantes (Datys, Granma, Cubadebate, espirituano.gob.cu, OnCuba, Wikipedia, Resumen Latinoamericano) y el host de Datys no está en el allowlist para curl. El contenido y las citas se recuperaron vía WebSearch, que reprodujo el texto de forma consistente en varias fuentes oficiales y de prensa cubanas e independientes; no hubo verificación literal carácter a carácter sobre el HTML.",
+    "Proceso de USO ÚNICO ya cerrado (febrero-abril 2022); no hay evidencia de actividad ni nuevas ediciones en 2026. estado_actividad='cerrado'. El Código entró en vigor en septiembre de 2022 tras referendo, pero el proceso participativo con IA finalizó en 2022.",
+    "GEMA-CEN es la instancia de GEMA adaptada para el Consejo Electoral Nacional (CEN); el sufijo '-CEN' refiere al órgano, no a una variante técnica distinta documentada.",
+    "tipo_proceso: se asignó 'Participación Digital' (se apoyó en plataformas/sistemas digitales y app de la UCI) y 'Referendos e Iniciativas Populares' (consulta popular legislativa vinculada a un referendo nacional). Etiquetado interpretativo; el núcleo es una consulta popular legislativa de iniciativa estatal.",
+    "Contexto político: diversas fuentes (elTOQUE, Voz y Voto, Washington Blade) cuestionan el carácter genuinamente participativo/garantista de la consulta ('debate guiado'). No afecta la elegibilidad técnica (sí hubo recogida de propuestas y uso de IA sobre su contenido), pero se registra como matiz de calidad democrática del proceso."
+  ],
+  "veredicto_equipo": "SI",
+  "comentario_equipo": "Reincorporado 2026: GEMA-CEN (Datys) procesa el contenido de las propuestas — recuperación de información + agrupamiento por similitud textual + clasificación por temas ('propuestas típicas'), con validación de juristas. Confirmado por búsqueda web (ficha Datys + Granma). Jose: Según lo que busqué, no usaron IA.",
+  "divergencia_equipo": true
 }

@@ -72,11 +72,8 @@ DUDA_REVISAR = {}  # (TT resuelto como ENTRA; DO CiudadanIA y CO DNP resueltos c
 RECLASIF_DUDA = {}
 # Revisar entre los que ENTRAN hoy (decisión a mano):
 REVISAR_ENTRA = {}  # (BR Colab confirmado ENTRA por el equipo)
-# Posible reingreso desde los excluidos (referencia del equipo; distinto del criterio nuevo):
-RESCATE = {  # actualmente NO; su referencia los reconsidera
- "CL-EXC-ucampus":"Su referencia lo marca RESCATABLE (confirmar si hubo NLP sobre los aportes del proceso constituyente).",
- "CU-consulta-popular-codigo-de-las-familias":"Su referencia lo marca RESCATABLE; mi evidencia (ficha técnica Datys/GEMA = NLP) apoya SI.",
-}
+# Posibles reingresos (ya resueltos: CU reincorporado como SÍ; UCampus revisado y se mantiene NO).
+RESCATE = {}
 CRIT = ["pais","tipo_proceso","etapas_uso_IA","estado_actividad","nivel_consolidacion","tipo_convocante","usa_IA_en_proceso","rol_IA"]
 
 

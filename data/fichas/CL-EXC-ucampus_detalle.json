@@ -1,120 +1,120 @@
 {
- "caso_id": "CL-EXC-ucampus",
- "pais": "CL",
- "nombre_caso": "Plataforma UCampus - participación 2023 (proceso constitucional)",
- "bloque": "3-excluido-revisar",
- "proceso_participativo": "Plataforma digital de participación ciudadana del Proceso Constitucional chileno 2023, gestionada por el centro tecnológico UCampus de la Facultad de Ciencias Físicas y Matemáticas (FCFM) de la Universidad de Chile. El proceso participativo (Mes de la Participación, 7 de junio al 7 de julio de 2023) contempló cuatro mecanismos -Audiencias Públicas, Iniciativa Popular de Norma, Diálogos Ciudadanos y Consulta Ciudadana- bajo la coordinación de la Secretaría Ejecutiva de Participación Ciudadana, entidad técnica interinstitucional conformada por la Universidad de Chile y la Pontificia Universidad Católica (Art. 153 de la Constitución). De esos cuatro mecanismos, la plataforma UCampus se encargó de DOS: Audiencias Públicas e Iniciativa Popular de Norma. La función de UCampus fue articular tecnológicamente la recepción y gestión de los aportes (permitir solicitar audiencias, revisar artículos, proponer enmiendas y reunir las 10.000 firmas con ClaveÚnica), participando alrededor de 280 mil personas. La sistematización analítica de los aportes la realizó la Secretaría de Participación mediante una sistematización CUALITATIVA encabezada por académicos y profesionales de derecho constitucional y ciencias sociales. No se halló evidencia de que UCampus aplicara inteligencia artificial / NLP sobre el CONTENIDO de los aportes ciudadanos.",
- "ano_inicio": 2023,
- "ano_cierre": 2023,
- "estado_actividad": "cerrado",
- "evidencia_actividad_2026": null,
- "organizacion_a_cargo": "Plataforma operada por UCampus, centro tecnológico dependiente de la Facultad de Ciencias Físicas y Matemáticas (FCFM) de la Universidad de Chile (operador técnico de 2 de los 4 mecanismos). La coordinación general y la sistematización de los aportes estuvieron a cargo de la Secretaría Ejecutiva de Participación Ciudadana, entidad técnica interinstitucional de la Universidad de Chile y la Pontificia Universidad Católica de Chile, en el marco del Proceso Constitucional 2023 convocado por el Estado de Chile (Art. 153 CPR).",
- "tipo_convocante": [
-  "gobierno nacional",
-  "universidad"
- ],
- "tipo_organizacion": "Público",
- "tipo_proceso": [
-  "Participación Digital",
-  "Referendos e Iniciativas Populares"
- ],
- "etapas_uso_IA": [],
- "continuidad": "Uso único",
- "nivel_consolidacion": 2,
- "sistema_IA": null,
- "tipos_IA_familia": [],
- "usa_LLM_generativa": "no",
- "funcion_IA": "No se identifica un sistema de IA aplicado por la plataforma UCampus al contenido de los aportes ciudadanos. La plataforma cumplió funciones de recepción y gestión: permitir enviar solicitudes de Audiencia Pública, revisar artículos, proponer enmiendas y reunir 10.000 firmas con ClaveÚnica para las Iniciativas Populares de Norma. La sistematización de los aportes fue cualitativa, encabezada por académicos. Las herramientas de IA documentadas en el proceso constitucional 2023 (p. ej. Constitucion.AI de kemeny.studio, Discolab/UDD, ChatBot Constitucional U.Central) operaron sobre el TEXTO de la PROPUESTA constitucional para facilitar su comprensión a la ciudadanía, no sobre los aportes ciudadanos, y son iniciativas independientes sin vínculo oficial con UCampus.",
- "rol_IA": "no-claro",
- "usa_IA_en_proceso": "no-claro",
- "tipo_desarrollador_IA": [],
- "origen_desarrollador": null,
- "entra_tentativo": "NO",
- "justificacion_elegibilidad": "MANTENER EXCLUIDO. Existe un proceso participativo ELEGIBLE (Proceso Constitucional 2023, mecanismos de participación ciudadana con ~280 mil personas, convocado por el Estado de Chile), y UCampus (Universidad de Chile) fue el operador técnico de dos de los cuatro mecanismos (Audiencias Públicas e Iniciativa Popular de Norma). Sin embargo, NO se halló evidencia de que la plataforma UCampus aplicara IA sobre el CONTENIDO de los aportes ciudadanos (clasificar/analizar/agrupar/sintetizar). Las fuentes describen a UCampus en funciones de RECEPCIÓN y GESTIÓN (recibir solicitudes de audiencia, revisar artículos, proponer enmiendas, recolectar firmas con ClaveÚnica), y la sistematización analítica de los aportes la realizó la Secretaría de Participación mediante una sistematización CUALITATIVA encabezada por académicos de derecho constitucional y ciencias sociales -no mediante NLP/IA-. Las herramientas de IA visibles en el proceso 2023 (Constitucion.AI, Discolab, ChatBot Constitucional) operaron sobre el TEXTO DE LA PROPUESTA para comprensión ciudadana, no sobre los aportes, y son proyectos independientes sin vínculo con UCampus. Por tanto, a diferencia de los cabildos 2016 (donde sí hubo análisis NLP de aportes), no se confirma IA sobre el contenido de los aportes en la plataforma UCampus 2023. Se mantiene EXCLUIDO (entra=NO); las URLs oficiales clave (uchile.cl, ingenieria.uchile.cl, informe oficial de la Secretaría en PDF) devolvieron HTTP 403 y quedan en gaps para verificación manual.",
- "confianza": "MEDIA",
- "evidencia_verbatim": {
-  "pais": "Ucampus es la plataforma digital del Proceso Constitucional 2023 (titular de Ucampus, Universidad de Chile). La plataforma digital dispuesta para la participación ciudadana en el proceso constitucional 2023 fue gestionada por el centro tecnológico dependiente de la Facultad de Ciencias Físicas y Matemáticas de la Universidad de Chile.",
-  "tipo_proceso": "Durante este mes [7 de junio al 7 de julio], la ciudadanía pudo utilizar cuatro mecanismos de participación ciudadana: Audiencias Públicas, Iniciativa Popular de Norma, Diálogos Ciudadanos y Consulta Ciudadana. Los primeros dos mecanismos se llevaron a cabo a través de la Plataforma UCampus. En el mecanismo de Iniciativas Populares de Norma, la plataforma permitió a la ciudadanía revisar los artículos, proponer enmiendas y posteriormente realizar la convocatoria de 10.000 firmas para ser debatida por el consejo constitucional.",
-  "etapas_uso_IA": null,
-  "estado_actividad": "El proceso de participación ciudadana en el marco del Proceso Constituyente 2023 se desarrolló entre el 7 de junio y el 7 de julio. A través de Ucampus, se articularon tecnológicamente todas las instancias participativas del proceso constitucional, lo que permitió que alrededor de 280 mil personas fueran parte de esta instancia.",
-  "nivel_consolidacion": "El equipo de UCampus fue encargado de realizar 2 de los 4 mecanismos de participación: Audiencias Públicas e Iniciativas Populares de Norma. Para la Iniciativa Popular de Norma, 1.309 propuestas fueron admitidas a través de la plataforma y de ellas, 31 lograron alcanzar las 10.000 firmas que pasarían al consejo constitucional (proceso único de 2023, una sola edición).",
-  "tipo_convocante": "La Universidad de Chile y la Pontificia Universidad Católica formaron una Secretaría Ejecutiva de Participación Ciudadana, entidad técnica interinstitucional que diseñó, coordinó, implementó y sistematizó cuatro mecanismos de participación ciudadana. La Secretaría Ejecutiva de Participación Ciudadana es la entidad técnica interinstitucional responsable de ejecutar la participación ciudadana en el proceso constitucional contemplada en el Artículo 153 de la Constitución Política de la República.",
-  "usa_IA_en_proceso": null,
-  "rol_IA": null
- },
- "fuentes": [
-  {
-   "url": "https://ucampus.cl/ucampus-es-la-plataforma-digital-del-proceso-constitucional-2023/",
-   "estado": "ok",
-   "cita": "'Ucampus es la plataforma digital del Proceso Constitucional 2023.' UCampus, centro tecnológico de la FCFM de la Universidad de Chile, gestionó la plataforma del proceso constitucional 2023, encargándose de 2 de los 4 mecanismos: Audiencias Públicas e Iniciativas Populares de Norma. Durante el Mes de la Participación (7 de junio al 7 de julio) participaron alrededor de 280 mil personas. No hay mención de inteligencia artificial, NLP ni análisis automático del contenido de los aportes (contenido recuperado vía WebSearch sobre la URL de Ucampus; WebFetch directo a otras URLs de ucampus.cl devolvió HTTP 403)."
+  "caso_id": "CL-EXC-ucampus",
+  "pais": "CL",
+  "nombre_caso": "Plataforma UCampus - participación 2023 (proceso constitucional)",
+  "bloque": "3-excluido-revisar",
+  "proceso_participativo": "Plataforma digital de participación ciudadana del Proceso Constitucional chileno 2023, gestionada por el centro tecnológico UCampus de la Facultad de Ciencias Físicas y Matemáticas (FCFM) de la Universidad de Chile. El proceso participativo (Mes de la Participación, 7 de junio al 7 de julio de 2023) contempló cuatro mecanismos -Audiencias Públicas, Iniciativa Popular de Norma, Diálogos Ciudadanos y Consulta Ciudadana- bajo la coordinación de la Secretaría Ejecutiva de Participación Ciudadana, entidad técnica interinstitucional conformada por la Universidad de Chile y la Pontificia Universidad Católica (Art. 153 de la Constitución). De esos cuatro mecanismos, la plataforma UCampus se encargó de DOS: Audiencias Públicas e Iniciativa Popular de Norma. La función de UCampus fue articular tecnológicamente la recepción y gestión de los aportes (permitir solicitar audiencias, revisar artículos, proponer enmiendas y reunir las 10.000 firmas con ClaveÚnica), participando alrededor de 280 mil personas. La sistematización analítica de los aportes la realizó la Secretaría de Participación mediante una sistematización CUALITATIVA encabezada por académicos y profesionales de derecho constitucional y ciencias sociales. No se halló evidencia de que UCampus aplicara inteligencia artificial / NLP sobre el CONTENIDO de los aportes ciudadanos.",
+  "ano_inicio": 2023,
+  "ano_cierre": 2023,
+  "estado_actividad": "cerrado",
+  "evidencia_actividad_2026": null,
+  "organizacion_a_cargo": "Plataforma operada por UCampus, centro tecnológico dependiente de la Facultad de Ciencias Físicas y Matemáticas (FCFM) de la Universidad de Chile (operador técnico de 2 de los 4 mecanismos). La coordinación general y la sistematización de los aportes estuvieron a cargo de la Secretaría Ejecutiva de Participación Ciudadana, entidad técnica interinstitucional de la Universidad de Chile y la Pontificia Universidad Católica de Chile, en el marco del Proceso Constitucional 2023 convocado por el Estado de Chile (Art. 153 CPR).",
+  "tipo_convocante": [
+    "gobierno nacional",
+    "universidad"
+  ],
+  "tipo_organizacion": "Público",
+  "tipo_proceso": [
+    "Participación Digital",
+    "Referendos e Iniciativas Populares"
+  ],
+  "etapas_uso_IA": [],
+  "continuidad": "Uso único",
+  "nivel_consolidacion": 2,
+  "sistema_IA": null,
+  "tipos_IA_familia": [],
+  "usa_LLM_generativa": "no",
+  "funcion_IA": "No se identifica un sistema de IA aplicado por la plataforma UCampus al contenido de los aportes ciudadanos. La plataforma cumplió funciones de recepción y gestión: permitir enviar solicitudes de Audiencia Pública, revisar artículos, proponer enmiendas y reunir 10.000 firmas con ClaveÚnica para las Iniciativas Populares de Norma. La sistematización de los aportes fue cualitativa, encabezada por académicos. Las herramientas de IA documentadas en el proceso constitucional 2023 (p. ej. Constitucion.AI de kemeny.studio, Discolab/UDD, ChatBot Constitucional U.Central) operaron sobre el TEXTO de la PROPUESTA constitucional para facilitar su comprensión a la ciudadanía, no sobre los aportes ciudadanos, y son iniciativas independientes sin vínculo oficial con UCampus.",
+  "rol_IA": "no-claro",
+  "usa_IA_en_proceso": "no-claro",
+  "tipo_desarrollador_IA": [],
+  "origen_desarrollador": null,
+  "entra_tentativo": "NO",
+  "justificacion_elegibilidad": "MANTENER EXCLUIDO. Existe un proceso participativo ELEGIBLE (Proceso Constitucional 2023, mecanismos de participación ciudadana con ~280 mil personas, convocado por el Estado de Chile), y UCampus (Universidad de Chile) fue el operador técnico de dos de los cuatro mecanismos (Audiencias Públicas e Iniciativa Popular de Norma). Sin embargo, NO se halló evidencia de que la plataforma UCampus aplicara IA sobre el CONTENIDO de los aportes ciudadanos (clasificar/analizar/agrupar/sintetizar). Las fuentes describen a UCampus en funciones de RECEPCIÓN y GESTIÓN (recibir solicitudes de audiencia, revisar artículos, proponer enmiendas, recolectar firmas con ClaveÚnica), y la sistematización analítica de los aportes la realizó la Secretaría de Participación mediante una sistematización CUALITATIVA encabezada por académicos de derecho constitucional y ciencias sociales -no mediante NLP/IA-. Las herramientas de IA visibles en el proceso 2023 (Constitucion.AI, Discolab, ChatBot Constitucional) operaron sobre el TEXTO DE LA PROPUESTA para comprensión ciudadana, no sobre los aportes, y son proyectos independientes sin vínculo con UCampus. Por tanto, a diferencia de los cabildos 2016 (donde sí hubo análisis NLP de aportes), no se confirma IA sobre el contenido de los aportes en la plataforma UCampus 2023. Se mantiene EXCLUIDO (entra=NO); las URLs oficiales clave (uchile.cl, ingenieria.uchile.cl, informe oficial de la Secretaría en PDF) devolvieron HTTP 403 y quedan en gaps para verificación manual.",
+  "confianza": "MEDIA",
+  "evidencia_verbatim": {
+    "pais": "Ucampus es la plataforma digital del Proceso Constitucional 2023 (titular de Ucampus, Universidad de Chile). La plataforma digital dispuesta para la participación ciudadana en el proceso constitucional 2023 fue gestionada por el centro tecnológico dependiente de la Facultad de Ciencias Físicas y Matemáticas de la Universidad de Chile.",
+    "tipo_proceso": "Durante este mes [7 de junio al 7 de julio], la ciudadanía pudo utilizar cuatro mecanismos de participación ciudadana: Audiencias Públicas, Iniciativa Popular de Norma, Diálogos Ciudadanos y Consulta Ciudadana. Los primeros dos mecanismos se llevaron a cabo a través de la Plataforma UCampus. En el mecanismo de Iniciativas Populares de Norma, la plataforma permitió a la ciudadanía revisar los artículos, proponer enmiendas y posteriormente realizar la convocatoria de 10.000 firmas para ser debatida por el consejo constitucional.",
+    "etapas_uso_IA": null,
+    "estado_actividad": "El proceso de participación ciudadana en el marco del Proceso Constituyente 2023 se desarrolló entre el 7 de junio y el 7 de julio. A través de Ucampus, se articularon tecnológicamente todas las instancias participativas del proceso constitucional, lo que permitió que alrededor de 280 mil personas fueran parte de esta instancia.",
+    "nivel_consolidacion": "El equipo de UCampus fue encargado de realizar 2 de los 4 mecanismos de participación: Audiencias Públicas e Iniciativas Populares de Norma. Para la Iniciativa Popular de Norma, 1.309 propuestas fueron admitidas a través de la plataforma y de ellas, 31 lograron alcanzar las 10.000 firmas que pasarían al consejo constitucional (proceso único de 2023, una sola edición).",
+    "tipo_convocante": "La Universidad de Chile y la Pontificia Universidad Católica formaron una Secretaría Ejecutiva de Participación Ciudadana, entidad técnica interinstitucional que diseñó, coordinó, implementó y sistematizó cuatro mecanismos de participación ciudadana. La Secretaría Ejecutiva de Participación Ciudadana es la entidad técnica interinstitucional responsable de ejecutar la participación ciudadana en el proceso constitucional contemplada en el Artículo 153 de la Constitución Política de la República.",
+    "usa_IA_en_proceso": null,
+    "rol_IA": null
   },
-  {
-   "url": "https://ucampus.cl/ucampus-gestionara-la-plataforma-digital-de-participacion-ciudadana-del-nuevo-proceso-constitucional/",
-   "estado": "403",
-   "cita": "'Ucampus gestionará la plataforma digital de participación ciudadana del nuevo proceso constitucional.' El equipo de UCampus (FCFM, Universidad de Chile), con más de 20 años de experiencia, fue encargado de realizar 2 de los 4 mecanismos: Audiencias Públicas e Iniciativas Populares de Norma. En Iniciativas Populares de Norma la plataforma permitió revisar los artículos, proponer enmiendas y reunir 10.000 firmas. Funciones de recepción y gestión; sin mención de IA/NLP sobre el contenido. (HTTP 403 a WebFetch; texto recuperado vía WebSearch sobre la misma URL.)"
-  },
-  {
-   "url": "https://ingenieria.uchile.cl/noticias/204877/-participacion-ciudadana-proceso-constitucional-sera-por-ucampus",
-   "estado": "403",
-   "cita": "URL ORIGINAL DEL CASO. 'Ucampus estará a cargo de la plataforma digital de participación ciudadana del nuevo proceso constitucional.' El centro tecnológico de la FCFM de la Universidad de Chile gestiona la plataforma para Audiencias Públicas e Iniciativas Populares de Norma. (HTTP 403 a WebFetch y a curl con el proxy; titular y rol confirmados vía WebSearch; queda en gaps para verificación manual del cuerpo completo.)"
-  },
-  {
-   "url": "https://uchile.cl/noticias/207041/el-aporte-de-ucampus-a-la-participacion-en-el-proceso-constitucional",
-   "estado": "403",
-   "cita": "'Cerca de 280 mil personas participaron en el proceso constitucional mediante plataforma tecnológica U. de Chile.' Cifras de cierre: ~280 mil participantes; más de 236.000 ciudadanos apoyaron alguna Iniciativa Popular de Norma; 28.725 respondieron la Consulta Ciudadana; 12.000 en Diálogos Ciudadanos; más de 1.800 solicitaron Audiencia Pública. No se menciona IA/NLP sobre el contenido de los aportes. (HTTP 403 a WebFetch; cifras recuperadas vía WebSearch sobre la misma URL de la Universidad de Chile.)"
-  },
-  {
-   "url": "https://www.secretariadeparticipacion.cl/wp-content/uploads/2023/10/Informe-SPC-Final.pdf",
-   "estado": "403",
-   "cita": "Informe oficial 'Participación Ciudadana en el proceso constitucional 2023' de la Secretaría de Participación Ciudadana. Las fuentes indican que la Secretaría (U. de Chile + UC) diseñó, coordinó, implementó y SISTEMATIZÓ los mecanismos; se realizó una sistematización CUALITATIVA de las audiencias públicas encabezada por académicos y profesionales de derecho constitucional y ciencias sociales (paridad de género, representación fuera de la RM). (HTTP 403 a WebFetch y a curl con el proxy; metodología cualitativa recuperada vía WebSearch; el PDF completo queda en gaps para verificación manual de cualquier mención de IA/NLP.)"
-  },
-  {
-   "url": "https://www.procesoconstitucional.cl/secretaria-de-participacion-ciudadana/",
-   "estado": "403",
-   "cita": "'La Secretaría Ejecutiva de Participación Ciudadana es la entidad técnica interinstitucional responsable de ejecutar la participación ciudadana en el proceso constitucional contemplada en el Artículo 153 de la Constitución Política de la República.' La Universidad de Chile y la Pontificia Universidad Católica, en colaboración con universidades acreditadas, diseñaron, coordinaron, implementaron y sistematizaron los mecanismos de participación. (HTTP 403 a WebFetch; contenido recuperado vía WebSearch.)"
-  },
-  {
-   "url": "https://github.com/Constitucion-AI",
-   "estado": "ok",
-   "cita": "FUENTE DE CONTRASTE (proyecto distinto, NO es UCampus). 'Constitucion.AI fue exclusivamente entrenado y personalizado utilizando el documento de la Propuesta Constitucional de la República de Chile.' Usa machine learning y NLP, pero opera sobre el TEXTO DE LA PROPUESTA constitucional (chat web/WhatsApp para comprensión ciudadana), NO sobre los aportes ciudadanos. Iniciativa independiente (contacto hola@kemeny.studio / kemeny.studio); sin vínculo oficial con UCampus ni con la Secretaría de Participación. (Verificado vía WebFetch.)"
-  },
-  {
-   "url": "https://www.elmostrador.cl/noticias/2023/11/17/chatbot-constitucional-presentan-ia-que-facilita-comprension-de-la-propuesta-de-nueva-constitucion/",
-   "estado": "ok",
-   "cita": "FUENTE DE CONTRASTE. La Universidad Central presentó el 'ChatBot Constitucional U.Central', herramienta de IA para facilitar la COMPRENSIÓN de la propuesta de nueva Constitución. Opera sobre el texto de la propuesta, no sobre los aportes ciudadanos; sin relación con UCampus. (Recuperado vía WebSearch.)"
-  }
- ],
- "gaps": [
-  {
-   "campo": "usa_IA_en_proceso / rol_IA",
-   "motivo": "No se halló evidencia de que la plataforma UCampus aplicara IA/NLP sobre el CONTENIDO de los aportes ciudadanos. Las fuentes describen a UCampus en funciones de recepción/gestión y la sistematización analítica como cualitativa (académicos). Falta verificar manualmente el cuerpo completo de la noticia oficial de UCampus/Universidad de Chile (la URL original del caso devolvió HTTP 403).",
-   "url_para_buscar": "https://ingenieria.uchile.cl/noticias/204877/-participacion-ciudadana-proceso-constitucional-sera-por-ucampus"
-  },
-  {
-   "campo": "etapas_uso_IA / metodología de sistematización",
-   "motivo": "El informe oficial de la Secretaría de Participación Ciudadana (PDF) es la fuente definitiva sobre si hubo o no procesamiento automático/NLP de los aportes (diálogos, consulta, iniciativas). Devolvió HTTP 403 a WebFetch y a curl con el proxy; debe leerse manualmente para confirmar/descartar cualquier técnica de IA sobre el contenido.",
-   "url_para_buscar": "https://www.secretariadeparticipacion.cl/wp-content/uploads/2023/10/Informe-SPC-Final.pdf"
-  },
-  {
-   "campo": "evidencia_actividad_2026",
-   "motivo": "El proceso constitucional 2023 concluyó en 2023 (la propuesta fue rechazada en el plebiscito del 17 de diciembre de 2023). No hay indicios de actividad ni continuidad de la plataforma UCampus de participación constitucional en 2026. estado_actividad=cerrado.",
-   "url_para_buscar": "https://ucampus.cl/"
-  },
-  {
-   "campo": "informe alternativo de la Secretaría (procesoconstitucional.cl)",
-   "motivo": "Existe una versión del informe en procesoconstitucional.cl que también podría detallar la metodología de sistematización; no se pudo abrir (403). Verificación manual recomendada.",
-   "url_para_buscar": "https://www.procesoconstitucional.cl/wp-content/uploads/2023/07/Informe-Participacion-Ciudadana-Secretaria-de-Participacion.pdf"
-  }
- ],
- "alertas": [
-  "DECISIÓN: MANTENER EXCLUIDO (entra=NO). No se confirma IA sobre el CONTENIDO de los aportes ciudadanos en la plataforma UCampus 2023. UCampus operó como gestor tecnológico (recepción de Audiencias Públicas e Iniciativas Populares de Norma: solicitar audiencia, revisar artículos, proponer enmiendas, recolectar 10.000 firmas con ClaveÚnica). La sistematización analítica fue CUALITATIVA, encabezada por académicos de derecho constitucional y ciencias sociales.",
-  "RIESGO DE FALSO POSITIVO EVITADO: durante el proceso constitucional 2023 sí circularon herramientas de IA (Constitucion.AI de kemeny.studio, Discolab/UDD, ChatBot Constitucional U.Central), pero TODAS operaron sobre el TEXTO DE LA PROPUESTA constitucional para facilitar su comprensión a la ciudadanía -no sobre los aportes ciudadanos- y son iniciativas INDEPENDIENTES sin vínculo oficial con UCampus ni con la Secretaría de Participación. No deben confundirse con el caso UCampus.",
-  "CONTRASTE CON CABILDOS 2016: el motivo de revisión era confirmar si, como en los cabildos del proceso constituyente 2016 (donde hubo análisis NLP de aportes), UCampus 2023 aplicó NLP a los aportes. La evidencia encontrada NO lo confirma; el proceso 2023 sistematizó cualitativamente. Si el informe oficial (PDF, hoy 403) revelara procesamiento automático/NLP de los aportes, el caso pasaría a DUDA y podría reingresar.",
-  "FUENTES 403: las URLs institucionales clave (uchile.cl, ingenieria.uchile.cl, varias de ucampus.cl, procesoconstitucional.cl, secretariadeparticipacion.cl y el PDF del informe) devolvieron HTTP 403 tanto a WebFetch como a curl a través del proxy del entorno. El contenido y las citas verbatim se recuperaron de manera consistente vía WebSearch sobre esas mismas URLs. Confianza MEDIA: la ausencia de IA sobre el contenido es coherente en todas las fuentes accesibles, pero el informe oficial completo no pudo leerse directamente y queda en gaps para verificación manual.",
-  "tipo_proceso: se clasifica como 'Participación Digital' + 'Referendos e Iniciativas Populares' porque los dos mecanismos operados por UCampus fueron Audiencias Públicas e Iniciativa Popular de Norma (mecanismo de iniciativa popular con umbral de 10.000 firmas).",
-  "nivel_consolidacion=2 (puntual): única edición del proceso constitucional 2023; UCampus participó en ese proceso específico, sin ediciones recurrentes de esta plataforma de participación constitucional."
- ],
- "veredicto_equipo": "NO",
- "comentario_equipo": "",
- "divergencia_equipo": false
+  "fuentes": [
+    {
+      "url": "https://ucampus.cl/ucampus-es-la-plataforma-digital-del-proceso-constitucional-2023/",
+      "estado": "ok",
+      "cita": "'Ucampus es la plataforma digital del Proceso Constitucional 2023.' UCampus, centro tecnológico de la FCFM de la Universidad de Chile, gestionó la plataforma del proceso constitucional 2023, encargándose de 2 de los 4 mecanismos: Audiencias Públicas e Iniciativas Populares de Norma. Durante el Mes de la Participación (7 de junio al 7 de julio) participaron alrededor de 280 mil personas. No hay mención de inteligencia artificial, NLP ni análisis automático del contenido de los aportes (contenido recuperado vía WebSearch sobre la URL de Ucampus; WebFetch directo a otras URLs de ucampus.cl devolvió HTTP 403)."
+    },
+    {
+      "url": "https://ucampus.cl/ucampus-gestionara-la-plataforma-digital-de-participacion-ciudadana-del-nuevo-proceso-constitucional/",
+      "estado": "403",
+      "cita": "'Ucampus gestionará la plataforma digital de participación ciudadana del nuevo proceso constitucional.' El equipo de UCampus (FCFM, Universidad de Chile), con más de 20 años de experiencia, fue encargado de realizar 2 de los 4 mecanismos: Audiencias Públicas e Iniciativas Populares de Norma. En Iniciativas Populares de Norma la plataforma permitió revisar los artículos, proponer enmiendas y reunir 10.000 firmas. Funciones de recepción y gestión; sin mención de IA/NLP sobre el contenido. (HTTP 403 a WebFetch; texto recuperado vía WebSearch sobre la misma URL.)"
+    },
+    {
+      "url": "https://ingenieria.uchile.cl/noticias/204877/-participacion-ciudadana-proceso-constitucional-sera-por-ucampus",
+      "estado": "403",
+      "cita": "URL ORIGINAL DEL CASO. 'Ucampus estará a cargo de la plataforma digital de participación ciudadana del nuevo proceso constitucional.' El centro tecnológico de la FCFM de la Universidad de Chile gestiona la plataforma para Audiencias Públicas e Iniciativas Populares de Norma. (HTTP 403 a WebFetch y a curl con el proxy; titular y rol confirmados vía WebSearch; queda en gaps para verificación manual del cuerpo completo.)"
+    },
+    {
+      "url": "https://uchile.cl/noticias/207041/el-aporte-de-ucampus-a-la-participacion-en-el-proceso-constitucional",
+      "estado": "403",
+      "cita": "'Cerca de 280 mil personas participaron en el proceso constitucional mediante plataforma tecnológica U. de Chile.' Cifras de cierre: ~280 mil participantes; más de 236.000 ciudadanos apoyaron alguna Iniciativa Popular de Norma; 28.725 respondieron la Consulta Ciudadana; 12.000 en Diálogos Ciudadanos; más de 1.800 solicitaron Audiencia Pública. No se menciona IA/NLP sobre el contenido de los aportes. (HTTP 403 a WebFetch; cifras recuperadas vía WebSearch sobre la misma URL de la Universidad de Chile.)"
+    },
+    {
+      "url": "https://www.secretariadeparticipacion.cl/wp-content/uploads/2023/10/Informe-SPC-Final.pdf",
+      "estado": "403",
+      "cita": "Informe oficial 'Participación Ciudadana en el proceso constitucional 2023' de la Secretaría de Participación Ciudadana. Las fuentes indican que la Secretaría (U. de Chile + UC) diseñó, coordinó, implementó y SISTEMATIZÓ los mecanismos; se realizó una sistematización CUALITATIVA de las audiencias públicas encabezada por académicos y profesionales de derecho constitucional y ciencias sociales (paridad de género, representación fuera de la RM). (HTTP 403 a WebFetch y a curl con el proxy; metodología cualitativa recuperada vía WebSearch; el PDF completo queda en gaps para verificación manual de cualquier mención de IA/NLP.)"
+    },
+    {
+      "url": "https://www.procesoconstitucional.cl/secretaria-de-participacion-ciudadana/",
+      "estado": "403",
+      "cita": "'La Secretaría Ejecutiva de Participación Ciudadana es la entidad técnica interinstitucional responsable de ejecutar la participación ciudadana en el proceso constitucional contemplada en el Artículo 153 de la Constitución Política de la República.' La Universidad de Chile y la Pontificia Universidad Católica, en colaboración con universidades acreditadas, diseñaron, coordinaron, implementaron y sistematizaron los mecanismos de participación. (HTTP 403 a WebFetch; contenido recuperado vía WebSearch.)"
+    },
+    {
+      "url": "https://github.com/Constitucion-AI",
+      "estado": "ok",
+      "cita": "FUENTE DE CONTRASTE (proyecto distinto, NO es UCampus). 'Constitucion.AI fue exclusivamente entrenado y personalizado utilizando el documento de la Propuesta Constitucional de la República de Chile.' Usa machine learning y NLP, pero opera sobre el TEXTO DE LA PROPUESTA constitucional (chat web/WhatsApp para comprensión ciudadana), NO sobre los aportes ciudadanos. Iniciativa independiente (contacto hola@kemeny.studio / kemeny.studio); sin vínculo oficial con UCampus ni con la Secretaría de Participación. (Verificado vía WebFetch.)"
+    },
+    {
+      "url": "https://www.elmostrador.cl/noticias/2023/11/17/chatbot-constitucional-presentan-ia-que-facilita-comprension-de-la-propuesta-de-nueva-constitucion/",
+      "estado": "ok",
+      "cita": "FUENTE DE CONTRASTE. La Universidad Central presentó el 'ChatBot Constitucional U.Central', herramienta de IA para facilitar la COMPRENSIÓN de la propuesta de nueva Constitución. Opera sobre el texto de la propuesta, no sobre los aportes ciudadanos; sin relación con UCampus. (Recuperado vía WebSearch.)"
+    }
+  ],
+  "gaps": [
+    {
+      "campo": "usa_IA_en_proceso / rol_IA",
+      "motivo": "No se halló evidencia de que la plataforma UCampus aplicara IA/NLP sobre el CONTENIDO de los aportes ciudadanos. Las fuentes describen a UCampus en funciones de recepción/gestión y la sistematización analítica como cualitativa (académicos). Falta verificar manualmente el cuerpo completo de la noticia oficial de UCampus/Universidad de Chile (la URL original del caso devolvió HTTP 403).",
+      "url_para_buscar": "https://ingenieria.uchile.cl/noticias/204877/-participacion-ciudadana-proceso-constitucional-sera-por-ucampus"
+    },
+    {
+      "campo": "etapas_uso_IA / metodología de sistematización",
+      "motivo": "El informe oficial de la Secretaría de Participación Ciudadana (PDF) es la fuente definitiva sobre si hubo o no procesamiento automático/NLP de los aportes (diálogos, consulta, iniciativas). Devolvió HTTP 403 a WebFetch y a curl con el proxy; debe leerse manualmente para confirmar/descartar cualquier técnica de IA sobre el contenido.",
+      "url_para_buscar": "https://www.secretariadeparticipacion.cl/wp-content/uploads/2023/10/Informe-SPC-Final.pdf"
+    },
+    {
+      "campo": "evidencia_actividad_2026",
+      "motivo": "El proceso constitucional 2023 concluyó en 2023 (la propuesta fue rechazada en el plebiscito del 17 de diciembre de 2023). No hay indicios de actividad ni continuidad de la plataforma UCampus de participación constitucional en 2026. estado_actividad=cerrado.",
+      "url_para_buscar": "https://ucampus.cl/"
+    },
+    {
+      "campo": "informe alternativo de la Secretaría (procesoconstitucional.cl)",
+      "motivo": "Existe una versión del informe en procesoconstitucional.cl que también podría detallar la metodología de sistematización; no se pudo abrir (403). Verificación manual recomendada.",
+      "url_para_buscar": "https://www.procesoconstitucional.cl/wp-content/uploads/2023/07/Informe-Participacion-Ciudadana-Secretaria-de-Participacion.pdf"
+    }
+  ],
+  "alertas": [
+    "DECISIÓN: MANTENER EXCLUIDO (entra=NO). No se confirma IA sobre el CONTENIDO de los aportes ciudadanos en la plataforma UCampus 2023. UCampus operó como gestor tecnológico (recepción de Audiencias Públicas e Iniciativas Populares de Norma: solicitar audiencia, revisar artículos, proponer enmiendas, recolectar 10.000 firmas con ClaveÚnica). La sistematización analítica fue CUALITATIVA, encabezada por académicos de derecho constitucional y ciencias sociales.",
+    "RIESGO DE FALSO POSITIVO EVITADO: durante el proceso constitucional 2023 sí circularon herramientas de IA (Constitucion.AI de kemeny.studio, Discolab/UDD, ChatBot Constitucional U.Central), pero TODAS operaron sobre el TEXTO DE LA PROPUESTA constitucional para facilitar su comprensión a la ciudadanía -no sobre los aportes ciudadanos- y son iniciativas INDEPENDIENTES sin vínculo oficial con UCampus ni con la Secretaría de Participación. No deben confundirse con el caso UCampus.",
+    "CONTRASTE CON CABILDOS 2016: el motivo de revisión era confirmar si, como en los cabildos del proceso constituyente 2016 (donde hubo análisis NLP de aportes), UCampus 2023 aplicó NLP a los aportes. La evidencia encontrada NO lo confirma; el proceso 2023 sistematizó cualitativamente. Si el informe oficial (PDF, hoy 403) revelara procesamiento automático/NLP de los aportes, el caso pasaría a DUDA y podría reingresar.",
+    "FUENTES 403: las URLs institucionales clave (uchile.cl, ingenieria.uchile.cl, varias de ucampus.cl, procesoconstitucional.cl, secretariadeparticipacion.cl y el PDF del informe) devolvieron HTTP 403 tanto a WebFetch como a curl a través del proxy del entorno. El contenido y las citas verbatim se recuperaron de manera consistente vía WebSearch sobre esas mismas URLs. Confianza MEDIA: la ausencia de IA sobre el contenido es coherente en todas las fuentes accesibles, pero el informe oficial completo no pudo leerse directamente y queda en gaps para verificación manual.",
+    "tipo_proceso: se clasifica como 'Participación Digital' + 'Referendos e Iniciativas Populares' porque los dos mecanismos operados por UCampus fueron Audiencias Públicas e Iniciativa Popular de Norma (mecanismo de iniciativa popular con umbral de 10.000 firmas).",
+    "nivel_consolidacion=2 (puntual): única edición del proceso constitucional 2023; UCampus participó en ese proceso específico, sin ediciones recurrentes de esta plataforma de participación constitucional."
+  ],
+  "veredicto_equipo": "NO",
+  "comentario_equipo": "Revisado 2026: se mantiene fuera. UCampus fue el operador tecnológico (recepción/gestión) de 2 de los 4 mecanismos; la sistematización de esos aportes fue cualitativa por académicos. El NLP sobre aportes (topicos/co-ocurrencias) lo hizo IMFD+PUC en la Consulta Ciudadana, mecanismo distinto ya capturado en el caso 'Participación Ciudadana Proceso Constitucional'.",
+  "divergencia_equipo": false
 }
