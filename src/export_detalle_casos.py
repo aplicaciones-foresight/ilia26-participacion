@@ -133,41 +133,70 @@ def style_header(ws, ncols, fill=AZUL, font=WHITE_BOLD, height=34):
     ws.auto_filter.ref = f"A1:{get_column_letter(ncols)}{ws.max_row}"
 
 
+WIDTHS = {
+    "Bloque":16,"caso_id":30,"País":6,"Caso":30,"¿ENTRA? (tentativo)":12,"Confianza":26,
+    "Justificación elegibilidad":40,"Proceso participativo":40,"Año inicio":9,"Año cierre":9,
+    "Estado actividad":13,"Evidencia actividad 2026":40,"Organización a cargo":32,
+    "Tipo convocante (7-cat)":24,"Tipo organización":16,"Tipo de proceso":26,"Etapas uso IA":26,
+    "Continuidad":14,"Nivel consolidación (0-3)":10,"Sistema(s) de IA":30,"Tipos / familia de IA":24,
+    "Usa LLM generativa":12,"Función de la IA":40,"Rol IA (contenido/apoyo)":16,"Usa IA en el proceso":12,
+    "Tipo desarrollador IA":20,"Origen desarrollador":16,"Motivo exclusión 2025":40,
+    "Fuente de datos":22,"Nº gaps":7,"URLs para búsqueda manual":46,
+}
+
+
+def write_detail_sheet(wb, title, fichas, cols, index=None):
+    """Escribe una hoja de detalle (encabezado + filas + colores) con el
+    subconjunto de columnas `cols`. Reutilizable para las vistas filtradas."""
+    ws = wb.create_sheet(title) if index is None else wb.create_sheet(title, index)
+    ws.append([h for h, _ in cols])
+    for d in fichas:
+        ws.append([fn(d) for _, fn in cols])
+    ncols = len(cols)
+    style_header(ws, ncols)
+    for i, (h, _) in enumerate(cols, 1):
+        ws.column_dimensions[get_column_letter(i)].width = WIDTHS.get(h, 18)
+    ci = {h: i + 1 for i, (h, _) in enumerate(cols)}
+    for r in range(2, ws.max_row + 1):
+        for c in range(1, ncols + 1):
+            ws.cell(row=r, column=c).alignment = WRAP; ws.cell(row=r, column=c).border = BORDER
+        ev = ws.cell(row=r, column=ci["¿ENTRA? (tentativo)"]); ev.alignment = CENTER
+        val = str(ev.value).upper()
+        if val.startswith("SI"): ev.fill = VERDE
+        elif val.startswith("NO"): ev.fill = ROJO
+        elif val.startswith("DUDA"): ev.fill = AMBAR
+        cf = ws.cell(row=r, column=ci["Confianza"]); u = str(cf.value).upper()
+        if u.startswith("BAJA"): cf.fill = ROJO
+        elif u.startswith("MEDIA"): cf.fill = AMBARH
+        elif u.startswith("ALTA"): cf.fill = VERDE
+        if "Nº gaps" in ci:
+            gc = ws.cell(row=r, column=ci["Nº gaps"]); gc.alignment = CENTER
+            if isinstance(gc.value, int) and gc.value > 0: gc.fill = AMBARH
+        if "URLs para búsqueda manual" in ci:
+            uc = ws.cell(row=r, column=ci["URLs para búsqueda manual"])
+            if uc.value: uc.fill = AMBARH
+    return ws
+
+
+def _entra_bucket(d):
+    return str(d.get("entra_tentativo", "")).upper()
+
+
 def main():
     fichas = load_fichas()
     wb = Workbook()
 
-    # ---------- Hoja 1: Detalle casos ----------
-    ws = wb.active; ws.title = "Detalle casos"
-    ws.append([h for h, _ in MAIN_COLS])
-    for d in fichas:
-        ws.append([fn(d) for _, fn in MAIN_COLS])
-    ncols = len(MAIN_COLS)
-    style_header(ws, ncols)
-    widths = [16,30,6,30,12,26,40,40,9,9,13,40,32,24,16,26,26,14,10,30,24,12,40,16,12,20,16,40,22,7,46]
-    for i, w in enumerate(widths, 1):
-        ws.column_dimensions[get_column_letter(i)].width = w
-    col = {h: i+1 for i, (h, _) in enumerate(MAIN_COLS)}
-    for r in range(2, ws.max_row + 1):
-        for c in range(1, ncols + 1):
-            ws.cell(row=r, column=c).alignment = WRAP; ws.cell(row=r, column=c).border = BORDER
-        # color ENTRA
-        ev = ws.cell(row=r, column=col["¿ENTRA? (tentativo)"])
-        val = str(ev.value).upper()
-        ev.alignment = CENTER
-        if val.startswith("SI"): ev.fill = VERDE
-        elif val == "NO": ev.fill = ROJO
-        elif val == "DUDA": ev.fill = AMBAR
-        # confianza shading
-        cf = ws.cell(row=r, column=col["Confianza"])
-        if str(cf.value).upper().startswith("BAJA"): cf.fill = ROJO
-        elif str(cf.value).upper().startswith("MEDIA"): cf.fill = AMBARH
-        elif str(cf.value).upper().startswith("ALTA"): cf.fill = VERDE
-        # gaps / urls highlight
-        gc = ws.cell(row=r, column=col["Nº gaps"]); gc.alignment = CENTER
-        if isinstance(gc.value, int) and gc.value > 0: gc.fill = AMBARH
-        uc = ws.cell(row=r, column=col["URLs para búsqueda manual"])
-        if uc.value: uc.fill = AMBARH
+    # ---------- Hojas de trabajo (filtradas) + Detalle completo ----------
+    # 'Entran + Dudosos' (SI/SI*/DUDA) y 'Excluidos' (NO) al frente, para
+    # cálculo y revisión; 'Detalle casos' mantiene el inventario completo (99).
+    ENTRAN_COLS = [c for c in MAIN_COLS if c[0] != "Motivo exclusión 2025"]
+    entran = [d for d in fichas if _entra_bucket(d).startswith(("SI", "DUDA"))]
+    excluidos = [d for d in fichas if _entra_bucket(d).startswith("NO")]
+    default = wb.active  # hoja vacía por defecto
+    write_detail_sheet(wb, "Entran + Dudosos", entran, ENTRAN_COLS, index=0)
+    write_detail_sheet(wb, "Excluidos", excluidos, MAIN_COLS, index=1)
+    write_detail_sheet(wb, "Detalle casos", fichas, MAIN_COLS, index=2)
+    wb.remove(default)
 
     # ---------- Hoja 2: Evidencia verbatim ----------
     ws2 = wb.create_sheet("Evidencia (verbatim)")
@@ -238,6 +267,8 @@ def main():
     leyenda = [
         ["PLANILLA DE DATOS BRUTOS POR CASO — ILIA 2026 (Participación Ciudadana)"],
         ["Fase 2/3: una fila por caso con los datos necesarios para CALCULAR y CLASIFICAR. NO incluye el cálculo del indicador."],
+        [""],
+        ["Pestañas de trabajo", "'Entran + Dudosos' (SI/SI*/DUDA — para cálculo y revisión) · 'Excluidos' (NO). 'Detalle casos' mantiene el inventario COMPLETO (99 casos)."],
         [""],
         ["Columna '¿ENTRA? (tentativo)'", "SI = cumple criterio (IA sobre el CONTENIDO de aportes en proceso participativo) · NO = no cumple · DUDA = evidencia ambigua · SI* = entra en escenario A; revisar en escenario B"],
         ["Confianza", "ALTA = ≥2 fuentes independientes con cita en campos críticos · MEDIA = 1 fuente sólida · BAJA = indicios / prensa única / sin cita"],
