@@ -95,6 +95,10 @@ def estado_final(d):
     cid = d.get("caso_id")
     if cid in _eps.EXCLUIR or not _eps.is_in(d):
         return "NO"
+    if cid in _eps.RESCATE_ENTRA:
+        return "SÍ"
+    if cid in _eps.RECLASIF_DUDA or cid in _eps.DUDA_REVISAR:
+        return "DUDA"
     if _eps.is_duda(d):
         return "DUDA"
     return "SÍ"

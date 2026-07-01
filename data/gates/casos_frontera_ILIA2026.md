@@ -30,6 +30,7 @@ el contenido de los aportes. **No entra** la civic tech que no es un proceso par
 | **EngageTT (NDTS)** | TT | El chatbot **AskNDTS** (IA) informa y **apoya la implementación** del proceso NDTS; además el módulo **Go Vocal Sensemaking** está planeado (existe, pendiente de activar). |
 | **Chatico** | CO | Tiene **módulos de participación** (p. ej. aportes al Plan de Desarrollo de Bogotá), además de la atención. |
 | **Colab** | BR | Permite **sugerir ideas y votar en decisiones municipales** (módulos de participación), no solo reportar. |
+| **Gaitana IA** | CO | Un **LLM (DeepSeek)** resume, organiza y **construye consensos** sobre el contenido de los aportes en un proceso participativo real (cabildo Zenú). Procesa el contenido → entra. |
 
 ### Salieron (borde → NO)
 | Caso | País | Por qué salió |
@@ -39,6 +40,8 @@ el contenido de los aportes. **No entra** la civic tech que no es un proceso par
 | **ParticipACT** | BR | **Civic tech** de reporte urbano (app para reportar problemas), no un proceso participativo. |
 | **dIAra** | CR | **Civic tech** de fiscalización de obras (control social vía app), no un proceso participativo. |
 | **U-Report** | CR | UNICEF lo define como **"encuestas de opinión"** (panel de sondeo/percepción juvenil anónimo: clima, salud mental, educación); sin proceso participativo estructurado con incidencia concreta. Solo opinión → fuera. |
+| **Viña Decide** | CL | Presupuesto participativo real sobre plataforma **Go Vocal** (que tiene módulo de IA/NLP de fábrica), pero **sin traza de uso de IA** sobre los aportes en el informe ejecutivo. Sin IA verificada → fuera. |
+| **Participa Pudahuel** | CL | Presupuesto participativo real sobre plataforma **Go Vocal**; el módulo de IA existe pero **no hay traza** de que se activara sobre los aportes. Sin IA verificada → fuera. |
 
 ## Nota sugerida para el informe final
 > *El indicador se revisa anualmente. Los **casos frontera** —entre participación

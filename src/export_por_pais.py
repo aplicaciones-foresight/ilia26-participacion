@@ -37,10 +37,47 @@ URLRE=re.compile(r'^https?://', re.I)
 # Universo ILIA: 20 países (aunque no tengan casos identificados este ciclo).
 PAISES_ILIA=["AR","BO","BR","CL","CO","CR","CU","DO","EC","GT","HN","JM","MX","PA","PE","PY","SV","TT","UY","VE"]
 
+# --- Limpieza de texto: motivos/descripciones en lenguaje normal (sin jerga interna) ---
+_PAT=[
+ (r'exclusi[oó]n firme\s*\(recodificaci[oó]n 2026\):?\s*',''),
+ (r'\(recodificaci[oó]n 2026\)',''),
+ (r'mantener (excluido|excluida)\.?\s*',''),
+ (r'\bno entra\.?\s*',''),(r'\bs[ií] entra\.?\s*',''),
+ (r'duda\s*\(lean[^)]*\):?\s*',''),(r'\bno\s*\(lean[^)]*\)\.?\s*',''),(r'\(lean[^)]*\)',''),
+ (r'\blean (no|s[ií]|firme)\b',''),
+ (r'\(\d+\)\s*',''),(r'\d+[ªa]\s*pasadas?',''),(r'tras\s+\d+[ªa]?\s*pasadas?',''),
+ (r'\(verificado[^)]*\)',''),(r'\bverificado 2026\b',''),(r'\(verificado\)',''),
+ (r',?\s*decisi[oó]n del equipo\.?',''),(r'\s*[—–-]?\s*confirmado por el equipo\.?',''),
+ (r'\(bbdd oficial\)',''),(r'cita verbatim','evidencia'),
+ (r"\s*\(?usa_IA_en_proceso\s*'?[^'.,;)]*'?\)?",''),(r"\s*\(?rol_IA\s*'?[^'.,;)]*'?\)?",''),
+ (r'→\s*(entra|no|s[ií])\b',''),(r'\s*→\s*',' '),
+ (r'\bla regla de reingreso\b','el criterio de inclusión'),(r'\bregla de reingreso\b','criterio de inclusión'),
+]
+# Siglas reales que se preservan al bajar mayúsculas (todo lo demás en GRITO se pasa a minúscula).
+_KEEP={"IA","NLP","ML","LLM","PLN","OCR","AI","PDM","PND","PEN","COCODES","COMUDES","SEGEPLAN",
+ "CNE","ONPE","TSE","INE","JNE","CDMX","NDTS","OGP","USP","UAI","UNAB","GEMA","UNICEF","UNESCO",
+ "PNUD","UNDP","UNFPA","DNP","DPS","BID","CAF","ANTAI","DCI","CGU","CGR","SDP","POT","PPA","SECOP",
+ "COVID","TIC","DPPA","IPP","LUC","UDELAR","SISBEN","ECHO","PAGA","MPAAI","ADIP","GENIA","ONU","UE",
+ "EU","OCDE","OSF","BBDD","PLADECO","ODS","ECQQ","SGD","CIDE","AWS","API","PWA","SMS","FAQ","OP","PP"}
+def limpiar(t):
+    """Deja el texto en lenguaje normal para partners (sin 'lean no', 'Nª pasada', nombres de campo,
+    mayúsculas gritadas ni jerga interna); respeta las siglas reales."""
+    if not t: return ""
+    t=re.sub(r'\s+',' ',str(t)).strip()
+    for pat,rep in _PAT: t=re.sub(pat,rep,t,flags=re.I)
+    t=re.sub(r'\b[A-ZÁÉÍÓÚÑ]{2,}\b',lambda m:m.group(0) if m.group(0) in _KEEP else m.group(0).lower(),t)
+    t=re.sub(r'\s+',' ',t).strip(' .:;,-–—')
+    t=re.sub(r'^[):.,;\s]+','',t)
+    if t: t=t[0].upper()+t[1:]
+    if t and not t.endswith(('.','!','?')): t+="."
+    return t
+
 
 def estado(d):
     cid=d["caso_id"]
     if cid in eps.EXCLUIR or not eps.is_in(d): return "NO"
+    if cid in eps.RESCATE_ENTRA: return "SÍ"          # ENTRA explícito (aunque la ficha diga DUDA)
+    if cid in eps.RECLASIF_DUDA or cid in eps.DUDA_REVISAR: return "DUDA"
     if eps.is_duda(d): return "DUDA"
     return "SÍ"
 
@@ -48,8 +85,11 @@ def estado(d):
 def motivo(d):
     cid=d["caso_id"]
     if cid in eps.EXCLUIR: return eps.EXCLUIR[cid]
+    if cid in eps.RESCATE_ENTRA: return eps.RESCATE_ENTRA[cid]
     if not eps.is_in(d):
-        return (d.get("motivo_exclusion_2025") or d.get("justificacion_elegibilidad") or "")[:200]
+        return re.sub(r'\s+',' ',(d.get("motivo_exclusion_2025") or d.get("justificacion_elegibilidad") or "").strip())
+    if cid in eps.DUDA_REVISAR: return eps.DUDA_REVISAR[cid]
+    if cid in eps.RECLASIF_DUDA: return eps.RECLASIF_DUDA[cid]
     if eps.is_duda(d): return "Pendiente de validación: confirmar si hay IA en el proceso."
     if d.get("cuenta_como_iniciativa") is False:
         return "Cuenta junto con su par (no se suma como iniciativa aparte)."
@@ -57,17 +97,9 @@ def motivo(d):
 
 
 def descripcion(d):
+    # texto completo (sin truncar), solo normalizando espacios en blanco
     p=(d.get("proceso_participativo") or d.get("justificacion_elegibilidad") or "").strip()
-    p=re.sub(r'\s+',' ',p)
-    if not p: return ""
-    # primera(s) oración(es) hasta ~200 caracteres
-    out=""
-    for frag in re.split(r'(?<=[.…])\s', p):
-        if not out: out=frag
-        elif len(out)+len(frag)<=200: out+=" "+frag
-        else: break
-    if len(out)>230: out=out[:227]+"…"
-    return out
+    return re.sub(r'\s+',' ',p)
 
 
 def fuente(d):
@@ -87,8 +119,8 @@ def main():
     fichas=[json.load(open(f,encoding="utf-8")) for f in sorted(glob.glob(os.path.join(ROOT,"data/fichas/*_detalle.json")))]
     porpais={}
     for d in fichas: porpais.setdefault(str(d.get("pais")),[]).append(d)
-    # los 20 países ILIA (con o sin casos) + LATAM/Regional al final
-    paises=list(PAISES_ILIA) + (["LATAM"] if "LATAM" in porpais else [])
+    # los 20 países ILIA (con o sin casos). No se incluye LATAM/Regional (a pedido).
+    paises=list(PAISES_ILIA)
     sin_casos=[p for p in PAISES_ILIA if not porpais.get(p)]
 
     wb=Workbook(); wb.remove(wb.active)
@@ -134,13 +166,13 @@ def main():
                        "No se identificaron casos de IA en participación ciudadana para este país. Si conoce alguno, agréguelo en las filas de abajo.",
                        "", "—", "", ""])
         for d in sorted(casos_p, key=lambda x:(estado(x)!="SÍ", str(x.get("nombre_caso")))):
-            ws.append([d.get("nombre_caso") or "", descripcion(d), fuente(d), estado(d), motivo(d), ""])
+            ws.append([d.get("nombre_caso") or "", limpiar(descripcion(d)), fuente(d), estado(d), limpiar(motivo(d)), ""])
         # estilo cabecera
         for c in range(1,len(cols)+1):
             cell=ws.cell(row=1,column=c); cell.fill=AZUL; cell.font=WB; cell.alignment=CEN; cell.border=BOR
         ws.row_dimensions[1].height=30; ws.freeze_panes="A2"
         ws.auto_filter.ref=f"A1:{get_column_letter(len(cols))}{ws.max_row}"
-        widths=[34,60,46,12,42,34]
+        widths=[34,64,46,12,54,32]
         for i,w in enumerate(widths,1): ws.column_dimensions[get_column_letter(i)].width=w
         for r in range(2,ws.max_row+1):
             for c in range(1,len(cols)+1):
@@ -149,9 +181,10 @@ def main():
             inc.fill=VERDE if v=="SÍ" else ROJO if v=="NO" else AMBAR
 
     dst=os.path.join(ROOT,"data/gates/planilla_validacion_por_pais_ILIA2026.xlsx"); wb.save(dst)
-    tot=len(fichas); nsi=sum(1 for d in fichas if estado(d)=="SÍ"); nd=sum(1 for d in fichas if estado(d)=="DUDA")
+    shown=[d for d in fichas if str(d.get("pais")) in PAISES_ILIA]   # sin LATAM
+    tot=len(shown); nsi=sum(1 for d in shown if estado(d)=="SÍ"); nd=sum(1 for d in shown if estado(d)=="DUDA")
     print(f"[ok] {dst}")
-    print(f"     {len(paises)} pestañas de país · {tot} casos (SÍ {nsi} · DUDA {nd} · NO {tot-nsi-nd})")
+    print(f"     {len(paises)} pestañas de país · {tot} casos mostrados (SÍ {nsi} · DUDA {nd} · NO {tot-nsi-nd}) · LATAM excluido")
     return 0
 
 

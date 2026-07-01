@@ -49,6 +49,9 @@ EXCLUIR = {  # caso_id -> motivo bajo el criterio corregido
  "DO-ciudadania":"Solo atención/servicio; la 'participación' es co-diseñar la IA aportando datos, no consulta pública. Sin módulo de participación (verificado). Decisión del equipo.",
  "CO-dnp-dialogos-regionales-vinculantes-pnd":"Participación real, pero el análisis fue manual/cualitativo; solo text-analytics ligero (nubes de palabras + tabulación), sin NLP sobre el contenido (verificado). Decisión del equipo.",
  "CR-u-report-costa-rica-chatbot-juvenil":"UNICEF lo define como 'encuestas de opinión' (panel de sondeo/percepción juvenil anónimo: clima, salud mental, educación); sin proceso participativo estructurado con incidencia concreta (verificado). Solo opinión → fuera. Decisión del equipo.",
+ "CL-participa-pudahuel-presupuesto":"Presupuesto participativo real, pero solo se confirma que la plataforma (Go Vocal) tiene el módulo de IA/NLP de fábrica; NO hay traza de que Pudahuel lo activara sobre los aportes (usa_IA_en_proceso 'no-claro', sin evidencia). Sin uso de IA verificado → NO. Decisión del equipo.",
+ "CL-vina-decide-presupuesto-participativo":"Presupuesto participativo real sobre plataforma Go Vocal, pero no se encontró en el informe ejecutivo ninguna traza de uso de IA sobre los aportes (usa_IA_en_proceso 'no-claro', sin evidencia). Sin uso de IA verificado → NO. Decisión del equipo.",
+ "MX-jalisco-armemos-un-plan":"Proceso participativo real y masivo (675.484 participaciones; 15.899 propuestas), pero NO hay evidencia de uso de IA para analizar/agrupar/clasificar el contenido de las propuestas (usa_IA_en_proceso 'no'). Sin uso de IA → NO. Decisión del equipo.",
 }
 # Confirmados -> ENTRA (sí es participación; IA en alguna etapa, incl. logística):
 RESCATE_ENTRA = {  # caso_id -> por qué entra
@@ -61,6 +64,7 @@ RESCATE_ENTRA = {  # caso_id -> por qué entra
  "CO-chatico":"Tiene módulos de participación (aportes al Plan de Desarrollo de Bogotá) — confirmado por el equipo.",
  "BR-colab":"Permite sugerir ideas y votar en decisiones municipales (módulos de participación) — confirmado por el equipo.",
  "TT-engagett-plataforma-go-vocal":"Caso borde: el chatbot AskNDTS (IA) informa/apoya la implementación del proceso NDTS y el módulo Go Vocal Sensemaking está planeado (existe). → ENTRA como apoyo a la implementación. Decisión del equipo.",
+ "CO-gaitana-ia-resguardo-zenu":"Un LLM (DeepSeek) resume, organiza y construye CONSENSOS sobre el contenido de los aportes en un proceso participativo real (cabildo Zenú). Procesa el contenido → ENTRA. Decisión del equipo.",
 }
 # DUDA con revisión de posible IA/participación (investigadas; recomendación + URL):
 DUDA_REVISAR = {}  # (TT resuelto como ENTRA; DO CiudadanIA y CO DNP resueltos como NO)
@@ -191,9 +195,9 @@ def main():
         d=fmap.get(cid,{})
         ws2.append(["D. Revisar ¿participación?","¿Mantener SI o pasar a NO?",d.get("pais",""),d.get("nombre_caso",cid),
                     "Parece civic tech/atención; confirmar si es realmente participación", motivo, "\n".join(urls(d)[:2])])
-    # E) DUDAs de campo previas (Jalisco, Gaitana, Viña Decide, Participa Pudahuel)
+    # E) DUDAs de campo previas aún sin resolver (p. ej. Jalisco)
     for d in IN:
-        if is_duda(d) and d["caso_id"] not in RECLASIF_DUDA:
+        if is_duda(d) and d["caso_id"] not in RECLASIF_DUDA and d["caso_id"] not in RESCATE_ENTRA:
             ws2.append(["E. Resolver DUDA de campo","Decidir SI o NO",d.get("pais",""),d.get("nombre_caso",""),
                         "Abrir la URL y confirmar si es participación con IA en alguna etapa",
                         (d.get("justificacion_elegibilidad") or "")[:220], "\n".join(urls(d)[:2])])
@@ -283,7 +287,7 @@ def main():
     md=os.path.join(ROOT,"data/gates/GUIA_validacion_manual_ILIA2026.md")
     open(md,"w",encoding="utf-8").write(GUIA_MD(len(IN),len(OUT)))
     dup=sum(1 for d in IN if d.get("cuenta_como_iniciativa") is False)
-    dudas_campo=sum(1 for d in IN if is_duda(d) and d["caso_id"] not in RECLASIF_DUDA)
+    dudas_campo=sum(1 for d in IN if is_duda(d) and d["caso_id"] not in RECLASIF_DUDA and d["caso_id"] not in RESCATE_ENTRA)
     print(f"[ok] {dst}")
     print(f"[ok] {md}")
     print(f"     entran+dudosos: {len(IN)} (iniciativas efectivas: {len(IN)-dup}) | excluidos: {len(OUT)}")
