@@ -20,11 +20,14 @@ gap con su URL** para búsqueda manual.
 
 | Bloque | SI | DUDA | NO | Total |
 |---|:--:|:--:|:--:|:--:|
-| 1. Nuevos | 6 | 2 | 2 | 10 |
-| 1. Dudosos | 1 | 6 | 1 | 8 |
+| 1. Nuevos | 6 | 1 | 3 | 10 |
+| 1. Dudosos | 1 | 1 | 6 | 8 |
 | 2. Baseline 2025 | 25 | 0 | 3 | 28 |
 | 3. Excluidos (revisar reingreso) | 0 | 0 | 5 | 5 |
-| **Total** | **32** | **8** | **11** | **51** |
+| **Total** | **32** | **2** | **17** | **51** |
+
+> Actualizado tras la **2ª pasada** sobre los 8 DUDA (ver abajo): 6 se resolvieron
+> a **NO** y 2 quedaron **DUDA(lean NO)**. Ningún DUDA pasó a SI.
 
 > `SI`/`NO`/`DUDA` es **tentativo** (criterio: IA sobre el **CONTENIDO** de los
 > aportes dentro de un proceso participativo). La decisión final es del equipo.
@@ -43,15 +46,15 @@ gap con su URL** para búsqueda manual.
 - 🟡 MEDIA — BR Brasil Participativo (BERTopic+LLM sobre 10.000+ propuestas; producción oficial no 100% confirmada → nivel 2)
 - 🟡 MEDIA — MX Guanajuato InteliGENTE (IA procesó 26.000+ aportes; **software concreto sin identificar** = gap)
 
-**8 DUDA — requieren decisión del equipo (la duda central está en la planilla):**
-- BR São Paulo Participe Mais (Gemini) — uso oficial vs taller del programa Agentes de Gobierno Abierto
-- BR OPA Piauí — IA acelera «processamento»/seguridad, sin evidencia de análisis temático del contenido
-- CL Senador Virtual / GobLab — IA es investigación académica, no producción sobre los aportes
-- CO DNP Diálogos Regionales — sistematización por frecuencia/codificación, sin evidencia de NLP/ML
-- CO POT Bogotá (Auditoría) — artículo académico que propone/evalúa una herramienta, sin despliegue real
-- CO ISIDataInsights — herramienta ganadora de concurso «en implementación», sin aplicación a un proceso concreto
-- TT EngageTT (Go Vocal) — la plataforma trae NLP, pero no se confirma que la instancia TT lo active
-- VE Plan de la Patria 7T — afirmación de prensa estatal sin corroboración técnica (contradice la cifra oficial de 34.491 propuestas sistematizadas por relatores humanos)
+**2ª pasada sobre los 8 DUDA — resueltos (ninguno pasó a SI):**
+- 🔴 **NO** — BR São Paulo Participe Mais: la clasificación con Gemini **sí** procesa contenido, pero fue un **ejercicio formativo** (Escola do Parlamento / Agentes de Governo Aberto), no un despliegue oficial de la Prefeitura (la sistematización oficial fue manual/técnica).
+- 🔴 **NO** — BR OPA Piauí: la IA (Colab+AWS) se documenta solo como **aceleración del «processamento»/infraestructura**, no análisis temático del contenido.
+- 🔴 **NO** — CL Senador Virtual: el componente NLP (GobLab UAI + Harvard, CrowdLaw) es **investigación académica** (produce recomendaciones), no producción sobre los aportes.
+- 🔴 **NO** — CO DNP Diálogos Regionales: la sistematización de las 89.788 propuestas usó **lectura + frecuencia/codificación**, sin evidencia de NLP/ML.
+- 🔴 **NO** — CO POT Bogotá: es **únicamente un artículo académico** de factibilidad (Areandina/Auditoría), sin despliegue institucional sobre aportes reales.
+- 🔴 **NO** — VE Plan de la Patria 7T: **sin corroboración técnica independiente** de la afirmación de prensa estatal; el contenido lo sistematizaron relatores humanos (34.491 propuestas).
+- 🟠 **DUDA (lean NO)** — CO ISIDataInsights: diseñada para operar sobre contenido cualitativo, pero **sin evidencia de aplicación** a un proceso participativo concreto (sigue «en integración»). *Falta:* informe de uso 2025-2026 de la SDP Bogotá.
+- 🟠 **DUDA (lean NO)** — TT EngageTT (Go Vocal): hallazgo nuevo — el módulo de IA/NLP «Sensemaking» de Go Vocal **no viene activo por defecto** y no se confirma que la instancia TT lo active. *Falta:* reporte de la consulta del NDTS que evidencie análisis automático.
 
 **Excluidos revisados (5): todos mantienen la exclusión (NO).** No se halló IA
 sobre el contenido de los aportes en UCampus, Asamblea Itinerante de Bogotá,

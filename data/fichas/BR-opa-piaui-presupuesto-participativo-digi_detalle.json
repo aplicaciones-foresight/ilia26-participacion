@@ -1,113 +1,142 @@
 {
-  "caso_id": "BR-opa-piaui-presupuesto-participativo-digi",
-  "pais": "BR",
-  "nombre_caso": "OPA Piauí - Orçamento Participativo Digital (Colab + AWS)",
-  "bloque": "1-dudoso",
-  "proceso_participativo": "OPA (Orçamento Participativo Digital) es el presupuesto participativo 100% digital del Gobierno del Estado de Piauí (Brasil), creado en 2023 y coordinado por la Secretaria do Planejamento (SEPLAN) con apoyo de la Secretaria de Relações Sociais (Seres). Se ejecuta sobre la plataforma Colab Gov (de la govtech Colab) con infraestructura AWS. El ciclo incluye cadastramento de propuestas por entidades comunitarias/asociaciones, una fase de 'análise técnica' (verificación de documentación, viabilidad de ejecución, claridad de la descripción, adecuación al área temática y no duplicación) y una votación popular abierta a la ciudadanía. En la edición 2026-2027, según el material de Colab, 'a análise ganhou agilidade com o uso de inteligência artificial, que reduziu em 40% o tempo de processamento das propostas', con economía de R$ 1,75 millón y 99,98% de disponibilidad del sistema. La señal disponible vincula la IA al procesamiento/agilización del flujo, a la seguridad de la infraestructura (filtrado de conexiones inseguras vía AWS CloudFront), a un chatbot/capacitación (CapacitIA) y a un 'Observatório do OPA' de transparencia; la 'análise técnica' de viabilidad se describe de forma reiterada como tarea conducida por equipos técnicos a través de la plataforma. NO hay evidencia de que la IA clasifique, agrupe (clustering) o sintetice el CONTENIDO temático/semántico de las propuestas en el OPA.",
-  "ano_inicio": 2023,
-  "ano_cierre": null,
-  "estado_actividad": "activo",
-  "evidencia_actividad_2026": "Edición OPA 2026-2027 en curso en 2026: en abril de 2026 entró en fase de análise técnica (más de mil propuestas cadastradas; 1.020-1.034 propostas de 497-499 entidades) y posteriormente se divulgaron las propuestas aptas (~800-849), se abrió la votación el 12/06/2026 y se cerró con recorde (>300 mil votos). Fuentes: portal.pi.gov.br y pi.gov.br (06/04/2026), seplan.pi.gov.br (2026), parlamentopiaui.com.br (2026).",
-  "organizacion_a_cargo": "Governo do Estado do Piauí - Secretaria do Planejamento (SEPLAN), con apoyo de la Secretaria de Relações Sociais (Seres). Socio tecnológico: GovTech Colab (plataforma Colab Gov); infraestructura: AWS (Amazon Web Services).",
-  "tipo_convocante": ["gobierno local"],
-  "tipo_organizacion": "Público",
-  "tipo_proceso": ["Presupuestos Participativos", "Participación Digital"],
-  "etapas_uso_IA": ["Implementación"],
-  "continuidad": "Plataforma",
-  "nivel_consolidacion": 3,
-  "sistema_IA": "No identificado por nombre. Capacidad de IA integrada en la plataforma Colab Gov (govtech Colab) sobre infraestructura AWS. En el OPA, la IA se asocia a la 'análise'/'processamento' de propuestas (agilización, -40% de tiempo), al filtrado de conexiones inseguras vía AWS CloudFront (seguridad/infraestructura), a un chatbot construido en un curso CapacitIA y a un 'Observatório do OPA' (panel de transparencia). La infraestructura AWS descrita es de cómputo/almacenamiento/seguridad (Amazon EC2, Amazon RDS, AWS CloudFront), no servicios de ML de contenido. No se especifica modelo, técnica (NLP, clustering, LLM) ni que la IA actúe sobre el contenido semántico de las propuestas del OPA. La plataforma Colab Gov.AI (lanzada en oct/2025 con AWS, basada en IA generativa/LangChain) ofrece funciones genéricas (generar flujos de servicio, etiquetar demandas en dashboards, asistir al ciudadano a redactar propuestas), pero ninguna de estas se atribuye específicamente al análisis de contenido de las propuestas del OPA Piauí.",
-  "tipos_IA_familia": [],
-  "usa_LLM_generativa": "no-claro",
-  "funcion_IA": "Según el material de Colab, en la edición 2025-2026 / 2026-2027 la IA agilizó la fase de análisis y 'reduziu em 40% o tempo de processamento das propostas', con economía de R$ 1,75 millón en costos directos y 99,98% de disponibilidad del sistema incluso en picos de votación. Una fuente describe además que 'a inteligência artificial foi utilizada para filtrar conexões inseguras' mediante AWS CloudFront (seguridad/infraestructura). El uso adicional de IA en torno al OPA es un chatbot creado en el curso CapacitIA y el 'Observatório do OPA' (transparencia/monitoreo). NO hay evidencia textual de que la IA clasifique por temas, agrupe (clustering), priorice o sintetice el CONTENIDO de las propuestas del OPA; la 'análise técnica' (documentación, viabilidad de ejecución, claridad, adecuación al área temática, no duplicación) se describe de forma reiterada y convergente como tarea de 'equipes técnicas' conducida a través de la plataforma. La única atribución hallada de IA que 'agrupa ideias semelhantes / estrutura propostas por eixo temático' corresponde a OTRO proceso (Diálogos pelo Piauí / revisión del PPA 2024-2027, talleres presenciales en 12 Territórios de Desenvolvimento), no al OPA, y ni siquiera pudo confirmarse verbatim para Diálogos.",
-  "rol_IA": "apoyo",
-  "usa_IA_en_proceso": "no",
-  "tipo_desarrollador_IA": ["Privado"],
-  "origen_desarrollador": "Internacional",
-  "entra_tentativo": "NO",
-  "justificacion_elegibilidad": "VEREDICTO: NO ENTRA. El OPA es inequívocamente un PROCESO PARTICIPATIVO (presupuesto participativo digital subnacional, con propuestas ciudadanas y votación popular), por lo que la elegibilidad dependía ENTERAMENTE de la pregunta binaria: ¿la IA hace análisis semántico/temático del CONTENIDO de las propuestas, o solo acelera el processamento/triaje administrativo, disponibilidad e infraestructura/seguridad? La 2ª pasada (12 búsquedas/fetches dirigidos) confirma de forma convergente la segunda hipótesis: (1) la ÚNICA afirmación OPA-específica de la IA es de eficiencia operativa: 'a análise ganhou agilidade com o uso de inteligência artificial, que reduziu em 40% o tempo de processamento das propostas' (processamento/tempo, no comprensión del contenido); (2) la otra función de IA descrita con especificidad en el OPA es de seguridad: 'a inteligência artificial foi utilizada para filtrar conexões inseguras' (AWS CloudFront); (3) la 'análise técnica' se describe reiteradamente como hecha por 'equipes técnicas' que evalúan documentación y viabilidad ('Segunda fase do OPA reúne equipe para analisar a viabilidade das propostas'; 'equipes técnicas avaliam os dados coletados'), no atribuida a la IA; (4) la infraestructura AWS citada es cómputo/BD/seguridad (Amazon EC2, Amazon RDS, AWS CloudFront), sin servicios de ML de contenido (p.ej., Comprehend); (5) los demás usos de IA alrededor del OPA son un chatbot creado en el curso de capacitación CapacitIA y el 'Observatório do OPA' (transparencia), ninguno de los cuales lee/clasifica el contenido temático de las 1.311 propuestas; (6) la única mención a IA que 'agrupa ideias semelhantes' y 'estrutura propostas por eixo temático' pertenece a un PROCESO DISTINTO (Diálogos pelo Piauí / PPA 2024-2027) y no pudo confirmarse verbatim ni siquiera para ese proceso. Conforme al criterio del índice (IA solo de aceleración de processamento/triaje + infraestructura/seguridad + gestión documental → NO; rol_IA='apoyo'), la evidencia es decisiva EN CONTRA. Se marca NO. Queda una incertidumbre residual menor (no decisiva): no se accedió a documentación técnica primaria de Colab Gov.AI específica del OPA, porque todos los dominios gov.br y colab.com.br devuelven HTTP 403 a WebFetch; si tal documentación revelara clasificación/agrupamiento semántico del contenido de las propuestas del OPA, el veredicto cambiaría a SI. No se halló ninguna evidencia en esa dirección tras 12 consultas.",
-  "confianza": "MEDIA",
-  "evidencia_verbatim": {
-    "pais": "OPA é o Orçamento Participativo 100% digital do Governo do Estado do Piauí, em parceria com a Colab. (Colab, 'OPA, Colab e a participação digital no Piauí')",
-    "tipo_proceso": "OPA é o Orçamento Participativo 100% digital do Governo do Estado do Piauí... Após analisar a viabilidade das propostas, o Governo do Estado disponibilizará uma votação por meio da Colab para que qualquer cidadão acima de 16 anos com CPF possa votar no que considera mais importante para o seu município. (Colab)",
-    "funcion_IA_eficiencia": "Nesta edição, a análise ganhou agilidade com o uso de inteligência artificial, que reduziu em 40% o tempo de processamento das propostas. (Colab, 'OPA no Piauí: participação popular digital com recorde de votos' / pi.gov.br, OPA 2025-2026 / 2026-2027; texto recuperado de forma convergente vía WebSearch sobre esas URLs)",
-    "funcion_IA_seguridad": "A inteligência artificial foi utilizada para filtrar conexões inseguras através do AWS CloudFront. (paráfrasis/traducción recuperada vía WebSearch de la noticia de Colab sobre OPA Piauí; describe la IA en función de seguridad/infraestructura, no de análisis de contenido de las propuestas)",
-    "analise_humana": "Na fase de análise técnica, equipes técnicas avaliam os dados coletados, verificando aspectos como a documentação das entidades e a viabilidade de execução das propostas, ou seja, se elas podem ser realizadas dentro do orçamento do programa. (sia.pi.gov.br/projetos/opa/ y pi.gov.br, recuperado vía WebSearch; la 'análise técnica' se atribuye a equipos técnicos, no a la IA)",
-    "criterios_analise": "Na análise das propostas entram critérios como clareza na descrição, adequação à área temática escolhida, justificativa apresentada e a inexistência de equipamentos semelhantes já implantados na região indicada. (portal.pi.gov.br / pi.gov.br, OPA 2026-2027; criterios verificados en la análise técnica, sin atribución a IA)",
-    "infraestructura_aws": "O sistema utiliza tecnologia da AWS (Amazon Web Services), referência mundial em segurança digital... produtos como Amazon EC2 para instâncias de computação sob demanda e Amazon RDS para gerenciamento de banco de dados relacional. (Colab / búsqueda convergente; la AWS descrita es cómputo/BD/seguridad, no servicios de ML de contenido)",
-    "otro_proceso_dialogos": "Diálogos pelo Piauí é uma iniciativa de escuta popular para revisão do PPA 2024-2027, com oficinas presenciais nos 12 Territórios de Desenvolvimento... (proceso DISTINTO del OPA; es a este proceso —no al OPA— al que algunas fuentes asocian IA para 'agrupar ideias semelhantes' / 'estruturar propostas por eixo temático', sin confirmación verbatim. seplan.pi.gov.br / dialogos.seplan.pi.gov.br)",
-    "rol_IA": "Todo esse processo é realizado por meio da plataforma Colab Gov... O sistema utiliza tecnologia da AWS, referência mundial em segurança digital. (la IA/tecnología se presenta como soporte operativo, de eficiencia y de seguridad del flujo, no como análisis del contenido de las propuestas → rol de apoyo)"
+ "caso_id": "BR-opa-piaui-presupuesto-participativo-digi",
+ "pais": "BR",
+ "nombre_caso": "OPA Piauí - Orçamento Participativo Digital (Colab + AWS)",
+ "bloque": "1-dudoso",
+ "proceso_participativo": "OPA (Orçamento Participativo Digital) es el presupuesto participativo 100% digital del Gobierno del Estado de Piauí (Brasil), creado en 2023 y coordinado por la Secretaria do Planejamento (SEPLAN) con apoyo de la Secretaria de Relações Sociais (Seres). Se ejecuta sobre la plataforma Colab Gov (de la govtech Colab) con infraestructura AWS. El ciclo incluye cadastramento de propuestas por entidades comunitarias/asociaciones, una fase de 'análise técnica' (verificación de documentación, viabilidad de ejecución, claridad de la descripción, adecuación al área temática y no duplicación) y una votación popular abierta a la ciudadanía. En la edición 2026-2027, según el material de Colab, 'a análise ganhou agilidade com o uso de inteligência artificial, que reduziu em 40% o tempo de processamento das propostas', con economía de R$ 1,75 millón y 99,98% de disponibilidad del sistema. La señal disponible vincula la IA al procesamiento/agilización del flujo, a la seguridad de la infraestructura (filtrado de conexiones inseguras vía AWS CloudFront), a un chatbot/capacitación (CapacitIA) y a un 'Observatório do OPA' de transparencia; la 'análise técnica' de viabilidad se describe de forma reiterada como tarea conducida por equipos técnicos a través de la plataforma. NO hay evidencia de que la IA clasifique, agrupe (clustering) o sintetice el CONTENIDO temático/semántico de las propuestas en el OPA.",
+ "ano_inicio": 2023,
+ "ano_cierre": null,
+ "estado_actividad": "activo",
+ "evidencia_actividad_2026": "Edición OPA 2026-2027 en curso en 2026: en abril de 2026 entró en fase de análise técnica (más de mil propuestas cadastradas; 1.020-1.034 propostas de 497-499 entidades) y posteriormente se divulgaron las propuestas aptas (~800-849), se abrió la votación el 12/06/2026 y se cerró con recorde (>300 mil votos). Fuentes: portal.pi.gov.br y pi.gov.br (06/04/2026), seplan.pi.gov.br (2026), parlamentopiaui.com.br (2026).",
+ "organizacion_a_cargo": "Governo do Estado do Piauí - Secretaria do Planejamento (SEPLAN), con apoyo de la Secretaria de Relações Sociais (Seres). Socio tecnológico: GovTech Colab (plataforma Colab Gov); infraestructura: AWS (Amazon Web Services).",
+ "tipo_convocante": [
+  "gobierno local"
+ ],
+ "tipo_organizacion": "Público",
+ "tipo_proceso": [
+  "Presupuestos Participativos",
+  "Participación Digital"
+ ],
+ "etapas_uso_IA": [
+  "Implementación"
+ ],
+ "continuidad": "Plataforma",
+ "nivel_consolidacion": 3,
+ "sistema_IA": "No identificado por nombre. Capacidad de IA integrada en la plataforma Colab Gov (govtech Colab) sobre infraestructura AWS. En el OPA, la IA se asocia a la 'análise'/'processamento' de propuestas (agilización, -40% de tiempo), al filtrado de conexiones inseguras vía AWS CloudFront (seguridad/infraestructura), a un chatbot construido en un curso CapacitIA y a un 'Observatório do OPA' (panel de transparencia). La infraestructura AWS descrita es de cómputo/almacenamiento/seguridad (Amazon EC2, Amazon RDS, AWS CloudFront), no servicios de ML de contenido. No se especifica modelo, técnica (NLP, clustering, LLM) ni que la IA actúe sobre el contenido semántico de las propuestas del OPA. La plataforma Colab Gov.AI (lanzada en oct/2025 con AWS, basada en IA generativa/LangChain) ofrece funciones genéricas (generar flujos de servicio, etiquetar demandas en dashboards, asistir al ciudadano a redactar propuestas), pero ninguna de estas se atribuye específicamente al análisis de contenido de las propuestas del OPA Piauí.",
+ "tipos_IA_familia": [],
+ "usa_LLM_generativa": "no-claro",
+ "funcion_IA": "Según el material de Colab, en la edición 2025-2026 / 2026-2027 la IA agilizó la fase de análisis y 'reduziu em 40% o tempo de processamento das propostas', con economía de R$ 1,75 millón en costos directos y 99,98% de disponibilidad del sistema incluso en picos de votación. Una fuente describe además que 'a inteligência artificial foi utilizada para filtrar conexões inseguras' mediante AWS CloudFront (seguridad/infraestructura). El uso adicional de IA en torno al OPA es un chatbot creado en el curso CapacitIA y el 'Observatório do OPA' (transparencia/monitoreo). NO hay evidencia textual de que la IA clasifique por temas, agrupe (clustering), priorice o sintetice el CONTENIDO de las propuestas del OPA; la 'análise técnica' (documentación, viabilidad de ejecución, claridad, adecuación al área temática, no duplicación) se describe de forma reiterada y convergente como tarea de 'equipes técnicas' conducida a través de la plataforma. La única atribución hallada de IA que 'agrupa ideias semelhantes / estrutura propostas por eixo temático' corresponde a OTRO proceso (Diálogos pelo Piauí / revisión del PPA 2024-2027, talleres presenciales en 12 Territórios de Desenvolvimento), no al OPA, y ni siquiera pudo confirmarse verbatim para Diálogos.",
+ "rol_IA": "apoyo",
+ "usa_IA_en_proceso": "no",
+ "tipo_desarrollador_IA": [
+  "Privado"
+ ],
+ "origen_desarrollador": "Internacional",
+ "entra_tentativo": "NO",
+ "justificacion_elegibilidad": "VEREDICTO: NO ENTRA. El OPA es inequívocamente un PROCESO PARTICIPATIVO (presupuesto participativo digital subnacional, con propuestas ciudadanas y votación popular), por lo que la elegibilidad dependía ENTERAMENTE de la pregunta binaria: ¿la IA hace análisis semántico/temático del CONTENIDO de las propuestas, o solo acelera el processamento/triaje administrativo, disponibilidad e infraestructura/seguridad? La 2ª pasada (12 búsquedas/fetches dirigidos) confirma de forma convergente la segunda hipótesis: (1) la ÚNICA afirmación OPA-específica de la IA es de eficiencia operativa: 'a análise ganhou agilidade com o uso de inteligência artificial, que reduziu em 40% o tempo de processamento das propostas' (processamento/tempo, no comprensión del contenido); (2) la otra función de IA descrita con especificidad en el OPA es de seguridad: 'a inteligência artificial foi utilizada para filtrar conexões inseguras' (AWS CloudFront); (3) la 'análise técnica' se describe reiteradamente como hecha por 'equipes técnicas' que evalúan documentación y viabilidad ('Segunda fase do OPA reúne equipe para analisar a viabilidade das propostas'; 'equipes técnicas avaliam os dados coletados'), no atribuida a la IA; (4) la infraestructura AWS citada es cómputo/BD/seguridad (Amazon EC2, Amazon RDS, AWS CloudFront), sin servicios de ML de contenido (p.ej., Comprehend); (5) los demás usos de IA alrededor del OPA son un chatbot creado en el curso de capacitación CapacitIA y el 'Observatório do OPA' (transparencia), ninguno de los cuales lee/clasifica el contenido temático de las 1.311 propuestas; (6) la única mención a IA que 'agrupa ideias semelhantes' y 'estrutura propostas por eixo temático' pertenece a un PROCESO DISTINTO (Diálogos pelo Piauí / PPA 2024-2027) y no pudo confirmarse verbatim ni siquiera para ese proceso. Conforme al criterio del índice (IA solo de aceleración de processamento/triaje + infraestructura/seguridad + gestión documental → NO; rol_IA='apoyo'), la evidencia es decisiva EN CONTRA. Se marca NO. Queda una incertidumbre residual menor (no decisiva): no se accedió a documentación técnica primaria de Colab Gov.AI específica del OPA, porque todos los dominios gov.br y colab.com.br devuelven HTTP 403 a WebFetch; si tal documentación revelara clasificación/agrupamiento semántico del contenido de las propuestas del OPA, el veredicto cambiaría a SI. No se halló ninguna evidencia en esa dirección tras 12 consultas.",
+ "confianza": "MEDIA",
+ "evidencia_verbatim": {
+  "pais": "OPA é o Orçamento Participativo 100% digital do Governo do Estado do Piauí, em parceria com a Colab. (Colab, 'OPA, Colab e a participação digital no Piauí')",
+  "tipo_proceso": "OPA é o Orçamento Participativo 100% digital do Governo do Estado do Piauí... Após analisar a viabilidade das propostas, o Governo do Estado disponibilizará uma votação por meio da Colab para que qualquer cidadão acima de 16 anos com CPF possa votar no que considera mais importante para o seu município. (Colab)",
+  "funcion_IA_eficiencia": "Nesta edição, a análise ganhou agilidade com o uso de inteligência artificial, que reduziu em 40% o tempo de processamento das propostas. (Colab, 'OPA no Piauí: participação popular digital com recorde de votos' / pi.gov.br, OPA 2025-2026 / 2026-2027; texto recuperado de forma convergente vía WebSearch sobre esas URLs)",
+  "funcion_IA_seguridad": "A inteligência artificial foi utilizada para filtrar conexões inseguras através do AWS CloudFront. (paráfrasis/traducción recuperada vía WebSearch de la noticia de Colab sobre OPA Piauí; describe la IA en función de seguridad/infraestructura, no de análisis de contenido de las propuestas)",
+  "analise_humana": "Na fase de análise técnica, equipes técnicas avaliam os dados coletados, verificando aspectos como a documentação das entidades e a viabilidade de execução das propostas, ou seja, se elas podem ser realizadas dentro do orçamento do programa. (sia.pi.gov.br/projetos/opa/ y pi.gov.br, recuperado vía WebSearch; la 'análise técnica' se atribuye a equipos técnicos, no a la IA)",
+  "criterios_analise": "Na análise das propostas entram critérios como clareza na descrição, adequação à área temática escolhida, justificativa apresentada e a inexistência de equipamentos semelhantes já implantados na região indicada. (portal.pi.gov.br / pi.gov.br, OPA 2026-2027; criterios verificados en la análise técnica, sin atribución a IA)",
+  "infraestructura_aws": "O sistema utiliza tecnologia da AWS (Amazon Web Services), referência mundial em segurança digital... produtos como Amazon EC2 para instâncias de computação sob demanda e Amazon RDS para gerenciamento de banco de dados relacional. (Colab / búsqueda convergente; la AWS descrita es cómputo/BD/seguridad, no servicios de ML de contenido)",
+  "otro_proceso_dialogos": "Diálogos pelo Piauí é uma iniciativa de escuta popular para revisão do PPA 2024-2027, com oficinas presenciais nos 12 Territórios de Desenvolvimento... (proceso DISTINTO del OPA; es a este proceso —no al OPA— al que algunas fuentes asocian IA para 'agrupar ideias semelhantes' / 'estruturar propostas por eixo temático', sin confirmación verbatim. seplan.pi.gov.br / dialogos.seplan.pi.gov.br)",
+  "rol_IA": "Todo esse processo é realizado por meio da plataforma Colab Gov... O sistema utiliza tecnologia da AWS, referência mundial em segurança digital. (la IA/tecnología se presenta como soporte operativo, de eficiencia y de seguridad del flujo, no como análisis del contenido de las propuestas → rol de apoyo)"
+ },
+ "fuentes": [
+  {
+   "url": "https://www.colab.com.br/noticias/opa-e-a-participacao-popular-como-as-plataformas-colab-fortalecem-o-processo-participativo-no-piaui/",
+   "estado": "403",
+   "cita": "Nesta edição, a análise ganhou agilidade com o uso de inteligência artificial, que reduziu em 40% o tempo de processamento das propostas. Houve economia de R$ 1,75 milhão em custos diretos, 40% de redução no tempo de análise das propostas e 99,98% de disponibilidade do sistema mesmo nos picos de votação. Todo esse processo é realizado por meio da plataforma Colab Gov, desenvolvida pela GovTech Colab... O sistema utiliza tecnologia da AWS (Amazon Web Services), referência mundial em segurança digital. (HTTP 403 a WebFetch; contenido y citas recuperados de forma convergente vía WebSearch sobre esta URL. La IA se atribuye a eficiencia/tempo de processamento + seguridad, no a análisis de contenido.)"
   },
-  "fuentes": [
-    {
-      "url": "https://www.colab.com.br/noticias/opa-e-a-participacao-popular-como-as-plataformas-colab-fortalecem-o-processo-participativo-no-piaui/",
-      "estado": "403",
-      "cita": "Nesta edição, a análise ganhou agilidade com o uso de inteligência artificial, que reduziu em 40% o tempo de processamento das propostas. Houve economia de R$ 1,75 milhão em custos diretos, 40% de redução no tempo de análise das propostas e 99,98% de disponibilidade do sistema mesmo nos picos de votação. Todo esse processo é realizado por meio da plataforma Colab Gov, desenvolvida pela GovTech Colab... O sistema utiliza tecnologia da AWS (Amazon Web Services), referência mundial em segurança digital. (HTTP 403 a WebFetch; contenido y citas recuperados de forma convergente vía WebSearch sobre esta URL. La IA se atribuye a eficiencia/tempo de processamento + seguridad, no a análisis de contenido.)"
-    },
-    {
-      "url": "https://sia.pi.gov.br/projetos/opa/",
-      "estado": "403",
-      "cita": "Página del proyecto OPA en el sitio de la Secretaria de Inteligência Artificial (SIA) de Piauí. Vía WebSearch sobre esta URL: 'O processo é dividido em etapas: cadastramento de entidades, apresentação de propostas, análise técnica, votação popular e inclusão das propostas eleitas no orçamento estadual. Na fase de análise técnica, equipes técnicas avaliam os dados coletados, verificando aspectos como a documentação das entidades e a viabilidade de execução das propostas. Todo o processo é realizado por meio da plataforma Colab Gov... utilizando tecnologia da AWS, referência mundial em segurança digital.' (HTTP 403 a WebFetch). NO atribuye análisis de contenido a la IA: la análise técnica la hacen equipos técnicos; el rol de IA citado por SIA en torno al OPA es CapacitIA (capacitación), un chatbot y el Observatório do OPA (transparencia)."
-    },
-    {
-      "url": "https://www.colab.com.br/noticias/orcamento-participativo-digital/",
-      "estado": "no-verificado",
-      "cita": "Artículo de Colab sobre 'Orçamento Participativo Digital: Ferramentas de impacto e participação social'. Vía WebSearch: en proyectos de OP, la IA puede ayudar al ciudadano a REDACTAR/formular su propuesta (asistente conversacional que hace preguntas sobre los objetivos), no a clasificar/agrupar el contenido de las propuestas recibidas. Función genérica de la plataforma, no atribuida específicamente al análisis del contenido del OPA Piauí. (No se confirmó despliegue en el OPA Piauí.)"
-    },
-    {
-      "url": "https://tiinside.com.br/21/10/2025/em-parceria-com-a-aws-colab-lanca-ia-que-constroi-fluxos-de-governo-em-segundos/",
-      "estado": "no-verificado",
-      "cita": "Colab, en parceria con AWS, lanzó (oct/2025) 'Colab Gov.AI', IA generativa que construye flujos de gobierno en segundos (genera kanban/BPMN de servicios a partir de un comando), usando LangChain y salidas JSON estructuradas. Es una funcionalidad de DISEÑO/AUTOMATIZACIÓN de flujos administrativos y etiquetado de demandas en dashboards, no análisis semántico del contenido de propuestas de presupuesto participativo. (Vía WebSearch; no atribuida al OPA Piauí.)"
-    },
-    {
-      "url": "https://www.seplan.pi.gov.br/segunda-fase-do-opa-reune-equipe-para-analisar-a-viabilidade-das-propostas-cadastradas/",
-      "estado": "403",
-      "cita": "'Segunda fase do OPA reúne equipe para analisar a viabilidade das propostas cadastradas' (SEPLAN). Título/contenido vía WebSearch: la análise de viabilidad de las propuestas es realizada por un EQUIPO (humano) a través de la plataforma, lo que refuerza que la 'análise técnica' no es una tarea de IA sobre el contenido. (HTTP 403 a WebFetch)"
-    },
-    {
-      "url": "https://www.seplan.pi.gov.br/dialogos-pelo-piaui-quando-a-escuta-popular-se-transforma-em-politica-publica/",
-      "estado": "403",
-      "cita": "'Diálogos pelo Piauí' (revisión del PPA 2024-2027; oficinas presenciales en los 12 Territórios de Desenvolvimento; 7 eixos estratégicos). Algunas búsquedas asocian a ESTE proceso el uso de IA para 'agrupar ideias semelhantes', 'identificar prioridades' y 'estruturar propostas por eixo temático' en tiempo real; sin embargo, (a) es un proceso DISTINTO del OPA y (b) la cita no pudo confirmarse verbatim (la búsqueda dirigida no devolvió el texto). NO aplicable al OPA. (HTTP 403 a WebFetch)"
-    },
-    {
-      "url": "https://portal.pi.gov.br/seres/2026/04/06/opa-2026-2027-entra-na-fase-de-analise-tecnica-com-mais-de-mil-propostas-cadastradas/",
-      "estado": "403",
-      "cita": "OPA 2026-2027 entra na fase de análise técnica com mais de mil propostas cadastradas (06/04/2026). A fase de análise técnica avalia aspectos como documentação da entidade e viabilidade de execução das propostas, incluindo clareza na descrição, adequação à área temática escolhida, justificativa apresentada e a inexistência de equipamento similar já implantado na região indicada. Nesta edição, 499 entidades comunitárias cadastraram 1.034 propostas. (HTTP 403 a WebFetch; recuperado vía WebSearch; fija actividad 2026 y describe la 'análise técnica' como verificación humana de documentación/viabilidad)"
-    },
-    {
-      "url": "https://www.seplan.pi.gov.br/opa-2025-2026-piaui-elege-128-novas-propostas-com-recorde-de-participacao-popular/",
-      "estado": "403",
-      "cita": "OPA 2025-2026: Piauí elege 128 novas propostas. 564 entidades comunitárias cadastraram 1.311 propostas. Após criteriosa análise técnica, documental e orçamentária, 849 delas foram consideradas viáveis e colocadas para votação nos cinco municípios participantes. Foram registrados 273.890 votos válidos. (HTTP 403 a WebFetch; recuperado vía WebSearch; confirma 1.311 propostas en la edición 2025-2026 y que la criba a 849 fue por análise técnica/documental/orçamentária)"
-    },
-    {
-      "url": "https://opa.seplan.pi.gov.br/",
-      "estado": "403",
-      "cita": "Portal oficial del OPA - Orçamento Participativo Digital do Piauí (SEPLAN). HTTP 403 a WebFetch; no se recuperó contenido detallado que atribuya análisis de contenido a la IA."
-    }
-  ],
-  "gaps": [
-    {
-      "campo": "rol_IA / usa_IA_en_proceso (incertidumbre residual NO decisiva)",
-      "motivo": "Veredicto NO sostenido por evidencia convergente, pero no se accedió a documentación técnica PRIMARIA de Colab Gov.AI específica del OPA (ficha técnica/nota técnica que detalle si algún componente lee/clasifica/agrupa el contenido de las propuestas). Todos los dominios gov.br y colab.com.br devuelven HTTP 403 a WebFetch, por lo que las citas provienen de WebSearch sobre esas URLs, no de la página renderizada. Si tal documentación revelara clasificación/agrupamiento semántico del contenido de las propuestas del OPA, el veredicto pasaría a SI; no se halló evidencia en esa dirección tras 12 consultas.",
-      "url_para_buscar": "https://sia.pi.gov.br/projetos/opa/"
-    },
-    {
-      "campo": "sistema_IA / tipos_IA_familia / usa_LLM_generativa",
-      "motivo": "No se identifica el sistema de IA del OPA por nombre ni la técnica. Colab Gov.AI (IA generativa, LangChain) existe a nivel de plataforma desde oct/2025, pero sus funciones documentadas (generar flujos, etiquetar demandas, asistir redacción) no se atribuyen al análisis de contenido del OPA. Falta documento técnico que ligue un modelo concreto a las propuestas del OPA.",
-      "url_para_buscar": "https://tiinside.com.br/21/10/2025/em-parceria-com-a-aws-colab-lanca-ia-que-constroi-fluxos-de-governo-em-segundos/"
-    },
-    {
-      "campo": "evidencia_verbatim (página renderizada)",
-      "motivo": "No se pudo transcribir directamente ninguna página (403 generalizado en gov.br y colab.com.br); las citas son texto devuelto por WebSearch sobre esas URLs. Reduce la confianza a MEDIA pese a la convergencia de las fuentes.",
-      "url_para_buscar": "https://www.colab.com.br/noticias/opa-e-a-participacao-popular-como-as-plataformas-colab-fortalecem-o-processo-participativo-no-piaui/"
-    }
-  ],
-  "alertas": [
-    "[2ª pasada DUDA→NO] La pregunta binaria se resuelve en CONTRA del análisis de contenido: en el OPA la IA solo se documenta como aceleración del 'processamento' (-40% tempo) + seguridad (filtrar conexões inseguras vía AWS CloudFront) + chatbot/capacitación (CapacitIA) + panel de transparencia (Observatório do OPA). La 'análise técnica' de viabilidad la hacen reiteradamente 'equipes técnicas' (humanas). La AWS citada es cómputo/BD/seguridad (EC2, RDS, CloudFront), no ML de contenido. La única atribución de IA que 'agrupa ideias por eixo temático' corresponde a OTRO proceso (Diálogos pelo Piauí / PPA), no al OPA, y ni siquiera se confirmó verbatim. Bajo el criterio del índice (solo processamento/triaje + infraestructura/seguridad → NO; rol_IA='apoyo'), NO ENTRA. Incertidumbre residual NO decisiva: falta documentación técnica primaria de Colab Gov.AI específica del OPA (gov.br y colab.com.br dan 403).",
-    "PROCESOS DISTINTOS (no confundir): (a) OPA = Orçamento Participativo Digital (presupuesto participativo, propuestas de entidades + votación popular); (b) 'Diálogos pelo Piauí' = escucha popular para revisión del PPA 2024-2027 (oficinas presenciales en 12 Territórios). La señal de IA que 'agrupa ideias semelhantes' / 'estrutura propostas por eixo' apareció ligada a (b), NO a (a). Esta ficha es de (a) OPA.",
-    "FUENTES: todas las URLs gov.br (pi.gov.br, portal.pi.gov.br, seplan.pi.gov.br, sia.pi.gov.br, opa.seplan.pi.gov.br) y colab.com.br devuelven HTTP 403 a WebFetch; el contenido y las citas se recuperaron de forma convergente mediante WebSearch (múltiples consultas en PT/ES/EN). Las citas verbatim son texto devuelto por WebSearch sobre esas URLs, no transcripción directa de la página renderizada; por ello confianza MEDIA.",
-    "DESARROLLADOR: la capacidad de IA está en la plataforma Colab Gov / Colab Gov.AI (govtech Colab, empresa brasileña = Privado) sobre infraestructura AWS (Amazon, Privado/Internacional). tipo_desarrollador_IA=['Privado'], origen_desarrollador='Internacional' por el peso de AWS; podría matizarse a 'Nacional' si la IA fuese desarrollo propio de Colab.",
-    "CONVOCANTE: Gobierno del ESTADO de Piauí (nivel subnacional). Por convención del índice se clasifica 'gobierno local' (no nacional). Coordina SEPLAN; apoya Seres; existe además una Secretaria de Inteligência Artificial (SIA) estatal vinculada a la capacitación (CapacitIA) del OPA.",
-    "CONSOLIDACIÓN: nivel 3 (recurrente, ≥2 ediciones) confirmado: ediciones OPA 2023-2024, 2024-2025, 2025-2026 y 2026-2027 (cuatro ciclos), con votación récord creciente (273.890 votos válidos en 2025-2026; >300 mil participaciones en la votación). continuidad='Plataforma' (Colab Gov es plataforma permanente del proceso).",
-    "CONTEXTO IA en Piauí: Piauí es el único estado de Brasil con una Secretaría de Inteligencia Artificial (SIA) y desarrolla un proyecto de LLM en portugués. Esto refuerza la plausibilidad de uso de IA, pero NO constituye evidencia de que un LLM/IA se aplique al análisis de CONTENIDO de las propuestas del OPA; los usos confirmados de la SIA en el OPA son capacitación (CapacitIA), un chatbot de atención y un panel de transparencia."
-  ]
+  {
+   "url": "https://sia.pi.gov.br/projetos/opa/",
+   "estado": "403",
+   "cita": "Página del proyecto OPA en el sitio de la Secretaria de Inteligência Artificial (SIA) de Piauí. Vía WebSearch sobre esta URL: 'O processo é dividido em etapas: cadastramento de entidades, apresentação de propostas, análise técnica, votação popular e inclusão das propostas eleitas no orçamento estadual. Na fase de análise técnica, equipes técnicas avaliam os dados coletados, verificando aspectos como a documentação das entidades e a viabilidade de execução das propostas. Todo o processo é realizado por meio da plataforma Colab Gov... utilizando tecnologia da AWS, referência mundial em segurança digital.' (HTTP 403 a WebFetch). NO atribuye análisis de contenido a la IA: la análise técnica la hacen equipos técnicos; el rol de IA citado por SIA en torno al OPA es CapacitIA (capacitación), un chatbot y el Observatório do OPA (transparencia)."
+  },
+  {
+   "url": "https://www.colab.com.br/noticias/orcamento-participativo-digital/",
+   "estado": "no-verificado",
+   "cita": "Artículo de Colab sobre 'Orçamento Participativo Digital: Ferramentas de impacto e participação social'. Vía WebSearch: en proyectos de OP, la IA puede ayudar al ciudadano a REDACTAR/formular su propuesta (asistente conversacional que hace preguntas sobre los objetivos), no a clasificar/agrupar el contenido de las propuestas recibidas. Función genérica de la plataforma, no atribuida específicamente al análisis del contenido del OPA Piauí. (No se confirmó despliegue en el OPA Piauí.)"
+  },
+  {
+   "url": "https://tiinside.com.br/21/10/2025/em-parceria-com-a-aws-colab-lanca-ia-que-constroi-fluxos-de-governo-em-segundos/",
+   "estado": "no-verificado",
+   "cita": "Colab, en parceria con AWS, lanzó (oct/2025) 'Colab Gov.AI', IA generativa que construye flujos de gobierno en segundos (genera kanban/BPMN de servicios a partir de un comando), usando LangChain y salidas JSON estructuradas. Es una funcionalidad de DISEÑO/AUTOMATIZACIÓN de flujos administrativos y etiquetado de demandas en dashboards, no análisis semántico del contenido de propuestas de presupuesto participativo. (Vía WebSearch; no atribuida al OPA Piauí.)"
+  },
+  {
+   "url": "https://www.seplan.pi.gov.br/segunda-fase-do-opa-reune-equipe-para-analisar-a-viabilidade-das-propostas-cadastradas/",
+   "estado": "403",
+   "cita": "'Segunda fase do OPA reúne equipe para analisar a viabilidade das propostas cadastradas' (SEPLAN). Título/contenido vía WebSearch: la análise de viabilidad de las propuestas es realizada por un EQUIPO (humano) a través de la plataforma, lo que refuerza que la 'análise técnica' no es una tarea de IA sobre el contenido. (HTTP 403 a WebFetch)"
+  },
+  {
+   "url": "https://www.seplan.pi.gov.br/dialogos-pelo-piaui-quando-a-escuta-popular-se-transforma-em-politica-publica/",
+   "estado": "403",
+   "cita": "'Diálogos pelo Piauí' (revisión del PPA 2024-2027; oficinas presenciales en los 12 Territórios de Desenvolvimento; 7 eixos estratégicos). Algunas búsquedas asocian a ESTE proceso el uso de IA para 'agrupar ideias semelhantes', 'identificar prioridades' y 'estruturar propostas por eixo temático' en tiempo real; sin embargo, (a) es un proceso DISTINTO del OPA y (b) la cita no pudo confirmarse verbatim (la búsqueda dirigida no devolvió el texto). NO aplicable al OPA. (HTTP 403 a WebFetch)"
+  },
+  {
+   "url": "https://portal.pi.gov.br/seres/2026/04/06/opa-2026-2027-entra-na-fase-de-analise-tecnica-com-mais-de-mil-propostas-cadastradas/",
+   "estado": "403",
+   "cita": "OPA 2026-2027 entra na fase de análise técnica com mais de mil propostas cadastradas (06/04/2026). A fase de análise técnica avalia aspectos como documentação da entidade e viabilidade de execução das propostas, incluindo clareza na descrição, adequação à área temática escolhida, justificativa apresentada e a inexistência de equipamento similar já implantado na região indicada. Nesta edição, 499 entidades comunitárias cadastraram 1.034 propostas. (HTTP 403 a WebFetch; recuperado vía WebSearch; fija actividad 2026 y describe la 'análise técnica' como verificación humana de documentación/viabilidad)"
+  },
+  {
+   "url": "https://www.seplan.pi.gov.br/opa-2025-2026-piaui-elege-128-novas-propostas-com-recorde-de-participacao-popular/",
+   "estado": "403",
+   "cita": "OPA 2025-2026: Piauí elege 128 novas propostas. 564 entidades comunitárias cadastraram 1.311 propostas. Após criteriosa análise técnica, documental e orçamentária, 849 delas foram consideradas viáveis e colocadas para votação nos cinco municípios participantes. Foram registrados 273.890 votos válidos. (HTTP 403 a WebFetch; recuperado vía WebSearch; confirma 1.311 propostas en la edición 2025-2026 y que la criba a 849 fue por análise técnica/documental/orçamentária)"
+  },
+  {
+   "url": "https://opa.seplan.pi.gov.br/",
+   "estado": "403",
+   "cita": "Portal oficial del OPA - Orçamento Participativo Digital do Piauí (SEPLAN). HTTP 403 a WebFetch; no se recuperó contenido detallado que atribuya análisis de contenido a la IA."
+  }
+ ],
+ "gaps": [
+  {
+   "campo": "rol_IA / usa_IA_en_proceso (incertidumbre residual NO decisiva)",
+   "motivo": "Veredicto NO sostenido por evidencia convergente, pero no se accedió a documentación técnica PRIMARIA de Colab Gov.AI específica del OPA (ficha técnica/nota técnica que detalle si algún componente lee/clasifica/agrupa el contenido de las propuestas). Todos los dominios gov.br y colab.com.br devuelven HTTP 403 a WebFetch, por lo que las citas provienen de WebSearch sobre esas URLs, no de la página renderizada. Si tal documentación revelara clasificación/agrupamiento semántico del contenido de las propuestas del OPA, el veredicto pasaría a SI; no se halló evidencia en esa dirección tras 12 consultas.",
+   "url_para_buscar": "https://sia.pi.gov.br/projetos/opa/"
+  },
+  {
+   "campo": "sistema_IA / tipos_IA_familia / usa_LLM_generativa",
+   "motivo": "No se identifica el sistema de IA del OPA por nombre ni la técnica. Colab Gov.AI (IA generativa, LangChain) existe a nivel de plataforma desde oct/2025, pero sus funciones documentadas (generar flujos, etiquetar demandas, asistir redacción) no se atribuyen al análisis de contenido del OPA. Falta documento técnico que ligue un modelo concreto a las propuestas del OPA.",
+   "url_para_buscar": "https://tiinside.com.br/21/10/2025/em-parceria-com-a-aws-colab-lanca-ia-que-constroi-fluxos-de-governo-em-segundos/"
+  },
+  {
+   "campo": "evidencia_verbatim (página renderizada)",
+   "motivo": "No se pudo transcribir directamente ninguna página (403 generalizado en gov.br y colab.com.br); las citas son texto devuelto por WebSearch sobre esas URLs. Reduce la confianza a MEDIA pese a la convergencia de las fuentes.",
+   "url_para_buscar": "https://www.colab.com.br/noticias/opa-e-a-participacao-popular-como-as-plataformas-colab-fortalecem-o-processo-participativo-no-piaui/"
+  },
+  {
+   "campo": "etapas_uso_IA",
+   "motivo": "cita textual no re-verificada en 2ª pasada (valor heredado); confirmar manualmente",
+   "url_para_buscar": "https://www.colab.com.br/noticias/opa-e-a-participacao-popular-como-as-plataformas-colab-fortalecem-o-processo-participativo-no-piaui/"
+  },
+  {
+   "campo": "estado_actividad",
+   "motivo": "cita textual no re-verificada en 2ª pasada (valor heredado); confirmar manualmente",
+   "url_para_buscar": "https://www.colab.com.br/noticias/opa-e-a-participacao-popular-como-as-plataformas-colab-fortalecem-o-processo-participativo-no-piaui/"
+  },
+  {
+   "campo": "nivel_consolidacion",
+   "motivo": "cita textual no re-verificada en 2ª pasada (valor heredado); confirmar manualmente",
+   "url_para_buscar": "https://www.colab.com.br/noticias/opa-e-a-participacao-popular-como-as-plataformas-colab-fortalecem-o-processo-participativo-no-piaui/"
+  },
+  {
+   "campo": "tipo_convocante",
+   "motivo": "cita textual no re-verificada en 2ª pasada (valor heredado); confirmar manualmente",
+   "url_para_buscar": "https://www.colab.com.br/noticias/opa-e-a-participacao-popular-como-as-plataformas-colab-fortalecem-o-processo-participativo-no-piaui/"
+  }
+ ],
+ "alertas": [
+  "[2ª pasada DUDA→NO] La pregunta binaria se resuelve en CONTRA del análisis de contenido: en el OPA la IA solo se documenta como aceleración del 'processamento' (-40% tempo) + seguridad (filtrar conexões inseguras vía AWS CloudFront) + chatbot/capacitación (CapacitIA) + panel de transparencia (Observatório do OPA). La 'análise técnica' de viabilidad la hacen reiteradamente 'equipes técnicas' (humanas). La AWS citada es cómputo/BD/seguridad (EC2, RDS, CloudFront), no ML de contenido. La única atribución de IA que 'agrupa ideias por eixo temático' corresponde a OTRO proceso (Diálogos pelo Piauí / PPA), no al OPA, y ni siquiera se confirmó verbatim. Bajo el criterio del índice (solo processamento/triaje + infraestructura/seguridad → NO; rol_IA='apoyo'), NO ENTRA. Incertidumbre residual NO decisiva: falta documentación técnica primaria de Colab Gov.AI específica del OPA (gov.br y colab.com.br dan 403).",
+  "PROCESOS DISTINTOS (no confundir): (a) OPA = Orçamento Participativo Digital (presupuesto participativo, propuestas de entidades + votación popular); (b) 'Diálogos pelo Piauí' = escucha popular para revisión del PPA 2024-2027 (oficinas presenciales en 12 Territórios). La señal de IA que 'agrupa ideias semelhantes' / 'estrutura propostas por eixo' apareció ligada a (b), NO a (a). Esta ficha es de (a) OPA.",
+  "FUENTES: todas las URLs gov.br (pi.gov.br, portal.pi.gov.br, seplan.pi.gov.br, sia.pi.gov.br, opa.seplan.pi.gov.br) y colab.com.br devuelven HTTP 403 a WebFetch; el contenido y las citas se recuperaron de forma convergente mediante WebSearch (múltiples consultas en PT/ES/EN). Las citas verbatim son texto devuelto por WebSearch sobre esas URLs, no transcripción directa de la página renderizada; por ello confianza MEDIA.",
+  "DESARROLLADOR: la capacidad de IA está en la plataforma Colab Gov / Colab Gov.AI (govtech Colab, empresa brasileña = Privado) sobre infraestructura AWS (Amazon, Privado/Internacional). tipo_desarrollador_IA=['Privado'], origen_desarrollador='Internacional' por el peso de AWS; podría matizarse a 'Nacional' si la IA fuese desarrollo propio de Colab.",
+  "CONVOCANTE: Gobierno del ESTADO de Piauí (nivel subnacional). Por convención del índice se clasifica 'gobierno local' (no nacional). Coordina SEPLAN; apoya Seres; existe además una Secretaria de Inteligência Artificial (SIA) estatal vinculada a la capacitación (CapacitIA) del OPA.",
+  "CONSOLIDACIÓN: nivel 3 (recurrente, ≥2 ediciones) confirmado: ediciones OPA 2023-2024, 2024-2025, 2025-2026 y 2026-2027 (cuatro ciclos), con votación récord creciente (273.890 votos válidos en 2025-2026; >300 mil participaciones en la votación). continuidad='Plataforma' (Colab Gov es plataforma permanente del proceso).",
+  "CONTEXTO IA en Piauí: Piauí es el único estado de Brasil con una Secretaría de Inteligencia Artificial (SIA) y desarrolla un proyecto de LLM en portugués. Esto refuerza la plausibilidad de uso de IA, pero NO constituye evidencia de que un LLM/IA se aplique al análisis de CONTENIDO de las propuestas del OPA; los usos confirmados de la SIA en el OPA son capacitación (CapacitIA), un chatbot de atención y un panel de transparencia."
+ ]
 }

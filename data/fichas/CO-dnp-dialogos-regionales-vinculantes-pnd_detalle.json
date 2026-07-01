@@ -26,7 +26,7 @@
  "tipos_IA_familia": [],
  "usa_LLM_generativa": "no",
  "funcion_IA": "Sistematización y análisis de 89.788 propuestas ciudadanas. La 2ª pasada profundiza y CONFIRMA que el método fue: lectura de las propuestas + análisis por FRECUENCIA/RECURRENCIA realizado por la 'Unidad de Científicos de Datos' del DNP, agrupación/codificación en categorías predefinidas (17-19 categorías de intervención territorial / 18 categorías articuladas con las 5 transformaciones del PND) y presentación mediante nubes de palabras, gráficos de barras y un 'visor'. NO se halló evidencia técnica de NLP, machine learning, modelado de tópicos, clustering ni clasificación automática sobre el contenido. El propio repositorio GitHub de la Unidad de Científicos de Datos (ucd-dnp, 7 repos) NO contiene ningún proyecto vinculado a los DRV; su única librería de NLP/minería de texto ('ConTexto') no aparece asociada a este ejercicio en ninguna fuente. Críticos (Dejusticia, FIP, CCONG) describen una sistematización de bajo nivel técnico ('no había funcionarios con computadores sistematizando'; 'el proceso con que se sistematizaron las demandas nunca se identificó con claridad').",
- "rol_IA": "no",
+ "rol_IA": "no-claro",
  "usa_IA_en_proceso": "no",
  "tipo_desarrollador_IA": [
   "Gobierno"

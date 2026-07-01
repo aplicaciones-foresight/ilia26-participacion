@@ -90,6 +90,11 @@
    "campo": "estado_actividad / despliegue institucional posterior sobre el POT",
    "motivo": "Tras 8 búsquedas y 4 fetches en la 2ª pasada, no se halló evidencia (prensa ni fuente oficial) de que la Secretaría Distrital de Planeación, el Concejo de Bogotá o la Auditoría hayan adoptado/implementado la herramienta propuesta sobre aportes reales del POT tras jun-2025. Los despliegues de IA hallados (ISIDataInsights, Chatico) son del Plan Distrital de Desarrollo, no del POT. Confirma carácter de estudio, no de piloto institucional.",
    "url_para_buscar": "https://www.sdp.gov.co/gestion-territorial/plan-de-ordenamiento-territorial"
+  },
+  {
+   "campo": "rol_IA",
+   "motivo": "cita textual no re-verificada en 2ª pasada (valor heredado); confirmar manualmente",
+   "url_para_buscar": "https://controlvisible.auditoria.gov.co/index.php/rcf/article/view/63"
   }
  ],
  "alertas": [
