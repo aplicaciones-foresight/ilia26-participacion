@@ -1,0 +1,111 @@
+{
+ "caso_id": "UY-consulta-infancia-ia-2026",
+ "pais": "UY",
+ "nombre_caso": "Consulta Pública y Participación Multiactores: \"Niñas, niños, adolescentes, entornos digitales e inteligencia artificial\" (Uruguay, 2026)",
+ "bloque": "4-descubrimiento-amplio",
+ "proceso_participativo": "Consulta pública nacional y participación multiactores impulsada por el Parlamento de Uruguay junto a Agesic, el Consejo Nacional Consultivo Honorario de los Derechos de la Niñez y la Adolescencia, Ceibal, UNICEF y PNUD. Recoge experiencias, propuestas y perspectivas de la ciudadanía, la academia, la sociedad civil y, de manera central, de las propias niñas, niños y adolescentes, sobre el impacto de los entornos digitales y la inteligencia artificial en la infancia y adolescencia. Combina tres modalidades: consulta abierta digital vía la Plataforma de Participación Ciudadana Digital (Decidim), mesas de intercambio multiactor e instancias específicas para NNA. El objetivo es generar información pública de calidad para la agenda legislativa (antes de legislar, escuchar). NOTA: la IA es el TEMA/objeto de la consulta, no necesariamente una herramienta de procesamiento de los aportes.",
+ "ano_inicio": 2026,
+ "ano_cierre": null,
+ "estado_actividad": "activo — consulta ABIERTA (convocatoria 23/06/2026 al 10/09/2026). Fase de análisis (Fase 3: 10/09 al 10/10/2026) aún NO ejecutada a la fecha de evaluación (2026-07-01).",
+ "evidencia_actividad_2026": "Lanzamiento en junio 2026; convocatoria digital abierta del 23/06 al 10/09/2026. Cronograma en 4 fases: Fase 1 (hasta 23/06): preparación, lanzamiento y co-diseño; Fase 2 (23/06 al 10/09): apertura de la consulta digital y encuentros de intercambio; Fase 3 (10/09 al 10/10): sistematización, análisis y validación de los datos recabados; Fase 4 (30/11): cierre del proceso y presentación del informe final. Cobertura en Parlamento UY, MEC/gub.uy y prensa (mayoristasymercado, La Mañana, la diaria).",
+ "organizacion_a_cargo": "Parlamento del Uruguay (impulsor), con Agesic, Consejo Nacional Consultivo Honorario de los Derechos de la Niñez y la Adolescencia, Ceibal (Plan Ceibal), UNICEF y PNUD.",
+ "tipo_convocante": [
+  "gobierno nacional",
+  "otra institución pública",
+  "organización internacional"
+ ],
+ "tipo_organizacion": "Mixto",
+ "tipo_proceso": [
+  "Participación Digital",
+  "Gobernanza Colaborativa"
+ ],
+ "etapas_uso_IA": [],
+ "continuidad": "Uso único",
+ "nivel_consolidacion": 1,
+ "sistema_IA": null,
+ "tipos_IA_familia": [],
+ "usa_LLM_generativa": "no-claro",
+ "funcion_IA": null,
+ "rol_IA": "no-claro",
+ "usa_IA_en_proceso": "no-claro",
+ "tipo_desarrollador_IA": [],
+ "origen_desarrollador": null,
+ "entra_tentativo": "NO",
+ "justificacion_elegibilidad": "NO (lean firme). (1) TEMPORAL: la consulta está ABIERTA hasta el 10/09/2026 y la fase de sistematización/análisis/validación (Fase 3) recién ocurre entre el 10/09 y el 10/10/2026, con informe final el 30/11/2026. A la fecha de evaluación (2026-07-01) la fase de análisis NO se ha ejecutado, por lo que un eventual uso de IA sobre el contenido de los aportes NO está demostrado ni desplegado. (2) SUSTANTIVO: no se halló ninguna evidencia textual de que se use IA/NLP/ML/clustering para clasificar, agrupar, resumir o analizar el CONTENIDO de los aportes ciudadanos. Las descripciones oficiales del proceso (Agesic, misma Plataforma de Participación Ciudadana Digital / Decidim) apuntan a análisis HUMANO por equipos técnicos ('los aportes recibidos se sistematizan y, analizada su viabilidad por equipos técnicos, se utilizan como insumos'; 'según su pertinencia, viabilidad y prioridad'), y el producto es un 'documento de síntesis' agregado. El precedente directo (Consulta Pública Estrategia Nacional de IA, UY, ya listado y EXCLUIDO por 'No evidencia de uso de IA') usó análisis humano en esta misma plataforma. (3) La IA es el TEMA/objeto de la consulta (impacto de la IA en la infancia), no una herramienta de procesamiento de los aportes. Por criterio (consulta abierta sin fase de análisis ejecutada + sin evidencia de IA sobre los aportes) -> NO.",
+ "confianza": "MEDIA-ALTA",
+ "evidencia_verbatim": {
+  "pais": "El Parlamento del Uruguay, junto a AGESIC, el Consejo Nacional Consultivo Honorario de los Derechos de la Niñez y Adolescencia, Ceibal, UNICEF y el PNUD, lanzó la Consulta Pública y Participación Multiactores: 'Niñas, niños, adolescentes, entornos digitales e inteligencia artificial'. (síntesis de búsqueda sobre parlamento.gub.uy y gub.uy/MEC; páginas primarias devolvieron HTTP 403 vía WebFetch)",
+  "tipo_proceso": "La consulta combinará tres modalidades principales: una consulta abierta digital a través de la Plataforma de Participación Ciudadana Digital (hasta el 10 de setiembre), mesas de intercambio multiactor con especialistas y sectores tecnológicos, educativos y de salud mental, e instancias específicas para niños, niñas y adolescentes. (snippet de búsqueda)",
+  "etapas_uso_IA": null,
+  "estado_actividad": "Fase 2 (23 de junio al 10 de setiembre): Apertura de la consulta digital y encuentros de intercambio. Fase 3 (10 de setiembre al 10 de octubre): Sistematización, análisis y validación de los datos recabados. Fase 4 (30 de noviembre): Cierre del proceso y presentación del informe final. (snippet de búsqueda; confirma que la fase de análisis es POSTERIOR al 10/09/2026 y no está ejecutada a 2026-07-01)",
+  "nivel_consolidacion": "Del 23 de junio al 10 de setiembre estará abierta la convocatoria para recibir propuestas, experiencias y aportes de la ciudadanía, la academia y la sociedad civil. (snippet; proceso de edición única con cronograma acotado, no plataforma recurrente propia)",
+  "tipo_convocante": "El Parlamento del Uruguay, en un esfuerzo conjunto con Agesic, el Consejo Nacional Consultivo Honorario de los Derechos de la Niñez y Adolescencia, Ceibal, UNICEF y PNUD, lanzó la Consulta Pública... (snippet; convocan gobierno nacional/parlamento + otra institución pública + organismos internacionales UNICEF/PNUD)",
+  "usa_IA_en_proceso": "La información recabada será de carácter público y se presentará de forma agregada mediante un documento de síntesis y una devolución pública, constituyendo un insumo clave para la agenda legislativa del país. (snippet; describe producto de síntesis agregada, sin mención de IA/NLP para producirlo)",
+  "rol_IA": "En el precedente en la misma plataforma (Estrategia Nacional de IA): 'Los comentarios recibidos fueron sistematizados y analizados según su pertinencia, viabilidad y prioridad. Los aportes viables fueron incorporados al documento final... por Agesic en coordinación con el Comité estratégico de IA para el Sector público.' (snippet; describe análisis por equipos técnicos = humano, no IA)"
+ },
+ "fuentes": [
+  {
+   "url": "https://www.gub.uy/ministerio-educacion-cultura/comunicacion/noticias/lanzamiento-consulta-publica-sobre-inteligencia-artificial-entornos-digitales",
+   "estado": "403",
+   "cita": "Página primaria (MEC/gub.uy) del lanzamiento de la consulta. WebFetch devolvió HTTP 403 Forbidden (bloqueo del proxy a gub.uy). Contenido confirmado vía snippets de búsqueda: convocan Parlamento + Agesic + Consejo de Niñez + Ceibal + UNICEF + PNUD; consulta abierta hasta 10/09/2026; objetivo generar información pública de calidad sobre cómo herramientas tecnológicas y sistemas algorítmicos transforman la vida de los jóvenes. No se menciona IA/NLP para procesar los aportes."
+  },
+  {
+   "url": "https://parlamento.gub.uy/noticiasyeventos/noticias/representantes/961476",
+   "estado": "403",
+   "cita": "Parlamento UY: 'Parlamento lanza la primera consulta pública sobre infancia, entornos digitales e inteligencia artificial'. WebFetch HTTP 403. Vía snippets: cronograma en 4 fases (Fase 3 sistematización/análisis/validación 10/09-10/10/2026; Fase 4 informe final 30/11/2026); tres modalidades de participación (consulta digital en Plataforma de Participación Ciudadana Digital, mesas multiactor, instancias NNA)."
+  },
+  {
+   "url": "https://parlamento.gub.uy/noticiasyeventos/noticias/parlamento/961473",
+   "estado": "403",
+   "cita": "Parlamento UY: 'CONSULTA PÚBLICA SOBRE EL IMPACTO DE LOS ENTORNOS DIGITALES E INTELIGENCIA ARTIFICIAL EN LA INFANCIA Y LA ADOLESCENCIA'. WebFetch HTTP 403. Confirma denominación oficial del proceso y su objeto (impacto de entornos digitales e IA sobre la infancia)."
+  },
+  {
+   "url": "https://parlamento.gub.uy/noticiasyeventos/noticias/representantes/961434",
+   "estado": "403",
+   "cita": "Parlamento UY: 'Parlamento impulsa consulta pública sobre el impacto de los entornos digitales e inteligencia artificial en la infancia y adolescencia'. WebFetch HTTP 403. Refuerza convocantes y objeto del proceso; sin mención de IA/NLP como herramienta de análisis de aportes."
+  },
+  {
+   "url": "https://plataformaparticipacionciudadana.gub.uy/processes/consulta-publica-estrategia-ia",
+   "estado": "403",
+   "cita": "Plataforma de Participación Ciudadana Digital (Decidim), proceso Estrategia Nacional de IA (precedente en la MISMA plataforma). WebFetch HTTP 403. Vía snippets: 'los aportes recibidos se sistematizan y, una vez analizada su viabilidad por equipos técnicos, se utilizan como insumos para generar las versiones finales de los documentos'; 'sistematizados y analizados según su pertinencia, viabilidad y prioridad'. Evidencia de análisis HUMANO (equipos técnicos), no IA/NLP. Este proceso figura EXCLUIDO en el índice por 'No evidencia de uso de IA'."
+  },
+  {
+   "url": "https://plataformaparticipacionciudadana.gub.uy/pages/acerca_de",
+   "estado": "403",
+   "cita": "Página 'Acerca de la Plataforma'. WebFetch HTTP 403. Vía snippets: la plataforma se basa en Decidim (software libre de participación ciudadana), desarrollada por acuerdo Agesic-UdelaR (Facultades de Ingeniería, Ciencias Sociales e Información y Comunicación), lanzada en agosto 2021. No se documenta capacidad de análisis automatizado/NLP de los aportes."
+  },
+  {
+   "url": "https://www.mayoristasymercado.com/30690/el-parlamento-lanza-una-consulta-publica-nacional-sobre-ninos-adolescentes-y-entornos-digitales/",
+   "estado": "OK-ref",
+   "cita": "Nota de prensa (accesible en resultados) que confirma el lanzamiento de la consulta pública nacional, convocantes y fechas; describe el análisis/validación de resultados en octubre y presentación del informe final en noviembre. Sin mención de IA/NLP para procesar los aportes."
+  }
+ ],
+ "gaps": [
+  {
+   "campo": "usa_IA_en_proceso",
+   "motivo": "No se halló ninguna cita textual que afirme o niegue explícitamente el uso de IA/NLP/ML para sistematizar o analizar el contenido de los aportes de ESTA consulta. La fase de análisis (Fase 3) es 10/09-10/10/2026 y no se ha ejecutado; por precedente en la misma plataforma el análisis fue humano. Reevaluar tras 10/10/2026 o al publicarse el informe final (30/11/2026) por si se incorpora IA/NLP.",
+   "url_para_buscar": "https://parlamento.gub.uy/noticiasyeventos/noticias/representantes/961476"
+  },
+  {
+   "campo": "sistema_IA",
+   "motivo": "Sin evidencia de sistema de IA alguno aplicado al procesamiento de los aportes. Las páginas primarias (gub.uy y parlamento.gub.uy) devolvieron HTTP 403 vía WebFetch; la confirmación se basa en snippets de búsqueda. No se pudo verificar la metodología técnica exacta de la Fase 3.",
+   "url_para_buscar": "https://www.gub.uy/ministerio-educacion-cultura/comunicacion/noticias/lanzamiento-consulta-publica-sobre-inteligencia-artificial-entornos-digitales"
+  },
+  {
+   "campo": "ano_cierre",
+   "motivo": "El proceso cierra formalmente el 30/11/2026 (informe final), fuera aún del alcance temporal de la evaluación. Confirmar fecha/formato del informe final cuando se publique.",
+   "url_para_buscar": "https://parlamento.gub.uy/noticiasyeventos/noticias/parlamento/961473"
+  }
+ ],
+ "alertas": [
+  "TEMPORAL: consulta ABIERTA hasta 10/09/2026; fase de sistematización/análisis/validación (Fase 3) recién 10/09-10/10/2026 e informe final 30/11/2026. A 2026-07-01 el análisis NO está ejecutado -> el uso de IA sobre los aportes NO está demostrado ni desplegado.",
+  "La IA es el TEMA/objeto de la consulta (impacto de la IA en la infancia y adolescencia), NO evidencia de IA como herramienta de procesamiento de los aportes ciudadanos. Riesgo de falso positivo por coincidencia terminológica.",
+  "PRECEDENTE: se ejecuta sobre la MISMA Plataforma de Participación Ciudadana Digital (Decidim) que la 'Consulta Pública Estrategia Nacional de IA' (UY), caso ya listado y EXCLUIDO por 'No evidencia de uso de IA'; allí el análisis fue humano (equipos técnicos). Refuerza lean NO.",
+  "LIMITACIÓN DE EVIDENCIA: todas las páginas primarias gub.uy y parlamento.gub.uy devolvieron HTTP 403 vía WebFetch (bloqueo del proxy). Las citas provienen de snippets de búsqueda y de una nota de prensa accesible, no de texto primario completo verificado.",
+  "REEVALUAR tras 10/10/2026 (fin de Fase 3) o al publicarse el informe final (30/11/2026): si el informe documentara uso de IA/NLP/clustering sobre el contenido de los aportes, el caso podría reclasificarse a DUDA/SI."
+ ],
+ "fuente_datos": "candidato_equipo_2026",
+ "veredicto_equipo": null,
+ "comentario_equipo": "",
+ "divergencia_equipo": false
+}

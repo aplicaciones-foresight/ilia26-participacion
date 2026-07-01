@@ -1,0 +1,114 @@
+{
+  "caso_id": "BR-participe-mais-unb-mds",
+  "pais": "BR",
+  "nombre_caso": "Participe+ (ParticipeMais) - app estudiantil UnB-MDS de IA sobre contenidos de Brasil Participativo",
+  "bloque": "4-descubrimiento-amplio",
+  "proceso_participativo": "El artefacto NO opera un proceso participativo propio: es una aplicación cliente que recolecta (web scraping) los contenidos públicos de la plataforma federal Brasil Participativo (propuestas, planes y conferencias) y los presenta de forma mas accesible. Los procesos participativos subyacentes son los de Brasil Participativo (Secretaria-Geral da Presidencia / Secretaria Nacional de Participacao Social), que ya estan cubiertos por la ficha BR-brasil-participativo-clustering-semantic. Participe+ es un proyecto de la disciplina MDS (Metodos de Desenvolvimento de Software) de Ingenieria de Software de la Universidade de Brasilia (organizacion GitHub unb-mds), semestre 2025.1, con release v1.0.0 (09/07/2025). No es la plataforma oficial ni el pipeline oficial de IA de LAPPIS/BRISA; es un desarrollo estudiantil independiente construido SOBRE los datos de Brasil Participativo.",
+  "ano_inicio": 2025,
+  "ano_cierre": 2025,
+  "estado_actividad": "inactivo",
+  "evidencia_actividad_2026": "No se hallo evidencia de actividad en 2026 del artefacto estudiantil ni de despliegue oficial. El repositorio unb-mds/ParticipeMais corresponde a un proyecto de la disciplina MDS con release v1.0.0 del 09/07/2025 (patron tipico de proyecto de un semestre). El unico 'deploy' es un sitio de documentacion en GitHub Pages (https://unb-mds.github.io/ParticipeMais/), no una aplicacion en produccion. El articulo de Correio Braziliense de enero de 2026 sobre IA en 'Brasil Participativo' se refiere a la plataforma oficial (LabLivre/Carla Rocha, en alianza con la Secretaria Nacional de Participacao Social) y NO menciona la app estudiantil Participe+.",
+  "organizacion_a_cargo": "Estudiantes de la disciplina Metodos de Desenvolvimento de Software (MDS) del curso de Engenharia de Software de la Universidade de Brasilia (FGA/FCTE-UnB), a traves de la organizacion academica de GitHub 'unb-mds', semestre 2025.1. No hay una organizacion gubernamental a cargo del artefacto ni una parceria institucional formal declarada con la Secretaria Nacional de Participacao Social.",
+  "tipo_convocante": [
+    "universidad"
+  ],
+  "tipo_organizacion": "Público",
+  "tipo_proceso": [
+    "Participación Digital"
+  ],
+  "etapas_uso_IA": [
+    "Análisis"
+  ],
+  "continuidad": "Uso único",
+  "nivel_consolidacion": 0,
+  "sistema_IA": "Dos bloques de IA en el repositorio: (1) carpeta machinelearning/ con clusterizacion no supervisada de propuestas mediante HDBSCAN sobre embeddings 'all-MiniLM-L6-v2' (HuggingFace via LangChain), indice vectorial FAISS, reduccion UMAP y nubes de palabras, mas un script de clasificacion automatica de nuevas propuestas en 'eixos' tematicos por similitud semantica (scripts clusterizacao_hdbscan.py, classificacao_p_eixos.py, gerar_emb.py, integracao.py); en classificacao_p_eixos.py los eixos estan HARDCODEADOS a 5 categorias climaticas (mapa_clusters = {0: 'Educacao Ambiental', 1: 'Mobilidade Urbana', 2: 'Justica Climatica', 3: 'Saude Publica', 4: 'Governanca Participativa'}). (2) Modulo generativo con LangChain + FAISS + LLM (RAG) para resumir textos de politicas publicas y generar preguntas/insights personalizados. Backend Django REST, frontend React Native, PostgreSQL, WebScraper con Selenium.",
+  "tipos_IA_familia": [
+    "NLP",
+    "Clustering semántico",
+    "Clasificación de texto",
+    "Embeddings",
+    "LLM",
+    "RAG"
+  ],
+  "usa_LLM_generativa": "sí",
+  "funcion_IA": "Sobre los contenidos raspados de Brasil Participativo, la app: (a) agrupa propuestas por temas mediante clustering HDBSCAN y clasifica nuevas propuestas en eixos tematicos por similitud de embeddings (procesamiento del CONTENIDO de los aportes, no mera logistica); (b) resume textos complejos de politicas publicas y genera preguntas/insights personalizados con un LLM (RAG con LangChain+FAISS); (c) genera nubes de palabras. El objetivo declarado del modulo ML es 'apoyar analisis cualitativos y decisiones publicas con base en agrupamientos tematicos automaticos'. Es un prototipo estudiantil de escala reducida (eixos hardcodeados a 5 categorias), no un sistema en produccion.",
+  "rol_IA": "contenido",
+  "usa_IA_en_proceso": "sí",
+  "tipo_desarrollador_IA": [
+    "Academia"
+  ],
+  "origen_desarrollador": "Nacional",
+  "entra_tentativo": "NO",
+  "justificacion_elegibilidad": "NO ENTRA. Aunque tecnicamente la IA SI procesa el CONTENIDO de los aportes (agrupa por temas via HDBSCAN y clasifica en eixos por similitud semantica, ademas de resumir con LLM), el candidato incumple una condicion NECESARIA del criterio de inclusion ('SI solo si caso distinto, DESPLEGADO OFICIALMENTE'): (1) NO hay despliegue oficial ni adopcion por la Secretaria Nacional de Participacao Social; es un ejercicio de la disciplina MDS (Ingenieria de Software, UnB, org unb-mds, semestre 2025.1) con release v1.0.0 del 09/07/2025 y unico 'deploy' un sitio de documentacion en GitHub Pages, patron tipico de proyecto academico de un semestre, sin usuarios reales ni operacion gubernamental. (2) SUBSTANCIAL SOLAPAMIENTO con el caso ya contado BR-brasil-participativo-clustering-semantic: opera SOBRE la misma plataforma Brasil Participativo (raspa sus propuestas), pertenece al mismo ecosistema UnB y replica la misma idea de clustering/clasificacion tematica de propuestas, pero como artefacto estudiantil paralelo, no como el pipeline oficial de LAPPIS/BRISA. Se distingue del municipal 'Participe+' de la Prefeitura de Sao Paulo (participemais.prefeitura.sp.gov.br), que es otro caso no relacionado. Por incumplir 'desplegado oficialmente' (ejercicio estudiantil sin adopcion) y por solapar con el caso federal ya contado, la decision es NO. La duda central (¿va mas alla de resumir?) se resuelve a favor de 'si procesa contenido', pero eso no basta para entrar sin despliegue oficial.",
+  "confianza": "ALTA",
+  "evidencia_verbatim": {
+    "proceso_participativo": "A plataforma coleta e organiza os conteudos publicos do site Brasil Participativo, aplicando tecnicas de Inteligencia Artificial para resumir textos complexos de politicas publicas; gerar perguntas e insights personalizados com base nos interesses do usuario; organizar conteudos por temas como meio ambiente, economia, educacao, entre outros, e criar nuvens de palavras chaves de cada proposta.",
+    "tipo_convocante": "Repositorio en la organizacion academica de GitHub 'unb-mds' (Metodos de Desenvolvimento de Software), curso de Engenharia de Software de la UnB; proyectos de la disciplina MDS semestre 2025.1. About del repo: 'Interactive platform bridging citizens and managers through conferences, plans, and public consultations. Inspired by Brasil Participativo, it delivers clearer, more accessible, and organized views to promote civic engagement.'",
+    "rol_IA": "machinelearning/scripts: clusterizacao_hdbscan.py, classificacao_p_eixos.py, gerar_emb.py, integracao.py, integr_prop.py, inspeciona_index.py. README ML: 'Clusterizacao automatica' y 'Classificacao automatica de novas propostas'; 'O objetivo e apoiar analises qualitativas e decisoes publicas com base em agrupamentos tematicos automaticos.' Embeddings all-MiniLM-L6-v2 via LangChain, FAISS, HDBSCAN, UMAP.",
+    "sistema_IA": "En classificacao_p_eixos.py: 'mapa_clusters = {0: \"Educacao Ambiental\", 1: \"Mobilidade Urbana\", 2: \"Justica Climatica\", 3: \"Saude Publica\", 4: \"Governanca Participativa\"}'. Clasifica nuevas propuestas por similarity_search_with_score contra el indice FAISS preentrenado y mapea el cluster_id al eixo. Sin LLM en la clasificacion; el LLM se usa en el modulo de resumen (LangChain+FAISS).",
+    "estado_actividad": "Latest Release: v1.0.0 (July 9, 2025). Homepage/Deploy: https://unb-mds.github.io/ParticipeMais/ (sitio de documentacion GitHub Pages). Languages: Python (51.7%), TypeScript (46.5%). 285 commits en main.",
+    "usa_LLM_generativa": "AI/ML: LangChain, FAISS, LLM language models. Funciones: 'resumir textos complexos', 'gerar perguntas e insights personalizados'."
+  },
+  "fuentes": [
+    {
+      "url": "https://github.com/unb-mds/ParticipeMais",
+      "estado": "OK",
+      "cita": "Repositorio 'unb-mds/ParticipeMais - Participe+'. About: 'Interactive platform bridging citizens and managers through conferences, plans, and public consultations. Inspired by Brasil Participativo, it delivers clearer, more accessible, and organized views to promote civic engagement.' README: 'Participe+ e um aplicativo que busca transformar a forma como a populacao interage com as informacoes de politicas publicas, tornando propostas, planos e conferencias do site Brasil Participativo mais acessiveis... A plataforma coleta e organiza os conteudos publicos do site Brasil Participativo, aplicando tecnicas de Inteligencia Artificial para resumir textos complexos... organizar conteudos por temas... e criar nuvens de palavras.' Estructura: backend/ (Django REST), frontEnd/ (React Native), WebScraper/, machinelearning/, page-participemais/. Release v1.0.0 (09/07/2025). Languages: Python 51.7% / TypeScript 46.5%. (WebFetch al repo directo: 403 intermitente en HTML; contenido recuperado via raw.githubusercontent y API contents, mas WebSearch convergente.)"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/unb-mds/ParticipeMais/main/machinelearning/README.MD",
+      "estado": "OK",
+      "cita": "README del modulo ML: 'Clusterizacao automatica' y 'Classificacao automatica de novas propostas'. 'O objetivo e apoiar analises qualitativas e decisoes publicas com base em agrupamentos tematicos automaticos.' Stack: embeddings all-MiniLM-L6-v2 (HuggingFace via LangChain), FAISS, HDBSCAN (density-adaptive), UMAP, nubes de palabras. Confirma que el ML agrupa/clasifica el contenido de las propuestas (no solo resume)."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/unb-mds/ParticipeMais/main/machinelearning/scripts/classificacao_p_eixos.py",
+      "estado": "OK",
+      "cita": "Script de clasificacion en eixos. Diccionario hardcodeado 'mapa_clusters = {0: \"Educacao Ambiental\", 1: \"Mobilidade Urbana\", 2: \"Justica Climatica\", 3: \"Saude Publica\", 4: \"Governanca Participativa\"}'. Clasifica nuevas propuestas por similarity_search_with_score contra FAISS y mapea cluster_id al eixo; sin LLM en este paso. Evidencia de que el prototipo es de escala reducida (5 eixos climaticos predefinidos)."
+    },
+    {
+      "url": "https://api.github.com/repos/unb-mds/ParticipeMais/contents/machinelearning/scripts",
+      "estado": "OK",
+      "cita": "Listado de scripts: classificacao_p_eixos.py, clusterizacao_hdbscan.py, gerar_emb.py, inspeciona_index.py, integr_prop.py, integracao.py. Confirma pipeline de embeddings + clustering HDBSCAN + clasificacion, operando sobre propuestas raspadas de Brasil Participativo."
+    },
+    {
+      "url": "https://www.correiobraziliense.com.br/opiniao/2026/01/7333071-brasil-participativo-tecnologia-publica-feita-na-unb-a-servico-da-democracia.html",
+      "estado": "403",
+      "cita": "Articulo (enero 2026) 'Brasil Participativo: tecnologia publica feita na UnB a servico da democracia'. Se refiere a la PLATAFORMA OFICIAL Brasil Participativo desarrollada por la UnB (LabLivre, campus Gama; coord. Carla Rocha/LAPPIS) en alianza con la Secretaria Nacional de Participacao Social; 47 procesos participativos y +9 millones de accesos; investigadores 'desenvolvendo frentes voltadas ao uso de inteligencia artificial para qualificar os processos participativos'. NO menciona la app estudiantil unb-mds/ParticipeMais. (403 a WebFetch; contenido via WebSearch.) Sirve para deslindar el caso oficial del artefacto estudiantil."
+    },
+    {
+      "url": "https://participemais.prefeitura.sp.gov.br/",
+      "estado": "OK",
+      "cita": "'Participe+ a casa dos processos participativos da prefeitura de Sao Paulo' (Decidim municipal, lanzado 2020, Prefeitura de Sao Paulo). Caso DISTINTO y no relacionado con el candidato; se documenta para evitar confusion de nombre."
+    },
+    {
+      "url": "https://github.com/unb-mds",
+      "estado": "OK",
+      "cita": "Organizacion academica de GitHub 'MDS' (Metodos de Desenvolvimento de Software), curso de Engenharia de Software de la UnB, con proyectos por semestre (2024-2, 2025-1, 2025-2, etc.). Confirma la naturaleza estudiantil/curricular del repositorio ParticipeMais."
+    }
+  ],
+  "gaps": [
+    {
+      "campo": "equipe / integrantes",
+      "motivo": "No se obtuvieron los nombres de los estudiantes autores ni el numero exacto del squad (se menciona ~70 colaboradores a nivel de toda la org unb-mds, no del repo). No es decisivo para la elegibilidad (proyecto academico confirmado por el patron org/disciplina/release).",
+      "url_para_buscar": "https://github.com/unb-mds/ParticipeMais/graphs/contributors"
+    },
+    {
+      "campo": "despliegue / adopcion oficial",
+      "motivo": "No se hallo NINGUNA evidencia de adopcion por la Secretaria Nacional de Participacao Social ni de operacion en produccion; el unico 'deploy' es documentacion en GitHub Pages. La ausencia de evidencia de adopcion es consistente con proyecto de disciplina; se buscaria confirmacion adicional en actas o notas de la disciplina.",
+      "url_para_buscar": "https://unb-mds.github.io/ParticipeMais/"
+    },
+    {
+      "campo": "ano_cierre / actividad",
+      "motivo": "Se asume cierre 2025 por release unico v1.0.0 (jul-2025) y ausencia de actividad 2026; no se verifico la fecha del ultimo commit exacto ni si hubo continuidad en un semestre posterior.",
+      "url_para_buscar": "https://github.com/unb-mds/ParticipeMais/commits/main"
+    }
+  ],
+  "alertas": [
+    "OVERLAP con Brasil Participativo (caso ya contado BR-brasil-participativo-clustering-semantic): el candidato es un artefacto ESTUDIANTIL que opera SOBRE la plataforma federal Brasil Participativo (raspa sus propuestas) y replica la idea de clustering/clasificacion tematica de propuestas del pipeline oficial UnB (LAPPIS/BRISA), pero NO es ese pipeline ni la plataforma oficial. Se considera solapamiento/duplicado conceptual, no caso independiente desplegado.",
+    "DISTINCION de 'Sao Paulo Participe+': el municipal participemais.prefeitura.sp.gov.br (Prefeitura de Sao Paulo, Decidim, desde 2020) es OTRO caso no relacionado. El candidato es la app homonima de la disciplina MDS de la UnB (org unb-mds), que NO debe fusionarse con el municipal.",
+    "ELEGIBILIDAD: el rol de la IA SI es de CONTENIDO (agrupa/clasifica propuestas via HDBSCAN + embeddings, ademas de resumir con LLM), es decir NO es 'solo resumir/hacer accesible'; la DUDA CENTRAL se resuelve a favor de procesamiento de contenido. Sin embargo el caso NO ENTRA por incumplir la condicion 'desplegado oficialmente': es un ejercicio de curso (release v1.0.0 jul-2025, deploy = docs GitHub Pages) sin adopcion por la Secretaria Nacional de Participacao Social.",
+    "PROTOTIPO de escala reducida: en classificacao_p_eixos.py los eixos estan hardcodeados a 5 categorias (Educacao Ambiental, Mobilidade Urbana, Justica Climatica, Saude Publica, Governanca Participativa), sugiriendo entrenamiento sobre una muestra (probablemente Plano Clima), no un sistema generico en produccion.",
+    "FUENTES: la pagina HTML de GitHub y el articulo de Correio Braziliense dieron 403 intermitente a WebFetch; el contenido del repositorio se recupero de forma directa via raw.githubusercontent.com y la API contents de GitHub (estado OK) y de forma convergente via WebSearch. Las citas de codigo (mapa_clusters, nombres de scripts) provienen de la lectura directa de los archivos raw/API."
+  ],
+  "fuente_datos": "candidato_equipo_2026"
+}
