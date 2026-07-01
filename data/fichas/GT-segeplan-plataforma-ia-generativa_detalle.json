@@ -1,0 +1,113 @@
+{
+  "caso_id": "GT-segeplan-plataforma-ia-generativa",
+  "pais": "GT",
+  "nombre_caso": "Plataforma de modelos generativos de IA de SEGEPLAN + Red Ciudadana (Guatemala)",
+  "bloque": "4-descubrimiento-amplio",
+  "proceso_participativo": "No hay un proceso participativo ciudadano cuyos aportes sean tratados por la IA. La 'Plataforma IA de SEGEPLAN' (con modelos generativos / agentes) fue lanzada por SEGEPLAN con acompanamiento de Red Ciudadana (sociedad civil) y, en la linea conexa 'IA inclusiva para el desarrollo municipal', del PNUD (Programa Conjunto de Transformacion Digital, Joint SDG Fund / UE). Es una herramienta interna de productividad y un proceso de fortalecimiento de capacidades (curso de IA a 70+ personas del equipo tecnico central y territorial + 'Comunidad de practica de IA'). SEGEPLAN es el ente rector de los Planes de Desarrollo Municipal (PDM), que si se construyen con aportes participativos de los Consejos de Desarrollo (COCODES/COMUDES), pero NO se halla evidencia de que la plataforma de IA sistematice/clasifique/resuma el CONTENIDO de esos aportes participativos.",
+  "ano_inicio": 2025,
+  "ano_cierre": null,
+  "estado_actividad": "activo",
+  "evidencia_actividad_2026": "Lanzamiento de la plataforma y clausura del curso de IA el 4 de noviembre de 2025 (nota SEGEPLAN ?p=14176). La 'Comunidad de practica de IA de SEGEPLAN' realizo su primer encuentro en febrero de 2026 (nota SEGEPLAN ?p=14622), con plan de encuentros bimensuales y de incluir a colaboradores de otras instituciones. La linea 'IA inclusiva para el desarrollo municipal' del PNUD reporta sesiones formativas (oct 2025) y alfabetizacion digital comunitaria (sep-nov 2025). Actividad confirmada hasta 2026.",
+  "organizacion_a_cargo": "SEGEPLAN (Secretaria de Planificacion y Programacion de la Presidencia, gobierno nacional de Guatemala), con acompanamiento de Red Ciudadana (sociedad civil) en el desarrollo/capacitacion de la plataforma; y del PNUD (Programa Conjunto de Transformacion Digital, Joint SDG Fund / Union Europea) en la linea conexa 'IA inclusiva para el desarrollo municipal'.",
+  "tipo_convocante": [
+    "gobierno nacional",
+    "sociedad civil",
+    "organización internacional"
+  ],
+  "tipo_organizacion": "Público",
+  "tipo_proceso": [
+    "Participación Digital"
+  ],
+  "etapas_uso_IA": [
+    "Análisis"
+  ],
+  "continuidad": "Plataforma",
+  "nivel_consolidacion": 1,
+  "sistema_IA": "Plataforma de IA de SEGEPLAN con 'modelos generativos de informacion' y 'varios agentes' orientados a automatizar actividades y tareas repetitivas del funcionariado. Usos descritos: analizar los datos y documentos que ingresan para obtener estadisticas o generar alertas sobre la 'papeleria'; mejorar modelos proyectivos, gestion de datos, recopilacion de indicadores socioeconomicos y formacion de personal. No se detalla el modelo/LLM base concreto ni proveedor tecnologico.",
+  "tipos_IA_familia": [
+    "LLM / IA generativa (NLP)"
+  ],
+  "usa_LLM_generativa": "sí",
+  "funcion_IA": "Productividad interna del equipo tecnico de SEGEPLAN: automatizar tareas administrativas repetitivas mediante agentes; analizar datos/documentos entrantes para generar estadisticas y alertas; apoyar modelos proyectivos, gestion de datos e indicadores socioeconomicos; y fortalecer capacidades del personal en el uso de IA (curso + comunidad de practica). NO se aplica a sistematizar/clasificar/resumir el contenido de los aportes de los diagnosticos participativos (COCODES/COMUDES) en los PDM.",
+  "rol_IA": "apoyo",
+  "usa_IA_en_proceso": "no",
+  "tipo_desarrollador_IA": [
+    "Sociedad Civil",
+    "Gobierno"
+  ],
+  "origen_desarrollador": "Nacional",
+  "entra_tentativo": "NO",
+  "justificacion_elegibilidad": "El criterio ELEGIBLE exige que la IA generativa se use para SISTEMATIZAR/CLASIFICAR/RESUMIR el CONTENIDO de los aportes de los diagnosticos participativos (Consejos de Desarrollo COCODES/COMUDES) en los Planes de Desarrollo Municipal (PDM). Toda la evidencia primaria y secundaria (nota SEGEPLAN ?p=14176 del 04-nov-2025; nota ?p=14622 comunidad de practica feb-2026; blog Red Ciudadana; blog PNUD/UNSDG 'IA inclusiva para el desarrollo municipal') describe la plataforma como (a) herramienta interna de productividad con 'agentes' para 'tareas repetitivas', (b) analisis de datos/documentos institucionales para estadisticas y alertas sobre la 'papeleria', y (c) un proceso de fortalecimiento de capacidades / comunidad de practica del equipo tecnico. Coincide EXACTAMENTE con la exclusion del criterio ('solo herramienta interna de productividad/capacitacion del equipo tecnico o comunidad de practica sin aplicarse a los aportes'). Aunque SEGEPLAN es el ente rector de los PDM (que si integran aportes de COCODES/COMUDES) y la linea del PNUD prototipa soluciones municipales (atencion ciudadana, catastro, ordenamiento territorial), NO se halla ninguna cita que conecte la IA con el tratamiento del contenido de los aportes participativos. Se decide entra=NO (rol_IA='apoyo', usa_IA_en_proceso='no'). Confirma la tendencia previa DUDA(lean NO), resuelta a NO con evidencia multiple.",
+  "confianza": "MEDIA-ALTA",
+  "evidencia_verbatim": {
+    "funcion_IA": "SEGEPLAN con el apoyo de la sociedad civil Red Ciudadana presento la Plataforma IA de SEGEPLAN que contiene modelos generativos de informacion. Esta es la primera herramienta de inteligencia artificial que utilizan desde Red Ciudadana para apoyar a la funcion publica y tiene varios agentes que permiten desarrollar actividades y tareas repetitivas. (via snippets de busqueda de la nota SEGEPLAN ?p=14176; fuente primaria devolvio HTTP 403 por politica del proxy)",
+    "sistema_IA": "Un jefe de la Direccion de Sistemas de la Informacion de SEGEPLAN propuso utilizar IA para que analice los datos y documentos que ingresan para obtener estadisticas o generar alertas sobre lo que se debe analizar en la papeleria; ... al implementarse la IA en la institucion se podrian mejorar los modelos proyectivos, la gestion de datos, la recopilacion de indicadores socioeconomicos y la formacion de personal. (via snippets de busqueda, nota SEGEPLAN ?p=14176)",
+    "estado_actividad": "SEGEPLAN promovio el primer encuentro de la comunidad de practica de IA, un espacio de colaboracion entre el personal especializado de SEGEPLAN para determinar escenarios y herramientas para implementar la IA en los procedimientos institucionales (via snippets, nota SEGEPLAN ?p=14622, febrero de 2026); lanzamiento de plataforma y clausura del curso el 4 de noviembre de 2025.",
+    "rol_IA": "El objetivo es continuar creciendo y desarrollar tipos de agentes para temas mas complejos, para fortalecer la planificacion en el sector publico; ... modelos generativos ... agentes que permiten desarrollar actividades y tareas repetitivas que absorben demasiado tiempo de los funcionarios publicos. (via snippets del blog Red Ciudadana 'Inteligencia Artificial y Planificacion Publica: Un paso hacia la Innovacion en el Sector Publico')",
+    "tipo_convocante": "Red Ciudadana, en colaboracion con PNUD dentro del Programa Conjunto de Transformacion Digital con financiamiento del Joint SDG Fund y la Union Europea, esta apostando al desarrollo de una IA Municipal Inclusiva; ... Entre septiembre y noviembre del 2025 se desarrollo un proceso de alfabetizacion digital comunitaria dirigido principalmente a mujeres, jovenes y personas adultas mayores. (via snippets del blog PNUD/UNSDG 'IA inclusiva para el desarrollo municipal en Guatemala')",
+    "usa_IA_en_proceso": null,
+    "proceso_participativo_PDM": "Los Planes de Desarrollo Municipal constituyen esfuerzos consensuados entre diversos actores locales dentro del Consejo Municipal de Desarrollo (COMUDE), donde convergen el Concejo Municipal, delegados de los Consejos Comunitarios de Desarrollo (COCODE), instituciones sectoriales, empresarios locales y lideres de la sociedad civil. (via snippets de guias/PDM de SEGEPLAN; describe el proceso participativo del PDM PERO sin vinculo con la plataforma de IA)"
+  },
+  "fuentes": [
+    {
+      "url": "https://portal.segeplan.gob.gt/segeplan/?p=14176",
+      "estado": "403",
+      "cita": "Nota primaria 'SEGEPLAN y Red Ciudadana presentan plataforma de modelos generativos de IA' (04-nov-2025). WebFetch y curl devolvieron HTTP 403 (denegacion de politica del proxy de egreso para el host portal.segeplan.gob.gt, confirmada en __agentproxy/status: connect_rejected 403). Contenido recuperado via snippets de busqueda: la plataforma 'contiene modelos generativos de informacion' y 'tiene varios agentes que permiten desarrollar actividades y tareas repetitivas'; clausura de un curso de IA al equipo tecnico central y territorial (70+ personas); propuesta de usar IA para 'analice los datos y documentos que ingresan para obtener estadisticas o generar alertas sobre... la papeleria'."
+    },
+    {
+      "url": "https://portal.segeplan.gob.gt/segeplan/?p=14622",
+      "estado": "403",
+      "cita": "Nota 'Comunidad de practica de IA de SEGEPLAN realiza su primer encuentro' (febrero 2026). HTTP 403 (politica del proxy). Via snippets: 'espacio de colaboracion entre el personal especializado de SEGEPLAN para determinar escenarios y herramientas para implementar la IA en los procedimientos institucionales'; encuentros bimensuales; intencion de incluir a colaboradores de otras instituciones. Confirma orientacion a productividad/capacitacion interna, no a aportes participativos."
+    },
+    {
+      "url": "https://www.redciudadana.org/blogs/inteligencia-artificial-y-planificaci%C3%B3n-p%C3%BAblica-un-paso-hacia-la-innovaci%C3%B3n-en-el-sector-p%C3%BAblico/",
+      "estado": "403",
+      "cita": "Blog Red Ciudadana 'Inteligencia Artificial y Planificacion Publica: Un paso hacia la Innovacion en el Sector Publico'. HTTP 403 (politica del proxy; host redciudadana.org bloqueado, confirmado en __agentproxy/status). Via snippets: 'La Plataforma IA de SEGEPLAN es la primera herramienta de IA que ha utilizado Red Ciudadana para apoyar la funcion publica y tiene varios agentes que permiten desarrollar actividades y tareas repetitivas que absorben demasiado tiempo de los funcionarios publicos'; proceso de capacitacion en IA para funcionarios de planificacion (70+ personas); enfoque en analisis predictivo y automatizacion de tareas. No menciona tratar aportes de diagnosticos participativos."
+    },
+    {
+      "url": "https://www.undp.org/es/guatemala/blog/ia-inclusiva-para-el-desarrollo-municipal-en-guatemala-una-oportunidad-para-transformar-lo-local",
+      "estado": "403",
+      "cita": "Blog PNUD Guatemala 'IA inclusiva para el desarrollo municipal en Guatemala: Una oportunidad para transformar lo local'. HTTP 403 (proxy). Via snippets: Red Ciudadana + PNUD (Programa Conjunto de Transformacion Digital, Joint SDG Fund / UE); sesiones formativas para equipos tecnicos y administrativos municipales (oct 2025); alfabetizacion digital comunitaria (sep-nov 2025, mujeres/jovenes/adultos mayores); 'proceso participativo para identificar que procesos publicos podrian beneficiarse del uso de IA' (atencion ciudadana, servicios municipales, ordenamiento territorial, catastro); prototipos para 'mejorar la respuesta municipal, automatizar tareas recurrentes y fortalecer la transparencia'. El 'proceso participativo' es para priorizar casos de uso de IA, no un proceso ciudadano cuyos aportes procese la IA; no se vincula con sistematizar aportes de COCODES/COMUDES en PDM."
+    },
+    {
+      "url": "https://unsdg.un.org/es/latest/stories/ia-inclusiva-para-el-desarrollo-municipal-en-guatemala-una-oportunidad-para",
+      "estado": "403",
+      "cita": "Nota UNSDG (GNUDS) 'IA inclusiva para el desarrollo municipal en Guatemala' (replica de la nota PNUD). HTTP 403 via WebFetch. Via snippets: 'digitalizacion mas inteligente, humana y contextualizada territorialmente'; sesiones formativas a equipos municipales; alfabetizacion digital comunitaria. Refuerza el encuadre de capacitacion/inclusion digital, no de tratamiento de aportes participativos. (Se anota el 403 conforme a la instruccion.)"
+    },
+    {
+      "url": "https://todanoticia.com/2026/03/24/guatemaltecos-fortalecen-acceso-a-servicios-publicos-por-medio-de-desarrollos-tecnologicos-con-inteligencia-artificial/",
+      "estado": "OK-ref",
+      "cita": "Nota de prensa (24-mar-2026) sobre el reto/desafio de Red Ciudadana: participacion de sociedad civil, emprendedores, jovenes innovadores, academia y gobiernos locales que desarrollaron propuestas de IA con enfoque en inclusion digital, eficiencia institucional y derechos humanos. Refuerza que la linea de trabajo es modernizacion de procesos publicos, no sistematizacion de aportes de diagnosticos participativos del PDM."
+    },
+    {
+      "url": "https://portal.segeplan.gob.gt/segeplan/wp-content/uploads/2022/08/Guia_PDM_OT.pdf",
+      "estado": "OK-ref",
+      "cita": "Guia metodologica del PDM/OT de SEGEPLAN: confirma que los PDM se construyen de forma participativa dentro del COMUDE con delegados de los COCODE (diagnostico participativo). Sirve para ubicar el contexto (existe un proceso participativo real en los PDM) PERO no menciona uso de IA sobre esos aportes; la plataforma de IA (2025-2026) no aparece vinculada a este proceso."
+    }
+  ],
+  "gaps": [
+    {
+      "campo": "usa_IA_en_proceso",
+      "motivo": "No se halla ninguna cita que conecte la plataforma de IA con el tratamiento (sistematizar/clasificar/resumir) del contenido de los aportes de los diagnosticos participativos (COCODES/COMUDES) en los PDM. Todo apunta a productividad interna. Si en el futuro se documentara un agente que procese los aportes participativos del PDM, el caso podria reclasificarse a DUDA/SI.",
+      "url_para_buscar": "https://portal.segeplan.gob.gt/segeplan/?p=14176"
+    },
+    {
+      "campo": "evidencia_verbatim",
+      "motivo": "Las tres fuentes primarias (SEGEPLAN ?p=14176 y ?p=14622, blog Red Ciudadana) y las notas PNUD/UNSDG devolvieron HTTP 403 por denegacion de politica del proxy de egreso (hosts portal.segeplan.gob.gt, redciudadana.org, undp.org, unsdg.un.org). Las citas se obtuvieron de snippets de busqueda (consistentes entre si y entre fuentes), no de cita textual completa verificada del cuerpo. Por ello la confianza es MEDIA-ALTA (no ALTA).",
+      "url_para_buscar": "https://portal.segeplan.gob.gt/segeplan/?p=14176"
+    },
+    {
+      "campo": "sistema_IA",
+      "motivo": "No se identifico el modelo/LLM base concreto ni el proveedor tecnologico de la 'plataforma de modelos generativos'; se describe funcionalmente (agentes, tareas repetitivas, analisis de documentos) pero sin ficha tecnica.",
+      "url_para_buscar": "https://www.redciudadana.org/blogs/inteligencia-artificial-y-planificaci%C3%B3n-p%C3%BAblica-un-paso-hacia-la-innovaci%C3%B3n-en-el-sector-p%C3%BAblico/"
+    }
+  ],
+  "alertas": [
+    "RESOLUCION DE LA DUDA CENTRAL: la 'Plataforma de IA' de SEGEPLAN es una herramienta interna de productividad + capacitacion/comunidad de practica del equipo tecnico, NO un sistema que sistematice/clasifique el contenido de los aportes participativos (COCODES/COMUDES) en los PDM. Confirma la tendencia previa DUDA(lean NO) -> resuelta a NO.",
+    "Distinguir dos lineas conexas pero no elegibles: (1) 'Plataforma IA de SEGEPLAN' (agentes de productividad, nov-2025) y (2) 'IA inclusiva para el desarrollo municipal' (PNUD/Red Ciudadana: alfabetizacion digital comunitaria + prototipos municipales de atencion/catastro/ordenamiento). Ninguna trata los aportes del diagnostico participativo del PDM.",
+    "Limitacion de acceso: fuentes primarias SEGEPLAN/Red Ciudadana/PNUD bloqueadas con HTTP 403 por politica del proxy de egreso (verificado en curl -sS $HTTPS_PROXY/__agentproxy/status: connect_rejected 403 para portal.segeplan.gob.gt y www.redciudadana.org; armemosunplan.mx tambien bloqueado). Evidencia basada en snippets de busqueda coincidentes.",
+    "POSIBLE CASO DISTINTO (no confundir): 'Estrategia de Inteligencia Artificial en Guatemala' en participacionciudadana.gob.gt/processes/IA (Decidim) es una CONSULTA PARTICIPATIVA sobre la politica de IA del pais; es un candidato aparte y NO es esta plataforma. Podria merecer su propia ficha.",
+    "Divergencia con veredicto de equipo posible: el candidato fue senalado por su vinculo con SEGEPLAN (ente rector de PDM participativos), pero la evidencia no sostiene el nexo IA-aportes; se marca NO con confianza MEDIA-ALTA por dependencia de snippets."
+  ],
+  "fuente_datos": "candidato_equipo_2026"
+}

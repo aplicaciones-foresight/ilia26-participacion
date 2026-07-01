@@ -1,0 +1,112 @@
+{
+ "caso_id": "MX-jalisco-armemos-un-plan",
+ "pais": "MX",
+ "nombre_caso": "Jalisco - Consulta ¡Armemos un Plan! (Plan Estatal de Desarrollo y Gobernanza 2024-2030)",
+ "bloque": "4-descubrimiento-amplio",
+ "proceso_participativo": "Consulta ciudadana '¡Armemos un Plan!' convocada por el Gobierno de Jalisco a través de la Secretaría de Planeación y Participación Ciudadana (SPPC) para construir el Plan Estatal de Desarrollo y Gobernanza 2024-2030. Ejercicio abierto e inclusivo del 20 de febrero al 17 de abril de 2025 que registró 675,484 participaciones (aprox. 624,226 participaciones digitales + 25,176 niñas, niños y adolescentes mediante un mecanismo especialmente diseñado). Combinó: una encuesta representativa 'casa por casa' con rigor estadístico y metodológico; consulta digital abierta que recibió 15,899 propuestas ciudadanas escritas (temas: espacios públicos/deportivos/recreativos, medio ambiente y movilidad, agua y territorio, turismo rural, vivienda digna, economías locales); 12 foros regionales y 9 foros temáticos / mesas de trabajo con 5,563 participantes presenciales; 168 mesas regionales y 47 sectoriales donde se identificaron y discutieron 1,349 problemáticas; e instalación de 18 Consejos de Participación y Planeación (1 estatal, 12 regionales, 5 sectoriales). El resultado se estructuró en 5 ejes, 36 temas, 50 objetivos estratégicos, 197-198 proyectos y 82 indicadores de seguimiento.",
+ "ano_inicio": 2025,
+ "ano_cierre": 2025,
+ "estado_actividad": "activo",
+ "evidencia_actividad_2026": "El sitio armemosunplan.mx y plan.jalisco.gob.mx siguen activos en 2026 como repositorio de la consulta, el Plan y sus planes sectoriales; el Plan (recibido por el Congreso de Jalisco y presentado en cinco regiones en nov-2025) cubre 2024-2030 y su implementación/seguimiento continúa (plataforma MIDE Jalisco). No obstante, el EJERCICIO PARTICIPATIVO de consulta fue puntual (feb-abr 2025); lo que permanece es la publicación/implementación del Plan, no una nueva ronda de consulta. Jalisco mantiene actividad institucional de IA en 2026 (Foro de IA en el Gobierno de Jalisco, iniciativas en el Congreso), pero como política/gobernanza de IA separada, no como análisis de esta consulta.",
+ "organizacion_a_cargo": "Gobierno del Estado de Jalisco — Secretaría de Planeación y Participación Ciudadana (SPPC). Titular: Cynthia Cantero Pacheco. Apoyo de información estadística/geográfica: Instituto de Información Estadística y Geográfica de Jalisco (IIEG). Gobernador: Pablo Lemus Navarro (administración 2024-2030).",
+ "tipo_convocante": [
+  "gobierno local"
+ ],
+ "tipo_organizacion": "Público",
+ "tipo_proceso": [
+  "Participación Digital",
+  "Gobernanza Colaborativa"
+ ],
+ "etapas_uso_IA": [],
+ "continuidad": "Uso único",
+ "nivel_consolidacion": 0,
+ "sistema_IA": null,
+ "tipos_IA_familia": [],
+ "usa_LLM_generativa": "no",
+ "funcion_IA": null,
+ "rol_IA": "no-claro",
+ "usa_IA_en_proceso": "no",
+ "tipo_desarrollador_IA": [],
+ "origen_desarrollador": null,
+ "entra_tentativo": "NO",
+ "justificacion_elegibilidad": "NO ENTRA. Aunque '¡Armemos un Plan!' es un proceso participativo real y masivo (675,484 participaciones; 15,899 propuestas escritas) para un plan estatal, NO hay evidencia de que el análisis/agrupación/clasificación del CONTENIDO de las propuestas se realizara con IA/NLP/minería de texto/clustering/topic modeling. Al contrario: la descripción metodológica oficial indexada (vía IIEG/SPPC) señala que 'las propuestas se construyeron a partir de las opiniones y expresiones de la ciudadanía durante la consulta, AGRUPANDO IDEAS SIMILARES y redactándolas de forma clara y ordenada, respetando siempre la intención original de quienes participaron' — es decir, una SISTEMATIZACIÓN EDITORIAL/TEMÁTICA MANUAL por analistas humanos (leer, agrupar y re-redactar), no un pipeline automatizado. El proceso se apoya además en encuesta representativa 'casa por casa' (rigor estadístico), foros y mesas de diálogo donde equipos técnicos identificaron 1,349 problemáticas — metodología participativa/estadística clásica. Jalisco sí tiene una 'Política de Inteligencia Artificial y Gobernanza de Datos' (Coordinación General de Innovación Gubernamental, ai.jalisco.gob.mx), pero es un marco regulatorio/ético de uso de IA en el gobierno; NINGUNA fuente la vincula al análisis de las 15,899 propuestas de esta consulta. Tras ~12 búsquedas en español (incluyendo términos 'inteligencia artificial', 'procesamiento de lenguaje natural', 'minería de texto', 'clustering', IIEG), no aparece ninguna mención de IA aplicada al contenido de los aportes. Por criterio del índice (se excluye si la sistematización fue manual/temática sin IA), rol_IA=no-claro (sin IA identificada sobre contenido) y usa_IA_en_proceso=no. Se deja como NO (no DUDA) porque la evidencia metodológica positiva apunta explícitamente a agrupación humana, no solo a ausencia de datos.",
+ "confianza": "MEDIA",
+ "evidencia_verbatim": {
+  "usa_IA_en_proceso": "Las propuestas se construyeron a partir de las opiniones y expresiones de la ciudadanía durante la consulta, agrupando ideas similares y redactándolas de forma clara y ordenada, respetando siempre la intención original de quienes participaron. (Descripción metodológica oficial de armemosunplan.mx/propuestas-ciudadanas, recuperada vía WebSearch que indexa la página; no menciona IA/NLP/algoritmos: describe agrupación editorial manual.)",
+  "tipo_proceso": "'Armemos un Plan' se llevó a cabo de manera abierta e incluyente del 20 de febrero al 17 de abril por el Gobierno de Jalisco, a través de la Secretaría de Planeación y Participación Ciudadana; la consulta digital recibió 15,899 propuestas ciudadanas.",
+  "nivel_consolidacion": "Se realizaron 12 foros regionales y la instalación de un Consejo de Planeación Participativa en cada región de Jalisco; se llevaron a cabo 168 mesas regionales, 47 sectoriales y 9 grandes foros temáticos... donde se identificaron y discutieron 1,349 problemáticas planteadas por la ciudadanía. (Metodología participativa/estadística; sin componente de IA.)",
+  "estado_actividad": "Jalisco concluyó la primera etapa de la consulta ciudadana 'Armemos un Plan' con una cifra inédita de 675,484 participaciones, base para desarrollar el Plan Estatal de Desarrollo y Gobernanza 2024-2030.",
+  "tipo_convocante": "Gobierno de Jalisco, a través de la Secretaría de Planeación y Participación Ciudadana (coordinación de Cynthia Cantero Pacheco).",
+  "rol_IA": "GAP: ninguna fuente atribuye a IA/NLP/minería de texto/clustering el análisis o la agrupación de las 15,899 propuestas; la única descripción del método es 'agrupando ideas similares' de forma manual/editorial.",
+  "usa_LLM_generativa": "GAP/negativo: no se menciona ningún LLM ni herramienta generativa aplicada a las propuestas de la consulta."
+ },
+ "fuentes": [
+  {
+   "url": "https://armemosunplan.mx/propuestas-ciudadanas/",
+   "estado": "403 (WebFetch); contenido vía WebSearch",
+   "cita": "Las propuestas se construyeron a partir de las opiniones y expresiones de la ciudadanía durante la consulta, agrupando ideas similares y redactándolas de forma clara y ordenada, respetando siempre la intención original de quienes participaron. (Evidencia DECISIVA de sistematización manual/editorial, no IA. WebFetch devolvió HTTP 403; texto recuperado por WebSearch que indexa esta URL oficial.)"
+  },
+  {
+   "url": "https://armemosunplan.mx/wp-content/uploads/2025/10/Armemos-un-Plan-Informe-de-Consulta-COLOR-NNA-v2.4.pdf",
+   "estado": "403 (WebFetch/curl bloqueados por proxy)",
+   "cita": "Informe de Consulta oficial de 'Armemos un Plan' (SPPC). Vía WebSearch: metodología basada en encuesta representativa con rigor estadístico y metodológico aplicada casa por casa, foros, mesas temáticas y consulta a NNA con metodologías lúdicas; NO se logró leer el PDF completo (403), pero los fragmentos indexados no mencionan IA/NLP para el análisis de propuestas."
+  },
+  {
+   "url": "https://plan.jalisco.gob.mx/wp-content/uploads/2025/09/Plan-Estatal-de-Desarrollo-y-Gobernanza-V0.25.pdf",
+   "estado": "403 (WebFetch/curl bloqueados)",
+   "cita": "Documento oficial del Plan Estatal de Desarrollo y Gobernanza 2024-2030 (V0.25). No se pudo descargar (HTTP 403); fragmentos vía WebSearch describen consulta pública que integró opiniones de +675,000 personas y estructura de ejes/temas/objetivos/proyectos, sin referencia a IA en el tratamiento de propuestas."
+  },
+  {
+   "url": "https://plan.jalisco.gob.mx/documentos-metodologicos/",
+   "estado": "403 (WebFetch)",
+   "cita": "Página de 'Documentos metodológicos' del sistema estatal de planeación de Jalisco; contiene guías metodológicas de planeación participativa (ediciones 2018-2024 y 2024-2030). Ninguna referencia indexada a IA/NLP/minería de texto para analizar aportes."
+  },
+  {
+   "url": "https://www.clickgdl.com/noticias/jalisco/concluye-consulta-ciudadana-historica-en-jalisco-para-la-construccion-del-plan-estatal-de-desarrollo-y-gobernanza-2024-2030/",
+   "estado": "indexado (WebSearch)",
+   "cita": "Concluye consulta ciudadana histórica en Jalisco... 12 foros regionales, Consejo de Planeación Participativa por región, +3,800 personas presenciales; la consulta digital recibió 15,899 propuestas ciudadanas. (Prensa; corrobora escala y método participativo, sin mención de IA.)"
+  },
+  {
+   "url": "https://elrespetable.com/2025/05/13/es-jalisco-referente-nacional-e-internacional-en-participacion-ciudadana-con-la-consulta-armemos-un-plan/",
+   "estado": "indexado (WebSearch)",
+   "cita": "Es Jalisco referente nacional e internacional en participación ciudadana con la consulta '¡Armemos un Plan!' — 675,484 participaciones; 15,899 propuestas ciudadanas. (Prensa; sin mención de IA/NLP en el análisis.)"
+  },
+  {
+   "url": "https://lanotadeguadalajara.com/ciencia-y-tecnologia/lanza-el-gobierno-de-jalisco-su-politica-de-inteligencia-artificial-y-gobernanza-de-datos/",
+   "estado": "indexado (WebSearch)",
+   "cita": "El Gobierno de Jalisco, a través de la Coordinación General de Innovación, lanzó su Política de Inteligencia Artificial y Gobernanza de Datos... marco normativo y estratégico para uso ético y responsable de IA en el gobierno. (Confirma que la IA de Jalisco es un marco de gobernanza/regulación, NO una herramienta aplicada a analizar las propuestas de 'Armemos un Plan'.)"
+  },
+  {
+   "url": "https://ai.jalisco.gob.mx/",
+   "estado": "no verificado directamente (referenciado)",
+   "cita": "Portal 'Foro de Inteligencia Artificial en el Gobierno de Jalisco' / Coordinación General de Innovación Gubernamental. Presenta modelos de IA desarrollados en la coordinación, pero ninguna fuente vincula estos modelos al análisis de las 15,899 propuestas de la consulta."
+  }
+ ],
+ "gaps": [
+  {
+   "campo": "usa_IA_en_proceso / rol_IA",
+   "motivo": "No se pudo leer directamente (HTTP 403 en WebFetch y curl bloqueado por el proxy en todos los dominios .gob.mx/.mx y PDFs) el Informe de Consulta completo ni el anexo/documento metodológico del Plan para confirmar al 100% que NINGUNA etapa usó IA. La conclusión NO se apoya en la descripción oficial indexada ('agrupando ideas similares... manual/editorial') + ausencia total de mención de IA tras ~12 búsquedas dirigidas.",
+   "url_para_buscar": "https://armemosunplan.mx/wp-content/uploads/2025/10/Armemos-un-Plan-Informe-de-Consulta-COLOR-NNA-v2.4.pdf"
+  },
+  {
+   "campo": "sistema_IA",
+   "motivo": "No aplica: no se identificó ningún sistema de IA aplicado al contenido de los aportes. Si existiera un análisis automatizado no publicitado, estaría en el anexo metodológico no accesible.",
+   "url_para_buscar": "https://plan.jalisco.gob.mx/documentos-metodologicos/"
+  },
+  {
+   "campo": "vinculo_IIEG",
+   "motivo": "El IIEG (instituto estadístico) apoyó la consulta; no se confirmó si aplicó técnicas de análisis de texto/minería a las propuestas abiertas. Su rol documentado es estadístico-geográfico (encuestas, indicadores), no NLP.",
+   "url_para_buscar": "https://iieg.gob.mx/ns/"
+  }
+ ],
+ "alertas": [
+  "ALERTA_DECISION: NO (no DUDA). La DUDA central del candidato (¿IA o manual?) se resuelve con evidencia POSITIVA de método manual: la propia página oficial de propuestas dice 'agrupando ideas similares y redactándolas... respetando la intención original', lenguaje de sistematización editorial humana, no de clustering/NLP automatizado.",
+  "ALERTA_CONTRASTE_GUANAJUATO: A diferencia del caso MX-guanajuato-inteligente-2024-2030 (donde la página oficial de metodología afirma explícitamente 'utilizaron herramientas de inteligencia artificial' para procesar/organizar los aportes → SI), en Jalisco NINGUNA fuente afirma uso de IA sobre las propuestas. No extrapolar el caso Guanajuato a Jalisco.",
+  "ALERTA_FUENTES_403: WebFetch devolvió HTTP 403 en TODOS los dominios objetivo (armemosunplan.mx, plan.jalisco.gob.mx, ija.gob.mx) y los PDFs; curl directo también bloqueado por el proxy (CONNECT tunnel 403). Toda la evidencia textual se recuperó vía WebSearch (que sí indexa esas URLs), igual que en fichas previas del índice.",
+  "ALERTA_POLITICA_IA_SEPARADA: Jalisco tiene Política de IA y Gobernanza de Datos + portal ai.jalisco.gob.mx + Foro de IA (2026), pero es gobernanza/regulación de IA en el gobierno, NO un sistema que haya analizado las 15,899 propuestas. No confundir 'estado con política de IA' con 'consulta que usó IA'.",
+  "ALERTA_CONVOCANTE: convocante es el Gobierno del Estado de Jalisco (nivel estatal/subnacional). Por convención del índice (sin categoría 'gobierno estatal') se clasifica como 'gobierno local'.",
+  "ALERTA_NIVEL_CONSOLIDACION: nivel_consolidacion=0 y continuidad='Uso único' respecto al USO DE IA (no hay IA en el proceso); la consulta como ejercicio participativo fue puntual (una edición, feb-abr 2025). El sitio/Plan permanece publicado pero sin nueva ronda de consulta ni IA.",
+  "ALERTA_ANO: la consulta se realizó en 2025 (20-feb a 17-abr-2025); el Plan cubre el periodo 2024-2030. ano_inicio/ano_cierre del PROCESO se fijan en 2025."
+ ],
+ "fuente_datos": "candidato_equipo_2026"
+}
