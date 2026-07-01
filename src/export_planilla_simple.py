@@ -40,12 +40,14 @@ TH=Side(style="thin",color="BFBFBF"); BOR=Border(left=TH,right=TH,top=TH,bottom=
 # Los casos frontera (civic tech ↔ participación) son decisión del equipo; aquí
 # van con mi recomendación y se pueden cambiar a mano.
 
-# Excluidos CONFIRMADOS (no es proceso de participación):
+# Excluidos CONFIRMADOS (no es proceso de participación / sin IA sobre el contenido):
 EXCLUIR = {  # caso_id -> motivo bajo el criterio corregido
  "PE-sistema-de-computo-con-ia-para-las-elecc":"Conteo electoral (OCR de actas): votación política, no participación.",
  "CO-descongestion-de-solicitudes-diarias-del":"Atención ciudadana (triage de 10.000 correos/día): servicio, no participación.",
  "BR-participact-brasil":"Civic tech de reporte urbano (app para reportar problemas): no es un proceso participativo.",
  "CR-diara":"Civic tech de fiscalización de obras (control social vía app): no es un proceso participativo.",
+ "DO-ciudadania":"Solo atención/servicio; la 'participación' es co-diseñar la IA aportando datos, no consulta pública. Sin módulo de participación (verificado). Decisión del equipo.",
+ "CO-dnp-dialogos-regionales-vinculantes-pnd":"Participación real, pero el análisis fue manual/cualitativo; solo text-analytics ligero (nubes de palabras + tabulación), sin NLP sobre el contenido (verificado). Decisión del equipo.",
 }
 # Confirmados -> ENTRA (sí es participación; IA en alguna etapa, incl. logística):
 RESCATE_ENTRA = {  # caso_id -> por qué entra
@@ -60,8 +62,6 @@ RESCATE_ENTRA = {  # caso_id -> por qué entra
 # DUDA con revisión de posible IA/participación (investigadas; recomendación + URL):
 DUDA_REVISAR = {  # caso_id -> hallazgo + recomendación
  "TT-engagett-plataforma-go-vocal":"IA MIXTA: chatbot AskNDTS (IA) activo que ayuda a ENTENDER el NDTS (facilitación/info, no procesa aportes). El módulo Sensemaking de Go Vocal existe pero NO se confirma activado ni anunciado para TT. Ministerio ahora MPAAI (Public Admin + AI). → DUDA: ¿basta el chatbot explicador como 'IA en el proceso'? Ver mdt.gov.tt (EngageTT + AskNDTS).",
- "CO-dnp-dialogos-regionales-vinculantes-pnd":"Análisis de fondo MANUAL/cualitativo (lectura + recurrencia, 7 categorías). Solo text-analytics ligero: nubes de palabras + tabulación por sectores (UCD). Sin NLP profundo ni ConTexto confirmado en los DRV → RECOMIENDO NO. Ver dialogosregionales.dnp.gov.co/resultados-dialogos.",
- "DO-ciudadania":"Solo funciones de ATENCIÓN/SERVICIO; la 'participación' que menciona es co-diseñar la IA aportando datos, no consulta/decisión pública. No se halló módulo de participación → RECOMIENDO NO. Ver genia.ai/plataforma.",
 }
 # DUDA de frontera (aún por decidir; participación-ish):
 RECLASIF_DUDA = {  # caso_id -> qué confirmar

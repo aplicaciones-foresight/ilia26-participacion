@@ -1,8 +1,8 @@
 # Guía: validar los casos y pasar al cálculo — ILIA 2026
 
 **Archivo de trabajo:** `planilla_ILIA2026_SIMPLE.xlsx` (6 pestañas · **criterio corregido**).
-**Estado:** 40 casos entran/dudosos · 67 excluidos · 107 en total.
-Tras el dedup de e-Cidadania → **39 iniciativas efectivas**.
+**Estado:** 38 casos entran/dudosos · 69 excluidos · 107 en total.
+Tras el dedup de e-Cidadania → **37 iniciativas efectivas**.
 
 ## Las 6 pestañas
 1. **Casos (entran+dudosos)** — el set de trabajo, con las columnas listas para calcular y una columna **«Acción sugerida»**.
