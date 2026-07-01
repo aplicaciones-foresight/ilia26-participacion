@@ -85,6 +85,27 @@ Piauí** (processing). A favor del equipo (tienen fuente que yo no hallé): **DN
 > los 4 del descubrimiento amplio → aparecen como **«(sin revisar)»** en la
 > columna EQUIPO; su veredicto oficial usa mi evidencia hasta que el equipo decida.
 
+### Candidatos del equipo (referencia CENIA) investigados — 8, ninguno entra
+
+De su planilla de referencia (`Planilla_Casos_para_Analisis_ILIA2026`) investigué a
+fondo los 8 candidatos «por verificar» (decisión por evidencia, disciplina verbatim):
+
+| Candidato | Decisión | Motivo |
+|---|:--:|---|
+| BR Projeto Lumina (UnB-MDS) | NO | Ejercicio académico (curso ing. software UnB), sin adopción oficial |
+| BR BP-Classificador (BRISA/UnB) | NO | **Duplicado** de Brasil Participativo (ya contado) |
+| BR Participe+ (UnB-MDS) | NO | Ejercicio estudiantil; solapa Brasil Participativo |
+| MX Jalisco «Armemos un Plan» | **DUDA (lean NO)** | Metodología oficial = agrupación manual; PDF del informe bloqueado (403) → revisar a mano |
+| CO Atlántico (LITA) | NO | IA geoespacial/almacenamiento, no sobre el texto de los aportes |
+| PY Consultas IA-PNUD | NO | Análisis cualitativo/estadístico; la IA es el tema |
+| UY Consulta «Infancia» | NO | Análisis aún sin ejecutar (sep-oct 2026); sin IA |
+| GT SEGEPLAN | NO | Productividad interna, no sistematiza aportes de PDM |
+
+> Los 3 BR son proyectos UnB-MDS que operan **sobre** Brasil Participativo (evitan
+> doble conteo). **Jalisco** queda DUDA por su escala (675k participaciones) + PDF
+> bloqueado. Están en el bloque «4. Descubrimiento amplio» (fuente_datos =
+> candidato_equipo_2026). Universo total: **107 casos**.
+
 > `SI`/`NO`/`DUDA` es **tentativo** (criterio: IA sobre el **CONTENIDO** de los
 > aportes dentro de un proceso participativo). La decisión final es del equipo.
 > `SI*` = entra en escenario A; revisar en escenario B (DO CiudadanIA, CL «Tenemos

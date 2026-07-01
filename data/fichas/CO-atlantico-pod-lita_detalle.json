@@ -1,124 +1,154 @@
 {
-  "caso_id": "CO-atlantico-pod-lita",
-  "pais": "CO",
-  "nombre_caso": "Atlántico – Plan de Ordenamiento Departamental (POD) 2025-2050 / plataforma LITA",
-  "bloque": "4-descubrimiento-amplio",
-  "proceso_participativo": "Proceso participativo de formulación del Plan de Ordenamiento Departamental (POD) 2025-2050 del departamento del Atlántico (Colombia), liderado por la Gobernación del Atlántico (Secretaría de Planeación). Incluye instalación de un Comité de Coordinación Interinstitucional (20 enero 2026), Comisión Regional de Ordenamiento Territorial, mesas/talleres subregionales de co-creación en las cinco subregiones (Metropolitana, Centro, Sur, Oriental, Costera) con ~500 asistentes (diputados, alcaldes, consejos comunitarios, comunidades étnicas, gremios, academia, entidades nacionales). Como soporte tecnológico se usa la plataforma LITA (Laboratorio de Innovación Territorial Atlántico), 'habilitada por IA', donde se almacena, procesa y construye la información que alimenta el documento POD, y una herramienta/base de datos con IA que permite a los municipios cruzar datos técnicos para actualizar sus planes de ordenamiento y estructurar proyectos; los resultados de los talleres se recopilan en un visor interactivo con 110 proyectos estratégicos.",
-  "ano_inicio": "2026",
-  "ano_cierre": null,
-  "estado_actividad": "activo",
-  "evidencia_actividad_2026": "Proceso en curso en 2026: POD formalmente lanzado el 20 de enero de 2026 (Comité Interinstitucional); mesas subregionales iniciadas en marzo 2026; segunda fase de talleres subregionales anunciada para junio 2026. Fuentes de prensa fechadas en 2026 (barranquillaglobal 23/06/2026; alternativacaribe 09/03/2026; ruedalaeconomia 17/03/2026).",
-  "organizacion_a_cargo": "Gobernación del Atlántico (Secretaría de Planeación)",
-  "tipo_convocante": [
-    "gobierno local"
-  ],
-  "tipo_organizacion": [
-    "Público"
-  ],
-  "tipo_proceso": [
-    "Gobernanza Colaborativa"
-  ],
-  "etapas_uso_IA": [
-    "Planificación",
-    "Análisis"
-  ],
-  "continuidad": [
-    "Plataforma"
-  ],
-  "nivel_consolidacion": 1,
-  "sistema_IA": "Plataforma LITA (Laboratorio de Innovación Territorial Atlántico), descrita como plataforma 'habilitada por IA' / base de datos basada en inteligencia artificial, para almacenar, procesar y estructurar información técnica territorial y cruzar datos técnicos/geoespaciales de punta que alimentan el documento POD y la estructuración de proyectos. No se detalla arquitectura ni familia técnica de IA. No hay evidencia de que analice el texto de los aportes ciudadanos (clasificar/agrupar/resumir/sentimiento).",
-  "tipos_IA_familia": [
-    "No especificado"
-  ],
-  "usa_LLM_generativa": "no-claro",
-  "funcion_IA": "Almacenar, procesar y estructurar información territorial y cruzar datos técnicos/geoespaciales de punta para alimentar el documento POD, actualizar planes de ordenamiento municipales y estructurar/priorizar proyectos (comparaciones, proyecciones y estudios para decisiones de ordenamiento territorial). No consta procesamiento del contenido textual de los aportes ciudadanos.",
-  "rol_IA": "apoyo",
-  "usa_IA_en_proceso": "sí",
-  "tipo_desarrollador_IA": [
-    "Gobierno"
-  ],
-  "origen_desarrollador": "Regional",
-  "entra_tentativo": "NO",
-  "justificacion_elegibilidad": "NO ELEGIBLE. Dentro de un proceso participativo real (POD con mesas/talleres subregionales), la IA (plataforma LITA / base de datos con IA) cumple funciones de ALMACENAMIENTO, PROCESAMIENTO y ESTRUCTURACIÓN de información técnica territorial y CRUCE de datos técnicos/geoespaciales de punta para actualizar planes de ordenamiento y estructurar proyectos. NO hay evidencia en ninguna fuente de que la IA procese el CONTENIDO/texto de los aportes ciudadanos (clasificar, agrupar, resumir o analizar sentimiento de lo aportado en las mesas). Los resultados de los talleres se compilan en un 'visor interactivo', pero no se atribuye a la IA el análisis del texto de los aportes. Esto encaja exactamente en la exclusión del criterio: 'NO si la IA (plataforma LITA) solo cruza datos GEOESPACIALES/técnicos o almacena/estructura info sin analizar el texto de los aportes'. Por tanto: entra=NO. Reevaluar si futuras fuentes documentan que LITA sistematiza/clasifica/resume el texto de los aportes ciudadanos.",
-  "confianza": "MEDIA-ALTA (evidencia consistente en ~10 fuentes independientes de prensa 2026 y notas oficiales resumidas; limitación: WebFetch a atlantico.gov.co y mirrors de prensa devolvió HTTP 403, por lo que las citas verbatim provienen de extractos/síntesis de resultados de búsqueda, no del HTML completo de la fuente primaria)",
-  "evidencia_verbatim": {
-    "LITA_definicion": "'El Laboratorio de Innovación Territorial Atlántico (LITA) ... plataforma innovadora donde se almacenará, procesará y construirá la información que alimentará el documento POD, con ocho ejes temáticos priorizados' (extracto de resultados de búsqueda sobre atlantico.gov.co, nota 27250 'Plan de Ordenamiento Departamental toma forma en el Atlántico'). NOTA: verbatim reconstruido desde snippet de búsqueda; fuente primaria devolvió 403 a WebFetch.",
-    "LITA_proposito_participacion": "'facilitar la participación ciudadana a través de un modelo de planificación y gestión territorial con enfoques técnicos y participativos, que integra instrumentos normativos y experimentales a escalas local, regional y nacional, y combina gobernanza pública, innovación social y soluciones basadas en evidencia' (extracto de resultados de búsqueda sobre nota 27250).",
-    "herramienta_IA_cruce_datos_tecnicos": "La herramienta tecnológica potenciada con IA y disponible para los ciudadanos permite a los municipios 'cruzar datos técnicos de punta' para actualizar sus planes de ordenamiento territorial y 'estructurar proyectos' con impacto global y responsabilidad ambiental (síntesis coincidente en varias fuentes: notasdeactualidad; noticiasbq; 321noticiasenaccion; nota 27480/27548). El texto de la fuente enfatiza cruce de datos técnicos/geoespaciales, NO análisis del texto de aportes.",
-    "base_datos_IA_gobernador": "El gobernador Eduardo Verano destacó que el Atlántico 'nunca antes había tenido una base de datos basada en inteligencia artificial' que incluye información clave para la sostenibilidad y el desarrollo territorial; la base de datos con IA permite 'comparaciones, proyecciones y estudios' y decisiones para ejecutar proyectos (p. ej., construcción de vías minimizando impacto ambiental) (síntesis de resultados de búsqueda, noticiasbq / 321noticiasenaccion).",
-    "visor_interactivo": "'El equipo técnico del POD presentó un visor interactivo que recopila los resultados y conclusiones de los talleres intersectoriales y subregionales desarrollados en marzo ... con 110 proyectos estratégicos' (síntesis de resultados de búsqueda). El visor recopila/estructura resultados; no se atribuye a IA el análisis del contenido textual de los aportes.",
-    "rol_IA": "Función descrita = almacenar, procesar, estructurar información y cruzar datos técnicos/geoespaciales (apoyo). NO consta análisis de contenido (clasificar/agrupar/resumir/sentimiento) del texto de los aportes ciudadanos.",
-    "usa_IA_en_proceso": "Sí: la plataforma LITA y una base de datos con IA forman parte declarada del soporte tecnológico del POD, pero operan sobre datos técnicos/geoespaciales, no sobre el texto de los aportes."
+ "caso_id": "CO-atlantico-pod-lita",
+ "pais": "CO",
+ "nombre_caso": "Atlántico – Plan de Ordenamiento Departamental (POD) 2025-2050 / plataforma LITA",
+ "bloque": "4-descubrimiento-amplio",
+ "proceso_participativo": "Proceso participativo de formulación del Plan de Ordenamiento Departamental (POD) 2025-2050 del departamento del Atlántico (Colombia), liderado por la Gobernación del Atlántico (Secretaría de Planeación). Incluye instalación de un Comité de Coordinación Interinstitucional (20 enero 2026), Comisión Regional de Ordenamiento Territorial, mesas/talleres subregionales de co-creación en las cinco subregiones (Metropolitana, Centro, Sur, Oriental, Costera) con ~500 asistentes (diputados, alcaldes, consejos comunitarios, comunidades étnicas, gremios, academia, entidades nacionales). Como soporte tecnológico se usa la plataforma LITA (Laboratorio de Innovación Territorial Atlántico), 'habilitada por IA', donde se almacena, procesa y construye la información que alimenta el documento POD, y una herramienta/base de datos con IA que permite a los municipios cruzar datos técnicos para actualizar sus planes de ordenamiento y estructurar proyectos; los resultados de los talleres se recopilan en un visor interactivo con 110 proyectos estratégicos.",
+ "ano_inicio": "2026",
+ "ano_cierre": null,
+ "estado_actividad": "activo",
+ "evidencia_actividad_2026": "Proceso en curso en 2026: POD formalmente lanzado el 20 de enero de 2026 (Comité Interinstitucional); mesas subregionales iniciadas en marzo 2026; segunda fase de talleres subregionales anunciada para junio 2026. Fuentes de prensa fechadas en 2026 (barranquillaglobal 23/06/2026; alternativacaribe 09/03/2026; ruedalaeconomia 17/03/2026).",
+ "organizacion_a_cargo": "Gobernación del Atlántico (Secretaría de Planeación)",
+ "tipo_convocante": [
+  "gobierno local"
+ ],
+ "tipo_organizacion": [
+  "Público"
+ ],
+ "tipo_proceso": [
+  "Gobernanza Colaborativa"
+ ],
+ "etapas_uso_IA": [
+  "Planificación",
+  "Análisis"
+ ],
+ "continuidad": [
+  "Plataforma"
+ ],
+ "nivel_consolidacion": 1,
+ "sistema_IA": "Plataforma LITA (Laboratorio de Innovación Territorial Atlántico), descrita como plataforma 'habilitada por IA' / base de datos basada en inteligencia artificial, para almacenar, procesar y estructurar información técnica territorial y cruzar datos técnicos/geoespaciales de punta que alimentan el documento POD y la estructuración de proyectos. No se detalla arquitectura ni familia técnica de IA. No hay evidencia de que analice el texto de los aportes ciudadanos (clasificar/agrupar/resumir/sentimiento).",
+ "tipos_IA_familia": [
+  "No especificado"
+ ],
+ "usa_LLM_generativa": "no-claro",
+ "funcion_IA": "Almacenar, procesar y estructurar información territorial y cruzar datos técnicos/geoespaciales de punta para alimentar el documento POD, actualizar planes de ordenamiento municipales y estructurar/priorizar proyectos (comparaciones, proyecciones y estudios para decisiones de ordenamiento territorial). No consta procesamiento del contenido textual de los aportes ciudadanos.",
+ "rol_IA": "apoyo",
+ "usa_IA_en_proceso": "sí",
+ "tipo_desarrollador_IA": [
+  "Gobierno"
+ ],
+ "origen_desarrollador": "Regional",
+ "entra_tentativo": "NO",
+ "justificacion_elegibilidad": "NO ELEGIBLE. Dentro de un proceso participativo real (POD con mesas/talleres subregionales), la IA (plataforma LITA / base de datos con IA) cumple funciones de ALMACENAMIENTO, PROCESAMIENTO y ESTRUCTURACIÓN de información técnica territorial y CRUCE de datos técnicos/geoespaciales de punta para actualizar planes de ordenamiento y estructurar proyectos. NO hay evidencia en ninguna fuente de que la IA procese el CONTENIDO/texto de los aportes ciudadanos (clasificar, agrupar, resumir o analizar sentimiento de lo aportado en las mesas). Los resultados de los talleres se compilan en un 'visor interactivo', pero no se atribuye a la IA el análisis del texto de los aportes. Esto encaja exactamente en la exclusión del criterio: 'NO si la IA (plataforma LITA) solo cruza datos GEOESPACIALES/técnicos o almacena/estructura info sin analizar el texto de los aportes'. Por tanto: entra=NO. Reevaluar si futuras fuentes documentan que LITA sistematiza/clasifica/resume el texto de los aportes ciudadanos.",
+ "confianza": "MEDIA-ALTA (evidencia consistente en ~10 fuentes independientes de prensa 2026 y notas oficiales resumidas; limitación: WebFetch a atlantico.gov.co y mirrors de prensa devolvió HTTP 403, por lo que las citas verbatim provienen de extractos/síntesis de resultados de búsqueda, no del HTML completo de la fuente primaria)",
+ "evidencia_verbatim": {
+  "LITA_definicion": "'El Laboratorio de Innovación Territorial Atlántico (LITA) ... plataforma innovadora donde se almacenará, procesará y construirá la información que alimentará el documento POD, con ocho ejes temáticos priorizados' (extracto de resultados de búsqueda sobre atlantico.gov.co, nota 27250 'Plan de Ordenamiento Departamental toma forma en el Atlántico'). NOTA: verbatim reconstruido desde snippet de búsqueda; fuente primaria devolvió 403 a WebFetch.",
+  "LITA_proposito_participacion": "'facilitar la participación ciudadana a través de un modelo de planificación y gestión territorial con enfoques técnicos y participativos, que integra instrumentos normativos y experimentales a escalas local, regional y nacional, y combina gobernanza pública, innovación social y soluciones basadas en evidencia' (extracto de resultados de búsqueda sobre nota 27250).",
+  "herramienta_IA_cruce_datos_tecnicos": "La herramienta tecnológica potenciada con IA y disponible para los ciudadanos permite a los municipios 'cruzar datos técnicos de punta' para actualizar sus planes de ordenamiento territorial y 'estructurar proyectos' con impacto global y responsabilidad ambiental (síntesis coincidente en varias fuentes: notasdeactualidad; noticiasbq; 321noticiasenaccion; nota 27480/27548). El texto de la fuente enfatiza cruce de datos técnicos/geoespaciales, NO análisis del texto de aportes.",
+  "base_datos_IA_gobernador": "El gobernador Eduardo Verano destacó que el Atlántico 'nunca antes había tenido una base de datos basada en inteligencia artificial' que incluye información clave para la sostenibilidad y el desarrollo territorial; la base de datos con IA permite 'comparaciones, proyecciones y estudios' y decisiones para ejecutar proyectos (p. ej., construcción de vías minimizando impacto ambiental) (síntesis de resultados de búsqueda, noticiasbq / 321noticiasenaccion).",
+  "visor_interactivo": "'El equipo técnico del POD presentó un visor interactivo que recopila los resultados y conclusiones de los talleres intersectoriales y subregionales desarrollados en marzo ... con 110 proyectos estratégicos' (síntesis de resultados de búsqueda). El visor recopila/estructura resultados; no se atribuye a IA el análisis del contenido textual de los aportes.",
+  "rol_IA": "Función descrita = almacenar, procesar, estructurar información y cruzar datos técnicos/geoespaciales (apoyo). NO consta análisis de contenido (clasificar/agrupar/resumir/sentimiento) del texto de los aportes ciudadanos.",
+  "usa_IA_en_proceso": "Sí: la plataforma LITA y una base de datos con IA forman parte declarada del soporte tecnológico del POD, pero operan sobre datos técnicos/geoespaciales, no sobre el texto de los aportes."
+ },
+ "fuentes": [
+  {
+   "url": "https://www.atlantico.gov.co/index.php/noticias/prensa-planeacion/27250-plan-de-ordenamiento-departamental-toma-forma-en-el-atlantico",
+   "estado": "web-2026 (403 en WebFetch; contenido vía extractos de WebSearch)",
+   "cita": "LITA = Laboratorio de Innovación Territorial Atlántico; plataforma innovadora donde se almacenará, procesará y construirá la información que alimentará el documento POD; facilitar la participación ciudadana con enfoques técnicos y participativos."
   },
-  "fuentes": [
-    {
-      "url": "https://www.atlantico.gov.co/index.php/noticias/prensa-planeacion/27250-plan-de-ordenamiento-departamental-toma-forma-en-el-atlantico",
-      "estado": "web-2026 (403 en WebFetch; contenido vía extractos de WebSearch)",
-      "cita": "LITA = Laboratorio de Innovación Territorial Atlántico; plataforma innovadora donde se almacenará, procesará y construirá la información que alimentará el documento POD; facilitar la participación ciudadana con enfoques técnicos y participativos."
-    },
-    {
-      "url": "https://www.atlantico.gov.co/index.php/noticias/prensa-planeacion/27480-gobernacion-del-atlantico-inicia-mesas-subregionales-para-la-construccion-del-plan-de-ordenamiento-departamental",
-      "estado": "web-2026 (403 en WebFetch; contenido vía extractos de WebSearch)",
-      "cita": "Mesas subregionales para construcción del POD; herramienta tecnológica potenciada con IA que permite a los municipios cruzar datos técnicos de punta y estructurar proyectos."
-    },
-    {
-      "url": "https://www.atlantico.gov.co/index.php/noticias/educacion/27548-atlantico-avanza-en-la-construccion-del-pod-2050-con-las-subregiones-metropolitana-y-centro",
-      "estado": "web-2026 (403 en WebFetch; contenido vía extractos de WebSearch)",
-      "cita": "Avance del POD 2050 con subregiones Metropolitana y Centro; ~500 asistentes; diagnóstico participativo."
-    },
-    {
-      "url": "https://notasdeactualidad.com/atlanticenses-de-las-cinco-subregiones-sumaron-sus-visiones-al-plan-de-ordenamiento-departamental-2050/",
-      "estado": "web-2026 (403 en WebFetch; contenido vía extractos de WebSearch)",
-      "cita": "Herramienta potenciada con IA disponible para ciudadanos permite cruzar datos técnicos de punta para actualizar POT y estructurar proyectos; visor interactivo con 110 proyectos."
-    },
-    {
-      "url": "https://www.noticiasbq.com/atlantico/gobernador-eduardo-verano-lidero-encuentro-con-alcaldes-para-consolidar-vision-del-departamento-al-2050/",
-      "estado": "web-2026 (403 en WebFetch; contenido vía extractos de WebSearch)",
-      "cita": "Base de datos basada en inteligencia artificial; permite comparaciones, proyecciones y estudios; decisiones sobre proyectos (vías, impacto ambiental)."
-    },
-    {
-      "url": "https://www.321noticiasenaccion.com/incluyen-otros-110-proyectos-municipales-al-pod-del-atlantico/",
-      "estado": "web-2026 (403 en WebFetch; contenido vía extractos de WebSearch)",
-      "cita": "110 proyectos municipales al POD; visor interactivo; herramienta con IA para cruce de datos técnicos."
-    },
-    {
-      "url": "https://www.barranquillaglobal.com/2026/06/23/gobernacion-del-atlantico-realizara-segunda-fase-de-talleres-subregionales-de-construccion-del-plan-de-ordenamiento-departamental/",
-      "estado": "web-2026 (evidencia de actividad 2026; no fetch)",
-      "cita": "Segunda fase de talleres subregionales de construcción del POD (junio 2026)."
-    },
-    {
-      "url": "https://alternativacaribe.info/2026/03/09/gobernacion-inicia-mesas-subregionales-para-la-construccion-del-plan-de-ordenamiento-departamental/",
-      "estado": "web-2026 (403 en WebFetch; título/fecha vía WebSearch)",
-      "cita": "Gobernación inicia mesas subregionales para construcción del POD (marzo 2026)."
-    }
-  ],
-  "gaps": [
-    {
-      "campo": "rol_IA / funcion_IA",
-      "motivo": "No se encontró en ninguna fuente evidencia explícita de que LITA/IA procese el TEXTO de los aportes ciudadanos (clasificar/agrupar/resumir/sentimiento). Toda la descripción apunta a almacenamiento/estructuración y cruce de datos técnicos/geoespaciales. Se requiere confirmación documental (metodología del POD o ficha técnica de LITA) para descartar del todo un componente de análisis de texto.",
-      "url_para_buscar": "https://www.atlantico.gov.co/index.php/avisos-de-planeacion/10022-formulacion-del-plan-de-ordenamiento-departamental-del-atlantico"
-    },
-    {
-      "campo": "sistema_IA / tipos_IA_familia / usa_LLM_generativa",
-      "motivo": "No se detalla la arquitectura ni la familia técnica de IA de LITA ni si usa LLM generativa; solo se la describe genéricamente como 'habilitada por IA' / 'base de datos basada en IA'.",
-      "url_para_buscar": "https://www.atlantico.gov.co/index.php/noticias/prensa-planeacion/27250-plan-de-ordenamiento-departamental-toma-forma-en-el-atlantico"
-    },
-    {
-      "campo": "tipo_desarrollador_IA / origen_desarrollador",
-      "motivo": "No se identificó proveedor/desarrollador externo de LITA. Aparece como iniciativa propia de la Gobernación (Laboratorio de Innovación Territorial Atlántico); no consta empresa/universidad proveedora. AtlantIA es un sistema de IA distinto (defensa jurídica), no LITA.",
-      "url_para_buscar": "https://www.atlantico.gov.co/index.php/noticias/prensa-planeacion/27480-gobernacion-del-atlantico-inicia-mesas-subregionales-para-la-construccion-del-plan-de-ordenamiento-departamental"
-    },
-    {
-      "campo": "evidencia_verbatim (fuente primaria)",
-      "motivo": "WebFetch devolvió HTTP 403 en atlantico.gov.co y en los mirrors de prensa; las citas provienen de extractos/síntesis de WebSearch, no del HTML completo. Verificar verbatim exacto cuando el sitio sea accesible.",
-      "url_para_buscar": "https://www.atlantico.gov.co/index.php/noticias/prensa-planeacion/27250-plan-de-ordenamiento-departamental-toma-forma-en-el-atlantico"
-    }
-  ],
-  "alertas": [
-    "WebFetch bloqueado (HTTP 403) para atlantico.gov.co y para todos los mirrors de prensa probados (notasdeactualidad, noticiasbq, 321noticiasenaccion, noticiascoopercom, alternativacaribe). Las citas verbatim son reconstrucciones desde snippets/síntesis de WebSearch; NO son transcripción directa del HTML de la fuente. Tratar como cita indirecta.",
-    "DUDA CENTRAL resuelta hacia NO: la evidencia consistente indica que la IA (LITA / base de datos con IA) cruza datos técnicos/geoespaciales y almacena/estructura información, sin evidencia de análisis del texto de los aportes ciudadanos. Reabrir si aparece documentación que confirme análisis de contenido textual.",
-    "No confundir LITA con 'AtlantIA', software de IA de la Gobernación para defensa jurídica (analiza/clasifica información jurídica). AtlantIA es un caso distinto y no forma parte de este proceso participativo.",
-    "nivel_consolidacion=1: plataforma nueva (2026), en despliegue dentro de un proceso único de formulación del POD 2025-2050; no hay evidencia aún de recurrencia/permanencia como plataforma consolidada de participación."
-  ],
-  "fuente_datos": "candidato_equipo_2026"
+  {
+   "url": "https://www.atlantico.gov.co/index.php/noticias/prensa-planeacion/27480-gobernacion-del-atlantico-inicia-mesas-subregionales-para-la-construccion-del-plan-de-ordenamiento-departamental",
+   "estado": "web-2026 (403 en WebFetch; contenido vía extractos de WebSearch)",
+   "cita": "Mesas subregionales para construcción del POD; herramienta tecnológica potenciada con IA que permite a los municipios cruzar datos técnicos de punta y estructurar proyectos."
+  },
+  {
+   "url": "https://www.atlantico.gov.co/index.php/noticias/educacion/27548-atlantico-avanza-en-la-construccion-del-pod-2050-con-las-subregiones-metropolitana-y-centro",
+   "estado": "web-2026 (403 en WebFetch; contenido vía extractos de WebSearch)",
+   "cita": "Avance del POD 2050 con subregiones Metropolitana y Centro; ~500 asistentes; diagnóstico participativo."
+  },
+  {
+   "url": "https://notasdeactualidad.com/atlanticenses-de-las-cinco-subregiones-sumaron-sus-visiones-al-plan-de-ordenamiento-departamental-2050/",
+   "estado": "web-2026 (403 en WebFetch; contenido vía extractos de WebSearch)",
+   "cita": "Herramienta potenciada con IA disponible para ciudadanos permite cruzar datos técnicos de punta para actualizar POT y estructurar proyectos; visor interactivo con 110 proyectos."
+  },
+  {
+   "url": "https://www.noticiasbq.com/atlantico/gobernador-eduardo-verano-lidero-encuentro-con-alcaldes-para-consolidar-vision-del-departamento-al-2050/",
+   "estado": "web-2026 (403 en WebFetch; contenido vía extractos de WebSearch)",
+   "cita": "Base de datos basada en inteligencia artificial; permite comparaciones, proyecciones y estudios; decisiones sobre proyectos (vías, impacto ambiental)."
+  },
+  {
+   "url": "https://www.321noticiasenaccion.com/incluyen-otros-110-proyectos-municipales-al-pod-del-atlantico/",
+   "estado": "web-2026 (403 en WebFetch; contenido vía extractos de WebSearch)",
+   "cita": "110 proyectos municipales al POD; visor interactivo; herramienta con IA para cruce de datos técnicos."
+  },
+  {
+   "url": "https://www.barranquillaglobal.com/2026/06/23/gobernacion-del-atlantico-realizara-segunda-fase-de-talleres-subregionales-de-construccion-del-plan-de-ordenamiento-departamental/",
+   "estado": "web-2026 (evidencia de actividad 2026; no fetch)",
+   "cita": "Segunda fase de talleres subregionales de construcción del POD (junio 2026)."
+  },
+  {
+   "url": "https://alternativacaribe.info/2026/03/09/gobernacion-inicia-mesas-subregionales-para-la-construccion-del-plan-de-ordenamiento-departamental/",
+   "estado": "web-2026 (403 en WebFetch; título/fecha vía WebSearch)",
+   "cita": "Gobernación inicia mesas subregionales para construcción del POD (marzo 2026)."
+  }
+ ],
+ "gaps": [
+  {
+   "campo": "rol_IA / funcion_IA",
+   "motivo": "No se encontró en ninguna fuente evidencia explícita de que LITA/IA procese el TEXTO de los aportes ciudadanos (clasificar/agrupar/resumir/sentimiento). Toda la descripción apunta a almacenamiento/estructuración y cruce de datos técnicos/geoespaciales. Se requiere confirmación documental (metodología del POD o ficha técnica de LITA) para descartar del todo un componente de análisis de texto.",
+   "url_para_buscar": "https://www.atlantico.gov.co/index.php/avisos-de-planeacion/10022-formulacion-del-plan-de-ordenamiento-departamental-del-atlantico"
+  },
+  {
+   "campo": "sistema_IA / tipos_IA_familia / usa_LLM_generativa",
+   "motivo": "No se detalla la arquitectura ni la familia técnica de IA de LITA ni si usa LLM generativa; solo se la describe genéricamente como 'habilitada por IA' / 'base de datos basada en IA'.",
+   "url_para_buscar": "https://www.atlantico.gov.co/index.php/noticias/prensa-planeacion/27250-plan-de-ordenamiento-departamental-toma-forma-en-el-atlantico"
+  },
+  {
+   "campo": "tipo_desarrollador_IA / origen_desarrollador",
+   "motivo": "No se identificó proveedor/desarrollador externo de LITA. Aparece como iniciativa propia de la Gobernación (Laboratorio de Innovación Territorial Atlántico); no consta empresa/universidad proveedora. AtlantIA es un sistema de IA distinto (defensa jurídica), no LITA.",
+   "url_para_buscar": "https://www.atlantico.gov.co/index.php/noticias/prensa-planeacion/27480-gobernacion-del-atlantico-inicia-mesas-subregionales-para-la-construccion-del-plan-de-ordenamiento-departamental"
+  },
+  {
+   "campo": "evidencia_verbatim (fuente primaria)",
+   "motivo": "WebFetch devolvió HTTP 403 en atlantico.gov.co y en los mirrors de prensa; las citas provienen de extractos/síntesis de WebSearch, no del HTML completo. Verificar verbatim exacto cuando el sitio sea accesible.",
+   "url_para_buscar": "https://www.atlantico.gov.co/index.php/noticias/prensa-planeacion/27250-plan-de-ordenamiento-departamental-toma-forma-en-el-atlantico"
+  },
+  {
+   "campo": "pais",
+   "motivo": "valor sin cita textual directa (caso NO/DUDA); confirmar manualmente",
+   "url_para_buscar": "https://www.atlantico.gov.co/index.php/noticias/prensa-planeacion/27250-plan-de-ordenamiento-departamental-toma-forma-en-el-atlantico"
+  },
+  {
+   "campo": "tipo_proceso",
+   "motivo": "valor sin cita textual directa (caso NO/DUDA); confirmar manualmente",
+   "url_para_buscar": "https://www.atlantico.gov.co/index.php/noticias/prensa-planeacion/27250-plan-de-ordenamiento-departamental-toma-forma-en-el-atlantico"
+  },
+  {
+   "campo": "etapas_uso_IA",
+   "motivo": "valor sin cita textual directa (caso NO/DUDA); confirmar manualmente",
+   "url_para_buscar": "https://www.atlantico.gov.co/index.php/noticias/prensa-planeacion/27250-plan-de-ordenamiento-departamental-toma-forma-en-el-atlantico"
+  },
+  {
+   "campo": "estado_actividad",
+   "motivo": "valor sin cita textual directa (caso NO/DUDA); confirmar manualmente",
+   "url_para_buscar": "https://www.atlantico.gov.co/index.php/noticias/prensa-planeacion/27250-plan-de-ordenamiento-departamental-toma-forma-en-el-atlantico"
+  },
+  {
+   "campo": "nivel_consolidacion",
+   "motivo": "valor sin cita textual directa (caso NO/DUDA); confirmar manualmente",
+   "url_para_buscar": "https://www.atlantico.gov.co/index.php/noticias/prensa-planeacion/27250-plan-de-ordenamiento-departamental-toma-forma-en-el-atlantico"
+  },
+  {
+   "campo": "tipo_convocante",
+   "motivo": "valor sin cita textual directa (caso NO/DUDA); confirmar manualmente",
+   "url_para_buscar": "https://www.atlantico.gov.co/index.php/noticias/prensa-planeacion/27250-plan-de-ordenamiento-departamental-toma-forma-en-el-atlantico"
+  }
+ ],
+ "alertas": [
+  "WebFetch bloqueado (HTTP 403) para atlantico.gov.co y para todos los mirrors de prensa probados (notasdeactualidad, noticiasbq, 321noticiasenaccion, noticiascoopercom, alternativacaribe). Las citas verbatim son reconstrucciones desde snippets/síntesis de WebSearch; NO son transcripción directa del HTML de la fuente. Tratar como cita indirecta.",
+  "DUDA CENTRAL resuelta hacia NO: la evidencia consistente indica que la IA (LITA / base de datos con IA) cruza datos técnicos/geoespaciales y almacena/estructura información, sin evidencia de análisis del texto de los aportes ciudadanos. Reabrir si aparece documentación que confirme análisis de contenido textual.",
+  "No confundir LITA con 'AtlantIA', software de IA de la Gobernación para defensa jurídica (analiza/clasifica información jurídica). AtlantIA es un caso distinto y no forma parte de este proceso participativo.",
+  "nivel_consolidacion=1: plataforma nueva (2026), en despliegue dentro de un proceso único de formulación del POD 2025-2050; no hay evidencia aún de recurrencia/permanencia como plataforma consolidada de participación."
+ ],
+ "fuente_datos": "candidato_equipo_2026"
 }

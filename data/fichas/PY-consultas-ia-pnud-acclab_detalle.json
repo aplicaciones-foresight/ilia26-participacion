@@ -1,112 +1,142 @@
 {
-  "caso_id": "PY-consultas-ia-pnud-acclab",
-  "pais": "PY",
-  "nombre_caso": "Consultas ciudadanas sobre IA en Paraguay - PNUD Accelerator Lab (AccLab) + Columbia SIPA + MITIC / insumo del diagnóstico AILA (Atlas de IA)",
-  "bloque": "4-descubrimiento-amplio",
-  "proceso_participativo": "El Laboratorio de Aceleración (AccLab) del PNUD Paraguay, junto con estudiantes de la Escuela de Políticas Públicas (SIPA) de la Universidad de Columbia (Nueva York), la Dirección de Innovación del MITIC y el equipo global de los Laboratorios de Aceleración, puso a prueba una metodología participativa para realizar consultas ciudadanas sobre IA en Paraguay (2024-2025). Se recogieron aportes mediante consultas callejeras, grupos focales, encuestas en línea y entrevistas con actores diversos (estudiantes, docentes, jóvenes, autoridades, especialistas en tecnología, trabajadores de sectores populares y adultos de Asunción y otras ciudades). Los resultados (p. ej. brecha urbano-rural en la percepción de la IA y correlación ingreso-optimismo) fueron insumo del diagnóstico AILA (Artificial Intelligence Landscape Assessment / Atlas de IA). El objetivo del piloto fue desarrollar una metodología estandarizada, replicable, para generar datos agregables y comparables a escala regional/global; la base anonimizada de encuestas callejeras y digitales se publicó en formato XLS en Zenodo.",
-  "ano_inicio": 2024,
-  "ano_cierre": 2025,
-  "estado_actividad": "concluido",
-  "evidencia_actividad_2026": "El informe AILA Paraguay (que integra estas consultas como insumo) fue publicado por el PNUD en 2026-06 (PDF 'Artificial Intelligence Landscape Assessment Paraguay'). No hay evidencia de que las consultas ciudadanas se repitan como proceso recurrente; se describen como una prueba piloto de metodología (2024-2025).",
-  "organizacion_a_cargo": "PNUD Paraguay - Laboratorio de Aceleración (Accelerator Lab), en colaboración con la Escuela de Políticas Públicas (SIPA) de la Universidad de Columbia, la Dirección de Innovación del MITIC y la red global de Laboratorios de Aceleración del PNUD.",
-  "tipo_convocante": [
-    "organización internacional",
-    "gobierno nacional",
-    "universidad"
-  ],
-  "tipo_organizacion": "Mixto",
-  "tipo_proceso": [
-    "Participación Digital"
-  ],
-  "etapas_uso_IA": [],
-  "continuidad": "Uso único",
-  "nivel_consolidacion": 1,
-  "sistema_IA": null,
-  "tipos_IA_familia": [],
-  "usa_LLM_generativa": "no",
-  "funcion_IA": "No se identifica un sistema de IA aplicado al ANÁLISIS de los aportes ciudadanos. La IA es el TEMA/objeto de la consulta (se pregunta a la ciudadanía por sus percepciones sobre la IA), no una herramienta usada sobre el contenido de los aportes. El análisis descrito es de encuestas estructuradas (mixed-methods: consulta a expertos, encuestas a actores, indicadores externos, investigación documental y talleres), con datos recogidos vía formularios, publicados como base XLS en Zenodo, y hallazgos expresados como comparaciones y correlaciones (brecha urbano-rural, correlación ingreso-optimismo). No hay mención de NLP, análisis de sentimiento, machine learning, clustering ni de una herramienta tipo Citibeats/CivicLytics sobre los aportes.",
-  "rol_IA": "no-claro",
-  "usa_IA_en_proceso": "no",
-  "tipo_desarrollador_IA": [],
-  "origen_desarrollador": null,
-  "entra_tentativo": "NO",
-  "justificacion_elegibilidad": "El criterio ELEGIBLE exige que dentro de un proceso participativo convocado se use IA (NLP/ML/clustering/sentimiento) SOBRE EL CONTENIDO de los aportes. Aquí ocurre lo contrario: (1) la IA es el TEMA de la consulta (se pregunta a la ciudadania por su percepcion de la IA), y (2) el ANÁLISIS de los aportes es de encuestas/mixed-methods tradicional: recoleccion via formularios (Microsoft Forms en la metodologia AILA estandar), base de datos estructurada publicada en XLS en Zenodo, puntajes ponderados y visualizacion (Power BI), con hallazgos presentados como cruces y correlaciones estadisticas (brecha urbano-rural; a mayor ingreso, mayor optimismo) y sintesis cualitativa de grupos focales/entrevistas. Se verifico especificamente la pista del equipo (¿se uso NLP/sentimiento/clustering o herramienta tipo Citibeats?) y NO se hallo ninguna evidencia de ello en el blog del PNUD, en los reportes AILA/nota metodologica ni en la prensa secundaria (La Tribuna, Foco/La Nacion, Forbes). Por tanto el analisis es cualitativo/estadistico tradicional y la IA solo es el tema => NO ENTRA. Confianza no maxima porque el blog PNUD y el PDF AILA devolvieron HTTP 403 a WebFetch/curl (proxy) y las citas verbatim se reconstruyeron via WebSearch; no obstante, multiples busquedas convergentes (10) coinciden y ninguna menciona NLP sobre los aportes.",
-  "confianza": "MEDIA-ALTA",
-  "evidencia_verbatim": {
-    "proceso_participativo": "El equipo del Laboratorio de Aceleración del PNUD de Paraguay, en colaboración con estudiantes de la Escuela de Políticas Públicas (SIPA) de la Universidad de Columbia en Nueva York, la Dirección de Innovación del Ministerio de Tecnologías de la Información y Comunicación (MITIC), y el equipo global de los Laboratorios de Aceleración, se propuso poner a prueba una metodología participativa para realizar consultas ciudadanas sobre IA en Paraguay. (blog PNUD, via WebSearch; pagina 403 a WebFetch)",
-    "metodos_recoleccion": "Se realizaron consultas callejeras, grupos focales, encuestas online y entrevistas con diversos actores de la sociedad paraguaya, incluyendo estudiantes, docentes, jóvenes, autoridades nacionales, especialistas en tecnología, trabajadores de sectores populares y adultos de Asunción y otras ciudades. (blog PNUD, via WebSearch)",
-    "metodo_analisis": "La comparación de datos entre diferentes países posibilita identificar tendencias, patrones, oportunidades de trabajo colaborativo y desafíos comunes en el desarrollo y la adopción de la IA a nivel global. (blog PNUD, via WebSearch) — descrito como comparacion de datos, sin mencion de NLP/sentimiento/clustering.",
-    "metodologia_AILA": "The methodology relies on a mixed-methods approach, combining expert consultation, stakeholder surveys, external indicators, desk research and workshops. (...) Microsoft Forms is used to distribute and collect responses (...) These scores are then connected to Power BI for dynamic visualization and analysis. (nota metodologica AILA / AILA eng 2025, via WebSearch)",
-    "datos_publicados": "La base de datos anonimizada de las encuestas callejeras y digitales está disponible en formato XLS a través de la plataforma Zenodo. Además, existe una presentación resumida de resultados de la prueba piloto de la metodología, en español. (blog PNUD, via WebSearch) — datos estructurados de encuesta (XLS), no corpus de texto libre procesado por IA.",
-    "hallazgo_urbano_rural": "la población urbana muestra una visión más positiva y optimista de la IA, mientras que en las zonas rurales la percepción tiende a ser más pesimista, con la creencia de que la IA favorece a las personas con mayores recursos y podría eventualmente reemplazar el trabajo humano. (blog PNUD, via WebSearch)",
-    "hallazgo_ingreso_optimismo": "Estas diferencias también aparecen entre personas de diferentes niveles socioeconómicos: a mayor ingreso, mayor optimismo. (blog PNUD, via WebSearch)",
-    "objetivo_piloto": "El objetivo principal de este piloto fue probar y desarrollar una metodología robusta, con criterios estandarizados para la realización de consultas nacionales sobre Tecnologías Emergentes, como es la IA. La metodología tiene el potencial de ser replicada en otros países para generar datos agregables y evidencias comparables a escala regional y global. (blog PNUD, via WebSearch)",
-    "rol_IA": null,
-    "usa_IA_en_proceso": null
+ "caso_id": "PY-consultas-ia-pnud-acclab",
+ "pais": "PY",
+ "nombre_caso": "Consultas ciudadanas sobre IA en Paraguay - PNUD Accelerator Lab (AccLab) + Columbia SIPA + MITIC / insumo del diagnóstico AILA (Atlas de IA)",
+ "bloque": "4-descubrimiento-amplio",
+ "proceso_participativo": "El Laboratorio de Aceleración (AccLab) del PNUD Paraguay, junto con estudiantes de la Escuela de Políticas Públicas (SIPA) de la Universidad de Columbia (Nueva York), la Dirección de Innovación del MITIC y el equipo global de los Laboratorios de Aceleración, puso a prueba una metodología participativa para realizar consultas ciudadanas sobre IA en Paraguay (2024-2025). Se recogieron aportes mediante consultas callejeras, grupos focales, encuestas en línea y entrevistas con actores diversos (estudiantes, docentes, jóvenes, autoridades, especialistas en tecnología, trabajadores de sectores populares y adultos de Asunción y otras ciudades). Los resultados (p. ej. brecha urbano-rural en la percepción de la IA y correlación ingreso-optimismo) fueron insumo del diagnóstico AILA (Artificial Intelligence Landscape Assessment / Atlas de IA). El objetivo del piloto fue desarrollar una metodología estandarizada, replicable, para generar datos agregables y comparables a escala regional/global; la base anonimizada de encuestas callejeras y digitales se publicó en formato XLS en Zenodo.",
+ "ano_inicio": 2024,
+ "ano_cierre": 2025,
+ "estado_actividad": "concluido",
+ "evidencia_actividad_2026": "El informe AILA Paraguay (que integra estas consultas como insumo) fue publicado por el PNUD en 2026-06 (PDF 'Artificial Intelligence Landscape Assessment Paraguay'). No hay evidencia de que las consultas ciudadanas se repitan como proceso recurrente; se describen como una prueba piloto de metodología (2024-2025).",
+ "organizacion_a_cargo": "PNUD Paraguay - Laboratorio de Aceleración (Accelerator Lab), en colaboración con la Escuela de Políticas Públicas (SIPA) de la Universidad de Columbia, la Dirección de Innovación del MITIC y la red global de Laboratorios de Aceleración del PNUD.",
+ "tipo_convocante": [
+  "organización internacional",
+  "gobierno nacional",
+  "universidad"
+ ],
+ "tipo_organizacion": "Mixto",
+ "tipo_proceso": [
+  "Participación Digital"
+ ],
+ "etapas_uso_IA": [],
+ "continuidad": "Uso único",
+ "nivel_consolidacion": 1,
+ "sistema_IA": null,
+ "tipos_IA_familia": [],
+ "usa_LLM_generativa": "no",
+ "funcion_IA": "No se identifica un sistema de IA aplicado al ANÁLISIS de los aportes ciudadanos. La IA es el TEMA/objeto de la consulta (se pregunta a la ciudadanía por sus percepciones sobre la IA), no una herramienta usada sobre el contenido de los aportes. El análisis descrito es de encuestas estructuradas (mixed-methods: consulta a expertos, encuestas a actores, indicadores externos, investigación documental y talleres), con datos recogidos vía formularios, publicados como base XLS en Zenodo, y hallazgos expresados como comparaciones y correlaciones (brecha urbano-rural, correlación ingreso-optimismo). No hay mención de NLP, análisis de sentimiento, machine learning, clustering ni de una herramienta tipo Citibeats/CivicLytics sobre los aportes.",
+ "rol_IA": "no-claro",
+ "usa_IA_en_proceso": "no",
+ "tipo_desarrollador_IA": [],
+ "origen_desarrollador": null,
+ "entra_tentativo": "NO",
+ "justificacion_elegibilidad": "El criterio ELEGIBLE exige que dentro de un proceso participativo convocado se use IA (NLP/ML/clustering/sentimiento) SOBRE EL CONTENIDO de los aportes. Aquí ocurre lo contrario: (1) la IA es el TEMA de la consulta (se pregunta a la ciudadania por su percepcion de la IA), y (2) el ANÁLISIS de los aportes es de encuestas/mixed-methods tradicional: recoleccion via formularios (Microsoft Forms en la metodologia AILA estandar), base de datos estructurada publicada en XLS en Zenodo, puntajes ponderados y visualizacion (Power BI), con hallazgos presentados como cruces y correlaciones estadisticas (brecha urbano-rural; a mayor ingreso, mayor optimismo) y sintesis cualitativa de grupos focales/entrevistas. Se verifico especificamente la pista del equipo (¿se uso NLP/sentimiento/clustering o herramienta tipo Citibeats?) y NO se hallo ninguna evidencia de ello en el blog del PNUD, en los reportes AILA/nota metodologica ni en la prensa secundaria (La Tribuna, Foco/La Nacion, Forbes). Por tanto el analisis es cualitativo/estadistico tradicional y la IA solo es el tema => NO ENTRA. Confianza no maxima porque el blog PNUD y el PDF AILA devolvieron HTTP 403 a WebFetch/curl (proxy) y las citas verbatim se reconstruyeron via WebSearch; no obstante, multiples busquedas convergentes (10) coinciden y ninguna menciona NLP sobre los aportes.",
+ "confianza": "MEDIA-ALTA",
+ "evidencia_verbatim": {
+  "proceso_participativo": "El equipo del Laboratorio de Aceleración del PNUD de Paraguay, en colaboración con estudiantes de la Escuela de Políticas Públicas (SIPA) de la Universidad de Columbia en Nueva York, la Dirección de Innovación del Ministerio de Tecnologías de la Información y Comunicación (MITIC), y el equipo global de los Laboratorios de Aceleración, se propuso poner a prueba una metodología participativa para realizar consultas ciudadanas sobre IA en Paraguay. (blog PNUD, via WebSearch; pagina 403 a WebFetch)",
+  "metodos_recoleccion": "Se realizaron consultas callejeras, grupos focales, encuestas online y entrevistas con diversos actores de la sociedad paraguaya, incluyendo estudiantes, docentes, jóvenes, autoridades nacionales, especialistas en tecnología, trabajadores de sectores populares y adultos de Asunción y otras ciudades. (blog PNUD, via WebSearch)",
+  "metodo_analisis": "La comparación de datos entre diferentes países posibilita identificar tendencias, patrones, oportunidades de trabajo colaborativo y desafíos comunes en el desarrollo y la adopción de la IA a nivel global. (blog PNUD, via WebSearch) — descrito como comparacion de datos, sin mencion de NLP/sentimiento/clustering.",
+  "metodologia_AILA": "The methodology relies on a mixed-methods approach, combining expert consultation, stakeholder surveys, external indicators, desk research and workshops. (...) Microsoft Forms is used to distribute and collect responses (...) These scores are then connected to Power BI for dynamic visualization and analysis. (nota metodologica AILA / AILA eng 2025, via WebSearch)",
+  "datos_publicados": "La base de datos anonimizada de las encuestas callejeras y digitales está disponible en formato XLS a través de la plataforma Zenodo. Además, existe una presentación resumida de resultados de la prueba piloto de la metodología, en español. (blog PNUD, via WebSearch) — datos estructurados de encuesta (XLS), no corpus de texto libre procesado por IA.",
+  "hallazgo_urbano_rural": "la población urbana muestra una visión más positiva y optimista de la IA, mientras que en las zonas rurales la percepción tiende a ser más pesimista, con la creencia de que la IA favorece a las personas con mayores recursos y podría eventualmente reemplazar el trabajo humano. (blog PNUD, via WebSearch)",
+  "hallazgo_ingreso_optimismo": "Estas diferencias también aparecen entre personas de diferentes niveles socioeconómicos: a mayor ingreso, mayor optimismo. (blog PNUD, via WebSearch)",
+  "objetivo_piloto": "El objetivo principal de este piloto fue probar y desarrollar una metodología robusta, con criterios estandarizados para la realización de consultas nacionales sobre Tecnologías Emergentes, como es la IA. La metodología tiene el potencial de ser replicada en otros países para generar datos agregables y evidencias comparables a escala regional y global. (blog PNUD, via WebSearch)",
+  "rol_IA": null,
+  "usa_IA_en_proceso": null
+ },
+ "fuentes": [
+  {
+   "url": "https://www.undp.org/es/paraguay/blog/consultas-ciudadanas-sobre-ia-en-paraguay-visiones-diversas-entre-el-campo-y-la-ciudad",
+   "estado": "403",
+   "cita": "Blog oficial del PNUD Paraguay (candidato). Describe la metodologia participativa (AccLab PNUD PY + Columbia SIPA + MITIC + red global AccLab), los metodos (consultas callejeras, grupos focales, encuestas online, entrevistas), hallazgos (brecha urbano-rural; a mayor ingreso, mayor optimismo) y la publicacion de la base anonimizada en XLS en Zenodo. NO menciona NLP/sentimiento/clustering ni herramienta tipo Citibeats sobre los aportes. HTTP 403 a WebFetch y a curl via proxy; contenido recuperado de forma convergente por WebSearch."
   },
-  "fuentes": [
-    {
-      "url": "https://www.undp.org/es/paraguay/blog/consultas-ciudadanas-sobre-ia-en-paraguay-visiones-diversas-entre-el-campo-y-la-ciudad",
-      "estado": "403",
-      "cita": "Blog oficial del PNUD Paraguay (candidato). Describe la metodologia participativa (AccLab PNUD PY + Columbia SIPA + MITIC + red global AccLab), los metodos (consultas callejeras, grupos focales, encuestas online, entrevistas), hallazgos (brecha urbano-rural; a mayor ingreso, mayor optimismo) y la publicacion de la base anonimizada en XLS en Zenodo. NO menciona NLP/sentimiento/clustering ni herramienta tipo Citibeats sobre los aportes. HTTP 403 a WebFetch y a curl via proxy; contenido recuperado de forma convergente por WebSearch."
-    },
-    {
-      "url": "https://www.undp.org/sites/g/files/zskgke326/files/2026-06/artificial_intelligence_landscape_assessment_paraguay_1.pdf",
-      "estado": "403",
-      "cita": "PDF 'Artificial Intelligence Landscape Assessment Paraguay' (PNUD, 2026-06). Diagnostico AILA que integra las consultas como insumo. HTTP 403 a WebFetch. Segun la nota metodologica AILA (via WebSearch), el analisis es mixed-methods: consulta a expertos, encuestas a actores, indicadores externos, desk research y talleres; recoleccion via Microsoft Forms, puntajes ponderados y visualizacion en Power BI. No se documenta NLP sobre los aportes."
-    },
-    {
-      "url": "https://www.undp.org/sites/g/files/zskgke326/files/2025-12/undp-dai-hub-aila-methodology-note-eng-2025.pdf",
-      "estado": "referenciado-websearch",
-      "cita": "Nota metodologica AILA (UNDP, oct 2025): 'The methodology relies on a mixed-methods approach, combining expert consultation, stakeholder surveys, external indicators, desk research and workshops... Microsoft Forms is used to distribute and collect responses... connected to Power BI for dynamic visualization and analysis.' Confirma analisis estructurado/ponderado, no NLP."
-    },
-    {
-      "url": "https://www.latribuna.com.py/destacado/70735-investigacion-del-pnud-revela-trabas-para-el-uso-del-ia-en-paraguay-vean-aqui-los-resultados",
-      "estado": "403",
-      "cita": "Prensa (La Tribuna PY): cobertura de la investigacion del PNUD sobre trabas al uso de IA en Paraguay. HTTP 403 a WebFetch; snippet via WebSearch coincide con hallazgos de percepcion; sin mencion de NLP sobre los aportes."
-    },
-    {
-      "url": "https://foco.lanacion.com.py/2024/10/20/el-impacto-de-la-ia-en-el-desarrollo-economico-y-la-inclusion-en-paraguay/",
-      "estado": "403",
-      "cita": "Revista Foco / La Nacion (PY, oct-2024): impacto de la IA en el desarrollo economico y la inclusion en Paraguay; contexto del trabajo PNUD. HTTP 403 a WebFetch."
-    },
-    {
-      "url": "https://www.forbes.com.py/innovacion/el-gran-desafio-ia-paraguay-tecnologia-sino-talento-n86564",
-      "estado": "referenciado-websearch",
-      "cita": "Forbes Paraguay: el diagnostico AILA situa a Paraguay en madurez intermedia (entre 'oportunista' y 'sistematico'); el mayor desafio es el talento. Contexto del AILA; sin evidencia de NLP sobre los aportes ciudadanos."
-    },
-    {
-      "url": "https://mitic.gov.py/presentan-informe-sobre-metodologia-de-evaluacion-del-estado-de-preparacion-en-inteligencia-artificial-de-paraguay/",
-      "estado": "referenciado-websearch",
-      "cita": "MITIC: presentacion del informe sobre la Metodologia de Evaluacion del Estado de Preparacion en IA de Paraguay (AILA). Refuerza el marco de diagnostico/metodologia, no un analisis por IA de los aportes."
-    }
-  ],
-  "gaps": [
-    {
-      "campo": "metodo_analisis / usa_IA_en_proceso",
-      "motivo": "Ninguna fuente accesible describe explicitamente el software o pipeline exacto con que se analizaron los aportes de las consultas ciudadanas de Paraguay (mas alla de 'comparacion de datos' / mixed-methods estandar AILA). Se busco especificamente NLP/sentimiento/clustering/Citibeats y NO se hallo mencion. La ausencia es consistente en 10 busquedas, pero se declara gap por no haber podido leer el texto integro del blog ni del PDF (403).",
-      "url_para_buscar": "https://www.undp.org/es/paraguay/blog/consultas-ciudadanas-sobre-ia-en-paraguay-visiones-diversas-entre-el-campo-y-la-ciudad ; https://www.undp.org/sites/g/files/zskgke326/files/2026-06/artificial_intelligence_landscape_assessment_paraguay_1.pdf"
-    },
-    {
-      "campo": "evidencia_verbatim (transcripcion directa)",
-      "motivo": "Las citas verbatim son reconstrucciones/traducciones del texto devuelto por WebSearch, no transcripcion de la pagina renderizada, porque el blog PNUD, el PDF AILA y la prensa PY devuelven HTTP 403 a WebFetch y a curl via proxy.",
-      "url_para_buscar": "https://www.undp.org/es/paraguay/blog/consultas-ciudadanas-sobre-ia-en-paraguay-visiones-diversas-entre-el-campo-y-la-ciudad"
-    },
-    {
-      "campo": "ano_cierre",
-      "motivo": "Se infiere 2025 (piloto 2024-2025 e informe AILA publicado 2026-06). No hay fecha de cierre explicita del proceso de consultas en las fuentes recuperadas.",
-      "url_para_buscar": "https://www.undp.org/es/paraguay/acclabpy"
-    }
-  ],
-  "alertas": [
-    "ELEGIBILIDAD (duda central resuelta = NO): se verifico la pista del equipo (¿NLP/sentimiento/clustering o herramienta tipo Citibeats/CivicLytics sobre los aportes?). No hay ninguna evidencia de ello. El analisis es de encuestas mixed-methods (Microsoft Forms -> puntajes ponderados -> Power BI, mas grupos focales/entrevistas), con hallazgos como cruces y correlaciones (brecha urbano-rural, ingreso-optimismo) y base publicada en XLS en Zenodo. La IA es el TEMA de la consulta, no una herramienta aplicada al contenido de los aportes. => entra_tentativo = NO. Confirma la tendencia NO de la barrida previa.",
-    "FUENTES: el blog PNUD (candidato), el PDF AILA Paraguay (2026-06) y la prensa PY (La Tribuna, Foco) devuelven HTTP 403 a WebFetch; ademas el proxy rechaza CONNECT a undp.org (curl (56) CONNECT tunnel failed, response 403) y web.archive.org no es alcanzable ('Claude Code is unable to fetch from web.archive.org'). Todo el contenido y las citas se recuperaron via WebSearch con 10 consultas convergentes ES/EN. Por eso confianza MEDIA-ALTA (no maxima).",
-    "NO CONFUNDIR: (a) existe un documento distinto del PNUD PY, 'BRECHAS Y OPORTUNIDADES DIGITALES. Un Analisis Clusterizado' (digitalizacion y MIPYMEs, 2025) — es clustering sobre MIPYMEs/digitalizacion, NO sobre los aportes de estas consultas ciudadanas de IA. (b) El articulo de ABC Color (2026-05) 'Claude analizo el uso de IA en Paraguay: 15.900 conversaciones' corresponde al Anthropic Economic Index (uso de Claude en el pais), NO al analisis de las consultas AILA; no debe atribuirse a este caso.",
-    "PY es hoy pais vacio en el indice; se dejo constancia detallada por si el equipo desea reevaluar. Aun asi, con el criterio vigente (IA sobre el CONTENIDO de los aportes; la IA-tema no cuenta; analisis cualitativo/estadistico tradicional = NO), el caso no es incluible.",
-    "Multi-convocante: PNUD (org. internacional) + MITIC (gobierno nacional) + Columbia SIPA (universidad). tipo_organizacion=Mixto. etapas_uso_IA vacio y rol_IA=no-claro porque no hay IA aplicada al proceso; usa_IA_en_proceso=no."
-  ],
-  "veredicto_equipo": null,
-  "comentario_equipo": "Pista del equipo (barrida previa): revisar si el analisis de los aportes uso NLP/sentimiento/clustering o herramienta tipo Citibeats/CivicLytics (=> INCLUIBLE) o fue cualitativo/manual (=> NO). Verificado a fondo: no hay evidencia de NLP; analisis mixed-methods/estadistico tradicional y la IA es el tema. Se mantiene NO.",
-  "divergencia_equipo": false,
-  "fuente_datos": "candidato_equipo_2026"
+  {
+   "url": "https://www.undp.org/sites/g/files/zskgke326/files/2026-06/artificial_intelligence_landscape_assessment_paraguay_1.pdf",
+   "estado": "403",
+   "cita": "PDF 'Artificial Intelligence Landscape Assessment Paraguay' (PNUD, 2026-06). Diagnostico AILA que integra las consultas como insumo. HTTP 403 a WebFetch. Segun la nota metodologica AILA (via WebSearch), el analisis es mixed-methods: consulta a expertos, encuestas a actores, indicadores externos, desk research y talleres; recoleccion via Microsoft Forms, puntajes ponderados y visualizacion en Power BI. No se documenta NLP sobre los aportes."
+  },
+  {
+   "url": "https://www.undp.org/sites/g/files/zskgke326/files/2025-12/undp-dai-hub-aila-methodology-note-eng-2025.pdf",
+   "estado": "referenciado-websearch",
+   "cita": "Nota metodologica AILA (UNDP, oct 2025): 'The methodology relies on a mixed-methods approach, combining expert consultation, stakeholder surveys, external indicators, desk research and workshops... Microsoft Forms is used to distribute and collect responses... connected to Power BI for dynamic visualization and analysis.' Confirma analisis estructurado/ponderado, no NLP."
+  },
+  {
+   "url": "https://www.latribuna.com.py/destacado/70735-investigacion-del-pnud-revela-trabas-para-el-uso-del-ia-en-paraguay-vean-aqui-los-resultados",
+   "estado": "403",
+   "cita": "Prensa (La Tribuna PY): cobertura de la investigacion del PNUD sobre trabas al uso de IA en Paraguay. HTTP 403 a WebFetch; snippet via WebSearch coincide con hallazgos de percepcion; sin mencion de NLP sobre los aportes."
+  },
+  {
+   "url": "https://foco.lanacion.com.py/2024/10/20/el-impacto-de-la-ia-en-el-desarrollo-economico-y-la-inclusion-en-paraguay/",
+   "estado": "403",
+   "cita": "Revista Foco / La Nacion (PY, oct-2024): impacto de la IA en el desarrollo economico y la inclusion en Paraguay; contexto del trabajo PNUD. HTTP 403 a WebFetch."
+  },
+  {
+   "url": "https://www.forbes.com.py/innovacion/el-gran-desafio-ia-paraguay-tecnologia-sino-talento-n86564",
+   "estado": "referenciado-websearch",
+   "cita": "Forbes Paraguay: el diagnostico AILA situa a Paraguay en madurez intermedia (entre 'oportunista' y 'sistematico'); el mayor desafio es el talento. Contexto del AILA; sin evidencia de NLP sobre los aportes ciudadanos."
+  },
+  {
+   "url": "https://mitic.gov.py/presentan-informe-sobre-metodologia-de-evaluacion-del-estado-de-preparacion-en-inteligencia-artificial-de-paraguay/",
+   "estado": "referenciado-websearch",
+   "cita": "MITIC: presentacion del informe sobre la Metodologia de Evaluacion del Estado de Preparacion en IA de Paraguay (AILA). Refuerza el marco de diagnostico/metodologia, no un analisis por IA de los aportes."
+  }
+ ],
+ "gaps": [
+  {
+   "campo": "metodo_analisis / usa_IA_en_proceso",
+   "motivo": "Ninguna fuente accesible describe explicitamente el software o pipeline exacto con que se analizaron los aportes de las consultas ciudadanas de Paraguay (mas alla de 'comparacion de datos' / mixed-methods estandar AILA). Se busco especificamente NLP/sentimiento/clustering/Citibeats y NO se hallo mencion. La ausencia es consistente en 10 busquedas, pero se declara gap por no haber podido leer el texto integro del blog ni del PDF (403).",
+   "url_para_buscar": "https://www.undp.org/es/paraguay/blog/consultas-ciudadanas-sobre-ia-en-paraguay-visiones-diversas-entre-el-campo-y-la-ciudad ; https://www.undp.org/sites/g/files/zskgke326/files/2026-06/artificial_intelligence_landscape_assessment_paraguay_1.pdf"
+  },
+  {
+   "campo": "evidencia_verbatim (transcripcion directa)",
+   "motivo": "Las citas verbatim son reconstrucciones/traducciones del texto devuelto por WebSearch, no transcripcion de la pagina renderizada, porque el blog PNUD, el PDF AILA y la prensa PY devuelven HTTP 403 a WebFetch y a curl via proxy.",
+   "url_para_buscar": "https://www.undp.org/es/paraguay/blog/consultas-ciudadanas-sobre-ia-en-paraguay-visiones-diversas-entre-el-campo-y-la-ciudad"
+  },
+  {
+   "campo": "ano_cierre",
+   "motivo": "Se infiere 2025 (piloto 2024-2025 e informe AILA publicado 2026-06). No hay fecha de cierre explicita del proceso de consultas en las fuentes recuperadas.",
+   "url_para_buscar": "https://www.undp.org/es/paraguay/acclabpy"
+  },
+  {
+   "campo": "pais",
+   "motivo": "valor sin cita textual directa (caso NO/DUDA); confirmar manualmente",
+   "url_para_buscar": "https://www.undp.org/es/paraguay/blog/consultas-ciudadanas-sobre-ia-en-paraguay-visiones-diversas-entre-el-campo-y-la-ciudad"
+  },
+  {
+   "campo": "tipo_proceso",
+   "motivo": "valor sin cita textual directa (caso NO/DUDA); confirmar manualmente",
+   "url_para_buscar": "https://www.undp.org/es/paraguay/blog/consultas-ciudadanas-sobre-ia-en-paraguay-visiones-diversas-entre-el-campo-y-la-ciudad"
+  },
+  {
+   "campo": "estado_actividad",
+   "motivo": "valor sin cita textual directa (caso NO/DUDA); confirmar manualmente",
+   "url_para_buscar": "https://www.undp.org/es/paraguay/blog/consultas-ciudadanas-sobre-ia-en-paraguay-visiones-diversas-entre-el-campo-y-la-ciudad"
+  },
+  {
+   "campo": "nivel_consolidacion",
+   "motivo": "valor sin cita textual directa (caso NO/DUDA); confirmar manualmente",
+   "url_para_buscar": "https://www.undp.org/es/paraguay/blog/consultas-ciudadanas-sobre-ia-en-paraguay-visiones-diversas-entre-el-campo-y-la-ciudad"
+  },
+  {
+   "campo": "tipo_convocante",
+   "motivo": "valor sin cita textual directa (caso NO/DUDA); confirmar manualmente",
+   "url_para_buscar": "https://www.undp.org/es/paraguay/blog/consultas-ciudadanas-sobre-ia-en-paraguay-visiones-diversas-entre-el-campo-y-la-ciudad"
+  },
+  {
+   "campo": "rol_IA",
+   "motivo": "valor sin cita textual directa (caso NO/DUDA); confirmar manualmente",
+   "url_para_buscar": "https://www.undp.org/es/paraguay/blog/consultas-ciudadanas-sobre-ia-en-paraguay-visiones-diversas-entre-el-campo-y-la-ciudad"
+  }
+ ],
+ "alertas": [
+  "ELEGIBILIDAD (duda central resuelta = NO): se verifico la pista del equipo (¿NLP/sentimiento/clustering o herramienta tipo Citibeats/CivicLytics sobre los aportes?). No hay ninguna evidencia de ello. El analisis es de encuestas mixed-methods (Microsoft Forms -> puntajes ponderados -> Power BI, mas grupos focales/entrevistas), con hallazgos como cruces y correlaciones (brecha urbano-rural, ingreso-optimismo) y base publicada en XLS en Zenodo. La IA es el TEMA de la consulta, no una herramienta aplicada al contenido de los aportes. => entra_tentativo = NO. Confirma la tendencia NO de la barrida previa.",
+  "FUENTES: el blog PNUD (candidato), el PDF AILA Paraguay (2026-06) y la prensa PY (La Tribuna, Foco) devuelven HTTP 403 a WebFetch; ademas el proxy rechaza CONNECT a undp.org (curl (56) CONNECT tunnel failed, response 403) y web.archive.org no es alcanzable ('Claude Code is unable to fetch from web.archive.org'). Todo el contenido y las citas se recuperaron via WebSearch con 10 consultas convergentes ES/EN. Por eso confianza MEDIA-ALTA (no maxima).",
+  "NO CONFUNDIR: (a) existe un documento distinto del PNUD PY, 'BRECHAS Y OPORTUNIDADES DIGITALES. Un Analisis Clusterizado' (digitalizacion y MIPYMEs, 2025) — es clustering sobre MIPYMEs/digitalizacion, NO sobre los aportes de estas consultas ciudadanas de IA. (b) El articulo de ABC Color (2026-05) 'Claude analizo el uso de IA en Paraguay: 15.900 conversaciones' corresponde al Anthropic Economic Index (uso de Claude en el pais), NO al analisis de las consultas AILA; no debe atribuirse a este caso.",
+  "PY es hoy pais vacio en el indice; se dejo constancia detallada por si el equipo desea reevaluar. Aun asi, con el criterio vigente (IA sobre el CONTENIDO de los aportes; la IA-tema no cuenta; analisis cualitativo/estadistico tradicional = NO), el caso no es incluible.",
+  "Multi-convocante: PNUD (org. internacional) + MITIC (gobierno nacional) + Columbia SIPA (universidad). tipo_organizacion=Mixto. etapas_uso_IA vacio y rol_IA=no-claro porque no hay IA aplicada al proceso; usa_IA_en_proceso=no."
+ ],
+ "veredicto_equipo": null,
+ "comentario_equipo": "Pista del equipo (barrida previa): revisar si el analisis de los aportes uso NLP/sentimiento/clustering o herramienta tipo Citibeats/CivicLytics (=> INCLUIBLE) o fue cualitativo/manual (=> NO). Verificado a fondo: no hay evidencia de NLP; analisis mixed-methods/estadistico tradicional y la IA es el tema. Se mantiene NO.",
+ "divergencia_equipo": false,
+ "fuente_datos": "candidato_equipo_2026"
 }

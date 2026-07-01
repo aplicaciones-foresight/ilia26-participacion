@@ -28,7 +28,7 @@
  "usa_IA_en_proceso": "no",
  "tipo_desarrollador_IA": [],
  "origen_desarrollador": null,
- "entra_tentativo": "NO",
+ "entra_tentativo": "DUDA(lean NO)",
  "justificacion_elegibilidad": "NO ENTRA. Aunque '¡Armemos un Plan!' es un proceso participativo real y masivo (675,484 participaciones; 15,899 propuestas escritas) para un plan estatal, NO hay evidencia de que el análisis/agrupación/clasificación del CONTENIDO de las propuestas se realizara con IA/NLP/minería de texto/clustering/topic modeling. Al contrario: la descripción metodológica oficial indexada (vía IIEG/SPPC) señala que 'las propuestas se construyeron a partir de las opiniones y expresiones de la ciudadanía durante la consulta, AGRUPANDO IDEAS SIMILARES y redactándolas de forma clara y ordenada, respetando siempre la intención original de quienes participaron' — es decir, una SISTEMATIZACIÓN EDITORIAL/TEMÁTICA MANUAL por analistas humanos (leer, agrupar y re-redactar), no un pipeline automatizado. El proceso se apoya además en encuesta representativa 'casa por casa' (rigor estadístico), foros y mesas de diálogo donde equipos técnicos identificaron 1,349 problemáticas — metodología participativa/estadística clásica. Jalisco sí tiene una 'Política de Inteligencia Artificial y Gobernanza de Datos' (Coordinación General de Innovación Gubernamental, ai.jalisco.gob.mx), pero es un marco regulatorio/ético de uso de IA en el gobierno; NINGUNA fuente la vincula al análisis de las 15,899 propuestas de esta consulta. Tras ~12 búsquedas en español (incluyendo términos 'inteligencia artificial', 'procesamiento de lenguaje natural', 'minería de texto', 'clustering', IIEG), no aparece ninguna mención de IA aplicada al contenido de los aportes. Por criterio del índice (se excluye si la sistematización fue manual/temática sin IA), rol_IA=no-claro (sin IA identificada sobre contenido) y usa_IA_en_proceso=no. Se deja como NO (no DUDA) porque la evidencia metodológica positiva apunta explícitamente a agrupación humana, no solo a ausencia de datos.",
  "confianza": "MEDIA",
  "evidencia_verbatim": {
@@ -97,9 +97,15 @@
    "campo": "vinculo_IIEG",
    "motivo": "El IIEG (instituto estadístico) apoyó la consulta; no se confirmó si aplicó técnicas de análisis de texto/minería a las propuestas abiertas. Su rol documentado es estadístico-geográfico (encuestas, indicadores), no NLP.",
    "url_para_buscar": "https://iieg.gob.mx/ns/"
+  },
+  {
+   "campo": "pais",
+   "motivo": "valor sin cita textual directa (caso NO/DUDA); confirmar manualmente",
+   "url_para_buscar": "https://armemosunplan.mx/propuestas-ciudadanas/"
   }
  ],
  "alertas": [
+  "[decisión Claude] DUDA(lean NO): la metodología oficial apunta a agrupación MANUAL, pero el PDF del Informe de Consulta quedó bloqueado (403); revisar ese anexo manualmente antes de excluir.",
   "ALERTA_DECISION: NO (no DUDA). La DUDA central del candidato (¿IA o manual?) se resuelve con evidencia POSITIVA de método manual: la propia página oficial de propuestas dice 'agrupando ideas similares y redactándolas... respetando la intención original', lenguaje de sistematización editorial humana, no de clustering/NLP automatizado.",
   "ALERTA_CONTRASTE_GUANAJUATO: A diferencia del caso MX-guanajuato-inteligente-2024-2030 (donde la página oficial de metodología afirma explícitamente 'utilizaron herramientas de inteligencia artificial' para procesar/organizar los aportes → SI), en Jalisco NINGUNA fuente afirma uso de IA sobre las propuestas. No extrapolar el caso Guanajuato a Jalisco.",
   "ALERTA_FUENTES_403: WebFetch devolvió HTTP 403 en TODOS los dominios objetivo (armemosunplan.mx, plan.jalisco.gob.mx, ija.gob.mx) y los PDFs; curl directo también bloqueado por el proxy (CONNECT tunnel 403). Toda la evidencia textual se recuperó vía WebSearch (que sí indexa esas URLs), igual que en fichas previas del índice.",
