@@ -85,6 +85,21 @@ def urls_busqueda_manual(d):
     return urls
 
 
+# ---- clasificación final (criterio corregido; reusa export_planilla_simple) --
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import export_planilla_simple as _eps  # noqa: E402
+
+
+def estado_final(d):
+    """SÍ / NO / DUDA según el criterio corregido (mismo que la planilla simple)."""
+    cid = d.get("caso_id")
+    if cid in _eps.EXCLUIR or not _eps.is_in(d):
+        return "NO"
+    if _eps.is_duda(d):
+        return "DUDA"
+    return "SÍ"
+
+
 # ---- columnas de la hoja principal --------------------------------------
 MAIN_COLS = [
     ("Bloque",                 lambda d: BLOQUE_LABEL.get(d.get("bloque",""), d.get("bloque",""))),
@@ -93,6 +108,7 @@ MAIN_COLS = [
     ("Caso",                   lambda d: d.get("nombre_caso") or ""),
     ("¿ENTRA? (EQUIPO)",       lambda d: d.get("veredicto_equipo") or ("—" if d.get("bloque") == "5-excluido-2025" else "(sin revisar)")),
     ("¿ENTRA? (evidencia)",    lambda d: d.get("entra_tentativo") or ""),
+    ("¿Incluir? (final)",      lambda d: estado_final(d)),
     ("Divergencia",            lambda d: "DIVERGE" if d.get("divergencia_equipo") else ""),
     ("Cuenta como iniciativa", lambda d: "NO (duplicado)" if d.get("cuenta_como_iniciativa") is False else "sí"),
     ("Confianza",              lambda d: d.get("confianza") or ""),
@@ -138,7 +154,7 @@ def style_header(ws, ncols, fill=AZUL, font=WHITE_BOLD, height=34):
 
 
 WIDTHS = {
-    "Bloque":16,"caso_id":30,"País":6,"Caso":30,"¿ENTRA? (EQUIPO)":15,"¿ENTRA? (evidencia)":16,
+    "Bloque":16,"caso_id":30,"País":6,"Caso":30,"¿ENTRA? (EQUIPO)":15,"¿ENTRA? (evidencia)":16,"¿Incluir? (final)":15,
     "Divergencia":11,"Cuenta como iniciativa":18,"Confianza":24,"Comentario equipo":42,
     "Justificación elegibilidad":40,"Proceso participativo":40,"Año inicio":9,"Año cierre":9,
     "Estado actividad":13,"Evidencia actividad 2026":40,"Organización a cargo":32,
@@ -353,15 +369,17 @@ def main():
     from collections import Counter
     cb = Counter(d.get("bloque","?") for d in fichas)
     ce = Counter((d.get("entra_tentativo") or "?").upper().rstrip("*") for d in fichas)
+    cf = Counter(estado_final(d) for d in fichas)
     print(f"[ok] {dst}")
     print(f"[ok] {csv_dst}")
     print(f"     casos: {len(fichas)}  | gaps totales: {ngaps}")
     print(f"     por bloque: {dict(cb)}")
-    print(f"     por ENTRA:  {dict(ce)}")
-    entran_ini = sum(1 for d in fichas
-                     if _official(d).startswith(("SI", "DUDA")) and d.get("cuenta_como_iniciativa") is not False)
+    print(f"     por ENTRA (evidencia bruta): {dict(ce)}")
+    print(f"     por INCLUIR (criterio final): {dict(cf)}")
     dup = sum(1 for d in fichas if d.get("cuenta_como_iniciativa") is False)
-    print(f"     entran como INICIATIVAS (dedup, sin duplicados): {entran_ini}  | marcados duplicado: {dup}")
+    inic_si = sum(1 for d in fichas if estado_final(d)=="SÍ" and d.get("cuenta_como_iniciativa") is not False)
+    inic_sd = sum(1 for d in fichas if estado_final(d) in ("SÍ","DUDA") and d.get("cuenta_como_iniciativa") is not False)
+    print(f"     INICIATIVAS criterio final (dedup): SÍ={inic_si} · SÍ+DUDA={inic_sd}  | marcados duplicado: {dup}")
     return 0
 
 
