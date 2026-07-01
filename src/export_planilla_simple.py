@@ -58,6 +58,7 @@ RESCATE_ENTRA = {  # caso_id -> por qué entra
  "CL-la-voz-de-los-nuevos-votantes":"Consulta a nuevos votantes con NLP — proceso ejecutado por el equipo (confirmado).",
  "CL-jornada-de-escucha-lanzamiento-instituto":"Jornada de escucha / diálogo — proceso ejecutado por el equipo (confirmado).",
  "CO-chatico":"Tiene módulos de participación (aportes al Plan de Desarrollo de Bogotá) — confirmado por el equipo.",
+ "BR-colab":"Permite sugerir ideas y votar en decisiones municipales (módulos de participación) — confirmado por el equipo.",
 }
 # DUDA con revisión de posible IA/participación (investigadas; recomendación + URL):
 DUDA_REVISAR = {  # caso_id -> hallazgo + recomendación
@@ -68,9 +69,7 @@ RECLASIF_DUDA = {  # caso_id -> qué confirmar
  "CR-u-report-costa-rica-chatbot-juvenil":"Plataforma de opinión juvenil (UNICEF): ¿consulta participativa o civic tech de sondeo?",
 }
 # Revisar entre los que ENTRAN hoy (decisión a mano):
-REVISAR_ENTRA = {  # caso_id -> por qué revisar
- "BR-colab":"GovTech de reporte urbano + servicios (IA para gestión/servicios): ¿participación o civic tech?",
-}
+REVISAR_ENTRA = {}  # (BR Colab confirmado ENTRA por el equipo)
 # Posible reingreso desde los excluidos (referencia del equipo; distinto del criterio nuevo):
 RESCATE = {  # actualmente NO; su referencia los reconsidera
  "CL-EXC-ucampus":"Su referencia lo marca RESCATABLE (confirmar si hubo NLP sobre los aportes del proceso constituyente).",
