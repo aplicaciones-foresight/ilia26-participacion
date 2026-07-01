@@ -1,56 +1,56 @@
 {
- "caso_id": "DO-EXC-sara",
- "pais": "DO",
- "nombre_caso": "Sara",
- "bloque": "5-excluido-2025",
- "proceso_participativo": "Sara es un chatbot de inteligencia artificial desarrollado por el Programa de las Naciones Unidas para el Desarrollo (PNUD),, con el objetivo de prevenir y atender la violencia de género en Centroamérica y la República Dominicana.",
- "ano_inicio": "2024-25",
- "ano_cierre": null,
- "estado_actividad": null,
- "evidencia_actividad_2026": null,
- "organizacion_a_cargo": null,
- "tipo_convocante": [],
- "tipo_organizacion": [],
- "tipo_proceso": [],
- "etapas_uso_IA": [],
- "continuidad": [],
- "nivel_consolidacion": null,
- "sistema_IA": null,
- "tipos_IA_familia": [],
- "usa_LLM_generativa": null,
- "funcion_IA": null,
- "rol_IA": null,
- "usa_IA_en_proceso": null,
- "tipo_desarrollador_IA": [],
- "origen_desarrollador": null,
- "entra_tentativo": "NO",
- "justificacion_elegibilidad": "Excluido en 2025: Atencion ciudadana. Se mantiene fuera; validar la decisión de exclusión (CENIA).",
- "confianza": "N/A (excluido 2025)",
- "evidencia_verbatim": {
-  "pais": "Caso excluido en 2025 (BBDD oficial ILIA 2025); país registrado: DO.",
-  "tipo_proceso": null,
-  "etapas_uso_IA": null,
+  "caso_id": "DO-EXC-sara",
+  "pais": "DO",
+  "nombre_caso": "Sara",
+  "bloque": "5-excluido-2025",
+  "proceso_participativo": "Sara es un chatbot de inteligencia artificial desarrollado por el Programa de las Naciones Unidas para el Desarrollo (PNUD),, con el objetivo de prevenir y atender la violencia de género en Centroamérica y la República Dominicana.",
+  "ano_inicio": "2024-25",
+  "ano_cierre": null,
   "estado_actividad": null,
+  "evidencia_actividad_2026": null,
+  "organizacion_a_cargo": null,
+  "tipo_convocante": [],
+  "tipo_organizacion": [],
+  "tipo_proceso": [],
+  "etapas_uso_IA": [],
+  "continuidad": [],
   "nivel_consolidacion": null,
-  "tipo_convocante": null,
+  "sistema_IA": null,
+  "tipos_IA_familia": [],
+  "usa_LLM_generativa": null,
+  "funcion_IA": null,
+  "rol_IA": null,
   "usa_IA_en_proceso": null,
-  "rol_IA": null
- },
- "fuentes": [
-  {
-   "url": "https://www.undp.org/es/latin-america/comunicados-de-prensa/sara-la-nueva-herramienta-de-inteligencia-artificial-para-combatir-la-violencia-de-genero-en-centroamerica-0",
-   "estado": "baseline-2025-excluido",
-   "cita": ""
-  }
- ],
- "gaps": [],
- "alertas": [
-  "[excluido 2025 — fuera del índice] Motivo: Atencion ciudadana",
-  "No re-extraído en 2026; incluido para inventario completo / validación CENIA."
- ],
- "fuente_datos": "excluido_2025_bbdd",
- "motivo_exclusion_2025": "Atencion ciudadana",
- "veredicto_equipo": null,
- "comentario_equipo": "",
- "divergencia_equipo": false
+  "tipo_desarrollador_IA": [],
+  "origen_desarrollador": null,
+  "entra_tentativo": "NO",
+  "justificacion_elegibilidad": "Excluido en 2025: Atencion ciudadana. Se mantiene fuera; validar la decisión de exclusión (CENIA).",
+  "confianza": "N/A (excluido 2025)",
+  "evidencia_verbatim": {
+    "pais": "Caso excluido en 2025 (BBDD oficial ILIA 2025); país registrado: DO.",
+    "tipo_proceso": null,
+    "etapas_uso_IA": null,
+    "estado_actividad": null,
+    "nivel_consolidacion": null,
+    "tipo_convocante": null,
+    "usa_IA_en_proceso": null,
+    "rol_IA": null
+  },
+  "fuentes": [
+    {
+      "url": "https://www.undp.org/es/guatemala/comunicados-de-prensa/sara-la-nueva-herramienta-de-inteligencia-artificial-para-combatir-la-violencia-de-genero-en-centroamerica",
+      "estado": "baseline-2025-excluido",
+      "cita": ""
+    }
+  ],
+  "gaps": [],
+  "alertas": [
+    "[excluido 2025 — fuera del índice] Motivo: Atencion ciudadana",
+    "No re-extraído en 2026; incluido para inventario completo / validación CENIA."
+  ],
+  "fuente_datos": "excluido_2025_bbdd",
+  "motivo_exclusion_2025": "Atencion ciudadana",
+  "veredicto_equipo": null,
+  "comentario_equipo": "",
+  "divergencia_equipo": false
 }

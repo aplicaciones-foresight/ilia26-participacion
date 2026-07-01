@@ -52,13 +52,13 @@
   },
   "fuentes": [
     {
-      "url": "https://participacion.digital.gob.cl/es-CL/folders/consultas-ciudadanas",
-      "estado": "baseline-2025",
-      "cita": ""
-    },
-    {
       "titulo": "Segunda consulta ciudadana Estrategia Gobierno Digital 2030 (portal oficial)",
       "url": "https://participacion.digital.gob.cl/projects/segunda-consulta-estrategia-de-gobierno-digital-2030"
+    },
+    {
+      "url": "https://participacion.digital.gob.cl/folders/consultas-ciudadanas",
+      "estado": "baseline-2025",
+      "cita": ""
     }
   ],
   "gaps": [],

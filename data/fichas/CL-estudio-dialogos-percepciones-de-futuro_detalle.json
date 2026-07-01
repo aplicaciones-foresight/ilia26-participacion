@@ -54,13 +54,13 @@
   },
   "fuentes": [
     {
-      "url": "https://fairlac.iadb.org/estudio-dialogos-percepciones-de-futuro",
-      "estado": "baseline-2025",
-      "cita": ""
-    },
-    {
       "titulo": "Estudio dIAlogos — sitio oficial",
       "url": "https://estudiodialogos.cl/"
+    },
+    {
+      "url": "https://fairlac.iadb.org/en/dialogos-study-perceptions-future",
+      "estado": "baseline-2025",
+      "cita": ""
     }
   ],
   "gaps": [],

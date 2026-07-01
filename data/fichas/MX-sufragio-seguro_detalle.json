@@ -1,81 +1,81 @@
 {
- "caso_id": "MX-sufragio-seguro",
- "pais": "MX",
- "nombre_caso": "Sufragio seguro",
- "bloque": "2-baseline",
- "proceso_participativo": "Sistema inteligente de detección de situaciones estresantes en el proceso de emisión de sufragio para la reducción de procesos de coacción de sufragio a partir de técnicas de Machine Learning.",
- "ano_inicio": "2024",
- "ano_cierre": null,
- "estado_actividad": "activo",
- "evidencia_actividad_2026": null,
- "organizacion_a_cargo": "Tecnológico Nacional de México",
- "tipo_convocante": [
-  "universidad"
- ],
- "tipo_organizacion": [
-  "Privado"
- ],
- "tipo_proceso": [
-  "Referendos e Iniciativas Populares"
- ],
- "etapas_uso_IA": [
-  "Implementación"
- ],
- "continuidad": [
-  "Plataforma"
- ],
- "nivel_consolidacion": 2,
- "sistema_IA": "Machine Learning (vision)",
- "tipos_IA_familia": [
-  "Visión computacional"
- ],
- "usa_LLM_generativa": "no",
- "funcion_IA": "Detectar situaciones estresantes en el proceso de sufragio de los electores",
- "rol_IA": "apoyo",
- "usa_IA_en_proceso": "sí",
- "tipo_desarrollador_IA": [
-  "Academia"
- ],
- "origen_desarrollador": "Nacional",
- "entra_tentativo": "NO",
- "justificacion_elegibilidad": "EXCLUSIÓN FIRME (recodificación 2026): Exclusión FIRME (recodificación 2026): integridad/proceso electoral, no contenido",
- "confianza": "MEDIA (baseline 2025; sin señal web 2026 nueva)",
- "evidencia_verbatim": {
-  "pais": "Caso del índice ILIA 2025 (BBDD oficial del equipo)",
-  "tipo_proceso": "Referendos e Iniciativas Populares",
-  "etapas_uso_IA": "Implementación",
-  "estado_actividad": "BBDD 2025: Activo",
-  "nivel_consolidacion": "Continuidad (BBDD 2025): Plataforma",
-  "tipo_convocante": "Tecnológico Nacional de México",
-  "usa_IA_en_proceso": "Detectar situaciones estresantes en el proceso de sufragio de los electores",
-  "rol_IA": "Detectar situaciones estresantes en el proceso de sufragio de los electores"
- },
- "fuentes": [
-  {
-   "url": "https://osf.io/cu6w3",
-   "estado": "baseline-2025",
-   "cita": ""
+  "caso_id": "MX-sufragio-seguro",
+  "pais": "MX",
+  "nombre_caso": "Sufragio seguro",
+  "bloque": "2-baseline",
+  "proceso_participativo": "Sistema inteligente de detección de situaciones estresantes en el proceso de emisión de sufragio para la reducción de procesos de coacción de sufragio a partir de técnicas de Machine Learning.",
+  "ano_inicio": "2024",
+  "ano_cierre": null,
+  "estado_actividad": "activo",
+  "evidencia_actividad_2026": null,
+  "organizacion_a_cargo": "Tecnológico Nacional de México",
+  "tipo_convocante": [
+    "universidad"
+  ],
+  "tipo_organizacion": [
+    "Privado"
+  ],
+  "tipo_proceso": [
+    "Referendos e Iniciativas Populares"
+  ],
+  "etapas_uso_IA": [
+    "Implementación"
+  ],
+  "continuidad": [
+    "Plataforma"
+  ],
+  "nivel_consolidacion": 2,
+  "sistema_IA": "Machine Learning (vision)",
+  "tipos_IA_familia": [
+    "Visión computacional"
+  ],
+  "usa_LLM_generativa": "no",
+  "funcion_IA": "Detectar situaciones estresantes en el proceso de sufragio de los electores",
+  "rol_IA": "apoyo",
+  "usa_IA_en_proceso": "sí",
+  "tipo_desarrollador_IA": [
+    "Academia"
+  ],
+  "origen_desarrollador": "Nacional",
+  "entra_tentativo": "NO",
+  "justificacion_elegibilidad": "EXCLUSIÓN FIRME (recodificación 2026): Exclusión FIRME (recodificación 2026): integridad/proceso electoral, no contenido",
+  "confianza": "MEDIA (baseline 2025; sin señal web 2026 nueva)",
+  "evidencia_verbatim": {
+    "pais": "Caso del índice ILIA 2025 (BBDD oficial del equipo)",
+    "tipo_proceso": "Referendos e Iniciativas Populares",
+    "etapas_uso_IA": "Implementación",
+    "estado_actividad": "BBDD 2025: Activo",
+    "nivel_consolidacion": "Continuidad (BBDD 2025): Plataforma",
+    "tipo_convocante": "Tecnológico Nacional de México",
+    "usa_IA_en_proceso": "Detectar situaciones estresantes en el proceso de sufragio de los electores",
+    "rol_IA": "Detectar situaciones estresantes en el proceso de sufragio de los electores"
   },
-  {
-   "url": "https://algoritmoscide.org/proyectos/sufragio-seguro/",
-   "estado": "baseline-2025",
-   "cita": ""
-  }
- ],
- "gaps": [
-  {
-   "campo": "evidencia_actividad_2026",
-   "motivo": "caso 'Activo' sin señal web de actividad/recurrencia 2026 confirmada",
-   "url_para_buscar": "https://osf.io/cu6w3"
-  }
- ],
- "alertas": [
-  "usa_LLM_generativa='no' derivado de Tipos de IA 2025 (sin 'LLM'); verificar si cambió en 2026",
-  "recodificación 2026: Exclusión FIRME (recodificación 2026): integridad/proceso electoral, no contenido",
-  "Datos brutos del índice ILIA 2025 (BBDD validada por el equipo); recodificación 2026 (convocante 7-cat, nivel 0-3) y reverificación de actividad 2026."
- ],
- "fuente_datos": "baseline_2025_bbdd+recod2026+reverif_web2026",
- "veredicto_equipo": "NO",
- "comentario_equipo": "Jose: ME gustaría que discutamos bien si esto lo considerarían.\nNicole: utiliza Machine Learning y visión artificial para interpretar microexpresiones de estrés y miedo,\nNatalia: Me quedan dudas de lo que se implementò",
- "divergencia_equipo": false
+  "fuentes": [
+    {
+      "url": "https://algoritmoscide.org/proyectos/sufragio-seguro/",
+      "estado": "baseline-2025",
+      "cita": ""
+    },
+    {
+      "url": "https://osf.io/cu6w3",
+      "estado": "baseline-2025",
+      "cita": ""
+    }
+  ],
+  "gaps": [
+    {
+      "campo": "evidencia_actividad_2026",
+      "motivo": "caso 'Activo' sin señal web de actividad/recurrencia 2026 confirmada",
+      "url_para_buscar": "https://osf.io/cu6w3"
+    }
+  ],
+  "alertas": [
+    "usa_LLM_generativa='no' derivado de Tipos de IA 2025 (sin 'LLM'); verificar si cambió en 2026",
+    "recodificación 2026: Exclusión FIRME (recodificación 2026): integridad/proceso electoral, no contenido",
+    "Datos brutos del índice ILIA 2025 (BBDD validada por el equipo); recodificación 2026 (convocante 7-cat, nivel 0-3) y reverificación de actividad 2026."
+  ],
+  "fuente_datos": "baseline_2025_bbdd+recod2026+reverif_web2026",
+  "veredicto_equipo": "NO",
+  "comentario_equipo": "Jose: ME gustaría que discutamos bien si esto lo considerarían.\nNicole: utiliza Machine Learning y visión artificial para interpretar microexpresiones de estrés y miedo,\nNatalia: Me quedan dudas de lo que se implementò",
+  "divergencia_equipo": false
 }

@@ -1,80 +1,80 @@
 {
- "caso_id": "EC-paga-ia",
- "pais": "EC",
- "nombre_caso": "PAGA IA ",
- "bloque": "2-baseline",
- "proceso_participativo": "Plataforma que utiliza inteligencia artificial para asistir en la creación de compromisos de Estado Abierto. Analiza datos de planes de acción de gobierno abierto de Ecuador y otros países de Hispanoamérica para sugerir actividades e hitos relacionados con temas propuestos por los usuarios",
- "ano_inicio": "2023",
- "ano_cierre": null,
- "estado_actividad": "activo",
- "evidencia_actividad_2026": "reconfirmado web (institucional): Reconfirmado: integrada al Tercer Plan de Acción de Estado Abierto 2025-2027; analiza las propuestas ciudadanas y sugiere actividades.",
- "organizacion_a_cargo": "Gobierno Abierto Ecuador, en colaboración con la Fundación de Ayuda por Internet (Fundapi)",
- "tipo_convocante": [
-  "gobierno nacional",
-  "sociedad civil"
- ],
- "tipo_organizacion": [
-  "Mixto"
- ],
- "tipo_proceso": [
-  "Referendos e Iniciativas Populares"
- ],
- "etapas_uso_IA": [
-  "Implementación"
- ],
- "continuidad": [
-  "Plataforma"
- ],
- "nivel_consolidacion": 2,
- "sistema_IA": "Modelos de lenguaje de gran escala (LLMs)",
- "tipos_IA_familia": [
-  "LLM"
- ],
- "usa_LLM_generativa": "sí",
- "funcion_IA": "Analizar temas propuestos y generar sugerencias de compromisos basados en experiencias previas de planes de acción de gobierno abierto\n\n",
- "rol_IA": "contenido",
- "usa_IA_en_proceso": "sí",
- "tipo_desarrollador_IA": [
-  "Sociedad Civil"
- ],
- "origen_desarrollador": "Nacional",
- "entra_tentativo": "SI",
- "justificacion_elegibilidad": "Caso del índice 2025; ratificar vigencia 2026 y recodificación.",
- "confianza": "ALTA (baseline 2025 + reverif. web 2026)",
- "evidencia_verbatim": {
-  "pais": "Caso del índice ILIA 2025 (BBDD oficial del equipo)",
-  "tipo_proceso": "Referendos e Iniciativas Populares",
-  "etapas_uso_IA": "Implementación",
-  "estado_actividad": "reconfirmado web (institucional): Reconfirmado: integrada al Tercer Plan de Acción de Estado Abierto 2025-2027; analiza las propuestas ciudadanas y sugiere actividades.",
-  "nivel_consolidacion": "Continuidad (BBDD 2025): Plataforma",
-  "tipo_convocante": "Gobierno Abierto Ecuador, en colaboración con la Fundación de Ayuda por Internet (Fundapi)",
-  "usa_IA_en_proceso": "Analizar temas propuestos y generar sugerencias de compromisos basados en experiencias previas de planes de acción de gobierno abierto\n\n",
-  "rol_IA": "Analizar temas propuestos y generar sugerencias de compromisos basados en experiencias previas de planes de acción de gobierno abierto\n\n"
- },
- "fuentes": [
-  {
-   "url": "https://www.gobiernoabierto.ec/boletin-014-2023/",
-   "estado": "baseline-2025",
-   "cita": ""
+  "caso_id": "EC-paga-ia",
+  "pais": "EC",
+  "nombre_caso": "PAGA IA ",
+  "bloque": "2-baseline",
+  "proceso_participativo": "Plataforma que utiliza inteligencia artificial para asistir en la creación de compromisos de Estado Abierto. Analiza datos de planes de acción de gobierno abierto de Ecuador y otros países de Hispanoamérica para sugerir actividades e hitos relacionados con temas propuestos por los usuarios",
+  "ano_inicio": "2023",
+  "ano_cierre": null,
+  "estado_actividad": "activo",
+  "evidencia_actividad_2026": "reconfirmado web (institucional): Reconfirmado: integrada al Tercer Plan de Acción de Estado Abierto 2025-2027; analiza las propuestas ciudadanas y sugiere actividades.",
+  "organizacion_a_cargo": "Gobierno Abierto Ecuador, en colaboración con la Fundación de Ayuda por Internet (Fundapi)",
+  "tipo_convocante": [
+    "gobierno nacional",
+    "sociedad civil"
+  ],
+  "tipo_organizacion": [
+    "Mixto"
+  ],
+  "tipo_proceso": [
+    "Referendos e Iniciativas Populares"
+  ],
+  "etapas_uso_IA": [
+    "Implementación"
+  ],
+  "continuidad": [
+    "Plataforma"
+  ],
+  "nivel_consolidacion": 2,
+  "sistema_IA": "Modelos de lenguaje de gran escala (LLMs)",
+  "tipos_IA_familia": [
+    "LLM"
+  ],
+  "usa_LLM_generativa": "sí",
+  "funcion_IA": "Analizar temas propuestos y generar sugerencias de compromisos basados en experiencias previas de planes de acción de gobierno abierto\n\n",
+  "rol_IA": "contenido",
+  "usa_IA_en_proceso": "sí",
+  "tipo_desarrollador_IA": [
+    "Sociedad Civil"
+  ],
+  "origen_desarrollador": "Nacional",
+  "entra_tentativo": "SI",
+  "justificacion_elegibilidad": "Caso del índice 2025; ratificar vigencia 2026 y recodificación.",
+  "confianza": "ALTA (baseline 2025 + reverif. web 2026)",
+  "evidencia_verbatim": {
+    "pais": "Caso del índice ILIA 2025 (BBDD oficial del equipo)",
+    "tipo_proceso": "Referendos e Iniciativas Populares",
+    "etapas_uso_IA": "Implementación",
+    "estado_actividad": "reconfirmado web (institucional): Reconfirmado: integrada al Tercer Plan de Acción de Estado Abierto 2025-2027; analiza las propuestas ciudadanas y sugiere actividades.",
+    "nivel_consolidacion": "Continuidad (BBDD 2025): Plataforma",
+    "tipo_convocante": "Gobierno Abierto Ecuador, en colaboración con la Fundación de Ayuda por Internet (Fundapi)",
+    "usa_IA_en_proceso": "Analizar temas propuestos y generar sugerencias de compromisos basados en experiencias previas de planes de acción de gobierno abierto\n\n",
+    "rol_IA": "Analizar temas propuestos y generar sugerencias de compromisos basados en experiencias previas de planes de acción de gobierno abierto\n\n"
   },
-  {
-   "url": "https://ia.gobiernoabierto.ec/",
-   "estado": "baseline-2025",
-   "cita": ""
-  },
-  {
-   "url": "https://ia.gobiernoabierto.ec/acercade",
-   "estado": "baseline-2025",
-   "cita": ""
-  }
- ],
- "gaps": [],
- "alertas": [
-  "usa_LLM_generativa derivado de Tipos de IA (BBDD 2025: contiene 'LLM')",
-  "Datos brutos del índice ILIA 2025 (BBDD validada por el equipo); recodificación 2026 (convocante 7-cat, nivel 0-3) y reverificación de actividad 2026."
- ],
- "fuente_datos": "baseline_2025_bbdd+recod2026+reverif_web2026",
- "veredicto_equipo": "SI",
- "comentario_equipo": "",
- "divergencia_equipo": false
+  "fuentes": [
+    {
+      "url": "https://ia.gobiernoabierto.ec/",
+      "estado": "baseline-2025",
+      "cita": ""
+    },
+    {
+      "url": "https://ia.gobiernoabierto.ec/",
+      "estado": "baseline-2025",
+      "cita": ""
+    },
+    {
+      "url": "https://ia.gobiernoabierto.ec/acercade",
+      "estado": "baseline-2025",
+      "cita": ""
+    }
+  ],
+  "gaps": [],
+  "alertas": [
+    "usa_LLM_generativa derivado de Tipos de IA (BBDD 2025: contiene 'LLM')",
+    "Datos brutos del índice ILIA 2025 (BBDD validada por el equipo); recodificación 2026 (convocante 7-cat, nivel 0-3) y reverificación de actividad 2026."
+  ],
+  "fuente_datos": "baseline_2025_bbdd+recod2026+reverif_web2026",
+  "veredicto_equipo": "SI",
+  "comentario_equipo": "",
+  "divergencia_equipo": false
 }

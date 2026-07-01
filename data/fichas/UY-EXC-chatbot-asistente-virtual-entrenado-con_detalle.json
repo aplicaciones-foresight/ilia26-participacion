@@ -1,56 +1,56 @@
 {
- "caso_id": "UY-EXC-chatbot-asistente-virtual-entrenado-con",
- "pais": "UY",
- "nombre_caso": "Chatbot (Asistente virtual entrenado con IA)",
- "bloque": "5-excluido-2025",
- "proceso_participativo": "Asistente Virtual de AGESIC – Chatbot gubernamental piloto lanzado en 2018 para adquirir experiencia en soluciones de IA en la atención ciudadana. Entrenado con preguntas frecuentes recibidas en los distintos canales de contacto del Estado​oecd.org. No solo contesta consultas de trámites, sino que puede ejecutar acciones (ej. reestablecer contraseña de usuario) para resolver problemas comunes​oecd.org. Integrado en la estrategia multicanal de atención, buscando acercar el Estado a la gente eliminando barreras de acceso.",
- "ano_inicio": "2018–25",
- "ano_cierre": null,
- "estado_actividad": null,
- "evidencia_actividad_2026": null,
- "organizacion_a_cargo": null,
- "tipo_convocante": [],
- "tipo_organizacion": [],
- "tipo_proceso": [],
- "etapas_uso_IA": [],
- "continuidad": [],
- "nivel_consolidacion": null,
- "sistema_IA": null,
- "tipos_IA_familia": [],
- "usa_LLM_generativa": null,
- "funcion_IA": null,
- "rol_IA": null,
- "usa_IA_en_proceso": null,
- "tipo_desarrollador_IA": [],
- "origen_desarrollador": null,
- "entra_tentativo": "NO",
- "justificacion_elegibilidad": "Excluido en 2025: Atencion ciudadana. Se mantiene fuera; validar la decisión de exclusión (CENIA).",
- "confianza": "N/A (excluido 2025)",
- "evidencia_verbatim": {
-  "pais": "Caso excluido en 2025 (BBDD oficial ILIA 2025); país registrado: UY.",
-  "tipo_proceso": null,
-  "etapas_uso_IA": null,
+  "caso_id": "UY-EXC-chatbot-asistente-virtual-entrenado-con",
+  "pais": "UY",
+  "nombre_caso": "Chatbot (Asistente virtual entrenado con IA)",
+  "bloque": "5-excluido-2025",
+  "proceso_participativo": "Asistente Virtual de AGESIC – Chatbot gubernamental piloto lanzado en 2018 para adquirir experiencia en soluciones de IA en la atención ciudadana. Entrenado con preguntas frecuentes recibidas en los distintos canales de contacto del Estado​oecd.org. No solo contesta consultas de trámites, sino que puede ejecutar acciones (ej. reestablecer contraseña de usuario) para resolver problemas comunes​oecd.org. Integrado en la estrategia multicanal de atención, buscando acercar el Estado a la gente eliminando barreras de acceso.",
+  "ano_inicio": "2018–25",
+  "ano_cierre": null,
   "estado_actividad": null,
+  "evidencia_actividad_2026": null,
+  "organizacion_a_cargo": null,
+  "tipo_convocante": [],
+  "tipo_organizacion": [],
+  "tipo_proceso": [],
+  "etapas_uso_IA": [],
+  "continuidad": [],
   "nivel_consolidacion": null,
-  "tipo_convocante": null,
+  "sistema_IA": null,
+  "tipos_IA_familia": [],
+  "usa_LLM_generativa": null,
+  "funcion_IA": null,
+  "rol_IA": null,
   "usa_IA_en_proceso": null,
-  "rol_IA": null
- },
- "fuentes": [
-  {
-   "url": "https://www.oecd.org/content/dam/oecd/es/publications/reports/2022/03/the-strategic-and-responsible-use-of-artificial-intelligence-in-the-public-sector-of-latin-america-and-the-caribbean_17c90e5e/5b189cb4-es.pdf#:~:text=El%20chatbot%20virtual%20creado%20por,desarrollo%20de%20soluciones%20de%20IA",
-   "estado": "baseline-2025-excluido",
-   "cita": ""
-  }
- ],
- "gaps": [],
- "alertas": [
-  "[excluido 2025 — fuera del índice] Motivo: Atencion ciudadana",
-  "No re-extraído en 2026; incluido para inventario completo / validación CENIA."
- ],
- "fuente_datos": "excluido_2025_bbdd",
- "motivo_exclusion_2025": "Atencion ciudadana",
- "veredicto_equipo": null,
- "comentario_equipo": "",
- "divergencia_equipo": false
+  "tipo_desarrollador_IA": [],
+  "origen_desarrollador": null,
+  "entra_tentativo": "NO",
+  "justificacion_elegibilidad": "Excluido en 2025: Atencion ciudadana. Se mantiene fuera; validar la decisión de exclusión (CENIA).",
+  "confianza": "N/A (excluido 2025)",
+  "evidencia_verbatim": {
+    "pais": "Caso excluido en 2025 (BBDD oficial ILIA 2025); país registrado: UY.",
+    "tipo_proceso": null,
+    "etapas_uso_IA": null,
+    "estado_actividad": null,
+    "nivel_consolidacion": null,
+    "tipo_convocante": null,
+    "usa_IA_en_proceso": null,
+    "rol_IA": null
+  },
+  "fuentes": [
+    {
+      "url": "https://www.oecd.org/es/publications/uso-estrategico-y-responsable-de-la-inteligencia-artificial-en-el-sector-publico-de-america-latina-y-el-caribe_5b189cb4-es/full-report.html",
+      "estado": "baseline-2025-excluido",
+      "cita": ""
+    }
+  ],
+  "gaps": [],
+  "alertas": [
+    "[excluido 2025 — fuera del índice] Motivo: Atencion ciudadana",
+    "No re-extraído en 2026; incluido para inventario completo / validación CENIA."
+  ],
+  "fuente_datos": "excluido_2025_bbdd",
+  "motivo_exclusion_2025": "Atencion ciudadana",
+  "veredicto_equipo": null,
+  "comentario_equipo": "",
+  "divergencia_equipo": false
 }

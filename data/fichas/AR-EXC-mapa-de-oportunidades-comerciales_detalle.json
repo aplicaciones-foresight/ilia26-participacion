@@ -1,61 +1,61 @@
 {
- "caso_id": "AR-EXC-mapa-de-oportunidades-comerciales",
- "pais": "AR",
- "nombre_caso": "Mapa de Oportunidades Comerciales",
- "bloque": "5-excluido-2025",
- "proceso_participativo": "Algoritmo que cruza datos demográficos, inmobiliarios y POS para recomendar zonas de inversión a pymes.",
- "ano_inicio": "2022-25",
- "ano_cierre": null,
- "estado_actividad": null,
- "evidencia_actividad_2026": null,
- "organizacion_a_cargo": null,
- "tipo_convocante": [],
- "tipo_organizacion": [],
- "tipo_proceso": [],
- "etapas_uso_IA": [],
- "continuidad": [],
- "nivel_consolidacion": null,
- "sistema_IA": null,
- "tipos_IA_familia": [],
- "usa_LLM_generativa": null,
- "funcion_IA": null,
- "rol_IA": null,
- "usa_IA_en_proceso": null,
- "tipo_desarrollador_IA": [],
- "origen_desarrollador": null,
- "entra_tentativo": "NO",
- "justificacion_elegibilidad": "Excluido en 2025: No entra en la descripción de lo que es Participación ciudadana. Se considera Civic Tech, pero no participación ciudadana. Se mantiene fuera; validar la decisión de exclusión (CENIA).",
- "confianza": "N/A (excluido 2025)",
- "evidencia_verbatim": {
-  "pais": "Caso excluido en 2025 (BBDD oficial ILIA 2025); país registrado: AR.",
-  "tipo_proceso": null,
-  "etapas_uso_IA": null,
+  "caso_id": "AR-EXC-mapa-de-oportunidades-comerciales",
+  "pais": "AR",
+  "nombre_caso": "Mapa de Oportunidades Comerciales",
+  "bloque": "5-excluido-2025",
+  "proceso_participativo": "Algoritmo que cruza datos demográficos, inmobiliarios y POS para recomendar zonas de inversión a pymes.",
+  "ano_inicio": "2022-25",
+  "ano_cierre": null,
   "estado_actividad": null,
+  "evidencia_actividad_2026": null,
+  "organizacion_a_cargo": null,
+  "tipo_convocante": [],
+  "tipo_organizacion": [],
+  "tipo_proceso": [],
+  "etapas_uso_IA": [],
+  "continuidad": [],
   "nivel_consolidacion": null,
-  "tipo_convocante": null,
+  "sistema_IA": null,
+  "tipos_IA_familia": [],
+  "usa_LLM_generativa": null,
+  "funcion_IA": null,
+  "rol_IA": null,
   "usa_IA_en_proceso": null,
-  "rol_IA": null
- },
- "fuentes": [
-  {
-   "url": "https://buenosaires.gob.ar/herramientas-para-elegir-tu-futuro-local/mapa-de-oportunidades-comerciales-moc",
-   "estado": "baseline-2025-excluido",
-   "cita": ""
+  "tipo_desarrollador_IA": [],
+  "origen_desarrollador": null,
+  "entra_tentativo": "NO",
+  "justificacion_elegibilidad": "Excluido en 2025: No entra en la descripción de lo que es Participación ciudadana. Se considera Civic Tech, pero no participación ciudadana. Se mantiene fuera; validar la decisión de exclusión (CENIA).",
+  "confianza": "N/A (excluido 2025)",
+  "evidencia_verbatim": {
+    "pais": "Caso excluido en 2025 (BBDD oficial ILIA 2025); país registrado: AR.",
+    "tipo_proceso": null,
+    "etapas_uso_IA": null,
+    "estado_actividad": null,
+    "nivel_consolidacion": null,
+    "tipo_convocante": null,
+    "usa_IA_en_proceso": null,
+    "rol_IA": null
   },
-  {
-   "url": "https://www.oecd.org/content/dam/oecd/es/publications/reports/2022/03/the-strategic-and-responsible-use-of-artificial-intelligence-in-the-public-sector-of-latin-america-and-the-caribbean_17c90e5e/5b189cb4-es.pdf#:~:text=Jaque%20y%20la%20Gu%C3%ADa%20de,Contiene%20informaci%C3%B3n%2C%20entre",
-   "estado": "baseline-2025-excluido",
-   "cita": ""
-  }
- ],
- "gaps": [],
- "alertas": [
-  "[excluido 2025 — fuera del índice] Motivo: No entra en la descripción de lo que es Participación ciudadana. Se considera Civic Tech, pero no participación ciudadana",
-  "No re-extraído en 2026; incluido para inventario completo / validación CENIA."
- ],
- "fuente_datos": "excluido_2025_bbdd",
- "motivo_exclusion_2025": "No entra en la descripción de lo que es Participación ciudadana. Se considera Civic Tech, pero no participación ciudadana",
- "veredicto_equipo": null,
- "comentario_equipo": "",
- "divergencia_equipo": false
+  "fuentes": [
+    {
+      "url": "https://buenosaires.gob.ar/herramientas-para-elegir-tu-futuro-local/mapa-de-oportunidades-comerciales-moc",
+      "estado": "baseline-2025-excluido",
+      "cita": ""
+    },
+    {
+      "url": "https://www.oecd.org/es/publications/uso-estrategico-y-responsable-de-la-inteligencia-artificial-en-el-sector-publico-de-america-latina-y-el-caribe_5b189cb4-es/full-report.html",
+      "estado": "baseline-2025-excluido",
+      "cita": ""
+    }
+  ],
+  "gaps": [],
+  "alertas": [
+    "[excluido 2025 — fuera del índice] Motivo: No entra en la descripción de lo que es Participación ciudadana. Se considera Civic Tech, pero no participación ciudadana",
+    "No re-extraído en 2026; incluido para inventario completo / validación CENIA."
+  ],
+  "fuente_datos": "excluido_2025_bbdd",
+  "motivo_exclusion_2025": "No entra en la descripción de lo que es Participación ciudadana. Se considera Civic Tech, pero no participación ciudadana",
+  "veredicto_equipo": null,
+  "comentario_equipo": "",
+  "divergencia_equipo": false
 }

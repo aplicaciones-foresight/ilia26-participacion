@@ -1,56 +1,56 @@
 {
- "caso_id": "LATAM-EXC-chatbot-dci-denuncia-ciudadana-idonea",
- "pais": "LATAM",
- "nombre_caso": "Chatbot DCI (Denuncia Ciudadana Idónea)",
- "bloque": "5-excluido-2025",
- "proceso_participativo": "Chatbot web que guía a la ciudadanía para formular y encauzar denuncias de corrupción ante las Entidades Fiscalizadoras Superiores (EFS) de los cuatro países participantes",
- "ano_inicio": "2024.0",
- "ano_cierre": null,
- "estado_actividad": null,
- "evidencia_actividad_2026": null,
- "organizacion_a_cargo": null,
- "tipo_convocante": [],
- "tipo_organizacion": [],
- "tipo_proceso": [],
- "etapas_uso_IA": [],
- "continuidad": [],
- "nivel_consolidacion": null,
- "sistema_IA": null,
- "tipos_IA_familia": [],
- "usa_LLM_generativa": null,
- "funcion_IA": null,
- "rol_IA": null,
- "usa_IA_en_proceso": null,
- "tipo_desarrollador_IA": [],
- "origen_desarrollador": null,
- "entra_tentativo": "NO",
- "justificacion_elegibilidad": "Excluido en 2025: No evidencia de uso de IA. Se mantiene fuera; validar la decisión de exclusión (CENIA).",
- "confianza": "N/A (excluido 2025)",
- "evidencia_verbatim": {
-  "pais": "Caso excluido en 2025 (BBDD oficial ILIA 2025); país registrado: LATAM.",
-  "tipo_proceso": null,
-  "etapas_uso_IA": null,
+  "caso_id": "LATAM-EXC-chatbot-dci-denuncia-ciudadana-idonea",
+  "pais": "LATAM",
+  "nombre_caso": "Chatbot DCI (Denuncia Ciudadana Idónea)",
+  "bloque": "5-excluido-2025",
+  "proceso_participativo": "Chatbot web que guía a la ciudadanía para formular y encauzar denuncias de corrupción ante las Entidades Fiscalizadoras Superiores (EFS) de los cuatro países participantes",
+  "ano_inicio": "2024.0",
+  "ano_cierre": null,
   "estado_actividad": null,
+  "evidencia_actividad_2026": null,
+  "organizacion_a_cargo": null,
+  "tipo_convocante": [],
+  "tipo_organizacion": [],
+  "tipo_proceso": [],
+  "etapas_uso_IA": [],
+  "continuidad": [],
   "nivel_consolidacion": null,
-  "tipo_convocante": null,
+  "sistema_IA": null,
+  "tipos_IA_familia": [],
+  "usa_LLM_generativa": null,
+  "funcion_IA": null,
+  "rol_IA": null,
   "usa_IA_en_proceso": null,
-  "rol_IA": null
- },
- "fuentes": [
-  {
-   "url": "https://www.policylab.tech/post/revolucionando-la-denuncia-ciudadana-en-am%C3%A9rica-latina-con-tecnolog%C3%ADa-el-caso-del-chatbot-dci",
-   "estado": "baseline-2025-excluido",
-   "cita": ""
-  }
- ],
- "gaps": [],
- "alertas": [
-  "[excluido 2025 — fuera del índice] Motivo: No evidencia de uso de IA",
-  "No re-extraído en 2026; incluido para inventario completo / validación CENIA."
- ],
- "fuente_datos": "excluido_2025_bbdd",
- "motivo_exclusion_2025": "No evidencia de uso de IA",
- "veredicto_equipo": null,
- "comentario_equipo": "",
- "divergencia_equipo": false
+  "tipo_desarrollador_IA": [],
+  "origen_desarrollador": null,
+  "entra_tentativo": "NO",
+  "justificacion_elegibilidad": "Excluido en 2025: No evidencia de uso de IA. Se mantiene fuera; validar la decisión de exclusión (CENIA).",
+  "confianza": "N/A (excluido 2025)",
+  "evidencia_verbatim": {
+    "pais": "Caso excluido en 2025 (BBDD oficial ILIA 2025); país registrado: LATAM.",
+    "tipo_proceso": null,
+    "etapas_uso_IA": null,
+    "estado_actividad": null,
+    "nivel_consolidacion": null,
+    "tipo_convocante": null,
+    "usa_IA_en_proceso": null,
+    "rol_IA": null
+  },
+  "fuentes": [
+    {
+      "url": "https://www.policylab.tech/post/revolucionando-la-denuncia-ciudadana-en-am%C3%A9rica-latina-con-tecnolog%C3%ADa-el-caso-del-chatbot-dci-1",
+      "estado": "baseline-2025-excluido",
+      "cita": ""
+    }
+  ],
+  "gaps": [],
+  "alertas": [
+    "[excluido 2025 — fuera del índice] Motivo: No evidencia de uso de IA",
+    "No re-extraído en 2026; incluido para inventario completo / validación CENIA."
+  ],
+  "fuente_datos": "excluido_2025_bbdd",
+  "motivo_exclusion_2025": "No evidencia de uso de IA",
+  "veredicto_equipo": null,
+  "comentario_equipo": "",
+  "divergencia_equipo": false
 }
