@@ -1,61 +1,61 @@
 {
- "caso_id": "CO-EXC-plataforma-urna-de-cristal",
- "pais": "CO",
- "nombre_caso": "Plataforma Urna de Cristal",
- "bloque": "5-excluido-2025",
- "proceso_participativo": "Monitorear en tiempo real la opinión ciudadana para ajustar campañas de comunicación y responder preguntas públicas",
- "ano_inicio": "2015 –25",
- "ano_cierre": null,
- "estado_actividad": null,
- "evidencia_actividad_2026": null,
- "organizacion_a_cargo": null,
- "tipo_convocante": [],
- "tipo_organizacion": [],
- "tipo_proceso": [],
- "etapas_uso_IA": [],
- "continuidad": [],
- "nivel_consolidacion": null,
- "sistema_IA": null,
- "tipos_IA_familia": [],
- "usa_LLM_generativa": null,
- "funcion_IA": null,
- "rol_IA": null,
- "usa_IA_en_proceso": null,
- "tipo_desarrollador_IA": [],
- "origen_desarrollador": null,
- "entra_tentativo": "NO",
- "justificacion_elegibilidad": "Excluido en 2025: No evidencia de uso de IA. Se mantiene fuera; validar la decisión de exclusión (CENIA).",
- "confianza": "N/A (excluido 2025)",
- "evidencia_verbatim": {
-  "pais": "Caso excluido en 2025 (BBDD oficial ILIA 2025); país registrado: CO.",
-  "tipo_proceso": null,
-  "etapas_uso_IA": null,
+  "caso_id": "CO-EXC-plataforma-urna-de-cristal",
+  "pais": "CO",
+  "nombre_caso": "Plataforma Urna de Cristal",
+  "bloque": "5-excluido-2025",
+  "proceso_participativo": "Monitorear en tiempo real la opinión ciudadana para ajustar campañas de comunicación y responder preguntas públicas",
+  "ano_inicio": "2015 –25",
+  "ano_cierre": null,
   "estado_actividad": null,
+  "evidencia_actividad_2026": null,
+  "organizacion_a_cargo": null,
+  "tipo_convocante": [],
+  "tipo_organizacion": [],
+  "tipo_proceso": [],
+  "etapas_uso_IA": [],
+  "continuidad": [],
   "nivel_consolidacion": null,
-  "tipo_convocante": null,
+  "sistema_IA": null,
+  "tipos_IA_familia": [],
+  "usa_LLM_generativa": null,
+  "funcion_IA": null,
+  "rol_IA": null,
   "usa_IA_en_proceso": null,
-  "rol_IA": null
- },
- "fuentes": [
-  {
-   "url": "https://projects.itforchange.net/mavc/wp-content/uploads/2017/09/Voice-or-Chatter_Case-Study_Colombia_August-2017.pdf?utm_source=chatgpt.com",
-   "estado": "baseline-2025-excluido",
-   "cita": ""
+  "tipo_desarrollador_IA": [],
+  "origen_desarrollador": null,
+  "entra_tentativo": "NO",
+  "justificacion_elegibilidad": "Excluido en 2025: No evidencia de uso de IA. Se mantiene fuera; validar la decisión de exclusión (CENIA).",
+  "confianza": "N/A (excluido 2025)",
+  "evidencia_verbatim": {
+    "pais": "Caso excluido en 2025 (BBDD oficial ILIA 2025); país registrado: CO.",
+    "tipo_proceso": null,
+    "etapas_uso_IA": null,
+    "estado_actividad": null,
+    "nivel_consolidacion": null,
+    "tipo_convocante": null,
+    "usa_IA_en_proceso": null,
+    "rol_IA": null
   },
-  {
-   "url": "https://toda.org/assets/files/resources/policy-briefs/t-pb-61_diana-dajer_sm-in-colombian-democratic-spaces.pdf?utm_source=chatgpt.com",
-   "estado": "baseline-2025-excluido",
-   "cita": ""
-  }
- ],
- "gaps": [],
- "alertas": [
-  "[excluido 2025 — fuera del índice] Motivo: No evidencia de uso de IA",
-  "No re-extraído en 2026; incluido para inventario completo / validación CENIA."
- ],
- "fuente_datos": "excluido_2025_bbdd",
- "motivo_exclusion_2025": "No evidencia de uso de IA",
- "veredicto_equipo": null,
- "comentario_equipo": "",
- "divergencia_equipo": false
+  "fuentes": [
+    {
+      "url": "https://projects.itforchange.net/mavc/wp-content/uploads/2017/09/Voice-or-Chatter_Case-Study_Colombia_August-2017.pdf",
+      "estado": "baseline-2025-excluido",
+      "cita": ""
+    },
+    {
+      "url": "https://toda.org/assets/files/resources/policy-briefs/t-pb-61_diana-dajer_sm-in-colombian-democratic-spaces.pdf",
+      "estado": "baseline-2025-excluido",
+      "cita": ""
+    }
+  ],
+  "gaps": [],
+  "alertas": [
+    "[excluido 2025 — fuera del índice] Motivo: No evidencia de uso de IA",
+    "No re-extraído en 2026; incluido para inventario completo / validación CENIA."
+  ],
+  "fuente_datos": "excluido_2025_bbdd",
+  "motivo_exclusion_2025": "No evidencia de uso de IA",
+  "veredicto_equipo": null,
+  "comentario_equipo": "",
+  "divergencia_equipo": false
 }

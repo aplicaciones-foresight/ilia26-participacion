@@ -1,66 +1,66 @@
 {
- "caso_id": "UY-EXC-consulta-publica-de-la-estrategia-nacion",
- "pais": "UY",
- "nombre_caso": "Consulta Pública de la Estrategia Nacional de Inteligencia Artificial (IA) de Uruguay 2024–2030,",
- "bloque": "5-excluido-2025",
- "proceso_participativo": "Es una iniciativa del gobierno uruguayo para definir una política pública de IA que abarque los sectores público, privado, académico y de la sociedad civil. Su objetivo es fomentar el desarrollo y uso ético, responsable y seguro de la IA, promoviendo el crecimiento económico inclusivo, la sostenibilidad ambiental y el fortalecimiento de la soberanía nacional.",
- "ano_inicio": "2024.0",
- "ano_cierre": null,
- "estado_actividad": null,
- "evidencia_actividad_2026": null,
- "organizacion_a_cargo": null,
- "tipo_convocante": [],
- "tipo_organizacion": [],
- "tipo_proceso": [],
- "etapas_uso_IA": [],
- "continuidad": [],
- "nivel_consolidacion": null,
- "sistema_IA": null,
- "tipos_IA_familia": [],
- "usa_LLM_generativa": null,
- "funcion_IA": null,
- "rol_IA": null,
- "usa_IA_en_proceso": null,
- "tipo_desarrollador_IA": [],
- "origen_desarrollador": null,
- "entra_tentativo": "NO",
- "justificacion_elegibilidad": "Excluido en 2025: No evidencia de uso de IA. Se mantiene fuera; validar la decisión de exclusión (CENIA).",
- "confianza": "N/A (excluido 2025)",
- "evidencia_verbatim": {
-  "pais": "Caso excluido en 2025 (BBDD oficial ILIA 2025); país registrado: UY.",
-  "tipo_proceso": null,
-  "etapas_uso_IA": null,
+  "caso_id": "UY-EXC-consulta-publica-de-la-estrategia-nacion",
+  "pais": "UY",
+  "nombre_caso": "Consulta Pública de la Estrategia Nacional de Inteligencia Artificial (IA) de Uruguay 2024–2030,",
+  "bloque": "5-excluido-2025",
+  "proceso_participativo": "Es una iniciativa del gobierno uruguayo para definir una política pública de IA que abarque los sectores público, privado, académico y de la sociedad civil. Su objetivo es fomentar el desarrollo y uso ético, responsable y seguro de la IA, promoviendo el crecimiento económico inclusivo, la sostenibilidad ambiental y el fortalecimiento de la soberanía nacional.",
+  "ano_inicio": "2024.0",
+  "ano_cierre": null,
   "estado_actividad": null,
+  "evidencia_actividad_2026": null,
+  "organizacion_a_cargo": null,
+  "tipo_convocante": [],
+  "tipo_organizacion": [],
+  "tipo_proceso": [],
+  "etapas_uso_IA": [],
+  "continuidad": [],
   "nivel_consolidacion": null,
-  "tipo_convocante": null,
+  "sistema_IA": null,
+  "tipos_IA_familia": [],
+  "usa_LLM_generativa": null,
+  "funcion_IA": null,
+  "rol_IA": null,
   "usa_IA_en_proceso": null,
-  "rol_IA": null
- },
- "fuentes": [
-  {
-   "url": "https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/comunicacion/publicaciones/estrategia-nacional-inteligencia-artificial-2024-2030?utm_source=chatgpt.com",
-   "estado": "baseline-2025-excluido",
-   "cita": ""
+  "tipo_desarrollador_IA": [],
+  "origen_desarrollador": null,
+  "entra_tentativo": "NO",
+  "justificacion_elegibilidad": "Excluido en 2025: No evidencia de uso de IA. Se mantiene fuera; validar la decisión de exclusión (CENIA).",
+  "confianza": "N/A (excluido 2025)",
+  "evidencia_verbatim": {
+    "pais": "Caso excluido en 2025 (BBDD oficial ILIA 2025); país registrado: UY.",
+    "tipo_proceso": null,
+    "etapas_uso_IA": null,
+    "estado_actividad": null,
+    "nivel_consolidacion": null,
+    "tipo_convocante": null,
+    "usa_IA_en_proceso": null,
+    "rol_IA": null
   },
-  {
-   "url": "https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/politicas-y-gestion/informes-mesas-dialogo-sobre-inteligencia-artificial-datos",
-   "estado": "baseline-2025-excluido",
-   "cita": ""
-  },
-  {
-   "url": "https://plataformaparticipacionciudadana.gub.uy/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOM0J1TldsNGR6VjZjR3gxYUcxck5XVjFkR050WVd4MGVHOTJZd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpQVkxcGJteHBibVU3SUdacGJHVnVZVzFsUFNKSmJtWnZjbTFsSUVOdmJuTjFiSFJoSUZCMVlteHBZMkVnUlhOMGNtRjBaV2RwWVNCSlFTQXhMbkJrWmlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjblNXNW1iM0p0WlNVeU1FTnZibk4xYkhSaEpUSXdVQ1ZETXlWQ1FXSnNhV05oSlRJd1JYTjBjbUYwWldkcFlTVXlNRWxCSlRJd01TNXdaR1lHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWhSaGNIQnNhV05oZEdsdmJpOXdaR1lHT3daVU9oRnpaWEoyYVdObFgyNWhiV1U2Q214dlkyRnMiLCJleHAiOiIyMDMwLTA1LTEzVDA1OjExOjQ5LjcyNVoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--3fbeadc054001362bc207ccee978a12a95a6445a/Informe%20Consulta%20P%C3%BAblica%20Estrategia%20IA%201.pdf",
-   "estado": "baseline-2025-excluido",
-   "cita": ""
-  }
- ],
- "gaps": [],
- "alertas": [
-  "[excluido 2025 — fuera del índice] Motivo: No evidencia de uso de IA",
-  "No re-extraído en 2026; incluido para inventario completo / validación CENIA."
- ],
- "fuente_datos": "excluido_2025_bbdd",
- "motivo_exclusion_2025": "No evidencia de uso de IA",
- "veredicto_equipo": null,
- "comentario_equipo": "",
- "divergencia_equipo": false
+  "fuentes": [
+    {
+      "url": "https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/comunicacion/publicaciones/estrategia-nacional-inteligencia-artificial-2024-2030",
+      "estado": "baseline-2025-excluido",
+      "cita": ""
+    },
+    {
+      "url": "https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/politicas-y-gestion/informes-mesas-dialogo-sobre-inteligencia-artificial-datos",
+      "estado": "baseline-2025-excluido",
+      "cita": ""
+    },
+    {
+      "url": "https://plataformaparticipacionciudadana.gub.uy/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOM0J1TldsNGR6VjZjR3gxYUcxck5XVjFkR050WVd4MGVHOTJZd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpQVkxcGJteHBibVU3SUdacGJHVnVZVzFsUFNKSmJtWnZjbTFsSUVOdmJuTjFiSFJoSUZCMVlteHBZMkVnUlhOMGNtRjBaV2RwWVNCSlFTQXhMbkJrWmlJN0lHWnBiR1Z1WVcxbEtqMVZWRVl0T0NjblNXNW1iM0p0WlNVeU1FTnZibk4xYkhSaEpUSXdVQ1ZETXlWQ1FXSnNhV05oSlRJd1JYTjBjbUYwWldkcFlTVXlNRWxCSlRJd01TNXdaR1lHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWhSaGNIQnNhV05oZEdsdmJpOXdaR1lHT3daVU9oRnpaWEoyYVdObFgyNWhiV1U2Q214dlkyRnMiLCJleHAiOiIyMDMwLTA1LTEzVDA1OjExOjQ5LjcyNVoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--3fbeadc054001362bc207ccee978a12a95a6445a/Informe%20Consulta%20P%C3%BAblica%20Estrategia%20IA%201.pdf",
+      "estado": "baseline-2025-excluido",
+      "cita": ""
+    }
+  ],
+  "gaps": [],
+  "alertas": [
+    "[excluido 2025 — fuera del índice] Motivo: No evidencia de uso de IA",
+    "No re-extraído en 2026; incluido para inventario completo / validación CENIA."
+  ],
+  "fuente_datos": "excluido_2025_bbdd",
+  "motivo_exclusion_2025": "No evidencia de uso de IA",
+  "veredicto_equipo": null,
+  "comentario_equipo": "",
+  "divergencia_equipo": false
 }
