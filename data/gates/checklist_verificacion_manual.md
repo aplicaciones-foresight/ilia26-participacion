@@ -1,167 +1,126 @@
 # Checklist de verificación manual — ILIA 2026 (Participación)
 
-Qué revisar **a mano** para maximizar inclusión. Ordenado por probabilidad de
-que el caso ENTRE. Para cada uno: qué buscar, dónde, y **qué evidencia lo
-confirma** (regla: la IA debe procesar el CONTENIDO participativo —
-analizar/clasificar/agrupar/resumir/sentimiento sobre los aportes ciudadanos).
+Qué revisar **a mano** para maximizar inclusión, tras la búsqueda ampliada
+(rescate de excluidos/rechazados + descubrimiento de casos nuevos en los 20
+países). Regla: la IA debe procesar el **CONTENIDO** participativo
+(analizar/clasificar/agrupar/resumir/sentimiento sobre los aportes), no atención
+de trámites, no visión de obras, no desinformación, no muestreo.
 
-> Contexto: muchos sitios oficiales (.gob/.gov/.cl/.cu) dan **403 a los bots**
-> pero funcionan en un navegador normal — por eso varias verificaciones
-> requieren que **tú abras el PDF/página** y busques los términos indicados.
-> Estado actual del conjunto elegible (Escenario A): **25 casos** confirmados;
-> lo de abajo puede subirlo.
+> Muchos sitios oficiales dan **403 a los bots** pero funcionan en un navegador
+> normal — por eso varias verificaciones requieren que **tú** abras el PDF/página.
+
+## Estado del conjunto elegible (Escenario A)
+- **25 casos confirmados** (verificación profunda con cita verbatim).
+- **+2 rescatables** por confirmar (§A) → hasta **27**.
+- **8 candidatos de descubrimiento** (§B), todos *por verificar* — ninguno
+  confirmado aún como IA-sobre-contenido desplegada.
+- La búsqueda de rescate de los 7 dudosos rechazados dio **0 inclusiones**
+  nuevas (§C): todos confirmados fuera con fuente primaria.
 
 ---
 
 ## 🟢 A. Rescatables — muy probablemente INCLUIBLES si confirmas (2)
 
 ### A1 · CL — Plataforma UCampus / Proceso Constitucional 2023
-- **Hallazgo:** la sistematización de las **1.136 audiencias públicas** la hizo
-  **Unholster**: transcripción con **Whisper** (voz→texto) + procesamiento con
-  Data Science y **"modelos de lenguaje natural"**, con clasificación automática
-  de temas y buscador inteligente. → cumple IA-sobre-contenido.
+- **Hallazgo:** **Unholster** sistematizó las **1.136 audiencias públicas** con
+  **Whisper** (voz→texto) + "modelos de lenguaje natural" (clasificación de temas,
+  buscador inteligente). → IA sobre contenido.
 - **Abrir a mano:** `secretariadeparticipacion.cl/wp-content/uploads/2023/12/AudienciasPublicas.pdf`
-  y `.../2023/10/Informe-SPC-Final.pdf`. Buscar en el texto: **"Unholster",
-  "Whisper", "modelos de lenguaje natural", "Data Science", "clasificación"**.
-- **⚠ Antes de incluir — DESAMBIGUAR duplicado:** confirmar si "UCampus" es el
-  MISMO proceso ya incluido como **"Participación Ciudadana Proceso
-  Constitucional"** (baseline). Si es el mismo → NO duplicar (ya cuenta). Si
-  UCampus es una plataforma/proceso distinto → incorporar.
+  y `.../2023/10/Informe-SPC-Final.pdf`. Buscar: **"Unholster", "Whisper",
+  "modelos de lenguaje natural", "Data Science"**.
+- **⚠ Antes de incluir:** confirmar si NO es el mismo proceso ya incluido como
+  **"Participación Ciudadana Proceso Constitucional"** (evitar duplicado).
 
 ### A2 · CU — Consulta Popular Código de las Familias (GEMA-CEN / Datys)
-- **Hallazgo:** GEMA-CEN hizo **agrupamiento automático de las propuestas por
-  similitud** + clasificación temática ("análisis inteligente de expedientes").
-  Es procesamiento del contenido (clustering/IR), aunque las categorías las
-  definen humanos → IA-sobre-contenido **parcial**.
-- **Abrir a mano** (los .cu dan 403 a bots): `datys.cu/spa/site/product/15` y
-  `datys.cu/spa/site/lines/11` (Minería de Datos). Buscar **"agrupamiento",
-  "clasificación", "clustering", "aprendizaje", "recuperación de información"**.
-- **Confirmar en paper:** `scielo.sld.cu` / *Revista Cubana de Ciencias
-  Informáticas* / DSpace UCI → query: `GEMA Datys recuperación de información
-  agrupamiento documentos` y `clasificación automática textos GEMA Cuba`.
-- **Confirma inclusión si:** un documento técnico describe algoritmos de
-  agrupamiento/clasificación automática (TF-IDF, k-means, similitud coseno)
-  sobre el texto de las propuestas (no reglas manuales).
+- **Hallazgo:** GEMA-CEN **agrupó automáticamente las propuestas por similitud** +
+  clasificación temática → IA sobre contenido (parcial; clustering/IR clásico).
+- **Abrir a mano** (.cu dan 403): `datys.cu/spa/site/product/15` y `.../lines/11`.
+  Confirmar en paper: `scielo.sld.cu` / *Rev. Cubana de Ciencias Informáticas* /
+  DSpace UCI → `GEMA Datys recuperación de información agrupamiento documentos`.
+- **Confirma inclusión si:** un doc técnico describe agrupamiento/clasificación
+  automática (TF-IDF, k-means, similitud coseno) sobre el texto de las propuestas.
 
 ---
 
-## 🟡 B. Dudosos rechazados — verificación pendiente (agentes cortados por límite de sesión) (7)
+## 🔵 B. Candidatos de descubrimiento — nuevos, POR VERIFICAR (8)
 
-> Estos NO alcanzaron a verificarse en profundidad (se agotó el límite de
-> sesión). Instrucciones para hacerlo a mano.
+Ninguno confirmado; todos requieren verificar el paso *IA-sobre-contenido*.
+Detalle y fuentes en `busqueda_ampliada_2026_resultados.json`.
 
-### B1 · CO — ISIDataInsights / Reto de Ciudad 'Datos con Historia' (SDP Bogotá)
-- **Query:** `ISIDataInsights "Datos con Historia" SDP Bogotá Maloka inteligencia artificial`;
-  `ISIDataInsights procesamiento documentos aportes ciudadanos`.
-- **Dónde:** sitio de ISIDataInsights (empresa), Secretaría Distrital de
-  Planeación (sdp.gov.co), Maloka, notas de prensa del concurso (oct-nov 2024).
-- **Confirma inclusión si:** hay evidencia de que la herramienta se **aplicó
-  operativamente** a un proceso participativo real analizando aportes ciudadanos
-  (no solo ganar el concurso / prototipo).
+### B1 · PY — Consultas ciudadanas sobre IA (PNUD AccLab / Atlas IA "AILA") — *prioridad*
+- Paraguay hoy es **país vacío**; este es el lead más valioso. Consultas
+  (encuestas, grupos focales, entrevistas) en 3 ciudades (2024-25); aportes
+  procesados para hallar percepciones/patrones. **Falta** confirmar si el
+  análisis usó NLP/ML (tipo Citibeats) o codificación humana.
+- **Verificar:** blog PNUD (`undp.org/es/paraguay/blog/consultas-ciudadanas-sobre-ia-en-paraguay...`)
+  + PDF *AI Landscape Assessment Paraguay*; contactar AccLab PNUD PY / Innovación MITIC.
 
-### B2 · CL — Senador Virtual / CrowdLaw (GobLab UAI + IMFD)
-- **Query:** `Senador Virtual NLP GobLab UAI IMFD aportes ciudadanos clasificación`;
-  `CrowdLaw Chile inteligencia artificial proyectos de ley participación`.
-- **Dónde:** GobLab UAI (goblab.uai.cl), IMFD, Senado (senado.cl), papers.
-- **Confirma inclusión si:** el sistema de IA/NLP que analiza los aportes de
-  Senador Virtual estuvo **en producción o piloto real** (no solo paper/seminario).
+### B2 · BR — 3 proyectos UnB sobre Brasil Participativo *(⚠ posible doble conteo)*
+Todos aplican IA al contenido de **Brasil Participativo** (plataforma **ya
+incluida**), y son repos **académicos** (UnB): verificar despliegue oficial y no
+duplicar el caso ya contado.
+- **Lumina** (unb-mds/2024-2-Lumina): análisis de sentimiento sobre propuestas
+  (con el MDS). ¿Ejercicio académico o adoptado?
+- **BP-Classificador** (ResidenciaTICBrisa, UnB-FGA/LAPPIS): clasificación ML/NLP
+  para integrarse a la plataforma. ¿Llegó a producción?
+- **Participe+** (unb-mds/ParticipeMais): IA generativa que resume/organiza. ¿Va
+  más allá de resumir? ¿desplegado?
 
-### B3 · CO — IA para participación en el POT de Bogotá (Control Visible/Auditoría)
-- **Query:** `POT Bogotá inteligencia artificial aportes ciudadanos Auditoría General 2025 piloto`.
-- **Dónde:** Revista de la Auditoría General (jun-2025), Veeduría Distrital.
-- **Confirma inclusión si:** fue un **piloto implementado** sobre un proceso
-  participativo real (no solo artículo académico / diseño metodológico).
+### B3 · MX — Jalisco "¡Armemos un Plan!" (Plan Estatal 2024-2030)
+- Consulta masiva (675K participaciones, **15.899 propuestas** agrupadas en 36
+  temas). Jalisco tiene Política de IA. **Falta** confirmar si la agrupación usó IA/NLP.
+- **Verificar:** anexo metodológico del PDF del Plan (`plan.jalisco.gob.mx`) →
+  buscar "inteligencia artificial / PLN / minería de texto / clustering";
+  contactar Secretaría de Planeación y Participación Ciudadana de Jalisco.
 
-### B4 · CO — 4 mini-públicos excluidos (procesos elegibles, falta IA sobre contenido)
-- **"Pa' que veás" (Cali):** ¿la IA analiza el CONTENIDO de las quejas
-  ciudadanas con NLP, o solo recopila/predice riesgos técnicos de obras?
-  Query: `"Pa que veas" Cali inteligencia artificial análisis quejas ciudadanas`.
-- **iLabs – Laboratorios de Inteligencia Colectiva:** ¿la IA procesa los aportes
-  deliberativos? Query: `iLabs laboratorios inteligencia colectiva IA deliberación Colombia`.
-- **Asamblea Ciudadana Itinerante (Concejo de Bogotá)** y **Mini-Public diálogo
-  social (Procuraduría):** Query: `Asamblea Ciudadana Itinerante Concejo Bogotá IA sistematización`
-  y `Procuraduría diálogo social minipúblico inteligencia artificial aportes`.
-- **Confirma inclusión si:** IA/NLP sobre el contenido de los aportes (no solo
-  ser un proceso participativo elegible).
-
-### B5 · CO — Tenemos que hablar de Colombia (LEAD prometedor)
-- **Lead:** podría usar el **mismo motor NLP** que "Tenemos que hablar de Chile"
-  (Instituto de Argumentación, U. de Chile), que SÍ analiza el contenido. No se
-  confirmó en fuente colombiana (el resultado que lo afirmaba citaba una fuente
-  chilena — descartado).
-- **Abrir a mano:** informe técnico **"Colombia a escala"** (ResearchGate /
-  tenemosquehablarcolombia.co/resultados). Query: `"Tenemos que hablar de
-  Colombia" informe técnico análisis NLP procesamiento lenguaje natural`.
-- **Confirma inclusión si:** una fuente **colombiana** documenta que el análisis
-  de las +374.000 palabras usó IA/NLP (no codificación cualitativa manual).
-- *(Hoy cuenta como incluido pero marcado "por verificar".)*
-
-### B6 · CO — DNP Diálogos Regionales Vinculantes
-- **Verificado:** método = codificación cualitativa manual + estadística
-  descriptiva; **sin IA confirmada** (confianza media). La "nota interna" de un
-  modelo híbrido NLP **no se corroboró**.
-- **Query para reabrir:** `"diálogos regionales vinculantes" DNP NLP OR "procesamiento
-  de lenguaje natural" OR "minería de texto" OR "topic modeling"`; buscar tesis /
-  proveedores / PDF metodológico en `colaboracion.dnp.gov.co`.
-- **Confirma inclusión si:** aparece un documento técnico que describa NLP/ML
-  clasificando/estructurando las +89.000 propuestas.
-
-### B7 · VE — Plan de la Patria 7T (IA y Big Data)
-- **Verificado:** solo afirmación de **prensa estatal** (Correo del Orinoco),
-  sin descripción técnica ni corroboración; sistematización descrita como
-  **humana** (33.780 reporteros). **No incluible** con lo hallado.
-- **Query para reabrir:** `site:correodelorinoco.gob.ve Plan de la Patria 500 mil
-  propuestas inteligencia artificial`; `CNTI OR Cendit OR CENDITEL sistematización
-  propuestas Plan Patria algoritmo`.
-- **Confirma inclusión si:** un proveedor/académico/doc técnico especifica un
-  pipeline de IA/NLP sobre el **texto** de las propuestas.
+### B4 · Leads menores (baja confianza)
+- **CO — Atlántico POD 2025-2050 / LITA:** plataforma con IA, pero parece
+  geoespacial/técnica, no sobre aportes. Verificar en LITA si procesa texto de
+  la participación.
+- **UY — Consulta 'Infancia, entornos digitales e IA' (2026):** tiene fase de
+  sistematización; verificar (post 10/09/2026) si usa NLP o análisis humano.
+- **GT — SEGEPLAN + Red Ciudadana (IA generativa):** ¿sistematiza aportes de los
+  Consejos de Desarrollo (COCODES/COMUDES) o es herramienta interna? Verificar en
+  `portal.segeplan.gob.gt`.
 
 ---
 
-## 🔴 C. Verificados FUERA con fuente primaria — baja probabilidad (12)
+## 🔴 C. Dudosos rechazados — RE-INVESTIGADOS y confirmados FUERA (7)
 
-Cerrados con cita verbatim (ver hoja *Verificación profunda*). Sólo reabrir si
-aparece la evidencia indicada:
+La segunda búsqueda de rescate **no rescató ninguno**. Qué los reabriría:
 
-| Caso | Por qué salió | Qué lo reabriría |
+| Caso | Por qué quedó fuera | Qué lo reabriría |
 |---|---|---|
-| CR dIAra | Visión por computador sobre imágenes de obras (repo CGR) | IA que analice el CONTENIDO de denuncias/aportes ciudadanos |
-| CR U-Report | Chatbot de encuestas RapidPro (reglas/flujos) | NLP/ML clasificando las respuestas abiertas de los jóvenes |
-| DO CiudadanIA | Asistente de atención/trámites (recolecta datos) | IA que analice contenido deliberativo/consultivo |
-| HN RedPública+iVerify | iVerify = desinformación, aparte de las propuestas | Módulo de IA que analice las propuestas de RedPública |
-| BR ParticipACT | ML sobre crowdsensing/sensores urbanos | IA sobre deliberación/opiniones (no sensores) |
-| CL LXS 400 | IA solo para muestreo + logística | IA que analice el contenido deliberativo (el "informe de IA") |
-| TT EngageTT | IA es capacidad de Go Vocal, no aplicada a la consulta | Doc que muestre Sensemaking aplicado a los aportes de la NDTS |
-| MX Presupuesto CRECES | Chatbot 'Hola' = canal de voto/atención | IA que analice/priorice el contenido de las propuestas vecinales |
-| CL Estrategia Gob. Digital | IA es el tema; aportes evaluados por criterios humanos | Informe que declare análisis automatizado de los 488 aportes |
-| CL La voz de los nuevos votantes | Encuesta de terreno tradicional | Informe que declare NLP/minería sobre las respuestas |
-| CL Jornada IPP-UNAB | Evento interno de lanzamiento | Informe que sistematice con IA intervenciones ciudadanas |
-| CO DNP Diálogos | (ver B6) | (ver B6) |
+| CL Senador Virtual (CrowdLaw) | NLP real pero **prototipo** de investigación; no en producción ni en el Repositorio de Algoritmos Públicos | Despliegue/piloto real sobre aportes de Senador/Congreso Virtual |
+| CO POT Bogotá (Auditoría) | Estudio académico de **factibilidad/aceptación** (encuesta a 395), sin IA implementada | Prototipo/piloto que procese aportes reales del POT con NLP |
+| CO ISIDataInsights (SDP) | **MVP** validado, "será integrada" (prospectivo); vínculo con Chatico temporalmente inconsistente | Evidencia de corrida operativa sobre un corpus real de aportes |
+| CO "Pa' que veás" (Cali) | Es un **Monitor de Inversión** (BID MapaInversiones); reportes ciudadanos = a futuro | Módulo que aplique NLP al contenido de las quejas ciudadanas |
+| CO iLabs (Ideemos) | IA/ML en la fase de **diagnóstico**, no sobre la deliberación | Caso aplicado con NLP/clustering sobre las transcripciones/aportes |
+| CO Asamblea Itinerante (Concejo Bogotá) | Sistematización por **relatorías humanas** | Edición reciente que incorpore IA/NLP sobre los aportes |
+| CO Mini-Public Procuraduría | **Sin caso discreto** documentado | La ficha original ILIA (nombre exacto, año, aliado técnico) + IA sobre aportes |
 
 ---
 
-## 🔎 D. Descubrimiento de casos nuevos — PENDIENTE (agentes cortados por límite)
+## ⚫ D. Verificados FUERA con fuente primaria — baja probabilidad (12)
 
-Los 4 barridos de descubrimiento **no terminaron** (límite de sesión, resetea
-~6:20 UTC). Relanzables. Mientras, búsqueda manual sugerida por país:
-
-- **Vacíos (máx. prioridad): AR, UY, PY, SV, JM.** Query por país:
-  `"inteligencia artificial" "participación ciudadana" <país> presupuesto participativo OR consulta pública 2024 2025`;
-  revisar Decidim (`decidim.org/showcase`), Go Vocal/CitizenLab, PNUD/CEPAL.
-- **Densos (posibles subnacionales): BR, CO, CL, MX, PE.**
-  `orçamento participativo IA análise propostas` (BR);
-  `plan de desarrollo municipal IA sistematización aportes` (CO/CL/MX);
-  congresos/municipios + "procesamiento de lenguaje natural".
-- **Resto: BO, EC, GT, HN, PA, CR, DO, CU, TT.** Consulta pública/popular +
-  IA/NLP; organismos multilaterales por país.
-- **Confirma inclusión** de cualquier hallazgo si la IA procesa el contenido de
-  los aportes (no atención, no trámites, no visión de obras, no desinformación).
+Cerrados con cita verbatim (hoja *Verificación profunda*). Solo reabrir con la
+evidencia indicada: CR dIAra (visión de obras) · CR U-Report (RapidPro reglas) ·
+DO CiudadanIA (atención/trámites) · HN RedPública/iVerify (desinformación) ·
+BR ParticipACT (crowdsensing) · CL LXS 400 (muestreo) · TT EngageTT (capacidad
+no aplicada) · MX CRECES (chatbot de voto) · CL Estrategia Gob. Digital ·
+CL La voz de los nuevos votantes · CL Jornada IPP-UNAB · CO DNP Diálogos.
+→ En cada uno: cambiaría si aparece IA que analice el CONTENIDO de los aportes.
 
 ---
 
-### Resumen de acciones (orden sugerido)
-1. **A1 CL UCampus** — abrir los 2 PDF + desambiguar duplicado. *(alta ganancia)*
-2. **A2 CU GEMA** — abrir Datys + buscar paper UCI. *(alta ganancia)*
-3. **B5 CO TQH Colombia** — abrir informe "Colombia a escala". *(ya cuenta; confirmar)*
-4. **B1–B4** — ISIDataInsights, Senador Virtual, POT Bogotá, 4 mini-públicos CO.
-5. **D** — relanzar descubrimiento (o buscar manual por país) tras el reset del límite.
+## Orden de acción sugerido
+1. **A1 CL UCampus** y **A2 CU GEMA** — confirmar (alta ganancia, +2 → 27).
+2. **B1 PY PNUD** — país vacío; alto valor si se confirma NLP.
+3. **B5 CO TQH Colombia** (ver recodificación, nota pendiente) — confirmar si usa
+   el motor NLP de TQH Chile.
+4. **B2/B3** — BR (evitar doble conteo con Brasil Participativo) y MX Jalisco.
+5. **B4** — leads menores (CO Atlántico, UY, GT) cuando haya tiempo.
+
+*Datos crudos: `busqueda_ampliada_2026_resultados.json`. Resultados de la
+verificación profunda: `verificacion_profunda_resultados.json` + hoja
+"Verificación profunda" de la planilla.*

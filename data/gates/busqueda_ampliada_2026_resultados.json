@@ -1,0 +1,205 @@
+{
+ "rescate_ronda1": [
+  {
+   "pais": "CL",
+   "caso": "Plataforma UCampus – participación 2023 (Proceso Constitucional 2023)",
+   "veredicto": "INCLUIBLE",
+   "usa_IA_contenido": "si",
+   "evidencia": "La sistematización de las 1.136 audiencias públicas del proceso constitucional 2023 la ejecutó Unholster: transcripción con Whisper (speech-to-text) + procesamiento con Data Science y 'modelos de lenguaje natural', con clasificación automática de temas frecuentes y buscador inteligente. Sobre esa capa NLP hubo interpretación cualitativa humana. OJO posible DUPLICADO con el caso ya incluido 'Participación Ciudadana Proceso Constitucional'.",
+   "cita_verbatim": "La sistematización y análisis de las audiencias fue desarrollada en una primera etapa por la empresa Unholster, sobre la base de la transformación de registros audiovisuales en texto y su posterior procesamiento y análisis mediante herramientas de Data Science y modelos de lenguaje natural.",
+   "fuente_url": "https://www.secretariadeparticipacion.cl/wp-content/uploads/2023/12/AudienciasPublicas.pdf",
+   "que_buscar_manual": "Abrir manualmente (egress-blocked) AudienciasPublicas.pdf e Informe-SPC-Final.pdf de secretariadeparticipacion.cl; buscar 'Unholster','Whisper','modelos de lenguaje natural','Data Science'. DISAMBIGUAR si UCampus es el mismo proceso ya incluido como 'Participación Ciudadana Proceso Constitucional' (evitar duplicado) o un caso distinto."
+  },
+  {
+   "pais": "CL",
+   "caso": "Estrategia de Gobierno Digital (2ª consulta ciudadana)",
+   "veredicto": "NO_INCLUIBLE",
+   "usa_IA_contenido": "no",
+   "evidencia": "488 aportes procesados por la Secretaría de Gobierno Digital + Laboratorio de Gobierno; IA solo como TEMA de la consulta. Sin evidencia de NLP/IA sobre las respuestas. Confirma verificación previa.",
+   "fuente_url": "https://satisfaccion.gob.cl/informacion-de-interes/noticias/finaliza-consulta-publica-por-la-estrategia-de-gobierno-digital-2030",
+   "que_buscar_manual": "Abrir participacion.digital.gob.cl (2ª consulta) + PDF de metodología; buscar 'sistematización','NLP','algoritmo','topic modeling' sobre los 488 aportes. Solicitud por transparencia (Ley 20.285) del informe de sistematización. INCLUIBLE solo si describe análisis automatizado de los aportes."
+  },
+  {
+   "pais": "CL",
+   "caso": "La voz de los nuevos votantes",
+   "veredicto": "NO_INCLUIBLE",
+   "usa_IA_contenido": "no",
+   "evidencia": "Estudio de terreno tradicional (19 estudiantes, San Bernardo, may-2023), análisis cualitativo/estadístico humano. Sin IA/NLP. Confirma verificación previa.",
+   "fuente_url": "https://ipp.unab.cl/wp-content/uploads/2023/10/2-IPP-UNAB_Informe-Voz-de-los-votantes.pdf",
+   "que_buscar_manual": "Abrir el PDF del informe, sección 'Metodología'; buscar 'procesamiento de lenguaje natural','minería de texto','análisis de sentimiento','algoritmo'. CAQDAS manual (Atlas.ti sin IA) NO cuenta."
+  },
+  {
+   "pais": "CL",
+   "caso": "Jornada de Escucha Lanzamiento IPP-UNAB",
+   "veredicto": "NO_INCLUIBLE",
+   "usa_IA_contenido": "no",
+   "evidencia": "Evento interno de lanzamiento del IPP-UNAB (2022) con autoridades/académicos; sin recolección sistemática ni análisis IA de aportes. Confirma verificación previa.",
+   "fuente_url": "https://www.elmostrador.cl/agenda-pais/2022/06/11/universidad-presento-su-nuevo-instituto-de-politicas-publicas/",
+   "que_buscar_manual": "Revisar ipp.unab.cl/noticias-ipp/ y la nota de El Mostrador (11-06-2022). Cambiaría a INCLUIBLE solo si un informe posterior sistematiza con IA/NLP intervenciones ciudadanas de esas jornadas (no consta)."
+  },
+  {
+   "pais": "CU",
+   "caso": "Consulta Popular Código de las Familias (GEMA-CEN/XISCOP)",
+   "veredicto": "INCLUIBLE",
+   "usa_IA_contenido": "parcial",
+   "evidencia": "Datys describe GEMA como sistema que clasifica documentos por temáticas y agrupa documentos similares con 'técnicas modernas de recuperación de información'; prensa oficial confirma que GEMA-CEN, mediante 'análisis inteligente de expedientes', agrupó automáticamente las propuestas por similitud. Es procesamiento automático del contenido (clustering + clasificación temática). Matiz: técnica = IR/clustering (ML clásico), no NLP semántico profundo declarado.",
+   "fuente_url": "http://www.datys.cu/spa/site/product/15",
+   "que_buscar_manual": "Abrir manualmente datys.cu/spa/site/product/15 y /lines/11 (dan 403 a bots). Buscar en scielo.sld.cu / Revista Cubana de Ciencias Informáticas / DSpace UCI: 'GEMA Datys recuperación de información agrupamiento documentos'. CONFIRMA si un paper describe algoritmos de agrupamiento/clasificación automática (TF-IDF, k-means, similitud coseno) sobre el texto de las propuestas."
+  },
+  {
+   "pais": "VE",
+   "caso": "Plan de la Patria 7 Transformaciones - IA y Big Data",
+   "veredicto": "SIN_EVIDENCIA",
+   "usa_IA_contenido": "no_claro",
+   "evidencia": "Afirmación de 500.000+ propuestas con IA/Big Data solo en prensa estatal (Correo del Orinoco, mar-2026), genérica y sin descripción técnica. Cero corroboración de proveedor/académico. Descripciones operativas mencionan trabajo humano (33.780 reporteros) y bases de datos/georreferenciación.",
+   "fuente_url": "http://www.correodelorinoco.gob.ve/",
+   "que_buscar_manual": "Google 'site:correodelorinoco.gob.ve Plan de la Patria 500 mil propuestas inteligencia artificial'. Buscar corroboración técnica: 'CNTI OR Cendit sistematización propuestas Plan Patria algoritmo'. CONFIRMA solo si un proveedor/académico/doc técnico especifica pipeline NLP sobre el texto."
+  }
+ ],
+ "rescate_ronda2": [
+  {
+   "pais": "CO",
+   "caso": "ISIDataInsights / Reto de Ciudad 'Datos con Historia' (SDP Bogotá)",
+   "veredicto": "NO_INCLUIBLE",
+   "usa_IA_contenido": "parcial",
+   "evidencia": "ISIDataInsights (ganador del reto 'Datos con Historia' SDP Bogotá + Maloka, oct-nov 2024, de IGG) aplica modelos de IA para procesar documentos e 'identificar patrones clave' sobre 'aportes ciudadanos' — IA sobre contenido por DISEÑO. Pero todas las fuentes lo describen como MVP 'probado en el contexto institucional' que 'SERÁ integrada' (lenguaje prospectivo), sin despliegue operativo sobre un corpus real. El vínculo con el PDD 2024-2028 (Chatico) es temporalmente inconsistente: Chatico operó mar-abr 2024, ANTES del concurso; las fuentes de Chatico no nombran ISIDataInsights.",
+   "cita_verbatim": "ISIDataInsights entra en una tercera etapa, donde será integrada a los sistemas de información del Distrito para optimizar el análisis de datos cualitativos... La herramienta permite procesar documentos en diversos formatos, validar la consistencia de la información y aplicar modelos de inteligencia artificial para identificar patrones clave.",
+   "fuente_url": "https://www.sdp.gov.co/noticias/bogota-cuenta-herramienta-innovadora-abordar-los-problemas-urbanos-aporte-de-la-ciudadania",
+   "que_buscar_manual": "Abrir las URLs de la SDP con navegador real (403 a bots pero existen; supera el motivo original de rechazo). Verificar en 'Por primera vez la ciudadanía... a través de IA' si ISIDataInsights efectivamente procesó los aportes reales del PDD 2024-2028 o solo describe capacidad. Contactar Ciudad Lab (SDP)/Maloka por evidencia de la 'tercera etapa' (¿se integró y corrió sobre aportes reales tras nov-2024?). Buscar acta del reto / doc del CTPD con uso operativo. Si se confirma corrida real sobre aportes → INCLUIBLE."
+  },
+  {
+   "pais": "CO",
+   "caso": "'Pa' que veás' (Cali)",
+   "veredicto": "NO_INCLUIBLE",
+   "usa_IA_contenido": "no",
+   "evidencia": "Es un Monitor de Inversión Pública (MapaInversiones del BID, 14 países; primera ciudad de LatAm), con 'buscador semántico' sobre ~1.400 proyectos; los reportes ciudadanos/alertas de irregularidades son funcionalidades FUTURAS. No hay IA/NLP analizando quejas. La premisa 'bots que recopilan quejas y predicen riesgos' NO se corrobora. Nota: un sistema DISTINTO de Cali ('Automatización Contáctenos', may-2026) sí usa IA para clasificar PQRSD, pero es radicación de trámites, no proceso deliberativo.",
+   "cita_verbatim": "El sistema [Contáctenos, distinto] incorpora inteligencia artificial para identificar el contenido de cada mensaje, tipificar la solicitud y direccionarla al organismo competente.",
+   "fuente_url": "https://www.cali.gov.co/gobierno/publicaciones/184844/pa-que-veas-cali-primera-ciudad-con-un-monitor-de-inversion--publica-en-america-latina/",
+   "que_buscar_manual": "Abrir paqueveas.cali.gov.co (403 a bots) y ver si los reportes ciudadanos/alertas ya están activos con NLP sobre el contenido de las quejas. Confirmar ante Alcaldía/DATIC si 'Pa' que veás' y 'Contáctenos' son el mismo proyecto. Revisar la ficha original ILIA por los 'bots/predicción' alegados."
+  },
+  {
+   "pais": "CO",
+   "caso": "iLabs – Laboratorios de Inteligencia Colectiva",
+   "veredicto": "SIN_EVIDENCIA",
+   "usa_IA_contenido": "no_claro",
+   "evidencia": "La metodología iLabs (Ideemos) lista 'Inteligencia Artificial, Machine Learning', pero como técnicas de DIAGNÓSTICO cuantitativo, junto a encuestas/entrevistas/analítica. La fase deliberativa usa diálogo (mini-públicos, asambleas, jurados). Ninguna fuente afirma que la IA procese el contenido de los aportes deliberativos.",
+   "cita_verbatim": "Los iLabs combinan las mejores técnicas cuantitativas y cualitativas para la adecuada comprensión de un problema... encuestas, entrevistas en profundidad, analítica de datos, Inteligencia Artificial, Machine Learning, revisión documental...",
+   "fuente_url": "https://ideemos.org/ilabs-laboratorios-de-inteligencia-colectiva/",
+   "que_buscar_manual": "Pedir a Ideemos un caso APLICADO donde la IA/ML se use sobre las transcripciones/aportes deliberativos (NLP/clustering/resumen/sentimiento del contenido), no solo sobre encuestas del diagnóstico. Ese hecho lo haría INCLUIBLE."
+  },
+  {
+   "pais": "CO",
+   "caso": "Asamblea Ciudadana Itinerante del Concejo de Bogotá",
+   "veredicto": "NO_INCLUIBLE",
+   "usa_IA_contenido": "no",
+   "evidencia": "Mini-público deliberativo por sorteo (reconocido por OCDE). Los resultados se 'sistematizaron en informes' mediante RELATORÍAS (relatores humanos) al Concejo; sistematización manual. Ninguna fuente (Ideemos, Participedia, LATINNO, OIDP, Concejo) menciona IA/NLP.",
+   "cita_verbatim": "Los resultados de la deliberación fueron sistematizados en dos informes... Los informes incluyen anexos con relatorías de la Asamblea Ciudadana Itinerante de 2021.",
+   "fuente_url": "https://ideemos.org/asamblea-ciudadana-itinerante-del-concejo-de-bogota/",
+   "que_buscar_manual": "Revisar ediciones recientes (2024-2025, Asambleas del Plan de Desarrollo 2024-2028) en DemoLab (demolab.com.co) y el Concejo por si incorporaron IA/NLP para sistematizar aportes."
+  },
+  {
+   "pais": "CO",
+   "caso": "Mini-Public del diálogo social de la Procuraduría",
+   "veredicto": "SIN_EVIDENCIA",
+   "usa_IA_contenido": "no_claro",
+   "evidencia": "No se encontró ficha/caso discreto documentado de un 'mini-público del diálogo social' de la Procuraduría, ni fuente que lo conecte con IA sobre el contenido. La PGN hace 'diálogo social' e Ideemos hace mini-públicos, pero no hay evidencia pública que los vincule con procesamiento de contenido por IA.",
+   "cita_verbatim": "",
+   "fuente_url": "https://ideemos.org/proyectos/",
+   "que_buscar_manual": "Solicitar a Ideemos/Procuraduría la ficha del caso como se postuló a ILIA (nombre exacto, año, aliado técnico). Abrir ideemos.org/proyectos (403). Revisar 'Escuelas de Diálogo de la PGN' e Informe al Congreso 2024-2025 por IA/NLP sobre deliberación."
+  },
+  {
+   "pais": "CL",
+   "caso": "Senador Virtual / CrowdLaw (GobLab UAI + IMFD)",
+   "veredicto": "NO_INCLUIBLE",
+   "usa_IA_contenido": "parcial",
+   "evidencia": "CrowdLaw (GobLab UAI + FIC + Escuela de Derecho, fondos UAI-Harvard y BID-UChile) desarrolló un PROTOTIPO de algoritmo de clasificación de comentarios ciudadanos para la plataforma del Congreso (Senador/Congreso Virtual). NLP real sobre el contenido, pero prototipo de investigación, no producción ni piloto desplegado. No figura en el Repositorio de Algoritmos Públicos (117 sistemas del Estado, 2025).",
+   "cita_verbatim": "researcher Gonzalo Huerta developing a prototype algorithm for classifying comments to use in the parliament's citizen participation platform.",
+   "fuente_url": "https://goblab.uai.cl/en/crowdlaw/",
+   "que_buscar_manual": "Verificar en GobLab (goblab.uai.cl/en/crowdlaw, 403; usar Wayback) y en el Senado si el clasificador NLP se INTEGRÓ en producción/piloto real (no solo prototipo). Buscar paper Aracena/Huerta/Feddersen con métricas sobre aportes reales, y si aparece en algoritmospublicos.cl/repositorio. Si hay despliegue/piloto real → INCLUIBLE."
+  },
+  {
+   "pais": "CO",
+   "caso": "IA para participación en el POT de Bogotá (Control Visible/Auditoría)",
+   "veredicto": "NO_INCLUIBLE",
+   "usa_IA_contenido": "no",
+   "evidencia": "El artículo 'Factibilidad de inteligencia artificial para la participación ciudadana en la planificación urbana de Bogotá' (Revista Control Visible, Auditoría General, 2025) es un estudio de FACTIBILIDAD/ACEPTACIÓN: encuesta a 395 ciudadanos + entrevistas para evaluar la aceptación de una herramienta PROPUESTA. NO implementa IA que analice aportes reales del POT.",
+   "cita_verbatim": "Se desarrolló una investigación con el objetivo de identificar la factibilidad de aceptación de una herramienta de inteligencia artificial orientada a fomentar la participación ciudadana...",
+   "fuente_url": "https://controlvisible.auditoria.gov.co/index.php/rcf/article/view/63",
+   "que_buscar_manual": "Leer el PDF completo (403; usar Wayback) para confirmar que NO hay prototipo/piloto que procese aportes reales del POT con NLP. Verificar si después la Auditoría/Alcaldía implementó la herramienta sobre datos reales; solo entonces → INCLUIBLE."
+  }
+ ],
+ "descubrimiento": [
+  {
+   "pais": "BR",
+   "caso": "Projeto Lumina (UnB-MDS + Ministério do Desenvolvimento Social)",
+   "descripcion": "Proyecto UnB (disciplina MDS, repo unb-mds/2024-2-Lumina) que aplica análisis de sentimiento con NLP sobre las propuestas/comentarios de los Planos Participativos de Brasil Participativo, clasificando opiniones en positivas/negativas/neutras. En asociación con el MDS.",
+   "usa_IA_contenido": "si",
+   "fuente_url": "https://github.com/unb-mds/2024-2-Lumina",
+   "confianza": "media",
+   "que_buscar_manual": "Confirmar si es solo ejercicio académico (2024-2) o si el MDS lo adoptó en producción; verificar modelo de sentimiento PT y dashboard público. OJO overlap: es sobre Brasil Participativo, ya incluido (evitar doble conteo)."
+  },
+  {
+   "pais": "BR",
+   "caso": "BP-Classificador de Propostas (Residência TIC BRISA / UnB-FGA / LAPPIS)",
+   "descripcion": "Clasificación automática (ML+NLP) de las propuestas de Brasil Participativo; entrena a diario un modelo (Airflow) y expone el clasificador vía servicio Python + gema Ruby para integrarse a la plataforma oficial (que carecía de indexación/PLN).",
+   "usa_IA_contenido": "si",
+   "fuente_url": "https://github.com/ResidenciaTICBrisa/BP-Classificador-de-Propostas",
+   "confianza": "media",
+   "que_buscar_manual": "Confirmar si la integración a Brasil Participativo llegó a PRODUCCIÓN (UnB/LabLivre desarrolla la plataforma oficial). Diferenciar del pipeline BERTopic (arXiv 2509.21292) ya listado. Contacto: LAPPIS (brisa.lappis.rocks). OJO overlap con Brasil Participativo."
+  },
+  {
+   "pais": "BR",
+   "caso": "Participe+ (app UnB-MDS de IA sobre Brasil Participativo)",
+   "descripcion": "App (repo unb-mds/ParticipeMais) que recolecta contenidos de Brasil Participativo y aplica IA generativa/NLP para resumir textos de políticas, generar insights, organizar por temas y crear nubes de palabras. Distinto del municipal 'Participe Mais' de São Paulo ya listado.",
+   "usa_IA_contenido": "parcial",
+   "fuente_url": "https://github.com/unb-mds/ParticipeMais",
+   "confianza": "media",
+   "que_buscar_manual": "Verificar si va más allá de resumir/hacer accesible (¿clasifica/agrupa los aportes?) y si está desplegado; confirmar vínculo con la Secretaria Nacional de Participação Social. No confundir con São Paulo Participe Mais. OJO overlap con Brasil Participativo."
+  },
+  {
+   "pais": "MX",
+   "caso": "Jalisco – Consulta ¡Armemos un Plan! / Plan Estatal de Desarrollo y Gobernanza 2024-2030",
+   "descripcion": "Consulta ciudadana masiva (feb-abr 2025): 675.484 participaciones, 15.899 propuestas escritas, sistematizadas en 36 temas/50 objetivos/197 proyectos ('agrupar ideas similares'). Jalisco tiene Política de IA y Gobernanza de Datos (ai.jalisco.gob.mx). NO confirmado que la agrupación/clasificación se hiciera con IA/NLP; la escala lo hace plausible pero la prensa solo dice 'sistematización'.",
+   "usa_IA_contenido": "no_claro",
+   "fuente_url": "https://armemosunplan.mx/propuestas-ciudadanas/",
+   "confianza": "baja",
+   "que_buscar_manual": "Revisar el anexo metodológico del PDF del Plan (plan.jalisco.gob.mx) buscando 'inteligencia artificial','procesamiento de lenguaje natural','minería de texto','clasificación automática','clustering'. Confirmar si el IIEG o un proveedor usó IA para categorizar las 15.899 propuestas. Contactar Secretaría de Planeación y Participación Ciudadana de Jalisco."
+  },
+  {
+   "pais": "CO",
+   "caso": "Atlántico – Plan de Ordenamiento Departamental (POD) 2025-2050 / LITA",
+   "descripcion": "La Gobernación del Atlántico construye su POD 2025-2050 con mesas subregionales y la plataforma LITA (habilitada por IA) para almacenar/procesar información y estructurar proyectos, disponible a ciudadanía y municipios. La IA parece orientada a cruce de datos geoespaciales/técnicos más que a analizar el contenido de los aportes ciudadanos.",
+   "usa_IA_contenido": "no_claro",
+   "fuente_url": "https://www.atlantico.gov.co/index.php/noticias/prensa-planeacion/27250-plan-de-ordenamiento-departamental-toma-forma-en-el-atlantico",
+   "confianza": "baja",
+   "que_buscar_manual": "Verificar en LITA/Secretaría de Planeación del Atlántico si la IA procesa TEXTO/aportes de la participación (clasificación/agrupación/resumen/sentimiento) o solo cruza capas geoespaciales. Query 'LITA Atlántico inteligencia artificial participación'; identificar proveedor. Confirmar ventana 2024-2026."
+  },
+  {
+   "pais": "PY",
+   "caso": "Consultas ciudadanas sobre IA - PNUD Accelerator Labs / Atlas IA (AILA)",
+   "descripcion": "El AccLab del PNUD Paraguay + Columbia SIPA + Dirección de Innovación del MITIC hizo consultas ciudadanas sobre IA (encuestas callejeras, grupos focales, encuestas en línea, entrevistas) en Asunción, Coronel Oviedo y Ciudad del Este (2024-2025); los aportes se procesaron para identificar percepciones/patrones (brecha urbano-rural, correlación ingreso-optimismo), insumo del diagnóstico AILA/Atlas IA. No confirmado si el análisis usó NLP/ML (tipo Citibeats) o codificación humana.",
+   "usa_IA_contenido": "no_claro",
+   "fuente_url": "https://www.undp.org/es/paraguay/blog/consultas-ciudadanas-sobre-ia-en-paraguay-visiones-diversas-entre-el-campo-y-la-ciudad",
+   "confianza": "media",
+   "que_buscar_manual": "Revisar el blog PNUD + el PDF 'Artificial Intelligence Landscape Assessment Paraguay' (2026) para confirmar si el ANÁLISIS de los aportes usó NLP/sentimiento/clustering o una herramienta tipo Citibeats/CivicLytics, o fue cualitativo manual. Contactar AccLab PNUD PY / Innovación MITIC. Si NLP → INCLUIBLE (PY hoy es país vacío)."
+  },
+  {
+   "pais": "UY",
+   "caso": "Consulta pública 'Infancia, entornos digitales e IA' (Parlamento+Agesic+Ceibal+UNICEF+PNUD, 2026)",
+   "descripcion": "Consulta pública nacional (abierta hasta 10/09/2026) que recoge experiencias/propuestas de ciudadanía, academia y NNA sobre entornos digitales e IA; incluye fase de 'sistematización, análisis y validación'. Sin evidencia de que use IA/NLP (en procesos previos de Agesic el análisis fue humano).",
+   "usa_IA_contenido": "no_claro",
+   "fuente_url": "https://www.gub.uy/ministerio-educacion-cultura/comunicacion/noticias/lanzamiento-consulta-publica-sobre-inteligencia-artificial-entornos-digitales",
+   "confianza": "baja",
+   "que_buscar_manual": "Verificar (post 10/09/2026) la metodología de sistematización en Agesic/Parlamento: ¿NLP/IA para clasificar/agrupar/resumir aportes o análisis humano? Distinto del caso ya listado 'Consulta Pública Estrategia Nacional de IA'."
+  },
+  {
+   "pais": "GT",
+   "caso": "Plataforma de modelos generativos de IA de SEGEPLAN + Red Ciudadana",
+   "descripcion": "SEGEPLAN (ente rector de los planes de desarrollo territorial/municipal, construidos con aportes de los Consejos de Desarrollo COCODES/COMUDES), con Red Ciudadana y el PNUD, lanzó (2025-2026) una 'Plataforma de modelos generativos de IA', una 'Comunidad de práctica de IA' y un proceso de 'IA inclusiva para el desarrollo municipal'. La evidencia actual describe capacitación del equipo técnico y herramientas generativas para apoyar la planificación; NO confirma que la IA analice/agrupe/resuma el CONTENIDO de los aportes ciudadanos de los procesos participativos.",
+   "usa_IA_contenido": "no_claro",
+   "fuente_url": "https://portal.segeplan.gob.gt/segeplan/?p=14176",
+   "confianza": "baja",
+   "que_buscar_manual": "Verificar en portal.segeplan.gob.gt (?p=14176, ?p=14622), redciudadana.org/blogs y la nota UN SDG 'IA inclusiva para el desarrollo municipal en Guatemala' si la plataforma se usa para sistematizar/clasificar los aportes de los diagnósticos participativos / Consejos de Desarrollo en los PDM, o si es solo herramienta interna de productividad. Si procesa contenido de participación → INCLUIBLE."
+  }
+ ]
+}
