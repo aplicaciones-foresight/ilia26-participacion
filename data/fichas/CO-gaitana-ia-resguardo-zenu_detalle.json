@@ -1,0 +1,89 @@
+{
+ "caso_id": "CO-gaitana-ia-resguardo-zenu",
+ "pais": "CO",
+ "nombre_caso": "Gaitana IA (resguardo Zenú, Bajo Sinú, Córdoba)",
+ "bloque": "4-descubrimiento-amplio",
+ "proceso_participativo": "Plataforma participativa donde jóvenes del resguardo Zenú deciden por votación digital la asignación de presupuestos locales del cabildo y debaten proyectos de ley / proponen iniciativas ciudadanas colectivas.",
+ "ano_inicio": "2024",
+ "ano_cierre": null,
+ "estado_actividad": "activo",
+ "evidencia_actividad_2026": "Piloto en crecimiento: +10.000 usuarios en gaitanaia.org; vinculado a una lista al Congreso del 8 de marzo de 2026.",
+ "organizacion_a_cargo": "Resguardo indígena Zenú (Reparo Torrente, Bajo Sinú); creador Carlos Redondo Rincón",
+ "tipo_convocante": [
+  "sociedad civil"
+ ],
+ "tipo_organizacion": [],
+ "tipo_proceso": [
+  "Presupuestos Participativos",
+  "Gobernanza Colaborativa"
+ ],
+ "etapas_uso_IA": [
+  "Análisis",
+  "Traducción Política"
+ ],
+ "continuidad": [
+  "Plataforma"
+ ],
+ "nivel_consolidacion": 2,
+ "sistema_IA": "Gaitana IA — plataforma/chatbot basada en el LLM DeepSeek adaptado a la cosmovisión Zenú; registro de decisiones en blockchain (Ethereum)",
+ "tipos_IA_familia": [
+  "LLM",
+  "NLP"
+ ],
+ "usa_LLM_generativa": "sí",
+ "funcion_IA": "Resume las propuestas, organiza opiniones, procesa tendencias y construye consensos sobre el contenido de los aportes de la comunidad; convierte las opiniones en datos procesables y produce un resultado verificable (blockchain).",
+ "rol_IA": "contenido",
+ "usa_IA_en_proceso": "sí",
+ "tipo_desarrollador_IA": [
+  "Sociedad Civil"
+ ],
+ "origen_desarrollador": "Nacional",
+ "entra_tentativo": "DUDA(lean SI)",
+ "justificacion_elegibilidad": "Dentro de un proceso participativo real (presupuesto participativo de un cabildo Zenú + deliberación sobre iniciativas/proyectos de ley) un LLM (DeepSeek) procesa el CONTENIDO de los aportes para resumir, organizar y construir consensos. NUEVO (no figura en conocidos ni excluidos CO). DUDA porque cobertura crítica seria (Cerosetenta/Uniandes 'Políticamente vacIA'; El Español 'la candidata que no existe') cuestiona la profundidad/representatividad y si la 'construcción de consensos' es sustantiva o principalmente un avatar electoral; verificar el alcance real del análisis de contenido.",
+ "confianza": "MEDIA (múltiples fuentes de prensa independientes; sin verificación técnica del método; cobertura crítica)",
+ "evidencia_verbatim": {
+  "pais": "la herramienta de un resguardo indígena (Zenú, Bajo Sinú, Colombia) para llegar al Congreso (La Silla Vacía)",
+  "tipo_proceso": "a platform for young people in the Zenú community to decide, through digital voting, how they wanted to allocate local budgets",
+  "etapas_uso_IA": "The AI summarizes proposals, organizes consensus, and facilitates collective decision-making",
+  "estado_actividad": "More than 10,000 users participate in the chatbot at gaitanaia.org, whose discussions feed the community's positions and proposals",
+  "nivel_consolidacion": null,
+  "tipo_convocante": "Gaitana IA is a tool created by Carlos Redondo Rincón ... a platform for young people in the Zenú community",
+  "usa_IA_en_proceso": "Gaitana is built on the DeepSeek large language model, adapted to the Zenú worldview ... summarizes proposals, organizes consensus",
+  "rol_IA": "artificial intelligence organizes opinions, processes trends and builds consensuses that, if approved, would become legislative initiatives (KienyKe)"
+ },
+ "fuentes": [
+  {
+   "url": "https://www.lasillavacia.com/en-vivo/gaitana-ia-la-herramienta-de-un-resguardo-indigena-para-llegar-al-congreso/",
+   "estado": "WebSearch",
+   "cita": "created as a platform for young people in the Zenú community to decide, through digital voting, how they wanted to allocate local budgets ... The AI summarizes proposals, organizes consensus ... built on the DeepSeek large language model, adapted to the Zenú worldview ... More than 10,000 users participate in the chatbot at gaitanaia.org"
+  },
+  {
+   "url": "https://www.kienyke.com/",
+   "estado": "WebSearch",
+   "cita": "As the community debates a bill, the system organizes consensuses and produces a verifiable result; artificial intelligence organizes opinions, processes trends and builds consensuses that, if approved, would become legislative initiatives"
+  }
+ ],
+ "gaps": [
+  {
+   "campo": "rol_IA",
+   "motivo": "Cobertura crítica (Cerosetenta/Uniandes) cuestiona si el análisis de contenido es sustantivo o principalmente un avatar electoral; confirmar alcance real",
+   "url_para_buscar": "https://cerosetenta.uniandes.edu.co/"
+  },
+  {
+   "campo": "nivel_consolidacion",
+   "motivo": "Piloto en crecimiento; recurrencia/consolidación no confirmada",
+   "url_para_buscar": "https://gaitanaia.org/"
+  },
+  {
+   "campo": "tipo_organizacion",
+   "motivo": "Clasificar la organización de un resguardo indígena (autoridad comunal/étnica) en Público/Privado/Mixto",
+   "url_para_buscar": "https://www.lasillavacia.com/en-vivo/gaitana-ia-la-herramienta-de-un-resguardo-indigena-para-llegar-al-congreso/"
+  }
+ ],
+ "alertas": [
+  "[descubrimiento amplio] Hallazgo NUEVO (CO): LLM sobre el contenido de aportes en un presupuesto participativo indígena.",
+  "Cobertura crítica seria (Cerosetenta 'Políticamente vacIA'; El Español) → se mantiene DUDA hasta verificar profundidad/representatividad.",
+  "Modelo base DeepSeek (proveedor privado/internacional) adaptado localmente; convocante = autoridad indígena (resguardo)."
+ ],
+ "fuente_datos": "descubrimiento_amplio_web2026"
+}

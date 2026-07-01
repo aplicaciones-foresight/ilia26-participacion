@@ -1,0 +1,91 @@
+{
+ "caso_id": "CL-participa-pudahuel-presupuesto",
+ "pais": "CL",
+ "nombre_caso": "Participa Pudahuel — Presupuesto Participativo deliberativo (plataforma Go Vocal/CitizenLab)",
+ "bloque": "4-descubrimiento-amplio",
+ "proceso_participativo": "Modelo de gestión presupuestaria deliberativa y vinculante de la Municipalidad de Pudahuel (presupuesto municipal 2023): participación virtual abierta + grupos de especial protección; +1.200 participantes y 150+ iniciativas de proyectos.",
+ "ano_inicio": "2023",
+ "ano_cierre": null,
+ "estado_actividad": "activo",
+ "evidencia_actividad_2026": null,
+ "organizacion_a_cargo": "Municipalidad de Pudahuel",
+ "tipo_convocante": [
+  "gobierno local"
+ ],
+ "tipo_organizacion": [
+  "Público"
+ ],
+ "tipo_proceso": [
+  "Presupuestos Participativos"
+ ],
+ "etapas_uso_IA": [],
+ "continuidad": [
+  "Plataforma"
+ ],
+ "nivel_consolidacion": 2,
+ "sistema_IA": "Plataforma Go Vocal/CitizenLab con módulo de IA/NLP (Sensemaking) que agrupa, resume y prioriza aportes de texto (capacidad de plataforma; activación en Pudahuel no confirmada).",
+ "tipos_IA_familia": [
+  "NLP",
+  "Clustering"
+ ],
+ "usa_LLM_generativa": "no-claro",
+ "funcion_IA": "Módulo de IA/NLP de Go Vocal para agrupar/resumir/priorizar aportes de texto. NO confirmado que Pudahuel lo activara sobre sus contribuciones.",
+ "rol_IA": "no-claro",
+ "usa_IA_en_proceso": "no-claro",
+ "tipo_desarrollador_IA": [
+  "Privado"
+ ],
+ "origen_desarrollador": "Internacional",
+ "entra_tentativo": "DUDA(lean NO)",
+ "justificacion_elegibilidad": "Presupuesto participativo real sobre plataforma Go Vocal/CitizenLab con capacidad de IA/NLP sobre el contenido de los aportes. DUDA (lean NO): igual que Viña del Mar, no hay cita que confirme el uso efectivo del módulo de IA sobre los aportes de Pudahuel; solo se confirma que la plataforma desplegada tiene esa capacidad de fábrica.",
+ "confianza": "BAJA (plataforma con capacidad de IA confirmada; uso sobre los aportes no confirmado)",
+ "evidencia_verbatim": {
+  "pais": "Municipalidad de la comuna de Pudahuel, Chile (participa.mpudahuel.cl)",
+  "tipo_proceso": "La alcaldía de la comuna de Pudahuel implementó un nuevo modelo de gestión presupuestaria deliberativa y vinculante ... presupuesto municipal 2023 ... más de 1.200 participantes y sobre 150 iniciativas de proyectos",
+  "etapas_uso_IA": null,
+  "estado_actividad": "plataforma de participación activa (participa.mpudahuel.cl)",
+  "nivel_consolidacion": null,
+  "tipo_convocante": "La alcaldía de la comuna de Pudahuel",
+  "usa_IA_en_proceso": null,
+  "rol_IA": null
+ },
+ "fuentes": [
+  {
+   "url": "https://participa.mpudahuel.cl/",
+   "estado": "WebSearch",
+   "cita": "plataforma de participación de la Municipalidad de Pudahuel (estructura de URL CitizenLab/Go Vocal: /projects/talleres-econ-lab)"
+  },
+  {
+   "url": "https://go-vocal.com/",
+   "estado": "WebSearch",
+   "cita": "The platform offers actionable insights on user data with its built-in AI and natural language processing (NLP) technology [capacidad de plataforma]"
+  }
+ ],
+ "gaps": [
+  {
+   "campo": "usa_IA_en_proceso",
+   "motivo": "No hay cita que confirme que Pudahuel activó el módulo de IA/NLP sobre sus aportes",
+   "url_para_buscar": "https://www.govocal.com/en/cases"
+  },
+  {
+   "campo": "rol_IA",
+   "motivo": "Depende de confirmar la activación de la IA sobre los aportes",
+   "url_para_buscar": "https://participa.mpudahuel.cl/"
+  },
+  {
+   "campo": "etapas_uso_IA",
+   "motivo": "Sin confirmar el uso de IA, la etapa no puede fijarse",
+   "url_para_buscar": "https://go-vocal.com/"
+  },
+  {
+   "campo": "nivel_consolidacion",
+   "motivo": "valor sin cita textual directa; confirmar manualmente",
+   "url_para_buscar": "https://participa.mpudahuel.cl/"
+  }
+ ],
+ "alertas": [
+  "[descubrimiento amplio] Hallazgo NUEVO (CL): presupuesto participativo sobre Go Vocal/CitizenLab.",
+  "MISMO PATRÓN que TT EngageTT y Viña del Mar: capacidad NLP de plataforma sin confirmación de activación sobre los aportes de esta instancia."
+ ],
+ "fuente_datos": "descubrimiento_amplio_web2026"
+}

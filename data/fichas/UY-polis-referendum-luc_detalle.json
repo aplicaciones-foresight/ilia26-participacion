@@ -1,0 +1,85 @@
+{
+ "caso_id": "UY-polis-referendum-luc",
+ "pais": "UY",
+ "nombre_caso": "Pol.is en el Referéndum Nacional de la LUC (Uruguay) — equipo UdelaR",
+ "bloque": "4-descubrimiento-amplio",
+ "proceso_participativo": "Referéndum nacional para derogar 135 artículos de la Ley de Urgente Consideración (LUC). Un equipo de la Universidad de la República corrió una conversación Pol.is en paralelo al referéndum del 27/03/2022 (documentado como caso 2021).",
+ "ano_inicio": "2021",
+ "ano_cierre": "2022",
+ "estado_actividad": "cerrado",
+ "evidencia_actividad_2026": null,
+ "organizacion_a_cargo": "Equipo de 13 personas de la Universidad de la República (UdelaR) — ingenieros, comunicadores y científicos de datos; plataforma Pol.is (The Computational Democracy Project)",
+ "tipo_convocante": [
+  "universidad"
+ ],
+ "tipo_organizacion": [
+  "Público"
+ ],
+ "tipo_proceso": [
+  "Referendos e Iniciativas Populares"
+ ],
+ "etapas_uso_IA": [
+  "Análisis"
+ ],
+ "continuidad": [
+  "Uso único"
+ ],
+ "nivel_consolidacion": 2,
+ "sistema_IA": "Pol.is — clustering de opiniones (reducción de dimensionalidad / agrupamiento no supervisado sobre votos de acuerdo/desacuerdo a statements ciudadanos)",
+ "tipos_IA_familia": [
+  "Clustering",
+  "ML - Inespecífico"
+ ],
+ "usa_LLM_generativa": "no",
+ "funcion_IA": "Mapea las respuestas de los participantes, agrupa opiniones en clusters e identifica automáticamente statements de consenso y de división ('bridges') sobre una consulta multi-tema.",
+ "rol_IA": "contenido",
+ "usa_IA_en_proceso": "sí",
+ "tipo_desarrollador_IA": [
+  "Sociedad Civil",
+  "Academia"
+ ],
+ "origen_desarrollador": "Internacional",
+ "entra_tentativo": "SI",
+ "justificacion_elegibilidad": "Dentro de un proceso participativo formal (referéndum nacional) se usa IA (clustering ML de Pol.is, no reglas/conteo) sobre el CONTENIDO de las opiniones ciudadanas para agrupar por patrones y sintetizar consenso/división. Fuente primaria (The Computational Democracy Project) + corroboración OCDE 2025. CAVEAT temporal: referéndum 2022 / conversación 2021 (fuera de la ventana 2023-2026; el equipo debe decidir el criterio temporal del índice).",
+ "confianza": "MEDIA (fuente primaria + OCDE 2025; fetch primario bloqueado por proxy, citas vía repo/WebSearch)",
+ "evidencia_verbatim": {
+  "pais": "Polis has been used to facilitate discussion and build consensus ... in Uruguay on a national referendum (OCDE 2025, 'Governing with AI')",
+  "tipo_proceso": "A 13-person team from Uruguay's National University — engineers, communicators, and data scientists — ran Polis alongside the referendum",
+  "etapas_uso_IA": "The algorithm maps participants' responses and clusters opinions, facilitating the identification of positions that are supported by the majority of participants (OCDE 2025)",
+  "estado_actividad": "16,499 people cast more than 295,000 votes ... The referendum was lost by less than 1%",
+  "nivel_consolidacion": null,
+  "tipo_convocante": "A 13-person team from Uruguay's National University — engineers, communicators, and data scientists",
+  "usa_IA_en_proceso": "ran Polis alongside the referendum to look for something deeper than \"yes or no\"",
+  "rol_IA": "Polis revealed that even where public safety divided people, surprising points of consensus broke through on other issues — bridges between groups"
+ },
+ "fuentes": [
+  {
+   "url": "https://compdemocracy.org/case-studies/2021-uruguay-national-referendum/",
+   "estado": "403",
+   "cita": "A 13-person team from Uruguay's National University ... ran Polis alongside the referendum ... 16,499 people cast more than 295,000 votes (fetch bloqueado; cita vía repo compdemocracy/odysseia caseStudies.ts y WebSearch)"
+  },
+  {
+   "url": "https://www.oecd.org/en/publications/governing-with-artificial-intelligence_795de142-en.html",
+   "estado": "WebSearch",
+   "cita": "in Uruguay on a national referendum ... The algorithm maps participants' responses and clusters opinions, facilitating the identification of positions that are supported by the majority of participants"
+  }
+ ],
+ "gaps": [
+  {
+   "campo": "criterio_temporal",
+   "motivo": "El caso es 2021-2022; verificar si entra en la ventana temporal del índice 2026 (recogido por OCDE 2025)",
+   "url_para_buscar": "https://compdemocracy.org/case-studies/2021-uruguay-national-referendum/"
+  },
+  {
+   "campo": "nivel_consolidacion",
+   "motivo": "Uso puntual (nivel 2 asumido); sin evidencia de recurrencia de la práctica Pol.is en Uruguay",
+   "url_para_buscar": "https://compdemocracy.org/case-studies/2021-uruguay-national-referendum/"
+  }
+ ],
+ "alertas": [
+  "[descubrimiento amplio] Hallazgo NUEVO: llena a UY (antes 0 casos elegibles).",
+  "Convocante del ejercicio de IA = equipo de la UdelaR (academia); el referéndum en sí es nacional (organismo electoral). Desarrollador de Pol.is = The Computational Democracy Project (sociedad civil, EEUU → Internacional).",
+  "CAVEAT temporal: 2021-2022, posiblemente fuera de la ventana 2023-2026; decisión del equipo."
+ ],
+ "fuente_datos": "descubrimiento_amplio_web2026"
+}

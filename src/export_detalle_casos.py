@@ -34,10 +34,12 @@ TOPLEFT= Alignment(horizontal="left", vertical="top", wrap_text=True)
 THIN   = Side(style="thin", color="BFBFBF")
 BORDER = Border(left=THIN, right=THIN, top=THIN, bottom=THIN)
 
-BLOQUE_ORDER = {"1-nuevo": 0, "1-dudoso": 1, "3-excluido-revisar": 2, "2-baseline": 3}
+BLOQUE_ORDER = {"1-nuevo": 0, "1-dudoso": 1, "4-descubrimiento-amplio": 2,
+                "3-excluido-revisar": 3, "2-baseline": 4}
 BLOQUE_LABEL = {
     "1-nuevo": "1. Nuevo",
     "1-dudoso": "1. Dudoso",
+    "4-descubrimiento-amplio": "4. Descubrimiento amplio (hallazgo nuevo)",
     "3-excluido-revisar": "3. Excluido (revisar reingreso)",
     "2-baseline": "2. Baseline 2025",
 }

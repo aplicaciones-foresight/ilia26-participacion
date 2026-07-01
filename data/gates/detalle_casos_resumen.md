@@ -16,18 +16,21 @@ gap con su URL** para búsqueda manual.
 | `data/fichas/<caso_id>_detalle.json` | Ficha por caso (datos + evidencia verbatim + fuentes + gaps) |
 | `src/export_detalle_casos.py` | Script que compila las fichas → planilla |
 
-## Universo: 51 casos en juego
+## Universo: 55 casos en juego
 
 | Bloque | SI | DUDA | NO | Total |
 |---|:--:|:--:|:--:|:--:|
 | 1. Nuevos | 6 | 1 | 3 | 10 |
 | 1. Dudosos | 1 | 1 | 6 | 8 |
+| 4. Descubrimiento amplio | 1 | 3 | 0 | 4 |
 | 2. Baseline 2025 | 25 | 0 | 3 | 28 |
 | 3. Excluidos (revisar reingreso) | 0 | 0 | 5 | 5 |
-| **Total** | **32** | **2** | **17** | **51** |
+| **Total** | **33** | **5** | **17** | **55** |
 
-> Actualizado tras la **2ª pasada** sobre los 8 DUDA (ver abajo): 6 se resolvieron
-> a **NO** y 2 quedaron **DUDA(lean NO)**. Ningún DUDA pasó a SI.
+> Actualizado tras la **2ª pasada** de los 8 DUDA (6→NO, 2→DUDA lean NO) y la
+> **búsqueda amplia** (+4 casos nuevos: UY Pol.is = SI; CO Gaitana IA y CL Viña
+> Decide = DUDA lean SI; CL Pudahuel = DUDA lean NO). Detalle en
+> `descubrimiento_amplio_2026.md`. De los 5 DUDA actuales, 2 se inclinan a SI.
 
 > `SI`/`NO`/`DUDA` es **tentativo** (criterio: IA sobre el **CONTENIDO** de los
 > aportes dentro de un proceso participativo). La decisión final es del equipo.

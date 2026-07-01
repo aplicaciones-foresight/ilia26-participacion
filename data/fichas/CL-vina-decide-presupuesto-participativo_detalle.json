@@ -1,0 +1,92 @@
+{
+ "caso_id": "CL-vina-decide-presupuesto-participativo",
+ "pais": "CL",
+ "nombre_caso": "Viña Decide — Primer Presupuesto Participativo de Viña del Mar (plataforma Go Vocal/CitizenLab)",
+ "bloque": "4-descubrimiento-amplio",
+ "proceso_participativo": "Primer Presupuesto Participativo 2024 de la Municipalidad de Viña del Mar ($200M CLP) para la reconstrucción de espacios públicos tras el megaincendio de feb-2024; vecinos (desde 14 años) proponen y votan proyectos en Achupallas, Reñaca Alto, Viña Oriente y Miraflores.",
+ "ano_inicio": "2024",
+ "ano_cierre": null,
+ "estado_actividad": "activo",
+ "evidencia_actividad_2026": null,
+ "organizacion_a_cargo": "Municipalidad de Viña del Mar",
+ "tipo_convocante": [
+  "gobierno local"
+ ],
+ "tipo_organizacion": [
+  "Público"
+ ],
+ "tipo_proceso": [
+  "Presupuestos Participativos"
+ ],
+ "etapas_uso_IA": [],
+ "continuidad": [
+  "Plataforma"
+ ],
+ "nivel_consolidacion": 2,
+ "sistema_IA": "Plataforma Go Vocal (ex CitizenLab); módulo 'Sensemaking' de NLP que agrupa (clustering), resume y prioriza automáticamente las contribuciones de texto abierto (capacidad de plataforma; activación en Viña no confirmada).",
+ "tipos_IA_familia": [
+  "NLP",
+  "Clustering"
+ ],
+ "usa_LLM_generativa": "no-claro",
+ "funcion_IA": "El módulo Sensemaking de Go Vocal aplica NLP para agrupar, resumir y priorizar los aportes de texto abierto. NO confirmado que se haya ejecutado sobre las contribuciones específicas de Viña del Mar.",
+ "rol_IA": "no-claro",
+ "usa_IA_en_proceso": "no-claro",
+ "tipo_desarrollador_IA": [
+  "Privado"
+ ],
+ "origen_desarrollador": "Internacional",
+ "entra_tentativo": "DUDA(lean SI)",
+ "justificacion_elegibilidad": "Proceso participativo real (presupuesto participativo municipal) sobre plataforma Go Vocal/CitizenLab, que incorpora NLP ('Sensemaking') sobre el CONTENIDO de los aportes. DUDA: no hay cita que confirme que el módulo de IA se aplicó sobre las contribuciones de Viña del Mar (la capacidad NLP está acreditada a nivel de plataforma y en otros casos, p.ej. Viena). Requiere 1 confirmación del municipio o de Go Vocal. Mismo patrón que TT EngageTT.",
+ "confianza": "BAJA (capacidad de plataforma confirmada; uso específico sobre los aportes no confirmado)",
+ "evidencia_verbatim": {
+  "pais": "Go Vocal ... Viña del Mar, Chile (caso de estudio govocal.com)",
+  "tipo_proceso": "Following devastating wildfires, Go Vocal fueled community-driven recovery by empowering residents to redesign public spaces (caso Viña del Mar)",
+  "etapas_uso_IA": null,
+  "estado_actividad": "Primer Presupuesto Participativo Viña del Mar 2024 (guía alojada en vinadecide.cl)",
+  "nivel_consolidacion": null,
+  "tipo_convocante": "Municipalidad de Viña del Mar (Primer Presupuesto Participativo 2024)",
+  "usa_IA_en_proceso": null,
+  "rol_IA": null
+ },
+ "fuentes": [
+  {
+   "url": "https://www.govocal.com/",
+   "estado": "WebSearch",
+   "cita": "Following devastating wildfires, Go Vocal fueled community-driven recovery by empowering residents to redesign public spaces (caso Viña del Mar, Chile). Go Vocal makes use of natural language processing (NLP) techniques to analyze textual input and present the community's main priorities [capacidad de plataforma]"
+  },
+  {
+   "url": "https://vinadecide.cl/pages/presupuestoparticipativo",
+   "estado": "403",
+   "cita": "Guía del Presupuesto Participativo Viña del Mar 2024 (estructura de URL CitizenLab/Go Vocal: /uploads/.../static_page_file/); fetch bloqueado"
+  }
+ ],
+ "gaps": [
+  {
+   "campo": "usa_IA_en_proceso",
+   "motivo": "No hay cita que confirme que el módulo NLP de Go Vocal se ejecutó sobre las contribuciones de Viña del Mar",
+   "url_para_buscar": "https://www.govocal.com/en/cases"
+  },
+  {
+   "campo": "rol_IA",
+   "motivo": "Depende de confirmar la activación de la IA sobre los aportes",
+   "url_para_buscar": "https://vinadecide.cl/pages/presupuestoparticipativo"
+  },
+  {
+   "campo": "etapas_uso_IA",
+   "motivo": "Sin confirmar el uso de IA, la etapa (Análisis) no puede fijarse",
+   "url_para_buscar": "https://www.govocal.com/"
+  },
+  {
+   "campo": "nivel_consolidacion",
+   "motivo": "valor sin cita textual directa; confirmar manualmente",
+   "url_para_buscar": "https://www.govocal.com/"
+  }
+ ],
+ "alertas": [
+  "[descubrimiento amplio] Hallazgo NUEVO (CL): presupuesto participativo sobre Go Vocal/CitizenLab.",
+  "MISMO PATRÓN que TT EngageTT: la plataforma trae NLP 'Sensemaking' (procesa contenido), pero NO se confirma su activación sobre los aportes de esta instancia.",
+  "La cita de 'AI module to analyse data within a few hours' parece corresponder al caso de Viena, no a Viña; no usar como evidencia de Viña."
+ ],
+ "fuente_datos": "descubrimiento_amplio_web2026"
+}
