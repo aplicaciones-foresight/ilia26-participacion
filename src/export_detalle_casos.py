@@ -336,7 +336,9 @@ def main():
             ws6.cell(row=r, column=c).alignment = TOPLEFT
         ws6.cell(row=r, column=1).font = Font(bold=True)
 
-    dst = os.path.join(ROOT, "data/gates/planilla_detalle_casos_ILIA2026.xlsx")
+    # Planilla DETALLADA = respaldo/auditoría (la principal es planilla_ILIA2026_SIMPLE.xlsx)
+    dst = os.path.join(ROOT, "data/gates/backup/planilla_detalle_casos_ILIA2026.xlsx")
+    os.makedirs(os.path.dirname(dst), exist_ok=True)
     wb.save(dst)
 
     # ---------- CSV (hoja principal) ----------

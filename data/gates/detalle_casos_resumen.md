@@ -11,10 +11,12 @@ gap con su URL** para búsqueda manual.
 
 | Archivo | Contenido |
 |---|---|
-| `data/gates/planilla_detalle_casos_ILIA2026.xlsx` | **Planilla principal (6 hojas)**: Detalle casos · Evidencia (verbatim) · GAPS (buscar manual) · Fuentes · Alertas · Leyenda |
-| `data/candidatos/detalle_casos_ILIA2026.csv` | Hoja principal en CSV (para el pipeline) |
-| `data/fichas/<caso_id>_detalle.json` | Ficha por caso (datos + evidencia verbatim + fuentes + gaps) |
-| `src/export_detalle_casos.py` | Script que compila las fichas → planilla |
+| `data/gates/planilla_ILIA2026_SIMPLE.xlsx` | **PLANILLA PRINCIPAL (5 pestañas)**: Casos (entran+dudosos) · A validar a mano · Excluidos · Evidencia y fuentes · Instrucciones. Fácil de navegar. |
+| `data/gates/GUIA_validacion_manual_ILIA2026.md` | Guía paso a paso: validar los casos → calcular el indicador |
+| `data/gates/backup/planilla_detalle_casos_ILIA2026.xlsx` | **Respaldo/auditoría (9 hojas)** con todo el detalle |
+| `data/candidatos/detalle_casos_ILIA2026.csv` | Export plano en CSV (para el pipeline) |
+| `data/fichas/<caso_id>_detalle.json` | Ficha por caso (datos + evidencia verbatim + fuentes + gaps) — fuente de verdad |
+| `src/export_planilla_simple.py` · `src/export_detalle_casos.py` | Generan la principal y el respaldo (leen las fichas) |
 
 ## Universo: 55 casos en juego
 
