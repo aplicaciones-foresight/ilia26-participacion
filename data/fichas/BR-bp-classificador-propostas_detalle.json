@@ -128,5 +128,6 @@
   "DISTINCIÓN DEL PIPELINE BERTopic (arXiv 2509.21292): este repositorio es el arm de 'clasificación supervisada ML' (scikit-learn/NLTK/Airflow + gema Ruby); el paper 2509.21292 es el arm de 'clustering semántico BERTopic + seed words VCGE + LLM Gemma 3 12B'. Son componentes complementarios del MISMO caso, no casos distintos.",
   "FUENTES/HERRAMIENTAS: WebFetch OK solo para el README de GitHub. LAPPIS (brisa.lappis.rocks/project/) devolvió HTTP 403. arXiv y gov.br devuelven HTTP 403 a WebFetch; sus contenidos se recuperaron de forma convergente vía WebSearch. El GitHub MCP no pudo consultar el repo objetivo (scope limitado a aplicaciones-foresight/ilia26-participacion)."
  ],
- "fuente_datos": "candidato_equipo_2026"
+ "fuente_datos": "candidato_equipo_2026",
+ "posible_duplicado_de": "BR-brasil-participativo-clustering-semantic"
 }
