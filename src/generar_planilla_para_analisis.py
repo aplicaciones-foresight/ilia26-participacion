@@ -55,8 +55,9 @@ for row in wsd.iter_rows(min_row=2, values_only=True):
     pais = cell(row, "País"); caso = cell(row, "Caso")
     if not caso:
         continue
-    rol_v = cell(row, "rol_IA verificado (prof.)")
-    rol_b = cell(row, "rol_IA")
+    _clean = lambda x: ("" if str(x or "").strip() in ("—", "-", "") else str(x).strip())
+    rol_v = _clean(cell(row, "rol_IA verificado (prof.)"))
+    rol_b = _clean(cell(row, "rol_IA"))
     decision = str(cell(row, "DECISIÓN CONSOLIDADA 2026") or "")
     origen = ("Baseline 2025" if cat.startswith("1.") or cat.startswith("2.")
               else "Nuevo 2026" if cat.startswith("5.") or cat.startswith("6.")
@@ -68,7 +69,7 @@ for row in wsd.iter_rows(min_row=2, values_only=True):
     fuente_cita = cell(row, "Fuente de la cita") or ""
     conf = cell(row, "Confianza") or ""
     cuenta = cell(row, "Cuenta en indicador") or ""
-    usa_ia_web = cell(row, "Usa IA en participación")
+    usa_ia_web = _clean(cell(row, "Usa IA en participación"))
     rol_final = rol_v or rol_b or usa_ia_web or ""
     rol_src = ("verificado" if rol_v else "borrador (recod)" if rol_b
                else "1ª pasada web" if usa_ia_web else "")
