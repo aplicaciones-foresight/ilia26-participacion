@@ -196,6 +196,34 @@ def main():
         ws5.cell(row=r,column=1).font=Font(bold=True); ws5.cell(row=r,column=1).alignment=TL; ws5.cell(row=r,column=2).alignment=TL
     ws5["A1"].font=Font(bold=True,size=13)
 
+    # ---------- 6 · Metodología (CENIA v2) ----------
+    ws6=wb.create_sheet("6 · Metodología (CENIA v2)")
+    for row in METODOLOGIA_ROWS(): ws6.append(row)
+    widths(ws6,[26,34,58,24])
+    for r in range(1,ws6.max_row+1):
+        for c in range(1,5): ws6.cell(row=r,column=c).alignment=TL
+    # título + fórmula
+    ws6.merge_cells("A1:D1"); ws6["A1"].fill=AZUL; ws6["A1"].font=Font(bold=True,color="FFFFFF",size=12); ws6["A1"].alignment=CEN; ws6.row_dimensions[1].height=28
+    ws6.merge_cells("A2:D2"); ws6["A2"].font=Font(bold=True,size=11)
+    # cabecera de la tabla (fila 4)
+    for c in range(1,5):
+        cell=ws6.cell(row=4,column=c); cell.fill=AZUL; cell.font=WB; cell.alignment=CEN; cell.border=BOR
+    for r in range(5,12):
+        for c in range(1,5): ws6.cell(row=r,column=c).border=BOR
+    # agrupar sub-indicador (Uso = 5 vars, Desarrollo = 2 vars)
+    ws6.merge_cells("A5:A9"); ws6["A5"].alignment=Alignment(wrap_text=True,vertical="center"); ws6["A5"].font=Font(bold=True); ws6["A5"].fill=GRIS
+    ws6.merge_cells("A10:A11"); ws6["A10"].alignment=Alignment(wrap_text=True,vertical="center"); ws6["A10"].font=Font(bold=True); ws6["A10"].fill=GRIS
+    # bloque Organización Convocante
+    ws6.merge_cells("A13:D13"); ws6["A13"].fill=AMBARH; ws6["A13"].font=Font(bold=True)
+    for r in range(14,17):
+        for c in range(1,5): ws6.cell(row=r,column=c).border=BOR
+        ws6.cell(row=r,column=1).font=Font(bold=True)
+    # notas + fuente (texto en col B, ancho hasta D)
+    for r in list(range(18,23))+[24]:
+        ws6.merge_cells(start_row=r,start_column=2,end_row=r,end_column=4)
+    ws6["A18"].font=Font(bold=True); ws6["A24"].font=Font(bold=True)
+    ws6.freeze_panes="A5"
+
     dst=os.path.join(ROOT,"data/gates/planilla_ILIA2026_SIMPLE.xlsx"); wb.save(dst)
 
     # ---------- guía markdown ----------
@@ -208,11 +236,41 @@ def main():
     return 0
 
 
+def METODOLOGIA_ROWS():
+    """Contenido de la pestaña 6 · Metodología (CENIA v2). 4 columnas."""
+    return [
+     ["METODOLOGÍA FINAL — IA en Participación Ciudadana (CENIA v2 · jun-2026)","","",""],
+     ["Indicador = (Sub-Indicador de Uso + Sub-Indicador de Desarrollo) / 2","","",""],
+     ["","","",""],
+     ["Sub-indicador","Variable","Cómo se calcula (normalización)","Columna en pestaña 1"],
+     ["Uso de IA\n(promedio simple\nde 5 variables)","Tipos de proceso","nº de tipos distintos ÷ 5 (máximo absoluto)","Tipo de proceso"],
+     ["","Etapas de uso","nº de etapas distintas ÷ 4 (máximo absoluto)","Etapas uso IA"],
+     ["","Continuidad","nivel MÁXIMO verificado del país ÷ 3 · un 'anuncio' caduca a los 2 años sin implementación","Nivel (0-3)"],
+     ["","Organización Convocante","promedio de 3 sub-componentes co-iguales (ver detalle abajo)","Convocante (7-cat)"],
+     ["","Cantidad de iniciativas","nº de TODAS las iniciativas elegibles del país · umbrales fijos 0→0 · 1-3→25 · 4-6→50 · 7-9→75 · 10+→100","1 fila = 1 iniciativa"],
+     ["Desarrollo de IA\n(idéntico a 2025)","Desarrollador","nacional / internacional × 4 tipos de actor · máximo relativo","Tipo desarrollador IA · Origen"],
+     ["","Tipos de IA","nº de sistemas de IA distintos · máximo relativo","Tipos/familia IA"],
+     ["","","",""],
+     ["ORGANIZACIÓN CONVOCANTE — 3 sub-componentes co-iguales · valor de la variable = (1 + 2 + 3) / 3","","",""],
+     ["1 · Amplitud gubernamental","nº de tipos gubernamentales distintos ÷ 3","gobierno local · gobierno nacional · otra institución pública",""],
+     ["2 · Amplitud no gubernamental","nº de tipos no gubernamentales distintos ÷ 4","empresa · universidad · sociedad civil · organización internacional",""],
+     ["3 · Co-convocatoria","nº de combinaciones distintas (conjuntos de ≥2 tipos que co-convocan una misma iniciativa) ÷ máximo relativo móvil del ciclo","combinaciones DEDUPLICADAS · una co-convocatoria de 4 actores = 1 combinación",""],
+     ["","","",""],
+     ["Notas","• Universidades públicas → cuentan como 'Universidad' (no gubernamental), NO como 'otra institución pública'.","",""],
+     ["","• Anotar TODOS los convocantes de cada iniciativa (no solo el principal): así se detecta la co-convocatoria.","",""],
+     ["","• El máximo relativo de co-convocatoria se recalcula en cada corrida del motor — no se fija a mano.","",""],
+     ["","• 'Cantidad' cuenta las iniciativas elegibles; los duplicados (Cuenta como iniciativa = NO) no se suman.","",""],
+     ["","• El Sub-Indicador de Desarrollo es idéntico al de 2025 (no se modificó).","",""],
+     ["","","",""],
+     ["Fuente","metodologia_final_CENIA_v2.xlsx · detalle de conformidad en conformidad_metodologia_CENIA.md","",""],
+    ]
+
+
 def GUIA_ROWS(nin,nout):
     return [
      ["GUÍA — Validar los casos y pasar al cálculo (ILIA 2026)"],
-     ["Qué tienes", f"Planilla con 5 pestañas. {nin} casos entran/dudosos · {nout} excluidos · 107 en total. Tras dedup e-Cidadania: 43 iniciativas."],
-     ["Cómo navegar","Pestaña 1 = trabajo y cálculo · 2 = qué decidir a mano · 3 = excluidos (referencia) · 4 = evidencia/citas · 5 = esta guía."],
+     ["Qué tienes", f"Planilla con 6 pestañas. {nin} casos entran/dudosos · {nout} excluidos · 107 en total. Tras dedup e-Cidadania: 43 iniciativas."],
+     ["Cómo navegar","Pestaña 1 = trabajo y cálculo · 2 = qué decidir a mano · 3 = excluidos (referencia) · 4 = evidencia/citas · 5 = esta guía · 6 = metodología CENIA v2."],
      ["",""],
      ["PASO 1 — Excluir (pestaña 2, grupo A)","14 casos que su verificación profunda marcó 'apoyo' o 'sin IA'. En la pestaña 1 tienen 'Acción sugerida = ➜ EXCLUIR'. Cambiar su ¿ENTRA? a NO."],
      ["PASO 2 — Resolver DUDAS (pestaña 2, grupo B)","4 casos (Jalisco, Gaitana, Viña Decide, Participa Pudahuel). Abrir la URL, ver si la IA procesa el CONTENIDO de los aportes, y marcar SI o NO."],
@@ -231,16 +289,17 @@ def GUIA_ROWS(nin,nout):
 def GUIA_MD(nin,nout):
     return f"""# Guía: validar los casos y pasar al cálculo — ILIA 2026
 
-**Archivo de trabajo:** `planilla_ILIA2026_SIMPLE.xlsx` (5 pestañas).
+**Archivo de trabajo:** `planilla_ILIA2026_SIMPLE.xlsx` (6 pestañas).
 **Estado:** {nin} casos entran/dudosos · {nout} excluidos · 107 en total.
 Tras el dedup de e-Cidadania → **43 iniciativas efectivas**.
 
-## Las 5 pestañas
+## Las 6 pestañas
 1. **Casos (entran+dudosos)** — el set de trabajo, con las columnas listas para calcular y una columna **«Acción sugerida»**.
 2. **A validar a mano** — la lista concreta de decisiones (excluir / resolver DUDA / rescatar / dedup).
 3. **Excluidos** — los que salen, con su motivo (referencia).
 4. **Evidencia y fuentes** — la cita textual por campo crítico + URLs (para verificar que no hay alucinaciones).
 5. **Instrucciones** — esta guía dentro del Excel.
+6. **Metodología (CENIA v2)** — la metodología final acordada, variable por variable, y qué columna alimenta cada una.
 
 ## Pasos manuales (en orden)
 

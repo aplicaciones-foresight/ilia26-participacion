@@ -1,15 +1,16 @@
 # Guía: validar los casos y pasar al cálculo — ILIA 2026
 
-**Archivo de trabajo:** `planilla_ILIA2026_SIMPLE.xlsx` (5 pestañas).
+**Archivo de trabajo:** `planilla_ILIA2026_SIMPLE.xlsx` (6 pestañas).
 **Estado:** 44 casos entran/dudosos · 63 excluidos · 107 en total.
 Tras el dedup de e-Cidadania → **43 iniciativas efectivas**.
 
-## Las 5 pestañas
+## Las 6 pestañas
 1. **Casos (entran+dudosos)** — el set de trabajo, con las columnas listas para calcular y una columna **«Acción sugerida»**.
 2. **A validar a mano** — la lista concreta de decisiones (excluir / resolver DUDA / rescatar / dedup).
 3. **Excluidos** — los que salen, con su motivo (referencia).
 4. **Evidencia y fuentes** — la cita textual por campo crítico + URLs (para verificar que no hay alucinaciones).
 5. **Instrucciones** — esta guía dentro del Excel.
+6. **Metodología (CENIA v2)** — la metodología final acordada, variable por variable, y qué columna alimenta cada una.
 
 ## Pasos manuales (en orden)
 
