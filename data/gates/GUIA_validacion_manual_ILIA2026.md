@@ -44,6 +44,18 @@ Con la lista final de iniciativas y sus campos completos, correr el motor: **Sub
 ## Recordatorio — regla de elegibilidad
 **ENTRA** si, dentro de un **proceso participativo**, la IA procesa el **CONTENIDO** de los aportes ciudadanos (recolectar / clasificar / analizar / agrupar por temas / sintetizar). **NO ENTRA**: atención ciudadana, IA como *tema* de la consulta, IA geoespacial/administrativa, logística (turnos), estudio académico sin despliegue, o **duplicado** de un caso ya contado.
 
-## Qué columna alimenta qué variable
-- **Sub-indicador de Uso (Sub1):** Tipos de proceso · Etapas de uso · Continuidad/Nivel · Convocante (Público/Privado) · Cantidad de iniciativas.
-- **Sub-indicador de Desarrollo (Sub2, idéntico a 2025):** Tipo de desarrollador · Origen · Tipos de IA.
+## Qué columna alimenta qué variable (metodología final CENIA v2, jun-2026)
+**Sub-indicador de Uso (Sub1)** — promedio simple de 5 variables:
+- **Tipos de proceso** (columna «Tipo de proceso») → nº de tipos presentes en el país ÷ 5.
+- **Etapas de uso de IA** (columna «Etapas uso IA») → nº de etapas ÷ 4.
+- **Continuidad** (columna «Nivel (0-3)») → **nivel máximo del país** ÷ 3.
+- **Organización Convocante** (columna «Convocante (7-cat)») → **3 sub-componentes co-iguales**:
+  1. *amplitud gubernamental* = nº de tipos gubernamentales distintos ÷ 3 (gobierno local · nacional · otra institución pública),
+  2. *amplitud no gubernamental* = nº de tipos no gubernamentales distintos ÷ 4 (empresa · **universidad** · sociedad civil · organización internacional),
+  3. *co-convocatoria* = nº de combinaciones de ≥2 tipos que co-convocan, por **máximo relativo móvil** (el país con más combinaciones = 1).
+  El valor de la variable = (1 + 2 + 3) / 3.
+- **Cantidad de iniciativas** (una fila = una iniciativa; no contar duplicados) → **TODAS las elegibles** del país (sin filtro de nivel), con los cortes 0→0 · 1-3→25 · 4-6→50 · 7-9→75 · 10+→100.
+
+**Sub-indicador de Desarrollo (Sub2, idéntico a 2025):** Tipo de desarrollador (nacional/internacional × 4 tipos, máximo relativo) · Tipos de IA.
+
+> **IMPORTANTE — co-convocatoria:** anotar **todos** los convocantes de cada iniciativa (no solo el principal). Si ≥2 tipos co-convocan, forman una «combinación» que alimenta el tercer sub-componente de Organización Convocante. Las **universidades públicas** cuentan como «Universidad» (no gubernamental), no como «otra institución pública».

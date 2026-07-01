@@ -343,40 +343,66 @@ def compute_2026(casos, config):
         count_min_level = 0
     redondeo = (cfg.get("redondeo", {}) or {}).get("modo", "legacy")
 
-    # ---- Sub1: 5 variables, promedio simple, máximo absoluto ----
-    sub1 = {}
+    # ---- Sub1: 5 variables, promedio simple ----
+    # Metodología CENIA v2 (jun-2026):
+    #  · Organización Convocante = 3 sub-componentes co-iguales (1/3 c/u):
+    #      amplitud gubernamental (÷3), amplitud no gubernamental (÷4) y
+    #      co-convocatoria = nº de combinaciones distintas (≥2 tipos co-convocan
+    #      una misma iniciativa, deduplicadas) normalizado por MÁX RELATIVO del ciclo.
+    #  · Cantidad de iniciativas = nº de iniciativas ELEGIBLES (todas; sin filtro de
+    #      nivel salvo que count_min_level>0 lo pida explícitamente).
+    # Pass 1 — recolectar por país (co-convocatoria requiere el máx del ciclo).
+    agg = {}
     for p in PAISES:
         cp = [c for c in casos if c["pais"] == p]
-        if not cp:
-            sub1[p] = {"v":0.0,"tipos":0.0,"etapas":0.0,"cont":0.0,"conv":0.0,"cant":0.0,"n":0}; continue
-
-        tipos = set(); etapas = set()
-        gub = set(); nogub = set(); niveles = []
-        n_cant = 0
+        tipos = set(); etapas = set(); gub = set(); nogub = set()
+        niveles = []; combos = set(); n_cant = 0
         for c in cp:
             for x in _as_list(c.get("tipo_proceso")):
                 m = norm_proc_2026(x);  tipos.add(m) if m else None
             for x in _as_list(c.get("etapa", c.get("etapas_uso_IA"))):
                 m = norm_etapa(x);      etapas.add(m) if m else None
+            conv_set = set()
             for x in _as_list(c.get("tipo_convocante")):
                 m = norm_convocante(x)
-                if m in CONV_GUB: gub.add(m)
-                elif m in CONV_NOGUB: nogub.add(m)
+                if m in CONV_GUB or m in CONV_NOGUB:
+                    conv_set.add(m)
+                    (gub if m in CONV_GUB else nogub).add(m)
+            if len(conv_set) >= 2:               # co-convocatoria: combinación deduplicada
+                combos.add(frozenset(conv_set))
             ne = nivel_efectivo(c, cfg)
             if ne is not None:
                 niveles.append(ne)
-                if ne >= count_min_level and ne > 0:
+            if count_min_level and count_min_level > 0:
+                if ne is not None and ne >= count_min_level:
                     n_cant += 1
+            else:
+                n_cant += 1                       # todas las iniciativas elegibles
+        agg[p] = {"cp":cp,"tipos":tipos,"etapas":etapas,"gub":gub,"nogub":nogub,
+                  "niveles":niveles,"combos":combos,"n_cant":n_cant}
 
-        v_tipos = len(tipos)/5*100
-        v_etapas = len(etapas)/4*100
-        v_cont = (max(niveles) if niveles else 0)/3*100
-        v_conv = (len(gub)/3 + len(nogub)/4)/2*100
-        v_cant = _valor_cantidad(n_cant, thresholds)
+    # máx relativo (móvil por ciclo) para la co-convocatoria
+    max_combos = max((len(agg[p]["combos"]) for p in PAISES), default=0) or 1
+
+    # Pass 2 — normalizar.
+    sub1 = {}
+    for p in PAISES:
+        a = agg[p]; cp = a["cp"]
+        if not cp:
+            sub1[p] = {"v":0.0,"tipos":0.0,"etapas":0.0,"cont":0.0,"conv":0.0,"cant":0.0,"n":0}; continue
+        v_tipos = len(a["tipos"])/5*100
+        v_etapas = len(a["etapas"])/4*100
+        v_cont = (max(a["niveles"]) if a["niveles"] else 0)/3*100
+        amp_gub = len(a["gub"])/3
+        amp_nogub = len(a["nogub"])/4
+        co_conv = len(a["combos"])/max_combos
+        v_conv = (amp_gub + amp_nogub + co_conv)/3*100     # 3 sub-componentes co-iguales
+        v_cant = _valor_cantidad(a["n_cant"], thresholds)
         v = (v_tipos + v_etapas + v_cont + v_conv + v_cant)/5
         sub1[p] = {"v":v,"tipos":v_tipos,"etapas":v_etapas,"cont":v_cont,
-                   "conv":v_conv,"cant":v_cant,"n":len(cp),"n_cant":n_cant,
-                   "nivel_max":(max(niveles) if niveles else 0)}
+                   "conv":v_conv,"cant":v_cant,"n":len(cp),"n_cant":a["n_cant"],
+                   "co_combos":len(a["combos"]),
+                   "nivel_max":(max(a["niveles"]) if a["niveles"] else 0)}
 
     # ---- Sub2: idéntico a 2025 (reusa raw_counts) ----
     rc = raw_counts(casos)

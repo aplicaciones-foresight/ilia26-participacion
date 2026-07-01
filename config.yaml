@@ -57,8 +57,10 @@ escenarios:
 #   null/0 => cuenta todos los casos elegibles ; 2 => solo nivel >= 2 (puntual+).
 #   Default sugerido para simulaciones: 2. Reportar SIEMPRE ambos.
 cantidad:
-  count_min_level: 2
-  reportar_ambos: true            # simulate.py imprime count_min_level=0 y =2
+  # Metodología final CENIA v2 (jun-2026): "Cantidad = nº de iniciativas ELEGIBLES
+  # identificadas por país" — sin filtro de nivel de consolidación -> count_min_level=0.
+  count_min_level: 0
+  reportar_ambos: true            # simulate.py puede imprimir también count_min_level=2
 
 # §6.2 — Cortes de la escala de "Cantidad". A VALIDAR contra base recodificada.
 #   Lista de tramos [min, max, valor]. max: null = sin límite superior.

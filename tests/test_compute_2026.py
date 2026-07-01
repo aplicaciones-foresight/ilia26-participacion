@@ -80,27 +80,38 @@ def test_caducidad_anuncio_baja_a_cero():
     assert _close(s1["AR"]["cont"], 0.0)
 
 
-# ---- Organización Convocante (dos niveles) ----------------------------------
-def test_convocante_solo_gobierno_max_50():
-    # los 3 gubernamentales, ninguno no-gub -> (3/3 + 0/4)/2 = 50
+# ---- Organización Convocante (3 sub-componentes: amplitud gub, no-gub, co-convocatoria) ----
+# Metodología CENIA v2: conv = (amp_gub/3 + amp_nogub/4 + co_convoc_máx_relativo)/3 *100
+def test_convocante_solo_gobierno_co():
+    # 3 gubernamentales co-convocando 1 iniciativa -> amp_gub=1, amp_nogub=0,
+    # co-convoc = 1 combinación / máx 1 = 1 -> (1 + 0 + 1)/3 *100 = 66.67
     s1, _, _, _ = ce.compute_2026(
         [caso(convocante=["gobierno local","gobierno nacional","otra institución pública"])], CFG)
-    assert _close(s1["AR"]["conv"], 50.0)
+    assert _close(s1["AR"]["conv"], 100*(1 + 0 + 1)/3)
 
-def test_convocante_un_gub_16():
+def test_convocante_un_gub_sin_coconvocatoria():
+    # 1 solo convocante -> sin combinación (co-convoc=0): (1/3 + 0 + 0)/3 *100 = 11.11
     s1, _, _, _ = ce.compute_2026([caso(convocante=["gobierno nacional"])], CFG)
-    assert _close(s1["AR"]["conv"], 100*(1/3)/2)  # 16.67
+    assert _close(s1["AR"]["conv"], 100*(1/3)/3)  # 11.11
+    assert s1["AR"]["co_combos"] == 0
 
-def test_convocante_mixto_dos_niveles():
-    # 1 gub + 2 no-gub -> (1/3 + 2/4)/2 *100 = 41.67
+def test_convocante_mixto_co():
+    # gob nacional + universidad + empresa -> amp_gub=1/3, amp_nogub=2/4, co-convoc=1
     s1, _, _, _ = ce.compute_2026(
         [caso(convocante=["gobierno nacional","universidad","empresa"])], CFG)
-    assert _close(s1["AR"]["conv"], 100*((1/3)+(2/4))/2)
+    assert _close(s1["AR"]["conv"], 100*((1/3)+(2/4)+1)/3)  # 61.11
 
 def test_convocante_tolera_variantes():
-    # "industria"->empresa, "academia"->universidad, "ong"->sociedad civil
+    # "industria"->empresa, "academia"->universidad, "ong"->sociedad civil (3 no-gub, co-convocados)
     s1, _, _, _ = ce.compute_2026([caso(convocante=["industria","academia","ong"])], CFG)
-    assert _close(s1["AR"]["conv"], 100*(0/3 + 3/4)/2)  # 37.5
+    assert _close(s1["AR"]["conv"], 100*(0/3 + 3/4 + 1)/3)  # 58.33
+
+def test_co_convocatoria_cuenta_combinaciones_dedup():
+    # 2 iniciativas con la MISMA combinación {gob nacional, universidad} -> 1 combinación (deduplicada)
+    casos = [caso(nombre="a", convocante=["gobierno nacional","universidad"]),
+             caso(nombre="b", convocante=["universidad","gobierno nacional"])]
+    s1, _, _, _ = ce.compute_2026(casos, CFG)
+    assert s1["AR"]["co_combos"] == 1
 
 
 # ---- Cantidad por umbrales + count_min_level (§6.1) -------------------------
