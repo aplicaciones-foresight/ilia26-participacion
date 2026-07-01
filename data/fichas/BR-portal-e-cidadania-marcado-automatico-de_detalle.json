@@ -72,7 +72,7 @@
   }
  ],
  "alertas": [
-  "[POSIBLE DOBLE CONTEO] Misma plataforma e-Cidadania y mismo convocante (Senado Federal). Funciones de IA DISTINTAS: 'marcado de respuestas en videos de audiencias' vs 'matching semántico de Ideias Legislativas con proyectos de ley'. Decidir si cuentan como 2 iniciativas (aplicaciones de IA distintas) o 1 (misma plataforma/convocante).",
+  "[e-Cidadania — cuenta como 1] Iniciativa del Senado Federal con 2 funciones de IA: (1) marcado de respuestas en videos de audiencias [2025, este caso]; (2) matching de Ideias Legislativas con proyectos de ley [fin 2025-2026, ver BR-e-cidadania-senado-ia-matching-de-ideas]. Se cuenta UNA sola vez.",
   "usa_LLM_generativa derivado de Tipos de IA (BBDD 2025: contiene 'LLM')",
   "recodificación 2026: Plataforma activa; posible nivel 3 si se verifica recurrencia (override)",
   "Datos brutos del índice ILIA 2025 (BBDD validada por el equipo); recodificación 2026 (convocante 7-cat, nivel 0-3) y reverificación de actividad 2026."
@@ -81,5 +81,6 @@
  "veredicto_equipo": "SI",
  "comentario_equipo": "",
  "divergencia_equipo": false,
- "posible_duplicado_de": "BR-e-cidadania-senado-ia-matching-de-ideas"
+ "posible_duplicado_de": "BR-e-cidadania-senado-ia-matching-de-ideas",
+ "cuenta_como_iniciativa": true
 }

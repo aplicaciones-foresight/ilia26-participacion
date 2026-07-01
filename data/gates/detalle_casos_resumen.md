@@ -106,6 +106,22 @@ fondo los 8 candidatos «por verificar» (decisión por evidencia, disciplina ve
 > bloqueado. Están en el bloque «4. Descubrimiento amplio» (fuente_datos =
 > candidato_equipo_2026). Universo total: **107 casos**.
 
+### Dedup / doble conteo
+
+Revisión de duplicados (nombre, fuente compartida, país+similitud, cruce de bloques):
+- **e-Cidadania (Senado Federal)**: el «marcado de audiencias» (baseline) y el
+  «matching de ideias legislativas» (nuevo) son **dos funciones de IA del MISMO
+  portal e-Cidadania** («duas ferramentas relacionadas», confirmado con la fuente
+  del Senado) → **cuentan como 1 iniciativa**. El matching quedó marcado
+  `cuenta_como_iniciativa = NO (duplicado)`; el baseline es el canónico.
+- **BP-Classificador** = componente de **Brasil Participativo** → ya en NO (dup).
+- **CL Participación Constitucional** (homónimos): ya 1 SI + 1 NO.
+- **ECQQ ≠ Estudio dIAlogos** (distinto convocante/año/método): NO son duplicados.
+
+Nueva columna **«Cuenta como iniciativa»** en la planilla. **Conteo efectivo:
+44 casos oficialmente adentro → 43 iniciativas** (tras restar el duplicado
+e-Cidadania): **39 SI + 4 DUDA**.
+
 > `SI`/`NO`/`DUDA` es **tentativo** (criterio: IA sobre el **CONTENIDO** de los
 > aportes dentro de un proceso participativo). La decisión final es del equipo.
 > `SI*` = entra en escenario A; revisar en escenario B (DO CiudadanIA, CL «Tenemos

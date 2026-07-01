@@ -109,7 +109,7 @@
   }
  ],
  "alertas": [
-  "[POSIBLE DOBLE CONTEO] Misma plataforma e-Cidadania y mismo convocante (Senado Federal). Funciones de IA DISTINTAS: 'marcado de respuestas en videos de audiencias' vs 'matching semántico de Ideias Legislativas con proyectos de ley'. Decidir si cuentan como 2 iniciativas (aplicaciones de IA distintas) o 1 (misma plataforma/convocante).",
+  "[FUSIONADO — no contar por separado] Segunda función de IA del MISMO portal e-Cidadania (Senado Federal): matching semántico de Ideias Legislativas con proyectos de ley (dev. Alisson Bruno, Desafío de Innovación, fin 2025). El baseline 'marcado de audiencias' ya representa la iniciativa e-Cidadania → cuenta como 1. Confirmado: son 'duas ferramentas relacionadas' del mismo portal, no una nueva iniciativa.",
   "Las URLs oficiales del Senado (www12.senado.leg.br: matéria, Rádio Senado, TV Senado) y las réplicas de prensa (poder360, contabeis, momentomt, tribunadosertao, folhadecuritiba, esmaelmorais) devolvieron HTTP 403 a WebFetch (anti-bot del origen, no fallo del proxy). El contenido se recuperó vía WebSearch, que devolvió el texto de Agência Senado de forma consistente en 8+ medios independientes. La única fuente fetcheada con estado OK es el relatório BI del e-Cidadania (PDF) que confirma las 145.993 ideias.",
   "Distinción del baseline CONFIRMADA: el caso baseline 'Portal e-Cidadania: Marcado automático de respuestas en audiencias' corresponde a la matéria del 28/03/2025 sobre marcado de respuestas en audiencias interactivas; ESTE caso es la herramienta de búsqueda semántica/matching de ideias legislativas a proyectos de ley, divulgada 15-16/01/2026, desarrollada por Alisson Bruno en el Desafio de Inovação. Son sistemas y funciones distintas dentro del mismo portal e-Cidadania.",
   "rol_IA=contenido bien fundamentado: la IA opera sobre el contenido de las ideas ciudadanas (búsqueda semántica/temática para emparejar y seleccionar), no como apoyo logístico.",
@@ -120,5 +120,7 @@
  "veredicto_equipo": "SI",
  "comentario_equipo": "",
  "divergencia_equipo": false,
- "posible_duplicado_de": "BR-portal-e-cidadania-marcado-automatico-de"
+ "posible_duplicado_de": "BR-portal-e-cidadania-marcado-automatico-de",
+ "cuenta_como_iniciativa": false,
+ "duplicado_de": "BR-portal-e-cidadania-marcado-automatico-de"
 }

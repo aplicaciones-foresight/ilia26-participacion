@@ -94,6 +94,7 @@ MAIN_COLS = [
     ("¿ENTRA? (EQUIPO)",       lambda d: d.get("veredicto_equipo") or ("—" if d.get("bloque") == "5-excluido-2025" else "(sin revisar)")),
     ("¿ENTRA? (evidencia)",    lambda d: d.get("entra_tentativo") or ""),
     ("Divergencia",            lambda d: "DIVERGE" if d.get("divergencia_equipo") else ""),
+    ("Cuenta como iniciativa", lambda d: "NO (duplicado)" if d.get("cuenta_como_iniciativa") is False else "sí"),
     ("Confianza",              lambda d: d.get("confianza") or ""),
     ("Justificación elegibilidad", lambda d: d.get("justificacion_elegibilidad") or ""),
     ("Comentario equipo",      lambda d: d.get("comentario_equipo") or ""),
@@ -138,7 +139,7 @@ def style_header(ws, ncols, fill=AZUL, font=WHITE_BOLD, height=34):
 
 WIDTHS = {
     "Bloque":16,"caso_id":30,"País":6,"Caso":30,"¿ENTRA? (EQUIPO)":15,"¿ENTRA? (evidencia)":16,
-    "Divergencia":11,"Confianza":24,"Comentario equipo":42,
+    "Divergencia":11,"Cuenta como iniciativa":18,"Confianza":24,"Comentario equipo":42,
     "Justificación elegibilidad":40,"Proceso participativo":40,"Año inicio":9,"Año cierre":9,
     "Estado actividad":13,"Evidencia actividad 2026":40,"Organización a cargo":32,
     "Tipo convocante (7-cat)":24,"Tipo organización":16,"Tipo de proceso":26,"Etapas uso IA":26,
@@ -355,6 +356,10 @@ def main():
     print(f"     casos: {len(fichas)}  | gaps totales: {ngaps}")
     print(f"     por bloque: {dict(cb)}")
     print(f"     por ENTRA:  {dict(ce)}")
+    entran_ini = sum(1 for d in fichas
+                     if _official(d).startswith(("SI", "DUDA")) and d.get("cuenta_como_iniciativa") is not False)
+    dup = sum(1 for d in fichas if d.get("cuenta_como_iniciativa") is False)
+    print(f"     entran como INICIATIVAS (dedup, sin duplicados): {entran_ini}  | marcados duplicado: {dup}")
     return 0
 
 
