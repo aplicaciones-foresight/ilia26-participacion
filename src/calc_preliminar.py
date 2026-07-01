@@ -22,6 +22,7 @@ from openpyxl.utils import get_column_letter
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import calc_engine as ce  # noqa: E402
+import export_planilla_simple as eps  # noqa: E402  (reclasificación: criterio corregido)
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 
@@ -97,31 +98,54 @@ def widths(ws,wl):
     for i,w in enumerate(wl,1): ws.column_dimensions[get_column_letter(i)].width=w
 
 
+def _calc(fichas, keep_ids, cfg):
+    """compute_2026 sobre las fichas cuyos caso_id ∈ keep_ids, respetando dedup."""
+    efectivos=[d for d in fichas if d["caso_id"] in keep_ids and d.get("cuenta_como_iniciativa") is not False]
+    sub1,sub2,ind,_=ce.compute_2026([ficha_a_caso(d) for d in efectivos],cfg)
+    con=[p for p in ce.PAISES if sub1[p]["n"]>0]
+    return sub1,sub2,ind,efectivos,con
+
+
+def _prom(ind):
+    reg=round(sum(ind[p] for p in ce.PAISES)/len(ce.PAISES))
+    con=[p for p in ce.PAISES if ind[p]>0]
+    return reg,(round(sum(ind[p] for p in con)/len(con)) if con else 0)
+
+
 def main():
     cfg=cargar_config()
     fichas=[json.load(open(f,encoding="utf-8")) for f in sorted(glob.glob(os.path.join(ROOT,"data/fichas/*_detalle.json")))]
     IN=[d for d in fichas if is_in(d)]
-    # dedup: los duplicados (cuenta_como_iniciativa=False) no se cuentan como iniciativa aparte
-    efectivos=[d for d in IN if d.get("cuenta_como_iniciativa") is not False]
+    in_ids={d["caso_id"] for d in IN}
     dropped=[d for d in IN if d.get("cuenta_como_iniciativa") is False]
-    casos=[ficha_a_caso(d) for d in efectivos]
 
-    sub1,sub2,ind,rc=ce.compute_2026(casos,cfg)
+    # --- Conjuntos por escenario (criterio corregido jul-2026) ---
+    excl=set(eps.EXCLUIR)                                       # 7 confirmados NO
+    borderline=set(eps.RECLASIF_DUDA)|set(eps.REVISAR_ENTRA)   # frontera civic-tech ↔ participación
+    duda_campo={d["caso_id"] for d in IN if eps.is_duda(d) and d["caso_id"] not in eps.RECLASIF_DUDA}
 
-    con_casos=[p for p in ce.PAISES if sub1[p]["n"]>0]
-    prom_region=round(sum(ind[p] for p in ce.PAISES)/len(ce.PAISES))          # media de los 20
-    prom_con=round(sum(ind[p] for p in con_casos)/len(con_casos)) if con_casos else 0
+    techo_ids   = in_ids                                        # todos entran (cota superior)
+    central_ids = in_ids - excl                                 # criterio corregido (incluye frontera)
+    conserv_ids = in_ids - excl - borderline - duda_campo       # solo ENTRA firmes (cota inferior)
+
+    S_techo   = _calc(fichas, techo_ids,   cfg)
+    S_central = _calc(fichas, central_ids, cfg)
+    S_conserv = _calc(fichas, conserv_ids, cfg)
+
+    sub1,sub2,ind,efectivos,con_casos = S_central              # el CENTRAL es el principal
+    orden=sorted(con_casos,key=lambda p:-ind[p])
+    prom_region,prom_con=_prom(ind)
+    n_techo=len(S_techo[3]); n_central=len(efectivos); n_conserv=len(S_conserv[3])
 
     wb=Workbook(); wb.remove(wb.active)
 
-    # ---------- 1 · Resumen ----------
+    # ---------- 1 · Resumen (CENTRAL, criterio corregido) ----------
     ws=wb.create_sheet("1 · Resumen (indicador)")
     ws.append(["País","","Sub-Uso","Sub-Desarrollo","INDICADOR","Nº iniciativas"])
-    orden=sorted(con_casos,key=lambda p:-ind[p])
     for p in orden:
         ws.append([p,PAIS_NOMBRE[p],round(sub1[p]["v_pub"]),round(sub2[p]["v_pub"]),ind[p],sub1[p]["n"]])
     ws.append([])
-    ws.append(["","Promedio (países con iniciativas)","","",prom_con,len(casos)])
+    ws.append(["","Promedio (países con iniciativas)","","",prom_con,n_central])
     ws.append(["","Promedio regional (20 países, 0 si no hay)","","",prom_region,""])
     hdr(ws,6); widths(ws,[6,40,12,15,12,14]); body(ws,6)
     for r in range(2,ws.max_row+1):
@@ -156,8 +180,27 @@ def main():
     for r in range(2,ws3.max_row+1):
         for c in (3,4,5): ws3.cell(row=r,column=c).alignment=CEN
 
-    # ---------- 4 · Casos incluidos ----------
-    ws4=wb.create_sheet("4 · Casos incluidos")
+    # ---------- 4 · Escenarios (techo / central / conservador) ----------
+    wsE=wb.create_sheet("4 · Escenarios (rango)")
+    i_t,i_c,i_v=S_techo[2],S_central[2],S_conserv[2]
+    pt=_prom(i_t); pc=_prom(i_c); pv=_prom(i_v)
+    wsE.append(["Escenario","Qué incluye","Nº inic.","Prom. regional (20)","Prom. países con casos"])
+    wsE.append(["TECHO (todos entran)","Todos los SI/DUDA; ignora el criterio corregido",n_techo,pt[0],pt[1]])
+    wsE.append(["CENTRAL (criterio corregido)","Saca los 7 no-participación; mantiene la frontera y DUDAs",n_central,pc[0],pc[1]])
+    wsE.append(["CONSERVADOR","Solo ENTRA firmes; saca frontera y DUDAs sin resolver",n_conserv,pv[0],pv[1]])
+    wsE.append([])
+    wsE.append(["Indicador por país","","TECHO","CENTRAL","CONSERVADOR"])
+    for p in sorted([q for q in ce.PAISES if i_t[q]>0],key=lambda q:-i_c[q]):
+        wsE.append([p,PAIS_NOMBRE[p],i_t[p],i_c[p],i_v[p]])
+    hdr(wsE,5); widths(wsE,[26,48,9,18,20]); body(wsE,5)
+    for r in range(2,wsE.max_row+1):
+        for c in (3,4,5): wsE.cell(row=r,column=c).alignment=CEN
+    for r in (2,3,4):
+        wsE.cell(row=r,column=1).font=Font(bold=True)
+    wsE.cell(row=3,column=1).fill=VERDE   # central resaltado
+
+    # ---------- 5 · Casos incluidos (central) ----------
+    ws4=wb.create_sheet("5 · Casos incluidos (central)")
     ws4.append(["País","Caso","¿ENTRA? (equipo)","Tipo de proceso","Etapas uso IA","Nivel",
                 "Convocante(s)","Desarrollador","Origen","Tipos de IA"])
     for d in sorted(efectivos,key=lambda x:(str(x.get("pais")),str(x.get("nombre_caso")))):
@@ -169,20 +212,25 @@ def main():
                     d.get("origen_desarrollador") or "",j(d.get("tipos_IA_familia"))])
     hdr(ws4,10); widths(ws4,[6,34,15,22,20,7,24,16,16,26]); body(ws4,10)
 
-    # ---------- 5 · Supuestos y método ----------
-    ws5=wb.create_sheet("5 · Supuestos y método")
+    # ---------- 6 · Supuestos y método ----------
+    ws5=wb.create_sheet("6 · Supuestos y método")
     dup_txt="; ".join(f"{d.get('pais')} {d.get('nombre_caso')}" for d in dropped) or "—"
     filas=[
-     ["CÁLCULO PRELIMINAR — escenario «todos entran» (situación ideal / cota superior)"],
+     ["CÁLCULO PRELIMINAR — criterio corregido (jul-2026). Escenario CENTRAL + rango [conservador–techo]"],
      ["",""],
-     ["Qué es",f"Foto optimista para dimensionar el TECHO del indicador. Toma los {len(IN)} casos "
-              f"marcados SI/DUDA y asume que todos entran. NO es el número final."],
-     ["Supuesto 1 — DUDAs","Las 4 DUDAs (Jalisco, Gaitana, Viña Decide, Participa Pudahuel) se cuentan como SI."],
-     ["Supuesto 2 — sin exclusiones","NO se aplican las 14 exclusiones manuales pendientes (apoyo/sin IA). "
-              "En el número final, varias de estas SALDRÁN y el indicador bajará."],
-     ["Supuesto 3 — dedup",f"Se respeta el dedup: {len(dropped)} caso(s) marcado(s) como duplicado no se "
-              f"cuenta(n) como iniciativa aparte → {dup_txt}."],
-     ["Iniciativas contadas",f"{len(casos)} iniciativas efectivas ({len(IN)} candidatos − {len(dropped)} duplicado)."],
+     ["Qué es",f"Preliminar y determinístico, para dimensionar el indicador. El principal es el CENTRAL "
+              f"({n_central} iniciativas). NO es el número final: sale tras la validación manual (pestaña 2)."],
+     ["Criterio de elegibilidad","Un caso ENTRA si es realmente un proceso de PARTICIPACIÓN CIUDADANA con IA en "
+              "alguna etapa (incl. logística: modera/administra turnos/prepara materiales). NO entra civic tech "
+              "(reporte/servicio/monitoreo), atención ciudadana ni voto/conteo electoral. La IA no necesita analizar el contenido."],
+     ["",""],
+     ["Escenario TECHO",f"{n_techo} iniciativas. Todos los SI/DUDA entran (ignora el criterio). Cota superior."],
+     ["Escenario CENTRAL",f"{n_central} iniciativas. Saca los {len(excl)} confirmados no-participación; MANTIENE la "
+              "frontera (Chatico, Colab) y todas las DUDAs. Es el escenario principal de esta planilla."],
+     ["Escenario CONSERVADOR",f"{n_conserv} iniciativas. Solo los ENTRA firmes: saca además la frontera y las DUDAs "
+              "sin resolver. Cota inferior."],
+     ["Excluidos (criterio)",f"{len(excl)} confirmados NO: "+", ".join(sorted(excl))],
+     ["Dedup",f"Se respeta: {len(dropped)} duplicado no se cuenta aparte → {dup_txt}."],
      ["",""],
      ["Metodología","CENIA v2 (jun-2026). Indicador = (Sub-Uso + Sub-Desarrollo) / 2."],
      ["Sub-Uso","Promedio de 5: Tipos de proceso (÷5) · Etapas (÷4) · Continuidad = nivel máx. del país (÷3) · "
@@ -192,14 +240,12 @@ def main():
      ["Redondeo",f"{cfg.get('redondeo',{}).get('modo','legacy')} · count_min_level="
               f"{cfg.get('cantidad',{}).get('count_min_level',0)} · escenario={cfg.get('escenarios',{}).get('scenario_activo','A')}"],
      ["",""],
-     ["Promedio regional",f"{prom_region} (media de los 20 países, 0 para los que no tienen iniciativas)."],
-     ["Promedio con casos",f"{prom_con} (media de los {len(con_casos)} países con al menos una iniciativa)."],
-     ["",""],
-     ["Aviso","Preliminar y determinístico. El número final se obtiene tras la validación manual "
-              "(pestaña 2 de la planilla principal) y volviendo a correr el motor."],
+     ["Resultado CENTRAL",f"Prom. regional {prom_region} (media de 20) · prom. {prom_con} entre los {len(con_casos)} países con iniciativas."],
+     ["Aviso","El número final se obtiene tras la validación manual (pestaña 2 de la planilla principal) "
+              "resolviendo la frontera y las DUDAs, y volviendo a correr el motor."],
     ]
     for row in filas: ws5.append(row)
-    ws5.column_dimensions["A"].width=26; ws5.column_dimensions["B"].width=110
+    ws5.column_dimensions["A"].width=24; ws5.column_dimensions["B"].width=112
     for r in range(1,ws5.max_row+1):
         ws5.cell(row=r,column=1).font=Font(bold=True); ws5.cell(row=r,column=1).alignment=TL
         ws5.cell(row=r,column=2).alignment=TL
@@ -207,8 +253,8 @@ def main():
 
     dst=os.path.join(ROOT,"data/gates/calculo_preliminar_ILIA2026.xlsx"); wb.save(dst)
     print(f"[ok] {dst}")
-    print(f"     {len(casos)} iniciativas · {len(con_casos)} países con casos · "
-          f"prom regional={prom_region} · prom con casos={prom_con}")
+    print(f"     CENTRAL: {n_central} inic · {len(con_casos)} países · prom regional={prom_region} · prom con casos={prom_con}")
+    print(f"     rango regional: techo={_prom(i_t)[0]} (n={n_techo}) · central={prom_region} (n={n_central}) · conservador={_prom(i_v)[0]} (n={n_conserv})")
     print("\n     País  Sub-Uso  Sub-Des  Indicador  n")
     for p in orden:
         print(f"     {p:>3}   {round(sub1[p]['v_pub']):>5}   {round(sub2[p]['v_pub']):>5}   "

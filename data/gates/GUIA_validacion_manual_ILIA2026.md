@@ -1,12 +1,12 @@
 # Guía: validar los casos y pasar al cálculo — ILIA 2026
 
-**Archivo de trabajo:** `planilla_ILIA2026_SIMPLE.xlsx` (6 pestañas).
-**Estado:** 44 casos entran/dudosos · 63 excluidos · 107 en total.
-Tras el dedup de e-Cidadania → **43 iniciativas efectivas**.
+**Archivo de trabajo:** `planilla_ILIA2026_SIMPLE.xlsx` (6 pestañas · **criterio corregido**).
+**Estado:** 37 casos entran/dudosos · 70 excluidos · 107 en total.
+Tras el dedup de e-Cidadania → **36 iniciativas efectivas**.
 
 ## Las 6 pestañas
 1. **Casos (entran+dudosos)** — el set de trabajo, con las columnas listas para calcular y una columna **«Acción sugerida»**.
-2. **A validar a mano** — la lista concreta de decisiones (excluir / resolver DUDA / rescatar / dedup).
+2. **A validar a mano** — la lista concreta de decisiones por grupo (A excluir · B rescatados→ENTRA · C/D frontera civic-tech · E DUDAs de campo · F reingresos · G dedup).
 3. **Excluidos** — los que salen, con su motivo (referencia).
 4. **Evidencia y fuentes** — la cita textual por campo crítico + URLs (para verificar que no hay alucinaciones).
 5. **Instrucciones** — esta guía dentro del Excel.
@@ -14,36 +14,48 @@ Tras el dedup de e-Cidadania → **43 iniciativas efectivas**.
 
 ## Pasos manuales (en orden)
 
-### Paso 1 — Excluir los 14 de la verificación profunda  *(pestaña 2, grupo A)*
-Su verificación profunda marcó 14 casos como **IA de apoyo** o **sin IA sobre el contenido**. En la pestaña 1 aparecen con **Acción sugerida = ➜ EXCLUIR**. Cambiar su `¿ENTRA?` a **NO**:
-BR ParticipACT · CL Estrategia Gob. Digital · CL Jornada UNAB · CL Voz nuevos votantes · CR U-Report · CR dIAra · DO CiudadanIA · HN RedPública · MX Presupuesto CRECES · CO Descongestión · PE Sistema de cómputo ONPE · CL LXS 400 · CO DNP Diálogos · TT EngageTT.
+### Paso 1 — Confirmar las exclusiones  *(pestaña 2, grupo A)*
+Bajo el **criterio corregido**, **7 casos** ya quedaron **FUERA** (en la pestaña 3): no son procesos de participación, o no tienen IA verificada. Solo confirmar:
+- **Voto/servicio (no participación):** PE Sistema de cómputo ONPE (conteo electoral) · CO Descongestión Ingreso Solidario (atención/triage de correos) · DO CiudadanIA (ventanillas de servicio).
+- **Civic tech (no participación):** BR ParticipACT (app de reporte urbano) · CR dIAra (app de fiscalización de obras).
+- **Sin IA verificada:** CO DNP Diálogos Regionales · TT EngageTT.
 
-### Paso 2 — Resolver las 4 DUDAS  *(pestaña 2, grupo B)*
-Abrir la URL y confirmar si la IA procesa el **contenido** de los aportes → marcar **SI** o **NO**:
-- **MX Jalisco «Armemos un Plan»** — el PDF del informe está bloqueado; si revela un pipeline de IA, sube a SI; si no, NO.
-- **CO Gaitana IA** — confirmar profundidad real del análisis (cobertura crítica lo cuestiona).
-- **CL Viña Decide** y **CL Participa Pudahuel** — confirmar con el municipio/Go Vocal si activaron el módulo de IA (NLP) sobre los aportes.
+### Paso 2 — Confirmar los rescatados → ENTRA  *(pestaña 2, grupo B)*
+**4 casos vuelven a ENTRAR** (antes los excluía por "no procesa contenido", criterio equivocado). Sí son participación con IA en alguna etapa:
+- **MX Presupuesto CRECES** — presupuesto participativo; la IA (chatbot) facilita la votación (Implementación).
+- **CL LXS 400 / Chile Delibera** — mini-público del Senado; la IA modera y administra turnos de palabra.
+- **CL Estrategia de Gobierno Digital** — consulta ciudadana; la IA analiza los aportes.
+- **HN RedPública** — plataforma de propuestas de ley ciudadanas.
 
-### Paso 3 — Revisar posibles rescates  *(pestaña 2, grupo C)*
-- **CL UCampus** y **CU Código de las Familias** — su referencia los reconsidera. Confirmar si reingresan (SI). *Para CU, mi evidencia (ficha técnica Datys/GEMA = NLP) apoya SI.*
+### Paso 3 — Frontera civic-tech ↔ participación  *(pestaña 2, grupos C y D)*
+Decidir **SI o NO** según si es realmente un proceso de participación ciudadana:
+- **Grupo C (DUDA nueva):** CR U-Report (opinión juvenil) · CL La voz de los nuevos votantes (encuesta) · CL Jornada de Escucha UNAB (diálogo académico).
+- **Grupo D (revisar entre los que hoy ENTRAN):** CO Chatico (parece atención) · BR Colab (parece GovTech de reporte/servicio).
 
-### Paso 4 — Confirmar el dedup  *(pestaña 2, grupo D)*
-- **e-Cidadania**: cuenta como **1** (el «matching de ideas» no se suma aparte del «marcado de audiencias»; misma plataforma/convocante).
-- **CL Participación Constitucional** (homónimo): **1 SI + 1 NO**.
+### Paso 4 — Resolver las DUDAS de campo  *(pestaña 2, grupo E)*
+Abrir la URL y confirmar si es participación con IA en alguna etapa → **SI** o **NO**:
+- **MX Jalisco «Armemos un Plan»** — el PDF del informe está bloqueado.
+- **CO Gaitana IA** — confirmar profundidad real del uso de IA.
+- **CL Viña Decide** y **CL Participa Pudahuel** — confirmar con el municipio/Go Vocal si activaron el módulo de IA.
 
-### Paso 5 — Completar los datos del cálculo  *(pestaña 1)*
+### Paso 5 — Reingresos y dedup  *(pestaña 2, grupos F y G)*
+- **F (reingreso):** CL UCampus y CU Código de las Familias — su referencia los reconsidera.
+- **G (dedup):** e-Cidadania cuenta como **1**; CL Participación Constitucional (homónimo): **1 SI + 1 NO**.
+
+### Paso 6 — Completar los datos del cálculo  *(pestaña 1)*
 Para los casos que quedan en **SI**, revisar que estén completos: **Tipo de proceso · Etapas de uso · Nivel (0-3) · Convocante · Tipo de organización**. Donde `Nº gaps` > 0, abrir la URL de «URLs para verificar» y completar a mano.
 
-### Paso 6 — Validar la evidencia  *(pestaña 4)*
+### Paso 7 — Validar la evidencia  *(pestaña 4)*
 Revisar que cada **campo crítico** tenga cita textual. Las celdas **ámbar** = falta cita → verificar con la fuente antes de darlo por bueno.
 
-### Paso 7 — Calcular el indicador
+### Paso 8 — Calcular el indicador
 Con la lista final de iniciativas y sus campos completos, correr el motor: **Sub1 (Uso)** + **Sub2 (Desarrollo)**. Ver `config.yaml` (decisiones abiertas: escenario A/B, cortes de cantidad, redondeo) y `src/calc_engine.py`.
 
 ---
 
-## Recordatorio — regla de elegibilidad
-**ENTRA** si, dentro de un **proceso participativo**, la IA procesa el **CONTENIDO** de los aportes ciudadanos (recolectar / clasificar / analizar / agrupar por temas / sintetizar). **NO ENTRA**: atención ciudadana, IA como *tema* de la consulta, IA geoespacial/administrativa, logística (turnos), estudio académico sin despliegue, o **duplicado** de un caso ya contado.
+## Recordatorio — regla de elegibilidad (CRITERIO CORREGIDO)
+Lo **decisivo** es si el caso es **realmente un proceso de participación ciudadana** (consulta, presupuesto participativo, mini-público, referendo/iniciativa popular, gobernanza colaborativa/deliberación) que **usa IA en alguna de las 4 etapas** — **incluida la logística** en Planificación/Implementación (modera, administra turnos, prepara materiales, organiza). **NO se exige que la IA analice el contenido de los aportes.**
+**NO ENTRA:** una simple **app de civic tech** que no es un proceso participativo (reporte, servicio, monitoreo), **atención ciudadana**, **voto/conteo electoral por candidatos**, IA como *tema* de la consulta, estudio académico sin despliegue, o **duplicado** de un caso ya contado.
 
 ## Qué columna alimenta qué variable (metodología final CENIA v2, jun-2026)
 **Sub-indicador de Uso (Sub1)** — promedio simple de 5 variables:
