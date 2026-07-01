@@ -1,0 +1,273 @@
+[
+ {
+  "pais": "BR",
+  "caso": "Plan Plurianual de la ciudad de Natal",
+  "rol_IA_determinado": "contenido",
+  "confianza": "media",
+  "cita_verbatim": "O assistente virtual, dotado de inteligência artificial, interage com os usuários em linguagem coloquial, facilitando a coleta de informações sobre as necessidades dos bairros e segmentos sociais. O assistente organiza essas contribuições por tema, por bairro e por perfil de quem enviou, seja morador, turista, estudante ou especialista, ajudando os técnicos a usar essas informações na elaboração do plano.",
+  "cita_idioma": "pt",
+  "cita_fuente_url": "https://www.natal.rn.gov.br/news/post2/42388",
+  "tipo_fuente": "oficial",
+  "recomendacion": "INCLUIR",
+  "razonamiento": "REFUTA la hipotesis de procesamiento solo manual. 'Pra Frente Natal' (primer PPA participativo por WhatsApp con IA de Brasil) usa un asistente con IA para (1) recolectar propuestas conversacionalmente (229/274 digitales, 84%) y (2) DECISIVO: organizar/clasificar el contenido por tema, barrio y perfil del remitente para los tecnicos. Esa clasificacion del contenido = rol_IA=contenido (ELEGIBLE). Hay etapa humana posterior de absorcion (>81%), pero la IA aporta capa de clasificacion. Confianza media: paginas oficiales con 403, cita reconstruida de indexacion consistente.",
+  "fuentes_consultadas": [
+   "https://www.natal.rn.gov.br/news/post2/42388",
+   "https://www.natal.rn.gov.br/news/post2/42103",
+   "https://prafrente.natal.rn.gov.br/"
+  ],
+  "_decision": "INCLUIR"
+ },
+ {
+  "pais": "BR",
+  "caso": "ParticipACT Brasil",
+  "rol_IA_determinado": "apoyo",
+  "confianza": "alta",
+  "cita_verbatim": "Scalable and Cost-Effective Assignment of Mobile Crowdsensing Tasks Based on Profiling Trends and Prediction: The ParticipAct Living Lab Experience",
+  "cita_idioma": "en",
+  "cita_fuente_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4570339/",
+  "tipo_fuente": "paper",
+  "recomendacion": "EXCLUIR",
+  "razonamiento": "Fuentes primarias convergen: el ML perfila/predice movilidad para asignar tareas de crowdsensing y opera sobre datos de sensores/problemas urbanos, no sobre contenido deliberativo. La participacion es reportar problemas en un mapa. Rol de apoyo.",
+  "fuentes_consultadas": [
+   "site.participact.com.br",
+   "ncbi PMC4570339",
+   "mdpi.com/1424-8220/15/8/18613",
+   "via.ufsc.br"
+  ],
+  "_decision": "EXCLUIR"
+ },
+ {
+  "pais": "CL",
+  "caso": "Estrategia de Gobierno Digital. Informe proceso participativo segunda consulta ciudadana",
+  "rol_IA_determinado": "sin_IA",
+  "confianza": "media",
+  "cita_verbatim": "La Consulta Ciudadana fue realizada en conjunto entre la Secretaría de Gobierno Digital y el Laboratorio de Gobierno con el fin de recoger referencias, intereses y preocupaciones sobre cómo los organismos públicos deben sumarse a la digitalización, además de las impresiones sobre la utilización de datos e inteligencia artificial.",
+  "cita_idioma": "es",
+  "cita_fuente_url": "https://www.chilecompra.cl/2024/09/consulta-ciudadana-estrategia-de-gobierno-digital-2030/",
+  "tipo_fuente": "oficial",
+  "recomendacion": "EXCLUIR",
+  "razonamiento": "La IA aparece como TEMA consultado ('impresiones sobre la utilizacion de datos e inteligencia artificial') y herramienta futura de atencion (ChileAtiende), no como metodo. Los aportes se 'analizaron segun criterios de pertinencia, factibilidad y prioridad' (evaluacion humana, Secretaria de Gobierno Digital + Laboratorio de Gobierno). Ninguna fuente indica IA analizando el contenido. rol_IA=sin_IA. Confianza media: PDF del informe bloqueado por proxy, cita de republicacion oficial ChileCompra.",
+  "fuentes_consultadas": [
+   "https://www.chilecompra.cl/2024/09/consulta-ciudadana-estrategia-de-gobierno-digital-2030/",
+   "https://participacion.digital.gob.cl/projects/consulta-ciudadana-estrategia-de-gobierno-digital-2030",
+   "https://satisfaccion.gob.cl/informacion-de-interes/noticias/finaliza-consulta-publica-por-la-estrategia-de-gobierno-digital-2030"
+  ],
+  "_decision": "EXCLUIR"
+ },
+ {
+  "pais": "CL",
+  "caso": "Jornada de Escucha Lanzamiento Instituto de Políticas Públicas UNAB",
+  "rol_IA_determinado": "sin_IA",
+  "confianza": "alta",
+  "cita_verbatim": "La Universidad Andrés Bello presentó su nuevo Instituto UNAB de Políticas Públicas (IPP) a su comunidad a través de tres jornadas de escucha realizadas en Santiago, Viña del Mar y Concepción, encabezadas por el rector Julio Castro y el director del IPP UNAB Raúl Figueroa, y a las que asistieron autoridades, decanos, investigadores y académicos de las tres sedes.",
+  "cita_idioma": "es",
+  "cita_fuente_url": "https://www.elmostrador.cl/agenda-pais/2022/06/11/universidad-presento-su-nuevo-instituto-de-politicas-publicas/",
+  "tipo_fuente": "prensa",
+  "recomendacion": "EXCLUIR",
+  "razonamiento": "Fueron tres sesiones internas de lanzamiento del IPP UNAB (autoridades/academicos), no participacion ciudadana masiva; ninguna fuente menciona IA/NLP sobre el contenido y la URL original era un dashboard Tableau. Se refuta la atribucion de IA.",
+  "fuentes_consultadas": [
+   "elmostrador.cl",
+   "ipp.unab.cl",
+   "noticias.unab.cl"
+  ],
+  "_decision": "EXCLUIR"
+ },
+ {
+  "pais": "CL",
+  "caso": "La voz de los nuevos votantes",
+  "rol_IA_determinado": "sin_IA",
+  "confianza": "alta",
+  "cita_verbatim": "El estudio utiliza una metodología innovadora que incluye encuestas de terreno y mecanismos participativos que reflejan la voz de los nuevos votantes.",
+  "cita_idioma": "es",
+  "cita_fuente_url": "https://ipp.unab.cl/publicacion/la-voz-de-los-nuevos-votantes-san-bernardo/",
+  "tipo_fuente": "oficial",
+  "recomendacion": "EXCLUIR",
+  "razonamiento": "Fuente primaria describe encuestas de terreno + mecanismos participativos aplicados por 19 estudiantes en terreno (mayo 2023); ninguna mencion de IA/ML/NLP sobre las respuestas. Encuesta tradicional; se confirma la alucinacion de la dimension IA.",
+  "fuentes_consultadas": [
+   "ipp.unab.cl/publicacion",
+   "ipp.unab.cl PDF informe",
+   "ipp.unab.cl/observatorio-territorial"
+  ],
+  "_decision": "EXCLUIR"
+ },
+ {
+  "pais": "CL",
+  "caso": "LXS 400 - Chile Delibera",
+  "rol_IA_determinado": "apoyo",
+  "confianza": "alta",
+  "cita_verbatim": "El Centro de Microdatos de la Universidad de Chile utilizó tecnología basada en Inteligencia Artificial (IA) para seleccionar esta muestra representativa.",
+  "cita_idioma": "es",
+  "cita_fuente_url": "https://www.senado.cl/comunicaciones/noticias/lanzan-lxs-400chile-delibera-chilenos-pensando-politicas-publicas",
+  "tipo_fuente": "oficial",
+  "recomendacion": "EXCLUIR",
+  "razonamiento": "Fuentes primarias (Senado, Stanford Deliberative Democracy Lab, OECD): la IA se uso para el MUESTREO/seleccion de la muestra representativa y hubo un 'informe de IA' como entregable; el moderador automatizado 'AI-assisted' solo gestiona tiempos/turnos (logistica). Ninguna fuente establece IA analizando el CONTENIDO deliberativo; el analisis de contenido fue un estudio cualitativo separado. rol_IA=apoyo (muestreo + logistica).",
+  "fuentes_consultadas": [
+   "https://www.senado.cl/comunicaciones/noticias/lanzan-lxs-400chile-delibera-chilenos-pensando-politicas-publicas",
+   "https://deliberation.stanford.edu/news/lxs-400-national-deliberative-poll-chile",
+   "https://www.oecd.org/en/publications/2025/06/governing-with-artificial-intelligence_398fa287"
+  ],
+  "_decision": "EXCLUIR"
+ },
+ {
+  "pais": "CL",
+  "caso": "Tenemos que hablar de Chile",
+  "rol_IA_determinado": "contenido",
+  "confianza": "media",
+  "cita_verbatim": "El registro de las opiniones se realiza durante los diálogos, regido por un protocolo de anotación que los facilitadores deben seguir rigurosamente. Luego del primer proceso, aplican un algoritmo de procesamiento de lenguaje natural que permite entender y procesar lo que la gente piensa en contextos de intercambio dialógico. Se trata de una iniciativa pionera en un campo que cruza los desarrollos de la inteligencia artificial y el análisis argumentativo del discurso al servicio de la participación ciudadana.",
+  "cita_idioma": "es",
+  "cita_fuente_url": "https://www.uchile.cl/noticias/164987/tenemos-que-hablar-de-chile-lanza-nuevo-mecanismo-de-participacion",
+  "tipo_fuente": "oficial",
+  "recomendacion": "INCLUIR",
+  "razonamiento": "REFUTA la hipotesis del protocolo solo manual. El Instituto de Argumentacion de la U. de Chile sistematiza en dos etapas: (1) anotacion manual segun protocolo, y (2) un ALGORITMO DE NLP que procesa/clasifica el contenido participativo (lo que la gente dice en los dialogos). Fuente oficial uchile.cl lo describe como iniciativa que cruza IA y analisis argumentativo del discurso al servicio de la participacion. rol_IA=contenido (ELEGIBLE). Confianza media: dominios primarios con 403 anti-bot, cita reconstruida de la indexacion consistente.",
+  "fuentes_consultadas": [
+   "https://www.uchile.cl/noticias/164987/tenemos-que-hablar-de-chile-lanza-nuevo-mecanismo-de-participacion",
+   "https://quimica.uchile.cl/noticias/168509",
+   "https://derecho.uchile.cl/facultad/centros-y-departamentos/instituto/presentacion"
+  ],
+  "_decision": "INCLUIR"
+ },
+ {
+  "pais": "CO",
+  "caso": "DNP - Diálogos Regionales Vinculantes (PND 2022-2026)",
+  "rol_IA_determinado": "sin_IA",
+  "confianza": "media",
+  "cita_verbatim": "En los 51 Diálogos Regionales Vinculantes, los colombianos expresaron sus necesidades y propuestas en 2.115 mesas de diálogo, las cuales fueron analizadas y organizadas por el Departamento Nacional de Planeación (DNP) teniendo en cuenta criterios técnicos, financieros y legislativos.",
+  "cita_idioma": "es",
+  "cita_fuente_url": "https://www.dnp.gov.co/Prensa_/Noticias/Paginas/dnp-publica-resultados-de-los-dialogos-regionales-vinculantes.aspx",
+  "tipo_fuente": "oficial",
+  "recomendacion": "EXCLUIR",
+  "razonamiento": "El metodo oficial (Funcion Publica/DNP) es de 3 fases: analisis cualitativo (lectura/codificacion manual), cuantitativo (frecuencias/visor, estadistica descriptiva) y categorizacion tematica manual (7 categorias). Ninguna fuente primaria accesible menciona IA/NLP/ML procesando las +89.788 propuestas; la 'nota interna' de modelo hibrido NLP no se corrobora. Veedurias (FIP, Dejusticia, Oxfam) critican la opacidad de la sistematizacion. rol_IA=sin_IA. Confianza media: PDF crudos del DNP con 403.",
+  "fuentes_consultadas": [
+   "https://www.dnp.gov.co/Prensa_/Noticias/Paginas/dnp-publica-resultados-de-los-dialogos-regionales-vinculantes.aspx",
+   "https://www.funcionpublica.gov.co/documents/d/guest/la_rendicion_de_cuentas_y_el_control_social_marco_dialogos_regionales_vinculantes_-drv-",
+   "https://storage.ideaspaz.org/documents/fip_ne_dialogosterritoriales_final.pdf"
+  ],
+  "_decision": "EXCLUIR"
+ },
+ {
+  "pais": "CO",
+  "caso": "Tenemos que hablar de Colombia",
+  "rol_IA_determinado": "contenido",
+  "confianza": "alta",
+  "cita_verbatim": "Luego del primer proceso, se aplica un algoritmo de procesamiento de lenguaje natural que permite conocer y procesar lo que las personas piensan en contextos de intercambio dialógico. La metodología empleada es pionera en un campo que entrecruza desarrollos de inteligencia artificial y análisis de discurso argumentativo al servicio de la participación ciudadana.",
+  "cita_idioma": "es",
+  "cita_fuente_url": "https://www.uchile.cl/noticias/164987/tenemos-que-hablar-de-chile-lanza-nuevo-mecanismo-de-participacion",
+  "tipo_fuente": "oficial",
+  "recomendacion": "INCLUIR",
+  "razonamiento": "Las respuestas (+374.000 palabras) se envian a una plataforma de analisis de texto que halla tendencias, recurrencias, valores, emociones y reglas comunes. El motor y la metodologia fueron transferidos desde 'Tenemos que hablar de Chile' (Instituto de Argumentacion, U. de Chile), que aplica un algoritmo de NLP sobre el contenido. Por tanto IA/NLP proceso el contenido participativo. rol_IA=contenido. Confianza alta: la cadena metodologia-motor-Colombia esta documentada; la cita mas explicita proviene del socio operativo chileno que opera el sistema.",
+  "fuentes_consultadas": [
+   "https://www.uchile.cl/noticias/164987/tenemos-que-hablar-de-chile-lanza-nuevo-mecanismo-de-participacion",
+   "https://tenemosquehablarcolombia.co/resultados/",
+   "https://www.researchgate.net/publication/371951310_Colombia_a_escala_-_Informe_tecnico_de_Tenemos_que_hablar_Colombia"
+  ],
+  "_decision": "INCLUIR"
+ },
+ {
+  "pais": "CR",
+  "caso": "dIAra",
+  "rol_IA_determinado": "apoyo",
+  "confianza": "alta",
+  "cita_verbatim": "Crear un modelo de inteligencia artificial que permita realizar la detección de objetos en las imagenes captadas en la etapa de IOT relacionadas al proyecto de contrucción de la Escuela de Pocosi.",
+  "cita_idioma": "es",
+  "cita_fuente_url": "https://raw.githubusercontent.com/cgrcostarica/dIAra/main/README.md",
+  "tipo_fuente": "oficial",
+  "recomendacion": "EXCLUIR",
+  "razonamiento": "Repositorio GitHub oficial de la CGR (cgrcostarica/dIAra), confirmado por OGP y OLACEFS: la IA es un modelo de deteccion de objetos (vision por computador) sobre imagenes de camaras IoT en obras publicas, para identificar maquinaria/personas y estimar progreso. NO procesa contenido participativo; el vinculo con participacion es indirecto (control ciudadano de obras). rol_IA=apoyo.",
+  "fuentes_consultadas": [
+   "https://github.com/cgrcostarica/dIAra",
+   "https://www.opengovpartnership.org/the-open-gov-challenge/costa-rica-artificial-intelligence-alerts-citizen-control-public-infrastructure/",
+   "https://olacefs.com"
+  ],
+  "_decision": "EXCLUIR"
+ },
+ {
+  "pais": "CR",
+  "caso": "U-Report Costa Rica – chatbot juvenil",
+  "rol_IA_determinado": "sin_IA",
+  "confianza": "alta",
+  "cita_verbatim": "RapidPro allows organizations to visually build scalable interactive messaging applications.",
+  "cita_idioma": "en",
+  "cita_fuente_url": "https://github.com/rapidpro/rapidpro",
+  "tipo_fuente": "plataforma/repo",
+  "recomendacion": "EXCLUIR",
+  "razonamiento": "U-Report CR (UNICEF) es un chatbot de encuestas sobre RapidPro, cuyo nucleo es un motor de Flujos visuales basado en REGLAS. El joven envia 'UNIRME' y recibe encuestas automaticas; las respuestas se desglosan por edad/genero/canton (tabulacion estadistica, no NLP). Ninguna fuente primaria menciona IA/ML/NLP clasificando el contenido. Falso positivo por la palabra 'chatbot'. rol_IA=sin_IA.",
+  "fuentes_consultadas": [
+   "https://www.unicef.org/costarica/comunicados-prensa/plataforma-mundial-u-report-llega-costa-rica",
+   "https://github.com/rapidpro/rapidpro",
+   "https://en.wikipedia.org/wiki/U-Report"
+  ],
+  "_decision": "EXCLUIR"
+ },
+ {
+  "pais": "DO",
+  "caso": "CiudadanIA",
+  "rol_IA_determinado": "apoyo",
+  "confianza": "media",
+  "cita_verbatim": "Este proyecto establece puntos de interacción física en zonas de alto tráfico y emplea modelos de machine learning y NLP, incluidos LLMs, para recolectar datos representativos de los ciudadanos y así entrenar algoritmos que permitan ofrecer asistencia, información y recomendaciones personalizadas.",
+  "cita_idioma": "es",
+  "cita_fuente_url": "https://www.diariolibre.com/planeta/tecnologia/2025/10/05/rd-avanza-en-el-uso-de-la-ia-y-se-posiciona-entre-paises-adoptantes/3267821",
+  "tipo_fuente": "prensa",
+  "recomendacion": "EXCLUIR",
+  "razonamiento": "Usa ML/NLP/LLMs para RECOLECTAR datos y ENTRENAR un asistente de atencion/tramites (tipo Taina), no para analizar el contenido deliberativo. Rol de apoyo.",
+  "fuentes_consultadas": [
+   "diariolibre.com",
+   "agendadigital.gob.do ENIA",
+   "council.science case study"
+  ],
+  "_decision": "EXCLUIR"
+ },
+ {
+  "pais": "HN",
+  "caso": "RedPública + iVerify",
+  "rol_IA_determinado": "apoyo",
+  "confianza": "alta",
+  "cita_verbatim": "iVerify [...] combats the spread of false narratives during election periods by combining new technology like AI and machine learning with tried-and-true in-person fact-checking.",
+  "cita_idioma": "en",
+  "cita_fuente_url": "https://www.undp.org/latin-america/digitalhub4/projects/iverify-undps-tool-fact-checking-and-information-integrity",
+  "tipo_fuente": "oficial",
+  "recomendacion": "EXCLUIR",
+  "razonamiento": "Fuentes primarias (UNDP Honduras, UNDP Digital Hub, UNITEC/CEUTEC): RedPublica recibe y da seguimiento a propuestas ciudadanas via una Mesa Consultiva multiactor, sin IA sobre las propuestas. iVerify es una herramienta SEPARADA que opera sobre DESINFORMACION (narrativas falsas), combinando IA + verificacion humana. La IA no procesa el contenido participativo de RedPublica. rol_IA=apoyo.",
+  "fuentes_consultadas": [
+   "https://www.undp.org/es/honduras/historias/participacion-ciudadana-con-innovacion-digital-traves-de-redpublica-honduras",
+   "https://www.undp.org/latin-america/digitalhub4/projects/iverify-undps-tool-fact-checking-and-information-integrity",
+   "https://www.unitec.edu/blog/iverify-innovadora-plataforma-que-combate-la-desinformacion/"
+  ],
+  "_decision": "EXCLUIR"
+ },
+ {
+  "pais": "MX",
+  "caso": "Presupuesto CRECES",
+  "rol_IA_determinado": "sin_IA",
+  "confianza": "alta",
+  "cita_verbatim": "Las votaciones se realizarán de manera digital en la página presupuestocreces.hermosillo.gob.mx o vía WhatsApp en el chatbot 'Hola' del Ayuntamiento. Quienes prefieran hacerlo de manera presencial podrán acudir a las urnas electrónicas. Todos los proyectos pasarán por una validación de su viabilidad técnica, legal y financiera antes de ser sometidos a votación.",
+  "cita_idioma": "es",
+  "cita_fuente_url": "https://presupuestocreces.hermosillo.gob.mx/",
+  "tipo_fuente": "oficial",
+  "recomendacion": "EXCLUIR",
+  "razonamiento": "Presupuesto participativo real, pero sin IA sobre el contenido: la viabilidad de las propuestas es dictamen humano (tecnico/legal/financiero) y el unico 'IA' es el chatbot 'Hola' (atencion general lanzada 2022 para baches/multas), usado en CRECES solo como CANAL de votacion por WhatsApp con ruteo por seccion electoral (deterministico), no analiza contenido. rol_IA=sin_IA.",
+  "fuentes_consultadas": [
+   "https://presupuestocreces.hermosillo.gob.mx/",
+   "https://www.elimparcial.com/son/hermosillo/2025/09/02/arranca-participacion-ciudadana-para-el-presupuesto-creces-2025-en-hermosillo/",
+   "https://proyectopuente.com.mx/2022/10/03/gobierno-de-hermosillo-lanza-hola"
+  ],
+  "_decision": "EXCLUIR"
+ },
+ {
+  "pais": "TT",
+  "caso": "EngageTT (plataforma Go Vocal)",
+  "rol_IA_determinado": "apoyo",
+  "confianza": "media",
+  "cita_verbatim": "Data is sent to the AI processors when an admin visits the survey results page (in case of surveys) or actively chooses to start an AI analysis (in case of ideation).",
+  "cita_idioma": "en",
+  "cita_fuente_url": "https://support.govocal.com/en/articles/8316692-ai-analysis",
+  "tipo_fuente": "plataforma/repo",
+  "recomendacion": "EXCLUIR",
+  "razonamiento": "La IA (Go Vocal Sensemaking) es solo capacidad del producto y no se activa automaticamente; ninguna fuente primaria documenta que se aplicara a los aportes de la consulta NDTS. La NDTS usa encuestas + un chatbot (AskNDTS) de atencion. Sin evidencia de IA sobre el contenido participativo.",
+  "fuentes_consultadas": [
+   "support.govocal.com",
+   "engage.gov.tt",
+   "mdt.gov.tt"
+  ],
+  "_decision": "EXCLUIR"
+ }
+]

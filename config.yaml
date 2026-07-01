@@ -53,43 +53,44 @@ escenarios:
       - { pais: CL, caso: "Tenemos que hablar de Chile" }
 
 # ============================================================================
-# VALIDACIÓN 2026 (web) — verificación de los 37 casos incluidos.
-# Ver data/gates/validacion_casos_ILIA2026.md y la hoja 'Validación' del xlsx.
-# Política aplicada (a falta de respuesta explícita del operador): MARCAR, no
-# excluir. Los casos siguen contando bajo el escenario activo, pero quedan
-# señalados para verificación con CITA VERBATIM en Fase 2 (regla de oro: mejor
-# null + alerta que un valor plausible). El operador puede mover cualquiera a
-# 'exclusiones_firmes' o a un escenario.
+# VALIDACIÓN 2026 — verificación de los 37 casos incluidos.
+#   Fase A (web): existencia + URL. 31 REAL + 6 PARCIAL, 0 alucinaciones; 37/37
+#     con URL funcional. Ver data/gates/validacion_casos_ILIA2026.md.
+#   Fase B (profunda): fuente primaria + CITA VERBATIM para fijar rol_IA de los
+#     15 casos marcados. Ver data/gates/verificacion_profunda_casos_ILIA2026.md,
+#     verificacion_profunda_resultados.json y la hoja 'Verificación profunda'.
+# Resultado: 12 con rol_IA=apoyo/sin_IA (la IA NO procesa el contenido
+# participativo) -> EXCLUIR; 3 con rol_IA=contenido confirmado por verbatim -> se
+# mantienen. Conjunto elegible: A = 25 (antes 37) · B = 24.
+# El rol_IA verificado quedó fijado en recodificacion_2025.csv (con la cita).
 # ============================================================================
 validacion_2026:
-  politica: "marcar_por_verificar"    # marcar_por_verificar | excluir
-  # Existencia: 31 REAL_CONFIRMADO + 6 PARCIAL, 0 alucinaciones. URLs: 37/37 OK.
-  # 10 casos: participación real, pero IA sobre el CONTENIDO no verificada en la
-  # búsqueda web. Confirmar rol_IA (contenido vs apoyo) antes de cerrar la base.
-  requiere_verificacion_rol_IA:
-    - { pais: MX, caso: "Presupuesto CRECES" }
-    - { pais: CL, caso: "Tenemos que hablar de Chile" }       # además: Escenario A/B
-    - { pais: CR, caso: "U-Report Costa Rica – chatbot juvenil" }
-    - { pais: DO, caso: "CiudadanIA" }                         # además: Escenario A/B
-    - { pais: CL, caso: "Estrategia de Gobierno Digital. Informe proceso participativo segunda consulta ciudadana" }
-    - { pais: CL, caso: "Jornada de Escucha Lanzamiento Instituto de Políticas Públicas UNAB" }
-    - { pais: BR, caso: "Plan Plurianual de la ciudad de Natal" }
-    - { pais: CL, caso: "La voz de los nuevos votantes" }
-    - { pais: CO, caso: "Tenemos que hablar de Colombia" }
-    - { pais: CO, caso: "DNP - Diálogos Regionales Vinculantes (PND 2022-2026)" }   # caso nuevo
-  # 5 casos: la IA existe pero NO actúa sobre el contenido deliberativo
-  # (periférica). Revisar encaje metodológico.
-  ia_periferica_revisar:
-    - { pais: CR, caso: "dIAra" }                              # monitoreo físico de obras (visión)
-    - { pais: HN, caso: "RedPública + iVerify" }               # IA sobre desinformación
-    - { pais: BR, caso: "ParticipACT Brasil" }                 # crowdsensing / sensores urbanos
-    - { pais: CL, caso: "LXS 400 - Chile Delibera" }           # IA para muestreo (caso nuevo)
-    - { pais: TT, caso: "EngageTT (plataforma Go Vocal)" }     # capacidad de plataforma (caso nuevo)
+  politica: "verificado"              # marcar_por_verificar | verificado
+  # 12 casos verificados FUERA (rol_IA=apoyo/sin_IA):
+  verificados_excluir:
+    - { pais: DO, caso: "CiudadanIA", rol_IA: apoyo,  confianza: media }   # atención/trámites; además Escenario A/B (ya sale)
+    - { pais: CR, caso: "dIAra", rol_IA: apoyo,  confianza: alta }         # visión por computador sobre obras
+    - { pais: HN, caso: "RedPública + iVerify", rol_IA: apoyo, confianza: alta }  # iVerify sobre desinformación
+    - { pais: BR, caso: "ParticipACT Brasil", rol_IA: apoyo, confianza: alta }    # ML de crowdsensing/sensores
+    - { pais: CL, caso: "LXS 400 - Chile Delibera", rol_IA: apoyo, confianza: alta }  # IA para muestreo
+    - { pais: TT, caso: "EngageTT (plataforma Go Vocal)", rol_IA: apoyo, confianza: media }  # capacidad de plataforma, sin uso probado
+    - { pais: CR, caso: "U-Report Costa Rica – chatbot juvenil", rol_IA: sin_IA, confianza: alta }  # RapidPro por reglas
+    - { pais: CL, caso: "Jornada de Escucha Lanzamiento Instituto de Políticas Públicas UNAB", rol_IA: sin_IA, confianza: alta }
+    - { pais: CL, caso: "La voz de los nuevos votantes", rol_IA: sin_IA, confianza: alta }  # encuesta de terreno
+    - { pais: MX, caso: "Presupuesto CRECES", rol_IA: sin_IA, confianza: alta }   # chatbot = canal de voto
+    - { pais: CL, caso: "Estrategia de Gobierno Digital. Informe proceso participativo segunda consulta ciudadana", rol_IA: sin_IA, confianza: media }
+    - { pais: CO, caso: "DNP - Diálogos Regionales Vinculantes (PND 2022-2026)", rol_IA: sin_IA, confianza: media }  # caso nuevo
+  # 3 casos verificados DENTRO (rol_IA=contenido confirmado con cita verbatim):
+  verificados_incluir:
+    - { pais: CL, caso: "Tenemos que hablar de Chile", rol_IA: contenido, confianza: media }   # NLP del Instituto de Argumentación (UChile); además Escenario A/B
+    - { pais: CO, caso: "Tenemos que hablar de Colombia", rol_IA: contenido, confianza: alta } # mismo motor NLP transferido
+    - { pais: BR, caso: "Plan Plurianual de la ciudad de Natal", rol_IA: contenido, confianza: media }  # IA clasifica por tema/barrio/perfil
   # Ratificaciones pendientes de la reconciliación (reconciliacion_casos_ILIA2026.md):
   ratificaciones_pendientes:
     - "Conflicto R1: CO Descongestión y PE Sistema de cómputo se excluyen por rol_IA=apoyo pese al voto 'SI' (actividad)."
-    - "Escenario activo = A (DO CiudadanIA y CL TQHCH dentro; bajo B salen)."
+    - "Escenario activo = A (CL TQHCH dentro; bajo B sale). DO CiudadanIA ya sale por verificación (apoyo)."
     - "Duplicado CL Participación Ciudadana Proceso Constitucional: se conserva una copia."
+    - "Confianza 'media' en 5 verificaciones (DO, TT, CL Estrategia, CO DNP, y los 3 incluidos salvo CO): considerar fuente primaria adicional si se requiere cerrar al 99%."
 
 # §6.1 — Alcance del conteo de "Cantidad de iniciativas".
 #   count_min_level: nivel mínimo de consolidación para que un caso cuente en N.
