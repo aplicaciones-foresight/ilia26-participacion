@@ -1,91 +1,92 @@
 {
- "caso_id": "PE-consulta-ciudadana-sobre-el-proyecto-nac",
- "pais": "PE",
- "nombre_caso": "Consulta Ciudadana sobre el Proyecto Nacional de Educación",
- "bloque": "2-baseline",
- "proceso_participativo": "Una consulta pública para recoger opiniones sobre el Proyecto Educativo Nacional 2036, utilizando encuestas en línea, talleres y mesas deliberativas.",
- "ano_inicio": "2019",
- "ano_cierre": null,
- "estado_actividad": "cerrado",
- "evidencia_actividad_2026": "reconfirmado web (prensa): VERIFICADO (fuente primaria): el CNE usó IBM Watson Discovery + Studio (ML/NLP) sobre 87.991 documentos de aportes ciudadanos de 847 eventos y 49 espacios de di",
- "organizacion_a_cargo": "Consejo Nacional de Educación del Perú",
- "tipo_convocante": [
-  "otra institución pública"
- ],
- "tipo_organizacion": [
-  "Público"
- ],
- "tipo_proceso": [
-  "Gobernanza Colaborativa"
- ],
- "etapas_uso_IA": [
-  "Análisis"
- ],
- "continuidad": [
-  "Uso único"
- ],
- "nivel_consolidacion": 2,
- "sistema_IA": "Procesamiento del Lenguaje Natural (PLN) / Comprensión del Lenguaje Natural (NLU)",
- "tipos_IA_familia": [
-  "NLP - Tópicos",
-  "NLP - Sentiment"
- ],
- "usa_LLM_generativa": "no",
- "funcion_IA": "Analizar las opiniones de los participantes y sistematizar la información de forma objetiva.",
- "rol_IA": "contenido",
- "usa_IA_en_proceso": "sí",
- "tipo_desarrollador_IA": [
-  "Privado"
- ],
- "origen_desarrollador": "Internacional",
- "entra_tentativo": "SI",
- "justificacion_elegibilidad": "CNE: organismo autónomo (otra pública) vs gobierno nacional",
- "confianza": "ALTA (baseline 2025 + reverif. web 2026)",
- "evidencia_verbatim": {
-  "pais": "Caso del índice ILIA 2025 (BBDD oficial del equipo)",
-  "tipo_proceso": "Governanza Colaborativa",
-  "etapas_uso_IA": "Análisis",
-  "estado_actividad": "reconfirmado web (prensa): VERIFICADO (fuente primaria): el CNE usó IBM Watson Discovery + Studio (ML/NLP) sobre 87.991 documentos de aportes ciudadanos de 847 eventos y 49 espacios de di",
-  "nivel_consolidacion": "Continuidad (BBDD 2025): Uso único",
-  "tipo_convocante": "Consejo Nacional de Educación del Perú",
-  "usa_IA_en_proceso": "Analizar las opiniones de los participantes y sistematizar la información de forma objetiva.",
-  "rol_IA": "Analizar las opiniones de los participantes y sistematizar la información de forma objetiva."
- },
- "fuentes": [
-  {
-   "url": "https://www.latinno.net/en/case/17232/",
-   "estado": "baseline-2025",
-   "cita": ""
+  "caso_id": "PE-consulta-ciudadana-sobre-el-proyecto-nac",
+  "pais": "PE",
+  "nombre_caso": "Consulta Ciudadana sobre el Proyecto Nacional de Educación",
+  "bloque": "2-baseline",
+  "proceso_participativo": "Una consulta pública para recoger opiniones sobre el Proyecto Educativo Nacional 2036, utilizando encuestas en línea, talleres y mesas deliberativas.",
+  "ano_inicio": "2019",
+  "ano_cierre": null,
+  "estado_actividad": "cerrado",
+  "evidencia_actividad_2026": "reconfirmado web (prensa): VERIFICADO (fuente primaria): el CNE usó IBM Watson Discovery + Studio (ML/NLP) sobre 87.991 documentos de aportes ciudadanos de 847 eventos y 49 espacios de di",
+  "organizacion_a_cargo": "Consejo Nacional de Educación del Perú",
+  "tipo_convocante": [
+    "otra institución pública"
+  ],
+  "tipo_organizacion": [
+    "Público"
+  ],
+  "tipo_proceso": [
+    "Gobernanza Colaborativa"
+  ],
+  "etapas_uso_IA": [
+    "Análisis"
+  ],
+  "continuidad": [
+    "Uso único"
+  ],
+  "nivel_consolidacion": 2,
+  "sistema_IA": "Procesamiento del Lenguaje Natural (PLN) / Comprensión del Lenguaje Natural (NLU)",
+  "tipos_IA_familia": [
+    "NLP - Tópicos",
+    "NLP - Sentiment"
+  ],
+  "usa_LLM_generativa": "no",
+  "funcion_IA": "Analizar las opiniones de los participantes y sistematizar la información de forma objetiva.",
+  "rol_IA": "contenido",
+  "usa_IA_en_proceso": "sí",
+  "tipo_desarrollador_IA": [
+    "Privado"
+  ],
+  "origen_desarrollador": "Internacional",
+  "entra_tentativo": "SI",
+  "justificacion_elegibilidad": "CNE: organismo autónomo (otra pública) vs gobierno nacional",
+  "confianza": "ALTA (baseline 2025 + reverif. web 2026)",
+  "evidencia_verbatim": {
+    "pais": "Caso del índice ILIA 2025 (BBDD oficial del equipo)",
+    "tipo_proceso": "Governanza Colaborativa",
+    "etapas_uso_IA": "Análisis",
+    "estado_actividad": "reconfirmado web (prensa): VERIFICADO (fuente primaria): el CNE usó IBM Watson Discovery + Studio (ML/NLP) sobre 87.991 documentos de aportes ciudadanos de 847 eventos y 49 espacios de di",
+    "nivel_consolidacion": "Continuidad (BBDD 2025): Uso único",
+    "tipo_convocante": "Consejo Nacional de Educación del Perú",
+    "usa_IA_en_proceso": "Analizar las opiniones de los participantes y sistematizar la información de forma objetiva.",
+    "rol_IA": "Analizar las opiniones de los participantes y sistematizar la información de forma objetiva."
   },
-  {
-   "url": "https://www.gob.pe/institucion/cne/noticias/502734-lanzan-consulta-ciudadana-por-el-proyecto-educativo-nacional?utm_source=chatgpt.com",
-   "estado": "baseline-2025",
-   "cita": ""
-  },
-  {
-   "url": "https://cdn.www.gob.pe/uploads/document/file/1915017/CNE-%20proyecto-educativo-nacional-al-2036.pdf.pdf?v=1679434080",
-   "estado": "baseline-2025",
-   "cita": ""
-  },
-  {
-   "url": "https://andina.pe/agencia/noticia-usan-inteligencia-artificial-para-formular-proyecto-educativo-nacional-al-2036-777369.aspx",
-   "estado": "baseline-2025",
-   "cita": ""
-  },
-  {
-   "url": "https://elperuano.pe/noticia/87397-usan-inteligencia-artificial-para-formular-el-proyecto-educativo-nacional-al-2036",
-   "estado": "baseline-2025",
-   "cita": ""
-  }
- ],
- "gaps": [],
- "alertas": [
-  "usa_LLM_generativa='no' derivado de Tipos de IA 2025 (sin 'LLM'); verificar si cambió en 2026",
-  "recodificación 2026: CNE: organismo autónomo (otra pública) vs gobierno nacional",
-  "Datos brutos del índice ILIA 2025 (BBDD validada por el equipo); recodificación 2026 (convocante 7-cat, nivel 0-3) y reverificación de actividad 2026."
- ],
- "fuente_datos": "baseline_2025_bbdd+recod2026+reverif_web2026",
- "veredicto_equipo": "SI",
- "comentario_equipo": "",
- "divergencia_equipo": false
+  "fuentes": [
+    {
+      "url": "https://www.latinno.net/en/case/17232/",
+      "estado": "baseline-2025",
+      "cita": ""
+    },
+    {
+      "url": "https://www.gob.pe/institucion/cne/noticias/502734-lanzan-consulta-ciudadana-por-el-proyecto-educativo-nacional?utm_source=chatgpt.com",
+      "estado": "baseline-2025",
+      "cita": ""
+    },
+    {
+      "url": "https://cdn.www.gob.pe/uploads/document/file/1915017/CNE-%20proyecto-educativo-nacional-al-2036.pdf.pdf?v=1679434080",
+      "estado": "baseline-2025",
+      "cita": ""
+    },
+    {
+      "url": "https://andina.pe/agencia/noticia-usan-inteligencia-artificial-para-formular-proyecto-educativo-nacional-al-2036-777369.aspx",
+      "estado": "baseline-2025",
+      "cita": ""
+    },
+    {
+      "url": "https://elperuano.pe/noticia/87397-usan-inteligencia-artificial-para-formular-el-proyecto-educativo-nacional-al-2036",
+      "estado": "baseline-2025",
+      "cita": ""
+    }
+  ],
+  "gaps": [],
+  "alertas": [
+    "usa_LLM_generativa='no' derivado de Tipos de IA 2025 (sin 'LLM'); verificar si cambió en 2026",
+    "recodificación 2026: CNE: organismo autónomo (otra pública) vs gobierno nacional",
+    "Datos brutos del índice ILIA 2025 (BBDD validada por el equipo); recodificación 2026 (convocante 7-cat, nivel 0-3) y reverificación de actividad 2026."
+  ],
+  "fuente_datos": "baseline_2025_bbdd+recod2026+reverif_web2026",
+  "veredicto_equipo": "SI",
+  "comentario_equipo": "",
+  "divergencia_equipo": false,
+  "notas_verificacion": "Verificar rótulo 2026: el CNE y el proceso participativo del PEN existen; confirmar que corresponde al Proyecto Educativo Nacional (PEN 2036), no a una consulta separada."
 }

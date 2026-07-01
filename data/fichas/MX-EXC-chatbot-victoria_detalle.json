@@ -1,56 +1,56 @@
 {
- "caso_id": "MX-EXC-chatbot-victoria",
- "pais": "MX",
- "nombre_caso": "Chatbot Victoria",
- "bloque": "5-excluido-2025",
- "proceso_participativo": "Chatbot para ayudar a los ciudadanos a mantenerse informados y seguros durante la pandemia por Covid-19. Este servicio, disponible en redes sociales desde el 2019 para brindar información general sobre la ciudad, ahora en su versión para WhatsApp incorporó información oficial y confiable sobre la enfermedad y su propagación; datos sobre la capacidad hospitalaria en la ciudad; y una asesoría rápida las 24 horas del día para determinar si un caso requería de atención médica.",
- "ano_inicio": "2019-25",
- "ano_cierre": null,
- "estado_actividad": null,
- "evidencia_actividad_2026": null,
- "organizacion_a_cargo": null,
- "tipo_convocante": [],
- "tipo_organizacion": [],
- "tipo_proceso": [],
- "etapas_uso_IA": [],
- "continuidad": [],
- "nivel_consolidacion": null,
- "sistema_IA": null,
- "tipos_IA_familia": [],
- "usa_LLM_generativa": null,
- "funcion_IA": null,
- "rol_IA": null,
- "usa_IA_en_proceso": null,
- "tipo_desarrollador_IA": [],
- "origen_desarrollador": null,
- "entra_tentativo": "NO",
- "justificacion_elegibilidad": "Excluido en 2025: Atencion ciudadana. Se mantiene fuera; validar la decisión de exclusión (CENIA).",
- "confianza": "N/A (excluido 2025)",
- "evidencia_verbatim": {
-  "pais": "Caso excluido en 2025 (BBDD oficial ILIA 2025); país registrado: MX.",
-  "tipo_proceso": null,
-  "etapas_uso_IA": null,
+  "caso_id": "MX-EXC-chatbot-victoria",
+  "pais": "MX",
+  "nombre_caso": "Chatbot Victoria",
+  "bloque": "5-excluido-2025",
+  "proceso_participativo": "Chatbot para ayudar a los ciudadanos a mantenerse informados y seguros durante la pandemia por Covid-19. Este servicio, disponible en redes sociales desde el 2019 para brindar información general sobre la ciudad, ahora en su versión para WhatsApp incorporó información oficial y confiable sobre la enfermedad y su propagación; datos sobre la capacidad hospitalaria en la ciudad; y una asesoría rápida las 24 horas del día para determinar si un caso requería de atención médica.",
+  "ano_inicio": "2019-25",
+  "ano_cierre": null,
   "estado_actividad": null,
+  "evidencia_actividad_2026": null,
+  "organizacion_a_cargo": null,
+  "tipo_convocante": [],
+  "tipo_organizacion": [],
+  "tipo_proceso": [],
+  "etapas_uso_IA": [],
+  "continuidad": [],
   "nivel_consolidacion": null,
-  "tipo_convocante": null,
+  "sistema_IA": null,
+  "tipos_IA_familia": [],
+  "usa_LLM_generativa": null,
+  "funcion_IA": null,
+  "rol_IA": null,
   "usa_IA_en_proceso": null,
-  "rol_IA": null
- },
- "fuentes": [
-  {
-   "url": "Informe de Gobierno",
-   "estado": "baseline-2025-excluido",
-   "cita": ""
-  }
- ],
- "gaps": [],
- "alertas": [
-  "[excluido 2025 — fuera del índice] Motivo: Atencion ciudadana",
-  "No re-extraído en 2026; incluido para inventario completo / validación CENIA."
- ],
- "fuente_datos": "excluido_2025_bbdd",
- "motivo_exclusion_2025": "Atencion ciudadana",
- "veredicto_equipo": null,
- "comentario_equipo": "",
- "divergencia_equipo": false
+  "tipo_desarrollador_IA": [],
+  "origen_desarrollador": null,
+  "entra_tentativo": "NO",
+  "justificacion_elegibilidad": "Excluido en 2025: Atencion ciudadana. Se mantiene fuera; validar la decisión de exclusión (CENIA).",
+  "confianza": "N/A (excluido 2025)",
+  "evidencia_verbatim": {
+    "pais": "Caso excluido en 2025 (BBDD oficial ILIA 2025); país registrado: MX.",
+    "tipo_proceso": null,
+    "etapas_uso_IA": null,
+    "estado_actividad": null,
+    "nivel_consolidacion": null,
+    "tipo_convocante": null,
+    "usa_IA_en_proceso": null,
+    "rol_IA": null
+  },
+  "fuentes": [
+    {
+      "titulo": "ADIP CDMX presenta 'Victoria', robot de atención ciudadana (Gob. CDMX, 2019)",
+      "url": "https://adip.cdmx.gob.mx/comunicacion/nota/la-adip-y-el-gobierno-de-la-ciudad-presentan-victoria-el-robot-que-colaborara-en-la-atencion-de-la-ciudadania"
+    }
+  ],
+  "gaps": [],
+  "alertas": [
+    "[excluido 2025 — fuera del índice] Motivo: Atencion ciudadana",
+    "No re-extraído en 2026; incluido para inventario completo / validación CENIA."
+  ],
+  "fuente_datos": "excluido_2025_bbdd",
+  "motivo_exclusion_2025": "Atencion ciudadana",
+  "veredicto_equipo": null,
+  "comentario_equipo": "",
+  "divergencia_equipo": false,
+  "notas_verificacion": "Verificado 2026: es el chatbot del Gobierno de la CDMX (ADIP), NO de Ciudad Victoria/Tamaulipas."
 }
