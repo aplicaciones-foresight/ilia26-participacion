@@ -40,32 +40,35 @@ TH=Side(style="thin",color="BFBFBF"); BOR=Border(left=TH,right=TH,top=TH,bottom=
 # Los casos frontera (civic tech ↔ participación) son decisión del equipo; aquí
 # van con mi recomendación y se pueden cambiar a mano.
 
-# Excluidos CONFIRMADOS (no es proceso de participación, o sin IA verificada):
+# Excluidos CONFIRMADOS (no es proceso de participación):
 EXCLUIR = {  # caso_id -> motivo bajo el criterio corregido
  "PE-sistema-de-computo-con-ia-para-las-elecc":"Conteo electoral (OCR de actas): votación política, no participación.",
  "CO-descongestion-de-solicitudes-diarias-del":"Atención ciudadana (triage de 10.000 correos/día): servicio, no participación.",
  "BR-participact-brasil":"Civic tech de reporte urbano (app para reportar problemas): no es un proceso participativo.",
  "CR-diara":"Civic tech de fiscalización de obras (control social vía app): no es un proceso participativo.",
- "DO-ciudadania":"Ventanillas de asistencia/servicio + recolección de datos: no es participación.",
- "CO-dnp-dialogos-regionales-vinculantes-pnd":"Participación genuina PERO sin IA verificada: no cumple el criterio de IA.",
- "TT-engagett-plataforma-go-vocal":"Participación genuina PERO módulo de IA no activado: IA no confirmada en el proceso.",
 }
-# Rescatados -> ENTRA: sí es participación; la IA aporta en alguna etapa (criterio corregido):
-RESCATE_ENTRA = {  # caso_id -> por qué entra ahora
+# Confirmados -> ENTRA (sí es participación; IA en alguna etapa, incl. logística):
+RESCATE_ENTRA = {  # caso_id -> por qué entra
  "MX-presupuesto-creces":"Presupuesto participativo (Hermosillo); la IA (chatbot) facilita la votación (Implementación).",
  "CL-lxs-400-chile-delibera":"Mini-público del Senado; la IA modera y administra los turnos de palabra (Implementación/Planificación).",
  "CL-estrategia-de-gobierno-digital-informe-p":"Consulta ciudadana; la IA analiza los aportes (Análisis).",
  "HN-redpublica-iverify":"Plataforma de propuestas de ley ciudadanas (participación legislativa).",
+ "CL-la-voz-de-los-nuevos-votantes":"Consulta a nuevos votantes con NLP — proceso ejecutado por el equipo (confirmado).",
+ "CL-jornada-de-escucha-lanzamiento-instituto":"Jornada de escucha / diálogo — proceso ejecutado por el equipo (confirmado).",
+ "CO-chatico":"Tiene módulos de participación (aportes al Plan de Desarrollo de Bogotá) — confirmado por el equipo.",
 }
-# DUDA -> resolver a mano bajo el criterio corregido (participación-ish, frontera):
+# DUDA con revisión de posible IA/participación (el equipo cree que puede haber algo → revisar con URL):
+DUDA_REVISAR = {  # caso_id -> qué revisar
+ "TT-engagett-plataforma-go-vocal":"¿La IA de Go Vocal (Sensemaking) está ACTIVA o PLANEADA? Si está planeada, ENTRA.",
+ "CO-dnp-dialogos-regionales-vinculantes-pnd":"¿Se usó NLP (p. ej. ConTexto del DNP) para sistematizar las 89.788 propuestas?",
+ "DO-ciudadania":"¿Tiene un módulo de participación (recoger aportes para decisiones), no solo atención/servicio?",
+}
+# DUDA de frontera (aún por decidir; participación-ish):
 RECLASIF_DUDA = {  # caso_id -> qué confirmar
  "CR-u-report-costa-rica-chatbot-juvenil":"Plataforma de opinión juvenil (UNICEF): ¿consulta participativa o civic tech de sondeo?",
- "CL-la-voz-de-los-nuevos-votantes":"Encuesta a nuevos votantes + NLP: ¿consulta participativa o sondeo puntual?",
- "CL-jornada-de-escucha-lanzamiento-instituto":"Jornada de escucha (comunidad académica + stakeholders): ¿participación ciudadana o evento institucional?",
 }
-# Revisar entre los que ENTRAN hoy (parecen NO-participación; decisión a mano):
+# Revisar entre los que ENTRAN hoy (decisión a mano):
 REVISAR_ENTRA = {  # caso_id -> por qué revisar
- "CO-chatico":"Atención automatizada (responde consultas sobre 400 temas): parece atención ciudadana, no participación.",
  "BR-colab":"GovTech de reporte urbano + servicios (IA para gestión/servicios): ¿participación o civic tech?",
 }
 # Posible reingreso desde los excluidos (referencia del equipo; distinto del criterio nuevo):
@@ -99,7 +102,8 @@ def urls(d):
 def accion(d):
     cid=d["caso_id"]
     if cid in RESCATE_ENTRA: return "➜ RESCATADO → ENTRA (criterio corregido)"
-    if cid in RECLASIF_DUDA: return "➜ DUDA (criterio corregido) — resolver a mano"
+    if cid in DUDA_REVISAR: return "➜ DUDA — revisar posible IA/participación"
+    if cid in RECLASIF_DUDA: return "➜ DUDA (frontera) — resolver a mano"
     if cid in REVISAR_ENTRA: return "➜ REVISAR — ¿es participación?"
     if d.get("cuenta_como_iniciativa") is False: return "➜ NO contar (duplicado)"
     if is_duda(d): return "➜ RESOLVER DUDA"
@@ -176,11 +180,15 @@ def main():
         d=fmap.get(cid,{})
         ws2.append(["B. Rescatado → ENTRA","Confirmar SI",d.get("pais",""),d.get("nombre_caso",cid),
                     "Sí es participación; la IA aporta en alguna etapa (incl. logística) → ENTRA", motivo, "\n".join(urls(d)[:2])])
-    # C) DUDA por el criterio corregido (frontera participación ↔ civic tech)
+    # C) DUDA — revisar posible IA/participación (el equipo cree que puede haber algo)
+    for cid,motivo in DUDA_REVISAR.items():
+        d=fmap.get(cid,{})
+        ws2.append(["C. DUDA — revisar (posible IA)","Abrir URL y decidir SI/NO",d.get("pais",""),d.get("nombre_caso",cid),
+                    "Revisar si hay/planea IA o módulo de participación", motivo, "\n".join(urls(d)[:3])])
     for cid,motivo in RECLASIF_DUDA.items():
         d=fmap.get(cid,{})
-        ws2.append(["C. DUDA (criterio corregido)","Decidir SI o NO",d.get("pais",""),d.get("nombre_caso",cid),
-                    "¿Es un proceso de participación ciudadana o un sondeo/evento? Decidir", motivo, "\n".join(urls(d)[:2])])
+        ws2.append(["C. DUDA — revisar (posible IA)","Abrir URL y decidir SI/NO",d.get("pais",""),d.get("nombre_caso",cid),
+                    "¿Proceso de participación o sondeo? Decidir", motivo, "\n".join(urls(d)[:3])])
     # D) revisar entre los que ENTRAN hoy (parecen no-participación)
     for cid,motivo in REVISAR_ENTRA.items():
         d=fmap.get(cid,{})
@@ -283,7 +291,8 @@ def main():
     print(f"[ok] {md}")
     print(f"     entran+dudosos: {len(IN)} (iniciativas efectivas: {len(IN)-dup}) | excluidos: {len(OUT)}")
     print(f"     reclasif: excluidos={len(EXCLUIR)} rescatados→ENTRA={len(RESCATE_ENTRA)} "
-          f"DUDA-criterio={len(RECLASIF_DUDA)} revisar={len(REVISAR_ENTRA)} DUDA-campo={dudas_campo} reingreso={len(RESCATE)}")
+          f"DUDA-revisar={len(DUDA_REVISAR)} DUDA-frontera={len(RECLASIF_DUDA)} revisar={len(REVISAR_ENTRA)} "
+          f"DUDA-campo={dudas_campo} reingreso={len(RESCATE)}")
     return 0
 
 
@@ -324,9 +333,9 @@ def GUIA_ROWS(nin,nout):
      ["Qué tienes", f"Planilla con 6 pestañas (criterio corregido). {nin} casos entran/dudosos · {nout} excluidos · 107 en total. Tras dedup e-Cidadania: {nin-1} iniciativas."],
      ["Cómo navegar","Pestaña 1 = trabajo y cálculo · 2 = qué decidir a mano · 3 = excluidos (referencia) · 4 = evidencia/citas · 5 = esta guía · 6 = metodología CENIA v2."],
      ["",""],
-     ["PASO 1 — Confirmar exclusiones (pestaña 2, grupo A)","7 casos ya FUERA bajo el criterio corregido: no son procesos de participación (civic tech / atención / voto electoral) o no tienen IA verificada. Solo confirmar."],
-     ["PASO 2 — Confirmar rescatados → ENTRA (grupo B)","4 casos que vuelven a ENTRAR: MX Presupuesto CRECES, CL LXS 400, CL Estrategia Gob. Digital, HN RedPública. Sí son participación con IA en alguna etapa. Confirmar SI."],
-     ["PASO 3 — Frontera civic-tech (grupos C y D)","3 DUDAS nuevas (CR U-Report, CL Voz nuevos votantes, CL Jornada UNAB) + 2 a revisar (CO Chatico, BR Colab). Decidir si son participación o civic tech/sondeo."],
+     ["PASO 1 — Confirmar exclusiones (pestaña 2, grupo A)","4 casos ya FUERA: no son procesos de participación — PE conteo electoral · CO Descongestión (atención) · BR ParticipACT y CR dIAra (civic tech). Solo confirmar."],
+     ["PASO 2 — Confirmar rescatados → ENTRA (grupo B)","7 casos que ENTRAN: MX Presupuesto CRECES · CL LXS 400 · CL Estrategia Gob. Digital · HN RedPública · CL Voz nuevos votantes · CL Jornada UNAB · CO Chatico. Confirmar SI."],
+     ["PASO 3 — DUDAS a revisar con URL (grupos C y D)","C: TT EngageTT (¿IA planeada?), CO DNP Diálogos (¿usó NLP/ConTexto?), DO CiudadanIA (¿módulo de participación?), CR U-Report (¿participación o sondeo?). D: BR Colab (¿participación o civic tech?). Abrir la URL y decidir."],
      ["PASO 4 — Resolver DUDAS de campo (grupo E)","4 casos (Jalisco, Gaitana, Viña Decide, Participa Pudahuel). Abrir la URL y confirmar si es participación con IA en alguna etapa. Marcar SI o NO."],
      ["PASO 5 — Reingresos y dedup (grupos F y G)","F: UCampus y CU Código de las Familias (posible reingreso). G: e-Cidadania cuenta como 1; CL Participación Constitucional: 1 SI + 1 NO."],
      ["PASO 6 — Completar datos de cálculo","Para los que quedan en SI, revisar en la pestaña 1 que estén completos: Tipo de proceso, Etapas, Nivel (0-3), Convocante, Tipo org. Donde 'Nº gaps'>0, abrir la URL y completar."],
@@ -357,22 +366,26 @@ Tras el dedup de e-Cidadania → **{nin-1} iniciativas efectivas**.
 ## Pasos manuales (en orden)
 
 ### Paso 1 — Confirmar las exclusiones  *(pestaña 2, grupo A)*
-Bajo el **criterio corregido**, **7 casos** ya quedaron **FUERA** (en la pestaña 3): no son procesos de participación, o no tienen IA verificada. Solo confirmar:
-- **Voto/servicio (no participación):** PE Sistema de cómputo ONPE (conteo electoral) · CO Descongestión Ingreso Solidario (atención/triage de correos) · DO CiudadanIA (ventanillas de servicio).
-- **Civic tech (no participación):** BR ParticipACT (app de reporte urbano) · CR dIAra (app de fiscalización de obras).
-- **Sin IA verificada:** CO DNP Diálogos Regionales · TT EngageTT.
+**4 casos** ya quedaron **FUERA** (en la pestaña 3) por no ser procesos de participación. Solo confirmar:
+- **Voto/servicio:** PE Sistema de cómputo ONPE (conteo electoral) · CO Descongestión Ingreso Solidario (atención/triage de correos).
+- **Civic tech:** BR ParticipACT (app de reporte urbano) · CR dIAra (app de fiscalización de obras).
 
 ### Paso 2 — Confirmar los rescatados → ENTRA  *(pestaña 2, grupo B)*
-**4 casos vuelven a ENTRAR** (antes los excluía por "no procesa contenido", criterio equivocado). Sí son participación con IA en alguna etapa:
-- **MX Presupuesto CRECES** — presupuesto participativo; la IA (chatbot) facilita la votación (Implementación).
+**7 casos ENTRAN** (son participación con IA en alguna etapa):
+- **MX Presupuesto CRECES** — presupuesto participativo; la IA (chatbot) facilita la votación.
 - **CL LXS 400 / Chile Delibera** — mini-público del Senado; la IA modera y administra turnos de palabra.
 - **CL Estrategia de Gobierno Digital** — consulta ciudadana; la IA analiza los aportes.
 - **HN RedPública** — plataforma de propuestas de ley ciudadanas.
+- **CL La voz de los nuevos votantes** y **CL Jornada de Escucha UNAB** — procesos ejecutados por el equipo (confirmados).
+- **CO Chatico** — tiene módulos de participación (aportes al Plan de Desarrollo de Bogotá).
 
-### Paso 3 — Frontera civic-tech ↔ participación  *(pestaña 2, grupos C y D)*
-Decidir **SI o NO** según si es realmente un proceso de participación ciudadana:
-- **Grupo C (DUDA nueva):** CR U-Report (opinión juvenil) · CL La voz de los nuevos votantes (encuesta) · CL Jornada de Escucha UNAB (diálogo académico).
-- **Grupo D (revisar entre los que hoy ENTRAN):** CO Chatico (parece atención) · BR Colab (parece GovTech de reporte/servicio).
+### Paso 3 — DUDAS a revisar con URL  *(pestaña 2, grupos C y D)*
+Abrir la URL y decidir **SI o NO**. El equipo cree que puede haber IA/participación:
+- **TT EngageTT** — ¿la IA de Go Vocal (Sensemaking) está activa o **planeada**? Si está planeada, ENTRA.
+- **CO DNP Diálogos Regionales** — ¿se usó NLP (p. ej. **ConTexto** del DNP) para sistematizar las 89.788 propuestas?
+- **DO CiudadanIA** — ¿tiene un **módulo de participación** (recoger aportes para decisiones), no solo atención?
+- **CR U-Report** — ¿consulta participativa o civic tech de sondeo?
+- **BR Colab** *(grupo D)* — ¿participación o GovTech de reporte/servicio?
 
 ### Paso 4 — Resolver las DUDAS de campo  *(pestaña 2, grupo E)*
 Abrir la URL y confirmar si es participación con IA en alguna etapa → **SI** o **NO**:

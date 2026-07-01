@@ -120,8 +120,8 @@ def main():
     dropped=[d for d in IN if d.get("cuenta_como_iniciativa") is False]
 
     # --- Conjuntos por escenario (criterio corregido jul-2026) ---
-    excl=set(eps.EXCLUIR)                                       # 7 confirmados NO
-    borderline=set(eps.RECLASIF_DUDA)|set(eps.REVISAR_ENTRA)   # frontera civic-tech ↔ participación
+    excl=set(eps.EXCLUIR)                                       # confirmados NO
+    borderline=set(eps.RECLASIF_DUDA)|set(eps.REVISAR_ENTRA)|set(eps.DUDA_REVISAR)  # DUDAs de frontera / revisión
     duda_campo={d["caso_id"] for d in IN if eps.is_duda(d) and d["caso_id"] not in eps.RECLASIF_DUDA}
 
     techo_ids   = in_ids                                        # todos entran (cota superior)

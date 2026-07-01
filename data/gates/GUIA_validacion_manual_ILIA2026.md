@@ -1,8 +1,8 @@
 # Guía: validar los casos y pasar al cálculo — ILIA 2026
 
 **Archivo de trabajo:** `planilla_ILIA2026_SIMPLE.xlsx` (6 pestañas · **criterio corregido**).
-**Estado:** 37 casos entran/dudosos · 70 excluidos · 107 en total.
-Tras el dedup de e-Cidadania → **36 iniciativas efectivas**.
+**Estado:** 40 casos entran/dudosos · 67 excluidos · 107 en total.
+Tras el dedup de e-Cidadania → **39 iniciativas efectivas**.
 
 ## Las 6 pestañas
 1. **Casos (entran+dudosos)** — el set de trabajo, con las columnas listas para calcular y una columna **«Acción sugerida»**.
@@ -15,22 +15,26 @@ Tras el dedup de e-Cidadania → **36 iniciativas efectivas**.
 ## Pasos manuales (en orden)
 
 ### Paso 1 — Confirmar las exclusiones  *(pestaña 2, grupo A)*
-Bajo el **criterio corregido**, **7 casos** ya quedaron **FUERA** (en la pestaña 3): no son procesos de participación, o no tienen IA verificada. Solo confirmar:
-- **Voto/servicio (no participación):** PE Sistema de cómputo ONPE (conteo electoral) · CO Descongestión Ingreso Solidario (atención/triage de correos) · DO CiudadanIA (ventanillas de servicio).
-- **Civic tech (no participación):** BR ParticipACT (app de reporte urbano) · CR dIAra (app de fiscalización de obras).
-- **Sin IA verificada:** CO DNP Diálogos Regionales · TT EngageTT.
+**4 casos** ya quedaron **FUERA** (en la pestaña 3) por no ser procesos de participación. Solo confirmar:
+- **Voto/servicio:** PE Sistema de cómputo ONPE (conteo electoral) · CO Descongestión Ingreso Solidario (atención/triage de correos).
+- **Civic tech:** BR ParticipACT (app de reporte urbano) · CR dIAra (app de fiscalización de obras).
 
 ### Paso 2 — Confirmar los rescatados → ENTRA  *(pestaña 2, grupo B)*
-**4 casos vuelven a ENTRAR** (antes los excluía por "no procesa contenido", criterio equivocado). Sí son participación con IA en alguna etapa:
-- **MX Presupuesto CRECES** — presupuesto participativo; la IA (chatbot) facilita la votación (Implementación).
+**7 casos ENTRAN** (son participación con IA en alguna etapa):
+- **MX Presupuesto CRECES** — presupuesto participativo; la IA (chatbot) facilita la votación.
 - **CL LXS 400 / Chile Delibera** — mini-público del Senado; la IA modera y administra turnos de palabra.
 - **CL Estrategia de Gobierno Digital** — consulta ciudadana; la IA analiza los aportes.
 - **HN RedPública** — plataforma de propuestas de ley ciudadanas.
+- **CL La voz de los nuevos votantes** y **CL Jornada de Escucha UNAB** — procesos ejecutados por el equipo (confirmados).
+- **CO Chatico** — tiene módulos de participación (aportes al Plan de Desarrollo de Bogotá).
 
-### Paso 3 — Frontera civic-tech ↔ participación  *(pestaña 2, grupos C y D)*
-Decidir **SI o NO** según si es realmente un proceso de participación ciudadana:
-- **Grupo C (DUDA nueva):** CR U-Report (opinión juvenil) · CL La voz de los nuevos votantes (encuesta) · CL Jornada de Escucha UNAB (diálogo académico).
-- **Grupo D (revisar entre los que hoy ENTRAN):** CO Chatico (parece atención) · BR Colab (parece GovTech de reporte/servicio).
+### Paso 3 — DUDAS a revisar con URL  *(pestaña 2, grupos C y D)*
+Abrir la URL y decidir **SI o NO**. El equipo cree que puede haber IA/participación:
+- **TT EngageTT** — ¿la IA de Go Vocal (Sensemaking) está activa o **planeada**? Si está planeada, ENTRA.
+- **CO DNP Diálogos Regionales** — ¿se usó NLP (p. ej. **ConTexto** del DNP) para sistematizar las 89.788 propuestas?
+- **DO CiudadanIA** — ¿tiene un **módulo de participación** (recoger aportes para decisiones), no solo atención?
+- **CR U-Report** — ¿consulta participativa o civic tech de sondeo?
+- **BR Colab** *(grupo D)* — ¿participación o GovTech de reporte/servicio?
 
 ### Paso 4 — Resolver las DUDAS de campo  *(pestaña 2, grupo E)*
 Abrir la URL y confirmar si es participación con IA en alguna etapa → **SI** o **NO**:
