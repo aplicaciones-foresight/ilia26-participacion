@@ -1,0 +1,101 @@
+{
+ "caso_id": "BR-projeto-lumina-unb-mds",
+ "pais": "BR",
+ "nombre_caso": "Projeto Lumina - análise de sentimentos das propostas de Brasil Participativo (projeto estudantil UnB-MDS)",
+ "bloque": "4-descubrimiento-amplio",
+ "proceso_participativo": "El proceso participativo real subyacente es Brasil Participativo, la plataforma digital de participación social del Gobierno Federal de Brasil (construida sobre Decidim, lanzada en 2023 por la Secretaria-Geral da Presidência da República), donde la ciudadanía envía propuestas de texto libre, comentarios y votos sobre políticas públicas (PPA Participativo, Plano Clima, etc.). Projeto Lumina NO es ese proceso ni un componente oficial de él: es un proyecto de software desarrollado por estudiantes en la disciplina 'Métodos de Desenvolvimento de Software' (MDS) del curso de Engenharia de Software de la Universidade de Brasília (UnB-FGA), semestre 2024-2, que aplica análisis de sentimiento (positivo/negativo/neutro) sobre las propuestas/comentarios de los Planos Participativos publicados en Brasil Participativo. Es un ejercicio académico (una webapp con documentación MkDocs y 'Versão Final' de fin de curso en feb-2025), no un despliegue oficial.",
+ "ano_inicio": 2024,
+ "ano_cierre": 2025,
+ "estado_actividad": "inactivo",
+ "evidencia_actividad_2026": "No hay evidencia de actividad en 2026. El repositorio corresponde a la disciplina MDS de 2024-2; su última entrega es la release 'Lumina - Versão Final' del 21/02/2025 (cierre típico de un proyecto de curso). No se halló despliegue en producción, presencia en gov.br, ni continuidad institucional posterior. 3 stars y 4 forks en GitHub; no archivado pero sin actividad reciente.",
+ "organizacion_a_cargo": "Estudiantes de la disciplina 'Métodos de Desenvolvimento de Software' (Engenharia de Software), Universidade de Brasília (UnB-FGA), org GitHub 'unb-mds'. Equipo de 6 estudiantes (Arthur Fernandes, Caio Pacheco, Gabriel Santos, Laryssa Felix, Luiz Henrique, Letícia Monteiro). El 'MDS' del nombre de la organización se refiere a la disciplina (Métodos de Desenvolvimento de Software), NO al Ministério do Desenvolvimento Social. No se confirmó ninguna asociación oficial con el Ministerio ni con la Secretaria Nacional de Participação Social.",
+ "tipo_convocante": [
+  "universidad"
+ ],
+ "tipo_organizacion": "Público",
+ "tipo_proceso": [
+  "Participación Digital"
+ ],
+ "etapas_uso_IA": [
+  "Análisis"
+ ],
+ "continuidad": "Uso único",
+ "nivel_consolidacion": 0,
+ "sistema_IA": "Webapp de análisis de sentimiento (sentiment analysis) sobre las propuestas/comentarios de los Planos Participativos de Brasil Participativo, que clasifica las opiniones ciudadanas en positivas, negativas y neutras y las presenta en un frontend web. Desarrollado en Python (con frontend HTML/CSS y contenedorización Docker) como proyecto de la disciplina MDS 2024-2. No se identificó el modelo/librería exacta de PLN ni evidencia de que corra sobre un pipeline en producción; es un prototipo académico bajo licencia MIT.",
+ "tipos_IA_familia": [
+  "NLP",
+  "Análisis de sentimiento"
+ ],
+ "usa_LLM_generativa": "no-claro",
+ "funcion_IA": "Clasificar mediante análisis de sentimiento (positivo/negativo/neutro) las opiniones expresadas por la ciudadanía en las propuestas y comentarios de los Planos Participativos de Brasil Participativo, para ofrecer 'uma compreensão clara e acessível das percepções populares sobre as propostas enviadas pela sociedade' y, en teoría, aportar datos que orienten políticas públicas. En la práctica es un ejercicio académico (proyecto de disciplina), sin adopción por el gobierno.",
+ "rol_IA": "contenido",
+ "usa_IA_en_proceso": "no-claro",
+ "tipo_desarrollador_IA": [
+  "Academia"
+ ],
+ "origen_desarrollador": "Nacional",
+ "entra_tentativo": "NO",
+ "justificacion_elegibilidad": "NO ENTRA. Aunque la IA sí actúa sobre el CONTENIDO de aportes ciudadanos (análisis de sentimiento positivo/negativo/neutro de las propuestas y comentarios de Brasil Participativo, rol_IA=contenido), falla el requisito de DESPLIEGUE OFICIAL: Projeto Lumina es un EJERCICIO ACADÉMICO de la disciplina 'Métodos de Desenvolvimento de Software' del curso de Engenharia de Software de la UnB (semestre 2024-2), no un sistema adoptado ni operado por el gobierno. La señal del candidato conflaciona 'MDS' (el nombre de la disciplina y de la org GitHub 'unb-mds') con 'Ministério do Desenvolvimento Social': no se halló evidencia de asociación oficial con ese Ministerio ni con la Secretaria Nacional de Participação Social, ni de integración en producción. El repositorio sigue el patrón idéntico de decenas de proyectos estudiantiles de 'unb-mds' (DFemObras, SuaGradeUnB, LicitaBSB, forUnB, GovInsights, etc.), tiene 3 stars/4 forks y su 'Versão Final' (feb-2025) marca el fin del curso. Sobre el DOBLE CONTEO: NO es un componente ni duplicado técnico de la ficha ya contada 'Brasil Participativo - clustering semántico' (esa es el pipeline oficial BERTopic+LLM de LAPPIS/BRISA con mentoría de la Secretaria de Participação Social); Lumina es un artefacto DISTINTO (webapp estudiantil que consume datos de BP), pero igualmente inelegible por ser académico sin adopción. Conclusión: NO por ejercicio académico sin despliegue oficial.",
+ "confianza": "ALTA",
+ "evidencia_verbatim": {
+  "pais": "O Projeto Lumina realiza a Análise de Sentimentos dos Planos Participativos do Brasil Participativo (...) a maior plataforma de contribuição social do governo federal.",
+  "tipo_proceso": "O Projeto Lumina tem como objetivo principal realizar a Análise de Sentimentos dos Planos Participativos disponibilizados pela maior plataforma de contribuição social do governo federal: o Brasil Participativo.",
+  "etapas_uso_IA": "identificando opiniões positivas, negativas e neutras sobre as propostas enviadas pela sociedade, visando contribuir para políticas públicas mais alinhadas com as demandas sociais.",
+  "estado_actividad": "Last release: February 21, 2025 (labeled 'Lumina - Versão Final'). Repository naming convention '2024-2-Lumina' indicates it's associated with 'Métodos de Desenvolvimento de Software' course from 2024 semester 2. Stars: 3. Forks: 4. Status: Not archived.",
+  "nivel_consolidacion": "O projeto foi desenvolvido na disciplina de 'Métodos de Desenvolvimento de Software' da Universidade de Brasília - UnB.",
+  "tipo_convocante": "The organization name 'unb-mds' suggests University of Brasília (UnB) involvement, but the 'MDS' appears to reference the course abbreviation, not the Ministry. There's no explicit statement confirming an official partnership with the federal ministry.",
+  "usa_IA_en_proceso": null,
+  "rol_IA": "Oferecer uma compreensão clara e acessível das percepções populares sobre as propostas (...) utilizando análise de sentimentos para identificar opiniões positivas, negativas e neutras."
+ },
+ "fuentes": [
+  {
+   "url": "https://github.com/unb-mds/2024-2-Lumina",
+   "estado": "OK",
+   "cita": "Repositorio 'unb-mds/2024-2-Lumina'. Descripción: 'O Projeto Lumina realiza a Análise de Sentimentos dos Planos Participativos do Brasil Participativo, identificando opiniões positivas, negativas e neutras sobre as propostas enviadas pela sociedade, visando contribuir para políticas públicas mais alinhadas com as demandas sociais.' README: 'O Projeto Lumina tem como objetivo principal realizar a Análise de Sentimentos (...) a maior plataforma de contribuição social do governo federal: o Brasil Participativo.' 6 estudiantes listados (Arthur Fernandes, Caio Pacheco, Gabriel Santos, Laryssa Felix, Luiz Henrique, Letícia Monteiro). 'software livre, disponível sob a licença MIT'. Tecnologías: Python 43.7%, HTML 37.4%, CSS 17.2%, Docker. Stars: 3, Forks: 4. Última release: 21/02/2025 'Lumina - Versão Final'. No archivado. El README NO menciona por nombre al Ministério do Desenvolvimento Social ni afirma despliegue en producción. (WebFetch OK; MCP GitHub restringido al repo del proyecto)."
+  },
+  {
+   "url": "https://github.com/unb-mds",
+   "estado": "OK",
+   "cita": "Org GitHub 'unb-mds' = 'MDS' (Métodos de Desenvolvimento de Software), disciplina del curso de Engenharia de Software de la Universidade de Brasília (UnB-FGA). Aloja proyectos ESTUDIANTILES por semestre con el mismo patrón de nombre que Lumina: DFemObras ('desenvolvido na disciplina de Métodos de Desenvolvimento de Software da Universidade de Brasília - UnB'), 2023-2-SuaGradeUnB, LicitaBSB-24.1, 2025-1-NoFluxoUNB, 2024-1-Squad-10, forUnB, GovInsights, etc. Confirma que Lumina es un ejercicio académico de curso, no un producto de gobierno. (vía WebSearch sobre github.com/unb-mds)."
+  },
+  {
+   "url": "https://unb-mds.github.io/2024-2-Lumina/",
+   "estado": "403",
+   "cita": "Sitio de documentación (MkDocs) del proyecto, desplegado en GitHub Pages. Confirma que el proyecto tiene documentación de curso ('a página web da nossa documentação' enlaza a unb-mds.github.io/2024-2-Lumina/), estructura típica de entrega académica MDS. (HTTP 403 a WebFetch; existencia y enlace confirmados vía README/WebFetch del repo)."
+  },
+  {
+   "url": "https://mds.lappis.rocks/",
+   "estado": "no-verificado",
+   "cita": "Sitio de la disciplina 'Métodos de Desenvolvimento de Software' (LAPPIS/UnB): 'Software development methods (...) More than 300 students have already taken the discipline'; 'experiential learning, project-oriented learning, onboarding processes and open source community practices'. Confirma que los repos 'unb-mds' son proyectos de estudiantes de esta disciplina. (referenciado vía WebSearch; no verificado directamente)."
+  },
+  {
+   "url": "https://github.com/unb-mds/DFemObras",
+   "estado": "OK",
+   "cita": "Repo hermano de la misma org: 'Aplicação web (...). O projeto foi desenvolvido na disciplina de \"Métodos de Desenvolvimento de Software\" da Universidade de Brasília - UnB.' Evidencia comparativa de que 'MDS' = disciplina y de que estos repos son proyectos estudiantiles. (vía WebSearch)."
+  }
+ ],
+ "gaps": [
+  {
+   "campo": "usa_IA_en_proceso / adopción oficial (Ministério do Desenvolvimento Social)",
+   "motivo": "No se halló NINGUNA evidencia de que el Ministério do Desenvolvimento Social (el Ministerio) o la Secretaria Nacional de Participação Social hayan adoptado, financiado o usado Projeto Lumina en producción. La 'asociación con el MDS' de la señal del candidato proviene de confundir la sigla de la disciplina (Métodos de Desenvolvimento de Software) con el Ministerio. Determinante para NO (ejercicio académico).",
+   "url_para_buscar": "https://mds.gov.br/ (buscar 'Lumina' / 'análise de sentimento Brasil Participativo')"
+  },
+  {
+   "campo": "sistema_IA / usa_LLM_generativa",
+   "motivo": "No se recuperó el detalle técnico del método de análisis de sentimiento (librería/modelo, p.ej. léxico, clasificador clásico o transformer/LLM), porque la documentación (docs/, unb-mds.github.io) devolvió 403/404 vía WebFetch y el MCP de GitHub está restringido al repo del proyecto. Se confirma 'análise de sentimentos' y clases positivo/negativo/neutro, pero no el modelo; por eso usa_LLM_generativa=no-claro. No cambia la decisión (NO por académico).",
+   "url_para_buscar": "https://github.com/unb-mds/2024-2-Lumina/tree/main/docs"
+  },
+  {
+   "campo": "evidencia_actividad_2026",
+   "motivo": "Sin evidencia de actividad en 2026; la última señal es la release final de feb-2025. Coherente con un proyecto de disciplina de un solo semestre (uso único).",
+   "url_para_buscar": "https://github.com/unb-mds/2024-2-Lumina/releases"
+  }
+ ],
+ "alertas": [
+  "DECISIÓN (NO): Projeto Lumina es un EJERCICIO ACADÉMICO de la disciplina 'Métodos de Desenvolvimento de Software' (curso de Engenharia de Software, UnB-FGA, semestre 2024-2), sin despliegue oficial ni adopción de gobierno. La IA sí actúa sobre el contenido de aportes ciudadanos (análisis de sentimiento de propuestas/comentarios de Brasil Participativo), pero falla el requisito de estar DESPLEGADO OFICIALMENTE. entra=NO, confianza=ALTA.",
+  "CONFUSIÓN DE SIGLA (clave): la señal del candidato lee 'MDS' como 'Ministério do Desenvolvimento Social'. En realidad 'unb-mds' = 'Métodos de Desenvolvimento de Software' (nombre de la disciplina y de la org GitHub). No hay evidencia de asociación con el Ministerio ni con la Secretaria Nacional de Participação Social.",
+  "OVERLAP con Brasil Participativo (doble conteo): Lumina opera SOBRE los datos de Brasil Participativo, pero NO es un componente/duplicado técnico de la ficha ya contada 'BR-brasil-participativo-clustering-semantic' (que es el pipeline oficial BERTopic+LLM de LAPPIS/Residência TIC BRISA, con mentoría de la Secretaria de Participação Social). Lumina es un artefacto DISTINTO (webapp estudiantil independiente que consume propuestas de BP). Por tanto no hay doble conteo, pero es inelegible por sí mismo (académico). Distinto también del BP-Classificador-de-Propostas (ResidenciaTICBrisa) documentado en aquella ficha.",
+  "FUENTES: el README y la org GitHub se recuperaron OK (WebFetch/WebSearch). El sitio de documentación MkDocs (unb-mds.github.io) devolvió 403 y docs/index.md 404 vía WebFetch; el MCP de GitHub está restringido a 'aplicaciones-foresight/ilia26-participacion' y no permitió leer archivos del repo unb-mds. La evidencia es suficiente y convergente para la decisión (nombre/descripción/README + patrón de la org + release final de curso)."
+ ],
+ "fuente_datos": "candidato_equipo_2026"
+}
