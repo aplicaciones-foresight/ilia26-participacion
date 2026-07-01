@@ -57,11 +57,11 @@ RESCATE_ENTRA = {  # caso_id -> por qué entra
  "CL-jornada-de-escucha-lanzamiento-instituto":"Jornada de escucha / diálogo — proceso ejecutado por el equipo (confirmado).",
  "CO-chatico":"Tiene módulos de participación (aportes al Plan de Desarrollo de Bogotá) — confirmado por el equipo.",
 }
-# DUDA con revisión de posible IA/participación (el equipo cree que puede haber algo → revisar con URL):
-DUDA_REVISAR = {  # caso_id -> qué revisar
- "TT-engagett-plataforma-go-vocal":"¿La IA de Go Vocal (Sensemaking) está ACTIVA o PLANEADA? Si está planeada, ENTRA.",
- "CO-dnp-dialogos-regionales-vinculantes-pnd":"¿Se usó NLP (p. ej. ConTexto del DNP) para sistematizar las 89.788 propuestas?",
- "DO-ciudadania":"¿Tiene un módulo de participación (recoger aportes para decisiones), no solo atención/servicio?",
+# DUDA con revisión de posible IA/participación (investigadas; recomendación + URL):
+DUDA_REVISAR = {  # caso_id -> hallazgo + recomendación
+ "TT-engagett-plataforma-go-vocal":"IA MIXTA: chatbot AskNDTS (IA) activo que ayuda a ENTENDER el NDTS (facilitación/info, no procesa aportes). El módulo Sensemaking de Go Vocal existe pero NO se confirma activado ni anunciado para TT. Ministerio ahora MPAAI (Public Admin + AI). → DUDA: ¿basta el chatbot explicador como 'IA en el proceso'? Ver mdt.gov.tt (EngageTT + AskNDTS).",
+ "CO-dnp-dialogos-regionales-vinculantes-pnd":"Análisis de fondo MANUAL/cualitativo (lectura + recurrencia, 7 categorías). Solo text-analytics ligero: nubes de palabras + tabulación por sectores (UCD). Sin NLP profundo ni ConTexto confirmado en los DRV → RECOMIENDO NO. Ver dialogosregionales.dnp.gov.co/resultados-dialogos.",
+ "DO-ciudadania":"Solo funciones de ATENCIÓN/SERVICIO; la 'participación' que menciona es co-diseñar la IA aportando datos, no consulta/decisión pública. No se halló módulo de participación → RECOMIENDO NO. Ver genia.ai/plataforma.",
 }
 # DUDA de frontera (aún por decidir; participación-ish):
 RECLASIF_DUDA = {  # caso_id -> qué confirmar
