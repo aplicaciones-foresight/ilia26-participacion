@@ -1,0 +1,53 @@
+{
+ "caso_id": "LATAM-EXC-botivist",
+ "pais": "LATAM",
+ "nombre_caso": "Botivist",
+ "bloque": "5-excluido-2025",
+ "proceso_participativo": "Botivist es una iniciativa de Microsoft Research que usa inteligencia artificial para promover la participación ciudadana en causas sociales. Utiliza bots en Twitter que detectan conversaciones sobre temas como corrupción y luego invitan a los usuarios a colaborar en la búsqueda de soluciones. Botivist es una iniciativa desarrollada por investigadores de la Universidad de West Virginia, Microsoft Research y la UNAM, que utiliza inteligencia artificial para fomentar la participación ciudadana a través de Twitter. Emplea bots programados con diferentes estrategias comunicativas para convocar y motivar a voluntarios a colaborar en causas sociales, como la lucha contra la corrupción. La IA se aplica en la identificación de usuarios potencialmente interesados, en el análisis de respuestas y en la adaptación del lenguaje de los bots para maximizar el compromiso. En sus pruebas, Botivist logró que más del 80% de los usuarios que interactuaron con los bots aportaran propuestas útiles, demostrando su eficacia como herramienta digital para la acción colectiva.",
+ "ano_inicio": "2016.0",
+ "ano_cierre": null,
+ "estado_actividad": null,
+ "evidencia_actividad_2026": null,
+ "organizacion_a_cargo": null,
+ "tipo_convocante": [],
+ "tipo_organizacion": [],
+ "tipo_proceso": [],
+ "etapas_uso_IA": [],
+ "continuidad": [],
+ "nivel_consolidacion": null,
+ "sistema_IA": null,
+ "tipos_IA_familia": [],
+ "usa_LLM_generativa": null,
+ "funcion_IA": null,
+ "rol_IA": null,
+ "usa_IA_en_proceso": null,
+ "tipo_desarrollador_IA": [],
+ "origen_desarrollador": null,
+ "entra_tentativo": "NO",
+ "justificacion_elegibilidad": "Excluido en 2025: No tiene foco en un país específico. Se mantiene fuera; validar la decisión de exclusión (CENIA).",
+ "confianza": "N/A (excluido 2025)",
+ "evidencia_verbatim": {
+  "pais": null,
+  "tipo_proceso": null,
+  "etapas_uso_IA": null,
+  "estado_actividad": null,
+  "nivel_consolidacion": null,
+  "tipo_convocante": null,
+  "usa_IA_en_proceso": null,
+  "rol_IA": null
+ },
+ "fuentes": [
+  {
+   "url": "https://www.microsoft.com/en-us/research/publication/botivist-calling-volunteers-to-action-using-online-bots/",
+   "estado": "baseline-2025-excluido",
+   "cita": ""
+  }
+ ],
+ "gaps": [],
+ "alertas": [
+  "[excluido 2025 — fuera del índice] Motivo: No tiene foco en un país específico",
+  "No re-extraído en 2026; incluido para inventario completo / validación CENIA."
+ ],
+ "fuente_datos": "excluido_2025_bbdd",
+ "motivo_exclusion_2025": "No tiene foco en un país específico"
+}

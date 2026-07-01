@@ -1,0 +1,53 @@
+{
+ "caso_id": "AR-EXC-boti",
+ "pais": "AR",
+ "nombre_caso": "Boti",
+ "bloque": "5-excluido-2025",
+ "proceso_participativo": "Chatbot oficial de la Ciudad Autónoma de Buenos Aires, diseñado para acercar información y trámites municipales a los vecinos mediante WhatsApp y otros canales digitales \nBuenos Aires. Su objetivo inicial fue ofrecer respuestas precisas en ámbitos específicos antes de expandirse a múltiples temas de la ciudad. A lo largo de su operación, ha evolucionado incorporando tecnologías de inteligencia artificial generativa y módulos especializados para atender desde consultas turísticas hasta denuncias por violencia laboral",
+ "ano_inicio": "2019-25",
+ "ano_cierre": null,
+ "estado_actividad": null,
+ "evidencia_actividad_2026": null,
+ "organizacion_a_cargo": null,
+ "tipo_convocante": [],
+ "tipo_organizacion": [],
+ "tipo_proceso": [],
+ "etapas_uso_IA": [],
+ "continuidad": [],
+ "nivel_consolidacion": null,
+ "sistema_IA": null,
+ "tipos_IA_familia": [],
+ "usa_LLM_generativa": null,
+ "funcion_IA": null,
+ "rol_IA": null,
+ "usa_IA_en_proceso": null,
+ "tipo_desarrollador_IA": [],
+ "origen_desarrollador": null,
+ "entra_tentativo": "NO",
+ "justificacion_elegibilidad": "Excluido en 2025: Atención ciudadana. Se mantiene fuera; validar la decisión de exclusión (CENIA).",
+ "confianza": "N/A (excluido 2025)",
+ "evidencia_verbatim": {
+  "pais": null,
+  "tipo_proceso": null,
+  "etapas_uso_IA": null,
+  "estado_actividad": null,
+  "nivel_consolidacion": null,
+  "tipo_convocante": null,
+  "usa_IA_en_proceso": null,
+  "rol_IA": null
+ },
+ "fuentes": [
+  {
+   "url": "https://buenosaires.gob.ar/innovacionytransformaciondigital/boti#:~:text=%C2%BFC%C3%B3mo%20puedo%20chatear%20con%20Boti,la%20Ciudad%20de%20Buenos%20Aires.",
+   "estado": "baseline-2025-excluido",
+   "cita": ""
+  }
+ ],
+ "gaps": [],
+ "alertas": [
+  "[excluido 2025 — fuera del índice] Motivo: Atención ciudadana",
+  "No re-extraído en 2026; incluido para inventario completo / validación CENIA."
+ ],
+ "fuente_datos": "excluido_2025_bbdd",
+ "motivo_exclusion_2025": "Atención ciudadana"
+}

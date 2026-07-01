@@ -1,0 +1,53 @@
+{
+ "caso_id": "BR-EXC-jaque",
+ "pais": "BR",
+ "nombre_caso": "Jaque",
+ "bloque": "5-excluido-2025",
+ "proceso_participativo": "Secretario virtual basado en IA que guía a los ciudadanos a través de la Guía de Servicios digital del estado (portal unificado de trámites). Extrae información vía API de un catálogo centralizado y responde consultas ciudadanas sobre requisitos, horarios, ubicaciones y pasos para acceder a servicios públicos​oecd.org​oecd.org. Objetivo: mejorar la experiencia ciudadana en trámites, ofreciendo atención 24/7 y estandarizada.",
+ "ano_inicio": "2020–25",
+ "ano_cierre": null,
+ "estado_actividad": null,
+ "evidencia_actividad_2026": null,
+ "organizacion_a_cargo": null,
+ "tipo_convocante": [],
+ "tipo_organizacion": [],
+ "tipo_proceso": [],
+ "etapas_uso_IA": [],
+ "continuidad": [],
+ "nivel_consolidacion": null,
+ "sistema_IA": null,
+ "tipos_IA_familia": [],
+ "usa_LLM_generativa": null,
+ "funcion_IA": null,
+ "rol_IA": null,
+ "usa_IA_en_proceso": null,
+ "tipo_desarrollador_IA": [],
+ "origen_desarrollador": null,
+ "entra_tentativo": "NO",
+ "justificacion_elegibilidad": "Excluido en 2025: Atencion ciudadana. Se mantiene fuera; validar la decisión de exclusión (CENIA).",
+ "confianza": "N/A (excluido 2025)",
+ "evidencia_verbatim": {
+  "pais": null,
+  "tipo_proceso": null,
+  "etapas_uso_IA": null,
+  "estado_actividad": null,
+  "nivel_consolidacion": null,
+  "tipo_convocante": null,
+  "usa_IA_en_proceso": null,
+  "rol_IA": null
+ },
+ "fuentes": [
+  {
+   "url": "https://www.oecd.org/content/dam/oecd/es/publications/reports/2022/03/the-strategic-and-responsible-use-of-artificial-intelligence-in-the-public-sector-of-latin-america-and-the-caribbean_17c90e5e/5b189cb4-es.pdf#:~:text=Jaque%20y%20la%20Gu%C3%ADa%20de,Contiene%20informaci%C3%B3n%2C%20entre",
+   "estado": "baseline-2025-excluido",
+   "cita": ""
+  }
+ ],
+ "gaps": [],
+ "alertas": [
+  "[excluido 2025 — fuera del índice] Motivo: Atencion ciudadana",
+  "No re-extraído en 2026; incluido para inventario completo / validación CENIA."
+ ],
+ "fuente_datos": "excluido_2025_bbdd",
+ "motivo_exclusion_2025": "Atencion ciudadana"
+}

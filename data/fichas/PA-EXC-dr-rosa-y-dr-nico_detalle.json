@@ -1,0 +1,53 @@
+{
+ "caso_id": "PA-EXC-dr-rosa-y-dr-nico",
+ "pais": "PA",
+ "nombre_caso": "Dr. ROSA y Dr. NICO",
+ "bloque": "5-excluido-2025",
+ "proceso_participativo": "Amplio uso durante la pandemia para evaluación temprana de casos. Facilitó la detección y canalización de pacientes COVID, reduciendo la carga en centros de salud. Reconocido como ejemplo regional de IA aplicada a emergencias sanitarias​oecd.org​oecd.org.",
+ "ano_inicio": "2020.0",
+ "ano_cierre": null,
+ "estado_actividad": null,
+ "evidencia_actividad_2026": null,
+ "organizacion_a_cargo": null,
+ "tipo_convocante": [],
+ "tipo_organizacion": [],
+ "tipo_proceso": [],
+ "etapas_uso_IA": [],
+ "continuidad": [],
+ "nivel_consolidacion": null,
+ "sistema_IA": null,
+ "tipos_IA_familia": [],
+ "usa_LLM_generativa": null,
+ "funcion_IA": null,
+ "rol_IA": null,
+ "usa_IA_en_proceso": null,
+ "tipo_desarrollador_IA": [],
+ "origen_desarrollador": null,
+ "entra_tentativo": "NO",
+ "justificacion_elegibilidad": "Excluido en 2025: No es participación ciudadana. Se mantiene fuera; validar la decisión de exclusión (CENIA).",
+ "confianza": "N/A (excluido 2025)",
+ "evidencia_verbatim": {
+  "pais": null,
+  "tipo_proceso": null,
+  "etapas_uso_IA": null,
+  "estado_actividad": null,
+  "nivel_consolidacion": null,
+  "tipo_convocante": null,
+  "usa_IA_en_proceso": null,
+  "rol_IA": null
+ },
+ "fuentes": [
+  {
+   "url": "https://www.oecd.org/content/dam/oecd/es/publications/reports/2022/03/the-strategic-and-responsible-use-of-artificial-intelligence-in-the-public-sector-of-latin-america-and-the-caribbean_17c90e5e/5b189cb4-es.pdf#:~:text=virtual%2Fchatbot%20que%20funciona%20por%20WhatsApp,que%20realice%20una%20observaci%C3%B3n%20f%C3%ADsica",
+   "estado": "baseline-2025-excluido",
+   "cita": ""
+  }
+ ],
+ "gaps": [],
+ "alertas": [
+  "[excluido 2025 — fuera del índice] Motivo: No es participación ciudadana",
+  "No re-extraído en 2026; incluido para inventario completo / validación CENIA."
+ ],
+ "fuente_datos": "excluido_2025_bbdd",
+ "motivo_exclusion_2025": "No es participación ciudadana"
+}

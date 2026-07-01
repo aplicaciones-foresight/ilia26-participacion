@@ -1,0 +1,53 @@
+{
+ "caso_id": "AR-EXC-satellites-on-fire",
+ "pais": "AR",
+ "nombre_caso": "Satellites On Fire",
+ "bloque": "5-excluido-2025",
+ "proceso_participativo": "Ciudadanos reportan focos de incendio mediante una aplicación, y la IA de visión satelital ValMapX valida y envía alertas a las autoridades provinciales.",
+ "ano_inicio": "2023.0",
+ "ano_cierre": null,
+ "estado_actividad": null,
+ "evidencia_actividad_2026": null,
+ "organizacion_a_cargo": null,
+ "tipo_convocante": [],
+ "tipo_organizacion": [],
+ "tipo_proceso": [],
+ "etapas_uso_IA": [],
+ "continuidad": [],
+ "nivel_consolidacion": null,
+ "sistema_IA": null,
+ "tipos_IA_familia": [],
+ "usa_LLM_generativa": null,
+ "funcion_IA": null,
+ "rol_IA": null,
+ "usa_IA_en_proceso": null,
+ "tipo_desarrollador_IA": [],
+ "origen_desarrollador": null,
+ "entra_tentativo": "NO",
+ "justificacion_elegibilidad": "Excluido en 2025: No entra en la descripción de lo que es Participación ciudadana. Se considera Civic Tech, pero no participación ciudadana. Tampoco utiliza IA. Se mantiene fuera; validar la decisión de exclusión (CENIA).",
+ "confianza": "N/A (excluido 2025)",
+ "evidencia_verbatim": {
+  "pais": null,
+  "tipo_proceso": null,
+  "etapas_uso_IA": null,
+  "estado_actividad": null,
+  "nivel_consolidacion": null,
+  "tipo_convocante": null,
+  "usa_IA_en_proceso": null,
+  "rol_IA": null
+ },
+ "fuentes": [
+  {
+   "url": "https://agencia.unq.edu.ar/?p=10126",
+   "estado": "baseline-2025-excluido",
+   "cita": ""
+  }
+ ],
+ "gaps": [],
+ "alertas": [
+  "[excluido 2025 — fuera del índice] Motivo: No entra en la descripción de lo que es Participación ciudadana. Se considera Civic Tech, pero no participación ciudadana. Tampoco utiliza IA",
+  "No re-extraído en 2026; incluido para inventario completo / validación CENIA."
+ ],
+ "fuente_datos": "excluido_2025_bbdd",
+ "motivo_exclusion_2025": "No entra en la descripción de lo que es Participación ciudadana. Se considera Civic Tech, pero no participación ciudadana. Tampoco utiliza IA"
+}

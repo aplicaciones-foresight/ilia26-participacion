@@ -35,13 +35,14 @@ THIN   = Side(style="thin", color="BFBFBF")
 BORDER = Border(left=THIN, right=THIN, top=THIN, bottom=THIN)
 
 BLOQUE_ORDER = {"1-nuevo": 0, "1-dudoso": 1, "4-descubrimiento-amplio": 2,
-                "3-excluido-revisar": 3, "2-baseline": 4}
+                "2-baseline": 3, "3-excluido-revisar": 4, "5-excluido-2025": 5}
 BLOQUE_LABEL = {
     "1-nuevo": "1. Nuevo",
     "1-dudoso": "1. Dudoso",
     "4-descubrimiento-amplio": "4. Descubrimiento amplio (hallazgo nuevo)",
-    "3-excluido-revisar": "3. Excluido (revisar reingreso)",
     "2-baseline": "2. Baseline 2025",
+    "3-excluido-revisar": "3. Excluido (revisar reingreso)",
+    "5-excluido-2025": "5. Excluido 2025 (fuera del índice)",
 }
 
 
@@ -113,6 +114,7 @@ MAIN_COLS = [
     ("Usa IA en el proceso",   lambda d: d.get("usa_IA_en_proceso") or ""),
     ("Tipo desarrollador IA",  lambda d: j(d.get("tipo_desarrollador_IA"))),
     ("Origen desarrollador",   lambda d: d.get("origen_desarrollador") or ""),
+    ("Motivo exclusión 2025",  lambda d: d.get("motivo_exclusion_2025","")),
     ("Fuente de datos",        lambda d: d.get("fuente_datos","")),
     ("Nº gaps",                lambda d: len(d.get("gaps",[]) or [])),
     ("URLs para búsqueda manual", lambda d: "\n".join(urls_busqueda_manual(d))),
@@ -142,7 +144,7 @@ def main():
         ws.append([fn(d) for _, fn in MAIN_COLS])
     ncols = len(MAIN_COLS)
     style_header(ws, ncols)
-    widths = [16,30,6,30,12,26,40,40,9,9,13,40,32,24,16,26,26,14,10,30,24,12,40,16,12,20,16,22,7,46]
+    widths = [16,30,6,30,12,26,40,40,9,9,13,40,32,24,16,26,26,14,10,30,24,12,40,16,12,20,16,40,22,7,46]
     for i, w in enumerate(widths, 1):
         ws.column_dimensions[get_column_letter(i)].width = w
     col = {h: i+1 for i, (h, _) in enumerate(MAIN_COLS)}

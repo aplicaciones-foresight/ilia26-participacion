@@ -32,6 +32,29 @@ gap con su URL** para búsqueda manual.
 > Decide = DUDA lean SI; CL Pudahuel = DUDA lean NO). Detalle en
 > `descubrimiento_amplio_2026.md`. De los 5 DUDA actuales, 2 se inclinan a SI.
 
+### Inventario COMPLETO (99 casos) — para validación de CENIA
+
+Además de los 55 casos "en juego", la planilla incluye ahora los **44 casos
+excluidos en 2025 que se mantienen fuera** (bloque **«5. Excluido 2025 (fuera del
+índice)»**), con su **Motivo exclusión 2025** en columna dedicada. Así, los **49
+casos que ya no entraban** están todos representados: **5** en «Excluido (revisar
+reingreso)» (revisados → se mantienen NO) + **44** en el bloque 5.
+
+| Bloque | Casos |
+|---|:--:|
+| 1. Nuevos + Dudosos | 18 |
+| 4. Descubrimiento amplio | 4 |
+| 2. Baseline 2025 | 28 |
+| 3. Excluido (revisar reingreso) | 5 |
+| 5. Excluido 2025 (fuera) | 44 |
+| **Total inventario** | **99** |
+
+> Los excluidos 2025 (bloque 5) **no se re-extrajeron** (están fuera del índice);
+> se listan con País, Caso, Motivo de exclusión, descripción, año y URLs para que
+> CENIA valide cada decisión de exclusión. Dos de ellos (BR «De ciudadano a
+> senador» y BR «Participa+ Brasil») reingresaron conceptualmente como casos
+> **nuevos** (e-Cidadania y Brasil Participativo), anotado en sus alertas.
+
 > `SI`/`NO`/`DUDA` es **tentativo** (criterio: IA sobre el **CONTENIDO** de los
 > aportes dentro de un proceso participativo). La decisión final es del equipo.
 > `SI*` = entra en escenario A; revisar en escenario B (DO CiudadanIA, CL «Tenemos

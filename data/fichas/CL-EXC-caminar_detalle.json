@@ -1,0 +1,58 @@
+{
+ "caso_id": "CL-EXC-caminar",
+ "pais": "CL",
+ "nombre_caso": "Caminar",
+ "bloque": "5-excluido-2025",
+ "proceso_participativo": "El Proyecto CAMINAR (Cámara Inteligencia Artificial) es una iniciativa de la Cámara de Diputadas y Diputados de Chile que busca modernizar el trabajo parlamentario mediante el uso de inteligencia artificial. El proyecto tiene como objetivo mejorar la eficiencia, transparencia y accesibilidad de los procesos legislativos.",
+ "ano_inicio": "2023.0",
+ "ano_cierre": null,
+ "estado_actividad": null,
+ "evidencia_actividad_2026": null,
+ "organizacion_a_cargo": null,
+ "tipo_convocante": [],
+ "tipo_organizacion": [],
+ "tipo_proceso": [],
+ "etapas_uso_IA": [],
+ "continuidad": [],
+ "nivel_consolidacion": null,
+ "sistema_IA": null,
+ "tipos_IA_familia": [],
+ "usa_LLM_generativa": null,
+ "funcion_IA": null,
+ "rol_IA": null,
+ "usa_IA_en_proceso": null,
+ "tipo_desarrollador_IA": [],
+ "origen_desarrollador": null,
+ "entra_tentativo": "NO",
+ "justificacion_elegibilidad": "Excluido en 2025: De acuerdo a la descripción, solo permitiría a los ciudadanos consultar. Se mantiene fuera; validar la decisión de exclusión (CENIA).",
+ "confianza": "N/A (excluido 2025)",
+ "evidencia_verbatim": {
+  "pais": null,
+  "tipo_proceso": null,
+  "etapas_uso_IA": null,
+  "estado_actividad": null,
+  "nivel_consolidacion": null,
+  "tipo_convocante": null,
+  "usa_IA_en_proceso": null,
+  "rol_IA": null
+ },
+ "fuentes": [
+  {
+   "url": "https://parlamericas.org/uploads/documents/Presentation-OPNStaffMeeting-ProyectoCAMINARChile_MiguelLanderos-sp.pdf",
+   "estado": "baseline-2025-excluido",
+   "cita": ""
+  },
+  {
+   "url": "https://www.algoritmospublicos.cl/proyecto-Proyecto-CAMINAR-de-la-Camara-de-Diputadas-y-Diputados-de-Chile",
+   "estado": "baseline-2025-excluido",
+   "cita": ""
+  }
+ ],
+ "gaps": [],
+ "alertas": [
+  "[excluido 2025 — fuera del índice] Motivo: De acuerdo a la descripción, solo permitiría a los ciudadanos consultar",
+  "No re-extraído en 2026; incluido para inventario completo / validación CENIA."
+ ],
+ "fuente_datos": "excluido_2025_bbdd",
+ "motivo_exclusion_2025": "De acuerdo a la descripción, solo permitiría a los ciudadanos consultar"
+}
