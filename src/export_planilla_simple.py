@@ -59,11 +59,10 @@ RESCATE_ENTRA = {  # caso_id -> por qué entra
  "CL-jornada-de-escucha-lanzamiento-instituto":"Jornada de escucha / diálogo — proceso ejecutado por el equipo (confirmado).",
  "CO-chatico":"Tiene módulos de participación (aportes al Plan de Desarrollo de Bogotá) — confirmado por el equipo.",
  "BR-colab":"Permite sugerir ideas y votar en decisiones municipales (módulos de participación) — confirmado por el equipo.",
+ "TT-engagett-plataforma-go-vocal":"Caso borde: el chatbot AskNDTS (IA) informa/apoya la implementación del proceso NDTS y el módulo Go Vocal Sensemaking está planeado (existe). → ENTRA como apoyo a la implementación. Decisión del equipo.",
 }
 # DUDA con revisión de posible IA/participación (investigadas; recomendación + URL):
-DUDA_REVISAR = {  # caso_id -> hallazgo + recomendación
- "TT-engagett-plataforma-go-vocal":"IA MIXTA: chatbot AskNDTS (IA) activo que ayuda a ENTENDER el NDTS (facilitación/info, no procesa aportes). El módulo Sensemaking de Go Vocal existe pero NO se confirma activado ni anunciado para TT. Ministerio ahora MPAAI (Public Admin + AI). → DUDA: ¿basta el chatbot explicador como 'IA en el proceso'? Ver mdt.gov.tt (EngageTT + AskNDTS).",
-}
+DUDA_REVISAR = {}  # (TT resuelto como ENTRA; DO CiudadanIA y CO DNP resueltos como NO)
 # DUDA de frontera (aún por decidir; participación-ish):
 RECLASIF_DUDA = {  # caso_id -> qué confirmar
  "CR-u-report-costa-rica-chatbot-juvenil":"Plataforma de opinión juvenil (UNICEF): ¿consulta participativa o civic tech de sondeo?",
