@@ -1,133 +1,128 @@
 {
- "caso_id": "BR-bp-classificador-propostas",
- "pais": "BR",
- "nombre_caso": "BP-Classificador de Propostas (indexação/classificação automática ML de propuestas de Brasil Participativo) - Residência TIC BRISA / UnB-FGA / LAPPIS",
- "bloque": "4-descubrimiento-amplio",
- "proceso_participativo": "Brasil Participativo es la plataforma digital de participación social del Gobierno Federal de Brasil, construida sobre el software libre Decidim y lanzada en 2023 por la Secretaria Nacional de Participação Social (Secretaria-Geral da Presidência da República). El repositorio BP-Classificador-de-Propostas (Residência TIC BRISA, en alianza con UnB-Gama/FGA y LAPPIS) es un componente de IA que hace 'Indexação Automática com ML das propostas publicadas no Brasil Participativo': un modelo de clasificación (scikit-learn/NLTK) reentrenado a diario con Apache Airflow sobre los datos de la plataforma, expuesto como servicio Python + una gema Ruby ('proposal-classifier') para integrarse a plataformas web 'afim de ser integrado a plataforma do Brasil Participativo'. Este componente es el MISMO esfuerzo de indexación/clasificación de propuestas ya documentado en la ficha BR-brasil-participativo-clustering-semantic (que cita este mismo repositorio y los papers arXiv 2509.21292 -clustering semántico BERTopic+LLM- y 2511.01545 -'From Pre-labeling to Production', lecciones de ingeniería del pipeline ML en el sector público- como su evidencia).",
- "ano_inicio": 2023,
- "ano_cierre": null,
- "estado_actividad": "activo",
- "evidencia_actividad_2026": "La plataforma Brasil Participativo siguió operativa y en expansión en 2025 (nueva versión 'de cara nova' lanzada el 15/08/2025; a lo largo de 2025 realizó 99 procesos participativos y recibió 9.469 propuestas, casi el doble que en 2024). Los papers que documentan este componente de IA datan de sep-nov 2025. No se halló evidencia específica fechada en 2026 ni confirmación gubernamental de que el clasificador/pipeline de IA opere EN PRODUCCIÓN en la plataforma oficial. NOTA: este caso NO se contabiliza aquí por ser el mismo caso ya contado en BR-brasil-participativo-clustering-semantic (doble conteo).",
- "organizacion_a_cargo": "Componente de IA: Residência TIC BRISA (BRISA - Sociedade para o Desenvolvimento da Tecnologia da Informação, en alianza con UnB campus Gama/FGA y LAPPIS). Desarrolladores del repositorio: Alexandre Oliveira, João Anacleto, Chaydson Ferreira, Leandro Silva. Mentora: Laila (Secretaria de Participação Social). Plataforma Brasil Participativo: Secretaria Nacional de Participação Social / Secretaria-Geral da Presidência da República (Gobierno Federal), sobre Decidim, hospedada por Dataprev, con desarrollo vinculado a UnB.",
- "tipo_convocante": [
-  "gobierno nacional"
- ],
- "tipo_organizacion": "Público",
- "tipo_proceso": [
-  "Gobernanza Colaborativa",
-  "Participación Digital"
- ],
- "etapas_uso_IA": [
-  "Análisis"
- ],
- "continuidad": "Plataforma",
- "nivel_consolidacion": 1,
- "sistema_IA": "Clasificador supervisado de propuestas ciudadanas con machine learning clásico de PLN: Python con scikit-learn, NLTK, NumPy, Pandas, Skops, Unidecode; reentrenamiento diario mediante Apache Airflow con datos de la plataforma Brasil Participativo; publicado también como gema Ruby ('proposal-classifier') para integración en plataformas web. Es el arm de 'clasificación/indexación ML' del mismo esfuerzo que en investigación evolucionó al pipeline de clustering semántico BERTopic + embeddings + seed words del VCGE + LLM Gemma 3 (12B) para pre-labeling automático (papers arXiv 2509.21292 y 2511.01545).",
- "tipos_IA_familia": [
-  "NLP",
-  "Clasificación de texto",
-  "Machine Learning clásico",
-  "LLM"
- ],
- "usa_LLM_generativa": "sí",
- "funcion_IA": "Clasificar/indexar automáticamente por temas las propuestas ciudadanas de texto libre publicadas en Brasil Participativo, dado que 'a plataforma não possui indexação ou processamento de linguagem natural para categorizar de forma automatizada as propostas'. El objetivo es organizar a escala decenas de miles de aportes ciudadanos (el corpus de la plataforma supera 42.000 propuestas; 10.186 se extrajeron de los procesos Plano Clima, PPA Participativo y Congresso da Juventude) para apoyar a los equipos de formulación de políticas públicas. En la variante de investigación, un LLM (Gemma 3, 12B) genera etiquetas automáticas de nivel N1/N2 para el pre-labeling del conjunto de entrenamiento.",
- "rol_IA": "contenido",
- "usa_IA_en_proceso": "no-claro",
- "tipo_desarrollador_IA": [
-  "Academia",
-  "Sociedad Civil"
- ],
- "origen_desarrollador": "Nacional",
- "entra_tentativo": "NO",
- "justificacion_elegibilidad": "NO ENTRA POR DOBLE CONTEO. Este candidato (BP-Classificador-de-Propostas, Residência TIC BRISA / UnB-FGA / LAPPIS) es el MISMO caso ya contabilizado en la ficha BR-brasil-participativo-clustering-semantic, no un caso distinto. Prueba directa: (a) esa ficha YA CITA este mismo repositorio (https://github.com/ResidenciaTICBrisa/BP-Classificador-de-Propostas) como una de sus fuentes (estado OK) y lo describe explícitamente; (b) su alerta de ALCANCE reconoce 'al menos dos artefactos de IA relacionados pero distintos: (a) el pipeline de clustering semántico BERTopic+LLM (papers) y (b) el clasificador supervisado ML BP-Classificador-de-Propostas (scikit-learn/Airflow, GitHub). Ambos operan sobre las propuestas de Brasil Participativo y comparten autores/laboratorio; se documentan juntos en esta ficha por pertenecer al mismo esfuerzo de indexación/clasificación de aportes'; (c) los papers que sustentan la ficha contada (arXiv 2509.21292 'Semantic Clustering' y 2511.01545 'From Pre-labeling to Production') son la producción académica de ESTE mismo equipo y describen la evolución de ESTE mismo clasificador. Es, por tanto, un componente/duplicado del caso Brasil Participativo ya contado, no un despliegue independiente en un proceso participativo distinto. Adicionalmente, el criterio de producción tampoco se cumple: la integración a la plataforma oficial se describe como INTENCIÓN ('afim de ser integrado a plataforma do Brasil Participativo'), no como despliegue confirmado; no se halló fuente gubernamental que confirme el clasificador operando en producción (el relanzamiento oficial de 15/08/2025 no menciona clasificación automática por IA). Se distingue del pipeline BERTopic (arXiv 2509.21292) solo como su arm de 'clasificación supervisada', pero ambos pertenecen al mismo caso ya listado. Veredicto: NO (doble conteo con BR-brasil-participativo-clustering-semantic).",
- "confianza": "ALTA",
- "evidencia_verbatim": {
-  "duplicado_brasil_participativo": "[Ficha BR-brasil-participativo-clustering-semantic, alerta ALCANCE] 'existen al menos dos artefactos de IA relacionados pero distintos: (a) el pipeline de clustering semántico BERTopic+LLM (papers, foco de este caso) y (b) el clasificador supervisado ML BP-Classificador-de-Propostas (scikit-learn/Airflow, GitHub). Ambos operan sobre las propuestas de Brasil Participativo y comparten autores/laboratorio; se documentan juntos en esta ficha por pertenecer al mismo esfuerzo de indexación/clasificación de aportes.'",
-  "repo_es_fuente_de_la_ficha_contada": "[Ficha BR-brasil-participativo-clustering-semantic, fuentes] url 'https://github.com/ResidenciaTICBrisa/BP-Classificador-de-Propostas', estado 'OK': 'Repositorio BP-Classificador-de-Propostas: Aplicação de Indexação Automática com ML das propostas publicadas no Brasil Participativo.'",
-  "proceso_participativo": "README: 'Brasil Participativo é a nova plataforma digital do governo federal, software livre Decidim, um espaço para que a população possa contribuir com a criação e melhoria das políticas públicas.'",
-  "funcion_IA": "README: 'a plataforma não possui indexação ou processamento de linguagem natural para categorizar de forma automatizada as propostas.' / 'A ideia da proposta é fazer análise das propostas por meio de processamento de linguagem natural (PLN).'",
-  "nivel_consolidacion_intencion_no_produccion": "README: 'Por fim esta disponibilizado a gem em Ruby e o repositorio da mesma para utilização do modelo dentro de plataformas web afim de ser integrado a plataforma do Brasil Participativo.' (integración descrita como intención, no como despliegue en producción)",
-  "reentrenamiento_diario": "README: 'O Apache [Airflow] e responsavel pela atualização e o treinamento diario do modelo em conjunto com os dados da plataforma do Brasil Participativo.'",
-  "tipo_convocante": "README: 'Mentores: Laila, Secretaria de Participação Social.' + [arXiv 2511.01545] 'The Brasil Participativo (BP) platform was launched in 2023 by the General Secretariat of the Presidency of the Republic.'",
-  "usa_LLM_generativa": "[WebSearch sobre arXiv 2509.21292/2511.01545] 'The LLM Gemma 3 (with 12 billion parameters) generated automatic labels at the N1 (general categories) and N2 (subcategories) levels in the training set.'",
-  "usa_IA_en_proceso": "[gov.br, relanzamiento 15/08/2025] 'O Brasil Participativo... ganhou uma nova versão... traz novas funções... é possível enviar propostas, revisões ou comentários...' — no se menciona clasificación automática por IA en producción; la integración del clasificador permanece como intención en el repositorio."
- },
- "fuentes": [
-  {
-   "url": "/home/user/ilia26-participacion/data/fichas/BR-brasil-participativo-clustering-semantic_detalle.json",
-   "estado": "OK",
-   "cita": "Ficha del caso YA CONTADO. Cita este mismo repositorio (ResidenciaTICBrisa/BP-Classificador-de-Propostas) como fuente OK y su alerta ALCANCE documenta explícitamente que el clasificador ML del repo y el pipeline BERTopic+LLM son 'dos artefactos de IA relacionados pero distintos... del mismo esfuerzo de indexación/clasificación de aportes', ambos sobre las propuestas de Brasil Participativo. Prueba directa del doble conteo."
+  "caso_id": "BR-bp-classificador-propostas",
+  "pais": "BR",
+  "nombre_caso": "BP-Classificador de Propostas (indexação/classificação automática ML de propuestas de Brasil Participativo) - Residência TIC BRISA / UnB-FGA / LAPPIS",
+  "bloque": "4-descubrimiento-amplio",
+  "proceso_participativo": "Brasil Participativo es la plataforma digital de participación social del Gobierno Federal de Brasil, construida sobre el software libre Decidim y lanzada en 2023 por la Secretaria Nacional de Participação Social (Secretaria-Geral da Presidência da República). El repositorio BP-Classificador-de-Propostas (Residência TIC BRISA, en alianza con UnB-Gama/FGA y LAPPIS) es un componente de IA que hace 'Indexação Automática com ML das propostas publicadas no Brasil Participativo': un modelo de clasificación (scikit-learn/NLTK) reentrenado a diario con Apache Airflow sobre los datos de la plataforma, expuesto como servicio Python + una gema Ruby ('proposal-classifier') para integrarse a plataformas web 'afim de ser integrado a plataforma do Brasil Participativo'. Este componente es el MISMO esfuerzo de indexación/clasificación de propuestas ya documentado en la ficha BR-brasil-participativo-clustering-semantic (que cita este mismo repositorio y los papers arXiv 2509.21292 -clustering semántico BERTopic+LLM- y 2511.01545 -'From Pre-labeling to Production', lecciones de ingeniería del pipeline ML en el sector público- como su evidencia).",
+  "ano_inicio": 2023,
+  "ano_cierre": null,
+  "estado_actividad": "activo",
+  "evidencia_actividad_2026": "La plataforma Brasil Participativo siguió operativa y en expansión en 2025 (nueva versión 'de cara nova' lanzada el 15/08/2025; a lo largo de 2025 realizó 99 procesos participativos y recibió 9.469 propuestas, casi el doble que en 2024). Los papers que documentan este componente de IA datan de sep-nov 2025. No se halló evidencia específica fechada en 2026 ni confirmación gubernamental de que el clasificador/pipeline de IA opere EN PRODUCCIÓN en la plataforma oficial. NOTA: este caso NO se contabiliza aquí por ser el mismo caso ya contado en BR-brasil-participativo-clustering-semantic (doble conteo).",
+  "organizacion_a_cargo": "Componente de IA: Residência TIC BRISA (BRISA - Sociedade para o Desenvolvimento da Tecnologia da Informação, en alianza con UnB campus Gama/FGA y LAPPIS). Desarrolladores del repositorio: Alexandre Oliveira, João Anacleto, Chaydson Ferreira, Leandro Silva. Mentora: Laila (Secretaria de Participação Social). Plataforma Brasil Participativo: Secretaria Nacional de Participação Social / Secretaria-Geral da Presidência da República (Gobierno Federal), sobre Decidim, hospedada por Dataprev, con desarrollo vinculado a UnB.",
+  "tipo_convocante": [
+    "gobierno nacional"
+  ],
+  "tipo_organizacion": "Público",
+  "tipo_proceso": [
+    "Gobernanza Colaborativa",
+    "Participación Digital"
+  ],
+  "etapas_uso_IA": [
+    "Análisis"
+  ],
+  "continuidad": "Plataforma",
+  "nivel_consolidacion": 1,
+  "sistema_IA": "Clasificador supervisado de propuestas ciudadanas con machine learning clásico de PLN: Python con scikit-learn, NLTK, NumPy, Pandas, Skops, Unidecode; reentrenamiento diario mediante Apache Airflow con datos de la plataforma Brasil Participativo; publicado también como gema Ruby ('proposal-classifier') para integración en plataformas web. Es el arm de 'clasificación/indexación ML' del mismo esfuerzo que en investigación evolucionó al pipeline de clustering semántico BERTopic + embeddings + seed words del VCGE + LLM Gemma 3 (12B) para pre-labeling automático (papers arXiv 2509.21292 y 2511.01545).",
+  "tipos_IA_familia": [
+    "NLP",
+    "Clasificación de texto",
+    "Machine Learning clásico",
+    "LLM"
+  ],
+  "usa_LLM_generativa": "sí",
+  "funcion_IA": "Clasificar/indexar automáticamente por temas las propuestas ciudadanas de texto libre publicadas en Brasil Participativo, dado que 'a plataforma não possui indexação ou processamento de linguagem natural para categorizar de forma automatizada as propostas'. El objetivo es organizar a escala decenas de miles de aportes ciudadanos (el corpus de la plataforma supera 42.000 propuestas; 10.186 se extrajeron de los procesos Plano Clima, PPA Participativo y Congresso da Juventude) para apoyar a los equipos de formulación de políticas públicas. En la variante de investigación, un LLM (Gemma 3, 12B) genera etiquetas automáticas de nivel N1/N2 para el pre-labeling del conjunto de entrenamiento.",
+  "rol_IA": "contenido",
+  "usa_IA_en_proceso": "no-claro",
+  "tipo_desarrollador_IA": [
+    "Academia",
+    "Sociedad Civil"
+  ],
+  "origen_desarrollador": "Nacional",
+  "entra_tentativo": "NO",
+  "justificacion_elegibilidad": "NO ENTRA POR DOBLE CONTEO. Este candidato (BP-Classificador-de-Propostas, Residência TIC BRISA / UnB-FGA / LAPPIS) es el MISMO caso ya contabilizado en la ficha BR-brasil-participativo-clustering-semantic, no un caso distinto. Prueba directa: (a) esa ficha YA CITA este mismo repositorio (https://github.com/ResidenciaTICBrisa/BP-Classificador-de-Propostas) como una de sus fuentes (estado OK) y lo describe explícitamente; (b) su alerta de ALCANCE reconoce 'al menos dos artefactos de IA relacionados pero distintos: (a) el pipeline de clustering semántico BERTopic+LLM (papers) y (b) el clasificador supervisado ML BP-Classificador-de-Propostas (scikit-learn/Airflow, GitHub). Ambos operan sobre las propuestas de Brasil Participativo y comparten autores/laboratorio; se documentan juntos en esta ficha por pertenecer al mismo esfuerzo de indexación/clasificación de aportes'; (c) los papers que sustentan la ficha contada (arXiv 2509.21292 'Semantic Clustering' y 2511.01545 'From Pre-labeling to Production') son la producción académica de ESTE mismo equipo y describen la evolución de ESTE mismo clasificador. Es, por tanto, un componente/duplicado del caso Brasil Participativo ya contado, no un despliegue independiente en un proceso participativo distinto. Adicionalmente, el criterio de producción tampoco se cumple: la integración a la plataforma oficial se describe como INTENCIÓN ('afim de ser integrado a plataforma do Brasil Participativo'), no como despliegue confirmado; no se halló fuente gubernamental que confirme el clasificador operando en producción (el relanzamiento oficial de 15/08/2025 no menciona clasificación automática por IA). Se distingue del pipeline BERTopic (arXiv 2509.21292) solo como su arm de 'clasificación supervisada', pero ambos pertenecen al mismo caso ya listado. Veredicto: NO (doble conteo con BR-brasil-participativo-clustering-semantic).",
+  "confianza": "ALTA",
+  "evidencia_verbatim": {
+    "duplicado_brasil_participativo": "[Ficha BR-brasil-participativo-clustering-semantic, alerta ALCANCE] 'existen al menos dos artefactos de IA relacionados pero distintos: (a) el pipeline de clustering semántico BERTopic+LLM (papers, foco de este caso) y (b) el clasificador supervisado ML BP-Classificador-de-Propostas (scikit-learn/Airflow, GitHub). Ambos operan sobre las propuestas de Brasil Participativo y comparten autores/laboratorio; se documentan juntos en esta ficha por pertenecer al mismo esfuerzo de indexación/clasificación de aportes.'",
+    "repo_es_fuente_de_la_ficha_contada": "[Ficha BR-brasil-participativo-clustering-semantic, fuentes] url 'https://github.com/ResidenciaTICBrisa/BP-Classificador-de-Propostas', estado 'OK': 'Repositorio BP-Classificador-de-Propostas: Aplicação de Indexação Automática com ML das propostas publicadas no Brasil Participativo.'",
+    "proceso_participativo": "README: 'Brasil Participativo é a nova plataforma digital do governo federal, software livre Decidim, um espaço para que a população possa contribuir com a criação e melhoria das políticas públicas.'",
+    "funcion_IA": "README: 'a plataforma não possui indexação ou processamento de linguagem natural para categorizar de forma automatizada as propostas.' / 'A ideia da proposta é fazer análise das propostas por meio de processamento de linguagem natural (PLN).'",
+    "nivel_consolidacion_intencion_no_produccion": "README: 'Por fim esta disponibilizado a gem em Ruby e o repositorio da mesma para utilização do modelo dentro de plataformas web afim de ser integrado a plataforma do Brasil Participativo.' (integración descrita como intención, no como despliegue en producción)",
+    "reentrenamiento_diario": "README: 'O Apache [Airflow] e responsavel pela atualização e o treinamento diario do modelo em conjunto com os dados da plataforma do Brasil Participativo.'",
+    "tipo_convocante": "README: 'Mentores: Laila, Secretaria de Participação Social.' + [arXiv 2511.01545] 'The Brasil Participativo (BP) platform was launched in 2023 by the General Secretariat of the Presidency of the Republic.'",
+    "usa_LLM_generativa": "[WebSearch sobre arXiv 2509.21292/2511.01545] 'The LLM Gemma 3 (with 12 billion parameters) generated automatic labels at the N1 (general categories) and N2 (subcategories) levels in the training set.'",
+    "usa_IA_en_proceso": "[gov.br, relanzamiento 15/08/2025] 'O Brasil Participativo... ganhou uma nova versão... traz novas funções... é possível enviar propostas, revisões ou comentários...' — no se menciona clasificación automática por IA en producción; la integración del clasificador permanece como intención en el repositorio."
   },
-  {
-   "url": "https://github.com/ResidenciaTICBrisa/BP-Classificador-de-Propostas",
-   "estado": "OK",
-   "cita": "README (WebFetch OK): 'Aplicação de Indexação Automática com ML das propostas publicadas no Brasil Participativo.' 'Brasil Participativo é a nova plataforma digital do governo federal, software livre Decidim...' 'a plataforma não possui indexação ou processamento de linguagem natural para categorizar de forma automatizada as propostas.' 'O Apache [Airflow] e responsavel pela atualização e o treinamento diario do modelo em conjunto com os dados da plataforma do Brasil Participativo.' 'Por fim esta disponibilizado a gem em Ruby e o repositorio da mesma para utilização do modelo dentro de plataformas web afim de ser integrado a plataforma do Brasil Participativo.' Mentora: Laila (Secretaria de Participação Social); desarrolladores: Alexandre Oliveira, João Anacleto, Chaydson Ferreira, Leandro Silva. Tecnología: scikit-learn, NLTK, NumPy, Pandas, Skops, Unidecode, Apache Airflow, gema Ruby 'proposal-classifier'. 157 commits en main."
-  },
-  {
-   "url": "https://arxiv.org/abs/2511.01545",
-   "estado": "403",
-   "cita": "'From Pre-labeling to Production: Engineering Lessons from a Machine Learning Pipeline in the Public Sector' (Ferreira, da Silva, Rocha, Pinto; 03/11/2025) — paper de ingeniería del MISMO pipeline ML de este repositorio. 'The Brasil Participativo (BP) platform was launched in 2023 by the General Secretariat of the Presidency of the Republic... registered approximately 1.6 million users and over 42,000 text-based proposals.' Este paper ya es fuente de la ficha contada. (HTTP 403 a WebFetch; contenido vía WebSearch.)"
-  },
-  {
-   "url": "https://arxiv.org/abs/2509.21292",
-   "estado": "403",
-   "cita": "'Semantic Clustering of Civic Proposals: A Case Study on Brazil's National Participation Platform' (mismos autores) — variante de investigación BERTopic+LLM del mismo esfuerzo. 'The LLM Gemma 3 (with 12 billion parameters) generated automatic labels at the N1 (general categories) and N2 (subcategories) levels in the training set.' '10,186 proposals were extracted from the Plano Clima, Plano Plurianual Participativo and Congresso da Juventude processes.' Ya es fuente de la ficha contada. (HTTP 403 a WebFetch; contenido vía WebSearch.)"
-  },
-  {
-   "url": "https://brisa.lappis.rocks/project/",
-   "estado": "403",
-   "cita": "Página de proyectos de la Residência TIC BRISA / UnB-FGA / LAPPIS (contexto institucional del desarrollador del componente de IA). HTTP 403 a WebFetch; no se pudo recuperar el cuerpo. En WebSearch aparece como 'Projetos - ResidenciaTICBrisa / adac - uNb - LAPPIS'."
-  },
-  {
-   "url": "https://www.gov.br/secretariageral/pt-br/noticias/2025/agosto/o-brasil-participativo-esta-de-cara-nova",
-   "estado": "403",
-   "cita": "Nota oficial (15/08/2025) 'O Brasil Participativo está de cara nova': nueva versión con interfaz repaginada y nuevas funciones (envío de propuestas/revisiones/comentarios por párrafo, enquetes, votación). No menciona clasificación automática por IA en producción. Evidencia de continuidad de la plataforma en 2025. (HTTP 403 a WebFetch; contenido vía WebSearch.)"
-  }
- ],
- "gaps": [
-  {
-   "campo": "usa_IA_en_proceso / nivel_consolidacion (despliegue en producción)",
-   "motivo": "No se halló fuente gubernamental que confirme el clasificador ML (ni el pipeline BERTopic+LLM) integrado y operando EN PRODUCCIÓN en Brasil Participativo. El propio repositorio describe la integración como intención ('afim de ser integrado a plataforma do Brasil Participativo'). El relanzamiento oficial de 15/08/2025 no menciona clasificación automática por IA. Por eso usa_IA_en_proceso='no-claro' y nivel_consolidacion=1. (No decisivo para el veredicto, que es NO por doble conteo.)",
-   "url_para_buscar": "https://www.gov.br/secretariageral/pt-br/brasil-participativo"
-  },
-  {
-   "campo": "fecha última actividad del repositorio",
-   "motivo": "El GitHub MCP está limitado al repo aplicaciones-foresight/ilia26-participacion (Access denied para ResidenciaTICBrisa/BP-Classificador-de-Propostas), y LAPPIS (brisa.lappis.rocks) devolvió HTTP 403. No se pudo obtener la fecha del último commit ni confirmar mantenimiento en 2026; solo consta '157 Commits' vía WebFetch del README.",
-   "url_para_buscar": "https://github.com/ResidenciaTICBrisa/BP-Classificador-de-Propostas/commits"
-  },
-  {
-   "campo": "pais",
-   "motivo": "valor sin cita textual directa (caso NO/DUDA); confirmar manualmente",
-   "url_para_buscar": "/home/user/ilia26-participacion/data/fichas/BR-brasil-participativo-clustering-semantic_detalle.json"
-  },
-  {
-   "campo": "tipo_proceso",
-   "motivo": "valor sin cita textual directa (caso NO/DUDA); confirmar manualmente",
-   "url_para_buscar": "/home/user/ilia26-participacion/data/fichas/BR-brasil-participativo-clustering-semantic_detalle.json"
-  },
-  {
-   "campo": "etapas_uso_IA",
-   "motivo": "valor sin cita textual directa (caso NO/DUDA); confirmar manualmente",
-   "url_para_buscar": "/home/user/ilia26-participacion/data/fichas/BR-brasil-participativo-clustering-semantic_detalle.json"
-  },
-  {
-   "campo": "estado_actividad",
-   "motivo": "valor sin cita textual directa (caso NO/DUDA); confirmar manualmente",
-   "url_para_buscar": "/home/user/ilia26-participacion/data/fichas/BR-brasil-participativo-clustering-semantic_detalle.json"
-  },
-  {
-   "campo": "rol_IA",
-   "motivo": "valor sin cita textual directa (caso NO/DUDA); confirmar manualmente",
-   "url_para_buscar": "/home/user/ilia26-participacion/data/fichas/BR-brasil-participativo-clustering-semantic_detalle.json"
-  }
- ],
- "alertas": [
-  "DOBLE CONTEO (motivo del veredicto NO): este candidato ES el mismo caso ya contabilizado en la ficha BR-brasil-participativo-clustering-semantic. Esa ficha (a) cita este mismo repositorio ResidenciaTICBrisa/BP-Classificador-de-Propostas como fuente (estado OK) y (b) en su alerta de ALCANCE declara expresamente que el clasificador ML de este repo y el pipeline BERTopic+LLM son 'dos artefactos de IA relacionados pero distintos... del mismo esfuerzo de indexación/clasificación de aportes' de Brasil Participativo, documentados juntos. Contarlo de nuevo sería duplicar. No es un despliegue independiente en un proceso participativo distinto.",
-  "RELACIÓN CON BRASIL PARTICIPATIVO: el repositorio es un componente de IA de la plataforma federal Brasil Participativo (Decidim, Secretaria-Geral da Presidência), desarrollado por la Residência TIC BRISA / UnB-FGA / LAPPIS (mismos autores de los papers arXiv 2509.21292 y 2511.01545 que sustentan la ficha contada). Comparte plataforma, datos (>42.000 propuestas; 10.186 de Plano Clima/PPA/Congresso da Juventude), equipo, mentora (Secretaria de Participação Social) y esfuerzo con el caso ya listado.",
-  "PRODUCCIÓN NO CONFIRMADA: aunque el veredicto ya es NO por doble conteo, se deja constancia de que tampoco hay evidencia de despliegue en producción oficial: la integración figura como intención en el repo ('afim de ser integrado a plataforma do Brasil Participativo') y ninguna fuente gubernamental (incluido el relanzamiento de 15/08/2025) confirma clasificación automática por IA operando en la plataforma.",
-  "DISTINCIÓN DEL PIPELINE BERTopic (arXiv 2509.21292): este repositorio es el arm de 'clasificación supervisada ML' (scikit-learn/NLTK/Airflow + gema Ruby); el paper 2509.21292 es el arm de 'clustering semántico BERTopic + seed words VCGE + LLM Gemma 3 12B'. Son componentes complementarios del MISMO caso, no casos distintos.",
-  "FUENTES/HERRAMIENTAS: WebFetch OK solo para el README de GitHub. LAPPIS (brisa.lappis.rocks/project/) devolvió HTTP 403. arXiv y gov.br devuelven HTTP 403 a WebFetch; sus contenidos se recuperaron de forma convergente vía WebSearch. El GitHub MCP no pudo consultar el repo objetivo (scope limitado a aplicaciones-foresight/ilia26-participacion)."
- ],
- "fuente_datos": "candidato_equipo_2026",
- "posible_duplicado_de": "BR-brasil-participativo-clustering-semantic"
+  "fuentes": [
+    {
+      "url": "https://github.com/ResidenciaTICBrisa/BP-Classificador-de-Propostas",
+      "estado": "OK",
+      "cita": "README (WebFetch OK): 'Aplicação de Indexação Automática com ML das propostas publicadas no Brasil Participativo.' 'Brasil Participativo é a nova plataforma digital do governo federal, software livre Decidim...' 'a plataforma não possui indexação ou processamento de linguagem natural para categorizar de forma automatizada as propostas.' 'O Apache [Airflow] e responsavel pela atualização e o treinamento diario do modelo em conjunto com os dados da plataforma do Brasil Participativo.' 'Por fim esta disponibilizado a gem em Ruby e o repositorio da mesma para utilização do modelo dentro de plataformas web afim de ser integrado a plataforma do Brasil Participativo.' Mentora: Laila (Secretaria de Participação Social); desarrolladores: Alexandre Oliveira, João Anacleto, Chaydson Ferreira, Leandro Silva. Tecnología: scikit-learn, NLTK, NumPy, Pandas, Skops, Unidecode, Apache Airflow, gema Ruby 'proposal-classifier'. 157 commits en main."
+    },
+    {
+      "url": "https://arxiv.org/abs/2511.01545",
+      "estado": "403",
+      "cita": "'From Pre-labeling to Production: Engineering Lessons from a Machine Learning Pipeline in the Public Sector' (Ferreira, da Silva, Rocha, Pinto; 03/11/2025) — paper de ingeniería del MISMO pipeline ML de este repositorio. 'The Brasil Participativo (BP) platform was launched in 2023 by the General Secretariat of the Presidency of the Republic... registered approximately 1.6 million users and over 42,000 text-based proposals.' Este paper ya es fuente de la ficha contada. (HTTP 403 a WebFetch; contenido vía WebSearch.)"
+    },
+    {
+      "url": "https://arxiv.org/abs/2509.21292",
+      "estado": "403",
+      "cita": "'Semantic Clustering of Civic Proposals: A Case Study on Brazil's National Participation Platform' (mismos autores) — variante de investigación BERTopic+LLM del mismo esfuerzo. 'The LLM Gemma 3 (with 12 billion parameters) generated automatic labels at the N1 (general categories) and N2 (subcategories) levels in the training set.' '10,186 proposals were extracted from the Plano Clima, Plano Plurianual Participativo and Congresso da Juventude processes.' Ya es fuente de la ficha contada. (HTTP 403 a WebFetch; contenido vía WebSearch.)"
+    },
+    {
+      "url": "https://brisa.lappis.rocks/project/",
+      "estado": "403",
+      "cita": "Página de proyectos de la Residência TIC BRISA / UnB-FGA / LAPPIS (contexto institucional del desarrollador del componente de IA). HTTP 403 a WebFetch; no se pudo recuperar el cuerpo. En WebSearch aparece como 'Projetos - ResidenciaTICBrisa / adac - uNb - LAPPIS'."
+    },
+    {
+      "url": "https://www.gov.br/secretariageral/pt-br/noticias/2025/agosto/o-brasil-participativo-esta-de-cara-nova",
+      "estado": "403",
+      "cita": "Nota oficial (15/08/2025) 'O Brasil Participativo está de cara nova': nueva versión con interfaz repaginada y nuevas funciones (envío de propuestas/revisiones/comentarios por párrafo, enquetes, votación). No menciona clasificación automática por IA en producción. Evidencia de continuidad de la plataforma en 2025. (HTTP 403 a WebFetch; contenido vía WebSearch.)"
+    }
+  ],
+  "gaps": [
+    {
+      "campo": "usa_IA_en_proceso / nivel_consolidacion (despliegue en producción)",
+      "motivo": "No se halló fuente gubernamental que confirme el clasificador ML (ni el pipeline BERTopic+LLM) integrado y operando EN PRODUCCIÓN en Brasil Participativo. El propio repositorio describe la integración como intención ('afim de ser integrado a plataforma do Brasil Participativo'). El relanzamiento oficial de 15/08/2025 no menciona clasificación automática por IA. Por eso usa_IA_en_proceso='no-claro' y nivel_consolidacion=1. (No decisivo para el veredicto, que es NO por doble conteo.)",
+      "url_para_buscar": "https://www.gov.br/secretariageral/pt-br/brasil-participativo"
+    },
+    {
+      "campo": "fecha última actividad del repositorio",
+      "motivo": "El GitHub MCP está limitado al repo aplicaciones-foresight/ilia26-participacion (Access denied para ResidenciaTICBrisa/BP-Classificador-de-Propostas), y LAPPIS (brisa.lappis.rocks) devolvió HTTP 403. No se pudo obtener la fecha del último commit ni confirmar mantenimiento en 2026; solo consta '157 Commits' vía WebFetch del README.",
+      "url_para_buscar": "https://github.com/ResidenciaTICBrisa/BP-Classificador-de-Propostas/commits"
+    },
+    {
+      "campo": "pais",
+      "motivo": "valor sin cita textual directa (caso NO/DUDA); confirmar manualmente",
+      "url_para_buscar": "(caso relacionado: ver BR-brasil-participativo-clustering-semantic)"
+    },
+    {
+      "campo": "tipo_proceso",
+      "motivo": "valor sin cita textual directa (caso NO/DUDA); confirmar manualmente",
+      "url_para_buscar": "(caso relacionado: ver BR-brasil-participativo-clustering-semantic)"
+    },
+    {
+      "campo": "etapas_uso_IA",
+      "motivo": "valor sin cita textual directa (caso NO/DUDA); confirmar manualmente",
+      "url_para_buscar": "(caso relacionado: ver BR-brasil-participativo-clustering-semantic)"
+    },
+    {
+      "campo": "estado_actividad",
+      "motivo": "valor sin cita textual directa (caso NO/DUDA); confirmar manualmente",
+      "url_para_buscar": "(caso relacionado: ver BR-brasil-participativo-clustering-semantic)"
+    },
+    {
+      "campo": "rol_IA",
+      "motivo": "valor sin cita textual directa (caso NO/DUDA); confirmar manualmente",
+      "url_para_buscar": "(caso relacionado: ver BR-brasil-participativo-clustering-semantic)"
+    }
+  ],
+  "alertas": [
+    "DOBLE CONTEO (motivo del veredicto NO): este candidato ES el mismo caso ya contabilizado en la ficha BR-brasil-participativo-clustering-semantic. Esa ficha (a) cita este mismo repositorio ResidenciaTICBrisa/BP-Classificador-de-Propostas como fuente (estado OK) y (b) en su alerta de ALCANCE declara expresamente que el clasificador ML de este repo y el pipeline BERTopic+LLM son 'dos artefactos de IA relacionados pero distintos... del mismo esfuerzo de indexación/clasificación de aportes' de Brasil Participativo, documentados juntos. Contarlo de nuevo sería duplicar. No es un despliegue independiente en un proceso participativo distinto.",
+    "RELACIÓN CON BRASIL PARTICIPATIVO: el repositorio es un componente de IA de la plataforma federal Brasil Participativo (Decidim, Secretaria-Geral da Presidência), desarrollado por la Residência TIC BRISA / UnB-FGA / LAPPIS (mismos autores de los papers arXiv 2509.21292 y 2511.01545 que sustentan la ficha contada). Comparte plataforma, datos (>42.000 propuestas; 10.186 de Plano Clima/PPA/Congresso da Juventude), equipo, mentora (Secretaria de Participação Social) y esfuerzo con el caso ya listado.",
+    "PRODUCCIÓN NO CONFIRMADA: aunque el veredicto ya es NO por doble conteo, se deja constancia de que tampoco hay evidencia de despliegue en producción oficial: la integración figura como intención en el repo ('afim de ser integrado a plataforma do Brasil Participativo') y ninguna fuente gubernamental (incluido el relanzamiento de 15/08/2025) confirma clasificación automática por IA operando en la plataforma.",
+    "DISTINCIÓN DEL PIPELINE BERTopic (arXiv 2509.21292): este repositorio es el arm de 'clasificación supervisada ML' (scikit-learn/NLTK/Airflow + gema Ruby); el paper 2509.21292 es el arm de 'clustering semántico BERTopic + seed words VCGE + LLM Gemma 3 12B'. Son componentes complementarios del MISMO caso, no casos distintos.",
+    "FUENTES/HERRAMIENTAS: WebFetch OK solo para el README de GitHub. LAPPIS (brisa.lappis.rocks/project/) devolvió HTTP 403. arXiv y gov.br devuelven HTTP 403 a WebFetch; sus contenidos se recuperaron de forma convergente vía WebSearch. El GitHub MCP no pudo consultar el repo objetivo (scope limitado a aplicaciones-foresight/ilia26-participacion)."
+  ],
+  "fuente_datos": "candidato_equipo_2026",
+  "posible_duplicado_de": "BR-brasil-participativo-clustering-semantic"
 }
