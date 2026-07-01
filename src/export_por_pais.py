@@ -34,6 +34,9 @@ PAIS_NOMBRE={"AR":"Argentina","BO":"Bolivia","BR":"Brasil","CL":"Chile","CO":"Co
 
 URLRE=re.compile(r'^https?://', re.I)
 
+# Universo ILIA: 20 países (aunque no tengan casos identificados este ciclo).
+PAISES_ILIA=["AR","BO","BR","CL","CO","CR","CU","DO","EC","GT","HN","JM","MX","PA","PE","PY","SV","TT","UY","VE"]
+
 
 def estado(d):
     cid=d["caso_id"]
@@ -84,8 +87,9 @@ def main():
     fichas=[json.load(open(f,encoding="utf-8")) for f in sorted(glob.glob(os.path.join(ROOT,"data/fichas/*_detalle.json")))]
     porpais={}
     for d in fichas: porpais.setdefault(str(d.get("pais")),[]).append(d)
-    # orden: países reales alfabéticos, LATAM al final
-    paises=sorted([p for p in porpais if p!="LATAM"]) + (["LATAM"] if "LATAM" in porpais else [])
+    # los 20 países ILIA (con o sin casos) + LATAM/Regional al final
+    paises=list(PAISES_ILIA) + (["LATAM"] if "LATAM" in porpais else [])
+    sin_casos=[p for p in PAISES_ILIA if not porpais.get(p)]
 
     wb=Workbook(); wb.remove(wb.active)
 
@@ -100,12 +104,20 @@ def main():
      ["Criterio de inclusión","ENTRA si es un proceso de participación ciudadana (consulta, presupuesto participativo, mini-público, referendo, gobernanza colaborativa) que usa IA en alguna etapa (incluido el apoyo logístico). NO entra: civic tech de servicio/reporte, atención ciudadana, o voto/conteo electoral."],
      ["Significado de la columna «¿Se incluye?»","SÍ = entra al indicador · NO = queda fuera (ver Motivo) · DUDA = pendiente de validar."],
      ["",""],
-     ["ÍNDICE","País — casos (de los cuales SÍ / DUDA / NO)"],
+     ["Cobertura","Los 20 países del ILIA tienen pestaña. Los que no tienen casos identificados este ciclo se marcan «SIN CASOS» (por favor confirme si conoce alguno)."],
+     ["",""],
+     ["ÍNDICE (20 países ILIA + Regional)","País — casos (de los cuales SÍ / DUDA / NO)"],
     ]
     for row in filas: ws.append(row)
     for p in paises:
-        cs=porpais[p]; nsi=sum(1 for d in cs if estado(d)=="SÍ"); nd=sum(1 for d in cs if estado(d)=="DUDA"); nno=sum(1 for d in cs if estado(d)=="NO")
+        cs=porpais.get(p,[])
+        if not cs:
+            ws.append([f"{p} — {PAIS_NOMBRE.get(p,p)}", "SIN CASOS identificados este ciclo"]); continue
+        nsi=sum(1 for d in cs if estado(d)=="SÍ"); nd=sum(1 for d in cs if estado(d)=="DUDA"); nno=sum(1 for d in cs if estado(d)=="NO")
         ws.append([f"{p} — {PAIS_NOMBRE.get(p,p)}", f"{len(cs)} casos  (SÍ {nsi} · DUDA {nd} · NO {nno})"])
+    if sin_casos:
+        ws.append(["",""])
+        ws.append(["Países SIN casos", ", ".join(f"{p} ({PAIS_NOMBRE.get(p,p)})" for p in sin_casos)])
     ws.column_dimensions["A"].width=34; ws.column_dimensions["B"].width=100
     for r in range(1,ws.max_row+1):
         ws.cell(row=r,column=1).font=Font(bold=True); ws.cell(row=r,column=1).alignment=TL; ws.cell(row=r,column=2).alignment=TL
@@ -116,7 +128,12 @@ def main():
     for p in paises:
         ws=wb.create_sheet(tab_name(p))
         ws.append(cols)
-        for d in sorted(porpais[p], key=lambda x:(estado(x)!="SÍ", str(x.get("nombre_caso")))):
+        casos_p=porpais.get(p,[])
+        if not casos_p:
+            ws.append(["(sin casos identificados este ciclo)",
+                       "No se identificaron casos de IA en participación ciudadana para este país. Si conoce alguno, agréguelo en las filas de abajo.",
+                       "", "—", "", ""])
+        for d in sorted(casos_p, key=lambda x:(estado(x)!="SÍ", str(x.get("nombre_caso")))):
             ws.append([d.get("nombre_caso") or "", descripcion(d), fuente(d), estado(d), motivo(d), ""])
         # estilo cabecera
         for c in range(1,len(cols)+1):
