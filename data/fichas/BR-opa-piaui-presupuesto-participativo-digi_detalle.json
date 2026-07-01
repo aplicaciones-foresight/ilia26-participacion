@@ -138,5 +138,8 @@
   "CONVOCANTE: Gobierno del ESTADO de Piauí (nivel subnacional). Por convención del índice se clasifica 'gobierno local' (no nacional). Coordina SEPLAN; apoya Seres; existe además una Secretaria de Inteligência Artificial (SIA) estatal vinculada a la capacitación (CapacitIA) del OPA.",
   "CONSOLIDACIÓN: nivel 3 (recurrente, ≥2 ediciones) confirmado: ediciones OPA 2023-2024, 2024-2025, 2025-2026 y 2026-2027 (cuatro ciclos), con votación récord creciente (273.890 votos válidos en 2025-2026; >300 mil participaciones en la votación). continuidad='Plataforma' (Colab Gov es plataforma permanente del proceso).",
   "CONTEXTO IA en Piauí: Piauí es el único estado de Brasil con una Secretaría de Inteligencia Artificial (SIA) y desarrolla un proyecto de LLM en portugués. Esto refuerza la plausibilidad de uso de IA, pero NO constituye evidencia de que un LLM/IA se aplique al análisis de CONTENIDO de las propuestas del OPA; los usos confirmados de la SIA en el OPA son capacitación (CapacitIA), un chatbot de atención y un panel de transparencia."
- ]
+ ],
+ "veredicto_equipo": "SI",
+ "comentario_equipo": "",
+ "divergencia_equipo": true
 }

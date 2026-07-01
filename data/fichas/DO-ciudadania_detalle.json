@@ -71,5 +71,8 @@
   "recodificación 2026: Escenario B: caso en revisión (puede salir). GENIA: empresa/soc. civil (ambiguo)",
   "Datos brutos del índice ILIA 2025 (BBDD validada por el equipo); recodificación 2026 (convocante 7-cat, nivel 0-3) y reverificación de actividad 2026."
  ],
- "fuente_datos": "baseline_2025_bbdd+recod2026+reverif_web2026"
+ "fuente_datos": "baseline_2025_bbdd+recod2026+reverif_web2026",
+ "veredicto_equipo": null,
+ "comentario_equipo": "",
+ "divergencia_equipo": false
 }

@@ -55,6 +55,36 @@ reingreso)» (revisados → se mantienen NO) + **44** en el bloque 5.
 > senador» y BR «Participa+ Brasil») reingresaron conceptualmente como casos
 > **nuevos** (e-Cidadania y Brasil Participativo), anotado en sus alertas.
 
+### Reconciliación con la validación manual del equipo
+
+Se integró la **validación manual** (Natalia/Nicole/Jose, todos «DE ACUERDO», 49
+casos de `Casos_a_Profundizar.xlsx`). La planilla ahora tiene:
+- **«¿ENTRA? (EQUIPO)»** = veredicto manual → **oficial** (impulsa las pestañas
+  «Entran + Dudosos» y «Excluidos»).
+- **«¿ENTRA? (evidencia)»** = mi veredicto por investigación (2ª opinión).
+- **«Divergencia»** + hoja **«Divergencias»** (12 casos) con ambos veredictos, el
+  comentario del equipo, mi evidencia y URLs para verificar.
+
+**Resultado oficial (equipo): 43 entran/dudosos · 56 se excluyen.**
+
+**12 divergencias:**
+- *Equipo SI / yo NO-DUDA (9):* Cátedra Brasil, OPA Piauí, São Paulo, LXS 400,
+  Citibeats+PNUD, DNP Diálogos, EngageTT + baseline **CO Descongestión** y **PE
+  Sistema de cómputo ONPE** (que mi config traía como exclusión firme).
+- *Yo SI-DUDA / equipo NO (3):* CU Código de las Familias, ISIDataInsights, y el
+  **duplicado** CL Participación Constitucional (el equipo dedupe uno → NO).
+
+Para discutir con evidencia a la vista: **LXS 400** (OCDE 2025: la IA gestiona
+turnos, no contenido), **São Paulo** (ejercicio Escola do Parlamento, no oficial),
+**Citibeats** (social listening), **Cátedra Brasil** (investigación), **OPA
+Piauí** (processing). A favor del equipo (tienen fuente que yo no hallé): **DNP**
+(Nicole: «modelo híbrido»), **EngageTT** (verificado). Conflicto factual: **CU**
+(yo hallé la ficha técnica de GEMA/Datys = NLP; Jose no halló IA).
+
+> La lista del equipo **no revisó CR dIAra ni DO CiudadanIA** (2 del baseline) ni
+> los 4 del descubrimiento amplio → aparecen como **«(sin revisar)»** en la
+> columna EQUIPO; su veredicto oficial usa mi evidencia hasta que el equipo decida.
+
 > `SI`/`NO`/`DUDA` es **tentativo** (criterio: IA sobre el **CONTENIDO** de los
 > aportes dentro de un proceso participativo). La decisión final es del equipo.
 > `SI*` = entra en escenario A; revisar en escenario B (DO CiudadanIA, CL «Tenemos

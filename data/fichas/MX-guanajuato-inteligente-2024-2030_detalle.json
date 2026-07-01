@@ -1,112 +1,127 @@
 {
-  "caso_id": "MX-guanajuato-inteligente-2024-2030",
-  "pais": "MX",
-  "nombre_caso": "Guanajuato InteliGENTE 2024-2030 (Programa de Gobierno del Estado de Guanajuato)",
-  "bloque": "1-nuevo",
-  "proceso_participativo": "Elaboración del Programa de Gobierno del Estado de Guanajuato 2024-2030 ('Gobierno de la Gente'), un plan de gobierno construido con participación ciudadana: se recorrió el territorio y se realizaron cuatro talleres regionales (noreste, norte, centro y sur) con representación de los 46 municipios, integrando la voz de más de 26,000 personas mediante talleres y consultas. El contenido fue validado por el Consejo de Planeación para el Desarrollo del Estado de Guanajuato (COPLADEG), conformado por ciudadanía, la Gobernadora, secretarios de cada eje e IPLANEG. Se utilizaron herramientas de inteligencia artificial para procesar y organizar las miles de ideas y propuestas recibidas, identificar las prioridades más mencionadas por la ciudadanía y entender las necesidades de cada región, transformando el diálogo social en datos para la toma de decisiones que alimentaron los ejes del programa. Adicionalmente existe la asistente virtual 'Esperanza' para consultar el programa ya publicado.",
-  "ano_inicio": 2024,
-  "ano_cierre": 2025,
-  "estado_actividad": "activo",
-  "evidencia_actividad_2026": "El sitio oficial guanajuatointeligente.com sigue activo en 2026 para consulta del Programa de Gobierno 2024-2030 y de la asistente 'Esperanza'. Boletín oficial del 04-05-2026 ('Es Guanajuato referente en Inteligencia Artificial') reporta continuidad de la apuesta estatal por IA (p.ej. asistente ConectaGTO premiado en 2026). El proceso de elaboración participativa fue puntual (concluyó con la presentación del programa el 13-02-2025); lo que permanece activo es la plataforma de consulta y la implementación del programa.",
-  "organizacion_a_cargo": "Gobierno del Estado de Guanajuato — Instituto de Planeación, Estadística y Geografía del Estado de Guanajuato (IPLANEG), con validación del COPLADEG. Titular: Gobernadora Libia Dennise García Muñoz Ledo.",
-  "tipo_convocante": ["gobierno local"],
-  "tipo_organizacion": "Público",
-  "tipo_proceso": ["Gobernanza Colaborativa", "Participación Digital"],
-  "etapas_uso_IA": ["Análisis"],
-  "continuidad": "Uso único",
-  "nivel_consolidacion": 2,
-  "sistema_IA": "Herramientas de inteligencia artificial (no especificadas públicamente por nombre/proveedor) empleadas para procesar y organizar los aportes ciudadanos e identificar prioridades. Por separado, asistente virtual conversacional 'Esperanza' para consultar el Programa de Gobierno ya publicado. Ninguna fuente nombra el modelo/empresa concreto usado para el análisis de los 26k aportes.",
-  "tipos_IA_familia": ["NLP", "Otros(no especificado)"],
-  "usa_LLM_generativa": "no-claro",
-  "funcion_IA": "Procesar y organizar las miles de ideas y propuestas ciudadanas recibidas en talleres/consultas; identificar las prioridades más mencionadas por la ciudadanía; entender las necesidades de cada región; transformar el diálogo social en datos claros para la toma de decisiones que estructuran los ejes del programa. (La asistente 'Esperanza' cumple una función adicional de consulta/atención sobre el programa ya elaborado.)",
-  "rol_IA": "contenido",
-  "usa_IA_en_proceso": "sí",
-  "tipo_desarrollador_IA": ["Gobierno"],
-  "origen_desarrollador": "Nacional",
-  "entra_tentativo": "SI",
-  "justificacion_elegibilidad": "ENTRA: dentro de un proceso participativo formal (elaboración del plan/programa de gobierno estatal con consulta y talleres ciudadanos en los 46 municipios, +26,000 voces) se usó IA sobre el CONTENIDO de los aportes ciudadanos: la fuente oficial de metodología afirma que las herramientas de IA 'procesar y organizar la información, identificar las prioridades más mencionadas por la ciudadanía y entender las necesidades de cada región', es decir clasificación/agrupación/síntesis temática de los aportes para alimentar los ejes del programa (etapa de Análisis). Esto va más allá de un chatbot informativo (la asistente 'Esperanza' es un componente adicional de consulta, no el mecanismo de análisis). Por ello rol_IA=contenido y usa_IA_en_proceso=sí.",
-  "confianza": "MEDIA",
-  "evidencia_verbatim": {
-    "pais": "Guanajuato hará historia con el primer Programa de Gobierno realizado con IA",
-    "tipo_proceso": "Para integrar la participación ciudadana en este Programa de Gobierno, se realizaron cuatro talleres cubriendo las regiones noreste, norte, centro y sur, con representación de los 46 municipios de Guanajuato.",
-    "etapas_uso_IA": "Recibieron miles de ideas y propuestas, y para asegurar que cada una fuera tomada en cuenta, utilizaron herramientas de inteligencia artificial. Esta tecnología les ayudó a procesar y organizar la información, identificar las prioridades más mencionadas por la ciudadanía y entender las necesidades de cada región. Fue la herramienta que les permitió transformar el gran diálogo social en datos claros para la toma de decisiones.",
-    "estado_actividad": "El Programa de Gobierno de Guanajuato 2024-2030 es la guía que orienta las acciones del Gobierno de la Gente para lograr un Guanajuato sostenible, equitativo y transparente.",
-    "nivel_consolidacion": "Su diseño incorporó el uso de inteligencia artificial para integrar más de 26 mil voces de distintas regiones y sectores",
-    "tipo_convocante": "El Programa de Gobierno 2024-2030 hizo historia al ser el primero en realizarse con ayuda de la Inteligencia Artificial (IA), según anunció la Gobernadora Libia Dennise García Muñoz Ledo en el Consejo de Planeación para el Desarrollo del Estado de Guanajuato (COPLADEG).",
-    "usa_IA_en_proceso": "Recibieron miles de ideas y propuestas, y para asegurar que cada una fuera tomada en cuenta, utilizaron herramientas de inteligencia artificial. Esta tecnología les ayudó a procesar y organizar la información, identificar las prioridades más mencionadas por la ciudadanía.",
-    "rol_IA": "Esta tecnología les ayudó a procesar y organizar la información, identificar las prioridades más mencionadas por la ciudadanía y entender las necesidades de cada región. Fue la herramienta que les permitió transformar el gran diálogo social en datos claros para la toma de decisiones."
+ "caso_id": "MX-guanajuato-inteligente-2024-2030",
+ "pais": "MX",
+ "nombre_caso": "Guanajuato InteliGENTE 2024-2030 (Programa de Gobierno del Estado de Guanajuato)",
+ "bloque": "1-nuevo",
+ "proceso_participativo": "Elaboración del Programa de Gobierno del Estado de Guanajuato 2024-2030 ('Gobierno de la Gente'), un plan de gobierno construido con participación ciudadana: se recorrió el territorio y se realizaron cuatro talleres regionales (noreste, norte, centro y sur) con representación de los 46 municipios, integrando la voz de más de 26,000 personas mediante talleres y consultas. El contenido fue validado por el Consejo de Planeación para el Desarrollo del Estado de Guanajuato (COPLADEG), conformado por ciudadanía, la Gobernadora, secretarios de cada eje e IPLANEG. Se utilizaron herramientas de inteligencia artificial para procesar y organizar las miles de ideas y propuestas recibidas, identificar las prioridades más mencionadas por la ciudadanía y entender las necesidades de cada región, transformando el diálogo social en datos para la toma de decisiones que alimentaron los ejes del programa. Adicionalmente existe la asistente virtual 'Esperanza' para consultar el programa ya publicado.",
+ "ano_inicio": 2024,
+ "ano_cierre": 2025,
+ "estado_actividad": "activo",
+ "evidencia_actividad_2026": "El sitio oficial guanajuatointeligente.com sigue activo en 2026 para consulta del Programa de Gobierno 2024-2030 y de la asistente 'Esperanza'. Boletín oficial del 04-05-2026 ('Es Guanajuato referente en Inteligencia Artificial') reporta continuidad de la apuesta estatal por IA (p.ej. asistente ConectaGTO premiado en 2026). El proceso de elaboración participativa fue puntual (concluyó con la presentación del programa el 13-02-2025); lo que permanece activo es la plataforma de consulta y la implementación del programa.",
+ "organizacion_a_cargo": "Gobierno del Estado de Guanajuato — Instituto de Planeación, Estadística y Geografía del Estado de Guanajuato (IPLANEG), con validación del COPLADEG. Titular: Gobernadora Libia Dennise García Muñoz Ledo.",
+ "tipo_convocante": [
+  "gobierno local"
+ ],
+ "tipo_organizacion": "Público",
+ "tipo_proceso": [
+  "Gobernanza Colaborativa",
+  "Participación Digital"
+ ],
+ "etapas_uso_IA": [
+  "Análisis"
+ ],
+ "continuidad": "Uso único",
+ "nivel_consolidacion": 2,
+ "sistema_IA": "Herramientas de inteligencia artificial (no especificadas públicamente por nombre/proveedor) empleadas para procesar y organizar los aportes ciudadanos e identificar prioridades. Por separado, asistente virtual conversacional 'Esperanza' para consultar el Programa de Gobierno ya publicado. Ninguna fuente nombra el modelo/empresa concreto usado para el análisis de los 26k aportes.",
+ "tipos_IA_familia": [
+  "NLP",
+  "Otros(no especificado)"
+ ],
+ "usa_LLM_generativa": "no-claro",
+ "funcion_IA": "Procesar y organizar las miles de ideas y propuestas ciudadanas recibidas en talleres/consultas; identificar las prioridades más mencionadas por la ciudadanía; entender las necesidades de cada región; transformar el diálogo social en datos claros para la toma de decisiones que estructuran los ejes del programa. (La asistente 'Esperanza' cumple una función adicional de consulta/atención sobre el programa ya elaborado.)",
+ "rol_IA": "contenido",
+ "usa_IA_en_proceso": "sí",
+ "tipo_desarrollador_IA": [
+  "Gobierno"
+ ],
+ "origen_desarrollador": "Nacional",
+ "entra_tentativo": "SI",
+ "justificacion_elegibilidad": "ENTRA: dentro de un proceso participativo formal (elaboración del plan/programa de gobierno estatal con consulta y talleres ciudadanos en los 46 municipios, +26,000 voces) se usó IA sobre el CONTENIDO de los aportes ciudadanos: la fuente oficial de metodología afirma que las herramientas de IA 'procesar y organizar la información, identificar las prioridades más mencionadas por la ciudadanía y entender las necesidades de cada región', es decir clasificación/agrupación/síntesis temática de los aportes para alimentar los ejes del programa (etapa de Análisis). Esto va más allá de un chatbot informativo (la asistente 'Esperanza' es un componente adicional de consulta, no el mecanismo de análisis). Por ello rol_IA=contenido y usa_IA_en_proceso=sí.",
+ "confianza": "MEDIA",
+ "evidencia_verbatim": {
+  "pais": "Guanajuato hará historia con el primer Programa de Gobierno realizado con IA",
+  "tipo_proceso": "Para integrar la participación ciudadana en este Programa de Gobierno, se realizaron cuatro talleres cubriendo las regiones noreste, norte, centro y sur, con representación de los 46 municipios de Guanajuato.",
+  "etapas_uso_IA": "Recibieron miles de ideas y propuestas, y para asegurar que cada una fuera tomada en cuenta, utilizaron herramientas de inteligencia artificial. Esta tecnología les ayudó a procesar y organizar la información, identificar las prioridades más mencionadas por la ciudadanía y entender las necesidades de cada región. Fue la herramienta que les permitió transformar el gran diálogo social en datos claros para la toma de decisiones.",
+  "estado_actividad": "El Programa de Gobierno de Guanajuato 2024-2030 es la guía que orienta las acciones del Gobierno de la Gente para lograr un Guanajuato sostenible, equitativo y transparente.",
+  "nivel_consolidacion": "Su diseño incorporó el uso de inteligencia artificial para integrar más de 26 mil voces de distintas regiones y sectores",
+  "tipo_convocante": "El Programa de Gobierno 2024-2030 hizo historia al ser el primero en realizarse con ayuda de la Inteligencia Artificial (IA), según anunció la Gobernadora Libia Dennise García Muñoz Ledo en el Consejo de Planeación para el Desarrollo del Estado de Guanajuato (COPLADEG).",
+  "usa_IA_en_proceso": "Recibieron miles de ideas y propuestas, y para asegurar que cada una fuera tomada en cuenta, utilizaron herramientas de inteligencia artificial. Esta tecnología les ayudó a procesar y organizar la información, identificar las prioridades más mencionadas por la ciudadanía.",
+  "rol_IA": "Esta tecnología les ayudó a procesar y organizar la información, identificar las prioridades más mencionadas por la ciudadanía y entender las necesidades de cada región. Fue la herramienta que les permitió transformar el gran diálogo social en datos claros para la toma de decisiones."
+ },
+ "fuentes": [
+  {
+   "url": "https://guanajuatointeligente.com/como-hicimos-el-programa/",
+   "estado": "403",
+   "cita": "Recibieron miles de ideas y propuestas, y para asegurar que cada una fuera tomada en cuenta, utilizaron herramientas de inteligencia artificial. Esta tecnología les ayudó a procesar y organizar la información, identificar las prioridades más mencionadas por la ciudadanía y entender las necesidades de cada región. Fue la herramienta que les permitió transformar el gran diálogo social en datos claros para la toma de decisiones. (WebFetch dio HTTP 403; contenido recuperado vía WebSearch que indexa esta URL oficial.)"
   },
-  "fuentes": [
-    {
-      "url": "https://guanajuatointeligente.com/como-hicimos-el-programa/",
-      "estado": "403",
-      "cita": "Recibieron miles de ideas y propuestas, y para asegurar que cada una fuera tomada en cuenta, utilizaron herramientas de inteligencia artificial. Esta tecnología les ayudó a procesar y organizar la información, identificar las prioridades más mencionadas por la ciudadanía y entender las necesidades de cada región. Fue la herramienta que les permitió transformar el gran diálogo social en datos claros para la toma de decisiones. (WebFetch dio HTTP 403; contenido recuperado vía WebSearch que indexa esta URL oficial.)"
-    },
-    {
-      "url": "https://guanajuatointeligente.com/",
-      "estado": "403",
-      "cita": "Su diseño incorporó el uso de inteligencia artificial para integrar más de 26 mil voces de distintas regiones y sectores... Esperanza es la asistente virtual del Gobierno del Estado de Guanajuato, creada especialmente para brindarte información clara y oportuna sobre nuestro Programa de Gobierno 2024-2030. (WebFetch 403; texto vía WebSearch.)"
-    },
-    {
-      "url": "https://boletines.guanajuato.gob.mx/2025/02/13/guanajuato-hara-historia-con-el-primer-programa-de-gobierno-realizado-con-ia/",
-      "estado": "403",
-      "cita": "Guanajuato hará historia con el primer Programa de Gobierno realizado con IA. El plan integra la voz de más de 26,000 ciudadanos... se realizaron cuatro talleres cubriendo las regiones noreste, norte, centro y sur, con representación de los 46 municipios de Guanajuato. La asistente virtual de nombre 'Esperanza' facilita la consulta de este Programa de Gobierno. (WebFetch 403; contenido vía WebSearch; anuncio del 13-02-2025 en la Primera Sesión Ordinaria del COPLADEG.)"
-    },
-    {
-      "url": "https://boletines.guanajuato.gob.mx/2025/01/06/inteligencia-artificial-y-participacion-ciudadana-transformaran-el-nuevo-programa-de-gobierno/",
-      "estado": "403",
-      "cita": "El nuevo Programa de Gobierno será pionero al integrar inteligencia artificial y participación ciudadana activa para dar forma a las políticas públicas del estado. La conformación del Programa integra la visión del Decálogo de Gobierno, el diagnóstico actual del estado, propuestas recibidas durante la campaña y la participación ciudadana mediante talleres y consultas. (WebFetch 403; contenido vía WebSearch.)"
-    },
-    {
-      "url": "https://www.milenio.com/politica/comunidad/guanajuato-en-su-plan-de-gobierno-2024-2030-ayuda-de-ia",
-      "estado": "403",
-      "cita": "Guanajuato tendrá en su Plan de Gobierno 2024-2030 ayuda de IA. A través de la IA se medirán las acciones en políticas públicas, así como la consulta de forma fácil e inmediata sobre temas puntuales; la asistente virtual 'Esperanza' facilita la consulta del programa. (WebFetch 403; titular y contenido vía WebSearch.)"
-    },
-    {
-      "url": "https://notus.com.mx/recurren-a-inteligencia-artificial-para-desarrollar-el-programa-de-gobierno-2024-2030/",
-      "estado": "403",
-      "cita": "Recurren a inteligencia artificial para desarrollar el Programa de Gobierno 2024-2030. (WebFetch 403; titular confirmado vía WebSearch como fuente de prensa independiente que corrobora el uso de IA en la elaboración del programa.)"
-    },
-    {
-      "url": "https://boletines.guanajuato.gob.mx/2026/05/04/es-guanajuato-referente-en-inteligencia-artificial/",
-      "estado": "403",
-      "cita": "Es Guanajuato referente en Inteligencia Artificial (boletín oficial 04-05-2026). Reporta continuidad de la estrategia estatal de IA en 2026, incluyendo el asistente ConectaGTO premiado en el Hackathon Agentic Builders League Mexico 2026 (AWS). Evidencia de actividad institucional en 2026. (WebFetch 403; contenido vía WebSearch.)"
-    },
-    {
-      "url": "https://www.guanajuatointeligente.com/wp-content/uploads/Programa-de-Gobierno-2024-2030-Version-Ejecutiva.pdf",
-      "estado": "no-encontrado",
-      "cita": "Documento ejecutivo del Programa de Gobierno 2024-2030 referenciado en resultados de búsqueda; no se pudo descargar/leer su contenido para verificar la sección metodológica de IA (no se obtuvo texto)."
-    }
-  ],
-  "gaps": [
-    {
-      "campo": "sistema_IA",
-      "motivo": "Ninguna fuente nombra el software/modelo/proveedor concreto de IA usado para analizar los +26,000 aportes ciudadanos; se describe genéricamente como 'herramientas de inteligencia artificial'. Microsoft aparece como aliado en capacitación/becas de IA (no confirmado como la herramienta de análisis); 'Esperanza' y 'ConectaGTO' son asistentes conversacionales distintos del análisis de aportes.",
-      "url_para_buscar": "https://guanajuatointeligente.com/como-hicimos-el-programa/"
-    },
-    {
-      "campo": "usa_LLM_generativa",
-      "motivo": "No hay evidencia explícita de si el análisis de aportes usó un LLM generativo o técnicas de NLP/clustering tradicionales. La asistente 'Esperanza' es conversacional (posible LLM) pero no es el componente que analizó los aportes.",
-      "url_para_buscar": "https://iplaneg.guanajuato.gob.mx/programagobierno24-30/"
-    },
-    {
-      "campo": "tipos_IA_familia",
-      "motivo": "Familia técnica de IA no especificada; 'procesar/organizar/identificar prioridades/agrupar por región' sugiere NLP/clustering pero ninguna fuente lo nombra técnicamente.",
-      "url_para_buscar": "https://iplaneg.guanajuato.gob.mx/wp-content/uploads/03-2.05-Diagnostico-Programa-de-Gobierno-2024-2030-_Diagnostico-Estatal-2025_.pdf"
-    },
-    {
-      "campo": "ano_cierre",
-      "motivo": "El proceso de elaboración participativa concluyó con la presentación del programa (feb-2025), pero el programa cubre 2024-2030; 'ano_cierre' del proceso participativo se fija en 2025 (cierre de la consulta/elaboración), no del programa.",
-      "url_para_buscar": "https://boletines.guanajuato.gob.mx/2025/02/13/guanajuato-hara-historia-con-el-primer-programa-de-gobierno-realizado-con-ia/"
-    }
-  ],
-  "alertas": [
-    "ALERTA_CONVOCANTE: el convocante es el Gobierno del Estado de Guanajuato (entidad subnacional / nivel estatal en el federalismo mexicano), NO un municipio. Por instrucción del índice se clasifica como 'gobierno local' (subnacional) a falta de categoría 'gobierno estatal'; podría argumentarse 'otra institución pública'. Decisión: 'gobierno local'.",
-    "ALERTA_SOFTWARE: no se identificó el software/técnica concreto de IA usado para analizar los aportes (gap central de la investigación). Se confirma el USO de IA sobre el contenido de los aportes, pero no la herramienta específica.",
-    "ALERTA_DOBLE_USO_IA: hay dos usos de IA distintos — (1) análisis/sistematización de aportes ciudadanos para construir el programa (este es el que da elegibilidad, rol_IA=contenido); (2) asistente virtual 'Esperanza' para consultar el programa publicado (rol de atención/consulta, NO el motivo de elegibilidad). No confundirlos.",
-    "ALERTA_FUENTES_403: todas las URLs .gob.mx, guanajuatointeligente.com y varias de prensa .mx devolvieron HTTP 403 a WebFetch; las citas se recuperaron mediante WebSearch (que sí indexa y devuelve el contenido de esas mismas URLs). Verbatim de metodología sostenido principalmente por la página oficial 'cómo hicimos el programa' vía WebSearch.",
-    "ALERTA_CONFIANZA: cita clave sobre el análisis de contenido proviene de una sola fuente oficial (página de metodología); la prensa corrobora el uso de IA y la participación de 26k ciudadanos pero tiende a enfatizar la IA aplicada a políticas/consulta ('Esperanza') más que el análisis de aportes. Por eso confianza=MEDIA y no ALTA.",
-    "ALERTA_NIVEL: nivel_consolidacion=2 (uso puntual: la IA se usó una vez para elaborar el programa 2024-2030); no es recurrente (no hay ≥2 ediciones del proceso de elaboración). La plataforma/sitio permanece activa pero el ejercicio participativo con IA fue único.",
-    "ALERTA_TRADUCCION_POLITICA: podría argumentarse 'Traducción Política' como etapa adicional, dado que los aportes analizados por IA se transformaron en ejes/estrategias del programa; se mantuvo solo 'Análisis' por ser lo explícitamente sustentado en la cita ('transformar el diálogo social en datos para la toma de decisiones')."
-  ]
+  {
+   "url": "https://guanajuatointeligente.com/",
+   "estado": "403",
+   "cita": "Su diseño incorporó el uso de inteligencia artificial para integrar más de 26 mil voces de distintas regiones y sectores... Esperanza es la asistente virtual del Gobierno del Estado de Guanajuato, creada especialmente para brindarte información clara y oportuna sobre nuestro Programa de Gobierno 2024-2030. (WebFetch 403; texto vía WebSearch.)"
+  },
+  {
+   "url": "https://boletines.guanajuato.gob.mx/2025/02/13/guanajuato-hara-historia-con-el-primer-programa-de-gobierno-realizado-con-ia/",
+   "estado": "403",
+   "cita": "Guanajuato hará historia con el primer Programa de Gobierno realizado con IA. El plan integra la voz de más de 26,000 ciudadanos... se realizaron cuatro talleres cubriendo las regiones noreste, norte, centro y sur, con representación de los 46 municipios de Guanajuato. La asistente virtual de nombre 'Esperanza' facilita la consulta de este Programa de Gobierno. (WebFetch 403; contenido vía WebSearch; anuncio del 13-02-2025 en la Primera Sesión Ordinaria del COPLADEG.)"
+  },
+  {
+   "url": "https://boletines.guanajuato.gob.mx/2025/01/06/inteligencia-artificial-y-participacion-ciudadana-transformaran-el-nuevo-programa-de-gobierno/",
+   "estado": "403",
+   "cita": "El nuevo Programa de Gobierno será pionero al integrar inteligencia artificial y participación ciudadana activa para dar forma a las políticas públicas del estado. La conformación del Programa integra la visión del Decálogo de Gobierno, el diagnóstico actual del estado, propuestas recibidas durante la campaña y la participación ciudadana mediante talleres y consultas. (WebFetch 403; contenido vía WebSearch.)"
+  },
+  {
+   "url": "https://www.milenio.com/politica/comunidad/guanajuato-en-su-plan-de-gobierno-2024-2030-ayuda-de-ia",
+   "estado": "403",
+   "cita": "Guanajuato tendrá en su Plan de Gobierno 2024-2030 ayuda de IA. A través de la IA se medirán las acciones en políticas públicas, así como la consulta de forma fácil e inmediata sobre temas puntuales; la asistente virtual 'Esperanza' facilita la consulta del programa. (WebFetch 403; titular y contenido vía WebSearch.)"
+  },
+  {
+   "url": "https://notus.com.mx/recurren-a-inteligencia-artificial-para-desarrollar-el-programa-de-gobierno-2024-2030/",
+   "estado": "403",
+   "cita": "Recurren a inteligencia artificial para desarrollar el Programa de Gobierno 2024-2030. (WebFetch 403; titular confirmado vía WebSearch como fuente de prensa independiente que corrobora el uso de IA en la elaboración del programa.)"
+  },
+  {
+   "url": "https://boletines.guanajuato.gob.mx/2026/05/04/es-guanajuato-referente-en-inteligencia-artificial/",
+   "estado": "403",
+   "cita": "Es Guanajuato referente en Inteligencia Artificial (boletín oficial 04-05-2026). Reporta continuidad de la estrategia estatal de IA en 2026, incluyendo el asistente ConectaGTO premiado en el Hackathon Agentic Builders League Mexico 2026 (AWS). Evidencia de actividad institucional en 2026. (WebFetch 403; contenido vía WebSearch.)"
+  },
+  {
+   "url": "https://www.guanajuatointeligente.com/wp-content/uploads/Programa-de-Gobierno-2024-2030-Version-Ejecutiva.pdf",
+   "estado": "no-encontrado",
+   "cita": "Documento ejecutivo del Programa de Gobierno 2024-2030 referenciado en resultados de búsqueda; no se pudo descargar/leer su contenido para verificar la sección metodológica de IA (no se obtuvo texto)."
+  }
+ ],
+ "gaps": [
+  {
+   "campo": "sistema_IA",
+   "motivo": "Ninguna fuente nombra el software/modelo/proveedor concreto de IA usado para analizar los +26,000 aportes ciudadanos; se describe genéricamente como 'herramientas de inteligencia artificial'. Microsoft aparece como aliado en capacitación/becas de IA (no confirmado como la herramienta de análisis); 'Esperanza' y 'ConectaGTO' son asistentes conversacionales distintos del análisis de aportes.",
+   "url_para_buscar": "https://guanajuatointeligente.com/como-hicimos-el-programa/"
+  },
+  {
+   "campo": "usa_LLM_generativa",
+   "motivo": "No hay evidencia explícita de si el análisis de aportes usó un LLM generativo o técnicas de NLP/clustering tradicionales. La asistente 'Esperanza' es conversacional (posible LLM) pero no es el componente que analizó los aportes.",
+   "url_para_buscar": "https://iplaneg.guanajuato.gob.mx/programagobierno24-30/"
+  },
+  {
+   "campo": "tipos_IA_familia",
+   "motivo": "Familia técnica de IA no especificada; 'procesar/organizar/identificar prioridades/agrupar por región' sugiere NLP/clustering pero ninguna fuente lo nombra técnicamente.",
+   "url_para_buscar": "https://iplaneg.guanajuato.gob.mx/wp-content/uploads/03-2.05-Diagnostico-Programa-de-Gobierno-2024-2030-_Diagnostico-Estatal-2025_.pdf"
+  },
+  {
+   "campo": "ano_cierre",
+   "motivo": "El proceso de elaboración participativa concluyó con la presentación del programa (feb-2025), pero el programa cubre 2024-2030; 'ano_cierre' del proceso participativo se fija en 2025 (cierre de la consulta/elaboración), no del programa.",
+   "url_para_buscar": "https://boletines.guanajuato.gob.mx/2025/02/13/guanajuato-hara-historia-con-el-primer-programa-de-gobierno-realizado-con-ia/"
+  }
+ ],
+ "alertas": [
+  "ALERTA_CONVOCANTE: el convocante es el Gobierno del Estado de Guanajuato (entidad subnacional / nivel estatal en el federalismo mexicano), NO un municipio. Por instrucción del índice se clasifica como 'gobierno local' (subnacional) a falta de categoría 'gobierno estatal'; podría argumentarse 'otra institución pública'. Decisión: 'gobierno local'.",
+  "ALERTA_SOFTWARE: no se identificó el software/técnica concreto de IA usado para analizar los aportes (gap central de la investigación). Se confirma el USO de IA sobre el contenido de los aportes, pero no la herramienta específica.",
+  "ALERTA_DOBLE_USO_IA: hay dos usos de IA distintos — (1) análisis/sistematización de aportes ciudadanos para construir el programa (este es el que da elegibilidad, rol_IA=contenido); (2) asistente virtual 'Esperanza' para consultar el programa publicado (rol de atención/consulta, NO el motivo de elegibilidad). No confundirlos.",
+  "ALERTA_FUENTES_403: todas las URLs .gob.mx, guanajuatointeligente.com y varias de prensa .mx devolvieron HTTP 403 a WebFetch; las citas se recuperaron mediante WebSearch (que sí indexa y devuelve el contenido de esas mismas URLs). Verbatim de metodología sostenido principalmente por la página oficial 'cómo hicimos el programa' vía WebSearch.",
+  "ALERTA_CONFIANZA: cita clave sobre el análisis de contenido proviene de una sola fuente oficial (página de metodología); la prensa corrobora el uso de IA y la participación de 26k ciudadanos pero tiende a enfatizar la IA aplicada a políticas/consulta ('Esperanza') más que el análisis de aportes. Por eso confianza=MEDIA y no ALTA.",
+  "ALERTA_NIVEL: nivel_consolidacion=2 (uso puntual: la IA se usó una vez para elaborar el programa 2024-2030); no es recurrente (no hay ≥2 ediciones del proceso de elaboración). La plataforma/sitio permanece activa pero el ejercicio participativo con IA fue único.",
+  "ALERTA_TRADUCCION_POLITICA: podría argumentarse 'Traducción Política' como etapa adicional, dado que los aportes analizados por IA se transformaron en ejes/estrategias del programa; se mantuvo solo 'Análisis' por ser lo explícitamente sustentado en la cita ('transformar el diálogo social en datos para la toma de decisiones')."
+ ],
+ "veredicto_equipo": "SI",
+ "comentario_equipo": "Natalia: Acá es Esperanza? Esperanza es el asistente virtual del Gobierno de Guanajuato. Está diseñada para ayudarte a conocer, entender y consultar el Programa de Gobierno 2024–2030 de manera clara y accesible. Responde preguntas con base en la Consulta Social, el Plan Estatal de Desarrollo, PED 2050, y la visión de este gobierno.",
+ "divergencia_equipo": false
 }

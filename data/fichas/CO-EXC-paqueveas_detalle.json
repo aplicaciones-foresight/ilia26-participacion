@@ -99,5 +99,8 @@
   "Posible confusion por co-mencion: el boletin 'Cali, lider en IA' lista 'Pa' que veas' junto a chatbots y analisis predictivo, pero el monitor solo se encuadra en 'gestion eficiente de datos / seguimiento a la inversion publica'. Los usos de IA (chatbots de consulta, prediccion de deslizamientos/dengue/seguridad) son iniciativas SEPARADAS del ecosistema smart-city de Cali.",
   "Funcionalidades de reportes ciudadanos / alertas de irregularidades / fotografias estan anunciadas como evolucion FUTURA, no como capacidad actual; no procesadas por IA hasta donde documentan las fuentes.",
   "Todas las fuentes primarias devolvieron 403 a WebFetch; la verificacion se apoyo en snippets de WebSearch. Pese a ello, la convergencia de >=2 fuentes independientes (BID + Alcaldia + prensa) sobre la naturaleza de dashboard sostiene confianza ALTA para la decision de exclusion."
- ]
+ ],
+ "veredicto_equipo": "NO",
+ "comentario_equipo": "Jose: Siento que si los otros de obras públicas entraron, este quizás también, conversémoslo.\nNatalia: En este me pasa lo mismo que en otro anterior, me suena más una plataforma de veeduria ciudadana a que una plataforma de participación",
+ "divergencia_equipo": false
 }

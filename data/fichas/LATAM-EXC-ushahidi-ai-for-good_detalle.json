@@ -49,5 +49,8 @@
   "No re-extraído en 2026; incluido para inventario completo / validación CENIA."
  ],
  "fuente_datos": "excluido_2025_bbdd",
- "motivo_exclusion_2025": "No se evidencia el uso de IA en los proyectos de participación listados para Latam"
+ "motivo_exclusion_2025": "No se evidencia el uso de IA en los proyectos de participación listados para Latam",
+ "veredicto_equipo": null,
+ "comentario_equipo": "",
+ "divergencia_equipo": false
 }

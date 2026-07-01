@@ -128,5 +128,8 @@
   "Cifras del proceso cruzadas y consistentes en múltiples búsquedas: consulta abierta 07/04/2025-11/05/2025; 36 audiencias híbridas; 6.368 propostas; 31.000+ interacciones; versión inicial 126 metas -> 132 finales (6 incorporadas); R$ 57 bi; entrega a la Câmara 30/09/2025.",
   "tipo_proceso: se asignó 'Participación Digital' (consulta pública en plataforma digital Participe Mais/Decidim) y 'Gobernanza Colaborativa' (instrumento de planificación estratégica municipal co-construido con la población); etiquetas con cierta interpretación. No es Presupuesto Participativo en sentido estricto, aunque el PPA es un plan presupuestario plurianual.",
   "rol_IA=contenido fundamentado: la IA opera sobre el contenido de las propuestas (clasificación temática y ranking), no como mero apoyo logístico; por eso NO se clasificó como rol_IA='apoyo'."
- ]
+ ],
+ "veredicto_equipo": "SI",
+ "comentario_equipo": "",
+ "divergencia_equipo": true
 }

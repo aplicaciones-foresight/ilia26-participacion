@@ -116,5 +116,8 @@
   "nivel_consolidacion=3 y estado_actividad=activo se refieren a la PLATAFORMA participativa (>16 anios, multiples ediciones, >130.000 participantes, activa en 2026), no a un componente de IA. La consolidacion del eventual componente IA seria ~0-1 (investigacion/recomendacion).",
   "Anti-bot: todas las URLs de UAI (goblab/gobierno/ciudadaniadigital), imfd.cl, arxiv.org (abs y html), medium.com, owlstown.net y github.io del autor devolvieron HTTP 403 a WebFetch (anti-bot del origen, no fallo del proxy). Verbatim reconstruido via WebSearch con extractos convergentes en multiples consultas; senado.cl, congresovirtual.cl, sagepub e idea.int quedan como 'no-verificado' por no haberse fetcheado el HTML.",
   "ano_inicio=2018 se asigna por el convenio Senado-BID y el arranque de la linea CrowdLaw; la plataforma base (Senador Virtual) existe desde 2003 y el relanzamiento 'Congreso Virtual' es 2020. tipo_desarrollador_IA=Academia y origen=Nacional describen el eventual componente de investigacion (GobLab UAI + Harvard + IMFD); Harvard introduce un origen Internacional en la alianza de investigacion, pero el desarrollador principal es nacional (UAI/IMFD)."
- ]
+ ],
+ "veredicto_equipo": "NO",
+ "comentario_equipo": "Jose: No encontré que hayan usado IA finalmente.\nNatalia: fue un seminario solamente https://www.uai.cl/noticias/goblab/sistematizando-la-participacion-ciudadana",
+ "divergencia_equipo": false
 }

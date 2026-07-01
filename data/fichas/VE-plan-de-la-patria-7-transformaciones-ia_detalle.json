@@ -147,5 +147,8 @@
   "ALERTA_FUENTES_403: todas las URLs .gob.ve (correodelorinoco, mincyt, cendit, fevp, mppre, mppp, noticias.patria), es.wikipedia y la copia archive.org del PDF del Plan 7T devolvieron HTTP 403 a WebFetch (en http y https; el proxy de egreso confirma 403 de política). Las citas se recuperaron vía snippets de WebSearch que indexan esas mismas URLs. Conviene verificación manual directa.",
   "ALERTA_CONFIANZA_BAJA: confianza=BAJA por basarse en una sola narrativa estatal repetida en varios portales oficialistas (no fuentes independientes), sin corroboración técnica y con contradicción de cifras. El veredicto NO se apoya en AUSENCIA de evidencia de IA + PRESENCIA de evidencia de procesamiento humano; no elevar la confianza sin un documento metodológico/técnico del MPPP o del MINCYT que aún no existe.",
   "ALERTA_VERIFICACION_MANUAL: verificación manual residual recomendada con (1) MPPP — documento metodológico del Plan 7T (confirma sistematización humana); (2) MINCYT — si el Plan Nacional de IA llegara a documentar algún componente real aplicado a los aportes de la consulta; (3) PDF del Plan de la Patria 7T para lectura verbatim. URLs en gaps. A la fecha (jun-2026) no hay tal documento técnico."
- ]
+ ],
+ "veredicto_equipo": "NO",
+ "comentario_equipo": "Jose: Sospechosísimo, pero según la fuente sí existe.\nNatalia: O sea parece que pasó, pero no creo que cumpla con los criterios para incluirlo \"con la participación de casi 20 mil personas, «alcanzando una cifra acumulada histórica de 6.176.000 participantes» en los procesos de debate y consulta pública.\"",
+ "divergencia_equipo": false
 }

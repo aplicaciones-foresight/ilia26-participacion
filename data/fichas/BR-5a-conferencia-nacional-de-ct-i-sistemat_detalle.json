@@ -92,5 +92,8 @@
  "alertas": [
   "Los dominios oficiales (5cncti.org.br, gov.br, agenciagov.ebc.com.br, sbpcnet.org.br, proifes.org.br) devuelven 403 a WebFetch/curl por policy denial del gateway de egreso. El contenido verbatim fue recuperado a través de la herramienta WebSearch, que sí accede al texto subyacente. Las citas son fiables y corroboradas entre múltiples fuentes independientes (MCTI oficial, sitio 5cncti, agenciagov, CETENE/Consecti), pero no se pudo abrir el HTML directo para verificar puntuación/ortografía exacta carácter a carácter.",
   "El término 'sistematización con IA' está bien documentado para la FASE PREPARATORIA y los e-books de síntesis. Para los Libros Lilás/Violeta (documentos finales) las fuentes mencionan uso de IA para sistematizar audios/videos/relatorios, pero con fuerte redacción y revisión humana (35 redactores/revisores en el Violeta), por lo que el peso relativo IA vs. humano en el producto final que orienta la ENCTI debe leerse como colaboración humano-IA, no IA autónoma."
- ]
+ ],
+ "veredicto_equipo": "SI",
+ "comentario_equipo": "Jose: Hay que validar bien la información pero suena bien.",
+ "divergencia_equipo": false
 }

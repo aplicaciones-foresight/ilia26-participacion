@@ -104,5 +104,8 @@
   "Riesgo de falso positivo descartado: 'Unidad de Científicos de Datos' y 'análisis cuantitativo' sugieren IA, pero todas las fuentes solo respaldan estadística de frecuencia, agrupación en categorías y visualización (nubes de palabras, barras, visor); no asumir NLP sin documento técnico, que no la respalda.",
   "Limitación de acceso (residual): el dominio oficial dnp.gov.co / colaboracion.dnp.gov.co / sispt.dnp.gov.co / funcionpublica.gov.co y varios PDFs académicos devuelven HTTP 403 vía WebFetch; la evidencia verbatim proviene mayormente de snippets de buscador, no de lectura directa de la fuente primaria. La convergencia entre fuentes oficiales, académicas (Externado) y críticas (Dejusticia/FIP/CCONG) es, no obstante, suficiente para resolver en NO con confianza MEDIA.",
   "Existen análisis académicos de terceros con minería de texto sobre datos relacionados (p. ej. arXiv 2504.04325 sobre audiencias de la JEP), pero corresponden a OTRO proceso (JEP), no a los DRV; no usar como evidencia de IA en los DRV."
- ]
+ ],
+ "veredicto_equipo": "SI",
+ "comentario_equipo": "Nicole: Confirmado que si. Se utilizó un modelo híbrido. Comenzó fuertemente fundamentado en la codificación manual en territorio y se complementó después con tecnologías de procesamiento de datos y analítica (con componentes de IA/NLP) para estructurar el volumen masivo de información.",
+ "divergencia_equipo": true
 }

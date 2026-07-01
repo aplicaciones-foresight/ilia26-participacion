@@ -49,5 +49,8 @@
   "No re-extraído en 2026; incluido para inventario completo / validación CENIA."
  ],
  "fuente_datos": "excluido_2025_bbdd",
- "motivo_exclusion_2025": "No entra en la descripción de lo que es Participación ciudadana. Se considera Civic Tech, pero no participación ciudadana. Tampoco utiliza IA"
+ "motivo_exclusion_2025": "No entra en la descripción de lo que es Participación ciudadana. Se considera Civic Tech, pero no participación ciudadana. Tampoco utiliza IA",
+ "veredicto_equipo": null,
+ "comentario_equipo": "",
+ "divergencia_equipo": false
 }

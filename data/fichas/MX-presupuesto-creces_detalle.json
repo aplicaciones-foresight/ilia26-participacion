@@ -68,5 +68,8 @@
   "usa_LLM_generativa='no' derivado de Tipos de IA 2025 (sin 'LLM'); verificar si cambió en 2026",
   "Datos brutos del índice ILIA 2025 (BBDD validada por el equipo); recodificación 2026 (convocante 7-cat, nivel 0-3) y reverificación de actividad 2026."
  ],
- "fuente_datos": "baseline_2025_bbdd+recod2026+reverif_web2026"
+ "fuente_datos": "baseline_2025_bbdd+recod2026+reverif_web2026",
+ "veredicto_equipo": "SI",
+ "comentario_equipo": "",
+ "divergencia_equipo": false
 }

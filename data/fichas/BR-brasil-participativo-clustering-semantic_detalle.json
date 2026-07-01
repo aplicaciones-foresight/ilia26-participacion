@@ -1,110 +1,130 @@
 {
-  "caso_id": "BR-brasil-participativo-clustering-semantic",
-  "pais": "BR",
-  "nombre_caso": "Brasil Participativo - clustering semántico de propuestas ciudadanas (BERTopic + LLM, alineado a VCGE)",
-  "bloque": "1-nuevo",
-  "proceso_participativo": "Brasil Participativo es la plataforma digital de participación social del Gobierno Federal de Brasil (construida sobre el software libre Decidim), lanzada en 2023 por la Secretaria-Geral da Presidência da República. En ella la ciudadanía envía propuestas de texto libre, revisiones, comentarios y votos sobre políticas públicas en procesos participativos federales reales: el Plano Plurianual Participativo (PPA 2024-2027), el Plano Clima Participativo y el Congresso da Juventude, además de conferencias y consultas públicas. Sobre el contenido de esas propuestas, equipos de la Universidade de Brasília (LAPPIS/FGA-UnB) y la Residência TIC BRISA desarrollaron un pipeline de IA que recolecta, clasifica y agrupa por temas las propuestas: combina modelado de tópicos con BERTopic (probando varios embeddings: BERTimbau, LaBSE, GovBERT-BR, etc.), incorpora conocimiento institucional mediante seed words extraídas del VCGE (Vocabulário Controlado do Governo Eletrônico) y usa LLMs para el etiquetado/validación automática de los tópicos, generando categorías y reportes temáticos consistentes con la taxonomía oficial para apoyar a los equipos de formulación de políticas. Se documenta un pipeline ML en evolución hacia producción (paper 'From Pre-labeling to Production') y un clasificador ML adicional (BP-Classificador-de-Propostas) entrenado a diario con Apache Airflow con datos de la plataforma, descrito como destinado a integrarse en la plataforma.",
-  "ano_inicio": 2023,
-  "ano_cierre": null,
-  "estado_actividad": "activo",
-  "evidencia_actividad_2026": "La plataforma Brasil Participativo seguía operativa y en expansión institucional en 2025 (en noviembre de 2025 'Brasil Participativo integra comitê internacional de democracia digital'); los papers que documentan el pipeline de IA datan de septiembre y noviembre de 2025 ('Over its first two years of operation, the platform registered approximately 1.6 million users and over 42,000 text-based proposals'). No se halló evidencia específica de actividad fechada en 2026 ni de despliegue del componente de IA en producción a esa fecha.",
-  "organizacion_a_cargo": "Plataforma: Secretaria-Geral da Presidência da República (Secretaria Nacional de Participação Social), Gobierno Federal de Brasil, con desarrollo de la plataforma a cargo de LAPPIS/FGA-UnB y la comunidad Decidim-Brasil (Dataprev). Componente de IA (clustering semántico / clasificador): investigadores de la Universidade de Brasília (LAPPIS) y la Residência TIC BRISA (UnB-Gama / BRISA), con la Secretaria de Participação Social como mentora del proyecto.",
-  "tipo_convocante": ["gobierno nacional"],
-  "tipo_organizacion": "Público",
-  "tipo_proceso": ["Gobernanza Colaborativa", "Participación Digital"],
-  "etapas_uso_IA": ["Análisis"],
-  "continuidad": "Plataforma",
-  "nivel_consolidacion": 2,
-  "sistema_IA": "Pipeline de PLN/ML sobre las propuestas de Brasil Participativo: modelado de tópicos con BERTopic + embeddings preentrenados (BERTimbau, LaBSE, LiBERT-SE, GovBERT-BR), refinamiento semi-supervisado con seed words del VCGE, ajuste de hiperparámetros y validación automática/etiquetado mediante LLMs. En paralelo, un clasificador ML supervisado (BP-Classificador-de-Propostas) con scikit-learn/NLTK, reentrenado diariamente vía Apache Airflow con datos de la plataforma, y modelos divididos en 'routed classifiers' con uso de pre-labeling por LLM y datos sintéticos (paper de ingeniería 2511.01545).",
-  "tipos_IA_familia": ["NLP", "Topic modeling", "Clustering semántico", "Clasificación de texto", "Embeddings", "LLM"],
-  "usa_LLM_generativa": "sí",
-  "funcion_IA": "Organizar a escala el contenido de decenas de miles de propuestas ciudadanas reales (se extrajeron 10.186 propuestas de los procesos Plano Clima, PPA Participativo y Congresso da Juventude; el corpus total de la plataforma supera las 42.000 propuestas). La IA agrupa las propuestas en tópicos coherentes (BERTopic), las alinea con la taxonomía oficial VCGE mediante seed words y métricas de concordancia, y usa LLMs para etiquetar/validar automáticamente los tópicos reduciendo el esfuerzo manual. El objetivo declarado es transformar grandes volúmenes de aportes ciudadanos en datos accionables (reportes temáticos trazables) para los equipos de formulación de políticas públicas y, potencialmente, un módulo de navegación temática para la plataforma.",
-  "rol_IA": "contenido",
-  "usa_IA_en_proceso": "sí",
-  "tipo_desarrollador_IA": ["Academia", "Gobierno"],
-  "origen_desarrollador": "Nacional",
-  "entra_tentativo": "SI",
-  "justificacion_elegibilidad": "ENTRA: dentro de procesos participativos formales y convocados por el Gobierno Federal de Brasil (PPA Participativo, Plano Clima Participativo, Congresso da Juventude, conferencias y consultas en la plataforma federal Brasil Participativo), se usa IA sobre el CONTENIDO de los aportes ciudadanos: recolecta, clasifica y AGRUPA POR TEMAS decenas de miles de propuestas de texto libre (10.186 analizadas en los papers; >42.000 en el corpus de la plataforma) usando BERTopic + embeddings + seed words del VCGE, con LLMs para etiquetar/validar los tópicos y generar reportes temáticos. Esto es exactamente 'analizar/agrupar por temas/sintetizar' los aportes ciudadanos (rol_IA=contenido), no mera logística ni un chatbot informativo. El convocante es gobierno nacional (Secretaria-Geral da Presidência da República) y la plataforma procesa propuestas estructuradas de un proceso participativo, no social listening de redes. DUDA CENTRAL (no decisiva para la entrada, sí para el nivel): el DESPLIEGUE EN PRODUCCIÓN OFICIAL no está confirmado por fuentes gubernamentales; el pipeline está documentado en papers académicos (UnB/LAPPIS) y un repositorio de la Residência TIC BRISA cuyo modelo se describe 'afim de ser integrado a plataforma do Brasil Participativo' (intención de integración) y cuyo título 'From Pre-labeling to Production' sugiere tránsito hacia producción más que operación masiva confirmada. Por la naturaleza de los datos (propuestas reales de la plataforma federal, reentrenamiento diario) se considera SI, pero el nivel de consolidación se fija en 2 (uso sobre datos reales / plataforma usada) y no en 3, hasta confirmar integración oficial en producción.",
-  "confianza": "MEDIA",
-  "evidencia_verbatim": {
-    "pais": "The Brasil Participativo (BP) platform was launched in 2023 by the General Secretariat of the Presidency of the Republic to enable citizens to directly contribute to the creation, monitoring, and improvement of public policies.",
-    "tipo_proceso": "Brasil Participativo unifies these instruments in a collaborative and inter-institutional portal, bringing together government agencies, Dataprev, UnB, and the Decidim-Brasil community. (...) a população possa contribuir com a criação e melhoria das políticas públicas.",
-    "etapas_uso_IA": "A topic modeling pipeline for classifying public proposals submitted to Brasil Participativo was proposed and evaluated by combining BERTopic with different embeddings and incorporating institutional knowledge through seed words extracted from VCGE. (...) The use of LLMs for automatic labeling proved effective in reducing manual validation effort.",
-    "estado_actividad": "Over its first two years of operation, the platform registered approximately 1.6 million users and over 42,000 text-based proposals submitted by citizens.",
-    "nivel_consolidacion": "Por fim esta disponibilizado a gem em Ruby e o repositorio da mesma para utilização do modelo dentro de plataformas web afim de ser integrado a plataforma do Brasil Participativo. (...) O Apache [Airflow] e responsavel pela atualização e o treinamento diario do modelo em conjunto com os dados da plataforma do Brasil Participativo.",
-    "tipo_convocante": "The Brasil Participativo (BP) platform was launched in 2023 by the General Secretariat of the Presidency of the Republic. (...) Mentores: Laila, Secretaria de Participação Social.",
-    "usa_IA_en_proceso": "10,186 proposals were extracted from the 'Plano Clima', 'Plano Plurianual Participativo' and 'Congresso da Juventude' processes. (...) Aplicação de Indexação Automática com ML das propostas publicadas no Brasil Participativo.",
-    "rol_IA": "This methodology enables governments to transform large volumes of citizen input into actionable data for public policy. (...) The methodology encompasses (...) (iii) topic modeling, merging unsupervised discovery and semi-supervised refinement by seed topics; and (iv) external validation, comparing clusters to VCGE via agreement metrics and LLM qualitative analysis."
+ "caso_id": "BR-brasil-participativo-clustering-semantic",
+ "pais": "BR",
+ "nombre_caso": "Brasil Participativo - clustering semántico de propuestas ciudadanas (BERTopic + LLM, alineado a VCGE)",
+ "bloque": "1-nuevo",
+ "proceso_participativo": "Brasil Participativo es la plataforma digital de participación social del Gobierno Federal de Brasil (construida sobre el software libre Decidim), lanzada en 2023 por la Secretaria-Geral da Presidência da República. En ella la ciudadanía envía propuestas de texto libre, revisiones, comentarios y votos sobre políticas públicas en procesos participativos federales reales: el Plano Plurianual Participativo (PPA 2024-2027), el Plano Clima Participativo y el Congresso da Juventude, además de conferencias y consultas públicas. Sobre el contenido de esas propuestas, equipos de la Universidade de Brasília (LAPPIS/FGA-UnB) y la Residência TIC BRISA desarrollaron un pipeline de IA que recolecta, clasifica y agrupa por temas las propuestas: combina modelado de tópicos con BERTopic (probando varios embeddings: BERTimbau, LaBSE, GovBERT-BR, etc.), incorpora conocimiento institucional mediante seed words extraídas del VCGE (Vocabulário Controlado do Governo Eletrônico) y usa LLMs para el etiquetado/validación automática de los tópicos, generando categorías y reportes temáticos consistentes con la taxonomía oficial para apoyar a los equipos de formulación de políticas. Se documenta un pipeline ML en evolución hacia producción (paper 'From Pre-labeling to Production') y un clasificador ML adicional (BP-Classificador-de-Propostas) entrenado a diario con Apache Airflow con datos de la plataforma, descrito como destinado a integrarse en la plataforma.",
+ "ano_inicio": 2023,
+ "ano_cierre": null,
+ "estado_actividad": "activo",
+ "evidencia_actividad_2026": "La plataforma Brasil Participativo seguía operativa y en expansión institucional en 2025 (en noviembre de 2025 'Brasil Participativo integra comitê internacional de democracia digital'); los papers que documentan el pipeline de IA datan de septiembre y noviembre de 2025 ('Over its first two years of operation, the platform registered approximately 1.6 million users and over 42,000 text-based proposals'). No se halló evidencia específica de actividad fechada en 2026 ni de despliegue del componente de IA en producción a esa fecha.",
+ "organizacion_a_cargo": "Plataforma: Secretaria-Geral da Presidência da República (Secretaria Nacional de Participação Social), Gobierno Federal de Brasil, con desarrollo de la plataforma a cargo de LAPPIS/FGA-UnB y la comunidad Decidim-Brasil (Dataprev). Componente de IA (clustering semántico / clasificador): investigadores de la Universidade de Brasília (LAPPIS) y la Residência TIC BRISA (UnB-Gama / BRISA), con la Secretaria de Participação Social como mentora del proyecto.",
+ "tipo_convocante": [
+  "gobierno nacional"
+ ],
+ "tipo_organizacion": "Público",
+ "tipo_proceso": [
+  "Gobernanza Colaborativa",
+  "Participación Digital"
+ ],
+ "etapas_uso_IA": [
+  "Análisis"
+ ],
+ "continuidad": "Plataforma",
+ "nivel_consolidacion": 2,
+ "sistema_IA": "Pipeline de PLN/ML sobre las propuestas de Brasil Participativo: modelado de tópicos con BERTopic + embeddings preentrenados (BERTimbau, LaBSE, LiBERT-SE, GovBERT-BR), refinamiento semi-supervisado con seed words del VCGE, ajuste de hiperparámetros y validación automática/etiquetado mediante LLMs. En paralelo, un clasificador ML supervisado (BP-Classificador-de-Propostas) con scikit-learn/NLTK, reentrenado diariamente vía Apache Airflow con datos de la plataforma, y modelos divididos en 'routed classifiers' con uso de pre-labeling por LLM y datos sintéticos (paper de ingeniería 2511.01545).",
+ "tipos_IA_familia": [
+  "NLP",
+  "Topic modeling",
+  "Clustering semántico",
+  "Clasificación de texto",
+  "Embeddings",
+  "LLM"
+ ],
+ "usa_LLM_generativa": "sí",
+ "funcion_IA": "Organizar a escala el contenido de decenas de miles de propuestas ciudadanas reales (se extrajeron 10.186 propuestas de los procesos Plano Clima, PPA Participativo y Congresso da Juventude; el corpus total de la plataforma supera las 42.000 propuestas). La IA agrupa las propuestas en tópicos coherentes (BERTopic), las alinea con la taxonomía oficial VCGE mediante seed words y métricas de concordancia, y usa LLMs para etiquetar/validar automáticamente los tópicos reduciendo el esfuerzo manual. El objetivo declarado es transformar grandes volúmenes de aportes ciudadanos en datos accionables (reportes temáticos trazables) para los equipos de formulación de políticas públicas y, potencialmente, un módulo de navegación temática para la plataforma.",
+ "rol_IA": "contenido",
+ "usa_IA_en_proceso": "sí",
+ "tipo_desarrollador_IA": [
+  "Academia",
+  "Gobierno"
+ ],
+ "origen_desarrollador": "Nacional",
+ "entra_tentativo": "SI",
+ "justificacion_elegibilidad": "ENTRA: dentro de procesos participativos formales y convocados por el Gobierno Federal de Brasil (PPA Participativo, Plano Clima Participativo, Congresso da Juventude, conferencias y consultas en la plataforma federal Brasil Participativo), se usa IA sobre el CONTENIDO de los aportes ciudadanos: recolecta, clasifica y AGRUPA POR TEMAS decenas de miles de propuestas de texto libre (10.186 analizadas en los papers; >42.000 en el corpus de la plataforma) usando BERTopic + embeddings + seed words del VCGE, con LLMs para etiquetar/validar los tópicos y generar reportes temáticos. Esto es exactamente 'analizar/agrupar por temas/sintetizar' los aportes ciudadanos (rol_IA=contenido), no mera logística ni un chatbot informativo. El convocante es gobierno nacional (Secretaria-Geral da Presidência da República) y la plataforma procesa propuestas estructuradas de un proceso participativo, no social listening de redes. DUDA CENTRAL (no decisiva para la entrada, sí para el nivel): el DESPLIEGUE EN PRODUCCIÓN OFICIAL no está confirmado por fuentes gubernamentales; el pipeline está documentado en papers académicos (UnB/LAPPIS) y un repositorio de la Residência TIC BRISA cuyo modelo se describe 'afim de ser integrado a plataforma do Brasil Participativo' (intención de integración) y cuyo título 'From Pre-labeling to Production' sugiere tránsito hacia producción más que operación masiva confirmada. Por la naturaleza de los datos (propuestas reales de la plataforma federal, reentrenamiento diario) se considera SI, pero el nivel de consolidación se fija en 2 (uso sobre datos reales / plataforma usada) y no en 3, hasta confirmar integración oficial en producción.",
+ "confianza": "MEDIA",
+ "evidencia_verbatim": {
+  "pais": "The Brasil Participativo (BP) platform was launched in 2023 by the General Secretariat of the Presidency of the Republic to enable citizens to directly contribute to the creation, monitoring, and improvement of public policies.",
+  "tipo_proceso": "Brasil Participativo unifies these instruments in a collaborative and inter-institutional portal, bringing together government agencies, Dataprev, UnB, and the Decidim-Brasil community. (...) a população possa contribuir com a criação e melhoria das políticas públicas.",
+  "etapas_uso_IA": "A topic modeling pipeline for classifying public proposals submitted to Brasil Participativo was proposed and evaluated by combining BERTopic with different embeddings and incorporating institutional knowledge through seed words extracted from VCGE. (...) The use of LLMs for automatic labeling proved effective in reducing manual validation effort.",
+  "estado_actividad": "Over its first two years of operation, the platform registered approximately 1.6 million users and over 42,000 text-based proposals submitted by citizens.",
+  "nivel_consolidacion": "Por fim esta disponibilizado a gem em Ruby e o repositorio da mesma para utilização do modelo dentro de plataformas web afim de ser integrado a plataforma do Brasil Participativo. (...) O Apache [Airflow] e responsavel pela atualização e o treinamento diario do modelo em conjunto com os dados da plataforma do Brasil Participativo.",
+  "tipo_convocante": "The Brasil Participativo (BP) platform was launched in 2023 by the General Secretariat of the Presidency of the Republic. (...) Mentores: Laila, Secretaria de Participação Social.",
+  "usa_IA_en_proceso": "10,186 proposals were extracted from the 'Plano Clima', 'Plano Plurianual Participativo' and 'Congresso da Juventude' processes. (...) Aplicação de Indexação Automática com ML das propostas publicadas no Brasil Participativo.",
+  "rol_IA": "This methodology enables governments to transform large volumes of citizen input into actionable data for public policy. (...) The methodology encompasses (...) (iii) topic modeling, merging unsupervised discovery and semi-supervised refinement by seed topics; and (iv) external validation, comparing clusters to VCGE via agreement metrics and LLM qualitative analysis."
+ },
+ "fuentes": [
+  {
+   "url": "https://arxiv.org/abs/2511.01545",
+   "estado": "403",
+   "cita": "'From Pre-labeling to Production: Engineering Lessons from a Machine Learning Pipeline in the Public Sector' (Ronivaldo Ferreira, Guilherme da Silva, Carla Rocha, Gustavo Pinto; 03/11/2025). 'The Brasil Participativo (BP) platform was launched in 2023 by the General Secretariat of the Presidency of the Republic to enable citizens to directly contribute to the creation, monitoring, and improvement of public policies. Over its first two years of operation, the platform registered approximately 1.6 million users and over 42,000 text-based proposals submitted by citizens.' 'Common engineering choices like using LLMs for pre-labeling, splitting models into routed classifiers, and generating synthetic data can speed development but also introduce new traceability, reliability, and cost risks if not paired with disciplined data governance and human validation.' (HTTP 403 a WebFetch en abs/html/pdf; contenido recuperado de forma convergente vía WebSearch sobre la misma URL de arXiv)."
   },
-  "fuentes": [
-    {
-      "url": "https://arxiv.org/abs/2511.01545",
-      "estado": "403",
-      "cita": "'From Pre-labeling to Production: Engineering Lessons from a Machine Learning Pipeline in the Public Sector' (Ronivaldo Ferreira, Guilherme da Silva, Carla Rocha, Gustavo Pinto; 03/11/2025). 'The Brasil Participativo (BP) platform was launched in 2023 by the General Secretariat of the Presidency of the Republic to enable citizens to directly contribute to the creation, monitoring, and improvement of public policies. Over its first two years of operation, the platform registered approximately 1.6 million users and over 42,000 text-based proposals submitted by citizens.' 'Common engineering choices like using LLMs for pre-labeling, splitting models into routed classifiers, and generating synthetic data can speed development but also introduce new traceability, reliability, and cost risks if not paired with disciplined data governance and human validation.' (HTTP 403 a WebFetch en abs/html/pdf; contenido recuperado de forma convergente vía WebSearch sobre la misma URL de arXiv)."
-    },
-    {
-      "url": "https://arxiv.org/abs/2509.21292",
-      "estado": "403",
-      "cita": "'Semantic Clustering of Civic Proposals: A Case Study on Brazil's National Participation Platform' (Ferreira, da Silva, Rocha, Pinto; v1 25/09/2025, v2 06/10/2025). 'A topic modeling pipeline for classifying public proposals submitted to Brasil Participativo was proposed and evaluated by combining BERTopic with four different embeddings (...) and institutional knowledge incorporated through seed words extracted from VCGE.' 'The methodology encompasses four stages: (i) data extraction and preprocessing; (ii) internal validation and hyperparameter adjustment; (iii) topic modeling, merging unsupervised discovery and semi-supervised refinement by seed topics; and (iv) external validation, comparing clusters to VCGE via agreement metrics and LLM qualitative analysis. 10,186 proposals were extracted from the Plano Clima, Plano Plurianual Participativo and Congresso da Juventude processes.' 'The use of LLMs for automatic labeling proved effective in reducing manual validation effort.' (HTTP 403 a WebFetch en abs/html/pdf; contenido recuperado vía WebSearch)."
-    },
-    {
-      "url": "https://github.com/ResidenciaTICBrisa/BP-Classificador-de-Propostas",
-      "estado": "OK",
-      "cita": "Repositorio 'BP-Classificador-de-Propostas: Aplicação de Indexação Automática com ML das propostas publicadas no Brasil Participativo'. README: 'Brasil Participativo é a nova plataforma digital do governo federal (...) um espaço para que a população possa contribuir com a criação e melhoria das políticas públicas.' 'a plataforma não possui indexação ou processamento de linguagem natural para categorizar de forma automatizada as propostas.' 'A ideia da proposta é fazer análise das propostas por meio de processamento de linguagem natural (PLN).' 'O Apache [Airflow] e responsavel pela atualização e o treinamento diario do modelo em conjunto com os dados da plataforma do Brasil Participativo.' 'Por fim esta disponibilizado a gem em Ruby e o repositorio da mesma para utilização do modelo dentro de plataformas web afim de ser integrado a plataforma do Brasil Participativo.' 'Mentores: Laila, Secretaria de Participação Social.' (WebFetch OK; tecnología scikit-learn / NumPy / Pandas / NLTK / Apache Airflow)."
-    },
-    {
-      "url": "https://www.gov.br/secretariageral/pt-br/noticias/2024/dezembro/secretaria-geral-da-presidencia-formaliza-parceria-com-plataforma-decidim",
-      "estado": "403",
-      "cita": "Nota oficial: 'Secretaria-Geral da Presidência formaliza parceria com plataforma Decidim'. Confirma que la Secretaria-Geral da Presidência da República es responsable de Brasil Participativo, construido sobre el software libre Decidim, en alianza con la comunidad Decidim y desarrollo vinculado a UnB. (HTTP 403 a WebFetch; titular y contenido vía WebSearch sobre gov.br/secretariageral)."
-    },
-    {
-      "url": "https://www.gov.br/secretariageral/pt-br/noticias/2025/novembro/brasil-participativo-integra-comite-internacional-de-democracia-digital",
-      "estado": "403",
-      "cita": "Nota oficial (noviembre 2025): 'Brasil Participativo integra comitê internacional de democracia digital'. Evidencia de continuidad institucional y actividad de la plataforma en 2025 bajo la Secretaria-Geral da Presidência. (HTTP 403 a WebFetch; titular vía WebSearch)."
-    },
-    {
-      "url": "https://www.gov.br/secretariageral/pt-br/ppa-participativo/ppa-participativo-saiba-mais/relatorio-da-plataforma-brasil-participativo",
-      "estado": "403",
-      "cita": "'Relatório da Plataforma Brasil Participativo' (Secretaria-Geral). Documenta el proceso PPA Participativo en la plataforma (~1,4 millones de accesos y >8.000 propuestas en el PPA 2024-2027; propuestas priorizadas consolidadas en reporte y enviadas a análisis ministerial), confirmando que se trata de un proceso participativo federal real con aportes ciudadanos estructurados. (HTTP 403 a WebFetch; contenido vía WebSearch)."
-    },
-    {
-      "url": "https://noticias.unb.br/117-pesquisa/6549-unb-desenvolve-plataforma-que-ajuda-populacao-a-indicar-prioridades-para-o-governo-federal",
-      "estado": "no-encontrado",
-      "cita": "UnB Notícias: 'UnB desenvolve plataforma que ajuda população a indicar prioridades para o governo federal'. Confirma el rol de la Universidade de Brasília (LAPPIS/FGA) en el desarrollo de Brasil Participativo en alianza con el gobierno federal. (No se recuperó el cuerpo completo; titular/atribución vía WebSearch)."
-    },
-    {
-      "url": "https://www.researchgate.net/publication/395848414_Semantic_Clustering_of_Civic_Proposals_A_Case_Study_on_Brazil's_National_Participation_Platform",
-      "estado": "403",
-      "cita": "Espejo del paper 2509.21292 en ResearchGate (mismos autores y abstract). 'On digital participation platforms like BP, VCGE maps citizen proposals into consensual institutional language, reducing ambiguities and inconsistencies, enabling precise references in reports, transparency portals, and policy management systems.' (HTTP 403 a WebFetch; contenido vía WebSearch)."
-    }
-  ],
-  "gaps": [
-    {
-      "campo": "nivel_consolidacion / usa_IA_en_proceso (despliegue en producción oficial)",
-      "motivo": "DUDA CENTRAL no resuelta del todo: no se halló una fuente GUBERNAMENTAL que confirme que el pipeline de clustering semántico (BERTopic+LLM) o el clasificador ML estén integrados y operando EN PRODUCCIÓN en Brasil Participativo, generando reportes oficiales de forma rutinaria. La evidencia es académica (papers UnB/LAPPIS, 'case study' / 'From Pre-labeling to Production') y un repositorio de residencia cuyo modelo se describe 'afim de ser integrado' (intención). Por eso nivel_consolidacion=2 (uso sobre datos reales de ≥3 procesos) y no 3.",
-      "url_para_buscar": "https://www.gov.br/secretariageral/pt-br/brasil-participativo"
-    },
-    {
-      "campo": "evidencia_actividad_2026",
-      "motivo": "No se encontró evidencia específica fechada en 2026 (la documentación del componente de IA es de sep-nov 2025 y la actividad institucional confirmada llega a noviembre de 2025). No se confirmó si en 2026 el pipeline procesó nuevas consultas.",
-      "url_para_buscar": "https://brasilparticipativo.presidencia.gov.br/processes"
-    },
-    {
-      "campo": "ano_inicio (del componente de IA)",
-      "motivo": "ano_inicio=2023 corresponde al lanzamiento de la plataforma. El pipeline de IA (BERTopic+LLM) se documenta públicamente en 2025; no se halló la fecha exacta de inicio del desarrollo del componente de IA (probablemente 2024-2025, vinculado a la Residência TIC BRISA y a la investigación de LAPPIS).",
-      "url_para_buscar": "https://brisa.lappis.rocks/project/"
-    },
-    {
-      "campo": "usa_LLM_generativa (detalle del modelo)",
-      "motivo": "Los papers confirman uso de LLMs para etiquetado/validación automática de tópicos y 'pre-labeling', pero no se obtuvo el nombre/proveedor exacto del LLM generativo empleado (de ahí la cita textual confirma el uso, no el modelo concreto).",
-      "url_para_buscar": "https://arxiv.org/pdf/2511.01545"
-    }
-  ],
-  "alertas": [
-    "ELEGIBILIDAD (duda central): el caso ENTRA por rol de CONTENIDO (la IA agrupa/clasifica/etiqueta por temas las propuestas ciudadanas reales de procesos participativos federales: PPA Participativo, Plano Clima, Congresso da Juventude). La duda no es sobre el rol de la IA sino sobre el DESPLIEGUE EN PRODUCCIÓN OFICIAL, que no está confirmado por fuentes gubernamentales: la evidencia es académica (papers arXiv 2509.21292 y 2511.01545, UnB/LAPPIS) + repositorio de residencia (BRISA) con modelo 'afim de ser integrado a plataforma'. Por eso entra=SI pero nivel_consolidacion=2 (no 3) y confianza=MEDIA.",
-    "FUENTES: arXiv (abs/html/pdf), ResearchGate y los portales gov.br devolvieron HTTP 403 a WebFetch; sus contenidos y citas se recuperaron de forma convergente vía WebSearch (varias consultas sobre las mismas URLs). Solo el README de GitHub (ResidenciaTICBrisa) se recuperó directamente vía WebFetch (estado OK). Las citas verbatim de las fuentes 403 son transcripciones del texto devuelto por WebSearch, no de la página renderizada.",
-    "DESARROLLADOR: el componente de IA es de Academia (Universidade de Brasília - LAPPIS/FGA + Residência TIC BRISA) con vínculo de Gobierno (Secretaria de Participação Social como mentora; la plataforma es de la Secretaria-Geral da Presidência). Origen Nacional (Brasil). El convocante del proceso participativo es gobierno nacional.",
-    "ACTUALIZACIÓN respecto a la pasada conciliada previa (BAJA, fuente única GitHub): esta corrida CONFIRMA con fuentes adicionales el pipeline BERTopic + LLM (no solo NLP clásico scikit-learn), los tres procesos federales (Plano Clima, PPA Participativo, Congresso da Juventude), las 10.186 propuestas analizadas, el VCGE, el convocante (Secretaria-Geral da Presidência) y el desarrollador (UnB/LAPPIS + BRISA). Por ello se eleva usa_LLM_generativa a 'sí', tipo_desarrollador_IA a [Academia, Gobierno] y la confianza a MEDIA.",
-    "ALCANCE: existen al menos dos artefactos de IA relacionados pero distintos: (a) el pipeline de clustering semántico BERTopic+LLM (papers, foco de este caso) y (b) el clasificador supervisado ML BP-Classificador-de-Propostas (scikit-learn/Airflow, GitHub). Ambos operan sobre las propuestas de Brasil Participativo y comparten autores/laboratorio; se documentan juntos en esta ficha por pertenecer al mismo esfuerzo de indexación/clasificación de aportes."
-  ]
+  {
+   "url": "https://arxiv.org/abs/2509.21292",
+   "estado": "403",
+   "cita": "'Semantic Clustering of Civic Proposals: A Case Study on Brazil's National Participation Platform' (Ferreira, da Silva, Rocha, Pinto; v1 25/09/2025, v2 06/10/2025). 'A topic modeling pipeline for classifying public proposals submitted to Brasil Participativo was proposed and evaluated by combining BERTopic with four different embeddings (...) and institutional knowledge incorporated through seed words extracted from VCGE.' 'The methodology encompasses four stages: (i) data extraction and preprocessing; (ii) internal validation and hyperparameter adjustment; (iii) topic modeling, merging unsupervised discovery and semi-supervised refinement by seed topics; and (iv) external validation, comparing clusters to VCGE via agreement metrics and LLM qualitative analysis. 10,186 proposals were extracted from the Plano Clima, Plano Plurianual Participativo and Congresso da Juventude processes.' 'The use of LLMs for automatic labeling proved effective in reducing manual validation effort.' (HTTP 403 a WebFetch en abs/html/pdf; contenido recuperado vía WebSearch)."
+  },
+  {
+   "url": "https://github.com/ResidenciaTICBrisa/BP-Classificador-de-Propostas",
+   "estado": "OK",
+   "cita": "Repositorio 'BP-Classificador-de-Propostas: Aplicação de Indexação Automática com ML das propostas publicadas no Brasil Participativo'. README: 'Brasil Participativo é a nova plataforma digital do governo federal (...) um espaço para que a população possa contribuir com a criação e melhoria das políticas públicas.' 'a plataforma não possui indexação ou processamento de linguagem natural para categorizar de forma automatizada as propostas.' 'A ideia da proposta é fazer análise das propostas por meio de processamento de linguagem natural (PLN).' 'O Apache [Airflow] e responsavel pela atualização e o treinamento diario do modelo em conjunto com os dados da plataforma do Brasil Participativo.' 'Por fim esta disponibilizado a gem em Ruby e o repositorio da mesma para utilização do modelo dentro de plataformas web afim de ser integrado a plataforma do Brasil Participativo.' 'Mentores: Laila, Secretaria de Participação Social.' (WebFetch OK; tecnología scikit-learn / NumPy / Pandas / NLTK / Apache Airflow)."
+  },
+  {
+   "url": "https://www.gov.br/secretariageral/pt-br/noticias/2024/dezembro/secretaria-geral-da-presidencia-formaliza-parceria-com-plataforma-decidim",
+   "estado": "403",
+   "cita": "Nota oficial: 'Secretaria-Geral da Presidência formaliza parceria com plataforma Decidim'. Confirma que la Secretaria-Geral da Presidência da República es responsable de Brasil Participativo, construido sobre el software libre Decidim, en alianza con la comunidad Decidim y desarrollo vinculado a UnB. (HTTP 403 a WebFetch; titular y contenido vía WebSearch sobre gov.br/secretariageral)."
+  },
+  {
+   "url": "https://www.gov.br/secretariageral/pt-br/noticias/2025/novembro/brasil-participativo-integra-comite-internacional-de-democracia-digital",
+   "estado": "403",
+   "cita": "Nota oficial (noviembre 2025): 'Brasil Participativo integra comitê internacional de democracia digital'. Evidencia de continuidad institucional y actividad de la plataforma en 2025 bajo la Secretaria-Geral da Presidência. (HTTP 403 a WebFetch; titular vía WebSearch)."
+  },
+  {
+   "url": "https://www.gov.br/secretariageral/pt-br/ppa-participativo/ppa-participativo-saiba-mais/relatorio-da-plataforma-brasil-participativo",
+   "estado": "403",
+   "cita": "'Relatório da Plataforma Brasil Participativo' (Secretaria-Geral). Documenta el proceso PPA Participativo en la plataforma (~1,4 millones de accesos y >8.000 propuestas en el PPA 2024-2027; propuestas priorizadas consolidadas en reporte y enviadas a análisis ministerial), confirmando que se trata de un proceso participativo federal real con aportes ciudadanos estructurados. (HTTP 403 a WebFetch; contenido vía WebSearch)."
+  },
+  {
+   "url": "https://noticias.unb.br/117-pesquisa/6549-unb-desenvolve-plataforma-que-ajuda-populacao-a-indicar-prioridades-para-o-governo-federal",
+   "estado": "no-encontrado",
+   "cita": "UnB Notícias: 'UnB desenvolve plataforma que ajuda população a indicar prioridades para o governo federal'. Confirma el rol de la Universidade de Brasília (LAPPIS/FGA) en el desarrollo de Brasil Participativo en alianza con el gobierno federal. (No se recuperó el cuerpo completo; titular/atribución vía WebSearch)."
+  },
+  {
+   "url": "https://www.researchgate.net/publication/395848414_Semantic_Clustering_of_Civic_Proposals_A_Case_Study_on_Brazil's_National_Participation_Platform",
+   "estado": "403",
+   "cita": "Espejo del paper 2509.21292 en ResearchGate (mismos autores y abstract). 'On digital participation platforms like BP, VCGE maps citizen proposals into consensual institutional language, reducing ambiguities and inconsistencies, enabling precise references in reports, transparency portals, and policy management systems.' (HTTP 403 a WebFetch; contenido vía WebSearch)."
+  }
+ ],
+ "gaps": [
+  {
+   "campo": "nivel_consolidacion / usa_IA_en_proceso (despliegue en producción oficial)",
+   "motivo": "DUDA CENTRAL no resuelta del todo: no se halló una fuente GUBERNAMENTAL que confirme que el pipeline de clustering semántico (BERTopic+LLM) o el clasificador ML estén integrados y operando EN PRODUCCIÓN en Brasil Participativo, generando reportes oficiales de forma rutinaria. La evidencia es académica (papers UnB/LAPPIS, 'case study' / 'From Pre-labeling to Production') y un repositorio de residencia cuyo modelo se describe 'afim de ser integrado' (intención). Por eso nivel_consolidacion=2 (uso sobre datos reales de ≥3 procesos) y no 3.",
+   "url_para_buscar": "https://www.gov.br/secretariageral/pt-br/brasil-participativo"
+  },
+  {
+   "campo": "evidencia_actividad_2026",
+   "motivo": "No se encontró evidencia específica fechada en 2026 (la documentación del componente de IA es de sep-nov 2025 y la actividad institucional confirmada llega a noviembre de 2025). No se confirmó si en 2026 el pipeline procesó nuevas consultas.",
+   "url_para_buscar": "https://brasilparticipativo.presidencia.gov.br/processes"
+  },
+  {
+   "campo": "ano_inicio (del componente de IA)",
+   "motivo": "ano_inicio=2023 corresponde al lanzamiento de la plataforma. El pipeline de IA (BERTopic+LLM) se documenta públicamente en 2025; no se halló la fecha exacta de inicio del desarrollo del componente de IA (probablemente 2024-2025, vinculado a la Residência TIC BRISA y a la investigación de LAPPIS).",
+   "url_para_buscar": "https://brisa.lappis.rocks/project/"
+  },
+  {
+   "campo": "usa_LLM_generativa (detalle del modelo)",
+   "motivo": "Los papers confirman uso de LLMs para etiquetado/validación automática de tópicos y 'pre-labeling', pero no se obtuvo el nombre/proveedor exacto del LLM generativo empleado (de ahí la cita textual confirma el uso, no el modelo concreto).",
+   "url_para_buscar": "https://arxiv.org/pdf/2511.01545"
+  }
+ ],
+ "alertas": [
+  "ELEGIBILIDAD (duda central): el caso ENTRA por rol de CONTENIDO (la IA agrupa/clasifica/etiqueta por temas las propuestas ciudadanas reales de procesos participativos federales: PPA Participativo, Plano Clima, Congresso da Juventude). La duda no es sobre el rol de la IA sino sobre el DESPLIEGUE EN PRODUCCIÓN OFICIAL, que no está confirmado por fuentes gubernamentales: la evidencia es académica (papers arXiv 2509.21292 y 2511.01545, UnB/LAPPIS) + repositorio de residencia (BRISA) con modelo 'afim de ser integrado a plataforma'. Por eso entra=SI pero nivel_consolidacion=2 (no 3) y confianza=MEDIA.",
+  "FUENTES: arXiv (abs/html/pdf), ResearchGate y los portales gov.br devolvieron HTTP 403 a WebFetch; sus contenidos y citas se recuperaron de forma convergente vía WebSearch (varias consultas sobre las mismas URLs). Solo el README de GitHub (ResidenciaTICBrisa) se recuperó directamente vía WebFetch (estado OK). Las citas verbatim de las fuentes 403 son transcripciones del texto devuelto por WebSearch, no de la página renderizada.",
+  "DESARROLLADOR: el componente de IA es de Academia (Universidade de Brasília - LAPPIS/FGA + Residência TIC BRISA) con vínculo de Gobierno (Secretaria de Participação Social como mentora; la plataforma es de la Secretaria-Geral da Presidência). Origen Nacional (Brasil). El convocante del proceso participativo es gobierno nacional.",
+  "ACTUALIZACIÓN respecto a la pasada conciliada previa (BAJA, fuente única GitHub): esta corrida CONFIRMA con fuentes adicionales el pipeline BERTopic + LLM (no solo NLP clásico scikit-learn), los tres procesos federales (Plano Clima, PPA Participativo, Congresso da Juventude), las 10.186 propuestas analizadas, el VCGE, el convocante (Secretaria-Geral da Presidência) y el desarrollador (UnB/LAPPIS + BRISA). Por ello se eleva usa_LLM_generativa a 'sí', tipo_desarrollador_IA a [Academia, Gobierno] y la confianza a MEDIA.",
+  "ALCANCE: existen al menos dos artefactos de IA relacionados pero distintos: (a) el pipeline de clustering semántico BERTopic+LLM (papers, foco de este caso) y (b) el clasificador supervisado ML BP-Classificador-de-Propostas (scikit-learn/Airflow, GitHub). Ambos operan sobre las propuestas de Brasil Participativo y comparten autores/laboratorio; se documentan juntos en esta ficha por pertenecer al mismo esfuerzo de indexación/clasificación de aportes."
+ ],
+ "veredicto_equipo": "SI",
+ "comentario_equipo": "Jose: HAy que validar que no esté duplicada.\nNicole: Más allá del paper no me sale mucha más info. \nNatalia: igual, no encontré mucho más que el paper",
+ "divergencia_equipo": false
 }

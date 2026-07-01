@@ -101,5 +101,8 @@
   "Convocante/desarrollador = universidad (USP / EACH / Co:Lab / GETIP), no gobierno; reduce elegibilidad como caso de proceso participativo con IA desplegada.",
   "Limitación de evidencia: las 3 fuentes primarias (blog Co:Lab, Jornal da USP, Policy Brief PDF) devolvieron HTTP 403 vía WebFetch (bloqueo del proxy); las citas se obtuvieron de snippets de búsqueda y no son citas textuales completas verificadas del cuerpo. Confianza limitada a MEDIA.",
   "El ejemplo concreto (IA ayuda a redactar propuesta de 'rede de ciclovias na zona leste') describe el rol de la IA sobre el CONTENIDO del aporte; si en el futuro se confirma despliegue real en el proceso participativo, el caso podría reclasificarse a entra=SI."
- ]
+ ],
+ "veredicto_equipo": "SI",
+ "comentario_equipo": "",
+ "divergencia_equipo": true
 }

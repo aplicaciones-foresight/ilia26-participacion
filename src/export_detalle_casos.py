@@ -91,9 +91,12 @@ MAIN_COLS = [
     ("caso_id",                lambda d: d.get("caso_id","")),
     ("País",                   lambda d: d.get("pais") or ""),
     ("Caso",                   lambda d: d.get("nombre_caso") or ""),
-    ("¿ENTRA? (tentativo)",    lambda d: d.get("entra_tentativo") or ""),
+    ("¿ENTRA? (EQUIPO)",       lambda d: d.get("veredicto_equipo") or ("—" if d.get("bloque") == "5-excluido-2025" else "(sin revisar)")),
+    ("¿ENTRA? (evidencia)",    lambda d: d.get("entra_tentativo") or ""),
+    ("Divergencia",            lambda d: "DIVERGE" if d.get("divergencia_equipo") else ""),
     ("Confianza",              lambda d: d.get("confianza") or ""),
     ("Justificación elegibilidad", lambda d: d.get("justificacion_elegibilidad") or ""),
+    ("Comentario equipo",      lambda d: d.get("comentario_equipo") or ""),
     ("Proceso participativo",  lambda d: d.get("proceso_participativo") or ""),
     ("Año inicio",             lambda d: j(d.get("ano_inicio"))),
     ("Año cierre",             lambda d: j(d.get("ano_cierre"))),
@@ -134,7 +137,8 @@ def style_header(ws, ncols, fill=AZUL, font=WHITE_BOLD, height=34):
 
 
 WIDTHS = {
-    "Bloque":16,"caso_id":30,"País":6,"Caso":30,"¿ENTRA? (tentativo)":12,"Confianza":26,
+    "Bloque":16,"caso_id":30,"País":6,"Caso":30,"¿ENTRA? (EQUIPO)":15,"¿ENTRA? (evidencia)":16,
+    "Divergencia":11,"Confianza":24,"Comentario equipo":42,
     "Justificación elegibilidad":40,"Proceso participativo":40,"Año inicio":9,"Año cierre":9,
     "Estado actividad":13,"Evidencia actividad 2026":40,"Organización a cargo":32,
     "Tipo convocante (7-cat)":24,"Tipo organización":16,"Tipo de proceso":26,"Etapas uso IA":26,
@@ -160,11 +164,16 @@ def write_detail_sheet(wb, title, fichas, cols, index=None):
     for r in range(2, ws.max_row + 1):
         for c in range(1, ncols + 1):
             ws.cell(row=r, column=c).alignment = WRAP; ws.cell(row=r, column=c).border = BORDER
-        ev = ws.cell(row=r, column=ci["¿ENTRA? (tentativo)"]); ev.alignment = CENTER
-        val = str(ev.value).upper()
-        if val.startswith("SI"): ev.fill = VERDE
-        elif val.startswith("NO"): ev.fill = ROJO
-        elif val.startswith("DUDA"): ev.fill = AMBAR
+        for _h in ("¿ENTRA? (EQUIPO)", "¿ENTRA? (evidencia)"):
+            if _h in ci:
+                ec = ws.cell(row=r, column=ci[_h]); ec.alignment = CENTER
+                _v = str(ec.value).upper()
+                if _v.startswith("SI"): ec.fill = VERDE
+                elif _v.startswith("NO"): ec.fill = ROJO
+                elif _v.startswith("DUDA"): ec.fill = AMBAR
+        if "Divergencia" in ci:
+            dc = ws.cell(row=r, column=ci["Divergencia"]); dc.alignment = CENTER
+            if dc.value: dc.fill = AMBAR
         cf = ws.cell(row=r, column=ci["Confianza"]); u = str(cf.value).upper()
         if u.startswith("BAJA"): cf.fill = ROJO
         elif u.startswith("MEDIA"): cf.fill = AMBARH
@@ -178,8 +187,9 @@ def write_detail_sheet(wb, title, fichas, cols, index=None):
     return ws
 
 
-def _entra_bucket(d):
-    return str(d.get("entra_tentativo", "")).upper()
+def _official(d):
+    """Veredicto oficial = validación manual del equipo si existe; si no, el mío."""
+    return str(d.get("veredicto_equipo") or d.get("entra_tentativo") or "").upper()
 
 
 def main():
@@ -190,13 +200,42 @@ def main():
     # 'Entran + Dudosos' (SI/SI*/DUDA) y 'Excluidos' (NO) al frente, para
     # cálculo y revisión; 'Detalle casos' mantiene el inventario completo (99).
     ENTRAN_COLS = [c for c in MAIN_COLS if c[0] != "Motivo exclusión 2025"]
-    entran = [d for d in fichas if _entra_bucket(d).startswith(("SI", "DUDA"))]
-    excluidos = [d for d in fichas if _entra_bucket(d).startswith("NO")]
+    entran = [d for d in fichas if _official(d).startswith(("SI", "DUDA"))]
+    excluidos = [d for d in fichas if _official(d).startswith("NO")]
     default = wb.active  # hoja vacía por defecto
     write_detail_sheet(wb, "Entran + Dudosos", entran, ENTRAN_COLS, index=0)
     write_detail_sheet(wb, "Excluidos", excluidos, MAIN_COLS, index=1)
     write_detail_sheet(wb, "Detalle casos", fichas, MAIN_COLS, index=2)
     wb.remove(default)
+
+    # ---------- Hoja: Divergencias (equipo vs evidencia) ----------
+    ws_dv = wb.create_sheet("Divergencias", 3)
+    ws_dv.append(["caso_id", "País", "Caso", "Bloque", "¿ENTRA? equipo",
+                  "¿ENTRA? evidencia", "Comentario equipo",
+                  "Mi evidencia (resumen)", "URLs para verificar"])
+    for d in fichas:
+        if not d.get("divergencia_equipo"):
+            continue
+        u = urls_busqueda_manual(d) or [s.get("url", "") for s in (d.get("fuentes") or []) if s.get("url")]
+        ws_dv.append([d.get("caso_id", ""), d.get("pais") or "", d.get("nombre_caso") or "",
+                      BLOQUE_LABEL.get(d.get("bloque", ""), d.get("bloque", "")),
+                      d.get("veredicto_equipo") or "", d.get("entra_tentativo") or "",
+                      d.get("comentario_equipo") or "",
+                      (d.get("justificacion_elegibilidad") or "")[:500],
+                      "\n".join(u[:3])])
+    style_header(ws_dv, 9)
+    for i, w in enumerate([30, 6, 32, 20, 14, 16, 40, 60, 40], 1):
+        ws_dv.column_dimensions[get_column_letter(i)].width = w
+    for r in range(2, ws_dv.max_row + 1):
+        for c in range(1, 10):
+            ws_dv.cell(row=r, column=c).alignment = WRAP
+            ws_dv.cell(row=r, column=c).border = BORDER
+        for hcol in (5, 6):
+            ec = ws_dv.cell(row=r, column=hcol); ec.alignment = CENTER
+            v = str(ec.value).upper()
+            if v.startswith("SI"): ec.fill = VERDE
+            elif v.startswith("NO"): ec.fill = ROJO
+            elif v.startswith("DUDA"): ec.fill = AMBAR
 
     # ---------- Hoja 2: Evidencia verbatim ----------
     ws2 = wb.create_sheet("Evidencia (verbatim)")

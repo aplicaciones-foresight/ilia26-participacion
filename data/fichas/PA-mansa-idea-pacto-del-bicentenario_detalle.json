@@ -1,106 +1,120 @@
 {
-  "caso_id": "PA-mansa-idea-pacto-del-bicentenario",
-  "pais": "PA",
-  "nombre_caso": "Mansa Idea (Pacto del Bicentenario \"Cerremos la Brecha\", Panamá)",
-  "bloque": "1-nuevo",
-  "proceso_participativo": "Mansa Idea (www.mansaidea.com) es una plataforma digital basada en inteligencia artificial lanzada el 1 de abril de 2024 por la Fundación Panamá Participa (sociedad civil), liderada por Paulina Franceschi. La plataforma organiza y hace navegables más de 175.000 ideas y propuestas ciudadanas generadas durante el Pacto del Bicentenario 'Cerrando Brechas' (proceso participativo nacional convocado por el gobierno de Panamá / Concertación Nacional, presidente Cortizo, 2020-2021), agregando los consensos nacionales y regionales/provinciales por tema en un solo clic. La IA se aplica sobre el CONTENIDO de los aportes ciudadanos (organiza, agrega y sintetiza el corpus de propuestas) para convertirlo en una base de datos navegable. El uso de la IA es un tratamiento PUNTERAL (~2024) de un corpus histórico de un proceso participativo ya cerrado (el Pacto fue 2020-2021), orientado a elevar el nivel de la conversación electoral 2024 y a dotar a candidatos, medios y ciudadanía de una herramienta para alinear planes con las necesidades de la población y monitorear el mandato ciudadano. IMPORTANTE: el proceso participativo original (recolección de aportes) fue convocado por el gobierno; la capa de IA (Mansa Idea) la desarrolla la sociedad civil sobre ese corpus ya recolectado.",
-  "ano_inicio": 2024,
-  "ano_cierre": null,
-  "estado_actividad": "desconocido",
-  "evidencia_actividad_2026": null,
-  "organizacion_a_cargo": "Fundación Panamá Participa (sociedad civil, Panamá), iniciativa liderada por Paulina Franceschi. El proceso participativo de origen (Pacto del Bicentenario 'Cerrando Brechas') fue convocado por el Gobierno de Panamá a través del mecanismo de Concertación Nacional para el Desarrollo (presidente Laurentino Cortizo), con apoyo del PNUD.",
-  "tipo_convocante": ["sociedad civil", "gobierno nacional"],
-  "tipo_organizacion": "Privado",
-  "tipo_proceso": ["Participación Digital", "Gobernanza Colaborativa"],
-  "etapas_uso_IA": ["Análisis", "Traducción Política"],
-  "continuidad": "Plataforma",
-  "nivel_consolidacion": 2,
-  "sistema_IA": "Mansa Idea (www.mansaidea.com): plataforma digital descrita por sus impulsores como 'basada en inteligencia artificial' que organiza, agrega y hace navegables las propuestas del Pacto del Bicentenario, presentando consensos nacionales y provinciales por tema. La tecnología de IA concreta (familia de modelos, si usa clustering/NLP/embeddings o LLM) NO está identificada explícitamente en las fuentes públicas halladas.",
-  "tipos_IA_familia": [],
-  "usa_LLM_generativa": "no-claro",
-  "funcion_IA": "Según las fuentes, la IA permite acceder de forma fácil y expedita a más de 175.000 propuestas ciudadanas y 'recoge en un solo clic los consensos nacionales y regionales/provinciales', constituyendo una base de datos navegable de proyectos. Es decir, la IA agrega, organiza y sintetiza el contenido de los aportes ciudadanos del Pacto del Bicentenario para hacerlos consultables por tema y por territorio. No se especifica el método técnico (clasificación/clustering/búsqueda semántica/generación).",
-  "rol_IA": "contenido",
-  "usa_IA_en_proceso": "sí",
-  "tipo_desarrollador_IA": ["Sociedad Civil"],
-  "origen_desarrollador": "Nacional",
-  "entra_tentativo": "SI",
-  "justificacion_elegibilidad": "ENTRA. (1) Existe un PROCESO PARTICIPATIVO formal y convocado: el Pacto del Bicentenario 'Cerrando Brechas' (Panamá Propone), una concertación nacional convocada por el gobierno (presidente Cortizo) que recolectó 186.182 propuestas de 212.573 ciudadanos en su primera fase (cerrada feb-2021), de las cuales 172.922 pasaron a comisiones organizadas en 12 temas. (2) La IA se aplica sobre el CONTENIDO de esos aportes: Mansa Idea es descrita consistentemente por múltiples fuentes como una plataforma 'basada en inteligencia artificial' que organiza, agrega y hace navegables las 175.000+ propuestas, recogiendo 'en un solo clic los consensos nacionales y regionales/provinciales'. Agregar/agrupar/sintetizar propuestas ciudadanas por tema y territorio es precisamente un rol de IA sobre el contenido de los aportes (rol_IA='contenido'). Por tanto entra_tentativo=SI. MATICES que motivan registrar la temporalidad y el convocante con cuidado (no rebajan la elegibilidad): (a) la IA opera sobre un corpus HISTÓRICO de un proceso ya cerrado (2020-2021) en un tratamiento puntual (~2024), no en una consulta abierta en tiempo real; (b) el convocante del proceso participativo original es el GOBIERNO NACIONAL, mientras que el desarrollo de la capa de IA (Mansa Idea) es de la SOCIEDAD CIVIL (Fundación Panamá Participa, empresa/ONG). Ambos se registran en tipo_convocante. No es 'IA solo logística' ni social listening: la IA procesa los aportes estructurados de un proceso participativo convocado.",
-  "confianza": "ALTA",
-  "evidencia_verbatim": {
-    "pais": "La Fundación Panamá Participa lanzó Mansa Idea (www.mansaidea.com), una plataforma basada en inteligencia artificial que recoge miles de propuestas ciudadanas... iniciativa de alcance nacional que se nutre de ideas y propuestas que miles de panameños hicieron durante el desarrollo del Pacto del Bicentenario. (Panamá; fuentes panama24horas.com.pa y laestrella.com.pa)",
-    "tipo_proceso": "Mansa Idea, resultado del Pacto del Bicentenario, ofrece acceso fácil y transparente a más de 175 mil ideas y propuestas generadas por ciudadanos de todo el país. La herramienta digital recoge en un solo clic los consensos nacionales y regionales/provinciales, constituyendo una poderosa base de datos de proyectos con información transparente, 100% confiable y de calidad generada por la ciudadanía.",
-    "etapas_uso_IA": "Mansa Idea es una plataforma innovadora basada en inteligencia artificial cuyo contenido refleja una inteligencia colectiva que busca construir, a través de miles de propuestas, un mejor futuro para todos. La herramienta digital recoge en un solo clic los consensos nacionales y regionales/provinciales. (la IA agrega/organiza/sintetiza el contenido de las propuestas por tema y territorio = Análisis + Traducción Política; el método técnico exacto no se detalla en las fuentes).",
-    "estado_actividad": null,
-    "nivel_consolidacion": "La plataforma fue lanzada el 1 de abril de 2024... constituye una herramienta valiosa de participación ciudadana muy relevante para ciudadanos, candidatos a cargos de elección popular y medios durante la campaña electoral y luego como recurso para el monitoreo del mandato ciudadano. (un despliegue concreto de la plataforma, 2024; sin evidencia de ediciones recurrentes).",
-    "tipo_convocante": "La Fundación Panamá Participa lanzó Mansa Idea... iniciativa liderada por Paulina Franceschi a través de la Fundación Panamá Participa (sociedad civil). El proceso participativo de origen: 'El 26 de noviembre de 2020, el presidente Laurentino Cortizo Cohen lanzó la iniciativa denominada Pacto del Bicentenario Cerrando Brechas' (gobierno nacional / Concertación Nacional).",
-    "usa_IA_en_proceso": "Mansa Idea es una plataforma innovadora basada en inteligencia artificial cuyo contenido refleja una inteligencia colectiva que busca construir, a través de miles de propuestas, un mejor futuro para todos. (la IA procesa el contenido de las propuestas del proceso participativo).",
-    "rol_IA": "La herramienta digital recoge en un solo clic los consensos nacionales y regionales/provinciales, constituyendo una poderosa base de datos de proyectos con información transparente, 100% confiable y de calidad generada por la ciudadanía. (agregación/síntesis de los aportes ciudadanos = rol sobre el contenido)."
+ "caso_id": "PA-mansa-idea-pacto-del-bicentenario",
+ "pais": "PA",
+ "nombre_caso": "Mansa Idea (Pacto del Bicentenario \"Cerremos la Brecha\", Panamá)",
+ "bloque": "1-nuevo",
+ "proceso_participativo": "Mansa Idea (www.mansaidea.com) es una plataforma digital basada en inteligencia artificial lanzada el 1 de abril de 2024 por la Fundación Panamá Participa (sociedad civil), liderada por Paulina Franceschi. La plataforma organiza y hace navegables más de 175.000 ideas y propuestas ciudadanas generadas durante el Pacto del Bicentenario 'Cerrando Brechas' (proceso participativo nacional convocado por el gobierno de Panamá / Concertación Nacional, presidente Cortizo, 2020-2021), agregando los consensos nacionales y regionales/provinciales por tema en un solo clic. La IA se aplica sobre el CONTENIDO de los aportes ciudadanos (organiza, agrega y sintetiza el corpus de propuestas) para convertirlo en una base de datos navegable. El uso de la IA es un tratamiento PUNTERAL (~2024) de un corpus histórico de un proceso participativo ya cerrado (el Pacto fue 2020-2021), orientado a elevar el nivel de la conversación electoral 2024 y a dotar a candidatos, medios y ciudadanía de una herramienta para alinear planes con las necesidades de la población y monitorear el mandato ciudadano. IMPORTANTE: el proceso participativo original (recolección de aportes) fue convocado por el gobierno; la capa de IA (Mansa Idea) la desarrolla la sociedad civil sobre ese corpus ya recolectado.",
+ "ano_inicio": 2024,
+ "ano_cierre": null,
+ "estado_actividad": "desconocido",
+ "evidencia_actividad_2026": null,
+ "organizacion_a_cargo": "Fundación Panamá Participa (sociedad civil, Panamá), iniciativa liderada por Paulina Franceschi. El proceso participativo de origen (Pacto del Bicentenario 'Cerrando Brechas') fue convocado por el Gobierno de Panamá a través del mecanismo de Concertación Nacional para el Desarrollo (presidente Laurentino Cortizo), con apoyo del PNUD.",
+ "tipo_convocante": [
+  "sociedad civil",
+  "gobierno nacional"
+ ],
+ "tipo_organizacion": "Privado",
+ "tipo_proceso": [
+  "Participación Digital",
+  "Gobernanza Colaborativa"
+ ],
+ "etapas_uso_IA": [
+  "Análisis",
+  "Traducción Política"
+ ],
+ "continuidad": "Plataforma",
+ "nivel_consolidacion": 2,
+ "sistema_IA": "Mansa Idea (www.mansaidea.com): plataforma digital descrita por sus impulsores como 'basada en inteligencia artificial' que organiza, agrega y hace navegables las propuestas del Pacto del Bicentenario, presentando consensos nacionales y provinciales por tema. La tecnología de IA concreta (familia de modelos, si usa clustering/NLP/embeddings o LLM) NO está identificada explícitamente en las fuentes públicas halladas.",
+ "tipos_IA_familia": [],
+ "usa_LLM_generativa": "no-claro",
+ "funcion_IA": "Según las fuentes, la IA permite acceder de forma fácil y expedita a más de 175.000 propuestas ciudadanas y 'recoge en un solo clic los consensos nacionales y regionales/provinciales', constituyendo una base de datos navegable de proyectos. Es decir, la IA agrega, organiza y sintetiza el contenido de los aportes ciudadanos del Pacto del Bicentenario para hacerlos consultables por tema y por territorio. No se especifica el método técnico (clasificación/clustering/búsqueda semántica/generación).",
+ "rol_IA": "contenido",
+ "usa_IA_en_proceso": "sí",
+ "tipo_desarrollador_IA": [
+  "Sociedad Civil"
+ ],
+ "origen_desarrollador": "Nacional",
+ "entra_tentativo": "SI",
+ "justificacion_elegibilidad": "ENTRA. (1) Existe un PROCESO PARTICIPATIVO formal y convocado: el Pacto del Bicentenario 'Cerrando Brechas' (Panamá Propone), una concertación nacional convocada por el gobierno (presidente Cortizo) que recolectó 186.182 propuestas de 212.573 ciudadanos en su primera fase (cerrada feb-2021), de las cuales 172.922 pasaron a comisiones organizadas en 12 temas. (2) La IA se aplica sobre el CONTENIDO de esos aportes: Mansa Idea es descrita consistentemente por múltiples fuentes como una plataforma 'basada en inteligencia artificial' que organiza, agrega y hace navegables las 175.000+ propuestas, recogiendo 'en un solo clic los consensos nacionales y regionales/provinciales'. Agregar/agrupar/sintetizar propuestas ciudadanas por tema y territorio es precisamente un rol de IA sobre el contenido de los aportes (rol_IA='contenido'). Por tanto entra_tentativo=SI. MATICES que motivan registrar la temporalidad y el convocante con cuidado (no rebajan la elegibilidad): (a) la IA opera sobre un corpus HISTÓRICO de un proceso ya cerrado (2020-2021) en un tratamiento puntual (~2024), no en una consulta abierta en tiempo real; (b) el convocante del proceso participativo original es el GOBIERNO NACIONAL, mientras que el desarrollo de la capa de IA (Mansa Idea) es de la SOCIEDAD CIVIL (Fundación Panamá Participa, empresa/ONG). Ambos se registran en tipo_convocante. No es 'IA solo logística' ni social listening: la IA procesa los aportes estructurados de un proceso participativo convocado.",
+ "confianza": "ALTA",
+ "evidencia_verbatim": {
+  "pais": "La Fundación Panamá Participa lanzó Mansa Idea (www.mansaidea.com), una plataforma basada en inteligencia artificial que recoge miles de propuestas ciudadanas... iniciativa de alcance nacional que se nutre de ideas y propuestas que miles de panameños hicieron durante el desarrollo del Pacto del Bicentenario. (Panamá; fuentes panama24horas.com.pa y laestrella.com.pa)",
+  "tipo_proceso": "Mansa Idea, resultado del Pacto del Bicentenario, ofrece acceso fácil y transparente a más de 175 mil ideas y propuestas generadas por ciudadanos de todo el país. La herramienta digital recoge en un solo clic los consensos nacionales y regionales/provinciales, constituyendo una poderosa base de datos de proyectos con información transparente, 100% confiable y de calidad generada por la ciudadanía.",
+  "etapas_uso_IA": "Mansa Idea es una plataforma innovadora basada en inteligencia artificial cuyo contenido refleja una inteligencia colectiva que busca construir, a través de miles de propuestas, un mejor futuro para todos. La herramienta digital recoge en un solo clic los consensos nacionales y regionales/provinciales. (la IA agrega/organiza/sintetiza el contenido de las propuestas por tema y territorio = Análisis + Traducción Política; el método técnico exacto no se detalla en las fuentes).",
+  "estado_actividad": null,
+  "nivel_consolidacion": "La plataforma fue lanzada el 1 de abril de 2024... constituye una herramienta valiosa de participación ciudadana muy relevante para ciudadanos, candidatos a cargos de elección popular y medios durante la campaña electoral y luego como recurso para el monitoreo del mandato ciudadano. (un despliegue concreto de la plataforma, 2024; sin evidencia de ediciones recurrentes).",
+  "tipo_convocante": "La Fundación Panamá Participa lanzó Mansa Idea... iniciativa liderada por Paulina Franceschi a través de la Fundación Panamá Participa (sociedad civil). El proceso participativo de origen: 'El 26 de noviembre de 2020, el presidente Laurentino Cortizo Cohen lanzó la iniciativa denominada Pacto del Bicentenario Cerrando Brechas' (gobierno nacional / Concertación Nacional).",
+  "usa_IA_en_proceso": "Mansa Idea es una plataforma innovadora basada en inteligencia artificial cuyo contenido refleja una inteligencia colectiva que busca construir, a través de miles de propuestas, un mejor futuro para todos. (la IA procesa el contenido de las propuestas del proceso participativo).",
+  "rol_IA": "La herramienta digital recoge en un solo clic los consensos nacionales y regionales/provinciales, constituyendo una poderosa base de datos de proyectos con información transparente, 100% confiable y de calidad generada por la ciudadanía. (agregación/síntesis de los aportes ciudadanos = rol sobre el contenido)."
+ },
+ "fuentes": [
+  {
+   "url": "https://www.panama24horas.com.pa/panama/fundacion-panama-participa-lanza-plataforma-de-propuestas-ciudadanas-mansa-idea/",
+   "estado": "403",
+   "cita": "La Fundación Panamá Participa lanzó la plataforma digital Mansa Idea (www.mansaidea.com), basada en inteligencia artificial. Mansa Idea, resultado del Pacto del Bicentenario, ofrece acceso fácil y transparente a más de 175 mil ideas y propuestas generadas por ciudadanos de todo el país. Paulina Franceschi, líder del proyecto, destaca la capacidad de la plataforma de recoger consensos y aportes ciudadanos mediante inteligencia artificial, ofreciendo información confiable y de calidad para la toma de decisiones. La plataforma fue lanzada el 1 de abril de 2024. (HTTP 403 a WebFetch; contenido y citas recuperados de forma convergente vía WebSearch sobre esta URL)."
   },
-  "fuentes": [
-    {
-      "url": "https://www.panama24horas.com.pa/panama/fundacion-panama-participa-lanza-plataforma-de-propuestas-ciudadanas-mansa-idea/",
-      "estado": "403",
-      "cita": "La Fundación Panamá Participa lanzó la plataforma digital Mansa Idea (www.mansaidea.com), basada en inteligencia artificial. Mansa Idea, resultado del Pacto del Bicentenario, ofrece acceso fácil y transparente a más de 175 mil ideas y propuestas generadas por ciudadanos de todo el país. Paulina Franceschi, líder del proyecto, destaca la capacidad de la plataforma de recoger consensos y aportes ciudadanos mediante inteligencia artificial, ofreciendo información confiable y de calidad para la toma de decisiones. La plataforma fue lanzada el 1 de abril de 2024. (HTTP 403 a WebFetch; contenido y citas recuperados de forma convergente vía WebSearch sobre esta URL)."
-    },
-    {
-      "url": "https://www.laestrella.com.pa/panama/politica/mansa-idea-una-herramienta-digital-con-propuestas-para-candidatos-YD6746221",
-      "estado": "403",
-      "cita": "Mansa Idea es una herramienta digital liderada por Paulina Franceschi a través de la Fundación Panamá Participa que recoge consensos nacionales, regionales y provinciales en un solo clic, constituyendo una poderosa base de datos de proyectos con información transparente, 100% confiable y de calidad generada por la ciudadanía. La plataforma contiene 170.000-175.000 propuestas para el desarrollo de proyectos públicos en el gobierno central y local; la herramienta usa inteligencia artificial para recoger los consensos y aportes ciudadanos. La Fundación sostuvo reuniones con equipos de campaña de candidatos presidenciales, medios, y en alianza con el Tribunal Electoral, con candidatos independientes a gobierno local en la región central (90 participantes) y occidental (200). Alianzas con Espacio Cívico, Celap y Sal de las Redes. (HTTP 403 a WebFetch; contenido vía WebSearch)."
-    },
-    {
-      "url": "https://mansaidea.com/",
-      "estado": "403",
-      "cita": "Sitio oficial de la plataforma. Devuelve HTTP 403 a WebFetch; no se pudo extraer el contenido directo del sitio (descripción técnica de la IA, metodología, equipo). Las fuentes de prensa lo describen como plataforma 'basada en inteligencia artificial' con 175.000+ propuestas del Pacto del Bicentenario."
-    },
-    {
-      "url": "https://www.undp.org/es/panama/publicaciones/resultados-del-pacto-del-bicentenario-cerrando-brechas",
-      "estado": "403",
-      "cita": "Resultados del Pacto del Bicentenario 'Cerrando Brechas' (PNUD Panamá). El proceso fue lanzado el 26 de noviembre de 2020 por el presidente Cortizo; la primera fase 'Panamá Propone' cerró el 28 de febrero de 2021 con 186.182 propuestas y 212.573 ciudadanos participantes; tras un proceso de clasificación técnico-científico, 172.922 propuestas pasaron a comisiones regionales y nacionales organizadas en 12 temas. Proceso participativo nacional convocado por el gobierno, previsto hasta noviembre de 2021 (bicentenario). (HTTP 403 a WebFetch; contenido vía WebSearch; URL del informe nacional: https://www.undp.org/sites/g/files/zskgke326/files/migration/pa/UNDP-PA-Pacto-Bicentenario-Informe-Nacional.pdf)."
-    },
-    {
-      "url": "https://www.concertacion.org.pa/Lanzamiento-del-Pacto-del-Bicentenario-Cerrando-Brechas-",
-      "estado": "no-verificado",
-      "cita": "Página de la Concertación Nacional para el Desarrollo (Panamá) sobre el lanzamiento del Pacto del Bicentenario 'Cerrando Brechas'. Confirma el carácter de convocatoria gubernamental/Concertación Nacional del proceso participativo de origen. (No fetcheada directamente; identificada vía WebSearch)."
-    },
-    {
-      "url": "https://www.idea.int/es/news/panama-es-centro-de-debate-sobre-ia-y-democracia",
-      "estado": "no-verificado",
-      "cita": "IDEA Internacional: 'Panamá es centro de debate sobre IA y democracia' (2025). Contexto de IA y democracia en Panamá; no detalla la tecnología concreta de Mansa Idea pero ubica el ecosistema PA de IA aplicada a participación. (Identificada vía WebSearch)."
-    }
-  ],
-  "gaps": [
-    {
-      "campo": "sistema_IA / tipos_IA_familia / usa_LLM_generativa / funcion_IA (método técnico)",
-      "motivo": "DUDA CENTRAL no resuelta: la TECNOLOGÍA de IA concreta de Mansa Idea no está identificada. Las fuentes de prensa la describen genéricamente como 'plataforma basada en inteligencia artificial' que organiza/agrega propuestas y recoge consensos, pero no especifican si usa clustering/NLP/embeddings/búsqueda semántica o un LLM generativo, ni el proveedor/modelo. Por eso tipos_IA_familia=[] y usa_LLM_generativa='no-claro'. El sitio oficial mansaidea.com devuelve 403.",
-      "url_para_buscar": "https://mansaidea.com/ (intentar archive.org / cache); buscar 'Mansa Idea metodología inteligencia artificial procesamiento propuestas' y entrevistas técnicas a Paulina Franceschi / Fundación Panamá Participa."
-    },
-    {
-      "campo": "estado_actividad / evidencia_actividad_2026",
-      "motivo": "No hay evidencia de actividad, actualización o nuevas ediciones de Mansa Idea en 2026. La plataforma se documenta como despliegue de 2024 (campaña electoral). No se confirmó si sigue operativa/actualizada ni si el corpus se ha ampliado tras 2024.",
-      "url_para_buscar": "https://mansaidea.com/ ; buscar 'Mansa Idea 2025' / 'Mansa Idea 2026' / 'Fundación Panamá Participa actividad reciente'."
-    },
-    {
-      "campo": "nivel_consolidacion",
-      "motivo": "Se documenta un uso puntual de la IA sobre un corpus histórico (lanzamiento 2024) sin evidencia de ≥2 ediciones recurrentes del tratamiento con IA; se asigna nivel 2. La plataforma se mantiene en línea (continuidad='Plataforma') pero sin prueba de recurrencia del proceso participativo subyacente.",
-      "url_para_buscar": "https://mansaidea.com/ ; buscar evidencia de actualizaciones periódicas del corpus o nuevas convocatorias."
-    },
-    {
-      "campo": "tipo_convocante (atribución)",
-      "motivo": "Existe ambigüedad estructural: el PROCESO participativo (recolección de aportes) fue convocado por el GOBIERNO NACIONAL (Concertación/Cortizo, 2020-2021); la CAPA DE IA (Mansa Idea) la desarrolla y opera la SOCIEDAD CIVIL (Fundación Panamá Participa, 2024). Se registran ambos. La señal previa preguntaba cuál determina la atribución; al ser el agente que aplica la IA quien define el caso ILIA, se prioriza 'sociedad civil', conservando 'gobierno nacional' por el proceso de origen.",
-      "url_para_buscar": "https://www.panama24horas.com.pa/panama/fundacion-panama-participa-lanza-plataforma-de-propuestas-ciudadanas-mansa-idea/"
-    },
-    {
-      "campo": "naturaleza jurídica Fundación Panamá Participa (empresa vs ONG)",
-      "motivo": "Se identifica como 'Fundación' (organización de sociedad civil sin fines de lucro), liderada por Paulina Franceschi; la señal previa contemplaba 'empresa/sociedad civil'. La evidencia apunta a fundación/sociedad civil. tipo_organizacion se marca 'Privado' (no estatal); no se confirmó si hubo financiamiento público o de cooperación internacional para Mansa Idea.",
-      "url_para_buscar": "buscar 'Fundación Panamá Participa quiénes somos financiamiento' y registro de la fundación."
-    }
-  ],
-  "alertas": [
-    "TEMPORALIDAD (aclaración solicitada): el PROCESO participativo de origen (Pacto del Bicentenario 'Cerrando Brechas' / Panamá Propone) fue 2020-2021 (lanzado nov-2020 por Cortizo; fase de propuestas cerrada feb-2021 con 186.182 propuestas / 212.573 participantes; 172.922 clasificadas en 12 temas). La capa de IA (Mansa Idea) es un tratamiento PUNTUAL de ese corpus histórico, lanzada el 1-abr-2024 para la campaña electoral 2024. ano_inicio se fija en 2024 (año en que se despliega la IA), no en 2020. El proceso participativo subyacente NO está activo; la plataforma con IA sí está/estuvo en línea.",
-    "CONVOCANTE (duda resuelta): doble atribución registrada. Gobierno nacional convoca el proceso participativo (recolección); sociedad civil (Fundación Panamá Participa) desarrolla y opera la IA. tipo_organizacion='Privado' por el agente que aplica la IA; tipo_desarrollador_IA=['Sociedad Civil'], origen 'Nacional' (Panamá).",
-    "TECNOLOGÍA DE IA NO IDENTIFICADA (duda central abierta): ninguna fuente pública hallada detalla el método técnico de IA de Mansa Idea (clustering/NLP/embeddings/búsqueda semántica/LLM). Se confirma POR DESCRIPCIÓN que la IA actúa sobre el CONTENIDO de los aportes (agrega/organiza/hace navegables 175.000+ propuestas y recoge consensos nacionales y provinciales), suficiente para rol_IA='contenido' y entra_tentativo=SI, pero tipos_IA_familia=[] y usa_LLM_generativa='no-claro' por falta de detalle. El sitio oficial mansaidea.com devuelve 403 a WebFetch.",
-    "FUENTES: el sitio oficial (mansaidea.com) y los medios panameños (panama24horas.com.pa, laestrella.com.pa) y PNUD devuelven HTTP 403 a WebFetch; el contenido y las citas se recuperaron de forma convergente y consistente mediante WebSearch (múltiples consultas sobre las mismas URLs). Las citas verbatim son reconstrucciones del texto devuelto por WebSearch, no transcripción directa de la página renderizada. Aun así, la convergencia de ≥2 fuentes independientes de prensa + datos oficiales del PNUD sobre el Pacto sustenta confianza ALTA en los hechos centrales (qué es, quién, cuándo, qué hace la IA).",
-    "CIFRA DE PROPUESTAS: las fuentes oscilan entre '170.000' y 'más de 175.000' propuestas en Mansa Idea; el dato oficial del Pacto registra 186.182 propuestas recibidas y 172.922 clasificadas tras filtro técnico. La discrepancia se debe a si se cuenta el total recibido, el clasificado o el publicado en la plataforma.",
-    "NOMBRE: el título exacto del proceso es 'Pacto del Bicentenario, Cerrando Brechas' (gerundio); el caso_id usa 'Cerremos la Brecha'. Es la misma iniciativa; se conserva el nombre_caso del encargo."
-  ]
+  {
+   "url": "https://www.laestrella.com.pa/panama/politica/mansa-idea-una-herramienta-digital-con-propuestas-para-candidatos-YD6746221",
+   "estado": "403",
+   "cita": "Mansa Idea es una herramienta digital liderada por Paulina Franceschi a través de la Fundación Panamá Participa que recoge consensos nacionales, regionales y provinciales en un solo clic, constituyendo una poderosa base de datos de proyectos con información transparente, 100% confiable y de calidad generada por la ciudadanía. La plataforma contiene 170.000-175.000 propuestas para el desarrollo de proyectos públicos en el gobierno central y local; la herramienta usa inteligencia artificial para recoger los consensos y aportes ciudadanos. La Fundación sostuvo reuniones con equipos de campaña de candidatos presidenciales, medios, y en alianza con el Tribunal Electoral, con candidatos independientes a gobierno local en la región central (90 participantes) y occidental (200). Alianzas con Espacio Cívico, Celap y Sal de las Redes. (HTTP 403 a WebFetch; contenido vía WebSearch)."
+  },
+  {
+   "url": "https://mansaidea.com/",
+   "estado": "403",
+   "cita": "Sitio oficial de la plataforma. Devuelve HTTP 403 a WebFetch; no se pudo extraer el contenido directo del sitio (descripción técnica de la IA, metodología, equipo). Las fuentes de prensa lo describen como plataforma 'basada en inteligencia artificial' con 175.000+ propuestas del Pacto del Bicentenario."
+  },
+  {
+   "url": "https://www.undp.org/es/panama/publicaciones/resultados-del-pacto-del-bicentenario-cerrando-brechas",
+   "estado": "403",
+   "cita": "Resultados del Pacto del Bicentenario 'Cerrando Brechas' (PNUD Panamá). El proceso fue lanzado el 26 de noviembre de 2020 por el presidente Cortizo; la primera fase 'Panamá Propone' cerró el 28 de febrero de 2021 con 186.182 propuestas y 212.573 ciudadanos participantes; tras un proceso de clasificación técnico-científico, 172.922 propuestas pasaron a comisiones regionales y nacionales organizadas en 12 temas. Proceso participativo nacional convocado por el gobierno, previsto hasta noviembre de 2021 (bicentenario). (HTTP 403 a WebFetch; contenido vía WebSearch; URL del informe nacional: https://www.undp.org/sites/g/files/zskgke326/files/migration/pa/UNDP-PA-Pacto-Bicentenario-Informe-Nacional.pdf)."
+  },
+  {
+   "url": "https://www.concertacion.org.pa/Lanzamiento-del-Pacto-del-Bicentenario-Cerrando-Brechas-",
+   "estado": "no-verificado",
+   "cita": "Página de la Concertación Nacional para el Desarrollo (Panamá) sobre el lanzamiento del Pacto del Bicentenario 'Cerrando Brechas'. Confirma el carácter de convocatoria gubernamental/Concertación Nacional del proceso participativo de origen. (No fetcheada directamente; identificada vía WebSearch)."
+  },
+  {
+   "url": "https://www.idea.int/es/news/panama-es-centro-de-debate-sobre-ia-y-democracia",
+   "estado": "no-verificado",
+   "cita": "IDEA Internacional: 'Panamá es centro de debate sobre IA y democracia' (2025). Contexto de IA y democracia en Panamá; no detalla la tecnología concreta de Mansa Idea pero ubica el ecosistema PA de IA aplicada a participación. (Identificada vía WebSearch)."
+  }
+ ],
+ "gaps": [
+  {
+   "campo": "sistema_IA / tipos_IA_familia / usa_LLM_generativa / funcion_IA (método técnico)",
+   "motivo": "DUDA CENTRAL no resuelta: la TECNOLOGÍA de IA concreta de Mansa Idea no está identificada. Las fuentes de prensa la describen genéricamente como 'plataforma basada en inteligencia artificial' que organiza/agrega propuestas y recoge consensos, pero no especifican si usa clustering/NLP/embeddings/búsqueda semántica o un LLM generativo, ni el proveedor/modelo. Por eso tipos_IA_familia=[] y usa_LLM_generativa='no-claro'. El sitio oficial mansaidea.com devuelve 403.",
+   "url_para_buscar": "https://mansaidea.com/ (intentar archive.org / cache); buscar 'Mansa Idea metodología inteligencia artificial procesamiento propuestas' y entrevistas técnicas a Paulina Franceschi / Fundación Panamá Participa."
+  },
+  {
+   "campo": "estado_actividad / evidencia_actividad_2026",
+   "motivo": "No hay evidencia de actividad, actualización o nuevas ediciones de Mansa Idea en 2026. La plataforma se documenta como despliegue de 2024 (campaña electoral). No se confirmó si sigue operativa/actualizada ni si el corpus se ha ampliado tras 2024.",
+   "url_para_buscar": "https://mansaidea.com/ ; buscar 'Mansa Idea 2025' / 'Mansa Idea 2026' / 'Fundación Panamá Participa actividad reciente'."
+  },
+  {
+   "campo": "nivel_consolidacion",
+   "motivo": "Se documenta un uso puntual de la IA sobre un corpus histórico (lanzamiento 2024) sin evidencia de ≥2 ediciones recurrentes del tratamiento con IA; se asigna nivel 2. La plataforma se mantiene en línea (continuidad='Plataforma') pero sin prueba de recurrencia del proceso participativo subyacente.",
+   "url_para_buscar": "https://mansaidea.com/ ; buscar evidencia de actualizaciones periódicas del corpus o nuevas convocatorias."
+  },
+  {
+   "campo": "tipo_convocante (atribución)",
+   "motivo": "Existe ambigüedad estructural: el PROCESO participativo (recolección de aportes) fue convocado por el GOBIERNO NACIONAL (Concertación/Cortizo, 2020-2021); la CAPA DE IA (Mansa Idea) la desarrolla y opera la SOCIEDAD CIVIL (Fundación Panamá Participa, 2024). Se registran ambos. La señal previa preguntaba cuál determina la atribución; al ser el agente que aplica la IA quien define el caso ILIA, se prioriza 'sociedad civil', conservando 'gobierno nacional' por el proceso de origen.",
+   "url_para_buscar": "https://www.panama24horas.com.pa/panama/fundacion-panama-participa-lanza-plataforma-de-propuestas-ciudadanas-mansa-idea/"
+  },
+  {
+   "campo": "naturaleza jurídica Fundación Panamá Participa (empresa vs ONG)",
+   "motivo": "Se identifica como 'Fundación' (organización de sociedad civil sin fines de lucro), liderada por Paulina Franceschi; la señal previa contemplaba 'empresa/sociedad civil'. La evidencia apunta a fundación/sociedad civil. tipo_organizacion se marca 'Privado' (no estatal); no se confirmó si hubo financiamiento público o de cooperación internacional para Mansa Idea.",
+   "url_para_buscar": "buscar 'Fundación Panamá Participa quiénes somos financiamiento' y registro de la fundación."
+  }
+ ],
+ "alertas": [
+  "TEMPORALIDAD (aclaración solicitada): el PROCESO participativo de origen (Pacto del Bicentenario 'Cerrando Brechas' / Panamá Propone) fue 2020-2021 (lanzado nov-2020 por Cortizo; fase de propuestas cerrada feb-2021 con 186.182 propuestas / 212.573 participantes; 172.922 clasificadas en 12 temas). La capa de IA (Mansa Idea) es un tratamiento PUNTUAL de ese corpus histórico, lanzada el 1-abr-2024 para la campaña electoral 2024. ano_inicio se fija en 2024 (año en que se despliega la IA), no en 2020. El proceso participativo subyacente NO está activo; la plataforma con IA sí está/estuvo en línea.",
+  "CONVOCANTE (duda resuelta): doble atribución registrada. Gobierno nacional convoca el proceso participativo (recolección); sociedad civil (Fundación Panamá Participa) desarrolla y opera la IA. tipo_organizacion='Privado' por el agente que aplica la IA; tipo_desarrollador_IA=['Sociedad Civil'], origen 'Nacional' (Panamá).",
+  "TECNOLOGÍA DE IA NO IDENTIFICADA (duda central abierta): ninguna fuente pública hallada detalla el método técnico de IA de Mansa Idea (clustering/NLP/embeddings/búsqueda semántica/LLM). Se confirma POR DESCRIPCIÓN que la IA actúa sobre el CONTENIDO de los aportes (agrega/organiza/hace navegables 175.000+ propuestas y recoge consensos nacionales y provinciales), suficiente para rol_IA='contenido' y entra_tentativo=SI, pero tipos_IA_familia=[] y usa_LLM_generativa='no-claro' por falta de detalle. El sitio oficial mansaidea.com devuelve 403 a WebFetch.",
+  "FUENTES: el sitio oficial (mansaidea.com) y los medios panameños (panama24horas.com.pa, laestrella.com.pa) y PNUD devuelven HTTP 403 a WebFetch; el contenido y las citas se recuperaron de forma convergente y consistente mediante WebSearch (múltiples consultas sobre las mismas URLs). Las citas verbatim son reconstrucciones del texto devuelto por WebSearch, no transcripción directa de la página renderizada. Aun así, la convergencia de ≥2 fuentes independientes de prensa + datos oficiales del PNUD sobre el Pacto sustenta confianza ALTA en los hechos centrales (qué es, quién, cuándo, qué hace la IA).",
+  "CIFRA DE PROPUESTAS: las fuentes oscilan entre '170.000' y 'más de 175.000' propuestas en Mansa Idea; el dato oficial del Pacto registra 186.182 propuestas recibidas y 172.922 clasificadas tras filtro técnico. La discrepancia se debe a si se cuenta el total recibido, el clasificado o el publicado en la plataforma.",
+  "NOMBRE: el título exacto del proceso es 'Pacto del Bicentenario, Cerrando Brechas' (gerundio); el caso_id usa 'Cerremos la Brecha'. Es la misma iniciativa; se conserva el nombre_caso del encargo."
+ ],
+ "veredicto_equipo": "SI",
+ "comentario_equipo": "",
+ "divergencia_equipo": false
 }

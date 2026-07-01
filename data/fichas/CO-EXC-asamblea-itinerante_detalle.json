@@ -93,5 +93,8 @@
   "Posible confusion entre dos procesos distintos: (1) 'Asamblea Ciudadana Itinerante del Concejo de Bogota' (Concejo via DemoLab, 2020/2021/2023) y (2) 'Asambleas Deliberativas #SumemosVoces' (Alcaldia/Secretaria Distrital de Planeacion, 2024-2027). No deben fusionarse.",
   "La relacion entre el caso y la IA es solo tematica (ambos tocan el POT). El estudio 'Factibilidad de IA... caso del POT' es investigacion academica de aceptacion de una herramienta PROPUESTA, no un sistema de IA operando dentro de la Asamblea.",
   "Todas las fuentes primarias devolvieron 403 a WebFetch; la verificacion se apoyo en snippets de WebSearch. Confianza limitada a MEDIA por ausencia de verbatim directo del HTML fuente."
- ]
+ ],
+ "veredicto_equipo": "NO",
+ "comentario_equipo": "",
+ "divergencia_equipo": false
 }

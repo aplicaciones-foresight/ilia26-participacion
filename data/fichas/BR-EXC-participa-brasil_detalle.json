@@ -50,5 +50,8 @@
   "No re-extraído en 2026; incluido para inventario completo / validación CENIA."
  ],
  "fuente_datos": "excluido_2025_bbdd",
- "motivo_exclusion_2025": "No se identifica uso de IA"
+ "motivo_exclusion_2025": "No se identifica uso de IA",
+ "veredicto_equipo": null,
+ "comentario_equipo": "",
+ "divergencia_equipo": false
 }

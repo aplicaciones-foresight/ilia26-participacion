@@ -1,100 +1,112 @@
 {
-  "caso_id": "CO-EXC-ilabs",
-  "pais": "CO",
-  "nombre_caso": "iLabs - Laboratorios de Inteligencia Colectiva (Ideemos)",
-  "bloque": "3-excluido-revisar",
-  "proceso_participativo": "Metodología/mecanismo de Ideemos (Laboratorio de Innovación Democrática, Bogotá, Colombia) que integra 'procesamiento de datos y participación ciudadana' para resolver problemas públicos o privados bien definidos. Para COMPRENDER el problema combina técnicas cuantitativas y cualitativas (encuestas, entrevistas en profundidad, analítica de datos, Inteligencia Artificial, Machine Learning, revisión documental, observación participante). Para la DELIBERACIÓN convoca mini-públicos: asambleas ciudadanas, jurados ciudadanos y conferencias de consenso. A los participantes se les presentan 'mediciones objetivas' y escenarios de futuro y se les invita a dialogar para construir soluciones. La IA/ML aparece como técnica de diagnóstico/insumo de contexto, NO como herramienta que procese, sistematice o codifique el CONTENIDO de los aportes deliberativos de la ciudadanía. El caso aplicado documentado de mini-públicos asociado a Ideemos es la Asamblea Ciudadana Itinerante del Concejo de Bogotá (vía DemoLab), donde tampoco se halló evidencia de IA aplicada al contenido de los aportes.",
-  "ano_inicio": 2021,
-  "ano_cierre": null,
-  "estado_actividad": "desconocido",
-  "evidencia_actividad_2026": null,
-  "organizacion_a_cargo": "Ideemos - Laboratorio de Innovación Democrática S.A.S. (Bogotá, Colombia). Co-dirige el Laboratorio de Innovación Democrática (nodo de la Augmented Democracy Network). En su aplicación de mini-públicos opera como aliado de DemoLab (Concejo de Bogotá).",
-  "tipo_convocante": ["sociedad civil"],
-  "tipo_organizacion": "Privado",
-  "tipo_proceso": ["Mini públicos"],
-  "etapas_uso_IA": ["Planificación", "Análisis"],
-  "continuidad": "Plataforma",
-  "nivel_consolidacion": 1,
-  "sistema_IA": "No hay un sistema de IA específico, nombrado ni descrito técnicamente. Ideemos menciona genéricamente 'Inteligencia Artificial' y 'Machine Learning' dentro de un listado de técnicas de comprensión del problema (junto a encuestas, entrevistas, analítica de datos, revisión documental y observación participante). No se describe arquitectura, modelo, herramienta ni proveedor.",
-  "tipos_IA_familia": [],
-  "usa_LLM_generativa": "no-claro",
-  "funcion_IA": "Según la descripción de Ideemos, la IA y el Machine Learning forman parte de las 'mejores técnicas cuantitativas y cualitativas' para la adecuada COMPRENSIÓN de un problema público o privado, junto con encuestas, entrevistas en profundidad, analítica de datos, revisión documental y observación participante. Su producto son 'mediciones objetivas' y escenarios de futuro que luego se presentan a la ciudadanía para iniciar el diálogo. No se documenta que la IA procese, transcriba, agrupe, sintetice ni codifique el contenido de las opiniones/aportes que la ciudadanía produce DENTRO del proceso deliberativo (mini-públicos). Es decir, la IA se ubica como insumo de diagnóstico previo, no como motor de análisis del contenido participativo.",
-  "rol_IA": "no-claro",
-  "usa_IA_en_proceso": "no-claro",
-  "tipo_desarrollador_IA": ["Sociedad Civil"],
-  "origen_desarrollador": "Nacional",
-  "entra_tentativo": "NO",
-  "justificacion_elegibilidad": "MANTENER EXCLUIDO. La regla de reingreso exige evidencia de IA aplicada al CONTENIDO de los aportes ciudadanos dentro de un proceso participativo. La fuente primaria (página iLabs de Ideemos y su PDF) describe 'Inteligencia Artificial' y 'Machine Learning' SOLO como parte de un listado de técnicas cuantitativas/cualitativas para COMPRENDER el problema (al lado de encuestas, entrevistas, revisión documental, observación participante), separadas explícitamente de las técnicas de diálogo/deliberación (mini-públicos, asambleas, jurados, conferencias de consenso). El uso de IA aparece como diagnóstico/insumo de contexto que produce 'mediciones objetivas' presentadas a la gente, NO como procesamiento del contenido de los aportes deliberativos. No se halló ninguna fuente que documente que la IA sistematice, codifique, agrupe o analice las intervenciones de los participantes en un mini-público concreto. En el caso aplicado real asociado a Ideemos (Asamblea Ciudadana Itinerante del Concejo de Bogotá, vía DemoLab, 3 capítulos 2020-2023) la deliberación se describe por 'método espiral' y comisiones temáticas, sin mención de IA sobre los aportes. Por tanto la 'IA' funciona como metodología/marketing de diagnóstico sin procesamiento real del contenido participativo: NO entra (coincide con el motivo de exclusión 2025: 'No se encontró información sobre el uso de la IA en la implementación de los Mini Publics'). No se eleva a DUDA porque la única mención de IA es genérica y de etapa de diagnóstico, sin indicio concreto de procesamiento de contenido deliberativo.",
-  "confianza": "MEDIA",
-  "evidencia_verbatim": {
-    "pais": "Ideemos - Laboratorio de Innovación Democrática (Bogotá, Colombia); 'Ideemos Laboratorio De Innovacion Democratica S A S en BOGOTA' (Directorio de empresas, Colombia). Co-dirige el Laboratorio de Innovación Democrática en Colombia, nodo de la Augmented Democracy Network (Barcelona, Eslovenia, Nueva York, Bogotá, Buenos Aires).",
-    "tipo_proceso": "Las mejores técnicas de diálogo para invitar a la ciudadanía a ayudar a encontrar la mejor solución a un problema incluyen mini-publics, asambleas ciudadanas, jurados ciudadanos y conferencias de consenso.",
-    "etapas_uso_IA": "Las técnicas utilizadas [para la adecuada comprensión de un problema público o privado] incluyen encuestas, entrevistas en profundidad, analítica de datos, Inteligencia Artificial, Machine Learning, revisión documental, observación participante, entre otros.",
-    "estado_actividad": null,
-    "nivel_consolidacion": "Los Laboratorios de Inteligencia Colectiva son un nuevo mecanismo que integra el procesamiento de datos y la participación ciudadana para la solución de problemas públicos y privados. [Los iLabs] no están pensados para ser estructuras permanentes y pesadas; están diseñados para resolver un problema público o privado bien definido.",
-    "tipo_convocante": "Los iLabs pueden ser usados tanto en el sector público como en el privado y están específicamente dirigidos a resolver problemas complejos que requieren una perspectiva informada y ciudadana. [Ideemos: organización colombiana de investigación y consultoría que presta servicios al sector público, empresas y ONG en innovación pública y democrática.]",
-    "usa_IA_en_proceso": null,
-    "rol_IA": null
+ "caso_id": "CO-EXC-ilabs",
+ "pais": "CO",
+ "nombre_caso": "iLabs - Laboratorios de Inteligencia Colectiva (Ideemos)",
+ "bloque": "3-excluido-revisar",
+ "proceso_participativo": "Metodología/mecanismo de Ideemos (Laboratorio de Innovación Democrática, Bogotá, Colombia) que integra 'procesamiento de datos y participación ciudadana' para resolver problemas públicos o privados bien definidos. Para COMPRENDER el problema combina técnicas cuantitativas y cualitativas (encuestas, entrevistas en profundidad, analítica de datos, Inteligencia Artificial, Machine Learning, revisión documental, observación participante). Para la DELIBERACIÓN convoca mini-públicos: asambleas ciudadanas, jurados ciudadanos y conferencias de consenso. A los participantes se les presentan 'mediciones objetivas' y escenarios de futuro y se les invita a dialogar para construir soluciones. La IA/ML aparece como técnica de diagnóstico/insumo de contexto, NO como herramienta que procese, sistematice o codifique el CONTENIDO de los aportes deliberativos de la ciudadanía. El caso aplicado documentado de mini-públicos asociado a Ideemos es la Asamblea Ciudadana Itinerante del Concejo de Bogotá (vía DemoLab), donde tampoco se halló evidencia de IA aplicada al contenido de los aportes.",
+ "ano_inicio": 2021,
+ "ano_cierre": null,
+ "estado_actividad": "desconocido",
+ "evidencia_actividad_2026": null,
+ "organizacion_a_cargo": "Ideemos - Laboratorio de Innovación Democrática S.A.S. (Bogotá, Colombia). Co-dirige el Laboratorio de Innovación Democrática (nodo de la Augmented Democracy Network). En su aplicación de mini-públicos opera como aliado de DemoLab (Concejo de Bogotá).",
+ "tipo_convocante": [
+  "sociedad civil"
+ ],
+ "tipo_organizacion": "Privado",
+ "tipo_proceso": [
+  "Mini públicos"
+ ],
+ "etapas_uso_IA": [
+  "Planificación",
+  "Análisis"
+ ],
+ "continuidad": "Plataforma",
+ "nivel_consolidacion": 1,
+ "sistema_IA": "No hay un sistema de IA específico, nombrado ni descrito técnicamente. Ideemos menciona genéricamente 'Inteligencia Artificial' y 'Machine Learning' dentro de un listado de técnicas de comprensión del problema (junto a encuestas, entrevistas, analítica de datos, revisión documental y observación participante). No se describe arquitectura, modelo, herramienta ni proveedor.",
+ "tipos_IA_familia": [],
+ "usa_LLM_generativa": "no-claro",
+ "funcion_IA": "Según la descripción de Ideemos, la IA y el Machine Learning forman parte de las 'mejores técnicas cuantitativas y cualitativas' para la adecuada COMPRENSIÓN de un problema público o privado, junto con encuestas, entrevistas en profundidad, analítica de datos, revisión documental y observación participante. Su producto son 'mediciones objetivas' y escenarios de futuro que luego se presentan a la ciudadanía para iniciar el diálogo. No se documenta que la IA procese, transcriba, agrupe, sintetice ni codifique el contenido de las opiniones/aportes que la ciudadanía produce DENTRO del proceso deliberativo (mini-públicos). Es decir, la IA se ubica como insumo de diagnóstico previo, no como motor de análisis del contenido participativo.",
+ "rol_IA": "no-claro",
+ "usa_IA_en_proceso": "no-claro",
+ "tipo_desarrollador_IA": [
+  "Sociedad Civil"
+ ],
+ "origen_desarrollador": "Nacional",
+ "entra_tentativo": "NO",
+ "justificacion_elegibilidad": "MANTENER EXCLUIDO. La regla de reingreso exige evidencia de IA aplicada al CONTENIDO de los aportes ciudadanos dentro de un proceso participativo. La fuente primaria (página iLabs de Ideemos y su PDF) describe 'Inteligencia Artificial' y 'Machine Learning' SOLO como parte de un listado de técnicas cuantitativas/cualitativas para COMPRENDER el problema (al lado de encuestas, entrevistas, revisión documental, observación participante), separadas explícitamente de las técnicas de diálogo/deliberación (mini-públicos, asambleas, jurados, conferencias de consenso). El uso de IA aparece como diagnóstico/insumo de contexto que produce 'mediciones objetivas' presentadas a la gente, NO como procesamiento del contenido de los aportes deliberativos. No se halló ninguna fuente que documente que la IA sistematice, codifique, agrupe o analice las intervenciones de los participantes en un mini-público concreto. En el caso aplicado real asociado a Ideemos (Asamblea Ciudadana Itinerante del Concejo de Bogotá, vía DemoLab, 3 capítulos 2020-2023) la deliberación se describe por 'método espiral' y comisiones temáticas, sin mención de IA sobre los aportes. Por tanto la 'IA' funciona como metodología/marketing de diagnóstico sin procesamiento real del contenido participativo: NO entra (coincide con el motivo de exclusión 2025: 'No se encontró información sobre el uso de la IA en la implementación de los Mini Publics'). No se eleva a DUDA porque la única mención de IA es genérica y de etapa de diagnóstico, sin indicio concreto de procesamiento de contenido deliberativo.",
+ "confianza": "MEDIA",
+ "evidencia_verbatim": {
+  "pais": "Ideemos - Laboratorio de Innovación Democrática (Bogotá, Colombia); 'Ideemos Laboratorio De Innovacion Democratica S A S en BOGOTA' (Directorio de empresas, Colombia). Co-dirige el Laboratorio de Innovación Democrática en Colombia, nodo de la Augmented Democracy Network (Barcelona, Eslovenia, Nueva York, Bogotá, Buenos Aires).",
+  "tipo_proceso": "Las mejores técnicas de diálogo para invitar a la ciudadanía a ayudar a encontrar la mejor solución a un problema incluyen mini-publics, asambleas ciudadanas, jurados ciudadanos y conferencias de consenso.",
+  "etapas_uso_IA": "Las técnicas utilizadas [para la adecuada comprensión de un problema público o privado] incluyen encuestas, entrevistas en profundidad, analítica de datos, Inteligencia Artificial, Machine Learning, revisión documental, observación participante, entre otros.",
+  "estado_actividad": null,
+  "nivel_consolidacion": "Los Laboratorios de Inteligencia Colectiva son un nuevo mecanismo que integra el procesamiento de datos y la participación ciudadana para la solución de problemas públicos y privados. [Los iLabs] no están pensados para ser estructuras permanentes y pesadas; están diseñados para resolver un problema público o privado bien definido.",
+  "tipo_convocante": "Los iLabs pueden ser usados tanto en el sector público como en el privado y están específicamente dirigidos a resolver problemas complejos que requieren una perspectiva informada y ciudadana. [Ideemos: organización colombiana de investigación y consultoría que presta servicios al sector público, empresas y ONG en innovación pública y democrática.]",
+  "usa_IA_en_proceso": null,
+  "rol_IA": null
+ },
+ "fuentes": [
+  {
+   "url": "https://ideemos.org/ilabs-laboratorios-de-inteligencia-colectiva/",
+   "estado": "403",
+   "cita": "Los Laboratorios de Inteligencia Colectiva son un nuevo mecanismo que integra el procesamiento de datos y la participación ciudadana para la solución de problemas públicos y privados. [Para comprender el problema] las técnicas utilizadas incluyen encuestas, entrevistas en profundidad, analítica de datos, Inteligencia Artificial, Machine Learning, revisión documental, observación participante, entre otros. Las mejores técnicas de diálogo para invitar a la ciudadanía... incluyen mini-publics, asambleas ciudadanas, jurados ciudadanos y conferencias de consenso. Se invita a la gente a conversar y se le presentan las mediciones objetivas y los futuros. (URL devuelve HTTP 403 a WebFetch; contenido recuperado de forma convergente vía WebSearch en ES y EN sobre la misma URL de Ideemos)."
   },
-  "fuentes": [
-    {
-      "url": "https://ideemos.org/ilabs-laboratorios-de-inteligencia-colectiva/",
-      "estado": "403",
-      "cita": "Los Laboratorios de Inteligencia Colectiva son un nuevo mecanismo que integra el procesamiento de datos y la participación ciudadana para la solución de problemas públicos y privados. [Para comprender el problema] las técnicas utilizadas incluyen encuestas, entrevistas en profundidad, analítica de datos, Inteligencia Artificial, Machine Learning, revisión documental, observación participante, entre otros. Las mejores técnicas de diálogo para invitar a la ciudadanía... incluyen mini-publics, asambleas ciudadanas, jurados ciudadanos y conferencias de consenso. Se invita a la gente a conversar y se le presentan las mediciones objetivas y los futuros. (URL devuelve HTTP 403 a WebFetch; contenido recuperado de forma convergente vía WebSearch en ES y EN sobre la misma URL de Ideemos)."
-    },
-    {
-      "url": "https://ideemos.org/wp-content/uploads/2021/04/iLabs-Laboratorio-de-Inteligencia-Colectiva.pdf",
-      "estado": "403",
-      "cita": "Documento primario 'iLabs - Laboratorio de Inteligencia Colectiva' de Ideemos (ruta /2021/04/ fija el documento en abril de 2021). Describe a los iLabs como integración de analítica de datos, IA, ML y deliberación ciudadana (mini-públicos, jurados, asambleas, conferencias de consenso), con la IA/ML como técnica de comprensión del problema y no como procesamiento del contenido de los aportes. (HTTP 403 a WebFetch; reflejado en los snippets de WebSearch)."
-    },
-    {
-      "url": "https://ideemos.org/asamblea-ciudadana-itinerante-del-concejo-de-bogota/",
-      "estado": "403",
-      "cita": "Caso aplicado de mini-públicos asociado a Ideemos (vía DemoLab / Concejo de Bogotá): primer capítulo con 110 ciudadanos seleccionados aleatoriamente que deliberaron sobre ordenamiento territorial de Bogotá; 'método espiral' donde cada capítulo deliberativo se construye sobre el anterior; seis comisiones permanentes temáticas. No se menciona IA aplicada al contenido de los aportes. (HTTP 403 a WebFetch; contenido vía WebSearch)."
-    },
-    {
-      "url": "https://participedia.net/case/13159",
-      "estado": "403",
-      "cita": "Ficha 'Bogotá Itinerant Citizens' Assembly' en Participedia, referida al mismo proceso (DemoLab/Concejo de Bogotá). No se pudo recuperar el cuerpo (HTTP 403 a WebFetch); en los snippets de WebSearch no aparece mención de IA sobre los aportes ciudadanos."
-    },
-    {
-      "url": "https://concejodebogota.gov.co/llega-al-concejo-de-bogota-la-tercera-asamblea-ciudadana-que-busca/cbogota/2023-05-23/084537.php",
-      "estado": "no-verificado",
-      "cita": "Nota del Concejo de Bogotá (2023-05-23) sobre la 'tercera Asamblea Ciudadana', lo que evidencia continuidad del mecanismo de mini-públicos hasta 2023 (>=3 ediciones). No verifica uso de IA. (No fetcheada; referencia obtenida vía WebSearch)."
-    },
-    {
-      "url": "https://www.informacolombia.com/directorio-empresas/informacion-empresa/ideemos-laboratorio-innovacion-democratica-sas",
-      "estado": "no-verificado",
-      "cita": "Registro de 'Ideemos Laboratorio De Innovacion Democratica S A S' en Bogotá (Colombia), que confirma país (CO) y naturaleza jurídica privada (S.A.S.) de la organización a cargo. (Referencia de directorio empresarial vía WebSearch)."
-    }
-  ],
-  "gaps": [
-    {
-      "campo": "usa_IA_en_proceso / rol_IA",
-      "motivo": "DECISIVO PARA ELEGIBILIDAD. No se halló ninguna fuente que documente que la IA/ML de los iLabs procese, sistematice, codifique o agrupe el CONTENIDO de los aportes/opiniones que la ciudadanía produce dentro del proceso deliberativo (mini-públicos). La IA aparece solo como técnica de comprensión/diagnóstico del problema. Confirmar (o refutar) si en alguna edición concreta de iLabs la IA analiza las intervenciones de los participantes.",
-      "url_para_buscar": "https://ideemos.org/wp-content/uploads/2021/04/iLabs-Laboratorio-de-Inteligencia-Colectiva.pdf"
-    },
-    {
-      "campo": "estado_actividad / evidencia_actividad_2026",
-      "motivo": "No hay evidencia de actividad de los iLabs en 2026 ni de ediciones fechadas de la metodología iLabs como tal. El caso aplicado (Asamblea Ciudadana Itinerante) tiene actividad documentada hasta 2023; no se halló continuidad posterior verificada.",
-      "url_para_buscar": "https://ideemos.org/proyectos/"
-    },
-    {
-      "campo": "sistema_IA / tipos_IA_familia / usa_LLM_generativa",
-      "motivo": "Ideemos no nombra ni describe técnicamente ningún sistema/modelo de IA (sin proveedor, arquitectura ni familia de IA). No se puede confirmar tipo de IA ni si emplea LLM generativa.",
-      "url_para_buscar": "https://ideemos.org/ilabs-laboratorios-de-inteligencia-colectiva/"
-    },
-    {
-      "campo": "nivel_consolidacion (de iLabs como producto)",
-      "motivo": "Se asigna nivel 1 (anuncio/metodología publicada) para 'iLabs' como tal: es una oferta metodológica descrita, sin un inventario verificado de ediciones iLabs ejecutadas bajo ese nombre. La continuidad recurrente documentada (>=3 ediciones 2020-2023) corresponde a la Asamblea Ciudadana Itinerante (DemoLab), no necesariamente etiquetada como 'iLab'.",
-      "url_para_buscar": "https://ideemos.org/proyectos/"
-    }
-  ],
-  "alertas": [
-    "ELEGIBILIDAD (motivo de exclusión 2025 confirmado): la única mención de IA/ML está en un listado de técnicas para COMPRENDER el problema (diagnóstico), separada de las técnicas de deliberación (mini-públicos). No hay evidencia de IA sobre el CONTENIDO de los aportes ciudadanos. Por la regla de reingreso => entra_tentativo=NO. No se eleva a DUDA por ser mención genérica de etapa de diagnóstico sin indicio concreto de procesamiento de contenido deliberativo.",
-    "FUENTES: todas las URLs de ideemos.org y participedia.net devuelven HTTP 403 a WebFetch; el contenido y las citas se recuperaron de forma convergente mediante WebSearch (6 consultas en ES/EN sobre las mismas URLs). Las citas verbatim son reconstrucciones del texto devuelto por los snippets de WebSearch, no transcripción directa de la página renderizada; por ello confianza MEDIA (no ALTA pese a múltiples consultas convergentes sobre la fuente primaria).",
-    "ALCANCE: la 'IA' de iLabs es metodología de diagnóstico/inteligencia colectiva, no procesamiento automatizado de los aportes deliberativos. Si en una edición concreta apareciera evidencia de NLP/ML sobre las transcripciones de los mini-públicos, el caso debería reevaluarse a DUDA o SI.",
-    "DESARROLLADOR/CONVOCANTE: Ideemos es una S.A.S. colombiana de innovación democrática que actúa como sociedad civil/consultoría; no es un proveedor de IA con producto nombrado. tipo_desarrollador_IA se marca 'Sociedad Civil' por defecto (la IA no es un sistema propio identificado). origen_desarrollador 'Nacional' (Colombia).",
-    "etapas_uso_IA se marca ['Planificación','Análisis'] referido al uso declarado de IA en la fase de COMPRENSIÓN/diagnóstico del problema (no en el análisis de los aportes), para reflejar dónde Ideemos ubica la IA; esto NO implica que califique para reingreso."
-  ]
+  {
+   "url": "https://ideemos.org/wp-content/uploads/2021/04/iLabs-Laboratorio-de-Inteligencia-Colectiva.pdf",
+   "estado": "403",
+   "cita": "Documento primario 'iLabs - Laboratorio de Inteligencia Colectiva' de Ideemos (ruta /2021/04/ fija el documento en abril de 2021). Describe a los iLabs como integración de analítica de datos, IA, ML y deliberación ciudadana (mini-públicos, jurados, asambleas, conferencias de consenso), con la IA/ML como técnica de comprensión del problema y no como procesamiento del contenido de los aportes. (HTTP 403 a WebFetch; reflejado en los snippets de WebSearch)."
+  },
+  {
+   "url": "https://ideemos.org/asamblea-ciudadana-itinerante-del-concejo-de-bogota/",
+   "estado": "403",
+   "cita": "Caso aplicado de mini-públicos asociado a Ideemos (vía DemoLab / Concejo de Bogotá): primer capítulo con 110 ciudadanos seleccionados aleatoriamente que deliberaron sobre ordenamiento territorial de Bogotá; 'método espiral' donde cada capítulo deliberativo se construye sobre el anterior; seis comisiones permanentes temáticas. No se menciona IA aplicada al contenido de los aportes. (HTTP 403 a WebFetch; contenido vía WebSearch)."
+  },
+  {
+   "url": "https://participedia.net/case/13159",
+   "estado": "403",
+   "cita": "Ficha 'Bogotá Itinerant Citizens' Assembly' en Participedia, referida al mismo proceso (DemoLab/Concejo de Bogotá). No se pudo recuperar el cuerpo (HTTP 403 a WebFetch); en los snippets de WebSearch no aparece mención de IA sobre los aportes ciudadanos."
+  },
+  {
+   "url": "https://concejodebogota.gov.co/llega-al-concejo-de-bogota-la-tercera-asamblea-ciudadana-que-busca/cbogota/2023-05-23/084537.php",
+   "estado": "no-verificado",
+   "cita": "Nota del Concejo de Bogotá (2023-05-23) sobre la 'tercera Asamblea Ciudadana', lo que evidencia continuidad del mecanismo de mini-públicos hasta 2023 (>=3 ediciones). No verifica uso de IA. (No fetcheada; referencia obtenida vía WebSearch)."
+  },
+  {
+   "url": "https://www.informacolombia.com/directorio-empresas/informacion-empresa/ideemos-laboratorio-innovacion-democratica-sas",
+   "estado": "no-verificado",
+   "cita": "Registro de 'Ideemos Laboratorio De Innovacion Democratica S A S' en Bogotá (Colombia), que confirma país (CO) y naturaleza jurídica privada (S.A.S.) de la organización a cargo. (Referencia de directorio empresarial vía WebSearch)."
+  }
+ ],
+ "gaps": [
+  {
+   "campo": "usa_IA_en_proceso / rol_IA",
+   "motivo": "DECISIVO PARA ELEGIBILIDAD. No se halló ninguna fuente que documente que la IA/ML de los iLabs procese, sistematice, codifique o agrupe el CONTENIDO de los aportes/opiniones que la ciudadanía produce dentro del proceso deliberativo (mini-públicos). La IA aparece solo como técnica de comprensión/diagnóstico del problema. Confirmar (o refutar) si en alguna edición concreta de iLabs la IA analiza las intervenciones de los participantes.",
+   "url_para_buscar": "https://ideemos.org/wp-content/uploads/2021/04/iLabs-Laboratorio-de-Inteligencia-Colectiva.pdf"
+  },
+  {
+   "campo": "estado_actividad / evidencia_actividad_2026",
+   "motivo": "No hay evidencia de actividad de los iLabs en 2026 ni de ediciones fechadas de la metodología iLabs como tal. El caso aplicado (Asamblea Ciudadana Itinerante) tiene actividad documentada hasta 2023; no se halló continuidad posterior verificada.",
+   "url_para_buscar": "https://ideemos.org/proyectos/"
+  },
+  {
+   "campo": "sistema_IA / tipos_IA_familia / usa_LLM_generativa",
+   "motivo": "Ideemos no nombra ni describe técnicamente ningún sistema/modelo de IA (sin proveedor, arquitectura ni familia de IA). No se puede confirmar tipo de IA ni si emplea LLM generativa.",
+   "url_para_buscar": "https://ideemos.org/ilabs-laboratorios-de-inteligencia-colectiva/"
+  },
+  {
+   "campo": "nivel_consolidacion (de iLabs como producto)",
+   "motivo": "Se asigna nivel 1 (anuncio/metodología publicada) para 'iLabs' como tal: es una oferta metodológica descrita, sin un inventario verificado de ediciones iLabs ejecutadas bajo ese nombre. La continuidad recurrente documentada (>=3 ediciones 2020-2023) corresponde a la Asamblea Ciudadana Itinerante (DemoLab), no necesariamente etiquetada como 'iLab'.",
+   "url_para_buscar": "https://ideemos.org/proyectos/"
+  }
+ ],
+ "alertas": [
+  "ELEGIBILIDAD (motivo de exclusión 2025 confirmado): la única mención de IA/ML está en un listado de técnicas para COMPRENDER el problema (diagnóstico), separada de las técnicas de deliberación (mini-públicos). No hay evidencia de IA sobre el CONTENIDO de los aportes ciudadanos. Por la regla de reingreso => entra_tentativo=NO. No se eleva a DUDA por ser mención genérica de etapa de diagnóstico sin indicio concreto de procesamiento de contenido deliberativo.",
+  "FUENTES: todas las URLs de ideemos.org y participedia.net devuelven HTTP 403 a WebFetch; el contenido y las citas se recuperaron de forma convergente mediante WebSearch (6 consultas en ES/EN sobre las mismas URLs). Las citas verbatim son reconstrucciones del texto devuelto por los snippets de WebSearch, no transcripción directa de la página renderizada; por ello confianza MEDIA (no ALTA pese a múltiples consultas convergentes sobre la fuente primaria).",
+  "ALCANCE: la 'IA' de iLabs es metodología de diagnóstico/inteligencia colectiva, no procesamiento automatizado de los aportes deliberativos. Si en una edición concreta apareciera evidencia de NLP/ML sobre las transcripciones de los mini-públicos, el caso debería reevaluarse a DUDA o SI.",
+  "DESARROLLADOR/CONVOCANTE: Ideemos es una S.A.S. colombiana de innovación democrática que actúa como sociedad civil/consultoría; no es un proveedor de IA con producto nombrado. tipo_desarrollador_IA se marca 'Sociedad Civil' por defecto (la IA no es un sistema propio identificado). origen_desarrollador 'Nacional' (Colombia).",
+  "etapas_uso_IA se marca ['Planificación','Análisis'] referido al uso declarado de IA en la fase de COMPRENSIÓN/diagnóstico del problema (no en el análisis de los aportes), para reflejar dónde Ideemos ubica la IA; esto NO implica que califique para reingreso."
+ ],
+ "veredicto_equipo": "NO",
+ "comentario_equipo": "",
+ "divergencia_equipo": false
 }

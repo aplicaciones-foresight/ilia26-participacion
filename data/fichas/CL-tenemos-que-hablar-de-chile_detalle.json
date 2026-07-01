@@ -68,5 +68,8 @@
   "recodificación 2026: Escenario B: caso en revisión (puede salir)",
   "Datos brutos del índice ILIA 2025 (BBDD validada por el equipo); recodificación 2026 (convocante 7-cat, nivel 0-3) y reverificación de actividad 2026."
  ],
- "fuente_datos": "baseline_2025_bbdd+recod2026+reverif_web2026"
+ "fuente_datos": "baseline_2025_bbdd+recod2026+reverif_web2026",
+ "veredicto_equipo": "SI",
+ "comentario_equipo": "Jose: Validar que no es un duplicado de uno de los nuevos de CL que identificó.",
+ "divergencia_equipo": false
 }
