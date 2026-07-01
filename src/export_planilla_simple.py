@@ -48,6 +48,7 @@ EXCLUIR = {  # caso_id -> motivo bajo el criterio corregido
  "CR-diara":"Civic tech de fiscalización de obras (control social vía app): no es un proceso participativo.",
  "DO-ciudadania":"Solo atención/servicio; la 'participación' es co-diseñar la IA aportando datos, no consulta pública. Sin módulo de participación (verificado). Decisión del equipo.",
  "CO-dnp-dialogos-regionales-vinculantes-pnd":"Participación real, pero el análisis fue manual/cualitativo; solo text-analytics ligero (nubes de palabras + tabulación), sin NLP sobre el contenido (verificado). Decisión del equipo.",
+ "CR-u-report-costa-rica-chatbot-juvenil":"UNICEF lo define como 'encuestas de opinión' (panel de sondeo/percepción juvenil anónimo: clima, salud mental, educación); sin proceso participativo estructurado con incidencia concreta (verificado). Solo opinión → fuera. Decisión del equipo.",
 }
 # Confirmados -> ENTRA (sí es participación; IA en alguna etapa, incl. logística):
 RESCATE_ENTRA = {  # caso_id -> por qué entra
@@ -63,10 +64,8 @@ RESCATE_ENTRA = {  # caso_id -> por qué entra
 }
 # DUDA con revisión de posible IA/participación (investigadas; recomendación + URL):
 DUDA_REVISAR = {}  # (TT resuelto como ENTRA; DO CiudadanIA y CO DNP resueltos como NO)
-# DUDA de frontera (aún por decidir; participación-ish):
-RECLASIF_DUDA = {  # caso_id -> qué confirmar
- "CR-u-report-costa-rica-chatbot-juvenil":"Plataforma de opinión juvenil (UNICEF): ¿consulta participativa o civic tech de sondeo?",
-}
+# DUDA de frontera (todas resueltas este ciclo):
+RECLASIF_DUDA = {}
 # Revisar entre los que ENTRAN hoy (decisión a mano):
 REVISAR_ENTRA = {}  # (BR Colab confirmado ENTRA por el equipo)
 # Posible reingreso desde los excluidos (referencia del equipo; distinto del criterio nuevo):
@@ -333,7 +332,7 @@ def GUIA_ROWS(nin,nout):
      ["",""],
      ["PASO 1 — Confirmar exclusiones (pestaña 2, grupo A)","4 casos ya FUERA: no son procesos de participación — PE conteo electoral · CO Descongestión (atención) · BR ParticipACT y CR dIAra (civic tech). Solo confirmar."],
      ["PASO 2 — Confirmar rescatados → ENTRA (grupo B)","7 casos que ENTRAN: MX Presupuesto CRECES · CL LXS 400 · CL Estrategia Gob. Digital · HN RedPública · CL Voz nuevos votantes · CL Jornada UNAB · CO Chatico. Confirmar SI."],
-     ["PASO 3 — DUDAS a revisar con URL (grupos C y D)","C: TT EngageTT (¿IA planeada?), CO DNP Diálogos (¿usó NLP/ConTexto?), DO CiudadanIA (¿módulo de participación?), CR U-Report (¿participación o sondeo?). D: BR Colab (¿participación o civic tech?). Abrir la URL y decidir."],
+     ["PASO 3 — Casos frontera (RESUELTOS)","Ya decididos con investigación: ENTRAN TT EngageTT, CO Chatico, BR Colab · SALEN DO CiudadanIA, CO DNP, CR U-Report (+ BR ParticipACT, CR dIAra). Ver casos_frontera_ILIA2026.md. No requiere acción."],
      ["PASO 4 — Resolver DUDAS de campo (grupo E)","4 casos (Jalisco, Gaitana, Viña Decide, Participa Pudahuel). Abrir la URL y confirmar si es participación con IA en alguna etapa. Marcar SI o NO."],
      ["PASO 5 — Reingresos y dedup (grupos F y G)","F: UCampus y CU Código de las Familias (posible reingreso). G: e-Cidadania cuenta como 1; CL Participación Constitucional: 1 SI + 1 NO."],
      ["PASO 6 — Completar datos de cálculo","Para los que quedan en SI, revisar en la pestaña 1 que estén completos: Tipo de proceso, Etapas, Nivel (0-3), Convocante, Tipo org. Donde 'Nº gaps'>0, abrir la URL y completar."],
@@ -377,13 +376,10 @@ Tras el dedup de e-Cidadania → **{nin-1} iniciativas efectivas**.
 - **CL La voz de los nuevos votantes** y **CL Jornada de Escucha UNAB** — procesos ejecutados por el equipo (confirmados).
 - **CO Chatico** — tiene módulos de participación (aportes al Plan de Desarrollo de Bogotá).
 
-### Paso 3 — DUDAS a revisar con URL  *(pestaña 2, grupos C y D)*
-Abrir la URL y decidir **SI o NO**. El equipo cree que puede haber IA/participación:
-- **TT EngageTT** — ¿la IA de Go Vocal (Sensemaking) está activa o **planeada**? Si está planeada, ENTRA.
-- **CO DNP Diálogos Regionales** — ¿se usó NLP (p. ej. **ConTexto** del DNP) para sistematizar las 89.788 propuestas?
-- **DO CiudadanIA** — ¿tiene un **módulo de participación** (recoger aportes para decisiones), no solo atención?
-- **CR U-Report** — ¿consulta participativa o civic tech de sondeo?
-- **BR Colab** *(grupo D)* — ¿participación o GovTech de reporte/servicio?
+### Paso 3 — Casos frontera *(RESUELTOS — no requieren acción)*
+Ya decididos con investigación web (ver `casos_frontera_ILIA2026.md`):
+- **Entraron:** TT EngageTT (chatbot AskNDTS = apoyo a la implementación) · CO Chatico (módulos de participación) · BR Colab (ideas + voto municipal).
+- **Salieron:** DO CiudadanIA (solo servicio) · CO DNP Diálogos (análisis manual, sin NLP) · CR U-Report (encuestas de opinión) · BR ParticipACT y CR dIAra (civic tech).
 
 ### Paso 4 — Resolver las DUDAS de campo  *(pestaña 2, grupo E)*
 Abrir la URL y confirmar si es participación con IA en alguna etapa → **SI** o **NO**:

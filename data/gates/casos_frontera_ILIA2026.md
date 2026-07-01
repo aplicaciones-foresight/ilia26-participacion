@@ -38,11 +38,7 @@ el contenido de los aportes. **No entra** la civic tech que no es un proceso par
 | **DNP – Diálogos Regionales Vinculantes** | CO | Proceso participativo **real y masivo**, pero el análisis de los aportes fue **manual/cualitativo**; la única IA fue text-analytics ligero (nubes de palabras + tabulación). Sin NLP sobre el contenido. |
 | **ParticipACT** | BR | **Civic tech** de reporte urbano (app para reportar problemas), no un proceso participativo. |
 | **dIAra** | CR | **Civic tech** de fiscalización de obras (control social vía app), no un proceso participativo. |
-
-### En revisión
-| Caso | País | De qué depende |
-|---|---|---|
-| **U-Report** | CR | Depende de si las encuestas son parte de un **proceso de participación** con incidencia, o solo **sondeos de opinión** (en verificación). Si es solo opinión → fuera. |
+| **U-Report** | CR | UNICEF lo define como **"encuestas de opinión"** (panel de sondeo/percepción juvenil anónimo: clima, salud mental, educación); sin proceso participativo estructurado con incidencia concreta. Solo opinión → fuera. |
 
 ## Nota sugerida para el informe final
 > *El indicador se revisa anualmente. Los **casos frontera** —entre participación

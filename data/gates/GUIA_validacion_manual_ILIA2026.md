@@ -1,8 +1,8 @@
 # Guía: validar los casos y pasar al cálculo — ILIA 2026
 
 **Archivo de trabajo:** `planilla_ILIA2026_SIMPLE.xlsx` (6 pestañas · **criterio corregido**).
-**Estado:** 38 casos entran/dudosos · 69 excluidos · 107 en total.
-Tras el dedup de e-Cidadania → **37 iniciativas efectivas**.
+**Estado:** 37 casos entran/dudosos · 70 excluidos · 107 en total.
+Tras el dedup de e-Cidadania → **36 iniciativas efectivas**.
 
 ## Las 6 pestañas
 1. **Casos (entran+dudosos)** — el set de trabajo, con las columnas listas para calcular y una columna **«Acción sugerida»**.
@@ -28,13 +28,10 @@ Tras el dedup de e-Cidadania → **37 iniciativas efectivas**.
 - **CL La voz de los nuevos votantes** y **CL Jornada de Escucha UNAB** — procesos ejecutados por el equipo (confirmados).
 - **CO Chatico** — tiene módulos de participación (aportes al Plan de Desarrollo de Bogotá).
 
-### Paso 3 — DUDAS a revisar con URL  *(pestaña 2, grupos C y D)*
-Abrir la URL y decidir **SI o NO**. El equipo cree que puede haber IA/participación:
-- **TT EngageTT** — ¿la IA de Go Vocal (Sensemaking) está activa o **planeada**? Si está planeada, ENTRA.
-- **CO DNP Diálogos Regionales** — ¿se usó NLP (p. ej. **ConTexto** del DNP) para sistematizar las 89.788 propuestas?
-- **DO CiudadanIA** — ¿tiene un **módulo de participación** (recoger aportes para decisiones), no solo atención?
-- **CR U-Report** — ¿consulta participativa o civic tech de sondeo?
-- **BR Colab** *(grupo D)* — ¿participación o GovTech de reporte/servicio?
+### Paso 3 — Casos frontera *(RESUELTOS — no requieren acción)*
+Ya decididos con investigación web (ver `casos_frontera_ILIA2026.md`):
+- **Entraron:** TT EngageTT (chatbot AskNDTS = apoyo a la implementación) · CO Chatico (módulos de participación) · BR Colab (ideas + voto municipal).
+- **Salieron:** DO CiudadanIA (solo servicio) · CO DNP Diálogos (análisis manual, sin NLP) · CR U-Report (encuestas de opinión) · BR ParticipACT y CR dIAra (civic tech).
 
 ### Paso 4 — Resolver las DUDAS de campo  *(pestaña 2, grupo E)*
 Abrir la URL y confirmar si es participación con IA en alguna etapa → **SI** o **NO**:
