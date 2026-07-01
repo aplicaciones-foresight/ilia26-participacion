@@ -145,24 +145,6 @@
   "_decision": "EXCLUIR"
  },
  {
-  "pais": "CO",
-  "caso": "Tenemos que hablar de Colombia",
-  "rol_IA_determinado": "contenido",
-  "confianza": "alta",
-  "cita_verbatim": "Luego del primer proceso, se aplica un algoritmo de procesamiento de lenguaje natural que permite conocer y procesar lo que las personas piensan en contextos de intercambio dialógico. La metodología empleada es pionera en un campo que entrecruza desarrollos de inteligencia artificial y análisis de discurso argumentativo al servicio de la participación ciudadana.",
-  "cita_idioma": "es",
-  "cita_fuente_url": "https://www.uchile.cl/noticias/164987/tenemos-que-hablar-de-chile-lanza-nuevo-mecanismo-de-participacion",
-  "tipo_fuente": "oficial",
-  "recomendacion": "INCLUIR",
-  "razonamiento": "Las respuestas (+374.000 palabras) se envian a una plataforma de analisis de texto que halla tendencias, recurrencias, valores, emociones y reglas comunes. El motor y la metodologia fueron transferidos desde 'Tenemos que hablar de Chile' (Instituto de Argumentacion, U. de Chile), que aplica un algoritmo de NLP sobre el contenido. Por tanto IA/NLP proceso el contenido participativo. rol_IA=contenido. Confianza alta: la cadena metodologia-motor-Colombia esta documentada; la cita mas explicita proviene del socio operativo chileno que opera el sistema.",
-  "fuentes_consultadas": [
-   "https://www.uchile.cl/noticias/164987/tenemos-que-hablar-de-chile-lanza-nuevo-mecanismo-de-participacion",
-   "https://tenemosquehablarcolombia.co/resultados/",
-   "https://www.researchgate.net/publication/371951310_Colombia_a_escala_-_Informe_tecnico_de_Tenemos_que_hablar_Colombia"
-  ],
-  "_decision": "INCLUIR"
- },
- {
   "pais": "CR",
   "caso": "dIAra",
   "rol_IA_determinado": "apoyo",

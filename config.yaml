@@ -59,10 +59,13 @@ escenarios:
 #   Fase B (profunda): fuente primaria + CITA VERBATIM para fijar rol_IA de los
 #     15 casos marcados. Ver data/gates/verificacion_profunda_casos_ILIA2026.md,
 #     verificacion_profunda_resultados.json y la hoja 'Verificación profunda'.
-# Resultado: 12 con rol_IA=apoyo/sin_IA (la IA NO procesa el contenido
-# participativo) -> EXCLUIR; 3 con rol_IA=contenido confirmado por verbatim -> se
-# mantienen. Conjunto elegible: A = 25 (antes 37) · B = 24.
+# Resultado (14 de 15 verificados; CO TQH Colombia quedó PENDIENTE): 12 con
+# rol_IA=apoyo/sin_IA (la IA NO procesa el contenido) -> EXCLUIR; 2 con
+# rol_IA=contenido confirmado por verbatim -> se mantienen; 1 pendiente (sigue
+# contando, marcado). Conjunto elegible: A = 25 (antes 37) · B = 24.
 # El rol_IA verificado quedó fijado en recodificacion_2025.csv (con la cita).
+# Rescate (excluidos/rechazados): CL UCampus y CU GEMA-CEN resultan INCLUIBLES a
+# falta de confirmación manual; ver data/gates/checklist_verificacion_manual.md.
 # ============================================================================
 validacion_2026:
   politica: "verificado"              # marcar_por_verificar | verificado
@@ -80,17 +83,20 @@ validacion_2026:
     - { pais: MX, caso: "Presupuesto CRECES", rol_IA: sin_IA, confianza: alta }   # chatbot = canal de voto
     - { pais: CL, caso: "Estrategia de Gobierno Digital. Informe proceso participativo segunda consulta ciudadana", rol_IA: sin_IA, confianza: media }
     - { pais: CO, caso: "DNP - Diálogos Regionales Vinculantes (PND 2022-2026)", rol_IA: sin_IA, confianza: media }  # caso nuevo
-  # 3 casos verificados DENTRO (rol_IA=contenido confirmado con cita verbatim):
+  # 2 casos verificados DENTRO (rol_IA=contenido confirmado con cita verbatim):
   verificados_incluir:
     - { pais: CL, caso: "Tenemos que hablar de Chile", rol_IA: contenido, confianza: media }   # NLP del Instituto de Argumentación (UChile); además Escenario A/B
-    - { pais: CO, caso: "Tenemos que hablar de Colombia", rol_IA: contenido, confianza: alta } # mismo motor NLP transferido
     - { pais: BR, caso: "Plan Plurianual de la ciudad de Natal", rol_IA: contenido, confianza: media }  # IA clasifica por tema/barrio/perfil
+  # 1 caso PENDIENTE de verificación profunda (agente no completó por límite de sesión):
+  pendiente_verificacion:
+    - { pais: CO, caso: "Tenemos que hablar de Colombia", rol_IA: contenido, estado: por_verificar }  # LEAD: ¿mismo motor NLP que TQH Chile? sin confirmar en fuente CO. Sigue contando (marcado). Ver checklist B5.
   # Ratificaciones pendientes de la reconciliación (reconciliacion_casos_ILIA2026.md):
   ratificaciones_pendientes:
     - "Conflicto R1: CO Descongestión y PE Sistema de cómputo se excluyen por rol_IA=apoyo pese al voto 'SI' (actividad)."
     - "Escenario activo = A (CL TQHCH dentro; bajo B sale). DO CiudadanIA ya sale por verificación (apoyo)."
     - "Duplicado CL Participación Ciudadana Proceso Constitucional: se conserva una copia."
-    - "Confianza 'media' en 5 verificaciones (DO, TT, CL Estrategia, CO DNP, y los 3 incluidos salvo CO): considerar fuente primaria adicional si se requiere cerrar al 99%."
+    - "Confianza 'media' en varias verificaciones (DO, TT, CL Estrategia, CO DNP; y los 2 incluidos CL TQHCH y BR Natal): considerar fuente primaria adicional si se requiere cerrar al 99%."
+    - "CO Tenemos que hablar de Colombia: verificación profunda PENDIENTE (agente no completó). Sigue contando pero marcado. Ver checklist B5."
 
 # §6.1 — Alcance del conteo de "Cantidad de iniciativas".
 #   count_min_level: nivel mínimo de consolidación para que un caso cuente en N.
