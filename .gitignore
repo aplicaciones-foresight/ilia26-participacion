@@ -15,3 +15,7 @@ Thumbs.db
 
 # Payloads de Fase 2: regenerables con `extract.py --prepare` (evitar bloat)
 data/fetched/*/_payload_*.txt
+
+# Scratch de descubrimiento amplio (JSON crudos por cluster); se sintetizan en
+# fichas + reporte committeados. No versionar los intermedios.
+data/_discovery/
