@@ -32,7 +32,7 @@
     "NLP - Tópicos"
   ],
   "usa_LLM_generativa": "no",
-  "funcion_IA": "Facilitar diálogos anónimos en tiempo real, permitir votaciones sobre opiniones y generar alertas sobre desviaciones en la ejecución de obras",
+  "funcion_IA": "Facilitar diálogos anónimos en tiempo real, agrupar opiniones y permitir votaciones sobre las opiniones de otros participantes.",
   "rol_IA": "contenido",
   "usa_IA_en_proceso": "sí",
   "tipo_desarrollador_IA": [
@@ -77,5 +77,6 @@
   "fuente_datos": "baseline_2025_bbdd+recod2026+reverif_web2026",
   "veredicto_equipo": "SI",
   "comentario_equipo": "",
-  "divergencia_equipo": false
+  "divergencia_equipo": false,
+  "notas_verificacion": "Corrección 2026: se eliminó de funcion_IA una cláusula contaminada ('alertas sobre desviaciones en ejecución de obras') que pertenece a otro caso (CR dIAra)."
 }
