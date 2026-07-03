@@ -20,13 +20,14 @@
     "Gobernanza Colaborativa"
   ],
   "etapas_uso_IA": [
-    "Implementación"
+    "Implementación",
+    "Análisis"
   ],
   "continuidad": [
     "Uso único"
   ],
   "nivel_consolidacion": 2,
-  "sistema_IA": "Procesamiento de lenguaje natural (NLP)",
+  "sistema_IA": "Remesh (plataforma de diálogo masivo con IA, Remesh Inc.), con apoyo de la DPPA Innovation Cell.",
   "tipos_IA_familia": [
     "NLP - Sentiment",
     "NLP - Tópicos"
@@ -36,7 +37,7 @@
   "rol_IA": "contenido",
   "usa_IA_en_proceso": "sí",
   "tipo_desarrollador_IA": [
-    "Gobierno"
+    "Privado"
   ],
   "origen_desarrollador": "Internacional",
   "entra_tentativo": "SI",
@@ -78,5 +79,5 @@
   "veredicto_equipo": "SI",
   "comentario_equipo": "",
   "divergencia_equipo": false,
-  "notas_verificacion": "Corrección 2026: se eliminó de funcion_IA una cláusula contaminada ('alertas sobre desviaciones en ejecución de obras') que pertenece a otro caso (CR dIAra)."
+  "notas_verificacion": "Corrección 2026: se eliminó de funcion_IA una cláusula contaminada ('alertas sobre desviaciones en ejecución de obras') que pertenece a otro caso (CR dIAra). | Corrección 2026: herramienta = Remesh, cita verbatim DPPA: 'Remesh is a digital platform that allows you to engage in a live conversation with up to 1,000 people while gaining qualitative insights into the participants' opinions' (dppa.medium.com .../73a667d0ac3e). desarrollador Gobierno->Privado; se agrega etapa 'Análisis' (la IA agrupa/analiza opiniones en vivo, igual que en BO Bolivia Conversa)."
 }

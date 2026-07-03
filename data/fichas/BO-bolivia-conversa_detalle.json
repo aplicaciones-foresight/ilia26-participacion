@@ -1,86 +1,87 @@
 {
- "caso_id": "BO-bolivia-conversa",
- "pais": "BO",
- "nombre_caso": "Bolivia Conversa",
- "bloque": "2-baseline",
- "proceso_participativo": "Plataforma de diálogo digital que emplea IA para procesar y agrupar aportaciones ciudadanas en tiempo real, retornando feedback inmediato y garantizando anonimato, con vistas a fomentar el reencuentro y la cohesión social en el país. ",
- "ano_inicio": "2021",
- "ano_cierre": null,
- "estado_actividad": "cerrado",
- "evidencia_actividad_2026": "reconfirmado web (institucional): Reconfirmado: la IA agrupa conceptualmente los aportes escritos en tiempo real y los devuelve para priorización; ediciones 2021-2022, 1.500+ participantes.",
- "organizacion_a_cargo": "Vicepresidencia del Estado Plurinacional de Bolivia y Sistema de Naciones Unidas en Bolivia ",
- "tipo_convocante": [
-  "gobierno nacional",
-  "organización internacional"
- ],
- "tipo_organizacion": [
-  "Público"
- ],
- "tipo_proceso": [
-  "Gobernanza Colaborativa"
- ],
- "etapas_uso_IA": [
-  "Implementación",
-  "Análisis"
- ],
- "continuidad": [
-  "Uso único"
- ],
- "nivel_consolidacion": 2,
- "sistema_IA": "Modelos de Procesamiento de Lenguaje Natural y algoritmos de clustering. ",
- "tipos_IA_familia": [
-  "NLP - Tópicos"
- ],
- "usa_LLM_generativa": "no",
- "funcion_IA": "Clasificación semántica de aportes ciudadanos; agrupamiento temático de respuestas; generación de feedback inmediato. ",
- "rol_IA": "contenido",
- "usa_IA_en_proceso": "sí",
- "tipo_desarrollador_IA": [
-  "Gobierno"
- ],
- "origen_desarrollador": "Internacional",
- "entra_tentativo": "SI",
- "justificacion_elegibilidad": "Caso del índice 2025; ratificar vigencia 2026 y recodificación.",
- "confianza": "ALTA (baseline 2025 + reverif. web 2026)",
- "evidencia_verbatim": {
-  "pais": "Caso del índice ILIA 2025 (BBDD oficial del equipo)",
-  "tipo_proceso": "Governanza Colaborativa",
-  "etapas_uso_IA": "Implementación, Análisis",
-  "estado_actividad": "reconfirmado web (institucional): Reconfirmado: la IA agrupa conceptualmente los aportes escritos en tiempo real y los devuelve para priorización; ediciones 2021-2022, 1.500+ participantes.",
-  "nivel_consolidacion": "Continuidad (BBDD 2025): Uso único",
-  "tipo_convocante": "Vicepresidencia del Estado Plurinacional de Bolivia y Sistema de Naciones Unidas en Bolivia ",
-  "usa_IA_en_proceso": "Clasificación semántica de aportes ciudadanos; agrupamiento temático de respuestas; generación de feedback inmediato. ",
-  "rol_IA": "Clasificación semántica de aportes ciudadanos; agrupamiento temático de respuestas; generación de feedback inmediato. "
- },
- "fuentes": [
-  {
-   "url": "https://bolivia.un.org/es/185521-%E2%80%9Cbolivia-conversa%E2%80%9D-un-di%C3%A1logo-digital-para-construir-un-mejor-pa%C3%ADs",
-   "estado": "baseline-2025",
-   "cita": ""
+  "caso_id": "BO-bolivia-conversa",
+  "pais": "BO",
+  "nombre_caso": "Bolivia Conversa",
+  "bloque": "2-baseline",
+  "proceso_participativo": "Plataforma de diálogo digital que emplea IA para procesar y agrupar aportaciones ciudadanas en tiempo real, retornando feedback inmediato y garantizando anonimato, con vistas a fomentar el reencuentro y la cohesión social en el país. ",
+  "ano_inicio": "2021",
+  "ano_cierre": null,
+  "estado_actividad": "cerrado",
+  "evidencia_actividad_2026": "reconfirmado web (institucional): Reconfirmado: la IA agrupa conceptualmente los aportes escritos en tiempo real y los devuelve para priorización; ediciones 2021-2022, 1.500+ participantes.",
+  "organizacion_a_cargo": "Vicepresidencia del Estado Plurinacional de Bolivia y Sistema de Naciones Unidas en Bolivia ",
+  "tipo_convocante": [
+    "gobierno nacional",
+    "organización internacional"
+  ],
+  "tipo_organizacion": [
+    "Público"
+  ],
+  "tipo_proceso": [
+    "Gobernanza Colaborativa"
+  ],
+  "etapas_uso_IA": [
+    "Implementación",
+    "Análisis"
+  ],
+  "continuidad": [
+    "Uso único"
+  ],
+  "nivel_consolidacion": 2,
+  "sistema_IA": "Remesh (plataforma de diálogo masivo con IA de Remesh Inc., Nueva York), adoptada por la ONU (DPPA Innovation Cell) para los diálogos digitales.",
+  "tipos_IA_familia": [
+    "NLP - Tópicos"
+  ],
+  "usa_LLM_generativa": "no",
+  "funcion_IA": "Clasificación semántica de aportes ciudadanos; agrupamiento temático de respuestas; generación de feedback inmediato. ",
+  "rol_IA": "contenido",
+  "usa_IA_en_proceso": "sí",
+  "tipo_desarrollador_IA": [
+    "Privado"
+  ],
+  "origen_desarrollador": "Internacional",
+  "entra_tentativo": "SI",
+  "justificacion_elegibilidad": "Caso del índice 2025; ratificar vigencia 2026 y recodificación.",
+  "confianza": "ALTA (baseline 2025 + reverif. web 2026)",
+  "evidencia_verbatim": {
+    "pais": "Caso del índice ILIA 2025 (BBDD oficial del equipo)",
+    "tipo_proceso": "Governanza Colaborativa",
+    "etapas_uso_IA": "Implementación, Análisis",
+    "estado_actividad": "reconfirmado web (institucional): Reconfirmado: la IA agrupa conceptualmente los aportes escritos en tiempo real y los devuelve para priorización; ediciones 2021-2022, 1.500+ participantes.",
+    "nivel_consolidacion": "Continuidad (BBDD 2025): Uso único",
+    "tipo_convocante": "Vicepresidencia del Estado Plurinacional de Bolivia y Sistema de Naciones Unidas en Bolivia ",
+    "usa_IA_en_proceso": "Clasificación semántica de aportes ciudadanos; agrupamiento temático de respuestas; generación de feedback inmediato. ",
+    "rol_IA": "Clasificación semántica de aportes ciudadanos; agrupamiento temático de respuestas; generación de feedback inmediato. "
   },
-  {
-   "url": "https://bolivia.un.org/es/216764-%E2%80%9Cbolivia-conversa%E2%80%9D-%C2%BFc%C3%B3mo-la-tecnolog%C3%ADa-puede-ayudar-promover-el-di%C3%A1logo?afd_azwaf_tok=eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJib2xpdmlhLnVuLm9yZyIsImV4cCI6MTc0NjMxMzgxMiwiaWF0IjoxNzQ2MzEzODAyLCJpc3MiOiJ0aWVyMS01NThmNGZjNGRmLTYyMmN0Iiwic3ViIjoiMjg6Mzo1MTYyOjQxZGI6NDI3NTpkZGY1OjUyY2E6OGU1ZiIsImRhdGEiOnsidHlwZSI6Imlzc3VlZCIsInJlZiI6IjIwMjUwNTAzVDIzMTAwMlotMTU1OGY0ZmM0ZGY2MjJjdGhDMVNDTGtnczQwMDAwMDAwNWcwMDAwMDAwMDA3ODl1IiwiYiI6InpCM1VIdFRTenB3UTBQV25YYTZrS3VWM1FwbTZvUGNVRWxpN0xHZVFjS28iLCJoIjoiTUpyTEo0LXc3dVlKNU9PS3RfZXNkYVVlZUFtaVNKV3VzTUdlZ0UxZ2RjbyJ9fQ.mS3mBqJvZh2uh93Iv2IhPucfyAYaHA-g2RJrLx2WdeftNSEgEfNbJNBaAp3_9RCWSpixc6oEavofZzGljq1sDJr1MqPS6btC-adiyw_nB2fsldAdL2CO0gMNiyaTMc3FOyIxgblT5Pw_QZ9l6JwqrDUZmMH6Lnk_EqFXyTrZiJheb8HaUCMlh54hulkx_OI7GMEFbqEbfRKIerHBGRauPWBA3oT_1hIKIttoqZqYW_4eID9_8FHkcAp9jdzgz-gcQYs3DPcdMb-xQWWilqRvv4lJkJ7TyMAESEFNTxwKqHAuOurHr-ptqkMV0VmFn5I47av_ulFIycyTyBlx7JxJgg.WF3obl2IDtqgvMFRqVdYkD5s",
-   "estado": "baseline-2025",
-   "cita": ""
-  },
-  {
-   "url": "https://dppa.un.org/es/innovation",
-   "estado": "baseline-2025",
-   "cita": ""
-  },
-  {
-   "url": "https://bolivia.un.org/es/185521-bolivia-conversa-un-dialogo-digital-para-construir-un-mejor-pais",
-   "estado": "baseline-2025",
-   "cita": ""
-  }
- ],
- "gaps": [],
- "alertas": [
-  "usa_LLM_generativa='no' derivado de Tipos de IA 2025 (sin 'LLM'); verificar si cambió en 2026",
-  "Datos brutos del índice ILIA 2025 (BBDD validada por el equipo); recodificación 2026 (convocante 7-cat, nivel 0-3) y reverificación de actividad 2026."
- ],
- "fuente_datos": "baseline_2025_bbdd+recod2026+reverif_web2026",
- "veredicto_equipo": "SI",
- "comentario_equipo": "",
- "divergencia_equipo": false
+  "fuentes": [
+    {
+      "url": "https://bolivia.un.org/es/185521-%E2%80%9Cbolivia-conversa%E2%80%9D-un-di%C3%A1logo-digital-para-construir-un-mejor-pa%C3%ADs",
+      "estado": "baseline-2025",
+      "cita": ""
+    },
+    {
+      "url": "https://bolivia.un.org/es/216764-%E2%80%9Cbolivia-conversa%E2%80%9D-%C2%BFc%C3%B3mo-la-tecnolog%C3%ADa-puede-ayudar-promover-el-di%C3%A1logo?afd_azwaf_tok=eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJib2xpdmlhLnVuLm9yZyIsImV4cCI6MTc0NjMxMzgxMiwiaWF0IjoxNzQ2MzEzODAyLCJpc3MiOiJ0aWVyMS01NThmNGZjNGRmLTYyMmN0Iiwic3ViIjoiMjg6Mzo1MTYyOjQxZGI6NDI3NTpkZGY1OjUyY2E6OGU1ZiIsImRhdGEiOnsidHlwZSI6Imlzc3VlZCIsInJlZiI6IjIwMjUwNTAzVDIzMTAwMlotMTU1OGY0ZmM0ZGY2MjJjdGhDMVNDTGtnczQwMDAwMDAwNWcwMDAwMDAwMDA3ODl1IiwiYiI6InpCM1VIdFRTenB3UTBQV25YYTZrS3VWM1FwbTZvUGNVRWxpN0xHZVFjS28iLCJoIjoiTUpyTEo0LXc3dVlKNU9PS3RfZXNkYVVlZUFtaVNKV3VzTUdlZ0UxZ2RjbyJ9fQ.mS3mBqJvZh2uh93Iv2IhPucfyAYaHA-g2RJrLx2WdeftNSEgEfNbJNBaAp3_9RCWSpixc6oEavofZzGljq1sDJr1MqPS6btC-adiyw_nB2fsldAdL2CO0gMNiyaTMc3FOyIxgblT5Pw_QZ9l6JwqrDUZmMH6Lnk_EqFXyTrZiJheb8HaUCMlh54hulkx_OI7GMEFbqEbfRKIerHBGRauPWBA3oT_1hIKIttoqZqYW_4eID9_8FHkcAp9jdzgz-gcQYs3DPcdMb-xQWWilqRvv4lJkJ7TyMAESEFNTxwKqHAuOurHr-ptqkMV0VmFn5I47av_ulFIycyTyBlx7JxJgg.WF3obl2IDtqgvMFRqVdYkD5s",
+      "estado": "baseline-2025",
+      "cita": ""
+    },
+    {
+      "url": "https://dppa.un.org/es/innovation",
+      "estado": "baseline-2025",
+      "cita": ""
+    },
+    {
+      "url": "https://bolivia.un.org/es/185521-bolivia-conversa-un-dialogo-digital-para-construir-un-mejor-pais",
+      "estado": "baseline-2025",
+      "cita": ""
+    }
+  ],
+  "gaps": [],
+  "alertas": [
+    "usa_LLM_generativa='no' derivado de Tipos de IA 2025 (sin 'LLM'); verificar si cambió en 2026",
+    "Datos brutos del índice ILIA 2025 (BBDD validada por el equipo); recodificación 2026 (convocante 7-cat, nivel 0-3) y reverificación de actividad 2026."
+  ],
+  "fuente_datos": "baseline_2025_bbdd+recod2026+reverif_web2026",
+  "veredicto_equipo": "SI",
+  "comentario_equipo": "",
+  "divergencia_equipo": false,
+  "notas_verificacion": "Corrección 2026: la herramienta fue Remesh (empresa privada, EE.UU.), adoptada —no desarrollada— por la ONU. Fuentes: IRCAI 'AI for Peacebuilding' (ircai.org/top100/entry/ai-for-peacebuilding) y DPPA Annual Report 2021. Las páginas de ONU Bolivia no nombran Remesh explícitamente (dato de fuentes externas sobre la DPPA Innovation Cell). desarrollador Gobierno->Privado."
 }
