@@ -126,5 +126,6 @@
   ],
   "veredicto_equipo": "SI",
   "comentario_equipo": "Jose: HAy que validar que no esté duplicada.\nNicole: Más allá del paper no me sale mucha más info. \nNatalia: igual, no encontré mucho más que el paper",
-  "divergencia_equipo": false
+  "divergencia_equipo": false,
+  "notas_verificacion": "Verificado 2026 (lectura directa del README de GitHub): el clasificador se describe para integración FUTURA ('para utilização do modelo dentro de plataformas web afim de ser integrado a plataforma do Brasil Participativo') y admite que 'a plataforma não possui indexação ou processamento de linguagem natural para categorizar de forma automatizada as propostas'. Los papers (arXiv 2509.21292, 2511.01545) son estudio de caso/lecciones de ingeniería sobre datos reales. DESPLIEGUE EN PRODUCCIÓN: NO CONFIRMADO. nivel=2 se mantiene; no describir como 'desplegado oficialmente'."
 }
