@@ -8,9 +8,9 @@
   "ano_cierre": null,
   "estado_actividad": "cerrado",
   "evidencia_actividad_2026": "reconfirmado web (academico): Evidencia académica del NLP sobre los cabildos 2016: argument mining sobre 240.468 argumentos (ACL 2017, UChile/DCC) y Structural Topic Modeling (PLOS One 2022)",
-  "organizacion_a_cargo": "Biblioteca del Congreso Nacional",
+  "organizacion_a_cargo": "Gobierno de Chile (Presidencia/SEGPRES) — convocante del Proceso Constituyente Abierto; la Biblioteca del Congreso Nacional sistematiza y archiva los resultados (convenio con Senado, Cámara y SEGPRES).",
   "tipo_convocante": [
-    "otra institución pública"
+    "gobierno nacional"
   ],
   "tipo_organizacion": [
     "Público"
@@ -77,5 +77,5 @@
   "veredicto_equipo": "SI",
   "comentario_equipo": "",
   "divergencia_equipo": false,
-  "notas_verificacion": "Corrección 2026: estado_actividad 'activo'->'cerrado' (proceso concluido en 2016; el sitio BCN es archivo)."
+  "notas_verificacion": "Corrección 2026: estado_actividad 'activo'->'cerrado' (proceso concluido en 2016; el sitio BCN es archivo). | Corrección 2026: el proceso (cabildos y ELA 2016) fue CONVOCADO por el Gobierno de Chile (Bachelet/SEGPRES); la BCN solo sistematizó/archivó vía convenio (senado.cl 28-ene-2016; discurso presidencial gob.cl; emol.com). convocante 'otra institución pública'->'gobierno nacional'."
 }
