@@ -60,29 +60,24 @@ citadas quedaron en las notas de verificación de cada ficha.*
 
 ---
 
-## §2 Los 5 casos cuestionados (decisión del equipo)
+## §2 Los 5 casos cuestionados — RESUELTOS (decisión del equipo, jul-2026)
 
-La verificación web independiente respalda **NO** en tres casos que el equipo había marcado SI
-(en los tres, la ficha ya traía divergencia equipo-vs-evidencia), y deja otros dos en zona gris:
+La verificación web independiente cuestionó 5 casos. Tras la discusión, se aplicó el criterio
+inclusivo del equipo (mantener los casos borde con nota y reevaluación anual; solo se excluye
+lo crítico), usando los precedentes del propio ciclo (TT: IA planeada entra; Pol.is/LUC:
+análisis paralelo a un proceso formal entra):
 
-| Caso | Evidencia central | Mi recomendación |
+| Caso | Evidencia central | Decisión |
 |---|---|---|
-| **BR Cátedra/Co:Lab USP** | "Pesquisas em andamento"; el investigador habla en futuro ("o que precisa ser desenvolvido é o treinamento dos modelos"); el paper es revisión+entrevistas. Sin despliegue con ciudadanos. | **Excluir** (estudio sin despliegue). |
-| **BR São Paulo (Gemini)** | Sistematización oficial por SEPEP/SGM **sin IA**; la herramienta se mostró en talleres formativos meses después del cierre; paneles no confirmados. | **Excluir** (ejercicio formativo externo, no parte del proceso). |
-| **CO Citibeats+PNUD** | Monitoreo de redes sociales abiertas durante el paro 2021; no hay convocatoria ni proceso estructurado. | **Excluir** (escucha social = misma regla que U-Report). |
-| **BR OPA Piauí** | Proceso participativo real y consolidado (4ª edición), pero la única IA explícita es seguridad/infraestructura; el análisis de propuestas es humano. | **Excluir o DUDA** — entra solo si aceptan "IA de infraestructura del proceso" como apoyo, que a mi juicio estira el criterio. |
-| **BR Brasil Participativo (clustering)** | La IA procesó 10.186 propuestas reales en alianza con la Secretaria, con miras a integrarse; pero la plataforma hoy **no tiene NLP en producción**. | **Mantener con nota o DUDA** — es el gris genuino: contenido real procesado, despliegue no confirmado. Reevaluar en 2027. |
+| **BR Cátedra/Co:Lab USP** | "Pesquisas em andamento"; sin despliegue con ciudadanos ni proceso propio; el paper es revisión+entrevistas. | **EXCLUIDO** (estudio sin despliegue — crítico). |
+| **CO Citibeats+PNUD** | Escucha social de redes abiertas (Twitter/Facebook) en el paro 2021; sin proceso convocado. | **EXCLUIDO** (misma regla que U-Report — crítico). |
+| **BR São Paulo (Gemini)** | La IA procesó las 6.368 propuestas reales de la consulta (Agente de Gobierno Abierto, may-2025), en paralelo a la sistematización oficial humana (SEPEP/SGM). | **SE MANTIENE** con nota — mismo patrón que Pol.is/LUC (análisis complementario con IA de un proceso formal). |
+| **BR OPA Piauí** | PP consolidado (4ª edición); el proveedor reporta IA que redujo 40% el tiempo de procesamiento de propuestas (claim de proveedor; análisis de fondo humano). | **SE MANTIENE** con instrucción de validar con SEPLAN — apoyo activo a la logística del proceso (precedente TT). |
+| **BR Brasil Participativo (clustering)** | IA construida con la Secretaria (Residência TIC BRISA) sobre 10.186 propuestas reales; integración planeada; producción no confirmada. | **SE MANTIENE** con nota "producción no confirmada; reevaluar 2027" (precedente TT: planeado entra). |
 
-### Impacto en el índice (preliminar, datos corregidos; prom. regional actual = 26)
-
-| Escenario | n | Prom. regional | BR | CO |
-|---|:--:|:--:|:--:|:--:|
-| Actual (34 iniciativas) | 34 | **26** | 82 | 78 |
-| A: salen Cátedra + SP-Gemini + Citibeats | 31 | 25 | 72 | 63 |
-| B: A + OPA Piauí | 30 | 25 | 66 | 63 |
-| C: B + BP-clustering (máximo rigor) | 29 | 24 | 54 | 63 |
-
-*(BR es el más sensible: pasa de 8 a 4-7 iniciativas según el escenario; CO pierde su único caso de 'Participación Digital' pura y un convocante internacional si sale Citibeats.)*
+### Impacto aplicado
+Con las 2 exclusiones: **32 iniciativas efectivas** (BR 7, CO 4). El promedio regional se
+mantiene en torno a **26** (el detalle final está en `calculo_indice_2025vs2026_ILIA2026.xlsx`).
 
 ---
 

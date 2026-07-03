@@ -31,6 +31,9 @@ el contenido de los aportes. **No entra** la civic tech que no es un proceso par
 | **Chatico** | CO | Tiene **módulos de participación** (p. ej. aportes al Plan de Desarrollo de Bogotá), además de la atención. |
 | **Colab** | BR | Permite **sugerir ideas y votar en decisiones municipales** (módulos de participación), no solo reportar. |
 | **Gaitana IA** | CO | Un **LLM (DeepSeek)** resume, organiza y **construye consensos** sobre el contenido de los aportes en un proceso participativo real (cabildo Zenú). Procesa el contenido → entra. |
+| **Brasil Participativo (clustering)** | BR | IA construida **con la Secretaria** (Residência TIC BRISA) que procesó 10.186 propuestas reales, con integración planeada; producción aún no confirmada. Planeado+ejecutado con el convocante → entra con nota (reevaluar 2027). |
+| **OPA Piauí** | BR | Presupuesto participativo consolidado (4ª edición); el proveedor (Colab) reporta IA que **redujo 40% el tiempo de procesamiento de propuestas** = apoyo activo a la logística del proceso. Claim de proveedor → entra con instrucción de validar con SEPLAN. |
+| **São Paulo Programa de Metas (Gemini)** | BR | La IA (Gemini) **procesó las 6.368 propuestas reales** de la consulta (Agente de Gobierno Abierto, may-2025), en paralelo a la sistematización oficial humana — mismo patrón que Pol.is/LUC. Entra con nota (análisis complementario, no pipeline oficial). |
 
 ### Salieron (borde → NO)
 | Caso | País | Por qué salió |
@@ -40,6 +43,8 @@ el contenido de los aportes. **No entra** la civic tech que no es un proceso par
 | **ParticipACT** | BR | **Civic tech** de reporte urbano (app para reportar problemas), no un proceso participativo. |
 | **dIAra** | CR | **Civic tech** de fiscalización de obras (control social vía app), no un proceso participativo. |
 | **U-Report** | CR | UNICEF lo define como **"encuestas de opinión"** (panel de sondeo/percepción juvenil anónimo: clima, salud mental, educación); sin proceso participativo estructurado con incidencia concreta. Solo opinión → fuera. |
+| **Cátedra/Co:Lab USP** | BR | **Investigación académica en curso** ("pesquisas em andamento") sobre IA generativa para participación; sin despliegue con ciudadanos ni proceso propio. Estudio sin despliegue → fuera. |
+| **Citibeats + PNUD** | CO | **Escucha social** de redes abiertas (Twitter/Facebook) durante el paro de 2021; sin proceso participativo convocado. Misma regla que U-Report → fuera. |
 | **Viña Decide** | CL | Presupuesto participativo real sobre plataforma **Go Vocal** (que tiene módulo de IA/NLP de fábrica), pero **sin traza de uso de IA** sobre los aportes en el informe ejecutivo. Sin IA verificada → fuera. |
 | **Participa Pudahuel** | CL | Presupuesto participativo real sobre plataforma **Go Vocal**; el módulo de IA existe pero **no hay traza** de que se activara sobre los aportes. Sin IA verificada → fuera. |
 

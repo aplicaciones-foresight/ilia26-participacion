@@ -52,6 +52,8 @@ EXCLUIR = {  # caso_id -> motivo bajo el criterio corregido
  "CL-participa-pudahuel-presupuesto":"Presupuesto participativo real, pero solo se confirma que la plataforma (Go Vocal) tiene el módulo de IA/NLP de fábrica; NO hay traza de que Pudahuel lo activara sobre los aportes (usa_IA_en_proceso 'no-claro', sin evidencia). Sin uso de IA verificado → NO. Decisión del equipo.",
  "CL-vina-decide-presupuesto-participativo":"Presupuesto participativo real sobre plataforma Go Vocal, pero no se encontró en el informe ejecutivo ninguna traza de uso de IA sobre los aportes (usa_IA_en_proceso 'no-claro', sin evidencia). Sin uso de IA verificado → NO. Decisión del equipo.",
  "MX-jalisco-armemos-un-plan":"Proceso participativo real y masivo (675.484 participaciones; 15.899 propuestas), pero NO hay evidencia de uso de IA para analizar/agrupar/clasificar el contenido de las propuestas (usa_IA_en_proceso 'no'). Sin uso de IA → NO. Decisión del equipo.",
+ "BR-catedra-brasil-co-lab-usp-ia-generativa":"Investigación académica en curso ('pesquisas em andamento') sobre IA generativa para participación: sin despliegue con ciudadanos ni proceso propio (verificado). Estudio sin despliegue → NO. Decisión del equipo.",
+ "CO-citibeats-pnud-colombia-deliberacion-pub":"Escucha social de redes abiertas (Twitter/Facebook) durante el paro de 2021: no hay proceso participativo convocado (verificado). Misma regla que U-Report (solo opinión) → NO. Decisión del equipo.",
 }
 # Confirmados -> ENTRA (sí es participación; IA en alguna etapa, incl. logística):
 RESCATE_ENTRA = {  # caso_id -> por qué entra
