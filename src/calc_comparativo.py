@@ -71,7 +71,14 @@ def main():
     def cuenta(d): return d.get("cuenta_como_iniciativa") is not False
 
     set26=[d for d in fichas if estado(d)=="SÍ" and cuenta(d)]
-    set25=[d for d in fichas if d.get("bloque")=="2-baseline" and cuenta(d)]
+    # Set 2025: fichas del baseline TAL COMO ERAN en 2025. Si una ficha fue fusionada
+    # después (p.ej. e-Cidadania consolidó atributos de una herramienta 2025/26), usa
+    # los atributos originales guardados en 'baseline_2025_atributos'.
+    set25=[]
+    for d in fichas:
+        if d.get("bloque")=="2-baseline" and cuenta(d):
+            ov=d.get("baseline_2025_atributos")
+            set25.append({**d,**ov} if ov else d)
     n26,n25=len(set26),len(set25)
 
     s1_26,s2_26,ind26=_corre(set26,cfg)
