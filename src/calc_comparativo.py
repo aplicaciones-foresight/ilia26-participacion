@@ -84,6 +84,18 @@ def main():
     s1_26,s2_26,ind26=_corre(set26,cfg)
     _,_,ind25=_corre(set25,cfg)
 
+    # --- 2025 con la metodología ANTIGUA (motor legacy validado 19/19 ±1 vs oficial) ---
+    OFICIAL={"AR":0,"BO":30,"BR":76,"CL":57,"CO":85,"CR":46,"CU":0,"DO":30,"EC":25,"GT":32,
+             "HN":42,"JM":0,"MX":47,"PA":0,"PE":53,"PY":0,"SV":0,"TT":0,"UY":0,"VE":0}
+    xlsx=os.path.join(ROOT,cfg["rutas"]["baseline_xlsx"])
+    if os.path.exists(xlsx):
+        casos_legacy=ce.load_casos(xlsx)
+        _,_,indL,_=ce.compute_full(casos_legacy)
+        maxdev=max(abs(indL[p]-OFICIAL[p]) for p in ce.PAISES)
+        legacy_nota=f"recalculado con el motor legacy desde la BBDD (desviación máx. vs oficial publicado = {maxdev} pt)"
+    else:
+        indL=OFICIAL; legacy_nota="valores oficiales publicados 2025 (BBDD no disponible para recalcular)"
+
     # nº iniciativas por país
     from collections import Counter
     c26=Counter(d.get("pais") for d in set26); c25=Counter(d.get("pais") for d in set25)
@@ -108,24 +120,32 @@ def main():
             if iv.value>=50: iv.fill=VERDE
             elif iv.value>=25: iv.fill=AMBARH
 
-    # ---------- 2 · Comparación 2025 vs 2026 (misma metodología) ----------
-    ws2=wb.create_sheet("2 · 2025 vs 2026 (misma met.)")
-    ws2.append(["País","","Indicador 2025","Indicador 2026","Δ (2026−2025)","Nº inic. 2025","Nº inic. 2026"])
-    orden=[p for p in ce.PAISES if ind25[p]>0 or ind26[p]>0]
-    orden.sort(key=lambda q:-max(ind25[q],ind26[q]))
+    # ---------- 2 · Comparación en 3 columnas ----------
+    ws2=wb.create_sheet("2 · 2025 ant · 2025 nva · 2026")
+    ws2.append(["País","","2025\nmet. 2025 (oficial)","2025\nmet. nueva","2026\nmet. nueva",
+                "Δ metodología\n(2025 nva − 2025 ant)","Δ datos\n(2026 − 2025 nva)","Nº inic. 2025","Nº inic. 2026"])
+    orden=[p for p in ce.PAISES if indL[p]>0 or ind25[p]>0 or ind26[p]>0]
+    orden.sort(key=lambda q:-max(indL[q],ind25[q],ind26[q]))
     for p in orden:
-        ws2.append([p,PN[p],ind25[p],ind26[p],ind26[p]-ind25[p],c25.get(p,0),c26.get(p,0)])
+        ws2.append([p,PN[p],indL[p],ind25[p],ind26[p],ind25[p]-indL[p],ind26[p]-ind25[p],c25.get(p,0),c26.get(p,0)])
+    prL=round(sum(indL[p] for p in ce.PAISES)/20)
     pr25,pc25=_prom(ind25); pr26,pc26=_prom(ind26)
     ws2.append([])
-    ws2.append(["","Promedio regional (20 países)",pr25,pr26,pr26-pr25,n25,n26])
-    ws2.append(["","Promedio (países con iniciativas)",pc25,pc26,pc26-pc25,"",""])
-    hdr(ws2,7); widths(ws2,[6,36,15,15,16,14,14]); body(ws2,7)
+    ws2.append(["","Promedio regional (20 países)",prL,pr25,pr26,pr25-prL,pr26-pr25,n25,n26])
+    hdr(ws2,9,h=42); widths(ws2,[6,32,16,14,14,18,17,13,13]); body(ws2,9)
     for r in range(2,ws2.max_row+1):
-        for c in range(3,8): ws2.cell(row=r,column=c).alignment=CEN
-        dv=ws2.cell(row=r,column=5)
-        if isinstance(dv.value,int) and dv.value!=0:
-            dv.font=Font(bold=True); dv.fill=VERDE if dv.value>0 else ROJO
-            if dv.value>0: dv.value=f"+{dv.value}"
+        for c in range(3,10): ws2.cell(row=r,column=c).alignment=CEN
+        for col in (6,7):
+            dv=ws2.cell(row=r,column=col)
+            if isinstance(dv.value,int) and dv.value!=0:
+                dv.font=Font(bold=True); dv.fill=VERDE if dv.value>0 else ROJO
+                if dv.value>0: dv.value=f"+{dv.value}"
+    ws2.append(["","Lectura: 'Δ metodología' aísla el efecto del cambio de fórmula sobre la MISMA base 2025; "
+                  "'Δ datos' aísla el efecto del cambio de base (salidas+nuevas) con la MISMA fórmula nueva. "
+                  f"Columna '2025 met. 2025': {legacy_nota}.","","","","","","",""])
+    ws2.merge_cells(start_row=ws2.max_row,start_column=2,end_row=ws2.max_row,end_column=9)
+    ws2.cell(row=ws2.max_row,column=2).alignment=TL
+    ws2.cell(row=ws2.max_row,column=2).font=Font(italic=True,size=9,color="777777")
 
     # ---------- 3 · Sub-Uso 2026 (5 variables) ----------
     ws3=wb.create_sheet("3 · Sub-Uso 2026 (detalle)")
@@ -145,6 +165,7 @@ def main():
      ["Qué es","Cálculo preliminar y determinístico con los datos actuales. La comparación usa la MISMA metodología (CENIA v2) sobre ambas bases, para aislar el efecto del cambio de datos (no de fórmula)."],
      ["Set 2026",f"{n26} iniciativas efectivas: clasificación final SÍ (tras validación manual), respetando el dedup."],
      ["Set 2025",f"{n25} iniciativas del baseline 2025 (como estaban en el índice 2025), recodificadas a la taxonomía 2026 y corridas con la metodología nueva."],
+     ["2025 metodología antigua",f"Columna adicional en la pestaña 2: {legacy_nota}. Junto a las otras dos permite separar el EFECTO METODOLOGÍA (misma base 2025, fórmula nueva vs antigua) del EFECTO DATOS (misma fórmula nueva, base 2026 vs 2025)."],
      ["Metodología","CENIA v2 (jun-2026). Indicador = (Sub-Uso + Sub-Desarrollo)/2. Sub-Uso = promedio de 5: Tipos de proceso (÷5) · Etapas (÷4) · Continuidad = nivel máx. del país (÷3) · Organización Convocante (3 sub-componentes: gub ÷3 + no-gub ÷4 + co-convocatoria por máx. relativo) · Cantidad = todas las elegibles (umbrales 0/25/50/75/100). Sub-Desarrollo = 2025 (desarrollador nac/int × 4 tipos, máx. relativo + tipos de IA)."],
      ["Redondeo",f"{cfg.get('redondeo',{}).get('modo','legacy')} · count_min_level={cfg.get('cantidad',{}).get('count_min_level',0)} · escenario={cfg.get('escenarios',{}).get('scenario_activo','A')}"],
      ["Nota máx. relativo","El Sub-Desarrollo y la co-convocatoria usan máximo relativo POR CICLO: cada base (2025 y 2026) se normaliza contra su propio máximo, como indica la metodología."],
