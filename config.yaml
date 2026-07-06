@@ -167,6 +167,8 @@ descubrimiento:
     - { id: A.12, nombre: "Compras/licitaciones públicas (SECOP, ComprasNet, COMPR.AR, Mercado Público)", operable: true, requiere_anexo_b: false }
     - { id: A.13, nombre: "Premios e innovación pública (Gobernarte-BID, OGP Awards, CLAD, labs)",          operable: true, requiere_anexo_b: false }
     - { id: A.14, nombre: "Proveedores/herramientas (Citibeats, Go Vocal, Pol.is, Remesh, Decidim-IA…)",     operable: true, requiere_anexo_b: false }
+    # Incorporado jul-2026 tras revisar el atlas PAVE (0 casos nuevos este ciclo; dataset versionado en GitHub).
+    - { id: A.15, nombre: "Atlas PAVE / Connected by Data (pave.pairs.site; datos: github.com/connectedbydata/pave) + corpus Magaña-Shilton (FAccT'25)", operable: true, requiere_anexo_b: false }
   # Términos de búsqueda ampliados (cruzar participación × técnica, ES/PT/EN).
   terminos:
     participacion: ["consulta pública", "audiencia pública", "presupuesto participativo",
