@@ -16,7 +16,11 @@ dataset publicado vive en GitHub (`github.com/connectedbydata/pave`); descargamo
 `assets/data/cases_aggregated.json` (**83 casos publicados**, snapshot 2026-07-06, guardado
 en `data/fetched/pave_cases_aggregated_2026-07-06.json`).
 
-## Resultado: **ningún caso nuevo incluible** (y 1 cruce con nuestra base)
+## Resultado: **1 caso nuevo incorporado** (Meta GenAI Forum, BR) y 1 cruce con nuestra base
+
+*(Actualización jul-2026: en la revisión inicial Meta Forum quedó como "borde-NO"; tras la
+profundización pedida por el equipo —plataforma y moderador confirmados con verbatim, cohorte
+y resultados brasileños— se incorporó como caso BR. El resto se mantiene fuera.)*
 
 El atlas trata mayoritariamente de **"Participatory AI" = participación ciudadana EN el
 diseño/gobernanza de sistemas de IA** — el caso *inverso* a nuestro indicador (IA usada
@@ -28,7 +32,7 @@ solo tiene 6/95 LatAm). Análisis caso por caso:
 |---|---|---|---|
 | **A Framework for National Dialogues on Frontier Technologies** (UNDP Accelerator Labs) | PY (+MA) | Diálogos/encuesta sobre riesgos de IA | **Ya está en nuestra base** = "PY Consultas ciudadanas sobre IA (PNUD)", excluido (IA como tema; análisis humano). ✓ cruce confirmado |
 | **Collective Intelligence Project — Global Dialogues** | Global (86 países, 12 nuestros) | Diálogo global con **LLM que agrupa/sintetiza respuestas** y ML de consenso | NO: es global sin proceso-país atribuible (precedente Botivist) y el tema es la propia IA. *Es el único con mecanismo de "IA sobre aportes"; si CIP corre un diálogo país-específico en la región, revisar en 2027.* |
-| **Meta Generative AI Community Forum** | BR (+DE, ES, US) | Deliberative Polling® (plataforma Stanford, la misma con moderador automatizado de LXS 400) sobre políticas de IA generativa de Meta | NO: consulta corporativa global sobre políticas de producto — no es un proceso de participación ciudadana en asuntos públicos de un país. *El más cercano al borde; documentado.* |
+| **Meta Generative AI Community Forum** | BR (+DE, ES, US) | Deliberative Polling® (plataforma Stanford con moderador automatizado, la misma de LXS 400) sobre principios para chatbots de IA generativa | **INCORPORADO (jul-2026)** tras profundización dirigida: mini-público formal con cohorte brasileña de muestra científica, resultados desglosados para Brasil y moderador automatizado confirmado (verbatim Stanford/BIT). Convocante 'empresa' está en la taxonomía CENIA; la regla 'IA como tema' no aplica porque la IA es también herramienta del proceso. → nuevo caso BR. |
 | **Chilean National AI Policy — Participatory Design and Update** | CL | Actualización participativa de la Política Nacional de IA (2024-25, MinCiencia; ~300 presenciales + 600 online) | NO: participación EN política de IA = "IA como tema" (misma regla que UY ENIA y PY). |
 | **Global AI Dialogues** (TU Múnich) | BO, MX (+DE, IN, JP, NG) | Talleres de futuros + encuesta sobre IA | NO: sobre IA (tema) y multi-país. |
 | **Data Against Feminicide** | AR, BR, UY (+KE, US) | Contra-datos participativos sobre feminicidio (co-diseño de herramientas ML de detección de noticias) | NO: activismo de datos/monitoreo, no un proceso participativo convocado para una decisión pública; multi-país. |

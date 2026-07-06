@@ -34,6 +34,7 @@ CRIT_LBL={"pais":"País","tipo_proceso":"Tipo de proceso","etapas_uso_IA":"Etapa
 
 # Instrucciones específicas para casos sensibles (además de las derivadas de los gaps).
 SPECIAL={
+ "BR-meta-community-forum-genai":"Abrir el informe de Stanford (cddrl.fsi.stanford.edu/publication/meta-community-forum-results-analysis) y confirmar: (1) que el pipeline ChatGPT+ArgumentMiner también se usó en este foro (si sí, agregar etapa Análisis y rol contenido); (2) N de participantes de Brasil e idioma. URLs en la ficha.",
  "TT-engagett-plataforma-go-vocal":"Confirmar si el módulo de IA de Go Vocal (Sensemaking) se activó sobre los aportes, o si el uso de IA es solo el chatbot informativo AskNDTS. Revisar el panel de engage.gov.tt o consultar al Ministerio (MPAAI).",
  "CL-jornada-de-escucha-lanzamiento-instituto":"Adjuntar el enlace directo del informe/dashboard de la jornada; el de Tableau no es verificable públicamente. El equipo ejecutó el proceso, confirmar la técnica de análisis usada.",
  "CU-consulta-popular-codigo-de-las-familias":"Confirmar la técnica exacta de agrupamiento de GEMA-CEN (similitud/clustering) para precisar tipos de IA.",

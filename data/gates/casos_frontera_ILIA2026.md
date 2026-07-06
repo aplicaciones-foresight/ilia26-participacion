@@ -34,6 +34,7 @@ el contenido de los aportes. **No entra** la civic tech que no es un proceso par
 | **Brasil Participativo (clustering)** | BR | IA construida **con la Secretaria** (Residência TIC BRISA) que procesó 10.186 propuestas reales, con integración planeada; producción aún no confirmada. Planeado+ejecutado con el convocante → entra con nota (reevaluar 2027). |
 | **OPA Piauí** | BR | Presupuesto participativo consolidado (4ª edición); el proveedor (Colab) reporta IA que **redujo 40% el tiempo de procesamiento de propuestas** = apoyo activo a la logística del proceso. Claim de proveedor → entra con instrucción de validar con SEPLAN. |
 | **São Paulo Programa de Metas (Gemini)** | BR | La IA (Gemini) **procesó las 6.368 propuestas reales** de la consulta (Agente de Gobierno Abierto, may-2025), en paralelo a la sistematización oficial humana — mismo patrón que Pol.is/LUC. Entra con nota (análisis complementario, no pipeline oficial). |
+| **Meta GenAI Community Forum (cohorte Brasil)** | BR | Mini-público formal (Deliberative Polling®) con muestra científica brasileña; el **moderador automatizado** de la plataforma Stanford (misma de LXS 400) apoya la implementación; resultados con hallazgos brasileños e incidencia declarada por Meta. La regla "IA como tema" no aplica (la IA es también herramienta del proceso). → entra (identificado vía atlas PAVE). |
 
 ### Salieron (borde → NO)
 | Caso | País | Por qué salió |

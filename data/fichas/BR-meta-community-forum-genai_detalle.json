@@ -1,0 +1,88 @@
+{
+  "caso_id": "BR-meta-community-forum-genai",
+  "pais": "BR",
+  "nombre_caso": "Meta Community Forum on Generative AI — cohorte Brasil (Deliberative Polling, Stanford)",
+  "bloque": "4-descubrimiento-amplio",
+  "fuente_datos": "Atlas PAVE / Connected by Data (canal A.15) + verificación web 2026",
+  "ano_inicio": 2023,
+  "ano_cierre": 2023,
+  "estado_actividad": "cerrado",
+  "nivel_consolidacion": 2,
+  "continuidad": "Uso único",
+  "tipo_proceso": [
+    "Mini públicos"
+  ],
+  "etapas_uso_IA": [
+    "Implementación"
+  ],
+  "tipo_convocante": [
+    "empresa",
+    "universidad"
+  ],
+  "tipo_organizacion": "Privado",
+  "organizacion_a_cargo": "Meta (convocante/financista) + Stanford Deliberative Democracy Lab (diseño y ejecución del Deliberative Polling®) + Behavioural Insights Team (entrega y recomendaciones)",
+  "proceso_participativo": "Foro comunitario deliberativo (Deliberative Polling®) sobre principios para los chatbots de IA generativa, realizado el 28-29 de octubre de 2023 en la Stanford Online Deliberation Platform con 1.545 participantes de muestras científicas de Brasil, Alemania, España y EE.UU. Formato: grupos pequeños de 8-12 personas (166 grupos, con grupo de control por país), panel de expertos en plenario, cuadernillo informativo (~50 págs.) y 44 preguntas de opinión pre/post. Los resultados (publicados abr-2024) incluyen hallazgos específicos de Brasil (p. ej., fuerte oposición a relaciones románticas humano-chatbot; énfasis en perspectivas locales en las fuentes de la IA). Meta declaró que los resultados 'ayudaron a dar forma a algunas de las decisiones más fundamentales' del diseño de sus productos de IA generativa.",
+  "usa_IA_en_proceso": "sí",
+  "rol_IA": "apoyo",
+  "sistema_IA": "Stanford Online Deliberation Platform (Crowdsourced Democracy Team + Deliberative Democracy Lab, Stanford): plataforma con moderador automatizado que gestiona turnos y colas de palabra y agendas temporizadas en los grupos pequeños — la misma plataforma del caso 'LXS 400 - Chile Delibera' (2021).",
+  "funcion_IA": "Moderación/facilitación automatizada de la deliberación en grupos pequeños: administración de turnos de palabra, colas de habla y tiempos por agenda (apoyo logístico a la implementación del mini-público).",
+  "tipos_IA_familia": [
+    "Moderación/facilitación automatizada",
+    "Sistema de reglas/temporización"
+  ],
+  "usa_LLM_generativa": "no-claro",
+  "tipo_desarrollador_IA": [
+    "Academia"
+  ],
+  "origen_desarrollador": "Internacional",
+  "evidencia_verbatim": {
+    "pais": "scientific samples from Brazil, Germany, Spain, and the United States (deliberation.stanford.edu/meta-community-forum-generative-ai-results)",
+    "tipo_proceso": "On October 28-29, 2023, participants from these countries gathered on the Stanford Online Deliberation Platform... to consider future directions for the development of AI chatbots (deliberation.stanford.edu)",
+    "estado_actividad": "Deliberación 28-29 oct 2023; '2023 Results Announced' (abr-2024) — proceso concluido (deliberation.stanford.edu)",
+    "nivel_consolidacion": "Uso único: foro de oct-2023; el foro 2024 de 'AI Agents' NO incluyó a Brasil (deliberation.stanford.edu / FSI)",
+    "tipo_convocante": "Foro de Meta diseñado y ejecutado por el Stanford Deliberative Democracy Lab; BIT 'designed and delivered' foros 'on Meta's behalf' (transparency.meta.com; bi.team)",
+    "usa_IA_en_proceso": "the small group discussion sessions were conducted using the Stanford Online Deliberation Platform, developed by the Deliberative Democracy Lab and the Stanford Crowdsourcing Democracy Team, with participants each assigned to rooms of 8-12 people (bi.team/blogs/metas-community-forum-on-ai — socio ejecutor)",
+    "rol_IA": "[La plataforma] moderated the video based discussions, controlled the queue for talking, nudged those who had not volunteered to talk, intervened if there was incivility, and moved the group through the agenda... 'the AI-assisted featured moderator' (informe Stanford DDL/FSI, PDF oficial leído íntegro)",
+    "etapas_uso_IA": "Moderación automatizada de la deliberación en grupos pequeños = apoyo a la IMPLEMENTACIÓN (verbatim del moderador, informe Stanford DDL/FSI)"
+  },
+  "gaps": [
+    {
+      "campo": "pipeline de análisis de transcripciones en ESTE foro (ChatGPT para traducción + ArgumentMiner/Fileread.ai, confirmado en el foro hermano del Metaverso; de confirmarse aquí, agregar etapa 'Análisis' y rol 'contenido')",
+      "url_para_buscar": "https://cddrl.fsi.stanford.edu/publication/meta-community-forum-results-analysis"
+    },
+    {
+      "campo": "nº de participantes de Brasil, firma de muestreo e idioma (portugués)",
+      "url_para_buscar": "https://transparency.meta.com/governance/community-forums/2023-community-forum-on-generative-AI/"
+    }
+  ],
+  "fuentes": [
+    {
+      "titulo": "Stanford DDL — resultados del foro de IA generativa (2023)",
+      "url": "https://deliberation.stanford.edu/meta-community-forum-generative-ai-results"
+    },
+    {
+      "titulo": "Meta Transparency Center — Community Forum on Generative AI",
+      "url": "https://transparency.meta.com/governance/community-forums/2023-community-forum-on-generative-AI/"
+    },
+    {
+      "titulo": "Meta Newsroom — resultados y uso en decisiones de producto (abr-2024)",
+      "url": "https://about.fb.com/news/2024/04/leading-the-way-in-governance-innovation-with-community-forums-on-ai/"
+    },
+    {
+      "titulo": "Stanford CDDRL — análisis de resultados",
+      "url": "https://cddrl.fsi.stanford.edu/publication/meta-community-forum-results-analysis"
+    }
+  ],
+  "justificacion_elegibilidad": "Mini-público formal (Deliberative Polling®) con cohorte brasileña de muestra científica y resultados desglosados para Brasil, donde la IA de la plataforma (moderador automatizado de Stanford) apoya la IMPLEMENTACIÓN de la deliberación — mismo mecanismo aceptado en 'LXS 400 - Chile Delibera'. El convocante 'empresa' está contemplado en la taxonomía CENIA. Que el TEMA sea la IA no bloquea: la regla 'IA como tema' aplica a consultas SIN IA en el mecanismo (PY, UY ENIA, CL PNIA); aquí la IA es también herramienta del proceso. Incidencia declarada por Meta (autoreporte).",
+  "alertas": [
+    "Crítica académica a los foros corporativos: 'You can't solve democracy in Q3' (FAccT 2026, dl.acm.org/doi/10.1145/3805689.3812298) los describe como búsqueda de legitimidad sin cambiar la lógica de los productos. Citarla en el informe para equilibrio.",
+    "Tensión honesta: Stanford describe el moderador como 'AI-assisted'; fuentes técnicas independientes lo describen como automatización basada en reglas (colas, temporizador, nudges predefinidos). Misma tensión que en LXS 400, donde el equipo lo aceptó como IA de apoyo."
+  ],
+  "confianza": "ALTA (plataforma, moderador automatizado, fechas, cohorte BR y hallazgos BR confirmados con citas verbatim de Stanford/BIT); pendiente solo N de Brasil e idioma, y el pipeline de análisis (posible upgrade a 'contenido')",
+  "veredicto_equipo": "SI",
+  "comentario_equipo": "Incorporado jul-2026 tras la revisión del atlas PAVE y profundización dirigida; el equipo evaluó que entra (IA de apoyo a la implementación, precedente LXS 400).",
+  "entra_tentativo": "SI",
+  "cuenta_como_iniciativa": true,
+  "divergencia_equipo": false,
+  "notas_verificacion": "Caso identificado vía atlas PAVE (canal A.15) y verificado con búsqueda web dirigida (2 agentes). El PDF del informe 'final report' alojado en S3/FSI corresponde a OTRO foro (Metaverso, dic-2022): no usarlo como fuente de este caso. | Verificación 2ª pasada: BIT confirma la plataforma en este foro; verbatim del moderador extraído del PDF oficial de Stanford DDL (foro hermano, misma plataforma). ChatGPT+ArgumentMiner confirmados en el foro hermano; plausibles aquí (gap)."
+}
