@@ -1,6 +1,6 @@
 # Fuentes alternativas para los indicadores de IA Generativa del ILIA
 
-**Fecha:** 2026-07-06 · **Elaborado por:** equipo Foresight (investigación asistida con agentes de búsqueda web)
+**Fecha:** 2026-07-06 (act. con 2ª ronda de búsqueda de proxies) · **Elaborado por:** equipo Foresight (investigación asistida con agentes de búsqueda web)
 
 ## 0. Problema
 
@@ -39,14 +39,18 @@ Se lanzaron 4 líneas de búsqueda en paralelo: (a) plataformas de app intellige
    (faltan solo Trinidad y Tobago y Belice). Se puede triangular con OpenAI Signals y el
    Anthropic Economic Index, ambos también abiertos.
 3. **Para Tiempo de uso no hay reemplazo directo** (minutos/día por país no los publica nadie
-   con esta cobertura). La opción viable es sustituir el concepto "tiempo" por **intensidad de
-   uso** (mensajes per cápita de OpenAI Signals y/o índice AUI de Anthropic), con cobertura
-   amplia pero con exclusiones de países pequeños en el caso de OpenAI.
-4. **Para Gasto no encontramos un buen reemplazo** con cobertura de los 25 países. Las fuentes
-   de gasto real (IAP) solo desglosan Brasil públicamente; Statista mezcla B2B+B2C; y hay
-   países donde el gasto es estructuralmente no medible (Cuba sin App Store ni pagos en Google
-   Play) o subestimado (Venezuela, por fricciones de pago). Recomendación: **retirar o
-   redefinir el indicador**, no forzar un proxy inválido.
+   con esta cobertura), pero sí proxies de **intensidad de uso**: mensajes per cápita de OpenAI
+   Signals + AUI de Anthropic, complementados con el **share de tráfico de la categoría
+   "Generative AI" por país vía la API gratuita de Cloudflare Radar** (cobertura potencial
+   25/25) y, como referencia conceptualmente más cercana a "minutos", la **duración de sesión
+   por país del paper del Banco Mundial basado en Semrush** (209 economías). Ver §6.2.
+4. **Para Gasto no hay medición directa del gasto real** con cobertura de los 25 países, pero
+   la 2ª ronda de búsqueda identificó un proxy construible con cobertura completa:
+   **"Asequibilidad de IA generativa"** = precio local de la suscripción de referencia
+   (ChatGPT Go/Plus, con precios regionales ya públicos) como % del ingreso mensual per cápita,
+   replicando la metodología del ICT Price Basket de la UIT. Complementable con el gasto en IA
+   per cápita publicado por la propia **CEPAL (Katz & Jung 2025)** y calibrable con la tasa de
+   pago real de la encuesta CEPE-Fundar (AR/UY: 2,1% de usuarios paga). Ver §6.1.
 
 ---
 
@@ -173,47 +177,65 @@ trabajar (15–64) que usó herramientas de IA generativa en el período"*.
 - **Ruptura de serie:** documentar explícitamente que 2026 cambia de fuente (Sensor Tower →
   Microsoft) y de universo (apps móviles → cualquier dispositivo). No empalmar series; reiniciar base 2025.
 
-### Indicador 2 — Tiempo de uso → **SIN REEMPLAZO DIRECTO; sustituir el concepto por "intensidad"**
+### Indicador 2 — Tiempo de uso → **sustituir el concepto por "intensidad de uso"** (menú de proxies en §6.2)
 
-Nadie publica minutos/día por país fuera de los paneles pagos de app intelligence, y estos
-cubren ~6 países. Opciones, en orden de recomendación:
+Nadie publica minutos/día por país fuera de los paneles pagos de app intelligence (~6 países).
+Propuesta en dos capas:
 
-1. **Sustituir por "Intensidad de uso de IAGen":** mensajes de ChatGPT per cápita (OpenAI
-   Signals) como métrica principal, con AUI de Anthropic como contraste. Mide *cuánto* se usa,
-   que es el constructo que "minutos/día" intentaba capturar. Costo: cambia la unidad (deja de
-   ser tiempo) y OpenAI excluye países <5M (UY, PA, JM, TT, GY, SR, BZ) → cobertura ~18/25;
-   para los excluidos, AUI de Anthropic o sin dato.
-2. **Retirar el indicador** y absorber su peso en el indicador 1 (penetración). Defendible:
-   penetración e intensidad están altamente correlacionadas y el constructo "adopción" queda cubierto.
-3. **Mantener minutos/día contratando Sensor Tower** solo para el big 6 y dejar 19 países sin
-   dato. No recomendado: cobertura inaceptable para un índice regional y costo US$30k+.
+- **Métrica principal — intensidad:** mensajes de ChatGPT per cápita (OpenAI Signals, países
+  ≥5M) triangulados con el AUI de Anthropic (150+ países). Para los países que OpenAI excluye
+  (UY, PA, JM, TT, GY, SR, BZ), usar AUI y/o la capa Cloudflare.
+- **Capa de cobertura completa — tráfico:** **share de tráfico de la categoría "Generative
+  AI"** sobre el tráfico total del país, construido con la **API gratuita de Cloudflare Radar**
+  (`/radar/ranking` y `timeseries_groups` filtrables por país; la categoría IAGen existe y
+  Cloudflare publica datos hasta para países muy pequeños). Es el único candidato con cobertura
+  potencial 25/25; requiere trabajo de ingeniería propio (script sobre la API) y mide
+  popularidad relativa de tráfico DNS, no tiempo por usuario.
+- **Referencia conceptual más cercana a "minutos":** el paper del Banco Mundial *"Who on Earth
+  Is Using Generative AI?"* (WP 10870, datos Semrush) trabaja con **duración promedio de
+  sesión** y tráfico por usuario de internet para 209 economías — revisar sus tablas/anexos
+  (gratis) antes de descartar; los datos crudos actualizables requieren licencia Semrush. Ojo:
+  el propio reporte de Microsoft advierte que el tráfico per cápita distorsiona hacia arriba a
+  países pequeños (Surinam aparece en el top mundial), así que usarlo con normalización cuidadosa.
+- Las encuestas con pregunta de frecuencia (Reuters DNR "uso diario/semanal", Ipsos, KPMG)
+  sirven solo como validación para el big 6 + CR; la pregunta exacta de frecuencia por país no
+  pudo verificarse en los PDF (bloqueados) — verificar manualmente.
 
-**Recomendación: opción 1**, sujeta a verificar el bulk download de OpenAI Signals (no se pudo
-confirmar en esta sesión por bloqueos de red); si no es utilizable, opción 2.
+**Recomendación:** intensidad (Signals + AUI) como indicador puntuado, con la capa Cloudflare
+para completar cobertura y las encuestas como validación externa. Si el bulk download de
+Signals no resulta utilizable, elevar Cloudflare a métrica principal o retirar el indicador y
+absorber su peso en penetración.
 
-### Indicador 3 — Gasto en IA Generativa → **SIN BUEN REEMPLAZO; recomendamos retirarlo**
+### Indicador 3 — Gasto → **sin medición directa viable; reemplazar por proxy de "asequibilidad"** (menú en §6.1)
 
-Razones acumuladas:
+La medición directa del gasto sigue sin buen reemplazo (solo ~5 países, constructos mezclados,
+Cuba no medible, Venezuela subestimada). Pero con la flexibilidad de usar proxies, la opción
+recomendada es:
 
-- Ninguna fuente publica gasto de consumidor en IAGen por país para más de ~5 de los 25, y la
-  única candidata multi-país (Statista) mide mercado total B2B+B2G+B2C — constructo distinto.
-- El gasto es **estructuralmente no medible** en Cuba y fuertemente subestimado en Venezuela
-  (y parcialmente en Haití/Guyana) por ausencia/fricción de tiendas y medios de pago: el
-  indicador confundiría "no gasta" con "no puede pagar por canales medibles".
-- La evidencia de Appfigures (EE.UU. ~2/3 del gasto global) muestra que el gasto refleja poder
-  de compra y paridad de precios más que adopción — dudoso valor conceptual para un índice de
-  desarrollo de IA regional.
-
-Si retirar no es aceptable, la alternativa menos mala es redefinirlo como *"disposición a pagar
-por IAGen"* vía encuesta (Ipsos AI Monitor tiene cortes comprables), pero solo cubriría el big
-6 y con panel no probabilístico — lo desaconsejamos para el índice; podría ir como recuadro
-analítico del informe, no como indicador puntuado.
+- **"Asequibilidad de IA generativa"**: precio mensual local de la suscripción de referencia
+  (ChatGPT Go/Plus — precios públicos, con planes regionales confirmados en ~10-13 países de la
+  región y precio estándar global en el resto; opcionalmente promediado con Gemini AI Plus/Pro)
+  expresado como **% del ingreso mensual per cápita (GNI, Banco Mundial)**. Replica la
+  metodología del **ICT Price Basket de la UIT** (documentada y pública), es 100% computable
+  en casa, reproducible, gratuita y cubre los 25 países (Cuba se reporta como "servicio no
+  disponible" — dato en sí mismo informativo). Nota conceptual: mide *capacidad/barrera de
+  pago*, no gasto realizado; la dirección del indicador se invierte (menor % = mejor), lo que
+  además evita premiar simplemente la riqueza del país como haría el gasto bruto.
+- **Complementos:** (a) gasto en IA per cápita de **CEPAL (Katz & Jung 2025)** — US$/hab. para
+  CL 8.31, BR 5.00, MX 4.80, AR 3.00, CO 2.50, PE 2.00; el estudio analizó 26 países, pedir a
+  los autores la tabla completa (fuente de la casa: máxima legitimidad institucional para el
+  ILIA, aunque mezcla empresa+gobierno+consumidor); (b) tasa de pago real de CEPE-Fundar
+  (AR/UY: 2,1% de usuarios de IA paga) como punto de calibración; (c) disposición a pagar de
+  KPMG country snapshots (6 países) si se confirma la pregunta.
+- **Alternativa si no se acepta el cambio de constructo:** retirar el indicador (argumentos de
+  la v1 de este informe siguen vigentes para el gasto *realizado*).
 
 ### Ponderación / consecuencia para el índice
 
-Si se adopta la propuesta: el sub-pilar pasa de 3 indicadores a 2 (penetración + intensidad),
-ambos con fuente abierta, licencia permisiva, serie temporal y cobertura ≥18/25 con 23/25 en el
-principal. Redistribuir pesos dentro del sub-pilar y documentar el cambio en el anexo metodológico.
+El sub-pilar mantiene 3 indicadores reformulados: **penetración** (Microsoft, 23/25),
+**intensidad** (Signals/AUI + Cloudflare, 18-25/25) y **asequibilidad** (construcción propia,
+25/25) — todos con fuentes abiertas o computables en casa, sin dependencia de un proveedor
+comercial. Documentar la ruptura de serie 2025→2026 en el anexo metodológico.
 
 ---
 
@@ -225,6 +247,11 @@ principal. Redistribuir pesos dentro del sub-pilar y documentar el cambio en el 
 4. **GSMA Intelligence**: probar registro institucional gratuito de CENIA para el denominador "suscriptores únicos" por país (solo si se conserva el denominador original).
 5. **Latinobarómetro 2025**: revisar si el cuestionario incorporó pregunta de uso de IA (cubriría 18 países con muestra probabilística; gestión de incidencia posible para 2026/27).
 6. **Confirmar la lista real de los 5 países extra** (aquí se asumió NI, HT, BZ, GY, SR).
+7. **Cloudflare Radar**: prototipar con la API gratuita la extracción del share/serie de la categoría "Generative AI" para los 25 países y evaluar estabilidad de la señal en países pequeños.
+8. **Banco Mundial WP 10870** ("Who on Earth Is Using Generative AI?", datos Semrush): descargar el PDF y revisar si las tablas/anexos publican duración de sesión o tráfico per cápita por país para los 25.
+9. **Precios locales de ChatGPT Go/Plus y Gemini** en los 25 países (para el índice de asequibilidad): relevamiento manual desde las páginas de precios oficiales; confirmar disponibilidad en Venezuela y documentar la no-disponibilidad en Cuba.
+10. **CEPAL/Katz-Jung**: solicitar la tabla completa de gasto en IA per cápita de los 26 países analizados y el desglose por segmento (consumidor vs. empresa/gobierno).
+11. **KPMG country snapshots** (AR, BR, CL, CO, CR, MX): descargar manualmente y confirmar si existe pregunta de frecuencia de uso y de disposición a pagar por país.
 
 ## 5. Fuentes principales (URLs)
 
@@ -244,3 +271,35 @@ principal. Redistribuir pesos dentro del sub-pilar y documentar el cambio en el 
 y Pew, Hugging Face, openai.com) devolvieron 403/bloqueo de red durante la investigación; en
 esos casos las afirmaciones provienen de fragmentos indexados y triangulación de fuentes
 secundarias, y están marcadas como tales en el texto.*
+
+---
+
+## 6. Anexo — menú de proxies (2ª ronda de búsqueda)
+
+La restricción se relajó: no se exige medir exactamente lo mismo, sino un proxy razonable del
+constructo. Se corrieron dos búsquedas adicionales dedicadas (proxies de gasto/pago y proxies
+de tiempo/intensidad). Resultados rankeados por validez × cobertura:
+
+### 6.1 Proxies para GASTO en IAGen
+
+| Proxy | Métrica | Cobertura (de 25) | Acceso | Validez como proxy |
+|---|---|---|---|---|
+| **Asequibilidad de IAGen (construcción propia)** | Precio mensual local de ChatGPT Go/Plus (y opc. Gemini) como % del GNI per cápita mensual, método ICT Price Basket UIT | **25/25** (Cuba = "no disponible", dato informativo) | Gratis, computable en casa | **Alta** como proxy de capacidad/barrera de pago; no mide gasto realizado |
+| **CEPAL — Katz & Jung 2025** ("Impacto económico de la IA en América Latina") | Gasto en IA en US$ per cápita (2023): CL 8.31, BR 5.00, MX 4.80, AR 3.00, CO 2.50, PE 2.00 | 6 publicados (estudio analizó 26 → pedir tabla completa) | Gratis (publicación CEPAL) | **Media**: mezcla empresa+gobierno+consumidor, pero fuente institucional de la casa |
+| **CEPE-Fundar (Di Tella/BID)** | % de usuarios de IA que paga: **2,1%** (81% por suscripción) | 2 (AR, UY) | Gratis | **Alta validez conceptual**, cobertura mínima — usar como calibración |
+| **KPMG country snapshots** | Disposición a pagar por IA (pregunta por confirmar) | 6 (AR, BR, CL, CO, CR, MX) | Gratis con registro | Media-alta potencial, no verificada |
+| RevenueCat "State of Subscription Apps" (+Appfigures) | Conversión a pago/RPI/LTV de apps (categoría IA existe); LatAm solo como bloque (definido = 6 países, sin desagregar) | 0 país a país | Gratis | Baja-media: solo benchmark regional |
+| Global Findex 2025 (Banco Mundial) | Pagos digitales, % adultos | ~24/25 (Cuba probablemente no) | Gratis | Media como proxy estructural habilitante, no mide IA |
+| Precios regionales como señal | ChatGPT Go confirmado en AR (US$6), CO (~US$5), BR, CL, MX, UY (+expansión reportada a BO, CR, EC, SV, HN, NI, PE); facturación en CLP/COP/MXN | ~13 con precio local | Gratis | Insumo del índice de asequibilidad |
+| Ángulos vacíos | Deloitte Digital Consumer Trends (sin edición LatAm), Bango (solo EE.UU.), % de suscriptores de pago por país de OpenAI/Google/Anthropic (nunca publicado), Visa/Mastercard (sin categoría IA) | — | — | — |
+
+### 6.2 Proxies para TIEMPO de uso de IAGen
+
+| Proxy | Métrica | Cobertura (de 25) | Acceso | Validez como proxy |
+|---|---|---|---|---|
+| **OpenAI Signals + Anthropic AUI** (ya propuestos en §3) | Mensajes ChatGPT per cápita; uso de Claude vs población 15-64 | ~18/25 (Signals, ≥5M hab.) · 150+ países (AUI) | Gratis (CC BY 4.0 / HF) | **Alta** para intensidad; no es tiempo |
+| **Cloudflare Radar — categoría "Generative AI"** | Ranking y series de tráfico DNS de servicios IAGen por país (resolver 1.1.1.1); API `/radar/ranking`, `timeseries_groups` con filtro `location` | **Potencial 25/25** (publica hasta países muy pequeños); share % numérico verificado solo para top-5 global — requiere construcción propia | API gratuita con token | **Media**: popularidad relativa de tráfico, no tiempo por usuario; mejor cobertura de todas |
+| **Banco Mundial WP 10870** ("Who on Earth Is Using Generative AI?", datos Semrush) | **Duración promedio de sesión** y tráfico ChatGPT por usuario de internet, 209/218 economías | Probable 25/25 (tabla no verificada) | Paper gratis; datos crudos Semrush pagos | **Alta en concepto** (lo más cercano a "minutos"); snapshot fijo, sesgo al alza en países pequeños (Surinam en top mundial — advertido por el propio reporte de Microsoft) |
+| Encuestas con frecuencia (Reuters DNR/GenAI Report, Ipsos, KPMG, GWI) | % uso diario/semanal de IAGen | 1-6 según fuente; pregunta por país no verificada en Ipsos/KPMG; GWI pago | Gratis/pago | Media-alta en concepto, cobertura insuficiente — solo validación |
+| StarApple AI (Caribe) | 13% adultos usa GenAI; ~8,2% usuarios activos (agregado Caribe) | 0 país a país | Reporte a solicitar | Baja-media; única pista para Caribe angloparlante |
+| Ángulos vacíos | Meta AI/WhatsApp (nada publicado por país pese a dominancia en LatAm), Sensor Tower país-a-país público, GSMA/Ericsson (tráfico GenAI solo global: ~0,06% del tráfico móvil), OECD.AI (solo OCDE+G20), Adobe search data (sin LatAm), Forrester (sin LatAm) | — | — | — |
