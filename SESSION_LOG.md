@@ -23,6 +23,18 @@ Notas: la caducidad de anuncios (config) deja BR-brasil-participativo con nivel
 efectivo 0 (Año 2023) — sin impacto en el índice de BR; el «null» de PA Mansa Idea
 cuenta 0 sistemas de IA (decisión documentada en la pestaña 1).
 
+3. **`data/final/Comparacion_2025_2026_ILIA.xlsx`** (`src/build_comparacion.py`,
+   verificación `src/verify_comparacion.py`) — baseline 2025 calculado con la
+   FÓRMULA ANTIGUA (legacy 4 variables; reproduce el oficial publicado ±1 en
+   19/19) y con la FÓRMULA NUEVA (CENIA v2 sobre la recodificación 2026 BORRADOR),
+   comparados con el 2026; pestaña de comparación con Δ efecto fórmula / Δ real /
+   Δ total y 8 gráficos de barras (indicador, Sub1, Sub2 y V1-V5; paleta
+   verificada para daltonismo). Todo por fórmulas Excel auditables; los únicos
+   datos pegados son el oficial 2025 y los resultados 2026 (auditables en su
+   propio archivo). Máximos relativos 2025: combinaciones 2 · dev nac 3 ·
+   dev int 2 · sistemas 5. Nota: LibreOffice del contenedor no traía Calc
+   (se instaló libreoffice-calc para recalcular).
+
 ---
 
 **Fecha:** 2026-06-04 · **Idioma:** español · **Rama:** `claude/funny-dirac-pq4TG`
