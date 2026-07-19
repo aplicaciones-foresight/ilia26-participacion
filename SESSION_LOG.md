@@ -1,5 +1,30 @@
 # SESSION_LOG — Pipeline ILIA 2026 (Participación Ciudadana)
 
+## Sesión 2026-07-18/19 — Entregables post-validación (rama `claude/validated-excluded-cases-sheets-lohg7e`)
+
+El operador entregó la planilla validada (`data/final/insumo_Validacion_Casos_1.xlsx`,
+28 casos incluidos en 12 países · 79 excluidos). Con ella se generaron
+(`src/build_entregables.py`, verificación en `src/verify_entregables.py`):
+
+1. **`data/final/BBDD_casos_incluidos_ILIA2026.xlsx`** — pestaña 1: BBDD de los 28
+   casos (narrativa + coding validado + columnas derivadas por FÓRMULA); pestaña 2:
+   índice por país (metodología CENIA v2) 100 % por fórmulas auditables, con
+   parámetros y grillas auxiliares visibles. Recalculado (2.452 fórmulas, 0 errores)
+   y contrastado contra recomputación Python independiente (20 países × 13 métricas, 0 diferencias).
+   Resultados (Indicador final): BR 91 · CL 73 · CO 53 · CU 33 · GT 28 · BO 27 ·
+   PE 24 · EC/MX/UY 23 · PA 21 · VE 17 · resto 0.
+2. **`data/final/Casos_excluidos_ILIA2026.xlsx`** — 79 casos con origen:
+   12 estaban INCLUIDOS en la BBDD 2025 y salen en 2026 · 49 ya excluidos en 2025
+   (reconfirmados) · 18 candidatos nuevos 2026 no incluidos. Conciliación completa
+   con la BBDD 2025 (28 = 16 siguen + 12 salen; e-Cidadania 2025 quedó fusionado
+   en la fila 2026; homónimo CL Proceso Constitucional: 1 sigue + 1 sale).
+
+Notas: la caducidad de anuncios (config) deja BR-brasil-participativo con nivel
+efectivo 0 (Año 2023) — sin impacto en el índice de BR; el «null» de PA Mansa Idea
+cuenta 0 sistemas de IA (decisión documentada en la pestaña 1).
+
+---
+
 **Fecha:** 2026-06-04 · **Idioma:** español · **Rama:** `claude/funny-dirac-pq4TG`
 
 Bitácora de la primera sesión: construcción de la infraestructura del pipeline y
