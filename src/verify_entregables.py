@@ -218,8 +218,28 @@ for r in range(hrow+1, ws2.max_row+1):
     p=ws2.cell(r,1).value
     if not p: continue
     exrows.append(dict(pais=str(p).strip(), caso=str(ws2.cell(r,2).value or "").strip(),
-                       origen=str(ws2.cell(r,3).value or "").strip()))
+                       origen=str(ws2.cell(r,3).value or "").strip(),
+                       det=str(ws2.cell(r,4).value or ""), motivo=str(ws2.cell(r,6).value or "")))
 check(len(exrows)==79, f"Entregable 2: {len(exrows)} filas (esperadas 79)")
+
+# Guardas anti-truncamiento y de saneo (hallazgo del QA externo 2026-07-20:
+# el insumo traía 14 motivos capados a 300 chars — reconstruidos con etiqueta).
+import re as _re
+_FIN_OK = ".»\")!?]"
+for e in exrows:
+    m, d = e["motivo"], e["det"]
+    check(len(m) >= 10, f"motivo vacío: {e['pais']} {e['caso'][:40]}")
+    check(not (295 <= len(m) <= 305 and (not m or m[-1] not in _FIN_OK)),
+          f"motivo con firma de truncado a ~300: {e['pais']} {e['caso'][:40]} (fin={m[-25:]!r})")
+    check(not _re.search(r"https?://\S{0,14}$", m),
+          f"motivo termina en URL rota: {e['pais']} {e['caso'][:40]}")
+    check(not any(ch in m + d for ch in "​‌‍﻿"),
+          f"caracteres de ancho cero: {e['pais']} {e['caso'][:40]}")
+    if e["origen"].startswith("Nuevo 2026"):
+        check("Excluido en 2025 por" not in d,
+              f"detalle-plantilla 2025 en caso Nuevo 2026: {e['pais']} {e['caso'][:40]}")
+_n_rec = sum(1 for e in exrows if "[Cierre reconstruido" in e["motivo"])
+check(_n_rec == 14, f"motivos con etiqueta de reconstrucción = {_n_rec} (esperados 14)")
 def grp(origen):
     if origen.startswith("Base 2025 — estaba INCLUIDO"): return 1
     if origen.startswith("Base 2025 — ya estaba EXCLUIDO"): return 2

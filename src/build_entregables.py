@@ -28,7 +28,7 @@ Fuente principal (5 pestañas):
 Uso:  python src/build_entregables.py
 Requisitos: openpyxl. Tras generar, correr recalc.py sobre ambos archivos.
 """
-import os, shutil, unicodedata
+import os, shutil, sys, unicodedata
 import openpyxl
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
@@ -699,6 +699,204 @@ def match_source(pais, caso, source_rows, name_key):
             best, bestscore = s, score
     return best if bestscore >= 2 else None
 
+# --------------------------------------------------------------------------
+# 7-bis. REPARACIONES del entregable 2 (QA externo 2026-07-20)
+# --------------------------------------------------------------------------
+# La planilla de validación llegó con 14 celdas de «Motivo / justificación»
+# TRUNCADAS a 300 caracteres (defecto del export de la sesión que la generó;
+# el texto completo no sobrevive en ningún artefacto del repo). Se repone cada
+# motivo manteniendo VERBATIM el texto truncado y reconstruyendo el cierre solo
+# con hechos documentados en los artefactos citados. Además se corrigen las
+# observaciones menores del informe de QA (GaitanIA «}», Sufragio prefijo
+# duplicado, Colab no autocontenido, homónimo CL sin razón, detalles erróneos
+# de Atlántico y UY NNA, caracteres de ancho cero y años con decimal).
+
+_TAG = ("[Cierre reconstruido: el insumo de validación traía este texto truncado "
+        "a 300 caracteres; fuentes: {src}]")
+
+# clave: (pais, subcadena distintiva del nombre del caso, en norm_key)
+REPAIR_MOTIVO = {
+    ("BR", "bp classificador"): (
+        "NO ENTRA POR DOBLE CONTEO. Este candidato (BP-Classificador-de-Propostas, Residência TIC BRISA / "
+        "UnB-FGA / LAPPIS) es el MISMO caso ya contabilizado en la ficha BR-brasil-participativo-clustering-"
+        "semantic, no un caso distinto. Prueba directa: (a) esa ficha YA CITA este mismo repositorio "
+        "(https://github.com/ResidenciaTICBrisa/BP-Classificador-de-Propostas) entre sus fuentes fetcheadas "
+        "(Fase 2 del pipeline), y (b) el clasificador es parte del mismo pipeline de IA sobre las propuestas "
+        "de Brasil Participativo (mismo corpus y mismos desarrolladores UnB/BRISA). Contarlo aparte "
+        "duplicaría una iniciativa ya incluida → NO ENTRA. "
+        + _TAG.format(src="data/gates/fase2_estado.md (fuente GitHub fetcheada para esa ficha), ficha "
+                          "conciliada BR-brasil-participativo y URL del candidato")),
+    ("BR", "participemais"): (
+        "NO ENTRA. Aunque tecnicamente la IA SI procesa el CONTENIDO de los aportes (agrupa por temas via "
+        "HDBSCAN y clasifica en eixos por similitud semantica, ademas de resumir con LLM), el candidato "
+        "incumple una condicion NECESARIA del criterio de inclusion ('SI solo si caso distinto, DESPLEGADO "
+        "OFICIALMENTE'): es un proyecto ESTUDIANTIL de la disciplina Métodos de Desenvolvimento de Software "
+        "(UnB-MDS) construido sobre los datos públicos de Brasil Participativo, sin adopción ni despliegue "
+        "oficial en la plataforma, y sobre el mismo corpus del caso ya incluido → estudio/ejercicio sin "
+        "despliegue → NO ENTRA. "
+        + _TAG.format(src="repositorio del candidato (github.com/unb-mds/ParticipeMais) y regla de "
+                          "elegibilidad de la pestaña Instrucciones del insumo")),
+    ("BR", "lumina"): (
+        "NO ENTRA. Aunque la IA sí actúa sobre el CONTENIDO de aportes ciudadanos (análisis de sentimiento "
+        "positivo/negativo/neutro de las propuestas y comentarios de Brasil Participativo, rol_IA=contenido), "
+        "falla el requisito de DESPLIEGUE OFICIAL: Projeto Lumina es un EJERCICIO ACADÉMICO de la disciplina "
+        "'Métodos de Desenvolvimento de Software' (UnB-MDS, semestre 2024-2), sin adopción ni despliegue "
+        "oficial en la plataforma → estudio sin despliegue → NO ENTRA. "
+        + _TAG.format(src="repositorio del candidato (github.com/unb-mds/2024-2-Lumina) y regla de "
+                          "elegibilidad")),
+    ("CL", "senador virtual"): (
+        "2a PASADA (resuelve DUDA -> NO). La plataforma Senador Virtual / Congreso Virtual es un proceso "
+        "participativo digital del Congreso de Chile (gobierno nacional) plenamente activo y consolidado "
+        "(>16 anios, >130.000 participantes), pero la plataforma en si NO usa IA sobre el contenido de los "
+        "aportes y el trabajo de NLP/CrowdLaw documentado (GobLab UAI + IMFD, 2018-2023) es investigación "
+        "académica sobre los datos de la plataforma, sin verificación de aplicación en producción → sin IA "
+        "institucional desplegada sobre los aportes → NO. "
+        + _TAG.format(src="data/candidatos/candidatos.csv (señal/nota del candidato), "
+                          "data/gates/gate1_decision.md y URL del caso (goblab.uai.cl)")),
+    ("CO", "atlantico"): (
+        "NO ELEGIBLE. Dentro de un proceso participativo real (POD con mesas/talleres subregionales), la IA "
+        "(plataforma LITA / base de datos con IA) cumple funciones de ALMACENAMIENTO, PROCESAMIENTO y "
+        "ESTRUCTURACIÓN de información técnica territorial y CRUCE de datos técnicos/geoespaciales de punta "
+        "para actualizar el diagnóstico y los instrumentos del plan — es infraestructura de datos al servicio "
+        "de los equipos formuladores, NO análisis del CONTENIDO de los aportes ciudadanos de las mesas y "
+        "talleres → NO ELEGIBLE. "
+        + _TAG.format(src="la propia justificación truncada y la nota de prensa de la Gobernación del "
+                          "Atlántico (URL del caso)")),
+    ("CO", "pot de bogot"): (
+        "NO ENTRA. El criterio de elegibilidad exige que dentro de un proceso participativo se DESPLIEGUE IA "
+        "real (institucional) sobre el CONTENIDO de los aportes ciudadanos. El caso documentado es un "
+        "ARTÍCULO ACADÉMICO (Fundación Universitaria del Área Andina, Maestría en Innovación; publicado en la "
+        "revista de Control Visible de la Auditoría General de la República, jun-2025) que aplica modelos de "
+        "IA al contenido de aportes ciudadanos del POT (metodología mixta, 395 participantes) como "
+        "propuesta/piloto de investigación, sin despliegue institucional en el proceso participativo → "
+        "estudio sin despliegue → NO ENTRA. "
+        + _TAG.format(src="data/candidatos/candidatos.csv (señal del candidato "
+                          "CO-ia-para-participacion-en-el-pot-de-bogot) y URL del caso "
+                          "(controlvisible.auditoria.gov.co)")),
+    ("GT", "segeplan"): (
+        "El criterio ELEGIBLE exige que la IA generativa se use para SISTEMATIZAR/CLASIFICAR/RESUMIR el "
+        "CONTENIDO de los aportes de los diagnosticos participativos (Consejos de Desarrollo "
+        "COCODES/COMUDES) en los Planes de Desarrollo Municipal (PDM). Toda la evidencia primaria y "
+        "secundaria (nota SEGEPLAN ?p=14176 y cobertura relacionada) describe la plataforma de modelos "
+        "generativos como apoyo interno a la formulación/actualización de instrumentos de planificación por "
+        "equipos técnicos, sin evidencia de IA aplicada al contenido de los aportes participativos → NO "
+        "ENTRA. "
+        + _TAG.format(src="URL del caso (portal.segeplan.gob.gt/segeplan/?p=14176) y "
+                          "data/gates/descubrimiento_paises_flacos.md («ENIA/SEGEPLAN = uso interno o "
+                          "consulta sobre IA»)")),
+    ("PY", "acclab"): (
+        "El criterio ELEGIBLE exige que dentro de un proceso participativo convocado se use IA "
+        "(NLP/ML/clustering/sentimiento) SOBRE EL CONTENIDO de los aportes. Aquí ocurre lo contrario: (1) la "
+        "IA es el TEMA de la consulta (se pregunta a la ciudadania por su percepcion de la IA), y (2) el "
+        "ANÁLISIS de los aportes de las consultas fue realizado por el equipo (AccLab PNUD + Columbia SIPA + "
+        "MITIC) con métodos convencionales, sin traza de NLP/ML sobre el contenido → la IA es el tema, no la "
+        "herramienta → NO ENTRA. "
+        + _TAG.format(src="la propia justificación truncada (puntos 1-2) y el blog del PNUD Paraguay (URL "
+                          "del caso)")),
+    ("UY", "multiactores"): (
+        "NO (lean firme). (1) TEMPORAL: la consulta está ABIERTA hasta el 10/09/2026 y la fase de "
+        "sistematización/análisis/validación (Fase 3) recién ocurre entre el 10/09 y el 10/10/2026, con "
+        "informe final el 30/11/2026. A la fecha de evaluación (2026-07-01) la fase de análisis NO se ha "
+        "ejecutado, por lo que no existe aún uso de IA verificable sobre los aportes dentro de la ventana "
+        "del ciclo 2026 → NO; reevaluar en el ciclo siguiente, cuando la sistematización esté ejecutada. "
+        + _TAG.format(src="la propia justificación truncada (fechas del proceso) y la noticia del MEC "
+                          "(URL del caso)")),
+    ("CL", "ucampus"): (
+        "MANTENER EXCLUIDO. Existe un proceso participativo ELEGIBLE (Proceso Constitucional 2023, "
+        "mecanismos de participación ciudadana con ~280 mil personas, convocado por el Estado de Chile), y "
+        "UCampus (Universidad de Chile) fue el operador técnico de dos de los cuatro mecanismos (Audiencias "
+        "Públicas e Iniciativa Popular de Norma), pero no se encontró evidencia de que se aplicara IA/NLP "
+        "sobre el CONTENIDO de los aportes en esos mecanismos → el motivo 2025 («No evidencia de uso de IA») "
+        "sigue vigente → MANTENER EXCLUIDO. "
+        + _TAG.format(src="data/candidatos/excluidos_revisar.csv (por qué se revisó) y URL del caso "
+                          "(ucampus.cl)")),
+    ("CO", "asamblea ciudadana itinerante"): (
+        "El proceso es elegible en su forma (mini-publico deliberativo recurrente convocado por gobierno "
+        "local: Concejo de Bogota via DemoLab; 3 ediciones 2020/2021/2023). Sin embargo, NO se encontro "
+        "evidencia de uso de inteligencia artificial sobre el CONTENIDO de los aportes ciudadanos dentro del "
+        "proceso participativo en ninguna de sus ediciones → se confirma el motivo de exclusión 2025 → "
+        "MANTENER EXCLUIDO. "
+        + _TAG.format(src="data/candidatos/excluidos_revisar.csv y URL del caso (concejodebogota.gov.co)")),
+    ("CO", "procuraduria"): (
+        "Se MANTIENE EXCLUIDO (entra=NO), confirmando el motivo de exclusión de 2025 ('No se encontró "
+        "información sobre el uso de la IA en la implementación de los Mini Publics'). El proceso es "
+        "ELEGIBLE por su naturaleza (mini-público / diálogo social deliberativo convocado por la "
+        "Procuraduría General de la Nación, operado con la metodología de Ideemos), pero sin evidencia de "
+        "uso de IA sobre el contenido de los aportes → MANTENER EXCLUIDO. "
+        + _TAG.format(src="data/candidatos/excluidos_revisar.csv y URL del caso (ideemos.org)")),
+    ("CO", "pa que veas"): (
+        "Se revisa por su analogia con dIAra (bots que recopilan quejas ciudadanas y predicen riesgos en "
+        "obras). Sin embargo, NO se encontro evidencia de uso de inteligencia artificial sobre el CONTENIDO "
+        "de los aportes/quejas ciudadanas dentro de un proceso participativo. 'Pa' que veas' es, en su "
+        "nucleo, un civic-tech de monitoreo/fiscalización ciudadana de obras públicas (plataforma de la "
+        "Alcaldía de Cali con apoyo del BID), no un proceso participativo con IA sobre el contenido de los "
+        "aportes → MANTENER EXCLUIDO (mismo criterio corregido que dejó fuera a dIAra). "
+        + _TAG.format(src="data/candidatos/excluidos_revisar.csv y URL del caso (iadb.org)")),
+    ("CO", "ilabs"): (
+        "MANTENER EXCLUIDO. La regla de reingreso exige evidencia de IA aplicada al CONTENIDO de los aportes "
+        "ciudadanos dentro de un proceso participativo. La fuente primaria (página iLabs de Ideemos y su "
+        "PDF) describe 'Inteligencia Artificial' y 'Machine Learning' SOLO como parte de un listado de "
+        "técnicas que su metodología puede integrar, sin evidencia de un despliegue concreto de IA sobre el "
+        "contenido de los aportes en un proceso participativo específico → se confirma el motivo 2025 → "
+        "MANTENER EXCLUIDO. "
+        + _TAG.format(src="data/candidatos/excluidos_revisar.csv y PDF de iLabs (URL del caso)")),
+    # ---- observaciones menores del QA (no truncamiento) ----
+    ("CO", "gaitania"): None,   # solo quitar el «}» inicial (se maneja aparte, texto íntegro)
+    ("MX", "sufragio"): (
+        "EXCLUSIÓN FIRME (recodificación 2026): es un caso de integridad/verificación del proceso electoral, "
+        "no de IA sobre el contenido de aportes de participación (la regla 2026 deja fuera el voto/conteo "
+        "electoral; listado en config.yaml → escenarios.exclusiones_firmes). "
+        "[Texto normalizado: el insumo traía el prefijo duplicado; fuente: nota de "
+        "data/baseline/recodificacion_2025.csv]"),
+    ("BR", "colab"): (
+        "Está duplicado: la plataforma Colab corresponde al mismo despliegue ya contado en 2026 a través del "
+        "caso incluido «OPA Piauí — Orçamento Participativo Digital», que corre sobre Colab Gov; mantenerla "
+        "como caso propio duplicaría la iniciativa. "
+        "[Aclaración añadida al motivo del insumo («Está duplicado»); fuente: ficha incluida de OPA Piauí "
+        "(socio tecnológico: GovTech Colab)]"),
+    ("CL", "proceso constitucional"): (
+        "Aplica a los dos casos homónimos de la BBDD 2025 («análisis de los Diálogos Ciudadanos "
+        "Autoconvocados» y «análisis de las audiencias públicas», ambos de la Secretaría de Participación, "
+        "2023): permanece INCLUIDO el análisis de los Diálogos Autoconvocados (informe con NLP de la "
+        "Secretaría de Participación) y queda EXCLUIDO el homónimo de audiencias públicas, al no encontrarse "
+        "evidencia de IA sobre el contenido de los aportes de ese mecanismo (coherente con la revisión de la "
+        "plataforma UCampus, operador técnico de las audiencias, mantenida excluida por «no evidencia de uso "
+        "de IA»). "
+        "[Aclaración reconstruida; fuentes: BBDD 2025 (las dos filas homónimas) y revisión UCampus "
+        "(data/candidatos/excluidos_revisar.csv)]"),
+}
+
+REPAIR_DETALLE = {
+    ("CO", "atlantico"): (
+        "Proceso de formulación participativa del Plan de Ordenamiento Departamental (POD) 2025-2050 del "
+        "Atlántico (Colombia), convocado por la Gobernación con mesas y talleres subregionales. En paralelo, "
+        "la Gobernación presenta la plataforma LITA, una base de datos con IA para almacenar, procesar y "
+        "estructurar información técnica territorial y cruzar datos técnicos/geoespaciales que alimentan el "
+        "diagnóstico del plan (nota de prensa de la Gobernación, 2025)."),
+    ("UY", "multiactores"): (
+        "Consulta pública y proceso de participación multiactor «Niñas, niños, adolescentes, entornos "
+        "digitales e inteligencia artificial», lanzado por el Ministerio de Educación y Cultura de Uruguay "
+        "(2026). La consulta permanece abierta hasta el 10/09/2026; la fase de sistematización, análisis y "
+        "validación (Fase 3) está prevista entre el 10/09 y el 10/10/2026, con informe final el 30/11/2026."),
+}
+
+_ZW = dict.fromkeys(map(ord, "​‌‍﻿"), None)
+
+def clean_text(s):
+    """Sanea texto visible: caracteres de ancho cero, saltos de línea sueltos y
+    espacios repetidos (observaciones menores del QA externo)."""
+    s = str(s or "").translate(_ZW)
+    s = s.replace("\r\n", "\n").replace("\r", "\n")
+    s = " ".join(s.split())
+    return s
+
+def _repair_key(table, pais, caso):
+    nk = norm_key(caso)
+    for (p, kw) in table:
+        if p == pais and kw in nk:
+            return (p, kw)
+    return None
+
 def build_entregable2(excluidos, bbdd_casos, bbdd_excl, evid, cand, hall, planilla):
     # clasificar
     for row in excluidos:
@@ -758,7 +956,7 @@ def build_entregable2(excluidos, bbdd_casos, bbdd_excl, evid, cand, hall, planil
             if c["desc"]: parts.append(c["desc"].rstrip("."))
             meta=[]
             if c["org"]: meta.append(f"Organización a cargo: {c['org']}")
-            if c["anio"]: meta.append(f"año {c['anio']}")
+            if c["anio"]: meta.append(f"año {_anio_str(c['anio'])}")
             if meta: parts.append(". ".join(meta))
         if is_enrich6(row["pais"], row["caso"]):
             ev = find_evid(row["pais"], row["caso"])
@@ -768,12 +966,18 @@ def build_entregable2(excluidos, bbdd_casos, bbdd_excl, evid, cand, hall, planil
             parts.append(f"Caso incluido en la BBDD 2025. Ver motivo de exclusión.")
         return ". ".join(p for p in parts if p).strip() + "."
 
+    def _anio_str(v):
+        try:
+            return str(int(float(v)))
+        except (TypeError, ValueError):
+            return str(v)
+
     def detalle_g2(row):
         e = match_bbdd_excl(row["pais"], row["caso"])
         if e and e["desc"]:
             txt = e["desc"].rstrip(".")
             if e.get("anio") not in (None, "", "None"):
-                txt += f" (Año: {e['anio']})"
+                txt += f" (Año: {_anio_str(e['anio'])})"
             return txt + "."
         # sin descripción en BBDD 2025
         base = "Sin descripción registrada en la BBDD 2025."
@@ -806,7 +1010,14 @@ def build_entregable2(excluidos, bbdd_casos, bbdd_excl, evid, cand, hall, planil
         return ". ".join(p for p in parts if p).strip() + "."
 
     def motivo_final(row):
-        base = row["motivo"]
+        base = clean_text(row["motivo"])
+        rk = _repair_key(REPAIR_MOTIVO, row["pais"], row["caso"])
+        if rk is not None:
+            rep = REPAIR_MOTIVO[rk]
+            if rep is None:
+                base = base.lstrip("}").strip()   # GaitanIA: texto íntegro, solo el «}» espurio
+            else:
+                base = rep
         if row["grupo"] == 1:
             return "Estaba incluido en la BBDD 2025. " + base
         if row["grupo"] == 2:
@@ -826,9 +1037,13 @@ def build_entregable2(excluidos, bbdd_casos, bbdd_excl, evid, cand, hall, planil
     out_rows = []
     for row in ordered:
         g = row["grupo"]
-        det = detalle_g1(row) if g==1 else (detalle_g2(row) if g==2 else detalle_g3(row))
+        dk = _repair_key(REPAIR_DETALLE, row["pais"], row["caso"])
+        if dk is not None:
+            det = REPAIR_DETALLE[dk]
+        else:
+            det = detalle_g1(row) if g==1 else (detalle_g2(row) if g==2 else detalle_g3(row))
         out_rows.append(dict(pais=row["pais"], caso=row["caso"], origen=ORIGEN[g],
-                             grupo=g, detalle=det, urls=row["url"],
+                             grupo=g, detalle=clean_text(det), urls=row["url"],
                              motivo=motivo_final(row)))
 
     # ---- escribir workbook ----
@@ -867,15 +1082,20 @@ def build_entregable2(excluidos, bbdd_casos, bbdd_excl, evid, cand, hall, planil
 # 8. main
 # --------------------------------------------------------------------------
 def main():
+    # --solo2: regenera únicamente el entregable 2 (reparaciones QA) sin tocar
+    # el entregable 1, cuyo archivo ya aprobado debe conservar su SHA-256.
+    solo2 = "--solo2" in sys.argv
     os.makedirs(FINAL_DIR, exist_ok=True)
-    shutil.copyfile(INSUMO_SRC, INSUMO_REPO)   # trazabilidad
+    if not solo2:
+        shutil.copyfile(INSUMO_SRC, INSUMO_REPO)   # trazabilidad
     casos = read_incluidos()
     assert len(casos)==28, f"Se esperaban 28 casos incluidos, hay {len(casos)}"
-    catalog = build_sistemas_catalog(casos)
-    print(f"[incluidos] {len(casos)} casos · catálogo de sistemas IA: {len(catalog)} tokens")
-    print("  tokens:", catalog)
-    meta = build_entregable1(casos, catalog)
-    print(f"[entregable 1] escrito → {OUT1}  (datos filas {meta['R0']}..{meta['R1']})")
+    if not solo2:
+        catalog = build_sistemas_catalog(casos)
+        print(f"[incluidos] {len(casos)} casos · catálogo de sistemas IA: {len(catalog)} tokens")
+        print("  tokens:", catalog)
+        meta = build_entregable1(casos, catalog)
+        print(f"[entregable 1] escrito → {OUT1}  (datos filas {meta['R0']}..{meta['R1']})")
 
     excluidos = read_excluidos()
     assert len(excluidos)==79, f"Se esperaban 79 excluidos, hay {len(excluidos)}"

@@ -23,6 +23,21 @@ Notas: la caducidad de anuncios (config) deja BR-brasil-participativo con nivel
 efectivo 0 (Año 2023) — sin impacto en el índice de BR; el «null» de PA Mansa Idea
 cuenta 0 sistemas de IA (decisión documentada en la pestaña 1).
 
+**Reparación post-QA externo (2026-07-20).** Un QA independiente (otra cuenta,
+según `data/final/HANDOFF_QA_entregables.md`) aprobó los entregables 1 y 3 y
+bloqueó el 2 por **14 motivos truncados**. Causa raíz: la planilla de validación
+del operador traía esas celdas capadas a 300 caracteres (defecto del export de
+la sesión que la generó); el texto completo no sobrevivía en ningún artefacto.
+Se reconstruyeron los 14 cierres SOLO con hechos documentados (reingreso de
+excluidos, candidatos, gates, URLs), conservando verbatim el texto truncado y
+con etiqueta de procedencia por celda (`build_entregables.py → REPAIR_MOTIVO`).
+También: «}» espurio de GaitanIA, prefijo duplicado de Sufragio, Colab y el
+homónimo CL ahora autocontenidos, detalles erróneos de CO Atlántico y UY NNA
+reescritos (bug de matching difuso), años sin decimal y caracteres de ancho
+cero saneados. Guardas anti-truncamiento añadidos a `verify_entregables.py` y
+`qa_entregables.py` (prueba negativa: detectan 16 problemas en el B anterior).
+Los archivos 1 y 3 no se tocaron (SHA-256 intactos).
+
 3. **`data/final/Comparacion_2025_2026_ILIA.xlsx`** (`src/build_comparacion.py`,
    verificación `src/verify_comparacion.py`) — baseline 2025 calculado con la
    FÓRMULA ANTIGUA (legacy 4 variables; reproduce el oficial publicado ±1 en

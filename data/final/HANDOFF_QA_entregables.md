@@ -107,6 +107,36 @@ Conciliación de la base anterior: 28 casos 2025 = 16 siguen incluidos (el caso 
 
 **APROBADO** si: el script imprime «✓ QA COMPLETO EN VERDE» **y** el muestreo manual de fórmulas no encuentra valores pegados donde debía haber fórmula **y** la lectura del archivo B no encuentra contenido inventado o troncado. Cualquier otra cosa: **reportar sin corregir** — archivo, pestaña, celda, valor observado, valor esperado y por qué (contrastando con las secciones 5 y 6 antes de reportar, para no marcar decisiones intencionales como defectos).
 
+
+## 9 · Reparaciones post-QA (2026-07-20) — qué cambió en el archivo B (v2)
+
+El primer QA externo (2026-07-20) devolvió NO APROBADO por 14 motivos truncados en
+el archivo B (los archivos A y C quedaron aprobados y NO fueron modificados: sus
+SHA-256 se conservan). Reparaciones aplicadas en la v2 de `Casos_excluidos_ILIA2026.xlsx`:
+
+1. **14 motivos truncados repuestos.** La causa raíz estaba en el insumo: la planilla
+   de validación traía esas celdas capadas a 300 caracteres por un defecto del export
+   de la sesión que la generó, y el texto completo no sobrevivía en ningún artefacto.
+   Cada celda conserva VERBATIM el texto truncado y reconstruye el cierre solo con
+   hechos documentados (reingreso de excluidos, candidatos, gates, URLs del caso);
+   todas terminan con la etiqueta «[Cierre reconstruido: …; fuentes: …]».
+2. **Observaciones menores corregidas:** «}» espurio de CO GaitanIA eliminado (texto
+   íntegro); MX Sufragio seguro sin prefijo duplicado y con motivo autocontenido;
+   BR Colab explicita el duplicado (mismo despliegue que OPA Piauí sobre Colab Gov);
+   CL Proceso Constitucional explica el homónimo (audiencias sale, autoconvocados
+   sigue) y su razón; detalles de CO Atlántico y UY Consulta NNA reescritos (traían
+   un texto-plantilla erróneo por matching difuso); años sin decimal; caracteres de
+   ancho cero y saltos de línea saneados.
+3. **`qa_entregables.py` reforzado** (y su copia del Apéndice): ahora detecta la firma
+   de truncamiento (~300 chars sin puntuación final), URLs rotas al final del motivo,
+   caracteres de ancho cero, el texto-plantilla 2025 en casos del grupo 3, y exige
+   exactamente 14 etiquetas de reconstrucción.
+
+Para re-auditar la v2: correr el script actualizado y releer las 14+6 celdas listadas
+en el informe previo. Los cierres reconstruidos NO son texto del validador original:
+son recomposición documentada — si alguna reconstrucción se considera inexacta,
+reportarla indicando la fuente que la contradiga.
+
 ---
 
 ## Apéndice — `qa_entregables.py`
@@ -309,6 +339,27 @@ check((len(g1), len(g2), len(g3)) == (12, 49, 18), f"E2: grupos {(len(g1),len(g2
 check({(e["pais"], e["caso"]) for e in g1} == GRUPO1, "E2: los 12 del grupo 1 no son los esperados")
 check(all(len(e["det"]) >= 40 for e in excl), "E2: hay detalles narrados sospechosamente cortos (<40 chars)")
 check(all(len(e["motivo"]) >= 10 for e in excl), "E2: hay motivos vacíos o casi vacíos")
+# Guardas anti-truncamiento (hallazgo del QA externo 2026-07-20): el insumo de
+# validación traía 14 motivos capados a 300 caracteres; fueron reconstruidos
+# con etiqueta de procedencia. Ningún motivo puede terminar a mitad de palabra
+# con la firma del capado (~300 chars sin puntuación final) ni en URL rota,
+# ni contener caracteres de ancho cero; los detalles del grupo 3 no pueden
+# traer el texto-plantilla de re-verificación 2025 (bug de matching difuso).
+import re as _re
+_FIN_OK = ".»\")!?]"
+for e in excl:
+    m, d = e["motivo"], e["det"]
+    check(not (295 <= len(m) <= 305 and m[-1] not in _FIN_OK),
+          f"E2 truncado?: {e['pais']} {e['caso'][:40]} (len={len(m)}, fin={m[-25:]!r})")
+    check(not _re.search(r"https?://\S{0,14}$", m),
+          f"E2 URL rota al final del motivo: {e['pais']} {e['caso'][:40]}")
+    check(not any(ch in m + d for ch in "​‌‍﻿"),
+          f"E2 caracteres de ancho cero: {e['pais']} {e['caso'][:40]}")
+n_reconstruidos = sum(1 for e in excl if "[Cierre reconstruido" in e["motivo"])
+check(n_reconstruidos == 14,
+      f"E2: se esperaban 14 motivos con etiqueta de reconstrucción, hay {n_reconstruidos}")
+check(not any("Excluido en 2025 por" in e["det"] for e in excl if "Nuevo 2026" in e["origen"]),
+      "E2: detalle-plantilla 2025 en un caso del grupo 3 (Nuevo 2026)")
 check(all("http" in e["urls"] for e in excl), "E2: hay filas sin URL")
 nombres_incl = {(c["pais"], c["caso"]) for c in casos26}
 solapes = nombres_incl & {(e["pais"], e["caso"]) for e in excl}

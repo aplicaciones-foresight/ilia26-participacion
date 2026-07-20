@@ -193,6 +193,27 @@ check((len(g1), len(g2), len(g3)) == (12, 49, 18), f"E2: grupos {(len(g1),len(g2
 check({(e["pais"], e["caso"]) for e in g1} == GRUPO1, "E2: los 12 del grupo 1 no son los esperados")
 check(all(len(e["det"]) >= 40 for e in excl), "E2: hay detalles narrados sospechosamente cortos (<40 chars)")
 check(all(len(e["motivo"]) >= 10 for e in excl), "E2: hay motivos vacíos o casi vacíos")
+# Guardas anti-truncamiento (hallazgo del QA externo 2026-07-20): el insumo de
+# validación traía 14 motivos capados a 300 caracteres; fueron reconstruidos
+# con etiqueta de procedencia. Ningún motivo puede terminar a mitad de palabra
+# con la firma del capado (~300 chars sin puntuación final) ni en URL rota,
+# ni contener caracteres de ancho cero; los detalles del grupo 3 no pueden
+# traer el texto-plantilla de re-verificación 2025 (bug de matching difuso).
+import re as _re
+_FIN_OK = ".»\")!?]"
+for e in excl:
+    m, d = e["motivo"], e["det"]
+    check(not (295 <= len(m) <= 305 and m[-1] not in _FIN_OK),
+          f"E2 truncado?: {e['pais']} {e['caso'][:40]} (len={len(m)}, fin={m[-25:]!r})")
+    check(not _re.search(r"https?://\S{0,14}$", m),
+          f"E2 URL rota al final del motivo: {e['pais']} {e['caso'][:40]}")
+    check(not any(ch in m + d for ch in "​‌‍﻿"),
+          f"E2 caracteres de ancho cero: {e['pais']} {e['caso'][:40]}")
+n_reconstruidos = sum(1 for e in excl if "[Cierre reconstruido" in e["motivo"])
+check(n_reconstruidos == 14,
+      f"E2: se esperaban 14 motivos con etiqueta de reconstrucción, hay {n_reconstruidos}")
+check(not any("Excluido en 2025 por" in e["det"] for e in excl if "Nuevo 2026" in e["origen"]),
+      "E2: detalle-plantilla 2025 en un caso del grupo 3 (Nuevo 2026)")
 check(all("http" in e["urls"] for e in excl), "E2: hay filas sin URL")
 nombres_incl = {(c["pais"], c["caso"]) for c in casos26}
 solapes = nombres_incl & {(e["pais"], e["caso"]) for e in excl}
