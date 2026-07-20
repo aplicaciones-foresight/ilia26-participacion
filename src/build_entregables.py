@@ -30,6 +30,8 @@ Requisitos: openpyxl. Tras generar, correr recalc.py sobre ambos archivos.
 """
 import os, shutil, sys, unicodedata
 import openpyxl
+from openpyxl.chart import BarChart, Reference, Series
+from openpyxl.chart.shapes import GraphicalProperties
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
 
@@ -430,29 +432,11 @@ def build_entregable1(casos, catalog):
     for r in range(2, R1+1):
         ws.row_dimensions[r].height = 46
 
-    # --- bloque NOTAS Y SUPUESTOS ---
+    # --- puntero a la pestaña de metodología y supuestos ---
     nr = R1 + 3
-    ws.cell(nr, 1, "NOTAS Y SUPUESTOS").font = F(bold=True, size=11, color="1F4E79")
-    notas = [
-        "· Leyenda de colores: AZUL = dato validado (coding, pestaña 1). NEGRO = fórmula (columnas derivadas). "
-        "Las columnas del grupo D se calculan; no se pegan valores.",
-        "· PA · Mansa Idea: la celda «Tipos/familia IA» del insumo contiene «null» (sin sistema de IA técnicamente verificado). "
-        "Decisión: se cuenta como 0 sistemas de IA para ese caso; «null» no forma parte del catálogo de tokens.",
-        "· OPA Piauí (BR): «Tipos/familia IA» vacío → 0 sistemas para ese caso (BR conserva 11 sistemas por los otros casos).",
-        f"· Caducidad de anuncios (config.yaml): un «anuncio» (Nivel=1) caduca a los {CADUCIDAD} años sin implementación "
-        f"(año de referencia {ANIO_REF}). BR · Brasil Participativo (Nivel 1, Año 2023): nivel efectivo = 0 por caducidad; "
-        "no afecta el índice de BR porque OPA Piauí tiene nivel 3. VE · Plan de la Patria 7T (Nivel 1, Año 2025): 2026−2025=1 ≤ 2 → nivel efectivo se mantiene en 1.",
-        "· Tipos/familia IA se comparan como tokens textuales exactos separados por «;»: «LLM» ≠ «LLM generativa», "
-        "«NLP» ≠ «NLP - Tópicos» (no se fusionan; idéntico al motor 2025). «Otros(no especificado)» de MX sí cuenta como token.",
-        "· Códigos de combinación de convocantes: GL=gobierno local · GN=gobierno nacional · OIP=otra institución pública · "
-        "EMP=empresa · UNI=universidad · SC=sociedad civil · OI=organización internacional. Una combinación = conjunto de ≥2 "
-        "tipos que co-convocan una misma iniciativa; se deduplican conjuntos idénticos dentro del país (orden canónico por columna).",
-        "· Origen del desarrollador: se compara con token exacto («;nacional;» / «;internacional;») porque «nacional» es subcadena de «internacional».",
-    ]
-    for j, t in enumerate(notas):
-        cell = ws.cell(nr+1+j, 1, t); cell.font = F(size=8); cell.alignment = WRAP
-        ws.merge_cells(start_row=nr+1+j, start_column=1, end_row=nr+1+j, end_column=11)
-        ws.row_dimensions[nr+1+j].height = 30
+    cell = ws.cell(nr, 1, "Metodología, supuestos y decisiones: ver pestaña «3 · Metodología y supuestos».")
+    cell.font = F(bold=True, size=9, color="1F4E79")
+    ws.merge_cells(start_row=nr, start_column=1, end_row=nr, end_column=11)
 
     # ======================================================================
     # PESTAÑA 2 — Índice por país
@@ -678,6 +662,149 @@ def build_entregable1(casos, catalog):
         c=ix.cell(lg+1+j,1,t); c.font=F(size=8); c.alignment=WRAP
         ix.merge_cells(start_row=lg+1+j,start_column=1,end_row=lg+1+j,end_column=12)
         ix.row_dimensions[lg+1+j].height=28
+
+    # ======================================================================
+    # PESTAÑA 3 — Metodología y supuestos
+    # ======================================================================
+    ms = wb.create_sheet("3 · Metodología y supuestos")
+    ms.column_dimensions["A"].width = 30
+    for cc in "BCDEFGHIJK":
+        ms.column_dimensions[cc].width = 13
+    _r = [1]  # cursor de fila
+
+    def _sec(titulo):
+        c = ms.cell(_r[0], 1, titulo); c.font = F(bold=True, size=12, color="1F4E79")
+        _r[0] += 1
+
+    def _fila(etiqueta, texto, h=None, label_bold=True):
+        c = ms.cell(_r[0], 1, etiqueta)
+        c.font = F(bold=label_bold, size=9); c.alignment = CTOP
+        t = ms.cell(_r[0], 2, texto); t.font = F(size=9); t.alignment = WRAP
+        ms.merge_cells(start_row=_r[0], start_column=2, end_row=_r[0], end_column=11)
+        ms.row_dimensions[_r[0]].height = h or max(28, 13 * (1 + len(texto) // 130))
+        _r[0] += 1
+
+    def _blanco():
+        _r[0] += 1
+
+    ms.cell(1, 1, "METODOLOGÍA Y SUPUESTOS — Indicador de IA en Participación Ciudadana · ILIA 2026 (CENIA v2, jun-2026)").font = F(bold=True, size=13, color="1F4E79")
+    _r[0] = 3
+
+    _sec("A · METODOLOGÍA DE CÁLCULO")
+    _fila("Indicador",
+          "Indicador país = (Sub-Indicador de Uso + Sub-Indicador de Desarrollo) ÷ 2. Redondeo modo «legacy» "
+          "(config.yaml): Sub1 y Sub2 se redondean a enteros ANTES de promediar y el promedio se vuelve a "
+          "redondear: Indicador = ROUND((ROUND(Sub1,0)+ROUND(Sub2,0))÷2, 0). ROUND de Excel redondea .5 hacia "
+          "arriba (el motor Python 2025 usaba banker's rounding: diferencias posibles de ±1 solo en empates .5).")
+    _fila("Sub1 · Uso de IA",
+          "Promedio simple de 5 variables (cada una 0-100), calculadas por país en la pestaña 2:")
+    _fila("  V1 · Tipos de proceso",
+          "nº de tipos de proceso DISTINTOS usados por el país ÷ 5 × 100 (máximo absoluto). Taxonomía (5): "
+          "Participación Digital · Gobernanza Colaborativa · Mini públicos · Referendos e Iniciativas "
+          "Populares · Presupuestos Participativos.", label_bold=False)
+    _fila("  V2 · Etapas de uso",
+          "nº de etapas DISTINTAS en que el país usa IA ÷ 4 × 100 (máximo absoluto). Taxonomía (4): "
+          "Planificación · Implementación · Análisis · Traducción Política («Traducción» a secas cuenta como "
+          "Traducción Política).", label_bold=False)
+    _fila("  V3 · Continuidad",
+          f"nivel MÁXIMO de consolidación verificado del país ÷ 3 × 100, usando el «nivel efectivo»: un "
+          f"anuncio (Nivel=1) caduca a los {CADUCIDAD} años sin implementación (año de referencia "
+          f"{ANIO_REF}) y pasa a 0. Escala: 0 = sin señal · 1 = anuncio · 2 = uso puntual · 3 = permanente/recurrente.",
+          label_bold=False)
+    _fila("  V4 · Organización convocante",
+          "promedio de 3 subcomponentes co-iguales × 100: (a) amplitud gubernamental = nº de tipos "
+          "gubernamentales distintos ÷ 3 (gobierno local · gobierno nacional · otra institución pública); "
+          "(b) amplitud no gubernamental = nº de tipos no gubernamentales distintos ÷ 4 (empresa · "
+          "universidad · sociedad civil · organización internacional); (c) co-convocatoria = nº de "
+          "COMBINACIONES distintas del país ÷ máximo relativo del ciclo (máximo entre los 20 países, "
+          "recalculado por fórmula). Una combinación = el CONJUNTO de ≥2 tipos de convocante que co-convocan "
+          "una misma iniciativa; una co-convocatoria de 3-4 actores = 1 combinación; conjuntos idénticos se "
+          "deduplican dentro del país.", label_bold=False)
+    _fila("  V5 · Cantidad",
+          "nº de iniciativas elegibles del país (filas con «Cuenta como iniciativa» = sí) llevado a umbrales "
+          "fijos: 0 → 0 · 1-3 → 25 · 4-6 → 50 · 7-9 → 75 · 10 o más → 100.", label_bold=False)
+    _fila("Sub2 · Desarrollo de IA",
+          "Idéntico a la metodología 2025 (no se modificó). Promedio de 2 variables: (a) V-Desarrollador = "
+          "(nº de tipos de desarrollador con origen Nacional ÷ máximo relativo + nº con origen Internacional "
+          "÷ máximo relativo) ÷ 2 × 100 — 4 tipos de actor: Privado · Academia · Gobierno · Sociedad Civil; "
+          "si un caso tiene varios tipos y varios orígenes, todos los tipos cuentan para cada origen del "
+          "caso (cruce completo); (b) V-Tipos de IA = nº de sistemas/familias de IA distintos del país ÷ "
+          "máximo relativo × 100. Los máximos relativos son el MÁXIMO entre los 20 países del ciclo, "
+          "calculados por fórmula en la pestaña 2 (bloque de parámetros).")
+    _fila("Flujo del cálculo",
+          "Coding validado (celdas AZULES, pestaña 1) → columnas de normalización y flags 0/1 POR FÓRMULA "
+          "(pestaña 1, grupo D) → grillas de presencia por país y parámetros (pestaña 2, bloques bajo la "
+          "tabla) → variables V1…V5 y componentes de Sub2 → subindicadores → Indicador. Ninguna celda "
+          "numérica del cálculo es un valor pegado: todo recalcula al editar el coding.")
+    _blanco()
+
+    _sec("B · SUPUESTOS Y DECISIONES DOCUMENTADAS")
+    supuestos = [
+        ("Colores", "AZUL = dato validado (coding de la planilla de validación del operador). NEGRO = fórmula. "
+                    "Celdas amarillas (pestaña 2) = parámetros de entrada del ciclo."),
+        ("PA · Mansa Idea", "la celda «Tipos/familia IA» del insumo contiene «null» (sin sistema de IA técnicamente "
+                    "verificado). Decisión: cuenta 0 sistemas de IA para ese caso; «null» no forma parte del catálogo de "
+                    "tokens. Si el equipo decidiera contarlo como «no especificado» (1 sistema), Sub2 de PA subiría."),
+        ("BR · OPA Piauí", "«Tipos/familia IA» vacío → 0 sistemas para ese caso (BR conserva 11 sistemas por los otros casos)."),
+        ("Caducidad de anuncios", f"un «anuncio» (Nivel=1) caduca a los {CADUCIDAD} años sin implementación (año de "
+                    f"referencia {ANIO_REF}). BR · Brasil Participativo (Nivel 1, Año 2023): nivel efectivo = 0 por "
+                    "caducidad — sin impacto en el índice de BR porque OPA Piauí aporta nivel 3. VE · Plan de la Patria "
+                    "7T (Nivel 1, Año 2025): 2026−2025 = 1 ≤ 2 → mantiene nivel 1."),
+        ("Tokens de sistemas de IA", "comparación textual EXACTA de tokens separados por «;»: «LLM» ≠ «LLM generativa», "
+                    "«NLP» ≠ «NLP - Tópicos» (no se fusionan; idéntico al motor 2025). «Otros(no especificado)» de MX sí "
+                    "cuenta como token."),
+        ("Códigos de combinación", "GL=gobierno local · GN=gobierno nacional · OIP=otra institución pública · EMP=empresa · "
+                    "UNI=universidad · SC=sociedad civil · OI=organización internacional (orden canónico por columna)."),
+        ("Origen del desarrollador", "matching por token exacto («;nacional;» / «;internacional;») porque «nacional» es "
+                    "subcadena de «internacional»."),
+        ("e-Cidadania (BR)", "fila FUSIONADA: el mismo portal del Senado con dos aplicaciones de IA (marcado de audiencias "
+                    "2025 + matching semántico de ideias legislativas 2025/2026) cuenta como UNA iniciativa."),
+        ("Homónimo CL", "de los dos casos 2025 «Participación Ciudadana Proceso Constitucional», solo el análisis de los "
+                    "Diálogos Autoconvocados quedó incluido; el de audiencias públicas está en la planilla de excluidos."),
+        ("Escenarios A/B", "resueltos por la validación manual del operador: «Tenemos que hablar de Chile» permanece "
+                    "incluido; CiudadanIA (DO) y las exclusiones firmes están en la planilla de excluidos."),
+        ("Fuente de los datos", "planilla de validación manual del operador (data/final/insumo_Validacion_Casos_1.xlsx, "
+                    "jul-2026); generación reproducible con src/build_entregables.py y verificación con "
+                    "src/verify_entregables.py (recomputación Python independiente, 0 diferencias)."),
+    ]
+    for lbl, txt in supuestos:
+        _fila(lbl, txt)
+    _blanco()
+    _fila("Países sin casos", "AR · CR · DO · HN · JM · PY · SV · TT no tienen casos elegibles en 2026 y puntúan 0 en "
+          "todas las variables, subindicadores e indicador.")
+
+    # ======================================================================
+    # PESTAÑA 4 — Gráficos (variables y subindicadores)
+    # ======================================================================
+    gr = wb.create_sheet("4 · Gráficos")
+    gr.cell(1, 1, "GRÁFICOS — comparación de variables y subindicadores 2026 por país (leen la pestaña «2 · Índice por país»; recalculan al cambiar los datos)").font = F(bold=True, size=12, color="1F4E79")
+    gr.cell(2, 1, "Paleta categórica verificada para daltonismo. Los valores exactos están en la tabla de la pestaña 2 (los tonos claros se apoyan en esa tabla y en las leyendas).").font = F(size=8, italic=True)
+
+    PAL5 = ["2A78D6", "008300", "E87BA4", "EDA100", "1BAF7A"]
+    IXHDR, IXR0, IXR1 = 2, MR0, MR1
+
+    def _chart(titulo, cols, colores, anchor, con_leyenda=True):
+        ch = BarChart(); ch.type = "col"; ch.grouping = "clustered"
+        ch.title = titulo
+        ch.y_axis.title = "Puntaje (0-100)"; ch.x_axis.title = "País"
+        ch.y_axis.delete = False; ch.x_axis.delete = False
+        ch.height, ch.width = 9.2, 21; ch.gapWidth = 120
+        if con_leyenda:
+            ch.legend.position = "b"
+        else:
+            ch.legend = None
+        cats = Reference(ix, min_col=1, min_row=IXR0, max_row=IXR1)
+        for cidx, color in zip(cols, colores):
+            ser = Series(Reference(ix, min_col=cidx, min_row=IXHDR, max_row=IXR1), title_from_data=True)
+            ser.graphicalProperties = GraphicalProperties(solidFill=color)
+            ch.series.append(ser)
+        ch.set_categories(cats)
+        gr.add_chart(ch, anchor)
+
+    _chart("Indicador de IA en Participación Ciudadana 2026 por país", [23], [PAL5[0]], "A4", con_leyenda=False)
+    _chart("Subindicadores 2026: Uso (Sub1) vs Desarrollo (Sub2)", [14, 20], [PAL5[0], PAL5[1]], "A23")
+    _chart("Variables del Sub-Indicador de Uso (V1–V5) por país", [4, 6, 8, 12, 13], PAL5, "A42")
+    _chart("Variables del Sub-Indicador de Desarrollo por país", [17, 19], [PAL5[0], PAL5[1]], "A61")
 
     wb.save(OUT1)
     return dict(R0=R0, R1=R1, MR0=MR0, MR1=MR1)
@@ -1125,9 +1252,10 @@ def build_entregable2(excluidos, bbdd_casos, bbdd_excl, evid, cand, hall, planil
 # 8. main
 # --------------------------------------------------------------------------
 def main():
-    # --solo2: regenera únicamente el entregable 2 (reparaciones QA) sin tocar
-    # el entregable 1, cuyo archivo ya aprobado debe conservar su SHA-256.
+    # --solo2: regenera únicamente el entregable 2 · --solo1: únicamente el 1.
+    # (Permiten no tocar el archivo hermano para conservar su SHA-256.)
     solo2 = "--solo2" in sys.argv
+    solo1 = "--solo1" in sys.argv
     os.makedirs(FINAL_DIR, exist_ok=True)
     if not solo2:
         shutil.copyfile(INSUMO_SRC, INSUMO_REPO)   # trazabilidad
@@ -1139,6 +1267,8 @@ def main():
         print("  tokens:", catalog)
         meta = build_entregable1(casos, catalog)
         print(f"[entregable 1] escrito → {OUT1}  (datos filas {meta['R0']}..{meta['R1']})")
+    if solo1:
+        return
 
     excluidos = read_excluidos()
     assert len(excluidos)==79, f"Se esperaban 79 excluidos en el insumo, hay {len(excluidos)}"

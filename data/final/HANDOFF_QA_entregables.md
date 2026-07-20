@@ -14,9 +14,11 @@ El indicador ILIA de **IA en Participación Ciudadana** cubre 20 países (AR, BO
 
 ## 2 · Los 3 archivos
 
-### A) `BBDD_casos_incluidos_ILIA2026.xlsx` — la base y el índice 2026
-- **Pestaña «1 · BBDD Casos incluidos»** (28 filas): identificación, narrativa, URLs, coding validado (texto azul = dato) y **columnas derivadas por fórmula** (texto negro): normalizaciones, flags 0/1 por taxonomía, «Nivel efectivo» (caducidad de anuncios), clave de combinación de convocantes y su 1ª aparición por país. Bloque «NOTAS Y SUPUESTOS» debajo de la tabla.
+### A) `BBDD_casos_incluidos_ILIA2026.xlsx` — la base y el índice 2026 (v3: 4 pestañas)
+- **Pestaña «1 · BBDD Casos incluidos»** (28 filas): identificación, narrativa, URLs, coding validado (texto azul = dato) y **columnas derivadas por fórmula** (texto negro): normalizaciones, flags 0/1 por taxonomía, «Nivel efectivo» (caducidad de anuncios), clave de combinación de convocantes y su 1ª aparición por país. Bajo la tabla, un puntero a la pestaña 3.
 - **Pestaña «2 · Índice por país»** (20 países): TODO por fórmula. Estructura: N iniciativas → V1…V5 → Sub1 · desarrolladores/sistemas → Sub2 · redondeos → **Indicador final**. Debajo: parámetros (año de referencia 2026, caducidad 2 años, umbrales de Cantidad), máximos relativos (fórmulas MAX) y las grillas auxiliares que alimentan cada celda.
+- **Pestaña «3 · Metodología y supuestos»** (pedida por el operador el 2026-07-20): sección A = metodología CENIA v2 completa (las 7 variables, subcomponentes, máximos relativos, redondeo, flujo del cálculo); sección B = los supuestos y decisiones que antes estaban como bloque de notas en la pestaña 1 (PA «null», caducidad BR-BP, tokens, fusión e-Cidadania, homónimo CL, escenarios, fuente). Verificar que coincida con §3 y §6 de este handoff.
+- **Pestaña «4 · Gráficos»** (pedida por el operador el 2026-07-20): 4 barras agrupadas que leen la pestaña 2 — Indicador final (1 serie, sin leyenda) · Sub1 vs Sub2 (2 series) · V1–V5 de Uso (5 series) · las 2 variables de Desarrollo (2 series). Paleta categórica en orden fijo validada para daltonismo (#2A78D6 · #008300 · #E87BA4 · #EDA100 · #1BAF7A).
 
 ### B) `Casos_excluidos_ILIA2026.xlsx` — los 79 excluidos con su origen
 Una sola pestaña (80 filas: 79 del insumo de validación + GeTAU AR, agregado el 2026-07-20) : País · Caso · **Origen del caso** (3 valores) · Detalles del caso (narrado, 1 celda) · URLs · Motivo y detalles de la exclusión (1 celda, texto íntegro). Los 3 orígenes:
@@ -149,6 +151,17 @@ ENTRA** (análogo a ParticipACT, dIAra, Pa' que veás, Satellites On Fire). Se a
 archivo B como «Nuevo 2026», por lo que el total pasa de 79 a **80 = 12 + 49 + 19** (el
 script del Apéndice ya espera estos conteos). La celda registra que el fetch directo de
 las fuentes fue bloqueado por el proxy del entorno de generación.
+
+
+## 11 · Ampliación del archivo A (2026-07-20, pedida por el operador) — v3
+
+Se agregaron al archivo A las pestañas «3 · Metodología y supuestos» (metodología completa
++ supuestos movidos desde el bloque de notas de la pestaña 1) y «4 · Gráficos» (4 gráficos
+de variables y subindicadores). Las pestañas 1 y 2 NO cambiaron en contenido ni fórmulas
+(2.452 fórmulas, recalc 0 errores, valores idénticos verificados contra la recomputación);
+el SHA-256 del archivo cambia por las pestañas nuevas. El QA automático no requiere cambios
+(lee las pestañas 1 y 2 por nombre). Revisar: que la pestaña 3 coincida con §3/§6 y que los
+4 gráficos coincidan con la tabla de la pestaña 2.
 
 ---
 
