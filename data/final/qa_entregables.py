@@ -185,11 +185,11 @@ for r in range(hr+1, we.max_row+1):
     excl.append(dict(pais=str(we.cell(r,1).value).strip(), caso=str(we.cell(r,2).value).strip(),
                      origen=str(we.cell(r,3).value), det=str(we.cell(r,4).value or ""),
                      urls=str(we.cell(r,5).value or ""), motivo=str(we.cell(r,6).value or "")))
-check(len(excl) == 79, f"E2: se esperaban 79 filas, hay {len(excl)}")
+check(len(excl) == 80, f"E2: se esperaban 80 filas (79 del insumo + GeTAU AR), hay {len(excl)}")
 g1 = [e for e in excl if "estaba INCLUIDO" in e["origen"]]
 g2 = [e for e in excl if "ya estaba EXCLUIDO" in e["origen"]]
 g3 = [e for e in excl if "Nuevo 2026" in e["origen"]]
-check((len(g1), len(g2), len(g3)) == (12, 49, 18), f"E2: grupos {(len(g1),len(g2),len(g3))} ≠ (12,49,18)")
+check((len(g1), len(g2), len(g3)) == (12, 49, 19), f"E2: grupos {(len(g1),len(g2),len(g3))} ≠ (12,49,19)")
 check({(e["pais"], e["caso"]) for e in g1} == GRUPO1, "E2: los 12 del grupo 1 no son los esperados")
 check(all(len(e["det"]) >= 40 for e in excl), "E2: hay detalles narrados sospechosamente cortos (<40 chars)")
 check(all(len(e["motivo"]) >= 10 for e in excl), "E2: hay motivos vacíos o casi vacíos")
@@ -297,6 +297,6 @@ if fallas:
     sys.exit(1)
 print("✓ QA COMPLETO EN VERDE")
 print("  E1: 28 casos · índice 2026 recomputado = Excel = tabla de referencia (20 países)")
-print("  E2: 79 excluidos = 12 + 49 + 18 · grupo 1 exacto · sin solapes con incluidos · celdas completas")
+print("  E2: 80 excluidos = 12 + 49 + 19 (incl. GeTAU AR) · grupo 1 exacto · sin solapes · celdas completas")
 print("  E3: legacy 2025 = oficial ±1 (19/19) · fórmula nueva verificada · 2026 consistente · 8 gráficos")
 print(f"  Máximos 2026 {mx26} · Máximos 2025 {mx25}")

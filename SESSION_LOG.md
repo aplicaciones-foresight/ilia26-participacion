@@ -36,7 +36,15 @@ homónimo CL ahora autocontenidos, detalles erróneos de CO Atlántico y UY NNA
 reescritos (bug de matching difuso), años sin decimal y caracteres de ancho
 cero saneados. Guardas anti-truncamiento añadidos a `verify_entregables.py` y
 `qa_entregables.py` (prueba negativa: detectan 16 problemas en el B anterior).
-Los archivos 1 y 3 no se tocaron (SHA-256 intactos).
+Los archivos 1 y 3 no se tocaron (SHA-256 intactos). **Alta GeTAU (2026-07-20):**
+el equipo aportó GeTAU (Córdoba, AR — WebApp de IA + geolocalización +
+participación vecinal para monitoreo del arbolado; ONG Acción Ambiental + UNC,
+difusión CorLab municipal). Revisión de 2ª opinión: la participación es aporte
+de datos (censo/mapeo colaborativo) y la IA opera sobre los datos de árboles,
+no sobre aportes de un proceso participativo → civic tech de monitoreo → NO
+ENTRA (análogo a ParticipACT/dIAra/Pa' que veás/Satellites On Fire). Agregado
+al entregable 2 como «Nuevo 2026» → total 80 = 12 + 49 + 19 (fetch directo de
+fuentes bloqueado por el proxy; anotado en la celda).
 
 3. **`data/final/Comparacion_2025_2026_ILIA.xlsx`** (`src/build_comparacion.py`,
    verificación `src/verify_comparacion.py`) — baseline 2025 calculado con la

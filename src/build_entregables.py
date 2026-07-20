@@ -866,7 +866,50 @@ REPAIR_MOTIVO = {
         "(data/candidatos/excluidos_revisar.csv)]"),
 }
 
+# Casos excluidos AGREGADOS después de la validación (no vienen en el insumo).
+# GeTAU: aportado por el equipo el 2026-07-20; revisado (2ª opinión) → NO ENTRA.
+NUEVOS_EXCLUIDOS = [
+    dict(
+        pais="AR",
+        caso="GeTAU — Gestión del Arbolado Urbano (Córdoba)",
+        bloque="Descubrimiento (aporte del equipo, jul-2026)",
+        motivo=(
+            "NO ENTRA (revisión jul-2026 a pedido del equipo; la 2ª opinión coincide con el juicio del "
+            "aportante). La «participación» de GeTAU es aporte de DATOS/observaciones — ciencia ciudadana y "
+            "censo/mapeo colaborativo del arbolado (los vecinos georreferencian ejemplares y cargan especie, "
+            "estado y cuidados) — y la IA opera sobre esos datos de árboles (identificación/estado y "
+            "prevención de riesgo de caída), NO sobre el contenido de aportes de un proceso de participación "
+            "ciudadana. No existe consulta pública, deliberación, presupuesto participativo, referendo ni "
+            "decisión ciudadana asociada. Criterio corregido: civic tech de reporte/servicio/monitoreo que "
+            "no es un proceso participativo → NO ENTRA (análogo a ParticipACT Brasil, dIAra CR, Pa' que veás "
+            "CO y Satellites On Fire AR, todos excluidos). Reevaluable solo si el municipio la integrara a "
+            "un proceso decisorio real (p. ej. planificación participativa del arbolado con IA sobre las "
+            "propuestas ciudadanas). [Verificación: el fetch directo de corlab.cordoba.gob.ar y de la prensa "
+            "fue bloqueado por el proxy del entorno; evaluación basada en la descripción aportada por el "
+            "equipo y en resultados de búsqueda (Municipalidad de Córdoba «GeTAU ya está activa: una "
+            "aplicación participativa que trabaja en la gestión del arbolado urbano»; hoydia.com.ar "
+            "15-oct-2025 «invita a vecinos a cuidar y mapear los árboles de su barrio»; g5noticias.cl "
+            "15-jul-2026 «la app que usa IA y datos de vecinos para ayudar a prevenir caídas»).]"),
+        url=("https://corlab.cordoba.gob.ar/getau-la-app-cordobesa-para-el-cuidado-inteligente-de-arboles/ / "
+             "https://cordoba.gob.ar/getau-aplicacion-arbolado-urbano/ / "
+             "https://hoydia.com.ar/ambiente/getau-la-app-cordobesa-que-invita-a-vecinos-a-cuidar-y-mapear-los-arboles-de-su-barrio/ / "
+             "https://g5noticias.cl/2026/07/15/arboles-en-riesgo-la-app-que-usa-ia-y-datos-de-vecinos-para-ayudar-a-prevenir-caidas/"),
+        _row=10_001,   # al final del bloque AR del grupo 3 (orden por país, _row)
+    ),
+]
+
 REPAIR_DETALLE = {
+    ("AR", "getau"): (
+        "GeTAU es una WebApp de la ciudad de Córdoba (Argentina) que combina inteligencia artificial, "
+        "geolocalización y participación vecinal para el monitoreo y la gestión del arbolado urbano: la "
+        "ciudadanía georreferencia, releva y monitorea ejemplares (nuevos y existentes) y cada árbol queda "
+        "con una ficha de especie, ubicación, estado sanitario y necesidades de cuidado, con trazabilidad "
+        "completa. Desarrollada por jóvenes de la ONG Acción Ambiental junto a la Facultad de Ciencias "
+        "Exactas, Físicas y Naturales de la Universidad Nacional de Córdoba (UNC) y difundida por el "
+        "laboratorio de innovación municipal CorLab. Objetivo declarado: dar al municipio y a la vecindad "
+        "información precisa para planificar reforestaciones, prevenir riesgos (p. ej. caída de ejemplares) "
+        "y garantizar la supervivencia de los árboles (activa a 2025, con cobertura de prensa hasta "
+        "jul-2026)."),
     ("CO", "atlantico"): (
         "Proceso de formulación participativa del Plan de Ordenamiento Departamental (POD) 2025-2050 del "
         "Atlántico (Colombia), convocado por la Gobernación con mesas y talleres subregionales. En paralelo, "
@@ -1098,7 +1141,9 @@ def main():
         print(f"[entregable 1] escrito → {OUT1}  (datos filas {meta['R0']}..{meta['R1']})")
 
     excluidos = read_excluidos()
-    assert len(excluidos)==79, f"Se esperaban 79 excluidos, hay {len(excluidos)}"
+    assert len(excluidos)==79, f"Se esperaban 79 excluidos en el insumo, hay {len(excluidos)}"
+    excluidos = excluidos + NUEVOS_EXCLUIDOS   # GeTAU (AR), aporte del equipo jul-2026
+    assert len(excluidos)==80, f"Se esperaban 80 excluidos (79 + GeTAU), hay {len(excluidos)}"
     bbdd_casos = read_bbdd_casos()
     bbdd_excl = read_bbdd_excluidos()
     evid = read_evidencia()
@@ -1108,7 +1153,7 @@ def main():
     counts, out_rows = build_entregable2(excluidos, bbdd_casos, bbdd_excl, evid, cand, hall, planilla)
     print(f"[entregable 2] escrito → {OUT2}")
     print(f"  conteos por origen: G1={counts[1]}  G2={counts[2]}  G3={counts[3]}  total={sum(counts.values())}")
-    assert counts=={1:12,2:49,3:18}, f"Conteos inesperados: {counts}"
+    assert counts=={1:12,2:49,3:19}, f"Conteos inesperados: {counts}"
     print(f"[insumo] copiado → {INSUMO_REPO}")
 
 if __name__ == "__main__":

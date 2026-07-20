@@ -8,7 +8,8 @@ la pestaña 1 del entregable 1 (SIN usar las fórmulas del Excel) y lo compara
 contra los VALORES CACHEADOS de la pestaña 2 (tras recalc), con tolerancia 0.05.
 
 Además verifica:
-  · 28 casos incluidos · 79 excluidos con conteos 12/49/18.
+  · 28 casos incluidos · 80 excluidos con conteos 12/49/19
+    (79 del insumo de validación + GeTAU AR, alta del equipo jul-2026).
   · Los 28 casos de la BBDD 2025 están todos contabilizados
     (16 siguen incluidos —e-Cidadania fusionado— y 12 en el grupo 1).
   · Las 49 exclusiones 2025 están todas en el grupo 2.
@@ -220,7 +221,7 @@ for r in range(hrow+1, ws2.max_row+1):
     exrows.append(dict(pais=str(p).strip(), caso=str(ws2.cell(r,2).value or "").strip(),
                        origen=str(ws2.cell(r,3).value or "").strip(),
                        det=str(ws2.cell(r,4).value or ""), motivo=str(ws2.cell(r,6).value or "")))
-check(len(exrows)==79, f"Entregable 2: {len(exrows)} filas (esperadas 79)")
+check(len(exrows)==80, f"Entregable 2: {len(exrows)} filas (esperadas 80: 79 del insumo + GeTAU)")
 
 # Guardas anti-truncamiento y de saneo (hallazgo del QA externo 2026-07-20:
 # el insumo traía 14 motivos capados a 300 chars — reconstruidos con etiqueta).
@@ -249,7 +250,7 @@ gc={1:0,2:0,3:0,0:0}
 for e in exrows: gc[grp(e["origen"])]+=1
 check(gc[1]==12, f"grupo 1 = {gc[1]} (esperado 12)")
 check(gc[2]==49, f"grupo 2 = {gc[2]} (esperado 49)")
-check(gc[3]==18, f"grupo 3 = {gc[3]} (esperado 18)")
+check(gc[3]==19, f"grupo 3 = {gc[3]} (esperado 19: 18 del insumo + GeTAU)")
 check(gc[0]==0, f"{gc[0]} filas con origen no reconocido")
 
 g1=[e for e in exrows if grp(e["origen"])==1]

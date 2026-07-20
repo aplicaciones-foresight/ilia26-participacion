@@ -8,7 +8,7 @@
 
 ## 1 · Contexto en breve
 
-El indicador ILIA de **IA en Participación Ciudadana** cubre 20 países (AR, BO, BR, CL, CO, CR, CU, DO, EC, GT, HN, JM, MX, PA, PE, PY, SV, TT, UY, VE). Para el ciclo 2026 el equipo hizo una búsqueda exhaustiva de casos, doble extracción con verificación verbatim y una **validación manual final** (planilla «Validación_Casos_1»), que dejó **28 casos incluidos** (12 países con casos) y **79 excluidos**. Con esa base validada se generaron los 3 archivos que aquí se auditan. La metodología del cálculo es la **CENIA v2 (jun-2026)**; el ciclo 2025 se publicó con una fórmula anterior («legacy»).
+El indicador ILIA de **IA en Participación Ciudadana** cubre 20 países (AR, BO, BR, CL, CO, CR, CU, DO, EC, GT, HN, JM, MX, PA, PE, PY, SV, TT, UY, VE). Para el ciclo 2026 el equipo hizo una búsqueda exhaustiva de casos, doble extracción con verificación verbatim y una **validación manual final** (planilla «Validación_Casos_1»), que dejó **28 casos incluidos** (12 países con casos) y **80 excluidos**. Con esa base validada se generaron los 3 archivos que aquí se auditan. La metodología del cálculo es la **CENIA v2 (jun-2026)**; el ciclo 2025 se publicó con una fórmula anterior («legacy»).
 
 **Tu tarea:** QA final independiente de los 3 archivos. No corrijas nada por tu cuenta: verifica, y reporta cualquier discrepancia con celda exacta y valor esperado vs observado.
 
@@ -19,10 +19,10 @@ El indicador ILIA de **IA en Participación Ciudadana** cubre 20 países (AR, BO
 - **Pestaña «2 · Índice por país»** (20 países): TODO por fórmula. Estructura: N iniciativas → V1…V5 → Sub1 · desarrolladores/sistemas → Sub2 · redondeos → **Indicador final**. Debajo: parámetros (año de referencia 2026, caducidad 2 años, umbrales de Cantidad), máximos relativos (fórmulas MAX) y las grillas auxiliares que alimentan cada celda.
 
 ### B) `Casos_excluidos_ILIA2026.xlsx` — los 79 excluidos con su origen
-Una sola pestaña: País · Caso · **Origen del caso** (3 valores) · Detalles del caso (narrado, 1 celda) · URLs · Motivo y detalles de la exclusión (1 celda, texto íntegro). Los 3 orígenes:
+Una sola pestaña (80 filas: 79 del insumo de validación + GeTAU AR, agregado el 2026-07-20) : País · Caso · **Origen del caso** (3 valores) · Detalles del caso (narrado, 1 celda) · URLs · Motivo y detalles de la exclusión (1 celda, texto íntegro). Los 3 orígenes:
 1. «Base 2025 — estaba INCLUIDO, excluido en 2026» → **12 casos**
 2. «Base 2025 — ya estaba EXCLUIDO, exclusión reconfirmada» → **49 casos**
-3. «Nuevo 2026 — identificado en descubrimiento, no incluido» → **18 casos**
+3. «Nuevo 2026 — identificado en descubrimiento, no incluido» → **19 casos** (incluye GeTAU AR, agregado post-validación)
 
 ### C) `Comparacion_2025_2026_ILIA.xlsx` — efecto del cambio de fórmula
 - «1 · BBDD 2025 (insumo)»: los 28 casos del baseline 2025 + recodificación 2026 (convocante 7-cat y nivel 0-3, **BORRADOR pre-Gate**) + flags por fórmula.
@@ -77,7 +77,7 @@ AR, CR, DO, HN, JM, PY, SV, TT = 0 en todo (sin casos). **Máximos relativos 202
 
 La columna de control del archivo C debe mostrar «✓» en los 19 países con baseline (la tolerancia ±1 es real: el motor 2025 redondeaba con *banker's rounding* de Python y el Excel usa ROUND *half-up*). **Máximos relativos 2025:** combinaciones 2 · dev. nacionales 3 · dev. internacionales 2 · sistemas 5.
 
-### Excluidos (archivo B): 79 = 12 + 49 + 18
+### Excluidos (archivo B): 80 = 12 + 49 + 19
 Los **12 del grupo 1** (estaban incluidos en la BBDD 2025): BR ParticipACT Brasil · BR Colab · CL Participación Ciudadana Proceso Constitucional (homónimo: el de audiencias sale, el de diálogos autoconvocados sigue incluido) · CL Estrategia de Gobierno Digital · CO Descongestión Ingreso Solidario · CR U-Report · CR dIAra · DO CiudadanIA · HN RedPública + iVerify · MX Sufragio seguro · MX Presupuesto CRECES · PE Sistema de cómputo Elecciones 2026.
 Conciliación de la base anterior: 28 casos 2025 = 16 siguen incluidos (el caso e-Cidadania 2025 quedó **fusionado** dentro de la fila 2026 «Portal e-Cidadania… marcado automático + matching semántico», que cuenta como 1 iniciativa) + 12 pasan al grupo 1. Las 49 exclusiones 2025 están íntegras en el grupo 2.
 
@@ -136,6 +136,19 @@ Para re-auditar la v2: correr el script actualizado y releer las 14+6 celdas lis
 en el informe previo. Los cierres reconstruidos NO son texto del validador original:
 son recomposición documentada — si alguna reconstrucción se considera inexacta,
 reportarla indicando la fuente que la contradiga.
+
+
+## 10 · Alta post-validación (2026-07-20): GeTAU (AR) — grupo 3
+
+El equipo aportó el caso **GeTAU** (Córdoba, AR: WebApp de IA + geolocalización +
+participación vecinal para monitoreo del arbolado urbano; ONG Acción Ambiental + UNC).
+Revisión (2ª opinión, coincide con el juicio del aportante): la participación es aporte
+de datos/observaciones (censo/mapeo colaborativo) y la IA opera sobre los datos de los
+árboles, no sobre aportes de un proceso participativo → **civic tech de monitoreo → NO
+ENTRA** (análogo a ParticipACT, dIAra, Pa' que veás, Satellites On Fire). Se añadió al
+archivo B como «Nuevo 2026», por lo que el total pasa de 79 a **80 = 12 + 49 + 19** (el
+script del Apéndice ya espera estos conteos). La celda registra que el fetch directo de
+las fuentes fue bloqueado por el proxy del entorno de generación.
 
 ---
 
@@ -331,11 +344,11 @@ for r in range(hr+1, we.max_row+1):
     excl.append(dict(pais=str(we.cell(r,1).value).strip(), caso=str(we.cell(r,2).value).strip(),
                      origen=str(we.cell(r,3).value), det=str(we.cell(r,4).value or ""),
                      urls=str(we.cell(r,5).value or ""), motivo=str(we.cell(r,6).value or "")))
-check(len(excl) == 79, f"E2: se esperaban 79 filas, hay {len(excl)}")
+check(len(excl) == 80, f"E2: se esperaban 80 filas (79 del insumo + GeTAU AR), hay {len(excl)}")
 g1 = [e for e in excl if "estaba INCLUIDO" in e["origen"]]
 g2 = [e for e in excl if "ya estaba EXCLUIDO" in e["origen"]]
 g3 = [e for e in excl if "Nuevo 2026" in e["origen"]]
-check((len(g1), len(g2), len(g3)) == (12, 49, 18), f"E2: grupos {(len(g1),len(g2),len(g3))} ≠ (12,49,18)")
+check((len(g1), len(g2), len(g3)) == (12, 49, 19), f"E2: grupos {(len(g1),len(g2),len(g3))} ≠ (12,49,19)")
 check({(e["pais"], e["caso"]) for e in g1} == GRUPO1, "E2: los 12 del grupo 1 no son los esperados")
 check(all(len(e["det"]) >= 40 for e in excl), "E2: hay detalles narrados sospechosamente cortos (<40 chars)")
 check(all(len(e["motivo"]) >= 10 for e in excl), "E2: hay motivos vacíos o casi vacíos")
@@ -443,7 +456,7 @@ if fallas:
     sys.exit(1)
 print("✓ QA COMPLETO EN VERDE")
 print("  E1: 28 casos · índice 2026 recomputado = Excel = tabla de referencia (20 países)")
-print("  E2: 79 excluidos = 12 + 49 + 18 · grupo 1 exacto · sin solapes con incluidos · celdas completas")
+print("  E2: 80 excluidos = 12 + 49 + 19 (incl. GeTAU AR) · grupo 1 exacto · sin solapes · celdas completas")
 print("  E3: legacy 2025 = oficial ±1 (19/19) · fórmula nueva verificada · 2026 consistente · 8 gráficos")
 print(f"  Máximos 2026 {mx26} · Máximos 2025 {mx25}")
 ```
